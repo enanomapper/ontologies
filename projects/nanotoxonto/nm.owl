@@ -327,4 +327,18 @@
 	<sio:SIO_000277 rdf:resource="http://dx.doi.org/10.1002/smll.201002366" />
     </owl:Class>
 
+    <owl:Class rdf:about="&resource;NM_001009">
+        <rdfs:label>band energies</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&resource;NM_000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&resource;NM_000103"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <description>Conductivity and valence band energies for metal oxides of
+          at least 20-30 nm.</description>
+        <sio:SIO_000277 rdf:resource="http://dx.doi.org/10.3109/17435390.2010.502980" />
+    </owl:Class>
+
 </rdf:RDF>
