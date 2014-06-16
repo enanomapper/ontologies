@@ -56,7 +56,7 @@ public class FindLabelDuplicationWithinOneMergedOntology {
 		for (String label : result.allLabels) {
 			List<String> uris = result.labelsToURIs.get(label); 
 			if (uris.size() > 1) {
-				//Houston we have a duplicate
+				//There is a duplicate
 				result.labelsDuplicated.add(label);
 			}
 		}
