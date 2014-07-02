@@ -1,4 +1,6 @@
 <?xml version="1.0"?>
+
+
 <!DOCTYPE rdf:RDF [
     <!ENTITY UO "http://purl.org/obo/owl/UO#" >
     <!ENTITY purl "http://purl.obofoundry.org/" >
@@ -8,26 +10,27 @@
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY OBO_REL "http://purl.org/obo/owl/OBO_REL#" >
+    <!ENTITY resource "http://egonw.github.com/resource/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
     <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
     <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
     <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
-    <!ENTITY resource "http://semanticscience.org/resource/" >
+    <!ENTITY sio "http://semanticscience.org/resource/" >
     <!ENTITY CHEBI "http://purl.obolibrary.org/obo/CHEBI#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
     <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
     <!ENTITY cheminf "http://semanticscience.org/ontology/cheminf.owl/" >
-    <!ENTITY cheminf "http://egonw.github.com/ontology/nm.owl/" >
 ]>
+
+
 <rdf:RDF xmlns="http://egonw.github.com/ontologies/nm.owl#"
      xml:base="http://egonw.github.com/ontologies/nm.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:PATO="http://purl.org/obo/owl/PATO#"
      xmlns:cheminf="http://semanticscience.org/ontology/cheminf.owl/"
-     xmlns:sio="http://semanticscience.org/resource/"
      xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:UO="http://purl.org/obo/owl/UO#"
@@ -38,6 +41,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
      xmlns:purl="http://purl.obofoundry.org/"
+     xmlns:sio="http://semanticscience.org/resource/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -45,63 +49,102 @@
      xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
-
-    <owl:Ontology rdf:about="http://egonw.github.com/ontology/nm.owl">
+    <owl:Ontology rdf:about="http://purl.enanomapper.org/onto/internal/descriptors/nm.owl">
         <dc:contributor rdf:datatype="&xsd;string">Egon Willighagen</dc:contributor>
         <owl:versionInfo rdf:datatype="&xsd;string">alpha</owl:versionInfo>
         <dc:format rdf:datatype="&xsd;string">application/rdf+xml</dc:format>
-        <dc:title rdf:datatype="&xsd;string">nanoqsar ontology - ontology for NanoQSAR studies</dc:title>
         <dc:language rdf:datatype="&xsd;string">en</dc:language>
-        <dc:rights rdf:datatype="&rdf;PlainLiteral">http://creativecommons.org/licenses/by/3.0</dc:rights>
+        <dc:title rdf:datatype="&xsd;string">nanoqsar ontology - ontology for NanoQSAR studies</dc:title>
+        <dc:rights>http://creativecommons.org/licenses/by/3.0</dc:rights>
         <owl:imports rdf:resource="http://semanticscience.org/ontology/cdk.owl"/>
         <owl:imports rdf:resource="http://semanticscience.org/ontology/cheminf-algorithms.owl"/>
         <owl:imports rdf:resource="http://semanticscience.org/ontology/cheminf-core.owl"/>
         <owl:imports rdf:resource="http://semanticscience.org/ontology/cheminf-external.owl"/>
         <owl:imports rdf:resource="http://semanticscience.org/ontology/cheminf.owl"/>
     </owl:Ontology>
+    
 
-    <owl:Class rdf:about="&resource;NM_000001">
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://egonw.github.com/ontologies/nm.owl#description -->
+
+    <owl:AnnotationProperty rdf:about="http://egonw.github.com/ontologies/nm.owl#description"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000277 -->
+
+    <owl:AnnotationProperty rdf:about="&sio;SIO_000277"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://semanticscience.org/resource/NM_000001 -->
+
+    <owl:Class rdf:about="&sio;NM_000001">
         <rdfs:label>nanomaterial</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&resource;CHEMINF_000000"/>
+        <rdfs:subClassOf rdf:resource="&sio;CHEMINF_000000"/>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="&resource;NM_000002">
+
+    <!-- http://semanticscience.org/resource/NM_000002 -->
+
+    <owl:Class rdf:about="&sio;NM_000002">
         <rdfs:label>nanomaterial information format specification</rdfs:label>
         <dc:description>A nanomaterial information format specification is an information
 	  content entity which specifies a format in which information about a
 	  nanomaterial should be encoded.
 	</dc:description>
     </owl:Class>
+    
 
-   <owl:Class rdf:about="&resource;NM_000003">
+
+    <!-- http://semanticscience.org/resource/NM_000003 -->
+
+    <owl:Class rdf:about="&sio;NM_000003">
         <rdfs:label>nanomaterial descriptor</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&resource;CHEMINF_000123"/>
+                    <rdf:Description rdf:about="&sio;CHEMINF_000123"/>
                     <owl:Restriction>
-		        <!-- is about -->
-		        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-			<!-- nanomaterial -->
-                        <owl:someValuesFrom rdf:resource="&resource;NM_000001"/>
+                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="&sio;NM_000001"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <!-- confirms to -->
-                <owl:onProperty rdf:resource="&resource;CHEMINF_000047"/>
-                <!-- nanomaterial info format spec -->
-                <owl:someValuesFrom rdf:resource="&resource;NM_000002"/>
+                <owl:onProperty rdf:resource="&sio;CHEMINF_000047"/>
+                <owl:someValuesFrom rdf:resource="&sio;NM_000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <!-- is about -->
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <!-- nanomaterial -->
-                <owl:someValuesFrom rdf:resource="&resource;NM_000001"/>
+                <owl:someValuesFrom rdf:resource="&sio;NM_000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>
@@ -109,10 +152,14 @@
           information about a nanomaterial.
         </dc:description>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="&resource;NM_000004">
+
+    <!-- http://semanticscience.org/resource/NM_000004 -->
+
+    <owl:Class rdf:about="&sio;NM_000004">
         <rdfs:label>nanomaterial quality</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&resource;CHEMINF_000086"/>
+        <rdfs:subClassOf rdf:resource="&sio;CHEMINF_000086"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
@@ -120,42 +167,40 @@
                         <owl:inverseOf rdf:resource="&OBO_REL;bearer_of"/>
                     </rdf:Description>
                 </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="&resource;NM_000001"/>
+                <owl:someValuesFrom rdf:resource="&sio;NM_000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>A nanomaterial quality is a quality which inheres in a nanomaterial.</dc:description>
     </owl:Class>
+    
 
-   <owl:Class rdf:about="&resource;NM_000005">
+
+    <!-- http://semanticscience.org/resource/NM_000005 -->
+
+    <owl:Class rdf:about="&sio;NM_000005">
         <rdfs:label>metal oxide descriptor</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&resource;CHEMINF_000123"/>
+                    <rdf:Description rdf:about="&sio;CHEMINF_000123"/>
                     <owl:Restriction>
-		        <!-- is about -->
-		        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-			<!-- metal oxide -->
-                        <owl:someValuesFrom rdf:resource="&resource;NM_000100"/>
+                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="&sio;NM_000100"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&resource;NM_000003"/>
+        <rdfs:subClassOf rdf:resource="&sio;NM_000003"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <!-- confirms to -->
-                <owl:onProperty rdf:resource="&resource;CHEMINF_000047"/>
-                <!-- nanomaterial info format spec -->
-                <owl:someValuesFrom rdf:resource="&resource;NM_000002"/>
+                <owl:onProperty rdf:resource="&sio;CHEMINF_000047"/>
+                <owl:someValuesFrom rdf:resource="&sio;NM_000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <!-- is about -->
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <!-- nanomaterial -->
-                <owl:someValuesFrom rdf:resource="&resource;NM_000100"/>
+                <owl:someValuesFrom rdf:resource="&sio;NM_000100"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>
@@ -164,181 +209,231 @@
 	  which are unique to a metal oxide.
         </dc:description>
     </owl:Class>
+    
 
-    <!-- material types -->
 
-    <owl:Class rdf:about="&resource;NM_000100">
+    <!-- http://semanticscience.org/resource/NM_000006 -->
+
+    <owl:Class rdf:about="&sio;NM_000006"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/NM_000100 -->
+
+    <owl:Class rdf:about="&sio;NM_000100">
         <rdfs:label>metal oxide</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&resource;NM_000001"/>
+        <rdfs:subClassOf rdf:resource="&sio;NM_000001"/>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="&resource;NM_000101">
+
+    <!-- http://semanticscience.org/resource/NM_000101 -->
+
+    <owl:Class rdf:about="&sio;NM_000101">
         <rdfs:label>carbon nanotube</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&resource;NM_000001"/>
+        <rdfs:subClassOf rdf:resource="&sio;NM_000001"/>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="&resource;NM_000102">
+
+    <!-- http://semanticscience.org/resource/NM_000102 -->
+
+    <owl:Class rdf:about="&sio;NM_000102">
         <rdfs:label>graphene</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&resource;NM_000001"/>
+        <rdfs:subClassOf rdf:resource="&sio;NM_000001"/>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="&resource;NM_000103">
+
+    <!-- http://semanticscience.org/resource/NM_000103 -->
+
+    <owl:Class rdf:about="&sio;NM_000103">
         <rdfs:label>two element metal oxide</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&resource;NM_000100"/>
-	<dc:description>
+        <rdfs:subClassOf rdf:resource="&sio;NM_000100"/>
+        <dc:description>
 	  A metal oxide with a single metal element.
 	</dc:description>
     </owl:Class>
+    
 
-    <!-- qualities -->
 
+    <!-- http://semanticscience.org/resource/NM_001000 -->
 
-    <!-- descriptors -->
-
-    <owl:Class rdf:about="&resource;NM_001000">
+    <owl:Class rdf:about="&sio;NM_001000">
         <rdfs:label>composition mass descriptor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&resource;NM_000003"/>
+        <rdfs:subClassOf rdf:resource="&sio;NM_000003"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&resource;NM_000001"/>
+                <owl:someValuesFrom rdf:resource="&sio;NM_000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-	<description>Describes the mass of the chemical composition of the nanomaterial.</description>
+        <description>Describes the mass of the chemical composition of the nanomaterial.</description>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="&resource;NM_001001">
+
+    <!-- http://semanticscience.org/resource/NM_001001 -->
+
+    <owl:Class rdf:about="&sio;NM_001001">
         <rdfs:label>ionization enthalpy</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&resource;NM_000005"/>
+        <rdfs:subClassOf rdf:resource="&sio;NM_000005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&resource;NM_000100"/>
+                <owl:someValuesFrom rdf:resource="&sio;NM_000100"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-	<description>Describes the ionization energy of a metal oxide.</description>
-	<sio:SIO_000277 rdf:resource="http://dx.doi.org/10.1038/nnano.2011.10" />
+        <description>Describes the ionization energy of a metal oxide.</description>
+        <sio:SIO_000277 rdf:resource="http://dx.doi.org/10.1038/nnano.2011.10"/>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="&resource;NM_001002">
+
+    <!-- http://semanticscience.org/resource/NM_001002 -->
+
+    <owl:Class rdf:about="&sio;NM_001002">
         <rdfs:label>metal atom count</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&resource;NM_000005"/>
+        <rdfs:subClassOf rdf:resource="&sio;NM_000005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-		<owl:someValuesFrom rdf:resource="&resource;NM_000100"/> <!-- metal oxide -->
+                <owl:someValuesFrom rdf:resource="&sio;NM_000100"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-	<description>The number of metal atoms in the molecular formula of metal oxides.</description>
-	<sio:SIO_000277 rdf:resource="http://dx.doi.org/10.1002/smll.201002366" />
+        <description>The number of metal atoms in the molecular formula of metal oxides.</description>
+        <sio:SIO_000277 rdf:resource="http://dx.doi.org/10.1002/smll.201002366"/>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="&resource;NM_001003">
+
+    <!-- http://semanticscience.org/resource/NM_001003 -->
+
+    <owl:Class rdf:about="&sio;NM_001003">
         <rdfs:label>oxygen atom count</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&resource;NM_000005"/>
+        <rdfs:subClassOf rdf:resource="&sio;NM_000005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-		<owl:someValuesFrom rdf:resource="&resource;NM_000100"/> <!-- metal oxide -->
+                <owl:someValuesFrom rdf:resource="&sio;NM_000100"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-	<description>The number of oxygen atoms in the molecular formula of metal oxides.</description>
-	<sio:SIO_000277 rdf:resource="http://dx.doi.org/10.1002/smll.201002366" />
+        <description>The number of oxygen atoms in the molecular formula of metal oxides.</description>
+        <sio:SIO_000277 rdf:resource="http://dx.doi.org/10.1002/smll.201002366"/>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="&resource;NM_001004">
+
+    <!-- http://semanticscience.org/resource/NM_001004 -->
+
+    <owl:Class rdf:about="&sio;NM_001004">
         <rdfs:label>heat of formation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&resource;NM_000005"/>
+        <rdfs:subClassOf rdf:resource="&sio;NM_000005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&resource;NM_000100"/>
+                <owl:someValuesFrom rdf:resource="&sio;NM_000100"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-	<description>Describes the heat of formation of a metal oxide.</description>
-	<sio:SIO_000277 rdf:resource="http://dx.doi.org/10.1038/nnano.2011.10" />
+        <description>Describes the heat of formation of a metal oxide.</description>
+        <sio:SIO_000277 rdf:resource="http://dx.doi.org/10.1038/nnano.2011.10"/>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="&resource;NM_001005">
+
+    <!-- http://semanticscience.org/resource/NM_001005 -->
+
+    <owl:Class rdf:about="&sio;NM_001005">
         <rdfs:label>particle size descriptor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&resource;NM_000005"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&resource;NM_000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-	<description>Describes the particle size. The actual approach to describes it is
-	  undefined at this level.</description>
-    </owl:Class>
-
-    <owl:Class rdf:about="&resource;NM_001005">
         <rdfs:label>zetapotential descriptor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&resource;NM_000006"/>
+        <rdfs:subClassOf rdf:resource="&sio;NM_000005"/>
+        <rdfs:subClassOf rdf:resource="&sio;NM_000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&resource;NM_000001"/>
+                <owl:someValuesFrom rdf:resource="&sio;NM_000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-	<description>Describes the zeta potential of the nanomaterial. The potential
+        <description>Describes the particle size. The actual approach to describes it is
+	  undefined at this level.</description>
+        <description>Describes the zeta potential of the nanomaterial. The potential
 	  may be experimental, predicited, or originating from a read-across approach.</description>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="&resource;NM_001006">
+
+    <!-- http://semanticscience.org/resource/NM_001006 -->
+
+    <owl:Class rdf:about="&sio;NM_001006">
         <rdfs:label>metal group descriptor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&resource;NM_000006"/>
+        <rdfs:subClassOf rdf:resource="&sio;NM_000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&resource;NM_000103"/>
+                <owl:someValuesFrom rdf:resource="&sio;NM_000103"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-	<description>The periodic table group of the metal in a two element
+        <description>The periodic table group of the metal in a two element
 	  metal oxide.</description>
-	<sio:SIO_000277 rdf:resource="http://dx.doi.org/10.1002/smll.201002366" />
+        <sio:SIO_000277 rdf:resource="http://dx.doi.org/10.1002/smll.201002366"/>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="&resource;NM_001007">
+
+    <!-- http://semanticscience.org/resource/NM_001007 -->
+
+    <owl:Class rdf:about="&sio;NM_001007">
         <rdfs:label>metal period descriptor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&resource;NM_000006"/>
+        <rdfs:subClassOf rdf:resource="&sio;NM_000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&resource;NM_000103"/>
+                <owl:someValuesFrom rdf:resource="&sio;NM_000103"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-	<description>The periodic table period of the metal in a two element
+        <description>The periodic table period of the metal in a two element
 	  metal oxide.</description>
-	<sio:SIO_000277 rdf:resource="http://dx.doi.org/10.1002/smll.201002366" />
+        <sio:SIO_000277 rdf:resource="http://dx.doi.org/10.1002/smll.201002366"/>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="&resource;NM_001008">
+
+    <!-- http://semanticscience.org/resource/NM_001008 -->
+
+    <owl:Class rdf:about="&sio;NM_001008">
         <rdfs:label>metal element mass</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&resource;NM_000006"/>
+        <rdfs:subClassOf rdf:resource="&sio;NM_000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&resource;NM_000103"/>
+                <owl:someValuesFrom rdf:resource="&sio;NM_000103"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-	<description>Mass of the metal element of a two element
+        <description>Mass of the metal element of a two element
 	  metal oxide.</description>
-	<sio:SIO_000277 rdf:resource="http://dx.doi.org/10.1002/smll.201002366" />
+        <sio:SIO_000277 rdf:resource="http://dx.doi.org/10.1002/smll.201002366"/>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="&resource;NM_001009">
+
+    <!-- http://semanticscience.org/resource/NM_001009 -->
+
+    <owl:Class rdf:about="&sio;NM_001009">
         <rdfs:label>band energies</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&resource;NM_000006"/>
+        <rdfs:subClassOf rdf:resource="&sio;NM_000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&resource;NM_000103"/>
+                <owl:someValuesFrom rdf:resource="&sio;NM_000103"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <description>Conductivity and valence band energies for metal oxides of
           at least 20-30 nm.</description>
-        <sio:SIO_000277 rdf:resource="http://dx.doi.org/10.3109/17435390.2010.502980" />
+        <sio:SIO_000277 rdf:resource="http://dx.doi.org/10.3109/17435390.2010.502980"/>
     </owl:Class>
-
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
