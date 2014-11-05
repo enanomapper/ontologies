@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY p1 "http://purl.org/dc/elements/1.1/#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+    <!ENTITY xsp "http://www.owl-ontologies.com/2005/08/07/xsp.owl#" >
+]>
+<rdf:RDF xmlns="http://www.opentox.org/api/1.2#"
+     xml:base="http://www.opentox.org/api/1.2"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:p1="&dc;#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="">
+        <dc:contributor rdf:datatype="&xsd;string"
+            >jeliazkova.nina@gmail.com</dc:contributor>
+        <dc:contributor rdf:datatype="&xsd;string"
+            >martin.guetlein@gmail.com</dc:contributor>
+        <dc:creator rdf:datatype="&xsd;string">OpenTox</dc:creator>
+        <dc:date rdf:datatype="&xsd;string">2010-10-08</dc:date>
+        <dc:identifier rdf:datatype="&xsd;string"
+            >http://opentox.org/dev/apis/api-1.2</dc:identifier>
+        <dc:title rdf:datatype="&xsd;string"
+            >OpenTox API  1.2</dc:title>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >OpenTox resource ontology</rdfs:comment>
+        <owl:imports rdf:resource="http://opentox.org/opentox-rest.owl"/>
+    </owl:Ontology>
+    <owl:AllDifferent>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://opentox.org/opentox-rest.owl#GET"/>
+            <rdf:Description rdf:about="http://opentox.org/opentox-rest.owl#PUT"/>
+            <rdf:Description rdf:about="http://opentox.org/opentox-rest.owl#POST"/>
+            <rdf:Description rdf:about="http://opentox.org/opentox-rest.owl#DELETE"/>
+            <rdf:Description rdf:about="http://opentox.org/opentox-rest.owl#HEAD"/>
+            <rdf:Description rdf:about="http://opentox.org/opentox-rest.owl#OPTIONS"/>
+        </owl:distinctMembers>
+    </owl:AllDifferent>
+    <owl:AllDifferent>
+        <owl:distinctMembers rdf:parseType="Collection"/>
+    </owl:AllDifferent>
+    <owl:AllDifferent>
+        <owl:distinctMembers rdf:parseType="Collection"/>
+    </owl:AllDifferent>
+    <owl:AllDifferent>
+        <owl:distinctMembers rdf:parseType="Collection"/>
+    </owl:AllDifferent>
+    <owl:AllDifferent>
+        <owl:distinctMembers rdf:parseType="Collection"/>
+    </owl:AllDifferent>
+    <owl:Class rdf:ID="ClassValueStatistics">
+        <rdfs:subClassOf rdf:resource="#ClassificationStatistics"/>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="numTrueNegatives">
+        <rdfs:domain rdf:resource="#ClassValueStatistics"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    <rdf:Description rdf:about="http://opentox.org/opentox-rest.owl#STATUS_201">
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
+    </rdf:Description>
+    <owl:Class rdf:about="http://opentox.org/opentox-rest.owl#URLParameter">
+        <rdfs:subClassOf rdf:resource="http://opentox.org/opentox-rest.owl#InputParameterSimple"/>
+        <dc:description rdf:datatype="&xsd;string"
+            >Parameter that appears in the URL of the resource</dc:description>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >For example http://someserver.com/resource?max=10&amp;page=5</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:ID="Task">
+        <rdfs:subClassOf rdf:resource="#OpentoxResource"/>
+    </owl:Class>
+    <owl:Class rdf:ID="OpentoxResource">
+        <dc:identifier rdf:datatype="&xsd;string"
+            >URI of the resource</dc:identifier>
+        <dc:title rdf:datatype="&xsd;string"
+            >name of the resource</dc:title>
+        <owl:versionInfo rdf:datatype="&xsd;string">1.2</owl:versionInfo>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >A generic OpenTox resource</rdfs:comment>
+    </owl:Class>
+    <owl:ObjectProperty rdf:ID="crossvalidationDataset">
+        <rdfs:domain rdf:resource="#Crossvalidation"/>
+        <rdfs:range rdf:resource="#Dataset"/>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="Algorithm">
+        <rdfs:subClassOf rdf:resource="#OpentoxResource"/>
+        <dc:description rdf:datatype="&xsd;string"></dc:description>
+        <dc:identifier rdf:datatype="&xsd;string"
+            >/algorithm/{algorithmid}</dc:identifier>
+        <dc:publisher rdf:datatype="&xsd;string"></dc:publisher>
+        <dc:source rdf:datatype="&xsd;string">Reference</dc:source>
+        <dc:title rdf:datatype="&xsd;string"
+            >Name of the algorithm</dc:title>
+        <owl:disjointWith rdf:resource="#Compound"/>
+        <owl:disjointWith rdf:resource="#DataEntry"/>
+        <owl:disjointWith rdf:resource="#Dataset"/>
+        <owl:disjointWith rdf:resource="#Feature"/>
+        <owl:disjointWith rdf:resource="#FeatureValuePair"/>
+        <owl:disjointWith rdf:resource="#Model"/>
+        <owl:disjointWith rdf:resource="#Parameter"/>
+        <owl:versionInfo rdf:datatype="&xsd;string">1.1</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="&xsd;string"
+            >TODO: AlgorithmType, or link to Algorithm ontology</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="&xsd;string"
+            >TODO: statistics supported - is it possible to reuse ValidationInfo classes?</owl:versionInfo>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Provides access to OpenTox algorithms</rdfs:comment>
+        <rdfs:seeAlso rdf:datatype="&xsd;string"
+            >http://opentox.org/dev/apis/api-1.2/Algorithm</rdfs:seeAlso>
+    </owl:Class>
+    <owl:Class rdf:ID="ErrorReport">
+        <rdfs:subClassOf rdf:resource="#OpentoxResource"/>
+        <dc:description rdf:datatype="&xsd;string"
+            >Error Reports as specified in http://www.opentox.org/dev/apis/api-1.2/AsyncTask. Error Reports are useful to report in a structured way.</dc:description>
+        <rdfs:seeAlso rdf:datatype="&xsd;string"
+            >http://www.opentox.org/dev/apis/api-1.2/AsyncTask</rdfs:seeAlso>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="percentUnpredicted">
+        <rdfs:domain rdf:resource="#Validation"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    <owl:Class rdf:ID="NumericFeature">
+        <rdfs:subClassOf rdf:resource="#Numeric"/>
+        <rdfs:subClassOf rdf:resource="#Feature"/>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="truePositiveRate">
+        <rdfs:domain rdf:resource="#ClassValueStatistics"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="numFalseNegatives">
+        <rdfs:domain rdf:resource="#ClassValueStatistics"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="randomSeed">
+        <rdfs:domain rdf:resource="#Crossvalidation"/>
+        <rdfs:range rdf:resource="&xsd;long"/>
+    </owl:DatatypeProperty>
+    <owl:FunctionalProperty rdf:ID="feature">
+        <rdf:type rdf:resource="&owl;ObjectProperty"/>
+        <rdfs:domain rdf:resource="#FeatureValuePair"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >FeatureValue contains a value for specific Feature, specified by this relationship.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;string"
+            >http://opentox.org/api/1.2</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="#Feature"/>
+    </owl:FunctionalProperty>
+    <Tuple rdf:ID="Tuple_1">
+        <complexValue rdf:resource="#FeatureValue_3"/>
+        <feature rdf:resource="#NumericFeature_2"/>
+    </Tuple>
+    <owl:FunctionalProperty rdf:ID="yScramblingEnabled">
+        <rdf:type rdf:resource="&owl;DatatypeProperty"/>
+        <rdfs:domain rdf:resource="#YScrambling"/>
+        <dc:title rdf:datatype="&xsd;string"
+            >YScramblingEnabled</dc:title>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >YScramblingEnabled</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+        <rdfs:subPropertyOf rdf:resource="#yScramblingInfo"/>
+    </owl:FunctionalProperty>
+    <owl:FunctionalProperty rdf:ID="rootMeanSquaredError">
+        <rdf:type rdf:resource="&owl;DatatypeProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >RootMeanSquaredError</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:subPropertyOf rdf:resource="#regressionStatistics"/>
+    </owl:FunctionalProperty>
+    <owl:DatatypeProperty rdf:ID="regressionStatistics">
+        <rdfs:domain rdf:resource="#RegressionStatistics"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    <owl:FunctionalProperty rdf:ID="has3Dstructure">
+        <rdf:type rdf:resource="&owl;DatatypeProperty"/>
+        <rdfs:domain rdf:resource="#Compound"/>
+        <dc:title rdf:datatype="&xsd;string"
+            >Has 3D structure</dc:title>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >True, if the compound has 3D structure</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:FunctionalProperty>
+    <owl:DatatypeProperty rdf:ID="areaUnderROC">
+        <rdfs:domain rdf:resource="#ClassValueStatistics"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    <NumericFeature rdf:ID="NumericFeature_2"/>
+    <owl:ObjectProperty rdf:ID="confusionMatrixPredicted">
+        <rdfs:domain rdf:resource="#ConfusionMatrixCell"/>
+        <rdfs:range rdf:resource="#FeatureValuePair"/>
+        <rdfs:subPropertyOf rdf:resource="#confusionMatrixEntry"/>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="FeatureValueString">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#feature"/>
+                <owl:allValuesFrom rdf:resource="#StringFeature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="#FeatureValue"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#value"/>
+                <owl:allValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:AnnotationProperty rdf:about="&dc;description"/>
+    <owl:Class rdf:ID="SMILES">
+        <rdfs:subClassOf rdf:resource="#Identifier"/>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="hasStatus">
+        <rdfs:domain rdf:resource="#Task"/>
+        <rdfs:range>
+            <owl:DataRange>
+                <owl:oneOf>
+                    <rdf:List>
+                        <rdf:first rdf:datatype="&xsd;string">Cancelled</rdf:first>
+                        <rdf:rest>
+                            <rdf:List>
+                                <rdf:first rdf:datatype="&xsd;string">Completed</rdf:first>
+                                <rdf:rest>
+                                    <rdf:List>
+                                        <rdf:first rdf:datatype="&xsd;string">Running</rdf:first>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                    </rdf:List>
+                                </rdf:rest>
+                            </rdf:List>
+                        </rdf:rest>
+                    </rdf:List>
+                </owl:oneOf>
+            </owl:DataRange>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    <owl:FunctionalProperty rdf:ID="validationModel">
+        <rdf:type rdf:resource="&owl;ObjectProperty"/>
+        <rdfs:domain rdf:resource="#Validation"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Model used in a validation exercise</rdfs:comment>
+        <rdfs:range rdf:resource="#Model"/>
+        <rdfs:subPropertyOf rdf:resource="#validation"/>
+    </owl:FunctionalProperty>
+    <owl:Class rdf:ID="Conformer">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#has3Dstructure"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="#Compound"/>
+        <dc:identifier rdf:datatype="&xsd;string"
+            >/compound/{compoundid}/conformer/{conformerid}</dc:identifier>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >[Optional] support for multiple (e.g. 3D) structures per chemical compound (single structure by default)</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://opentox.org/opentox-rest.owl#STATUS_403">
+        <rdfs:subClassOf rdf:resource="http://opentox.org/opentox-rest.owl#HTTPStatus"/>
+        <owl:disjointWith rdf:resource="http://opentox.org/opentox-rest.owl#STATUS_200"/>
+        <owl:disjointWith rdf:resource="http://opentox.org/opentox-rest.owl#STATUS_201"/>
+        <owl:disjointWith rdf:resource="http://opentox.org/opentox-rest.owl#STATUS_202"/>
+        <owl:disjointWith rdf:resource="http://opentox.org/opentox-rest.owl#STATUS_303"/>
+        <owl:disjointWith rdf:resource="http://opentox.org/opentox-rest.owl#STATUS_400"/>
+        <owl:disjointWith rdf:resource="http://opentox.org/opentox-rest.owl#STATUS_401"/>
+        <owl:disjointWith rdf:resource="http://opentox.org/opentox-rest.owl#STATUS_404"/>
+        <owl:disjointWith rdf:resource="http://opentox.org/opentox-rest.owl#STATUS_500"/>
+        <owl:disjointWith rdf:resource="http://opentox.org/opentox-rest.owl#STATUS_502"/>
+        <owl:disjointWith rdf:resource="http://opentox.org/opentox-rest.owl#STATUS_503"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Access is prohibited</rdfs:comment>
+    </owl:Class>
+    <FeatureValue rdf:ID="FeatureValue_3"/>
+    <owl:FunctionalProperty rdf:ID="value">
+        <rdf:type rdf:resource="&owl;DatatypeProperty"/>
+        <rdfs:domain rdf:resource="#FeatureValue"/>
+        <dc:title rdf:datatype="&xsd;string">Feature value</dc:title>
+        <rdfs:comment rdf:datatype="&xsd;string">Literal</rdfs:comment>
+    </owl:FunctionalProperty>
+    <owl:ObjectProperty rdf:ID="validationPredictionDataset">
+        <rdfs:domain rdf:resource="#Validation"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >PredictionDatasetURI</rdfs:comment>
+        <rdfs:range rdf:resource="#Dataset"/>
+        <rdfs:subPropertyOf rdf:resource="#validation"/>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="FeatureValueNominal">
+        <rdfs:subClassOf rdf:resource="#FeatureValueString"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#feature"/>
+                <owl:allValuesFrom rdf:resource="#NominalFeature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:FunctionalProperty rdf:ID="trainingDataset">
+        <rdf:type rdf:resource="&owl;ObjectProperty"/>
+        <rdfs:domain rdf:resource="#Model"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >A model is derived by applying an Algorithm on a training Dataset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;string"
+            >http://opentox.org/api/1.2</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="#Dataset"/>
+        <rdfs:subPropertyOf rdf:resource="#model"/>
+    </owl:FunctionalProperty>
+    <owl:ObjectProperty rdf:ID="predictedVariables">
+        <rdfs:domain rdf:resource="#Model"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Variables, holding the predicted values, generated by the model</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;string"
+            >http://opentox.org/api/1.2</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="#Feature"/>
+        <rdfs:subPropertyOf rdf:resource="#model"/>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="Identifier">
+        <rdfs:subClassOf rdf:resource="#StringFeature"/>
+    </owl:Class>
+    <owl:ObjectProperty rdf:ID="conformer">
+        <rdfs:domain rdf:resource="#Compound"/>
+        <rdfs:range rdf:resource="#Conformer"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://opentox.org/opentox-rest.owl#hasRESTOperation">
+        <rdfs:domain rdf:resource="#OpentoxResource"/>
+        <owl:inverseOf rdf:resource="http://opentox.org/opentox-rest.owl#resource"/>
+        <rdfs:range rdf:resource="http://opentox.org/opentox-rest.owl#RESTOperation"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="parameters">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class rdf:about="#Algorithm"/>
+                    <owl:Class rdf:about="#Model"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Algorithms and Models can have multiple parameters</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;string"
+            >http://opentox.org/api/1.2</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="#Parameter"/>
+        <rdfs:subPropertyOf rdf:resource="#model"/>
+    </owl:ObjectProperty>
+    <owl:AnnotationProperty rdf:about="&dc;date"/>
+    <rdf:Description rdf:about="http://opentox.org/opentox-rest.owl#resource">
+        <rdfs:domain rdf:resource="http://opentox.org/opentox-rest.owl#RESTOperation"/>
+        <owl:inverseOf rdf:resource="http://opentox.org/opentox-rest.owl#hasRESTOperation"/>
+    </rdf:Description>
+    <owl:Class rdf:ID="StringFeature">
+        <rdfs:subClassOf rdf:resource="#String"/>
+        <rdfs:subClassOf rdf:resource="#Feature"/>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="stratified">
+        <rdfs:domain rdf:resource="#Crossvalidation"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    <owl:ObjectProperty rdf:ID="predictedFeature">
+        <rdfs:domain rdf:resource="#Validation"/>
+        <rdfs:range rdf:resource="#Feature"/>
+        <rdfs:subPropertyOf rdf:resource="#validation"/>
+    </owl:ObjectProperty>
+    <owl:TransitiveProperty rdf:ID="isA">
+        <rdf:type rdf:resource="&owl;ObjectProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Allows to define &quot;is a&quot; relationships outside of particular class hierarchy</rdfs:comment>
+    </owl:TransitiveProperty>
+    <owl:DatatypeProperty rdf:ID="precision">
+        <rdfs:domain rdf:resource="#ClassValueStatistics"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    <owl:ObjectProperty rdf:ID="classValue">
+        <rdfs:domain rdf:resource="#ClassValueStatistics"/>
+        <rdfs:range rdf:resource="#FeatureValuePair"/>
+        <rdfs:subPropertyOf rdf:resource="#classValueStatistics"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="validation">
+        <rdfs:domain rdf:resource="#Validation"/>
+        <rdfs:range rdf:resource="#ValidationInfo"/>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="ValidationInfo">
+        <rdfs:subClassOf rdf:resource="#Validation"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >encapsulates validation information</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:ID="Tuple">
+        <rdfs:subClassOf rdf:resource="#FeatureValuePair"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#complexValue"/>
+                <owl:allValuesFrom rdf:resource="#FeatureValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="#FeatureValue"/>
+    </owl:Class>
+    <owl:Class rdf:ID="FeatureValue">
+        <rdfs:subClassOf rdf:resource="#FeatureValuePair"/>
+        <owl:disjointWith rdf:resource="#Tuple"/>
+    </owl:Class>
+    <owl:Class rdf:ID="RegressionStatistics">
+        <rdfs:subClassOf rdf:resource="#ValidationInfo"/>
+    </owl:Class>
+    <owl:AnnotationProperty rdf:about="&dc;format"/>
+    <owl:Class rdf:ID="Feature">
+        <rdfs:subClassOf rdf:resource="#OpentoxResource"/>
+        <dc:description rdf:datatype="&xsd;string"></dc:description>
+        <dc:identifier rdf:datatype="&xsd;string"
+            >/feature/{featureid}</dc:identifier>
+        <dc:source rdf:datatype="&xsd;string"></dc:source>
+        <dc:title rdf:datatype="&xsd;string"></dc:title>
+        <owl:disjointWith rdf:resource="#FeatureValuePair"/>
+        <owl:disjointWith rdf:resource="#Model"/>
+        <owl:disjointWith rdf:resource="#Parameter"/>
+        <owl:versionInfo rdf:datatype="&xsd;string">1.1</owl:versionInfo>
+    </owl:Class>
+    <owl:ObjectProperty rdf:ID="validationTrainingDataset">
+        <rdfs:domain rdf:resource="#Validation"/>
+        <rdfs:range rdf:resource="#Dataset"/>
+        <rdfs:subPropertyOf rdf:resource="#validation"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="validationReport">
+        <rdfs:domain rdf:resource="#Report"/>
+        <rdfs:range rdf:resource="#Validation"/>
+        <rdfs:subPropertyOf rdf:resource="#report"/>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="EmptyDataset">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#dataEntry"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="#Dataset"/>
+    </owl:Class>
+    <owl:Class rdf:ID="ClassificationStatistics">
+        <rdfs:subClassOf rdf:resource="#ValidationInfo"/>
+    </owl:Class>
+    <owl:ObjectProperty rdf:ID="hasOutput">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class rdf:about="#Algorithm"/>
+                    <owl:Class rdf:about="#Model"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class rdf:about="#Dataset"/>
+                    <owl:Class rdf:about="#Model"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="Crossvalidation">
+        <rdfs:subClassOf rdf:resource="#OpentoxResource"/>
+    </owl:Class>
+    <owl:Class rdf:ID="FeatureValueNumeric">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#feature"/>
+                <owl:allValuesFrom rdf:resource="#NumericFeature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#value"/>
+                        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#value"/>
+                        <owl:allValuesFrom rdf:resource="&xsd;int"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="#FeatureValue"/>
+    </owl:Class>
+    <owl:Class rdf:ID="Dataset">
+        <rdfs:subClassOf rdf:resource="#OpentoxResource"/>
+        <dc:contributor rdf:datatype="&xsd;string"></dc:contributor>
+        <dc:creator rdf:datatype="&xsd;string"></dc:creator>
+        <dc:date rdf:datatype="&xsd;string"></dc:date>
+        <dc:description rdf:datatype="&xsd;string"></dc:description>
+        <dc:identifier rdf:datatype="&xsd;string"
+            >/dataset/{datasetid}</dc:identifier>
+        <dc:publisher rdf:datatype="&xsd;string"></dc:publisher>
+        <dc:source rdf:datatype="&xsd;string"
+            >Original source of the dataset</dc:source>
+        <dc:title rdf:datatype="&xsd;string"></dc:title>
+        <owl:disjointWith rdf:resource="#Feature"/>
+        <owl:disjointWith rdf:resource="#FeatureValuePair"/>
+        <owl:disjointWith rdf:resource="#Model"/>
+        <owl:disjointWith rdf:resource="#Parameter"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Provides access to chemical compounds and their features (e.g. structural, physical-chemical, biological, toxicological properties)</rdfs:comment>
+        <rdfs:seeAlso rdf:datatype="&xsd;string"
+            >http://opentox.org/dev/apis/api-1.2/dataset</rdfs:seeAlso>
+    </owl:Class>
+    <owl:FunctionalProperty rdf:ID="yScramblingSeed">
+        <rdf:type rdf:resource="&owl;DatatypeProperty"/>
+        <rdfs:domain rdf:resource="#YScrambling"/>
+        <dc:title rdf:datatype="&xsd;string">YScramblingSeed</dc:title>
+        <rdfs:comment rdf:datatype="&xsd;string">YScramblingSeed</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;int"/>
+        <rdfs:subPropertyOf rdf:resource="#yScramblingInfo"/>
+    </owl:FunctionalProperty>
+    <owl:AnnotationProperty rdf:about="&dc;identifier"/>
+    <owl:FunctionalProperty rdf:ID="fold">
+        <rdf:type rdf:resource="&owl;DatatypeProperty"/>
+        <rdfs:domain rdf:resource="#CrossValidationInfo"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+        <rdfs:subPropertyOf rdf:resource="#crossValidationInfo"/>
+    </owl:FunctionalProperty>
+    <owl:FunctionalProperty rdf:ID="realRuntime">
+        <rdf:type rdf:resource="&owl;DatatypeProperty"/>
+        <rdfs:domain rdf:resource="#Validation"/>
+        <rdfs:domain rdf:resource="#Crossvalidation"/>
+        <rdfs:range rdf:resource="&xsd;long"/>
+    </owl:FunctionalProperty>
+    <owl:FunctionalProperty rdf:ID="meanAbsolutError">
+        <rdf:type rdf:resource="&owl;DatatypeProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >MeanAbsolutError</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:subPropertyOf rdf:resource="#regressionStatistics"/>
+    </owl:FunctionalProperty>
+    <owl:FunctionalProperty rdf:ID="numCorrect">
+        <rdf:type rdf:resource="&owl;DatatypeProperty"/>
+        <rdfs:domain rdf:resource="#ClassificationStatistics"/>
+        <dc:title rdf:datatype="&xsd;string">Number correct</dc:title>
+        <rdfs:range rdf:resource="&xsd;int"/>
+        <rdfs:subPropertyOf rdf:resource="#classificationStatistics"/>
+    </owl:FunctionalProperty>
+    <owl:ObjectProperty rdf:ID="complexValue">
+        <rdfs:domain rdf:resource="#Tuple"/>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="IUPACName">
+        <rdfs:subClassOf rdf:resource="#ChemicalName"/>
+    </owl:Class>
+    <owl:ObjectProperty rdf:ID="confusionMatrixActual">
+        <rdfs:domain rdf:resource="#ConfusionMatrixCell"/>
+        <rdfs:range rdf:resource="#FeatureValuePair"/>
+        <rdfs:subPropertyOf rdf:resource="#confusionMatrixEntry"/>
+    </owl:ObjectProperty>
+    <rdf:Description rdf:about="http://opentox.org/opentox-rest.owl#InputParamOpenTox">
+        <rdfs:subClassOf rdf:resource="http://opentox.org/opentox-rest.owl#InputParameter"/>
+        <dc:description rdf:datatype="&xsd;string"
+            >Any kind of input parameters that the client can provide to the service</dc:description>
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
+    </rdf:Description>
+    <owl:Class rdf:ID="DataEntryNumeric">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#values"/>
+                <owl:allValuesFrom rdf:resource="#FeatureValueNumeric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="#DataEntry"/>
+    </owl:Class>
+    <owl:FunctionalProperty rdf:ID="hasSource">
+        <rdf:type rdf:resource="&owl;ObjectProperty"/>
+        <rdfs:domain rdf:resource="#Feature"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class rdf:about="#Algorithm"/>
+                    <owl:Class rdf:about="#Dataset"/>
+                    <owl:Class rdf:about="#Model"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:FunctionalProperty>
+    <owl:FunctionalProperty rdf:ID="paramScope">
+        <rdf:type rdf:resource="&owl;DatatypeProperty"/>
+        <rdfs:domain rdf:resource="#Parameter"/>
+        <dc:title rdf:datatype="&xsd;string">Parameter scope</dc:title>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >specifies if a parameter is optional or mandatory</rdfs:comment>
+        <rdfs:range>
+            <owl:DataRange>
+                <owl:oneOf>
+                    <rdf:List>
+                        <rdf:first rdf:datatype="&xsd;string">mandatory</rdf:first>
+                        <rdf:rest>
+                            <rdf:List>
+                                <rdf:first rdf:datatype="&xsd;string">optional</rdf:first>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                            </rdf:List>
+                        </rdf:rest>
+                    </rdf:List>
+                </owl:oneOf>
+            </owl:DataRange>
+        </rdfs:range>
+    </owl:FunctionalProperty>
+    <owl:DatatypeProperty rdf:ID="recall">
+        <rdfs:domain rdf:resource="#ClassValueStatistics"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    <owl:Class rdf:ID="FeatureValuePair">
+        <rdfs:subClassOf rdf:resource="#OpentoxResource"/>
+        <dc:identifier rdf:datatype="&xsd;string"></dc:identifier>
+        <owl:disjointWith rdf:resource="#Model"/>
+        <owl:disjointWith rdf:resource="#Parameter"/>
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:ID="Report">
+        <rdfs:subClassOf rdf:resource="#OpentoxResource"/>
+        <rdfs:seeAlso rdf:datatype="&xsd;string"
+            >http://opentox.org/dev/apis/api-1.2/Validation#validation-report</rdfs:seeAlso>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="paramValue">
+        <rdfs:domain rdf:resource="#Parameter"/>
+        <dc:title rdf:datatype="&xsd;string">Parameter value</dc:title>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The value of a Parameter</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:FunctionalProperty rdf:about="http://opentox.org/opentox-rest.owl#aa">
+        <rdf:type rdf:resource="&owl;ObjectProperty"/>
+        <rdfs:domain rdf:resource="http://opentox.org/opentox-rest.owl#RESTOperation"/>
+        <dc:description rdf:datatype="&xsd;string"
+            >Assigns AA specifications to REST operations</dc:description>
+        <rdfs:range rdf:resource="http://opentox.org/opentox-rest.owl#AA"/>
+    </owl:FunctionalProperty>
+    <owl:Class rdf:ID="NumericDataset">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#dataEntry"/>
+                <owl:allValuesFrom rdf:resource="#DataEntryNumeric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="#Dataset"/>
+    </owl:Class>
+    <owl:Class rdf:ID="MolecularFormula">
+        <rdfs:subClassOf rdf:resource="#Identifier"/>
+    </owl:Class>
+    <rdf:Description rdf:about="http://opentox.org/opentox-rest.owl#paramName">
+        <rdfs:domain rdf:resource="http://opentox.org/opentox-rest.owl#InputParamOpenTox"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Bettter use the property dc:title for assigning a title to the input parameter</rdfs:comment>
+    </rdf:Description>
+    <owl:ObjectProperty rdf:ID="values">
+        <rdfs:domain rdf:resource="#DataEntry"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >A DataEntry is defined with a single compound and multiple feature values. This property sets the relationship between a DataEntry and multiple FeatureValues</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;string"
+            >http://opentox.org/api/1.2</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="#FeatureValuePair"/>
+    </owl:ObjectProperty>
+    <owl:AnnotationProperty rdf:about="&dc;source"/>
+    <rdf:Description rdf:about="http://opentox.org/opentox-rest.owl#inputParam">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class rdf:about="http://opentox.org/opentox-rest.owl#AA"/>
+                    <owl:Class rdf:about="http://opentox.org/opentox-rest.owl#POST_AlgorithmCreateModel"/>
+                    <owl:Class rdf:about="http://opentox.org/opentox-rest.owl#RESTOperation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </rdf:Description>
+    <owl:Class rdf:ID="DataEntry">
+        <rdfs:subClassOf rdf:resource="#OpentoxResource"/>
+        <dc:identifier rdf:datatype="&xsd;string"
+            >/dataset/{datasetid}/compound/{compoundid}?feature_uri[]=featureuris</dc:identifier>
+        <dc:title rdf:datatype="&xsd;string"></dc:title>
+        <owl:disjointWith rdf:resource="#Dataset"/>
+        <owl:disjointWith rdf:resource="#Feature"/>
+        <owl:disjointWith rdf:resource="#FeatureValuePair"/>
+        <owl:disjointWith rdf:resource="#Model"/>
+        <owl:disjointWith rdf:resource="#Parameter"/>
+        <owl:versionInfo rdf:datatype="&xsd;string">1.1</owl:versionInfo>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Encapsulates a dataset entry - defined by a single Compound (or conformer) and multiple FeatureValues. Could be regarded as &quot;Compound with features&quot;</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:ID="NumericAlgorithm">
+        <rdfs:subClassOf rdf:resource="#Algorithm"/>
+    </owl:Class>
+    <owl:Class rdf:ID="NumericModel">
+        <rdfs:subClassOf rdf:resource="#Model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#algorithm"/>
+                <owl:allValuesFrom rdf:resource="#NumericAlgorithm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#trainingDataset"/>
+                <owl:allValuesFrom rdf:resource="#NumericDataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasOutput"/>
+                <owl:allValuesFrom rdf:resource="#NumericDataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:FunctionalProperty rdf:ID="percentCorrect">
+        <rdf:type rdf:resource="&owl;DatatypeProperty"/>
+        <rdfs:domain rdf:resource="#ClassificationStatistics"/>
+        <dc:title rdf:datatype="&xsd;string">Percent Correct</dc:title>
+        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:subPropertyOf rdf:resource="#classificationStatistics"/>
+    </owl:FunctionalProperty>
+    <owl:DatatypeProperty rdf:ID="fMeasure">
+        <rdfs:domain rdf:resource="#ClassValueStatistics"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    <owl:Class rdf:ID="Compound">
+        <rdfs:subClassOf rdf:resource="#OpentoxResource"/>
+        <dc:identifier rdf:datatype="&xsd;string"
+            >/compound/{compoundid}</dc:identifier>
+        <owl:disjointWith rdf:resource="#DataEntry"/>
+        <owl:disjointWith rdf:resource="#Dataset"/>
+        <owl:disjointWith rdf:resource="#Feature"/>
+        <owl:disjointWith rdf:resource="#FeatureValuePair"/>
+        <owl:disjointWith rdf:resource="#Model"/>
+        <owl:disjointWith rdf:resource="#Parameter"/>
+        <owl:versionInfo rdf:datatype="&xsd;string">1.1</owl:versionInfo>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >API for OpenTox compound webservices</rdfs:comment>
+        <rdfs:seeAlso rdf:datatype="&xsd;string"
+            >http://opentox.org/dev/apis/api-1.2/structure</rdfs:seeAlso>
+    </owl:Class>
+    <owl:FunctionalProperty rdf:ID="compound">
+        <rdf:type rdf:resource="&owl;ObjectProperty"/>
+        <rdfs:domain rdf:resource="#DataEntry"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >A DataEntry is defined with a single compound and multiple feature values. This property sets the relationship between a DataEntry and a Compound</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;string"
+            >http://opentox.org/api/1.2</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="#Compound"/>
+    </owl:FunctionalProperty>
+    <owl:ObjectProperty rdf:ID="validationTestDataset">
+        <rdfs:domain rdf:resource="#Validation"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Test dataset , used in a validation exercise</rdfs:comment>
+        <rdfs:range rdf:resource="#Dataset"/>
+        <rdfs:subPropertyOf rdf:resource="#validation"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://opentox.org/opentox-rest.owl#paramContent">
+        <rdfs:domain rdf:resource="http://opentox.org/opentox-rest.owl#InputParameter"/>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="InChI">
+        <rdfs:subClassOf rdf:resource="#Identifier"/>
+    </owl:Class>
+    <owl:Class rdf:ID="Validation">
+        <rdfs:subClassOf rdf:resource="#OpentoxResource"/>
+        <dc:date rdf:datatype="&xsd;string">Datetime</dc:date>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >A validation corresponds to the validation of a model on a test dataset. The results are stored in another dataset. Parameters with default values are optional.</rdfs:comment>
+        <rdfs:seeAlso rdf:datatype="&xsd;string"
+            >http://opentox.org/dev/apis/api-1.2/Validation</rdfs:seeAlso>
+    </owl:Class>
+    <owl:Class rdf:about="http://opentox.org/opentox-rest.owl#InputParameter"/>
+    <owl:Class rdf:ID="DataType">
+        <rdfs:subClassOf rdf:resource="#OpentoxResource"/>
+    </owl:Class>
+    <owl:Class rdf:ID="YScrambling">
+        <rdfs:subClassOf rdf:resource="#ValidationInfo"/>
+    </owl:Class>
+    <rdf:Description rdf:about="http://opentox.org/opentox-rest.owl#paramContentOpenTox">
+        <rdfs:domain rdf:resource="http://opentox.org/opentox-rest.owl#InputParamOpenTox"/>
+        <dc:description rdf:datatype="&xsd;string"
+            >Specify the parameter content of an input parameter withing the range of OpenTox resources. Clients in these cases provide the URI of the resource or (if supported) POST the resource itself.</dc:description>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >This parameter should not be functional. In some cases such as the descriptor caclulation services, the input parameter &apos;dataset_uri&apos; is either an ot:Dataset or an ot:Compound.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://opentox.org/opentox-rest.owl#paramContent"/>
+    </rdf:Description>
+    <owl:ObjectProperty rdf:ID="confusionMatrix">
+        <rdfs:domain rdf:resource="#ClassificationStatistics"/>
+        <rdfs:range rdf:resource="#ConfusionMatrix"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="dependentVariables">
+        <rdfs:domain rdf:resource="#Model"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >A model can have one or more dependent variables, described as multiple features, specified by this relationship.</rdfs:comment>
+        <rdfs:range rdf:resource="#Feature"/>
+        <rdfs:subPropertyOf rdf:resource="#model"/>
+    </owl:ObjectProperty>
+    <owl:AnnotationProperty rdf:about="&dc;publisher"/>
+    <owl:ObjectProperty rdf:ID="ObjectProperty_4"/>
+    <owl:DatatypeProperty rdf:ID="yScramblingInfo">
+        <rdfs:domain rdf:resource="#YScrambling"/>
+    </owl:DatatypeProperty>
+    <owl:FunctionalProperty rdf:ID="percentageCompleted">
+        <rdf:type rdf:resource="&owl;DatatypeProperty"/>
+        <rdfs:domain rdf:resource="#Task"/>
+        <dc:title rdf:datatype="&xsd;string"
+            >Percentage completed</dc:title>
+        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:subPropertyOf rdf:resource="#classificationStatistics"/>
+    </owl:FunctionalProperty>
+    <owl:Class rdf:ID="ConfusionMatrix">
+        <rdfs:subClassOf rdf:resource="#ClassificationStatistics"/>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="statisticsSupported">
+        <rdfs:domain rdf:resource="#Algorithm"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="numInstances">
+        <rdfs:domain rdf:resource="#Validation"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="acceptValue">
+        <rdfs:domain rdf:resource="#Nominal"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    <owl:FunctionalProperty rdf:ID="algorithm">
+        <rdf:type rdf:resource="&owl;ObjectProperty"/>
+        <rdfs:domain rdf:resource="#Model"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The algorithm, used to create the Model</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;string"
+            >http://opentox.org/api/1.2</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="#Algorithm"/>
+        <rdfs:subPropertyOf rdf:resource="#model"/>
+    </owl:FunctionalProperty>
+    <owl:ObjectProperty rdf:ID="classValueStatistics">
+        <rdfs:domain rdf:resource="#ClassificationStatistics"/>
+        <rdfs:range rdf:resource="#ClassValueStatistics"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="model">
+        <rdfs:domain rdf:resource="#Model"/>
+        <rdfs:range rdf:resource="#Dataset"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="hasInput">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class rdf:about="#Algorithm"/>
+                    <owl:Class rdf:about="#Model"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="#Dataset"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="crossvalidationAlgorithm">
+        <rdfs:domain rdf:resource="#Crossvalidation"/>
+        <rdfs:range rdf:resource="#Algorithm"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://opentox.org/opentox-rest.owl#hasHTTPStatus">
+        <rdfs:domain rdf:resource="http://opentox.org/opentox-rest.owl#RESTOperation"/>
+        <rdfs:range rdf:resource="http://opentox.org/opentox-rest.owl#HTTPStatus"/>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="ConfusionMatrixCell">
+        <rdfs:subClassOf rdf:resource="#ConfusionMatrix"/>
+    </owl:Class>
+    <owl:Class rdf:ID="Parameter">
+        <rdfs:subClassOf rdf:resource="#OpentoxResource"/>
+        <dc:title rdf:datatype="&xsd;string"></dc:title>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="falseNegativeRate">
+        <rdfs:domain rdf:resource="#ClassValueStatistics"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    <owl:Class rdf:about="http://opentox.org/opentox-rest.owl#AA">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://opentox.org/opentox-rest.owl#inputParam"/>
+                <owl:allValuesFrom rdf:resource="http://opentox.org/opentox-rest.owl#Header"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Specifies the client-side actions needed to perform authentication and/or authorization.</rdfs:comment>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="numTruePositives">
+        <rdfs:domain rdf:resource="#ClassValueStatistics"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="trueNegativeRate">
+        <rdfs:domain rdf:resource="#ClassValueStatistics"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    <owl:Class rdf:ID="Nominal">
+        <rdfs:subClassOf rdf:resource="#DataType"/>
+    </owl:Class>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="&dc;rights"/>
+    <owl:FunctionalProperty rdf:ID="numIncorrect">
+        <rdf:type rdf:resource="&owl;DatatypeProperty"/>
+        <rdfs:domain rdf:resource="#ClassificationStatistics"/>
+        <dc:title rdf:datatype="&xsd;string"
+            >Number incorrect</dc:title>
+        <rdfs:range rdf:resource="&xsd;int"/>
+        <rdfs:subPropertyOf rdf:resource="#classificationStatistics"/>
+    </owl:FunctionalProperty>
+    <owl:DatatypeProperty rdf:ID="numFolds">
+        <rdfs:domain rdf:resource="#Crossvalidation"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    <owl:ObjectProperty rdf:ID="hasValidationInfo">
+        <rdfs:domain rdf:resource="#Validation"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Links Validation with Validation Info. One validation exercise may have multiple types of validation informaton</rdfs:comment>
+        <rdfs:range rdf:resource="#ValidationInfo"/>
+        <rdfs:subPropertyOf rdf:resource="#validation"/>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="Model">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasOutput"/>
+                <owl:allValuesFrom rdf:resource="#Dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="#OpentoxResource"/>
+        <dc:creator rdf:datatype="&xsd;string"
+            >The model creator (perhaps a link to User resource)</dc:creator>
+        <dc:date rdf:datatype="&xsd;string"
+            >The date of model creation</dc:date>
+        <dc:format rdf:datatype="&xsd;string"
+            >The native format of the model content (e.g. PMML, Weka model, etc.)</dc:format>
+        <dc:identifier rdf:datatype="&xsd;string"
+            >/model/{modelid}</dc:identifier>
+        <dc:rights rdf:datatype="&xsd;string"></dc:rights>
+        <dc:title rdf:datatype="&xsd;string"></dc:title>
+        <owl:disjointWith rdf:resource="#Parameter"/>
+        <owl:versionInfo rdf:datatype="&xsd;string"
+            >TODO: Introduce  a link to User resource</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="&xsd;string"
+            >TODO: Specify allowed values for model content</owl:versionInfo>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="confusionMatrixValue">
+        <rdfs:domain rdf:resource="#ConfusionMatrixCell"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    <owl:Class rdf:ID="String">
+        <rdfs:subClassOf rdf:resource="#DataType"/>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="rSquare">
+        <rdfs:domain rdf:resource="#RegressionStatistics"/>
+        <rdfs:subPropertyOf rdf:resource="#regressionStatistics"/>
+    </owl:DatatypeProperty>
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    <owl:DatatypeProperty rdf:ID="numFalsePositives">
+        <rdfs:domain rdf:resource="#ClassValueStatistics"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    <owl:ObjectProperty rdf:ID="independentVariables">
+        <rdfs:domain rdf:resource="#Model"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >A model can have multiple independent variables, described as multiple features, specified by this relationship.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;string"
+            >http://opentox.org/api/1.2</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="#Feature"/>
+        <rdfs:subPropertyOf rdf:resource="#model"/>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="Numeric">
+        <rdfs:subClassOf rdf:resource="#DataType"/>
+    </owl:Class>
+    <owl:ObjectProperty rdf:ID="unscrambledDatasetURI">
+        <rdfs:domain rdf:resource="#YScrambling"/>
+        <dc:title rdf:datatype="&xsd;string"
+            >a link to UnscrambledDataset</dc:title>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >UnscrambledDatasetURI</rdfs:comment>
+        <rdfs:range rdf:resource="#Dataset"/>
+        <rdfs:subPropertyOf rdf:resource="#validation"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="dataEntry">
+        <rdfs:domain rdf:resource="#Dataset"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >A Dataset contains multiple DataEntries.  This property specifies the relationship between Dataset and DataEntry.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;string"
+            >http://opentox.org/api/1.2</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="#DataEntry"/>
+    </owl:ObjectProperty>
+    <owl:DatatypeProperty rdf:ID="crossValidationInfo">
+        <rdfs:domain rdf:resource="#CrossValidationInfo"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    <owl:Class rdf:ID="NominalFeature">
+        <rdfs:subClassOf rdf:resource="#Feature"/>
+        <rdfs:subClassOf rdf:resource="#Nominal"/>
+    </owl:Class>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    <owl:DatatypeProperty rdf:ID="numWithoutClass">
+        <rdfs:domain rdf:resource="#Validation"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="percentWithoutClass">
+        <rdfs:domain rdf:resource="#Validation"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    <owl:ObjectProperty rdf:ID="report">
+        <rdfs:domain rdf:resource="#Report"/>
+        <rdfs:range rdf:resource="#Validation"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://opentox.org/opentox-rest.owl#paramContentSimple">
+        <rdfs:domain rdf:resource="http://opentox.org/opentox-rest.owl#InputParameterSimple"/>
+        <dc:description rdf:datatype="&xsd;string"></dc:description>
+        <rdfs:subPropertyOf rdf:resource="http://opentox.org/opentox-rest.owl#paramContent"/>
+    </owl:ObjectProperty>
+    <owl:DatatypeProperty rdf:ID="classificationStatistics">
+        <rdfs:domain rdf:resource="#ClassificationStatistics"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    <owl:FunctionalProperty rdf:ID="percentIncorrect">
+        <rdf:type rdf:resource="&owl;DatatypeProperty"/>
+        <rdfs:domain rdf:resource="#ClassificationStatistics"/>
+        <dc:title rdf:datatype="&xsd;string"
+            >Percent Incorrect</dc:title>
+        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:subPropertyOf rdf:resource="#classificationStatistics"/>
+    </owl:FunctionalProperty>
+    <owl:Class rdf:ID="CASRN">
+        <rdfs:subClassOf rdf:resource="#Identifier"/>
+    </owl:Class>
+    <rdf:Description rdf:about="&owl;deprecated"/>
+    <owl:Class rdf:about="http://opentox.org/opentox-rest.owl#InputParameterSimple">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://opentox.org/opentox-rest.owl#paramContentSimple"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection" rdf:resource="&xsd;string"/>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://opentox.org/opentox-rest.owl#InputParameter"/>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="numUnpredicted">
+        <rdfs:domain rdf:resource="#Validation"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="units">
+        <dc:title rdf:datatype="&xsd;string">Units</dc:title>
+        <owl:versionInfo rdf:datatype="&xsd;string"
+            >TODO: make use of units ontology</owl:versionInfo>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Units for a feature value</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:Class rdf:ID="CrossValidationInfo">
+        <rdfs:subClassOf rdf:resource="#ValidationInfo"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://opentox.org/opentox-rest.owl#Header">
+        <rdfs:subClassOf rdf:resource="http://opentox.org/opentox-rest.owl#InputParameterSimple"/>
+        <dc:description rdf:datatype="&xsd;string"
+            >Input parameter provided by the user using the HTTP Header</dc:description>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >For example the Headers &apos;Authorization&apos; and &apos;Policy&apos;</rdfs:comment>
+    </owl:Class>
+    <owl:ObjectProperty rdf:ID="validationCrossvalidation">
+        <rdfs:domain rdf:resource="#CrossValidationInfo"/>
+        <rdfs:range rdf:resource="#Crossvalidation"/>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="ChemicalName">
+        <rdfs:subClassOf rdf:resource="#Identifier"/>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="falsePositiveRate">
+        <rdfs:domain rdf:resource="#ClassValueStatistics"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    <owl:ObjectProperty rdf:ID="confusionMatrixEntry">
+        <rdfs:domain rdf:resource="#ConfusionMatrix"/>
+        <rdfs:range rdf:resource="#ConfusionMatrixCell"/>
+        <rdfs:subPropertyOf rdf:resource="#confusionMatrix"/>
+    </owl:ObjectProperty>
+</rdf:RDF>
