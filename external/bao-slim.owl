@@ -616,6 +616,7 @@ Feb 4th 2014</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000209">
         <rdfs:label>has measure group</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
         <owl:inverseOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000426"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
@@ -752,6 +753,7 @@ Feb 4th 2014</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000426">
         <rdfs:label>is measure group of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -817,6 +819,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
 
     <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000555">
         <rdfs:label>is assay format of</rdfs:label>
+        <rdfs:range rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
         <owl:inverseOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000205"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
@@ -1841,12 +1844,12 @@ Other example for a counter assays a FRET assay when the primary assay used abso
         <rdfs:label xml:lang="en">occurs in</rdfs:label>
         <owl:inverseOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0090010"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0090007"/>
             <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0090002"/>
+            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0090007"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0090002"/>
             <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0090007"/>
+            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0090002"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
@@ -2549,6 +2552,12 @@ BSL4:</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0000006 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000006">
@@ -2559,6 +2568,22 @@ Compound cytotoxicity is an important parameter to measure when developing poten
 
 Percent cytotoxicity = 100-percent viability</obo:IAO_0000115>
         <obo:IAO_0000118>% cytotoxicity</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000015 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000015">
+        <rdfs:label>bioassay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A set of instructions, methodology, operations, required reagents, instruments to carrie out experiments for the purpose of testing the effect of a perturbing agent in a biological model system, measuring one or multiple effect(s) of the agent facilitated by an assay design method translate the perturbation into a detectable signal to arrive at one or multiple endpoint(s) that quantify or qualify the extent of the perturbation.  Bioassay is described by multiple bioassay components: assay format, biology (biological participants in various role and processes), design method, physical detection method / technology, screened entity, and endpoint. Bioassay includes one or multiple measure groups to describe panel, profiling, multiparametric (or multiplexed) assays (assays that measure more than one effect of the perturbagen on the system that is screened).</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2595,6 +2620,21 @@ The dissociation constant has molar units (M), which corresponds to the concentr
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0000042 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000042">
+        <rdfs:label>Cue Signal Response assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000193"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0000082 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000082">
@@ -2627,12 +2667,32 @@ The dissociation constant has molar units (M), which corresponds to the concentr
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0000110 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000110">
+        <rdfs:label>protein-small molecule interaction assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
+        <obo:IAO_0000115>It is an interaction between a protein (e.g., receptor, transcription factor) and small molecule (e.g., hormone, organic compound with a low molecular weight (&lt;800 Da)).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0000143 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000143">
         <rdfs:label>percent control</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000082"/>
         <obo:IAO_0000115>Percent control is the response relative to a reference state, typically to a high control. For example it can describe (remaining) activity of a kinase (or e.g. kinase bound to substrate).  Percent control could also quantify an inhibitory action depending on control and assay method.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000162 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000162">
+        <rdfs:label>metal ion redistribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002999"/>
+        <obo:IAO_0000115>Metal ions such as copper, iron, magnesium and zinc are transported between different cellular compartments to bring about specific functions. This is regulated by their influx and efflux across membranes, which could occur either by passive diffusion or active transport.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2967,6 +3027,37 @@ Percent viability = 100-percent cytotoxicity</obo:IAO_0000115>
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0000378 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000378">
+        <rdfs:label>protein redistribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002999"/>
+        <rdfs:comment>Add a relation between this class and immunoassay using a new object property &apos;is detected by&apos;.</rdfs:comment>
+        <obo:IAO_0000115>Cellular signaling can bring about the movement of proteins in cells. Upon receiving a cue, proteins undergo posttranslational modifications, e.g. phosphorylation, dephosphorylation, etc, which results in their activation and migration to different compartments, often to the nucleus, where they regulate gene expression.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000379 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000379">
+        <rdfs:label>second messenger redistribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002999"/>
+        <obo:IAO_0000115>Second messengers relay signals from the receptors to the cell interior as part of a signaling event. In the process, they amplify the signal. Examples include cAMP, cGMP, calcium, nitric oxide, diacylglycerol, etc, which play important roles in different physiological processes.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000394 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000394">
+        <rdfs:label>protein-nucleotide interaction assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
+        <obo:IAO_0000115>Protein-nucleotide interaction</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0000430 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000430">
@@ -3110,12 +3201,88 @@ In nucleic acid thermodynamics, it is the temperature at which 50% of the DNA st
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0000590 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000590">
+        <rdfs:label>DNA-RNA interaction assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
+        <obo:IAO_0000118>deoxyribonucleic acid-ribonucleic acid</obo:IAO_0000118>
+        <obo:IAO_0000115>DNA-RNA interaction</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000591 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000591">
+        <rdfs:label>protein-DNA interaction assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
+        <obo:IAO_0000115>Protein-DNA interaction</obo:IAO_0000115>
+        <obo:IAO_0000118>protein-deoxyribonucleic acid</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000593 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000593">
+        <rdfs:label>protein-RNA interaction assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
+        <obo:IAO_0000118>protein-ribonucleic acid</obo:IAO_0000118>
+        <obo:IAO_0000115>Protein-RNA interaction</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0000599 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000599">
         <rdfs:label>EC30</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
         <obo:IAO_0000115>The effective concentration of an agonist, which produces 30% of the maximum possible response for that agonist.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000649 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000649">
+        <rdfs:label>calcium redistribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000379"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000819"/>
+        <obo:IAO_0000115>Calcium functions as second messenger in cell signaling.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000650 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000650">
+        <rdfs:label>cAMP redistribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000379"/>
+        <obo:IAO_0000118>cAMP</obo:IAO_0000118>
+        <obo:IAO_0000115>Cyclic AMP (cAMP) functions as second messenger in cell signaling.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000651 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000651">
+        <rdfs:label>cGMP redistribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000379"/>
+        <obo:IAO_0000115>Cyclic GMP (cGMP) functions as second messenger in cell signaling.</obo:IAO_0000115>
+        <obo:IAO_0000118>cGMP</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000653 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000653">
+        <rdfs:label>dye redistribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002999"/>
+        <obo:IAO_0000115>Dye redistribution is used to study flux of molecules across membranes, e.g. calcein AM, ethidium homodimer-1, etc.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3293,6 +3460,16 @@ In nucleic acid thermodynamics, it is the temperature at which 50% of the DNA st
         <rdfs:label>maximal activation</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000656"/>
         <obo:IAO_0000115>The maximum percent activation of an agonist</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000819 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000819">
+        <rdfs:label>ion redistribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002999"/>
+        <obo:IAO_0000115>Radiolabeled flux assays to study ion channel activity by chemically initiating the opening of channels in the presence of a fixed amount of radiolabeled cation or anion, and a potential ion channel modulator compound.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3500,6 +3677,15 @@ In nucleic acid thermodynamics, it is the temperature at which 50% of the DNA st
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0002005 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002005">
+        <rdfs:label>kinase activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002795"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0002006 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002006">
@@ -3520,6 +3706,21 @@ In nucleic acid thermodynamics, it is the temperature at which 50% of the DNA st
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0002041 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002041">
+        <rdfs:label>cell cycle assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <rdfs:comment>endpoints: 
+percent proliferation
+percent interphase
+percent mitosis
+percent G2-M arrested
+percent non-arrested</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0002042 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002042">
@@ -3527,6 +3728,22 @@ In nucleic acid thermodynamics, it is the temperature at which 50% of the DNA st
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0001103"/>
         <rdfs:comment>&apos;has marker&apos; some (not (&apos;DEVD-NucView 488&apos; or &apos;LysoTracker Red&apos; or &apos;Hoechst 33342&apos;)) </rdfs:comment>
         <obo:IAO_0000115>This represents the percentage of cells in a cell population that are preparing for cell division and that exist in either G1, S or G2 phases of the cell cycle. This is calculated by subtracting from the total cell number, the number of cells in the M phase, apoptotic and dead cells in an assay plate.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002043 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002043">
+        <rdfs:label>apoptosis assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002993"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0002006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118>programmed cell death</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -3568,6 +3785,15 @@ In nucleic acid thermodynamics, it is the temperature at which 50% of the DNA st
         <rdfs:label>percent non-arrested cells</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0001103"/>
         <obo:IAO_0000115>This represents the percentage of cells in a cell population that have completed the mitotic cell cycle, and that have stained positive for both S phase (EdU) and M phase (MDM2) markers. In other words, these cells were not arrested in any of the cell cycle check-points after treatment with the respective perturbagen in the assay.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002100 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002100">
+        <rdfs:label>cell growth assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
     </owl:Class>
     
 
@@ -3896,6 +4122,169 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0002167 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002167">
+        <rdfs:label>genotoxicity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002168 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002168">
+        <rdfs:label>oxidative stress assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002181 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002181">
+        <rdfs:label>oxidative phosphorylation assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002182 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002182">
+        <rdfs:label>pharmacokinetic assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000118>ADME assay</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002183 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002183">
+        <rdfs:label>pharmacodynamic assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002184 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002184">
+        <rdfs:label>QT interval assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002188 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002188">
+        <rdfs:label>drug interaction assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002189 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002189">
+        <rdfs:label>toxicity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002190 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002190">
+        <rdfs:label>mitochondrial membrane potential assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002996"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002194 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002194">
+        <rdfs:label>plasma membrane potential assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002996"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002195 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002195">
+        <rdfs:label>nuclear membrane potential assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002996"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002196 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002196">
+        <rdfs:label>localization assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002530 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002530">
+        <rdfs:label>bioavailability assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002531 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002531">
+        <rdfs:label>non-specific protein binding assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002532 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002532">
+        <rdfs:label>tissue distribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002533 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002533">
+        <rdfs:label>safety pharmacology assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002534 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002534">
+        <rdfs:label>drug abuse assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002535 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002535">
+        <rdfs:label>metastasis assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0002556 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002556">
@@ -4015,6 +4404,54 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0002584 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002584">
+        <rdfs:label>mitotic cell cycle state assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002786"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0002006"/>
+                            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0002040"/>
+                            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0002042"/>
+                            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0002044"/>
+                            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0002081"/>
+                            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0002807"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>&apos;involves biological process&apos; some &apos;mitotic cell cycle arrest&apos; 
+
+
+&apos;involves biological process&apos; some &apos;mitotic cell cycle arrest&apos; and &apos;apoptotic process&apos;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002585 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002585">
+        <rdfs:label>meiotic cell cycle state assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002786"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002661 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002661">
+        <rdfs:label>luciferase reporter gene assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003006"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0002667 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002667">
@@ -4082,6 +4519,24 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0002735 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002735">
+        <rdfs:label>luciferase enzyme activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002792"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002736 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002736">
+        <rdfs:label>cytochrome P450 enzyme activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002792"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0002752 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002752">
@@ -4108,6 +4563,51 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002758"/>
         <obo:IAO_0000115>Clearance is the volume of plasma from which the drug is completely removed per unit time, or, alternatively, the volume of plasma that would have to lose all of the drug that it contains within a unit of time to account for an observed rate of drug elimination.</obo:IAO_0000115>
         <obo:IAO_0000118>Drug clearance</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002761 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002761">
+        <rdfs:label xml:lang="en">chaperone activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002762 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002762">
+        <rdfs:label xml:lang="en">phosphatase activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002790"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002763 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002763">
+        <rdfs:label xml:lang="en">platelet activation assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002764 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002764">
+        <rdfs:label xml:lang="en">protease activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002790"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002765 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002765">
+        <rdfs:label xml:lang="en">organism behavior assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
     </owl:Class>
     
 
@@ -4182,6 +4682,115 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0002776 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002776">
+        <rdfs:label xml:lang="en">radioligand binding assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002777 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002777">
+        <rdfs:label xml:lang="en">beta galactosidase enzyme activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002806"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002778 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002778">
+        <rdfs:label xml:lang="en">cell permeability assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002779 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002779">
+        <rdfs:label xml:lang="en">protein unfolding assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002780 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002780">
+        <rdfs:label xml:lang="en">IP1 redistribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000379"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002785 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002785">
+        <rdfs:label xml:lang="en">gene expression assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>This assay quantifies the expression level of the entire gene pool in a cell or a subpopulation (e.g. tissue-specific gene expression, kinases) using either microarray, bead method, RNASeq, or reporter gene method.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002786 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002786">
+        <rdfs:label xml:lang="en">cell cycle state assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002041"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002790 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002790">
+        <rdfs:label xml:lang="en">hydrolase activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002994"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002792 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002792">
+        <rdfs:label xml:lang="en">oxidoreductase activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002994"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002793 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002793">
+        <rdfs:label xml:lang="en">lyase activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002994"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002794 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002794">
+        <rdfs:label xml:lang="en">isomerase activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002994"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002795 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002795">
+        <rdfs:label xml:lang="en">transferase activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002994"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0002801 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002801">
@@ -4196,6 +4805,60 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002802">
         <rdfs:label xml:lang="en">fold decrease</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000193"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002803 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002803">
+        <rdfs:label xml:lang="en">neurite outgrowth assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002991"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+                        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0080013"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+                        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0080014"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+                        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0080015"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002804 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002804">
+        <rdfs:label xml:lang="en">protein stability assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002805 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002805">
+        <rdfs:label xml:lang="en">cell proliferation assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002806 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002806">
+        <rdfs:label xml:lang="en">generic hydrolase enzyme activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002790"/>
     </owl:Class>
     
 
@@ -4344,6 +5007,27 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
         <rdfs:label xml:lang="en">ECMax_percent inhibition</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002883"/>
         <obo:IAO_0000115>The compound concentration whereupon perceived activity (percent inhibition) reaches the maximum value observed (with a positive control).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002908 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002908">
+        <rdfs:label xml:lang="en">KiNativ assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000201"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -4609,6 +5293,301 @@ http://www.invitrogen.com/site/us/en/home/Products-and-Services/Applications/Cel
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0002989 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002989">
+        <rdfs:label>binding assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>It is performed to quantify the interactions between two molecules, e.g. small molecule-protein, protein-protein, protein-DNA, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002990 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002990">
+        <rdfs:label>protein-protein interaction assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
+        <obo:IAO_0000115>It is performed to quantify the interactions between two protein molecules, using methods such as protein fragment complementation assay, immunoassay, radioligand binding, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002991 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002991">
+        <rdfs:label>cell morphology assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>It reports the size and shape of cells and organelles (phenotype). These are detected by microscopy.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002992 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002992">
+        <rdfs:label>cell motility assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>It is performed to measure the movement of cells and organelles (phenotype).  These are detected by microscopy.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002993 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002993">
+        <rdfs:label>cytotoxicity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002994 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002994">
+        <rdfs:label>enzyme activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>It is used to measure the effect of a perturbagen on the enzyme activity, which can be measured either directly or coupled to a secondary signal. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002995 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002995">
+        <rdfs:label>transcriptional response profiling assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002785"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000193"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>This assay quantifies the expression level of the entire gene pool in a cell or a subpopulation (e.g. tissue-specific gene expression, kinases) using a bead-based method.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002996 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002996">
+        <rdfs:label>membrane potential assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>This reports the membrane potential of a cell by using electrophysiological techniques or by staining with dyes whose binding is dependent on the membrane potential.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002997 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002997">
+        <rdfs:label>ion channel assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002996"/>
+        <obo:IAO_0000115>Ion channel assays are performed in electrically active cells: neurons, muscle, and endocrine cells.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002998 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002998">
+        <rdfs:label>protein folding assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>This assay quantifies the protein folding/conformation using technologies, such as nuclear magnetic resonance, circular dichroism are used to determine the protein folding/conformation.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002999 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002999">
+        <rdfs:label>redistribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>It is performed to measure the redistribution of organelles and molecules within the cell (proteins, second messengers, metal ions, dyes, etc. ). This is visualized by microscopy. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003000 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003000">
+        <rdfs:label>rna splicing assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>This assay quantifies the amount of a mature transcript that is produced after splicing. Splicing is a modification of an mRNA intermediate after transcription, in which introns are removed and exons are joined. It can be detected by several methods, namely, the use of a reporter gene, RNA-Seq, specialiez microarrays, etc. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003001 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003001">
+        <rdfs:label>sensitizer assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>This assay allows the identification of new drugs that sensitize or desensitize the sensitivity of a cell to its signaling molecule (e.g calcium, light). The perturbagen has the role &apos;sensitizer&apos; in this assay. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003002 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003002">
+        <rdfs:label>signal transduction assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>This assay measures one of the series of events that are downstream to the receipt of a chemical signal at the cell’s surface, namely, formation of cyclic AMP, activation of kinase/ transcription factor, cytokine secretion, etc., which will result in a specific cellular activity, such as cell division, cell elongation, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003003 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003003">
+        <rdfs:label>cytokine secretion assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000042"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
+        <obo:IAO_0000115>It measures the types and amounts of cytokines that are released as the consequence of a signaling event. Cytokines can be quantitated using ELISA-based kits, PCR array, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003004 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003004">
+        <rdfs:label>posttranslation modification assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
+        <obo:IAO_0000115>This assay quantifies the modification that a protein can undergo after it is synthesized by translation. E.g. phosphorylation, acetylation, etc. The modification status is detected by one of several methods such as using modification specific antibodies followed by western blotting, imaging; mass spectrometry, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003005 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003005">
+        <rdfs:label>phosphorylation assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000042"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003004"/>
+        <obo:IAO_0000115>This assay quantifies the phosphorylation levels of a protein. The phosphorylation status is detected by one of several methods: using phosphorylation specific antibodies followed by western blotting or imaging, mass spectrometry, etc.</obo:IAO_0000115>
+        <rdfs:comment>detect some (protein phosphorilation and (&apos;catalyzed by&apos; some kinase))</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003006 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003006">
+        <rdfs:label>reporter gene assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002785"/>
+        <obo:IAO_0000115>Reporter gene assay measures the gene expression from a reporter gene. The reporter gene is inserted under the control of a foreign promoter or an artificial regulatory element of interest. Reporters include luciferase, beta galactosidase, beta lactamase, chloramphenicol acetyl transferase, or a fluorescent protein.</obo:IAO_0000115>
+        <rdfs:comment>reports some 
+(&apos;gene expression&apos; and (&apos;has part&apos; some &apos;reporter gene&apos;))
+needs clean up to say has part gene with role of reporter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003007 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003007">
+        <rdfs:label>second messenger assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
+        <obo:IAO_0000115>This assay quantifies the second messengers (calcium, cAMP, cGMP) produced in the cell as a result of a signaling event.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003008 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003008">
+        <rdfs:label>transporter assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>This assay quantifies the activity of a transporter that carries proteins, cofactors, ions, drugs, etc. across the cell membranes. Fluorescence-conjugated dyes or radiolabeled ligands are used to quantitate the various molecular entities that are being transported.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003009 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003009">
+        <rdfs:label>cell viability assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000202"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>This assay type measures the cellular state of living or dying by measuring an indicator of life or death. Cell life indicators include ATP content, cell number, dehydrogenase activity, DNA content, esterase activity, mitochondrial membrane potential, membrane integrity, and protease activity. Cell death indicators include caspase activity, chromatin condensation, and phospholipid redistribution.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003010 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003010">
+        <rdfs:label>protein-turnover assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>This assay quantifies the protein turnover, which is a natural phenomenon in healthy cells, but becomes aberrant in diseased cells. The protein that is needed to be degraded first undergoes ubiquitinated. Ubiquitinated proteins are degraded in the proteasome complex. The protein degradation is quantitated by using reporters, such as green fluorescent protein as proteasome substrates.  </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003011 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003011">
+        <rdfs:label>KINOMEScan assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000201"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003012 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003012">
+        <rdfs:label xml:lang="en">fluorescent protein reporter gene assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003013 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003013">
+        <rdfs:label xml:lang="en">beta galactosidase reporter gene assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003014 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003014">
+        <rdfs:label xml:lang="en">beta lactamase reporter gene assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003015 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003015">
+        <rdfs:label xml:lang="en">chloramphenicol acetyltransferase reporter gene assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003006"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0003035 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003035">
@@ -4762,6 +5741,68 @@ http://www.invitrogen.com/site/us/en/home/Products-and-Services/Applications/Cel
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003100">
         <rdfs:label xml:lang="en">LEADseeker Imaging system</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0010001 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010001">
+        <rdfs:label xml:lang="en">cell viability ATP quantitation assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003009"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0010002 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010002">
+        <rdfs:label xml:lang="en">2 color apoptosis assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002043"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0010003 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010003">
+        <rdfs:label xml:lang="en">3 color apoptosis assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002043"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0010004 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010004">
+        <rdfs:label xml:lang="en">mitosis/apoptosis assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002786"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0002006"/>
+                            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0002040"/>
+                            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0002042"/>
+                            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0002044"/>
+                            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0002081"/>
+                            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0002807"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0010005 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010005">
+        <rdfs:label xml:lang="en">single cell protein secretion microfluidic assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
     </owl:Class>
     
 
@@ -15972,6 +17013,25 @@ http://www.bilatec.com/weiterepdf/KinetcScan%20HCS%20Reader.pdf</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0010753">
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0000649"/>
+            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0000650"/>
+            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0000651"/>
+        </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
