@@ -1,0 +1,362 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://purl.enanomapper.org/onto/internal/endpoints.owl#"
+     xml:base="http://purl.enanomapper.org/onto/internal/endpoints.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.enanomapper.org/onto/internal/endpoints.owl">
+        <dc:contributor>Egon Willighagen</dc:contributor>
+        <dc:contributor>Nina Jeliazkova</dc:contributor>
+        <rdfs:comment>These toxicological endpoints correspond to those listed in the OECD Harmonized Templates and associated guidelines for determining the toxicological effects of substances. </rdfs:comment>
+        <rdfs:comment>This file is part of the eNanoMapper ontology project (http://www.enanomapper.net/)</rdfs:comment>
+        <dc:contributor>Janna Hastings</dc:contributor>
+        <owl:imports rdf:resource="http://purl.enanomapper.org/onto/external/ontology-metadata-slim.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1338 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1338"/>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000001 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000001">
+        <rdfs:label xml:lang="en">environmental toxicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1338"/>
+        <obo:IAO_0000115>Toxicity to some part or aspect of the environment.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000002 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000002">
+        <rdfs:label xml:lang="en">toxicity to birds</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000001"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing birds</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000003 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000003">
+        <rdfs:label xml:lang="en">toxicity to earthworms</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000001"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing earthworms</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000004 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000004">
+        <rdfs:label xml:lang="en">toxicity to fish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000007"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing fish</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000005 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000005">
+        <rdfs:label xml:lang="en">toxicity to aquatic algae and cyanobacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000007"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing aquatic algae and cyanobacteria</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000006 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000006">
+        <rdfs:label xml:lang="en">toxicity to aquatic invertebrates</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000007"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing aquatic invertebrates</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000007 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000007">
+        <rdfs:label xml:lang="en">aquatic environmental toxicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000001"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing organisms in the aquatic environment</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000008 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000008">
+        <rdfs:label xml:lang="en">toxicity to soil microorganisms</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.enanomapper.org/onto/ENM_0000012"/>
+                    <rdf:Description rdf:about="http://purl.enanomapper.org/onto/ENM_0000015"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000012"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing soil microorganisms</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000009 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000009">
+        <rdfs:label xml:lang="en">sediment toxicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000001"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing organisms that exist in sediment</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000010 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000010">
+        <rdfs:label xml:lang="en">short-term toxicity to fish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000004"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing fish rapidly</obo:IAO_0000115>
+        <obo:IAO_0000118>acute toxicity to fish</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000011 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000011">
+        <rdfs:label xml:lang="en">long-term toxicity to fish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000004"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing fish over a longer time period</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000012 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000012">
+        <rdfs:label xml:lang="en">soil toxicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000001"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing organisms that exist in sediment</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000013 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000013">
+        <rdfs:label xml:lang="en">toxicity to soil macroorganisms</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000012"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing macroorganisms that exist in soil</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000014 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000014">
+        <rdfs:label xml:lang="en">toxicity to terrestrial organisms</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000001"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing terrestrial organisms</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000015 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000015">
+        <rdfs:label xml:lang="en">toxicity to microorganisms</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000001"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing microorganisms</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000016 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000016">
+        <rdfs:label xml:lang="en">toxicity to terrestrial arthropods</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000014"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing terrestrial arthropods</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000017 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000017">
+        <rdfs:label xml:lang="en">toxicity to terrestrial plants</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000014"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing terrestrial plants</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000019 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000019">
+        <rdfs:label xml:lang="en">oral toxicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1338"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing organisms when ingested via the mouth</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000020 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000020">
+        <rdfs:label xml:lang="en">acute oral toxicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000019"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing organisms quickly when ingested via the mouth</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000021 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000021">
+        <rdfs:label xml:lang="en">repeated dose oral toxicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000019"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing organisms when ingested via the mouth over several repeated doses</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000022 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000022">
+        <rdfs:label xml:lang="en">inhalation toxicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1338"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing organisms when inhaled</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000023 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000023">
+        <rdfs:label xml:lang="en">acute inhalation toxicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000022"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing organisms quickly when inhaled</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000024 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000024">
+        <rdfs:label xml:lang="en">repeated dose inhalation toxicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000022"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing organisms when inhaled multiple times</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000025 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000025">
+        <rdfs:label xml:lang="en">dermal toxicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1338"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing organisms when exposed to the skin</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000026 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000026">
+        <rdfs:label xml:lang="en">acute dermal toxicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000025"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing organisms quickly when exposed to the skin</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000027 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000027">
+        <rdfs:label xml:lang="en">repeated dose dermal toxicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000025"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing harm to or killing organisms when exposed to the skin multiple times</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000028 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000028">
+        <rdfs:label xml:lang="en">genetic toxicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1338"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of damaging the genetic information within the cells of an organism, causing mutations which may lead to cancer.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000029 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000029">
+        <rdfs:label xml:lang="en">carcinogenicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1338"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is directly involved in causing cancer.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000030 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000030">
+        <rdfs:label xml:lang="en">reproductive toxicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1338"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of interfering with normal reproduction, including adverse effects on sexuality, fertility, and the developing offspring.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000031 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000031">
+        <rdfs:label xml:lang="en">teratogenicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000030"/>
+        <obo:IAO_0000115>A toxicity disposition that inheres in a substance that is capable of causing adverse effects on a developing embryo or foetus.</obo:IAO_0000115>
+        <obo:IAO_0000118>pre-natal developmental toxicity</obo:IAO_0000118>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
