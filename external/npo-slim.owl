@@ -1230,37 +1230,6 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
     
 
 
-    <!-- http://purl.bioontology.org/ontology/npo#NPO_1195 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1195">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IC50</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1338"/>
-        <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;A measure of toxicity which is the concentration of a drug or inhibitor that is required to inhibit a biological process or a participant&apos;s activity in that process by half.  The realization of this realiable entity is the 50% inhibition of a biological process or the activity (molecular function) of a biological occurring chemical entity (e.g., gene, gene product)&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100430&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
-        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;IC50&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
-        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IC50</npo:preferred_Name>
-        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1195</npo:code>
-        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">half maximal inhibitory concentration</npo:synonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.bioontology.org/ontology/npo#NPO_1196 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1196">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LC-50</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1338"/>
-        <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;A measure of toxicity which is the concentration of a chemical or biologic preparation that is likely to cause death in 50% of animals or cells being tested.  The realization of this realizable entity is the death of 50% of animals or cells.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100430&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
-        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;LC-50&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
-        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LC-50</npo:preferred_Name>
-        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LD-50</npo:synonym>
-        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C16788</npo:dBXrefID>
-        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1196</npo:code>
-        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lethal concentration - 50%</npo:synonym>
-        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lethal dose - 50%</npo:synonym>
-    </owl:Class>
-    
-
-
     <!-- http://purl.bioontology.org/ontology/npo#NPO_122 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_122">
@@ -1507,6 +1476,12 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1487"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_821"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_component_part"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -1522,12 +1497,6 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_868"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_821"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A small representative portion of a nanoparticle formulation.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -1906,20 +1875,15 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1494"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_component_part"/>
-                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_component_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_conjugated_component_part"/>
-                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_encapsulated_component_part"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
+                            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1496"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1937,27 +1901,32 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1830"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_identification_type"/>
                 <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_707"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_encapsulated_component_part"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
-                            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1496"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_component_part"/>
+                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_conjugated_component_part"/>
+                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1830"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_component_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A chemical component which is identified as a nanoparticle based on its structure, chemical composition or function.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -2731,14 +2700,14 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_agent"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1493"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_participant"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1496"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_participant"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1496"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_agent"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1493"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A process in which a nanoparticle is functionalized by linking it to a molecular entity that adds or modifies the properties or functions of the nanoparticle.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -2783,14 +2752,14 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1945"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_agent"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_827"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_output_participant"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1885"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_output_participant"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1885"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_agent"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_827"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A process which is performed to modify the surface of a nanoparticle using surface modifying agents.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110825&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -3399,14 +3368,14 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1793"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#value_specified_at"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1814"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#measure_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1302"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#measure_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1302"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#value_specified_at"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1814"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;A quantitative value of zeta potential which is measured or calculated.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100623&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -3902,14 +3871,14 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1616"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_output_participant"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1881"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_agent"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1884"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_agent"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1884"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_output_participant"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1881"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-source&gt;NCI&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A functionalization of nanoparticle which is performed on the surface of the nanoparticle.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;101026&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -4084,12 +4053,6 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1914"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
                 <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_274"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4097,6 +4060,12 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
                 <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1830"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1914"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A material entity which is a minute portion of matter.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110830&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -5836,6 +5805,12 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_274"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
                 <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1830"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5843,12 +5818,6 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
                 <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1694"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_274"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A primary particle which has an average size in the nanoscale range; which has an identifiable and definite chemical composition, property or function that uniquely define the nanoparticle&apos;s type as known; and, which may or may not exhibit a size-intensive property.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110825&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -6022,14 +5991,14 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_180"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_621"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_224"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#part_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_224"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_621"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A molecular structure which is a branch of a dendrimer, formed by the dendrimer&apos;s repeating units.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -6259,8 +6228,14 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_199"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_195"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_821"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_888"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -6278,14 +6253,8 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_888"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_821"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_195"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A nanomaterial which is a particulate chemical substance that is formulated systematically using nanotechnology, and it contains nanoparticles and active chemical components/ingredients.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110825&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
