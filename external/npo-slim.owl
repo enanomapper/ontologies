@@ -3219,6 +3219,17 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_180">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fiat dendrimer part</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1597"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#part_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_735"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1597"/>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A fiat part of a dendrimer.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
         <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;fiat dendrimer part&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
@@ -3871,14 +3882,14 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1616"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_agent"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1884"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_output_participant"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1881"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_output_participant"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1881"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_agent"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1884"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-source&gt;NCI&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A functionalization of nanoparticle which is performed on the surface of the nanoparticle.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;101026&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -4053,6 +4064,12 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1914"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
                 <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_274"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4060,12 +4077,6 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
                 <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1830"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1914"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A material entity which is a minute portion of matter.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110830&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -4661,6 +4672,12 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dendrimer generation layer</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1597"/>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_180"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_735"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A molecular structure  which describes an interior layer, formed around the dendrimer core by the addition of dendrimer branches.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
         <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;dendrimer generation layer&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
         <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_224</npo:code>
@@ -4856,6 +4873,12 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dendrimer core</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1617"/>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_180"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_735"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;The core part of a dendrimer, which is formed by the core initiator group [npo:NPO_803].&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
         <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;dendrimer core&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
         <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_279</npo:code>
@@ -5422,6 +5445,25 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_551">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gold quantum dot-entrapped poly(amidoamine) dendrimer nanoparticle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/npo#NPO_707"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_component_part"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_965"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_entrapped_component_part"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_186"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_471"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1375"/>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A nanoparticle which is basically composed of poly(amidoamine) dendrimer in which gold quantum dots are entrapped.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
         <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;gold quantum dot-entrapped poly(amidoamine) dendrimer nanoparticle&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
@@ -5811,13 +5853,13 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1830"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1694"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1694"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1830"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A primary particle which has an average size in the nanoscale range; which has an identifiable and definite chemical composition, property or function that uniquely define the nanoparticle&apos;s type as known; and, which may or may not exhibit a size-intensive property.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110825&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -5900,6 +5942,34 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_732</npo:code>
         <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amphipathic</npo:synonym>
         <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amphiphilic</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_735 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_735">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dendrimer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_199"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_180"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_621"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A polymeric molecule which has a highly-branched, three-dimensional tree-like architecture, synthesized from monomers where shells of branched molecules are added in discrete steps to a central core.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;dendrimer&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D050091</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_735</npo:code>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[MeSH definition]: Tree-like, highly branched, polymeric compounds. They grow three-dimensionally by the addition of shells of branched molecules to a central core. The overall globular shape and presence of cavities gives potential as drug carriers and CONTRAST AGENTS.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[NCI_THESAURUS definition]:  A polymeric molecule which has a highly-branched, three-dimensional architecture. Dendrimers are synthesized from monomers and new branches are added in discrete steps to form a tree-like architecture. A high level of synthetic control is achieved through step-wise reactions and purification at each step to regulate the size, architecture, functionality and monodispersity of the molecules. These polymers have desirable pharmacokinetic properties and a polyvalent array of surface groups that make them potential drug delivery vesicles.</rdfs:comment>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dendrimer</npo:preferred_Name>
     </owl:Class>
     
 
@@ -6107,13 +6177,13 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#part_of"/>
-                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_619"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_619"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#part_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_619"/>
+                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_619"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;The porous shell of a nanocage.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -6234,12 +6304,6 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_888"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_component_part"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -6255,6 +6319,12 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
                 <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_195"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_888"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A nanomaterial which is a particulate chemical substance that is formulated systematically using nanotechnology, and it contains nanoparticles and active chemical components/ingredients.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110825&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -6413,6 +6483,20 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_963</npo:code>
         <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pH-sensitive linker</npo:preferred_Name>
         <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pH-sensitive spacer</npo:synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_965 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_965">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poly(amidoamine) dendrimer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_735"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A dendrimer which contains amide molecules as branches;  tertiary amines as branching points and primary amine groups as the terminal or end groups.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;poly(amidoamine) dendrimer&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_965</npo:code>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PAMAM dendrimer</npo:synonym>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poly(amidoamine) dendrimer</npo:preferred_Name>
     </owl:Class>
     
 
