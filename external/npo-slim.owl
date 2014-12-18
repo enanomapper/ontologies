@@ -860,6 +860,7 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://purl.bioontology.org/ontology/npo#technique_used_for">
         <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation which indicates the process for which the technique is used.</npo:definition>
         <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">technique used for</npo:preferred_Name>
+        <rdfs:domain rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1405"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.bioontology.org/ontology/npo#has_application"/>
     </owl:ObjectProperty>
     
@@ -901,6 +902,7 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://purl.bioontology.org/ontology/npo#uses_technique">
         <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation which indicates the technique used for accomplishing a purpose.</npo:definition>
         <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uses technique</npo:preferred_Name>
+        <rdfs:range rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1405"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.bioontology.org/ontology/npo#has_relation_to"/>
     </owl:ObjectProperty>
     
@@ -1476,6 +1478,12 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1487"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_868"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
                 <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_821"/>
             </owl:Restriction>
@@ -1493,16 +1501,322 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#part_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_868"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A small representative portion of a nanoparticle formulation.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
         <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;nanoparticle sample&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
         <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1404</npo:code>
         <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nanoparticle sample</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1405 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1405">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">technique</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A systematic procedure or a practical method which is used for accomplishing a task.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;technique&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1405</npo:code>
+        <npo:DesignNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[DGT, June 10, 2010]: Description for a specific type of technique could contain the following types of information: 1) principle used in the technique (e.g. NMR for NMR spectroscopy), 2) description of the principle if the term that describes the principle is not represented in the ontology, 3) tool used in a technique (e.g., scanning electron microscope in scanning electron miroscopy), 4) applications of the technique, and 5) information on how to use the technique for each type of application.</npo:DesignNote>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">technique</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1415 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1415">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1405"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#uses_instrument"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1437"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A technique which uses a microscope to study a material object or a process that cannot be seen by the naked eye.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;microscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1415</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microscopy</npo:preferred_Name>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microscopy technique</npo:synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1416 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1416">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">separation technique</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1405"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A technique which is used to separate substances from mixtures.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;separation technique&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1416</npo:code>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">separation method</npo:synonym>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">separation technique</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1417 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1417">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">centrifugation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1416"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A separation technique which uses a centrifuge to generate a centrifugal force for separating fluids of different densities from mixtures or for separating liquids from solids.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;centrifugation&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1417</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">centrifugation</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1418 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1418">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electrophoresis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1416"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A separation technique used for separating charged particles in a fluid or gel under the action of an electric field. The electric field causes the movement of charged particles.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;electrophoresis&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1418</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electrophoresis</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1419 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1419">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gel electrophoresis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1418"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;Electrophoresis method used for separating molecules of proteins and nucleic acids from a sample mixture of similar molecules through a gelatinous matrix. Subject to an electric field, each molecule in the sample mixture migrates through the matrix at a different rate, depending mainly on electrical charge and size, resulting in spatial separation within the matrix of each molecular species in the sample mixture. Agarose and acrylamide in a cylindrical tube or slab gel are commonly used media for electrophoresis of proteins and nucleic acids.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;gel electrophoresis&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C18091</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1419</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gel electrophoresis</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1420 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1420">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agarose gel electrophoresis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1419"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;Gel electrophoresis in which highly purified agar is used as the diffusion medium.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;agarose gel electrophoresis&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C16537</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1420</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agarose gel electrophoresis</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1421 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1421">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyacrylamide gel electrophoresis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1419"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;Gel electrophoresis technique in which a polyacrylamide gel is used as the diffusion medium.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;polyacrylamide gel electrophoresis&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C16539</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1421</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyacrylamide gel electrophoresis</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1424 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1424">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">western blot analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1405"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1419"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;A technique which is used for the detection or identification of proteins or peptides that have been separated by gel electrophoresis and transferred onto nitrocellulose or other type of paper or nylon membrane. The proteins are then detected by reaction with enzymatically labeled or radiolabeled antibody probes.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100614&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;western blot analysis&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C16357</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1424</npo:code>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">western blot</npo:synonym>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">western blot analysis</npo:preferred_Name>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">western blotting</npo:synonym>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">western blotting technique</npo:synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1427 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1427">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDS polyacrylamide gel electrophoresis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1421"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A polyacrylamide gel electrophoresis technique for separating proteins in a sample which is prepared with sodium dodecyl sulfate (SDS) as a buffer that maintains the proteins in their denatured states.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;SDS polyacrylamide gel electrophoresis&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1427</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDS polyacrylamide gel electrophoresis</npo:preferred_Name>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDS-PAGE</npo:synonym>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sodium dodecyl sulfate - polyacrylamide gel electrophoresis</npo:synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1428 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1428">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1415"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#uses_instrument"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1438"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A microscopy technique based on the use of electron microscope.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;electron microscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1428</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron microscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1429 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1429">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scanning electron microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1428"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#uses_instrument"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;An electron microscopy technique based on the use of scanning electron microscope.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;scanning electron microscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1429</npo:code>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SEM technique</npo:synonym>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scanning electron microscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1430 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1430">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transmission electron microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1428"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#uses_instrument"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1441"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;An electron microscopy technique based on the use of transmission electron microscope.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;transmission electron microscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A light source at the top of the TEM emits the electrons that travel through vacuum in the column of the microscope. Instead of glass lenses focusing the light in the light microscope, the TEM uses electromagnetic lenses to focus the electrons into a very thin beam. The electron beam then travels through the specimen you want to study. Depending on the density of the material present, some of the electrons are scattered and disappear from the beam. At the bottom of the microscope the unscattered electrons hit a fluorescent screen, which gives rise to a shadow image of the specimen with its different parts displayed in varied darkness according to their density. The image can be studied directly by the operator or photographed with a camera. [source: http://Nobelprize.org]</rdfs:comment>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1430</npo:code>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TEM technique</npo:synonym>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transmission electron microscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1431 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1431">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1415"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#uses_instrument"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1439"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A microscopy technique based on the use of optical microscope.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;optical microscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1431</npo:code>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light microscopy</npo:synonym>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical microscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1432 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1432">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fluorescence microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1431"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#uses_instrument"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1443"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;An optical microscopy technique based on the use of fluorescence microscope.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;fluorescence microscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1432</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fluorescence microscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1433 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1433">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scanning probe microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1415"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#uses_instrument"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1442"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A microscopy technique based on the use of scanning probe microscope.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;scanning probe microscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C20346</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1433</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scanning probe microscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1434 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1434">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atomic force microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1433"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#uses_instrument"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1445"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A scanning probe microscopy technique based on the use of atomic force microscope.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;atomic force microscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1434</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atomic force microscopy</npo:preferred_Name>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scanning force microscopy</npo:synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1435 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1435">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scanning tunneling microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1433"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#uses_instrument"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1446"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A scanning probe microscopy technique based on the use of scanning tunneling microscope.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;scanning tunneling microscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1435</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scanning tunneling microscopy</npo:preferred_Name>
     </owl:Class>
     
 
@@ -1688,6 +2002,25 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
     
 
 
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1451 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1451">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high resolution transmission electron microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1430"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#uses_instrument"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1452"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A transmission electron microscopy technique based on the use of high resolution transmission electron microscope.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;high resolution transmission electron microscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1451</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high resolution transmission electron microscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1452 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1452">
@@ -1717,6 +2050,25 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
     
 
 
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1454 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1454">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scanning transmission electron microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1430"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#uses_instrument"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1453"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A transmission electron microscopy technique based on the use of scanning transmission electron microscope.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;scanning transmission electron microscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1454</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scanning transmission electron microscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1455 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1455">
@@ -1728,6 +2080,232 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIC microscope is based on interferometry, which is the technique of superposing (interfering) two or more waves, to detect differences between them. In interferometry, a single ray of light is split into two rays, one traversing and the other missing the specimen but interacting with the background. The rays are then recombined at the image plane, where wave interference may occur. Image contrast can be modified by altering the phase difference between the reference and specimen rays. [source: http://encyclopedia.thefreedictionary.com]</rdfs:comment>
         <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1455</npo:code>
         <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">differential interference contrast microscope</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1456 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1456">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">differential interference contrast microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1431"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;An optical microscopy based on the use of differential interference contrast microscope.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;differential interference contrast microscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1456</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">differential interference contrast microscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1465 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1465">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flow cytometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1405"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#uses_instrument"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1769"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;A technique for counting, examining and sorting microscopic particles (e.g., single cells) suspended in a stream of fluid that passes through a beam of light. It allows for multiple analyses of the physical and chemical characteristics of single cells flowing through an optical and/or electrical detection apparatus.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100617&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;flow cytometry&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C16585</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1465</npo:code>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[definition: adapted from NCIT, http://encyclopedia.thefreedictionary.com]</rdfs:comment>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flow cytometry</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1467 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1467">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phase analysis light scattering</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FIX#FIX_0000402"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A light scattering technique for measuring the electrophoretic mobilities of charged particles suspended in nonpolar media (i.e. solvents with much lower relative permittivities than water).&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;phase analysis light scattering&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1467</npo:code>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PALS</npo:synonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[definition: adapted from http://www.unisa.edu.au/laser/Research/PALS.asp]</rdfs:comment>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phase analysis light scattering</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1468 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1468">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1405"/>
+        <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;A technique which is used for measuring the intensity of electromagnetic radiation that is absorbed, emitted (radiated), or scattered at different wavelengths or frequencies by a molecular entity or substance.  This technique is used in studying the interaction of electromagnetic radiation with matter.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100611&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;spectroscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT: C17155</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1468</npo:code>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectroscopic technique</npo:synonym>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectroscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1469 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1469">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dynamic light scattering</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1712"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FIX#FIX_0000402"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A spectroscopic technique which utilizes a laser beam to irradiate a sample containing particles in suspension, resulting in light scattering.When the scattered light is collected over a small solid angle, the light will exhibit intensity fluctuations. This is because the Brownian motion of the scatterers causes the phase of the light scattered from each particle to change with time, hence the total scattered intensity also fluctuates with time. The rapid fluctuations in scattering intensity, collected around a mean value at a certain angle, will depend on the particle diffusion and on the particle size. For a given temperature and viscosity, a calculated correlation function yields a diffusion coefficient, which can be used to calculate particle size.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;dynamic light scattering&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DLS</npo:synonym>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C62329</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1469</npo:code>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCS</npo:synonym>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QELS</npo:synonym>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quasi-Elastic Light Scattering</npo:synonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[definition source: NCI]</rdfs:comment>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dynamic light scattering</npo:preferred_Name>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photon correlation spectroscopy</npo:synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1470 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1470">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nuclear magnetic resonance spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1710"/>
+        <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;An absorption spectroscopic technique which uses NMR (nuclear magnetic resonance) to basically measure the frequency (resonant frequency) of vibrating nuclei (having non-zero spin) of a given type in the presence of a magnetic field.  When placed in a magnetic field, nuclei that have non-zero spins absorb frequency characteristic of the isotope.  The frequency (resonant frequency), the energy of absorption, and the intensity of measured NMR signal are proportional to the strength of the magnetic field. Nuclei of different isotopes in a substance resonate at different frequencies depending upon the local molecular geometry (bond lengths, bond angles, bonded atoms, etc.) and the local magnetic field at each nucleus.  Nuclei of the same type can have slightly different resonant frequencies depending on the chemical environment.  The difference between the frequency of the measured signal (NMR signal) from nuclei (in a molecule) in one sample and that (reference resonant frequency) from the same type of nuclei in a reference substance is used to obtain structural information of the molecule in a sample, or the chemical composition of the sample.  This technique has applications in the study of the physical, chemical, and biological properties of matter.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100610&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:attr&gt;http://www.answers.com/topic/nmr-spectroscopy (June 10, 2010), http://www.cis.rit.edu/htbooks/nmr/inside.htm (June 10, 2010)&lt;/ncicp:attr&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;nuclear magnetic resonance spectroscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Depending on the local chemical environment, different protons in a molecule resonate at slightly different frequencies. Since this frequency shift is proportional to the strength of the magnetic field, it is converted into a field-independent dimensionless value known as the chemical shift. The chemical shift is reported as a relative measure from some reference resonance frequency. (For the nuclei1H, 13C, and 29Si, TMS (tetramethylsilane) is commonly used as a reference.) This difference between the frequency of the signal and the frequency of the reference is divided by frequency of the reference signal to give the chemical shift. The frequency shifts are extremely small in comparison to the fundamental NMR frequency. A typical frequency shift might be 100 Hz, compared to a fundamental NMR frequency of 100 MHz, so the chemical shift is generally expressed in parts per million (ppm). 
+
+By understanding different chemical environments, the chemical shift can be used to obtain some structural information about the molecule in a sample. The conversion of the raw data to this information is called assigning the spectrum. [source: http://encyclopedia.thefreedictionary.com]</rdfs:comment>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C16810</npo:dBXrefID>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR spectroscopy</npo:synonym>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1470</npo:code>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When placed in a magnetic field, NMR active nuclei (such as 1H or 13C) absorb at a frequency characteristic of the isotope. The resonant frequency, energy of the absorption and the intensity of the signal are proportional to the strength of the magnetic field.</rdfs:comment>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic resonance spectroscopy</npo:synonym>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nuclear magnetic resonance spectroscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1476 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1476">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fluorescence spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1711"/>
+        <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;A spectroscopic technique which analyzes fluorescence spectra from a sample. It involves using a beam of light, usually ultraviolet light, that excites the electrons in molecules of certain compounds and causes them to emit light of a lower energy, typically, but not necessarily, visible light.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100608&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;fluorescence spectroscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C17738</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1476</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fluorescence spectroscopy</npo:preferred_Name>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fluorometry</npo:synonym>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectrofluorometry</npo:synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1477 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1477">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">imaging technique</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1405"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A technique to obtain the image (appearance or form) of the whole or part of a material object.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;imaging technique&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C17369</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1477</npo:code>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">imaging method</npo:synonym>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">imaging technique</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1479 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1479">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tomography</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1477"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;An imaging technique in which waves of energy are passed through the sections of a solid object to obtain images of the internal structures of the object.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;tomography&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1479</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tomography</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1480 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1480">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">computed tomography</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1479"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A medical tomographic technique which uses computer to construct  a three-dimensional image of the internal structures of an object from a large series of two-dimensional cross-sectional X-ray  images of the object, taken around a single axis of rotation.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;computed tomography&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</npo:synonym>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C17204</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1480</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">computed tomography</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1481 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1481">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single photon emission computed tomography</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1479"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A tomographic technique which uses radionuclides that emit single photons in the gamma energy range. The  radionuclides are administered into a patient&apos;s body and the gamma rays produced by these radionuclides pass through the patient&apos;s body, which are then detected by one or more gamma cameras rotated around the patient&apos;s body. Series of two-dimensional  cross-sectional images of the body, produced by this technique, can be used to create three-dimensional images by computer reconstruction.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;single photon emission computed tomography&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C17203</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1481</npo:code>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPECT</npo:synonym>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single photon emission computed tomography</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1482 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1482">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positron emission tomography</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1479"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A tomography technique for measuring the gamma radiation produced by collisions of electrons and positrons (anti-electrons) within living tissue. In positron emission tomography (PET), a subject is given a dose of a positron-emitting radionuclide attached to a metabolically active substance (for example, 2-fluoro-2-deoxy-D-glucose (FDG), which is similar to a naturally occurring sugar, glucose, with the addition of a radioactive fluorine atom). When living tissue containing the positron emitter is bombarded by electrons, gamma radiation produced by collisions of electrons and positrons is detected by a scanner, revealing in fine detail the tissue location of the metabolically-active substance administered.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;positron emission tomography&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C17007</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1482</npo:code>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PET</npo:synonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[definition source: NCI]</rdfs:comment>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positron emission tomography</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1483 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1483">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic resonance imaging</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1477"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A non-invasive imaging method of creating images of internal anatomy based on the principle that atomic nuclei in a strong magnetic field absorb pulses of radiofrequency energy and emit them as radiowaves which can be reconstructed into computerized images.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;magnetic resonance imaging&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MRI</npo:synonym>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MeSH:D008279</npo:dBXrefID>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C16809</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1483</npo:code>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[definition: adapted from MeSH]</rdfs:comment>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic resonance imaging</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1484 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1484">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ultrasound imaging</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1477"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;An imaging technique in which ultrasound (sound waves with frequency above the human hearing range) waves are bounced off tissues and the echoes produce a picture (sonogram).&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;ultrasound imaging&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C17230</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1484</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ultrasound imaging</npo:preferred_Name>
     </owl:Class>
     
 
@@ -1875,6 +2453,36 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1494"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_identification_type"/>
+                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_707"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_conjugated_component_part"/>
+                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_component_part"/>
+                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_component_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1830"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_encapsulated_component_part"/>
                 <owl:allValuesFrom>
                     <owl:Class>
@@ -1897,36 +2505,6 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_identification_type"/>
-                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_707"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_component_part"/>
-                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_conjugated_component_part"/>
-                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1830"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_component_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A chemical component which is identified as a nanoparticle based on its structure, chemical composition or function.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -2679,6 +3257,32 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
     
 
 
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1598 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1598">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fluorescence imaging</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1599"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;An optical imaging technique in which images are captured based on contrast provided by the fluorescence emitted from a fluorescent molecule when excited by a light of certain wavelength.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;fluorescence imaging&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1598</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fluorescence imaging</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1599 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1599">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical imaging</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1477"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;An imaging technique, which encompasses many different techniques that use light of the UV to the NIR spectral region to visualize tissue optical characteristics imparted through absorption and scattering of light, as well as emission of fluorescence. [source: abstract from book chapter &quot; Kai Licha, Contast Agents for Optical Imaging, vol. 222/2002, Contast Agents II, 2002.&quot;]&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;optical imaging&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1599</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical imaging</npo:preferred_Name>
+    </owl:Class>
+    
+
+
     <!-- http://purl.bioontology.org/ontology/npo#NPO_160 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_160">
@@ -2700,14 +3304,14 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_participant"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1496"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_agent"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1493"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_agent"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1493"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_participant"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1496"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A process in which a nanoparticle is functionalized by linking it to a molecular entity that adds or modifies the properties or functions of the nanoparticle.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -2752,14 +3356,14 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1945"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_output_participant"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1885"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_agent"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_827"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_agent"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_827"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_output_participant"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1885"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A process which is performed to modify the surface of a nanoparticle using surface modifying agents.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110825&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -2894,6 +3498,47 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
     
 
 
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1710 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1710">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">absorption spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1468"/>
+        <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;A spectroscopic technique which measures the intensity of electromagnetic radiation absorbed by a molecular entity or a substance at different wavelengths or frequencies.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100610&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexTerm xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:term-name&gt;absorption spectroscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:Editor_Note rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Absorption spectroscopy is used to determine the presence of or amount of a particular substance in a sample from its absorption spectrum. When the sample interacts with the radiating field, the sample absorbs energy, i.e. photons, and the intensity of absorption (radiation absorbed by the sample) varies as a function of frequency, and this variation is the absorption spectrum. (references: wikipedia, May 27, 2010)</npo:Editor_Note>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1710</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">absorption spectroscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1711 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1711">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emission spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1468"/>
+        <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;A spectroscopic technique which measures the intensity of electromagnetic radiation emitted by a molecular entity or a substance at different wavelengths or frequencies.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100610&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexTerm xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:term-name&gt;emission spectroscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:Editor_Note rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emission spectroscopy is used to determine the elemental composition of a material from its emission spectrum obtained by measuring the intensity of electromagnetic radiation emitted by the atoms or molecules in the material at different wavelengths.  Atoms or molecules in a material undergo transition from an excited state to a lower energy state, and during this transition, and they emit photons. Each element emits (radiates) photons at a characteristic set of discrete wavelengths according to its electronic structure.  Hence, by examining these wavelengths in the emission spectrum of the material, the elemental composition of the material can be determined. They are different ways to excite the atoms.  (based on source: wikipedia, May 27, 2010)</npo:Editor_Note>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1711</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emission spectroscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1712 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1712">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light scattering spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1468"/>
+        <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;A spectroscopic technique which measures the intensity of light scattered from a substance at certain wavelengths, incident angles, and polarization angles.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100527&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexTerm xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:term-name&gt;light scattering spectroscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1712</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light scattering spectroscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
     <!-- http://purl.bioontology.org/ontology/npo#NPO_175 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_175">
@@ -2907,11 +3552,57 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
     
 
 
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1762 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1762">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell counting technique</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1405"/>
+        <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;A technique which is used for counting cells.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100614&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexTerm xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:term-name&gt;cell counting technique&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1762</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell counting technique</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1763 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1763">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fluorescent cell counting technique</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1762"/>
+        <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;A cell counting technique which uses fluorescence for counting the cells.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100614&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexTerm xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:term-name&gt;fluorescent cell counting technique&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1763</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fluorescent cell counting technique</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1764 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1764">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confocal laser scanning microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1431"/>
+        <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;A fluorescence microscopic technique which uses scanning laser light to excite fluorescent dyes within a thick sample, such as a biofilm.  The image is collected in two dimensions and several images can be combined in an image stack to produce a cross sectional image through a sample or to create a three-dimensional rendering of the sample.  This technique is particularly useful for imaging the positioning of biological structures within a three-dimensional space.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100614&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:attr&gt;http://www.nature.com/nrd/journal/v2/n2/glossary/nrd1008_glossary.html&lt;/ncicp:attr&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexTerm xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:term-name&gt;confocal laser scanning microscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLSM</npo:synonym>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1764</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confocal laser scanning microscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1765 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1765">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hemocytometer</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1436"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_application"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1762"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;An instrument which consists of a thick glass slide that has a chamber with a defined volume, etched with a precisely ruled grid and is used to quantify cells or cell-sized particles in suspension.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100615&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:attr&gt;NCI Thesaurus&lt;/ncicp:attr&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
         <npo:FULL_SYN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexTerm xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:term-name&gt;hemocytometer&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
         <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT: C78807</npo:dBXrefID>
@@ -2926,6 +3617,12 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1766">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dynamic light scattering instrument</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1436"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_application"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1469"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;An instrument which is used to perform dynamic light scattering technique.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100616&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
         <npo:FULL_SYN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexTerm xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:term-name&gt;dynamic light scattering instrument&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
         <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DLS instrument</npo:synonym>
@@ -2940,6 +3637,12 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1767">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phase analysis light scattering instrument</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1436"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_application"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1467"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;An instrument which is used to perform phase analysis light scattering technique.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100617&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
         <npo:FULL_SYN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexTerm xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:term-name&gt;phase analysis light scattering instrument&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
         <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1767</npo:code>
@@ -2971,6 +3674,18 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1769">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flow cytometer</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1436"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_application"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1762"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_application"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1465"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;An instrument which is used to count and sort microscopic particles suspended in a buffer.  This instrument consists of a flow cell, at least one lamp or laser, a variable number of emission detectors or photomultipliers, a system that converts analog signals to digital, and a computer to run the system and collect and analyze the data output.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100616&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NCI&lt;/ncicp:def-source&gt;&lt;ncicp:attr&gt;NCIT&lt;/ncicp:attr&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
         <npo:FULL_SYN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexTerm xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:term-name&gt;flow cytometer&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
         <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT: C78806</npo:dBXrefID>
@@ -3072,6 +3787,12 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1776">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capillary electrophoresis instrument</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1436"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_application"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/obo/owl/FIX#FIX_0000836"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;An instrument which is used to perform capillary electrophoresis.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100617&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
         <npo:FULL_SYN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexTerm xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:term-name&gt;capillary electrophoresis instrument&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
         <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1776</npo:code>
@@ -3102,6 +3823,12 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1778">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gel filtration column</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1436"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_application"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/obo/owl/FIX#FIX_0000626"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;An instrument which is a column in which gel particles in bead form are packed to form a separation bed through which a solution containing molecules /particles and an eluant (a buffer solution) are passed for separating the molecules/particles according to differences in their sizes.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100616&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:attr&gt;http://www.scribd.com/doc/6941835/gel-filtration (June 16, 2010)&lt;/ncicp:attr&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
         <npo:FULL_SYN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexTerm xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:term-name&gt;gel filtration column&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
         <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1778</npo:code>
@@ -4058,13 +4785,13 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1694"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1914"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1914"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1694"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -4192,6 +4919,130 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
     
 
 
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1921 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1921">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material synthesis technique</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1405"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A technique which describes the way how a material is synthesized.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110720&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;material synthesis technique&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1921</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material synthesis technique</npo:preferred_Name>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">method of synthesis</npo:synonym>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synthesis method</npo:synonym>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synthesis technique</npo:synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1922 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1922">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solution-based chemistry technique</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1921"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A material synthesis technique in which chemical reactions require the use of a solution.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110720&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;solution-based chemistry technique&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1922</npo:code>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solution based chemistry method</npo:synonym>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solution-based chemistry</npo:synonym>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solution-based chemistry technique</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1923 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1923">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydrothermal method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1922"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A solution-based chemistry technique in which substances are crystallized from high temperature aqueous solutions at high vapor pressures.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110720&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:attr&gt;http://en.wikipedia.org/wiki/Hydrothermal_synthesis&lt;/ncicp:attr&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;hydrothermal method&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1923</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydrothermal method</npo:preferred_Name>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydrothermal technique</npo:synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1924 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1924">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">micro-emulsion method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1922"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A solution-based chemistry technique for dispersing two or more immiscible liquids as micron-sized droplets by shaking, stirring or homogenising the mixture.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110720&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:attr&gt;http://www.rsc.org/publishing/journals/prospect/ontology.asp?id=CMO:0.0002150$MSID=b916837k&lt;/ncicp:attr&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;micro-emulsion method&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1924</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">micro-emulsion method</npo:preferred_Name>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">micro-emulsion technique</npo:synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1925 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1925">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sol-gel chemical process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1922"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A solution-based chemical technique which ...[To be completed]&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110720&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;sol-gel chemical process&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1925</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sol-gel chemical process</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1926 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1926">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solvent displacement method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1922"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;definition [to do]&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110720&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;solvent displacement method&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1926</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solvent displacement method</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1927 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1927">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sonochemical method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1922"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;definition [to do]&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110720&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;sonochemical method&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1927</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sonochemical method</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1928 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1928">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">template-assisted solution-based synthesis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1922"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;definition [to do]&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110720&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;template-assisted solution-based synthesis&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1928</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">template-assisted solution-based synthesis</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1929 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1929">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thin film deposition technique</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1921"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A synthesis technique which involves the layer-by-layer deposition of individual atoms from a material source (solid, liquid, vapor or gas), onto the surface of a material (substrate).&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110720&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;thin film deposition technique&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1929</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thin film deposition technique</npo:preferred_Name>
+    </owl:Class>
+    
+
+
     <!-- http://purl.bioontology.org/ontology/npo#NPO_193 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_193">
@@ -4202,6 +5053,209 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_193</npo:code>
         <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZnS quantum dot</npo:synonym>
         <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zinc sulfide quantum dot</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1930 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1930">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical vapor deposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1929"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A thin film deposition technique in which one or more volatile precursors react and/or decompose on the surface of the substrate.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110720&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;chemical vapor deposition&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CVD</npo:synonym>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CVD technique</npo:synonym>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1930</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical vapor deposition</npo:preferred_Name>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical vapor deposition technique</npo:synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1931 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1931">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atomic layer deposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1930"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A chemical vapor deposition technique in which gaseous precursors chemically react with a surface in a sequential manner.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110720&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;atomic layer deposition&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1931</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atomic layer deposition</npo:preferred_Name>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atomic layer deposition technique</npo:synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1932 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1932">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metal-organic chemical vapor deposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1930"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A chemical vapor deposition technique in which metal organic compounds in gas phase (at moderate pressures) react to form epitaxial layers of material on the surface of the substrate.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110720&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;metal-organic chemical vapor deposition&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOCVD</npo:synonym>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOVPE</npo:synonym>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1932</npo:code>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMVPE</npo:synonym>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metal-organic chemical vapor deposition</npo:preferred_Name>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metalorganic vapor phase epitaxy</npo:synonym>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organometallic vapor phase epitaxy</npo:synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1933 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1933">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plasma-enhanced chemical vapor deposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1930"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A chemical vapor deposition technique in which gaseous precursors react when a plasma of the gases is created by RF (radio frequency) or DC discharge between two electrodes.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110720&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;plasma-enhanced chemical vapor deposition&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1933</npo:code>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECVD</npo:synonym>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plasma-enhanced chemical vapor deposition</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1934 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1934">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal chemical vapor deposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1930"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A chemical vapor deposition in which the substrate is heated.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110720&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;thermal chemical vapor deposition&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1934</npo:code>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TCVD</npo:synonym>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rapid thermal CVD</npo:synonym>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rapid thermal chemical vapor deposition</npo:synonym>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal CVD</npo:synonym>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal chemical vapor deposition</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1935 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1935">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical vapor deposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1929"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A thin film deposition technique in which atoms from the surface of a solid material are vaporized by physical methods (e.g. by bombarding the solid surface with an energetic ion beam, laser beam, or electron beam), and then transported for deposition on the surface of the substrate.  The deposition process takes place in under low pressure or vacuum conditions.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110720&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;physical vapor deposition&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1935</npo:code>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PVD</npo:synonym>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical vapor deposition</npo:preferred_Name>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical vapor deposition technique</npo:synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1936 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1936">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pulsed laser deposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1935"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A physical vapor deposition technique in whcih the source material is vaporized by irradiating the target surface of the source material by a pulsed laser beam.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110720&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;pulsed laser deposition&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1936</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pulsed laser deposition</npo:preferred_Name>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pulsed laser deposition technique</npo:synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1937 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1937">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sputter deposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1935"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A physical vapor deposition technique in which atoms from the surface of a solid material are vaporized by bombarding the surface with energetic particles (e.g., accelerated ions).&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110720&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;sputter deposition&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1937</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sputter deposition</npo:preferred_Name>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sputter deposition technique</npo:synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1938 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1938">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetron sputtering</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1937"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A type of sputter deposition where a magnetron is used to direct the flow of high energy electrons for the sputtering process.  A magnetron is a vacuum tube in which the electrons generated from a heated cathode flows under the control of an applied magnetic field.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110720&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;magnetron sputtering&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1938</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetron sputtering</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1939 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1939">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal evaporation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1935"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A physical vapor deposition technique in which the source material is evaporated in vacuum, and the vaporized material condenses on the surface of the substrate.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110720&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;thermal evaporation&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1939</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal evaporation</npo:preferred_Name>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal evaporation method</npo:synonym>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal evaporation technique</npo:synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1940 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1940">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron beam physical vapor deposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1939"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A physical vapor deposition in which a target anode is bombarded with an electron beam given off by a charged tungsten filament under high vacuum.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110825&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:attr&gt;http://en.wikipedia.org/wiki/Electron_beam_physical_vapor_deposition&lt;/ncicp:attr&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;electron beam physical vapor deposition&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EBPVD</npo:synonym>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1940</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron beam physical vapor deposition</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1941 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1941">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular beam epitaxy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1939"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A thermal evaporation technique in which the evaporated atoms in high or ultra-high vacuum do not interact with each other until they reach the surface of the substrate.  The deposition occurs at a slow rate to allow controlled growth of a monocrystalline film on a monocrystalline substrate.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110825&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;molecular beam epitaxy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1941</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular beam epitaxy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1942 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1942">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resistive heating</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1939"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A thermal evaporation technique in which heat is generated using electric conductors carrying current.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110825&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;resistive heating&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1942</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resistive heating</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1943 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1943">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RF-induction technique</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1939"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A thermal evaporation technique in which the target surface of the source material is heated by an electromagnetic field induced by a RF (radio frequency) signal.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110825&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;RF-induction technique&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1943</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RF-induction technique</npo:preferred_Name>
     </owl:Class>
     
 
@@ -4622,6 +5676,25 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;centrifuge&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
         <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1999</npo:code>
         <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">centrifuge</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_2000 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_2000">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">incubation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1405"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_temperature_condition"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1806"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A technique used for incubating mixtures in an assay.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;130522&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;incubation&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_2000</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">incubation</npo:preferred_Name>
     </owl:Class>
     
 
@@ -5398,13 +6471,13 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#part_of"/>
-                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_724"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_724"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#part_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_724"/>
+                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_724"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;The shell of a nanocapsule.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -5832,6 +6905,18 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1896"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1694"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1830"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -5848,18 +6933,6 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
                 <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_274"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1694"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1830"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A primary particle which has an average size in the nanoscale range; which has an identifiable and definite chemical composition, property or function that uniquely define the nanoparticle&apos;s type as known; and, which may or may not exhibit a size-intensive property.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110825&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -5954,13 +7027,13 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_621"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_621"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_180"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A polymeric molecule which has a highly-branched, three-dimensional tree-like architecture, synthesized from monomers where shells of branched molecules are added in discrete steps to a central core.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -6061,14 +7134,14 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_180"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#part_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_224"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_621"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_621"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_224"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A molecular structure which is a branch of a dendrimer, formed by the dendrimer&apos;s repeating units.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -6563,6 +7636,12 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000033"/>
@@ -6572,6 +7651,288 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/PATO_0001464 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001464"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/FIX#FIX_0000015 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/FIX#FIX_0000015">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infrared spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1710"/>
+        <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;An absorption spectroscopic technique in which a beam of infrared light is used to irradiate a sample. The IR absorption spectra obtained with this technique, is used to identify compounds or investigate sample composition based on the correlation of absorption bands in the spectrum of the unknown compound with known absorption frequencies for specific types of bonds.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100611&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;infrared spectroscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000015</npo:dBXrefID>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IR spectroscopy</npo:synonym>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1473</npo:code>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The technique is based on the fact that molecules have specific frequencies at which they rotate or vibrate corresponding to discrete energy levels (vibrational modes).</rdfs:comment>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infrared spectroscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FIX#FIX_0000016 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/FIX#FIX_0000016">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ultraviolet/visible spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1710"/>
+        <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;An absorption spectroscopic technique in which the irradiating light has wavelengths within the ultraviolet and visible regions of the electromagnetic spectrum.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100614&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;ultraviolet/visible spectroscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000016</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1475</npo:code>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UV-Vis spectroscopy</npo:synonym>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ultraviolet/visible spectroscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FIX#FIX_0000041 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/FIX#FIX_0000041">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-ray photoelectron spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1710"/>
+        <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;A spectroscopic technique which is carried out in vaccum, and is used to estimate the elemental composition and chemical state of the elements on the surface of a material by irradiating the material surface with a beam of soft monochromatic (magnesium/aluminum) X-rays and measuring the kinetic energy of photoelectrons emitted from the core orbitals of the surface elements within a few nm from the material surface.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100615&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;x-ray photoelectron spectroscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ESCA</npo:synonym>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electron Spectroscopy for Chemical Analysis</npo:synonym>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000041</npo:dBXrefID>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C78871</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1471</npo:code>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Photoelectrons are collected and analyzed by the XPS instrument to produce a spectrum of emission intensity versus electron binding energy. Since each element has a unique set of binding energies, XPS can be used to identify the elements on the surface. Also, peak areas at nominal binding energies can be used to quantify concentration of the elements. Small shifts in these binding energies (chemical shifts) provide powerful information about sample chemical states and short-range chemistry .</rdfs:comment>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XPS</npo:synonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[definition: based on NCIT, http://encyclopedia.thefreedictionary.com, http://www.chem.umd.edu/facility/xps.php]</rdfs:comment>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-ray photoelectron spectroscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FIX#FIX_0000053 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/FIX#FIX_0000053">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chromatography</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1416"/>
+        <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;A separation technique for separation of mixtures, in which a mixture dissolved in a mobile liquid or gas medium, is passed through a stationary adsorbing medium to separate the components based on differential affinities of the components for the mobile medium and for the stationary medium.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100616&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;chromatography&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000053</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1458</npo:code>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[definition adapted from NCIT, WordNet, http://encyclopedia.thefreedictionary.com/chromatography]</rdfs:comment>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chromatography</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FIX#FIX_0000058 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/FIX#FIX_0000058">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raman spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1712"/>
+        <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;A spectroscopic technique which is based on the detection of inelastically scattered monochromatic light from a laser in the visible, near infrared, or near ultraviolet range, by a substance (or sample under investigation). A laser beam of a given wavelength is used to irradiate a spot on the sample under investigation. The inelastically scattered light ( photons scattered at lower frequencies or higher wavelengths compared to that of the incident photons (Raman effect)), contains information about the energies of molecular vibrations and rotations, and these depend on the particular atoms or ions that comprise the molecule, the chemical bonds connect them, the symmetry of their molecule structure, and the physico-chemical environment where they reside.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100527&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;Raman spectroscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000058</npo:dBXrefID>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C17157</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1472</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raman spectroscopy</npo:preferred_Name>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[definition: adapted from http://epsc.wustl.edu/haskin-group/Raman/faqs.htm, http://encyclopedia.thefreedictionary.com]</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FIX#FIX_0000098 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/FIX#FIX_0000098">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gas chromatography</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FIX#FIX_0000607"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A chromatography technique in which the mobile phase is a gas.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;gas chromatography&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000098</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1460</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gas chromatography</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FIX#FIX_0000116 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/FIX#FIX_0000116">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contact atomic force microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1434"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;An atomic force microscopy technique in which the tip of the cantilever is in contact with the sample&apos;s surface. In the contact mode, the overall force between the tip and the surface is repulsive and it is kept constant during scanning by maintaining a constant deflection, and therefore constant height above the surface.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;contact atomic force microscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000116</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1448</npo:code>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[definition: adapted from http://en.wikipedia.org, http://www.nanoscience.com/education/AFM.html]</rdfs:comment>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contact AFM</npo:synonym>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contact atomic force microscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FIX#FIX_0000117 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/FIX#FIX_0000117">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non contact atomic force micrsocopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1434"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;An atomic force microscopy technique in which the tip of the cantilever is not in contact with sample&apos;s surface. In non contact mode, the overall force between the tip and the surface is attractive. The cantilever is oscillated at a frequency slightly above its resonance frequency where the amplitude of oscillation is typically a few nanometers (&lt;10 nm). The van der Waals forces, which are strongest from 1 nm to 10 nm above the surface, or any other long range force which extends above the surface acts to decrease the resonance frequency of the cantilever. This decrease in resonance frequency combined with the feedback loop system maintains a constant oscillation amplitude or frequency by adjusting the average tip-to-sample distance. Measuring the tip-to-sample distance at each (x,y) data point allows the scanning software to construct a topographic image of the sample surface.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexTerm xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:term-name&gt;non contact atomic force micrsocopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000117</npo:dBXrefID>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NC-AFM</npo:synonym>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1449</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non contact atomic force micrsocopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FIX#FIX_0000118 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/FIX#FIX_0000118">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic force microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FIX#FIX_0000117"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#uses_instrument"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1447"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A non contact atomic force microscopy technique based on the use of magnetic force microscope.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;magnetic force microscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000118</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1450</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic force microscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FIX#FIX_0000321 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/FIX#FIX_0000321">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">near-infrared spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FIX#FIX_0000015"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;An infrared spectroscopy where the beam of light that irradiates the sample has wavelengths within the near-infrared region of the electromagnetic spectrum.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;near-infrared spectroscopy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000321</npo:dBXrefID>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIR spectroscopy</npo:synonym>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1474</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">near-infrared spectroscopy</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FIX#FIX_0000402 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/FIX#FIX_0000402">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light scattering</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1467"/>
+                    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1469"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1405"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A technique based on the disperson of light or electromagnetic radiation into a range of directions by virtue of its interaction with a material medium through which it passes.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;light scattering&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000402</npo:dBXrefID>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C62323</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1466</npo:code>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[definition: adapted from NCIT]</rdfs:comment>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light scattering</npo:preferred_Name>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light scattering technique</npo:synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FIX#FIX_0000607 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/FIX#FIX_0000607">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chromatography by mobile phase state</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FIX#FIX_0000053"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A chromatography technique classified based on the phase of the mobile medium.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;chromatography by mobile phase state&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000607</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1459</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chromatography by mobile phase state</npo:preferred_Name>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chromatography by physical state of the mobile phase</npo:synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FIX#FIX_0000608 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/FIX#FIX_0000608">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liquid chromatography</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FIX#FIX_0000607"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A chromatography technique in which the mobile phase is a liquid.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;liquid chromatography&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000608</npo:dBXrefID>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LC</npo:synonym>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1461</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liquid chromatography</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FIX#FIX_0000610 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/FIX#FIX_0000610">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chromatography by separation mechanism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FIX#FIX_0000053"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A chromatography technique classified based on the mechanism of separation.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;chromatography by separation mechanism&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000610</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1463</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chromatography by separation mechanism</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FIX#FIX_0000626 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/FIX#FIX_0000626">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">size-exclusion chromatography</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FIX#FIX_0000610"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A chromatography technique which uses porous gels to separate solute molecules or particles based on size.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;size-exclusion chromatography&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000626</npo:dBXrefID>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPC</npo:synonym>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C16433</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1464</npo:code>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SEC</npo:synonym>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gel filtration chromatography</npo:synonym>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gel permeation chromatography</npo:synonym>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">size-exclusion chromatography</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FIX#FIX_0000630 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/FIX#FIX_0000630">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high pressure liquid chromatography</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FIX#FIX_0000608"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A liquid chromatography technique in which the sample is forced by a liquid (mobile phase) at high pressure, through a column that is packed with a solid stationary phase.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;high pressure liquid chromatography&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000630</npo:dBXrefID>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HPLC</npo:synonym>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT: C16434</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1462</npo:code>
+        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high performance liquid chromatography</npo:synonym>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high pressure liquid chromatography</npo:preferred_Name>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FIX#FIX_0000836 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/FIX#FIX_0000836">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capillary electrophoresis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1418"/>
+        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;An electrophoresis technique, in which a sample is introduced into a capillary tube and the components are separated by the application of high voltage. Due to the large surface to volume ratio, cooling is more efficient, allowing use of higher voltages. As a result, separation occurs more quickly and sensitivity is increased. The technique allows for separation of proteins, nucleic acids, and carbohydrates.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
+        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;capillary electrophoresis&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000836</npo:dBXrefID>
+        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C17637</npo:dBXrefID>
+        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1457</npo:code>
+        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capillary electrophoresis</npo:preferred_Name>
+    </owl:Class>
     
 
 
