@@ -11,7 +11,7 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI Release version 122</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For any queries contact chebi-help@ebi.ac.uk or http://www.ebi.ac.uk/chebi</rdfs:label>
         <owl:versionIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">122</owl:versionIRI>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-11-30 16:37</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-01-01 11:25</dc:date>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemical Entities of Biological Interest (ChEBI)</dc:title>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemical Entities of Biological Interest (ChEBI) is a freely available dictionary of molecular entities focused on &apos;small&apos; chemical compounds.</dc:description>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ChEBI curation team</dc:creator>
@@ -169,6 +169,29 @@
     <!-- http://purl.bioontology.org/ontology/npo#NPO_707 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_707"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_23367 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23367">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.</obo:Synonym>
+        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.</obo:Definition>
+        <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entidad molecular</obo:Synonym>
+        <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entidades moleculares</obo:Synonym>
+        <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entite moleculaire</obo:Synonym>
+        <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular entities</obo:Synonym>
+        <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular entity</obo:Synonym>
+        <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molekulare Entitaet</obo:Synonym>
+    </owl:Class>
     
 
 
@@ -446,6 +469,17 @@
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.</obo:Synonym>
         <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nanoparticle that contains no carbon.</obo:Definition>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inorganic nanoparticles</obo:Synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_59999 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_59999">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical substance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types.</obo:Definition>
+        <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemische Substanz</obo:Synonym>
     </owl:Class>
     
 
