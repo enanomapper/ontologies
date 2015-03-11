@@ -8,10 +8,10 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/chebi-slim.owl">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI Release version 122</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI Release version 125</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For any queries contact chebi-help@ebi.ac.uk or http://www.ebi.ac.uk/chebi</rdfs:label>
-        <owl:versionIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">122</owl:versionIRI>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-01-01 11:25</dc:date>
+        <owl:versionIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">125</owl:versionIRI>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-03-01 11:29</dc:date>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemical Entities of Biological Interest (ChEBI)</dc:title>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemical Entities of Biological Interest (ChEBI) is a freely available dictionary of molecular entities focused on &apos;small&apos; chemical compounds.</dc:description>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ChEBI curation team</dc:creator>
@@ -166,9 +166,27 @@
     
 
 
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1892 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1892"/>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1893 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1893"/>
+    
+
+
     <!-- http://purl.bioontology.org/ontology/npo#NPO_707 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_707"/>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_729 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_729"/>
     
 
 
@@ -268,21 +286,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEBI_50822 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50822">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iron oxide nanoparticle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
-        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nanoparticle consisting of an iron oxide.</obo:Definition>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHEBI_50823 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50823">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetite nanoparticle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50822"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_729"/>
         <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nanoparticle consisting of magnetite.</obo:Definition>
     </owl:Class>
     
@@ -292,38 +300,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50824">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematite nanoparticle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50822"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_729"/>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">haematite nanoparticle</obo:Synonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_50825 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50825">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gold nanoparticle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
-        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nanoparticle consisting of gold atoms.</obo:Definition>
-        <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Au</obo:Synonym>
-        <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AuNP</obo:Synonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_50826 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50826">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silver nanoparticle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
-        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nanoparticle consisting of silver atoms.</obo:Definition>
-        <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ag</obo:Synonym>
-        <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ag nanoparticle</obo:Synonym>
-        <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ag nanoparticles</obo:Synonym>
-        <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AgNP</obo:Synonym>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:22128035</obo:xref>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:22148238</obo:xref>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Silver_nanoparticles</obo:xref>
-        <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silver nanoparticles</obo:Synonym>
     </owl:Class>
     
 
@@ -373,17 +351,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEBI_50836 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50836">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zinc oxide nanoparticle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
-        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nanoparticle consisting of zinc oxide.</obo:Definition>
-        <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZnO</obo:Synonym>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHEBI_51050 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_51050">
@@ -396,21 +363,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEBI_52522 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52522">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bimetallic nanoparticle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
-        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nanoparticle consiting of a metal core covered with a thin coating of a different metal.</obo:Definition>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHEBI_52523 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52523">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">palladium-gold nanoparticle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52522"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1893"/>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.</obo:Synonym>
         <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gold nanoparticle covered with a thin coat of palladium atoms.</obo:Definition>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pd core/Au shell bimetallic nanoparticle</obo:Synonym>
@@ -488,7 +445,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_82776">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coated Ag nanoparticle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50826"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1892"/>
         <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any silver nanoparticle that is specially coated to produce tailored nanoparticles for specific applications.</obo:Definition>
         <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:24568198</obo:xref>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coated Ag NP</obo:Synonym>

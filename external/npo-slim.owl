@@ -1625,29 +1625,6 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
     
 
 
-    <!-- http://purl.bioontology.org/ontology/npo#NPO_1424 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1424">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">western blot analysis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1405"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1419"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;A technique which is used for the detection or identification of proteins or peptides that have been separated by gel electrophoresis and transferred onto nitrocellulose or other type of paper or nylon membrane. The proteins are then detected by reaction with enzymatically labeled or radiolabeled antibody probes.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100614&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
-        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;western blot analysis&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
-        <npo:dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C16357</npo:dBXrefID>
-        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1424</npo:code>
-        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">western blot</npo:synonym>
-        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">western blot analysis</npo:preferred_Name>
-        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">western blotting</npo:synonym>
-        <npo:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">western blotting technique</npo:synonym>
-    </owl:Class>
-    
-
-
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1427 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1427">
@@ -2453,8 +2430,21 @@ By understanding different chemical environments, the chemical shift can be used
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1494"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_conjugated_component_part"/>
-                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_encapsulated_component_part"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
+                            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1496"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_identification_type"/>
+                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_707"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2472,33 +2462,20 @@ By understanding different chemical environments, the chemical shift can be used
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_encapsulated_component_part"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
-                            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1496"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_component_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_identification_type"/>
-                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_707"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_conjugated_component_part"/>
+                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_component_part"/>
                 <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_component_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2874,19 +2851,6 @@ By understanding different chemical environments, the chemical shift can be used
         <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;imaging payload agent&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
         <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1534</npo:code>
         <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">imaging payload agent</npo:preferred_Name>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.bioontology.org/ontology/npo#NPO_1536 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1536">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inorganic nanoparticle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_707"/>
-        <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A nanoparticle which is basically composed of inorganic molecular entities.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
-        <npo:FULL_SYN rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;inorganic nanoparticle&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</npo:FULL_SYN>
-        <npo:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1536</npo:code>
-        <npo:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inorganic nanoparticle</npo:preferred_Name>
     </owl:Class>
     
 
@@ -3304,14 +3268,14 @@ By understanding different chemical environments, the chemical shift can be used
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_participant"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1496"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_agent"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1493"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_agent"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1493"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_participant"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1496"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A process in which a nanoparticle is functionalized by linking it to a molecular entity that adds or modifies the properties or functions of the nanoparticle.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -4106,14 +4070,14 @@ By understanding different chemical environments, the chemical shift can be used
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1793"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#measure_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1302"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#value_specified_at"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1814"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#value_specified_at"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1814"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#measure_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1302"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;A quantitative value of zeta potential which is measured or calculated.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100623&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -4609,14 +4573,14 @@ By understanding different chemical environments, the chemical shift can be used
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1616"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_output_participant"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1881"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_agent"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1884"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_agent"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1884"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_output_participant"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1881"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-source&gt;NCI&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A functionalization of nanoparticle which is performed on the surface of the nanoparticle.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;101026&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -4791,13 +4755,13 @@ By understanding different chemical environments, the chemical shift can be used
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_274"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1914"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1914"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_274"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -6471,13 +6435,13 @@ By understanding different chemical environments, the chemical shift can be used
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#part_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_724"/>
+                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_724"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#part_of"/>
-                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_724"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_724"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;The shell of a nanocapsule.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -6905,6 +6869,12 @@ By understanding different chemical environments, the chemical shift can be used
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1896"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1694"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -6920,19 +6890,13 @@ By understanding different chemical environments, the chemical shift can be used
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1694"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1830"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
                 <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_274"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1830"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A primary particle which has an average size in the nanoscale range; which has an identifiable and definite chemical composition, property or function that uniquely define the nanoparticle&apos;s type as known; and, which may or may not exhibit a size-intensive property.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110825&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -7027,13 +6991,13 @@ By understanding different chemical environments, the chemical shift can be used
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_621"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_180"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_621"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A polymeric molecule which has a highly-branched, three-dimensional tree-like architecture, synthesized from monomers where shells of branched molecules are added in discrete steps to a central core.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -7134,14 +7098,14 @@ By understanding different chemical environments, the chemical shift can be used
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_180"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_621"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_224"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#part_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_224"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_621"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A molecular structure which is a branch of a dendrimer, formed by the dendrimer&apos;s repeating units.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -7250,13 +7214,13 @@ By understanding different chemical environments, the chemical shift can be used
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#part_of"/>
-                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_619"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_619"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#part_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_619"/>
+                <owl:allValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_619"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;The porous shell of a nanocage.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
@@ -7371,14 +7335,21 @@ By understanding different chemical environments, the chemical shift can be used
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_199"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_195"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_component_part"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1496"/>
+                            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/npo#NPO_707"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_888"/>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_195"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -7389,15 +7360,8 @@ By understanding different chemical environments, the chemical shift can be used
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_component_part"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1496"/>
-                            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/npo#NPO_707"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_quality"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_888"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <npo:definition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-definition&gt;A nanomaterial which is a particulate chemical substance that is formulated systematically using nanotechnology, and it contains nanoparticles and active chemical components/ingredients.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;110825&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;thom510&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</npo:definition>
