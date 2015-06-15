@@ -11,18 +11,23 @@ import java.io.StringWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.obolibrary.macro.ManchesterSyntaxTool;
 import org.semanticweb.owlapi.expression.ParserException;
+import org.semanticweb.owlapi.model.AddOntologyAnnotation;
 import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.OWLAnnotation;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClassExpression;
+import org.semanticweb.owlapi.model.OWLImportsDeclaration;
 import org.semanticweb.owlapi.model.OWLObject;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyID;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.util.OWLOntologyMerger;
 import org.semanticweb.owlapi.util.ShortFormProvider;
 import org.semanticweb.owlapi.util.SimpleShortFormProvider;
 
@@ -85,12 +90,33 @@ public class OntologyHelper {
 		OWLOntologyManager man = source.getOWLOntologyManager();
 		OWLOntology mergedOntology = null;
 		try {
-			OWLGraphWrapper graph = new OWLGraphWrapper(source);
-
-			mergedOntology = man.createOntology(new OWLOntologyID(IRI.create(mergedOntologyIRI)));
+//			OWLGraphWrapper graph = new OWLGraphWrapper(source);
+//
+//			mergedOntology = man.createOntology(new OWLOntologyID(IRI.create(mergedOntologyIRI)));
+//			
+//			for (OWLOntology ont : graph.getAllOntologies()) {
+//				man.addAxioms(mergedOntology, ont.getAxioms());
+//			}
 			
-			for (OWLOntology ont : graph.getAllOntologies()) {
-				man.addAxioms(mergedOntology, ont.getAxioms());
+			Set<OWLImportsDeclaration> importDeclarations = source.getImportsDeclarations();
+			for (OWLImportsDeclaration declaration : importDeclarations) {
+				try {
+					man.loadOntology(declaration.getIRI());
+					System.out.println("Loaded imported ontology: " + declaration.getIRI());
+				} catch (Exception exception) {
+					System.out.println("Failed to load imported ontology: " + declaration.getIRI());
+				}
+			}
+			// Merge all of the loaded ontologies, specifying an IRI for the new ontology
+			OWLOntologyMerger merger = new OWLOntologyMerger(man);
+			mergedOntology = merger.createMergedOntology(man, IRI.create(mergedOntologyIRI));
+			for (OWLOntology ontology : man.getOntologies()) {
+				System.out.println("  Copying annotations from " + ontology.getOntologyID());
+				for (OWLAnnotation annotation : ontology.getAnnotations()) {
+					System.out.println("  copying annotation: " + annotation.getProperty() + " -> " + annotation.getValue());
+					AddOntologyAnnotation annotationAdd = new AddOntologyAnnotation(source, annotation);
+					man.applyChange(annotationAdd);
+				}
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
