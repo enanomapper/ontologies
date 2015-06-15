@@ -110,14 +110,14 @@ public class OntologyHelper {
 			// Merge all of the loaded ontologies, specifying an IRI for the new ontology
 			OWLOntologyMerger merger = new OWLOntologyMerger(man);
 			mergedOntology = merger.createMergedOntology(man, IRI.create(mergedOntologyIRI));
-			for (OWLOntology ontology : man.getOntologies()) {
-				System.out.println("  Copying annotations from " + ontology.getOntologyID());
-				for (OWLAnnotation annotation : ontology.getAnnotations()) {
-					System.out.println("  copying annotation: " + annotation.getProperty() + " -> " + annotation.getValue());
-					AddOntologyAnnotation annotationAdd = new AddOntologyAnnotation(source, annotation);
-					man.applyChange(annotationAdd);
-				}
-			}
+//			for (OWLOntology ontology : man.getOntologies()) {
+//				System.out.println("  Copying annotations from " + ontology.getOntologyID());
+//				for (OWLAnnotation annotation : ontology.getAnnotations()) {
+//					System.out.println("  copying annotation: " + annotation.getProperty() + " -> " + annotation.getValue());
+//					AddOntologyAnnotation annotationAdd = new AddOntologyAnnotation(source, annotation);
+//					man.applyChange(annotationAdd);
+//				}
+//			}
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null; 
