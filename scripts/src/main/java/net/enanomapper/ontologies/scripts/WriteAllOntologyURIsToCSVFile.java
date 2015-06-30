@@ -50,6 +50,10 @@ public class WriteAllOntologyURIsToCSVFile {
 				if (annoVal != null && !annoVal.isEmpty()) {
 					result.put(classIRI, annoVal);	
 				}
+				
+			}
+			if (!result.containsKey(clz.toStringID())) {
+				result.put(clz.toStringID(), "no RDFS label found!");
 			}
 		}
 		
