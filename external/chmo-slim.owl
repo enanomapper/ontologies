@@ -13,7 +13,7 @@
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
         <chmo:has_format-version rdf:resource="http://purl.obolibrary.org/obo/chmo#1.2"/>
         <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-08-11 11:29:37</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-08-11 14:44:05</oboInOwl:date>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">batchelorc</oboInOwl:saved-by>
     </owl:Ontology>
@@ -212,6 +212,15 @@
     
 
 
+    <!-- has proper occurrent part -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000118">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has proper occurrent part</rdfs:label>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000118</oboInOwl:id>
+    </rdf:Description>
+    
+
+
     <!-- has analyte -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CHMO_0002748">
@@ -275,11 +284,1259 @@
     
 
 
+    <!-- ion microscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000097">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microscopy where ions are used to produce an image.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000962</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IM</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000097</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000097"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microscopy where ions are used to produce an image.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- field ion microscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000098">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">field ion microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000097"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microscopy where atoms of an inert gas in the vicinty of the specimen (which is in the form of a very sharp tip &lt;10 m diameter) are ionised by the application of a strong electric field to the tip and an image is produced by the projection of the ions onto a fluorescent screen. The image consists of a pattern of spots of light which correspond to individual atoms on the specimen surface.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">field ionisation microscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">field ionization microscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">field-ion microscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">field-ionisation microscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">field-ionization microscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000098</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000098"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microscopy where atoms of an inert gas in the vicinty of the specimen (which is in the form of a very sharp tip &lt;10 m diameter) are ionised by the application of a strong electric field to the tip and an image is produced by the projection of the ions onto a fluorescent screen. The image consists of a pattern of spots of light which correspond to individual atoms on the specimen surface.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orange:17.2.7</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- atom probe field ion microscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000099">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atom probe field ion microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000098"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microscopy where atoms in the vicinty of the specimen (which is in the form of a very sharp tip &lt;10 m diameter) are ionised by the application of a strong electric field to the tip and an image is produced by the projection of the ions onto a fluorescent screen. The image consists of a pattern of spots of light which correspond to individual atoms on the specimen surface. When a sudden voltage pulse is applied to the tip, atoms from the surface of the specimen itself are be ejected and travel down a drift tube where their arrival time (a measure of the mass of the atom) can be determined. This allows the atomic composition of the specimen to be determined.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AP FIM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AP field ionisation microscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AP field ionization microscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AP field-ion microscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AP field-ionisation microscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AP field-ionization microscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AP-FIM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AP/FIM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">APFIM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atom probe field ionisation microscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atom probe field ionization microscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atom probe field-ion microscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atom probe field-ionisation microscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atom probe field-ionization microscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atom-probe field-ion microscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000099</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000099"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microscopy where atoms in the vicinty of the specimen (which is in the form of a very sharp tip &lt;10 m diameter) are ionised by the application of a strong electric field to the tip and an image is produced by the projection of the ions onto a fluorescent screen. The image consists of a pattern of spots of light which correspond to individual atoms on the specimen surface. When a sudden voltage pulse is applied to the tip, atoms from the surface of the specimen itself are be ejected and travel down a drift tube where their arrival time (a measure of the mass of the atom) can be determined. This allows the atomic composition of the specimen to be determined.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- helium-ion microscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000100">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helium-ion microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000098"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microscopy where atoms of He gas in the vicinty of the specimen are ionised and an image is produced by the projection of the ions onto a fluorescent screen. The image consists of a pattern of spots of light which correspond to individual atoms on the specimen surface.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000100</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000100"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microscopy where atoms of He gas in the vicinty of the specimen are ionised and an image is produced by the projection of the ions onto a fluorescent screen. The image consists of a pattern of spots of light which correspond to individual atoms on the specimen surface.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- scanning ion microscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000101">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scanning ion microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000097"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microscopy where an ion beam is scanned over the specimen surface and the secondary electrons emitted are detected.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000963</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SIM</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000101</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000101"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microscopy where an ion beam is scanned over the specimen surface and the secondary electrons emitted are detected.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000101"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SIM</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chmo#non-mining_synonym"/>
+    </owl:Axiom>
+    
+
+
+    <!-- Auger electron spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000339">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Auger electron spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where a high energy photon ionises a core electron and an electron from a higher energy level descends to take its place, releasing sufficient energy to eject a second so-called &apos;Auger&apos; electron and the energy of the Auger electron is detected as a function of incident photon energy.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AEES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Auger electron emission spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Auger electron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Auger spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Auger spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000339</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000339"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where a high energy photon ionises a core electron and an electron from a higher energy level descends to take its place, releasing sufficient energy to eject a second so-called &apos;Auger&apos; electron and the energy of the Auger electron is detected as a function of incident photon energy.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0-471-96523-5</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000339"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AES</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chmo#non-mining_synonym"/>
+    </owl:Axiom>
+    
+
+
+    <!-- angular dependent Auger electron spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000340">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angular dependent Auger electron spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000339"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where bombardment of a sample with high-energy photons results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons. The energies of these Auger electrons are detected as a function of emission angle.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADAS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARAES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angle-resolved Auger electron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angle-resolved Auger electron spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angular dependent Auger spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000340</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000340"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where bombardment of a sample with high-energy photons results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons. The energies of these Auger electrons are detected as a function of emission angle.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- resonant Auger electron spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000341">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resonant Auger electron spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000339"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where bombardment of a sample with high-energy photons results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons. The wavelength of the incident photons is scanned over an absorption edge in the sample and the Auger electrons emitted are detected as a function of energy.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RAES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resonance AES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resonance Auger electron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resonance Auger electron spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resonance Auger spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resonance Auger spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resonant AES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resonant Auger electron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resonant Auger spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resonant Auger spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000341</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000341"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where bombardment of a sample with high-energy photons results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons. The wavelength of the incident photons is scanned over an absorption edge in the sample and the Auger electrons emitted are detected as a function of energy.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1103/PhysRevLett.88.243001</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- angle-resolved resonant Auger electron spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000342">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angle-resolved resonant Auger electron spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000341"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where bombardment of a sample with high-energy photons results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons. The wavelength of the incident photons is scanned over an absorption edge in the sample and the Auger electrons emitted are detected as a function of emission angle.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angle-resolved resonance Auger electron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angle-resolved resonance Auger electron spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angle-resolved resonant Auger electron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000342</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000342"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where bombardment of a sample with high-energy photons results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons. The wavelength of the incident photons is scanned over an absorption edge in the sample and the Auger electrons emitted are detected as a function of emission angle.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- Auger electron partial yield spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000343">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Auger electron partial yield spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000339"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where bombardment of a sample with high-energy photons results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons. Only the Auger electrons emitted at a particular photon energy are detected.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">APYS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Auger electron partial yield spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000343</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000343"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where bombardment of a sample with high-energy photons results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons. Only the Auger electrons emitted at a particular photon energy are detected.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrangeBook:17.2.1.4</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- electron-excited Auger electron spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000344">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron-excited Auger electron spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000339"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where electron bombardment of a sample results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electron and the energies of these Auger electrons are detected as a function of incident electron energy.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EAES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EEAES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EIAES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron-excited Auger electron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron-induced Auger electron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron-induced Auger electron spectroscopy </oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000344</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000344"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where electron bombardment of a sample results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electron and the energies of these Auger electrons are detected as a function of incident electron energy.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orange:17.2.4</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- electron microprobe Auger spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000345">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron microprobe Auger spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000344"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where bombardment of a sample with a finely focused (&lt;10 m diameter) beam of electrons results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons. The energies of these Auger electrons are detected as a function of incident electron energy.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Auger electron microanalysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMAS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron microprobe Auger electron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000345</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000345"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where bombardment of a sample with a finely focused (&lt;10 m diameter) beam of electrons results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons. The energies of these Auger electrons are detected as a function of incident electron energy.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- ion-excited Auger electron spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000346">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion-excited Auger electron spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000339"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where ion bombardment of a sample results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons, which are detected as a function of incident ion energy.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEAES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IIAES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion neutralisation spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion neutralisation spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion neutralization spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion neutralization spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion-electron spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion-excited Auger spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion-induced Auger electron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion-induced Auger electron spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ionelectron spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000346</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000346"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where ion bombardment of a sample results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons, which are detected as a function of incident ion energy.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orange:17.2.4</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- He+-excited Auger electron spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000347">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He+-excited Auger electron spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000346"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the bombardment of a sample with He+ ions results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons, which are detected as a function of incident He+ ion energy.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HAES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He+-excited Auger electron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000347</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000347"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the bombardment of a sample with He+ ions results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons, which are detected as a function of incident He+ ion energy.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- proton-induced Auger electron spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000348">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proton-induced Auger electron spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000346"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the bombardment of a sample with protons results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons, which are detected as a function of incident proton energy.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PAES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proton-induced Auger electron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000348</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000348"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the bombardment of a sample with protons results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons, which are detected as a function of incident proton energy.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- angle-resolved ion-excited Auger electron spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000349">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angle-resolved ion-excited Auger electron spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000346"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where ion bombardment of a sample results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons, which are detected as a function of emission angle.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AIRES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angle-resolved ion-electron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angle-resolved ion-electron spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000349</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000349"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where ion bombardment of a sample results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons, which are detected as a function of emission angle.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- scanning Auger electron spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000350">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scanning Auger electron spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000339"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where a high-energy photon beam is scanned over the surface of a sample resulting in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons. The energies of these Auger electrons are detected as a function of incident photon energy.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scanning Auger electron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scanning Auger spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scanning Auger spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000350</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000350"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where a high-energy photon beam is scanned over the surface of a sample resulting in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons. The energies of these Auger electrons are detected as a function of incident photon energy.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- spin-polarised Auger electron spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000351">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spin-polarised Auger electron spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000339"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the bombardment of a sample with high-energy photons results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons. The energies of these Auger electrons are detected as a function of incident photon energy and a magnet is used to align all electron spins parallel to the emitting surface.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPAES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spin-polarized Auger electron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000351</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000351"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the bombardment of a sample with high-energy photons results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons. The energies of these Auger electrons are detected as a function of incident photon energy and a magnet is used to align all electron spins parallel to the emitting surface.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrangeBook:17.2.4</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- spin-polarised angle-resolved Auger electron spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000352">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spin-polarised angle-resolved Auger electron spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000351"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the bombardment of a sample with high-energy photons results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons. The energies of these Auger electrons are detected as a function of emission angle and a magnet is used to align all electron spins parallel to the emitting surface.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPARPES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spin-polarized angle-resolved Auger electron spectometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000352</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000352"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the bombardment of a sample with high-energy photons results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons. The energies of these Auger electrons are detected as a function of emission angle and a magnet is used to align all electron spins parallel to the emitting surface.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- X-ray excited Auger electron spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000353">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-ray excited Auger electron spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000339"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where X-ray bombardment of a sample results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons, which are detected as a function of incident X-ray energy.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-ray excited Auger electron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-ray induced Auger electron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-ray induced Auger electron spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XEAES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XIAES</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000353</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000353"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where X-ray bombardment of a sample results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons, which are detected as a function of incident X-ray energy.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orange:17.2.4</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- continuous X-ray-induced Auger electron spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000354">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continuous X-ray-induced Auger electron spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000353"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the bombardment of a sample with a continuous X-ray source (X-rays generated when electrons, or other high energy charged particles such as protons or alpha-particles, lose energy whilst passing through the Coulomb field of a nucleus) results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons, which are detected.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CX-AES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CXAES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bremsstrahlung Auger electron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bremsstrahlung Auger electron spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bremsstrahlung Auger spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bremsstrahlung Auger spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continuous X-ray-induced Auger electron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continuous X-ray-induced Auger spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continuous X-ray-induced Auger spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000354</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000354"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the bombardment of a sample with a continuous X-ray source (X-rays generated when electrons, or other high energy charged particles such as protons or alpha-particles, lose energy whilst passing through the Coulomb field of a nucleus) results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons, which are detected.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0824706005</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- X-ray photoelectron spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000404">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-ray photoelectron spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the sample is illuminated with X-rays causing ionisation and the emission of photoelectrons, the energies of which are measured.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000041</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ESCA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PESIS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-ray photoelectron emission spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-ray photoelectron scattering (XPS) spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-ray photoelectron scattering spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-ray photoelectron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-ray photoemission spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XPES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XPS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron spectrometry for chemical analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron spectrometry for chemical applications</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron spectroscopy for chemical analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron spectroscopy for chemical applications</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photoelectron spectroscopy of the inner shell</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000404</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000404"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the sample is illuminated with X-rays causing ionisation and the emission of photoelectrons, the energies of which are measured.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AU:X06716</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- angle-resolved X-ray photoelectron spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000405">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angle-resolved X-ray photoelectron spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000404"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the sample is illuminated with X-rays causing ionisation and the emission of photoelectrons, which are detected as a function of emission angle.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARXPS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angle-resolved X-ray photoelectron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000405</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000405"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the sample is illuminated with X-rays causing ionisation and the emission of photoelectrons, which are detected as a function of emission angle.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000684</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- high-resolution X-ray photoelectron spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000406">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high-resolution X-ray photoelectron spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000404"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the sample is illuminated with monochromatic X-rays causing ionisation and the emission of photoelectrons, the energies of which are measured.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HR-XPS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HRXPS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high resolution X-ray photoelectron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high resolution X-ray photoelectron spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high resolution X-ray photoemission spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high resolution X-ray photoemission spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high-resolution X-ray photoelectron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high-resolution X-ray photoemission spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000406</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000406"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the sample is illuminated with monochromatic X-rays causing ionisation and the emission of photoelectrons, the energies of which are measured.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- soft X-ray photoelectron spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000407">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soft X-ray photoelectron spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000404"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the sample is illuminated with &apos;soft&apos; (&lt;300 eV) X-rays causing ionisation and the emission of photoelectrons, the energies of which are measured.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SXPS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soft X-ray photoelectron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000407</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000407"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the sample is illuminated with &apos;soft&apos; (&lt;300 eV) X-rays causing ionisation and the emission of photoelectrons, the energies of which are measured.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orange:17.2.1.2</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- high-resolution soft X-ray photoelectron spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000408">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high-resolution soft X-ray photoelectron spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000407"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the sample is illuminated with monochromatic &apos;soft&apos; (&lt;300 eV) X-rays causing ionisation and the emission of photoelectrons, the energies of which are measured.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HR-SXPS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HRSXPS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high resolution soft X-ray photoelectron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high resolution soft X-ray photoelectron spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high resolution soft X-ray photoemission spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high resolution soft X-ray photoemission spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high-resolution soft X-ray photoelectron spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high-resolution soft X-ray photoemission spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000408</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000408"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the sample is illuminated with monochromatic &apos;soft&apos; (&lt;300 eV) X-rays causing ionisation and the emission of photoelectrons, the energies of which are measured.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1107/S0909049502009214</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000538">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plasma mass spectrometry where the plasma has been generated by electromagnetic induction.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000863</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inductively coupled plasma-mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inductively coupled plasma-mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000538</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plasma mass spectrometry where the plasma has been generated by electromagnetic induction.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- electrothermal vaporisation inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000539">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electrothermal vaporisation inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plasma mass spectrometry where the sample is vaporised by depositing it on a probe which is rapidly heated (to &gt;1000 deg C) by passing a current through it.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000864</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ETV-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ETV-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electrothermal vaporisation inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electrothermal vaporization inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electrothermal vaporization inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000539</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000539"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plasma mass spectrometry where the sample is vaporised by depositing it on a probe which is rapidly heated (to &gt;1000 deg C) by passing a current through it.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0-470-51634-8</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- slurry electrothermal vaporisation inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000540">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slurry electrothermal vaporisation inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000539"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ETV-ICP-MS where the solid sample is prepared by grinding into a fine powder and suspension in a diluent such as 0.1% HNO3.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slurry electrothermal vaporisation inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slurry electrothermal vaporization inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slurry electrothermal vaporization inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slurry sampling electrothermal vaporisation inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slurry sampling electrothermal vaporisation inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slurry sampling electrothermal vaporization inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slurry sampling electrothermal vaporization inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000540</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000540"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ETV-ICP-MS where the solid sample is prepared by grinding into a fine powder and suspension in a diluent such as 0.1% HNO3.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:1566701554</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- slurry nebulisation electrothermal vaporisation inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000541">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slurry nebulisation electrothermal vaporisation inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000540"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where a solid sample is ground to a fine powder and suspended in a diluent (such as 0.1% HNO3) before being vaporised by a probe which is rapidly heated by passing a current through it. The vaporised sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SN-ETV-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SN-ETV-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slurry nebulisation electrothermal vaporisation inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slurry nebulization electrothermal vaporization inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slurry nebulization electrothermal vaporization inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000541</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000541"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where a solid sample is ground to a fine powder and suspended in a diluent (such as 0.1% HNO3) before being vaporised by a probe which is rapidly heated by passing a current through it. The vaporised sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- solid sampling electrothermal vaporisation inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000542">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solid sampling electrothermal vaporisation inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000539"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where a solid sample is vaporised by depositing it on a probe which is rapidly heated by passing a current through it. The vaporised sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SS-ETV-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SS-ETV-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">direct solid sampling electrothermal vaporisation inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">direct solid sampling electrothermal vaporization inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">direct solid sampling electrothermal vaporization inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">direct solid-sampling electrothermal vaporisation inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">direct solid-sampling electrothermal vaporisation inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">direct solid-sampling electrothermal vaporization inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">direct solid-sampling electrothermal vaporization inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solid sampling electrothermal vaporisation inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solid sampling electrothermal vaporization inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solid sampling electrothermal vaporization inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solid-sampling electrothermal vaporisation inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solid-sampling electrothermal vaporisation inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solid-sampling electrothermal vaporization inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solid-sampling electrothermal vaporization inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000542</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000542"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where a solid sample is vaporised by depositing it on a probe which is rapidly heated by passing a current through it. The vaporised sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- high performance liquid chromatography-inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000543">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high performance liquid chromatography-inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000552"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by high-performance liquid chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HPLC ICP MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HPLC-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HPLC-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HPLC/ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high performance liquid chromatography inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high performance liquid chromatography-ICPMS </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high performance liquid chromatography-inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high pressure liquid chromatography inductively coupled mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000543</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000543"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by high-performance liquid chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1039/b813118j</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- high-performance liquid chromatography fluorescence detection-inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000544">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high-performance liquid chromatography fluorescence detection-inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000543"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by high-performance liquid chromatography with fluorescence detection before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HPLC-FD-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high performance liquid chromatography fluorescence detection inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high performance liquid chromatography fluorescence detection inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000544</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000544"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by high-performance liquid chromatography with fluorescence detection before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- high-performance liquid chromatography photodiode array-inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000545">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high-performance liquid chromatography photodiode array-inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000543"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by high-performance liquid chromatography with photodiode array detection before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HPLC-PDA-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high performance liquid chromatography photodiode array inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high performance liquid chromatography photodiode array inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000545</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000545"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by high-performance liquid chromatography with photodiode array detection before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- high-resolution inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000546">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high-resolution inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The &apos;exact&apos; mass of the sample ions is then determined as opposed to the &apos;nominal&apos; mass (the number of protons and neutrons).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HR-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HR-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high resolution inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high resolution inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000546</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000546"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The &apos;exact&apos; mass of the sample ions is then determined as opposed to the &apos;nominal&apos; mass (the number of protons and neutrons).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- inductively coupled plasma field sector mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000547">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inductively coupled plasma field sector mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The beam of ions is then directed into magnetic field, the orientation of which is perpendicular to the beam. The magnetic field forces the charged particles into different circular trajectories, the radii of which depend on the strength of the magnetic field, the accelerating voltage, and the mass of the ion.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICP-SF-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inductively coupled plasma field sector mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000547</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000547"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The beam of ions is then directed into magnetic field, the orientation of which is perpendicular to the beam. The magnetic field forces the charged particles into different circular trajectories, the radii of which depend on the strength of the magnetic field, the accelerating voltage, and the mass of the ion.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- inductively coupled plasma three dimensional quadrupole mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000548">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inductively coupled plasma three dimensional quadrupole mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The mass-to-charge ratio of the sample ions is then measured whilst the ions are held in a stable orbit by an electric field generated by three electrodes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICP-three dimensional-Q-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICP-three dimensional-QMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inductively coupled plasma three dimensional quadrupole mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000548</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000548"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The mass-to-charge ratio of the sample ions is then measured whilst the ions are held in a stable orbit by an electric field generated by three electrodes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- inductively coupled plasma time-of-flight mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000549">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inductively coupled plasma time-of-flight mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The sample ions with different masses are then accelerated to the same (known) kinetic energy and the time taken for each ion to reach a detector at a known distance is measured.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICP-TOF-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICP-TOFMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICP-ToF-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inductively coupled plasma time of flight mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inductively coupled plasma time of flight mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inductively coupled plasma time-of-flight mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000549</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000549"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The sample ions with different masses are then accelerated to the same (known) kinetic energy and the time taken for each ion to reach a detector at a known distance is measured.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- laser ablation inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000550">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laser ablation inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where the sample is vaporised using a laser pulse then ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LA ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LA-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LA-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laser ablation ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laser ablation inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laser ablation-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000550</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000550"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where the sample is vaporised using a laser pulse then ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0-470-51634-8</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- laser ablation inductively coupled plasma time-of-flight mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000551">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laser ablation inductively coupled plasma time-of-flight mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000550"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where the sample is vaporised using a laser pulse then ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The sample ions with different masses are then accelerated to the same (known) kinetic energy and the time taken for each ion to reach a detector at a known distance is measured.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LA-ICP-TOF-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LA-ICP-ToF-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laser ablation inductively coupled plasma time of flight mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laser ablation inductively coupled plasma time of flight mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laser ablation inductively coupled plasma time-of-flight mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000551</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000551"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where the sample is vaporised using a laser pulse then ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The sample ions with different masses are then accelerated to the same (known) kinetic energy and the time taken for each ion to reach a detector at a known distance is measured.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- liquid chromatography-inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000552">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liquid chromatography-inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by liquid chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LC-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LC-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LC/ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liquid chromatography inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liquid chromatography-inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000552</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000552"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by liquid chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000865</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- multiple collector inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000553">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multiple collector inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. A series of collectors ised used to detect several ion beams simultaneously.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MC-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MC-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multi collector-inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multicollector inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multicollector inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multiple collector inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000553</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000553"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. A series of collectors ised used to detect several ion beams simultaneously.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1039/b808232d</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- size-exclusion chromatography-inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000554">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">size-exclusion chromatography-inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by size-exclusion chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000755</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SEC-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SEC-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SEC/ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">size-exclusion chromatography inductively coupled mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">size-exclusion chromatography inductively coupled mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">size-exclusion chromatography-inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000554</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000554"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by size-exclusion chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- size-exclusion chromatography-high-performance liquid chromatography-inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000555">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">size-exclusion chromatography-high-performance liquid chromatography-inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000543"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000554"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by size-exclusion and high-performance liquid chromatographies before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SEC-HPLC-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">size-exclusion chromatography-high performance liquid chromatography inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">size-exclusion chromatography-high performance liquid chromatography-inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000555</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000555"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by size-exclusion and high-performance liquid chromatographies before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- solution inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000556">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solution inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where a sample mixture (a solution in dilute HNO3) is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solution ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solution ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solution inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solution-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000556</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000556"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where a sample mixture (a solution in dilute HNO3) is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- solution nebulisation inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000557">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solution nebulisation inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000556"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where a sample mixture (a solution in dilute HNO3) is passed through a nebuliser to form a mist of finely dispersed droplets before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SN-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solution nebulisation inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solution nebulization inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solution nebulization inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000557</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000557"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where a sample mixture (a solution in dilute HNO3) is passed through a nebuliser to form a mist of finely dispersed droplets before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- diffuse reflectance infrared Fourier transform spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000645">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diffuse reflectance infrared Fourier transform spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the diffuse reflection of a single pulse of infrared radiation by a sample is measured, and the spectrum obtained is subject to a Fourier transform.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DRIFT</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DRIFTS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diffuse reflectance infra-red Fourier transform spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diffuse reflectance infrared Fourier transform spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diffuse reflectance infrared Fourier transform spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diffuse reflectance infrared spectroscopy by Fourier transform</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000645</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000645"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy where the diffuse reflection of a single pulse of infrared radiation by a sample is measured, and the spectrum obtained is subject to a Fourier transform.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000657</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- thermogravimetry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000690">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermogravimetry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The measurement of the mass of a sample as a function of temperature.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TG</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TG analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TG measurements</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal gravimetric analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermo-gravimetric analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermogravimetric (TG) analyses</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermogravimetric (TG) analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermogravimetric (TGA) analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermogravimetric analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000690</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000690"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The measurement of the mass of a sample as a function of temperature.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- capillary electrophoresis-inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000703">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capillary electrophoresis-inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where a sample mixture is first separated by capillary electrophoresis, before being ionised in a plasma which has been generated by electromagnetic induction and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CE-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CE-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CE/ICP/MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capillary electrophoresis inductively coupled plasma-mass spectrometry </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capillary electrophoresis-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000703</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000703"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where a sample mixture is first separated by capillary electrophoresis, before being ionised in a plasma which has been generated by electromagnetic induction and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- capillary liquid chromatography-inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000750">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capillary liquid chromatography-inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by capillary liquid chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CapLC-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cap-LC-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capLC-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capillary liquid chromatography inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000750</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000750"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by capillary liquid chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- thermogravimetry-Fourier transform infrared spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000859">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermogravimetry-Fourier transform infrared spectroscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000690"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The FTIR analysis of volatile compounds released during the measurement of the mass of a sample as a function of temperature.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TG-FT-IR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TG-FTIR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TG/FTIR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGA-FT-IR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGA-FTIR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermogravimetry coupled to Fourier transform infrared spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermogravimetry-FTIR</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000859</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000859"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The FTIR analysis of volatile compounds released during the measurement of the mass of a sample as a function of temperature.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- thermogravimetry-mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000860">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermogravimetry-mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000690"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The MS analysis of volatile compounds released during the measurement of the mass of a sample as a function of temperature.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TG-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TG/MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGA-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGA/MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermogravimetry coupled to mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000860</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000860"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The MS analysis of volatile compounds released during the measurement of the mass of a sample as a function of temperature.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- dynamic reaction cell inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000871">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dynamic reaction cell inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The sample is held in a dynamic reaction cell which contains a reagent gas that reacts preferentially with certain species, in order to allow only the analyte ions into the mass-to-charge analyser and the detector.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DRC-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICP-DRC-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dynamic reaction cell inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000871</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000871"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The sample is held in a dynamic reaction cell which contains a reagent gas that reacts preferentially with certain species, in order to allow only the analyte ions into the mass-to-charge analyser and the detector.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- gas chromatography-inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000872">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gas chromatography-inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by gas chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GC-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GC-ICP/MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gas chromatography inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gas chromatography inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000872</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000872"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by gas chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- ion-exchange chromatography-inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000873">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion-exchange chromatography-inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by ion-exchange chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IC-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IC-ICP/MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEC-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion chromatography inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion chromatography inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion chromatography-inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0000873</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000873"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by ion-exchange chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- osmometry -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001082">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osmometry</rdfs:label>
-	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>	
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The measurement of the osmotic strength of a substance which often used to determine its molecular weight.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0001082</oboInOwl:id>
     </owl:Class>
@@ -292,11 +1549,185 @@
     
 
 
+    <!-- vapour pressure osmometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001083">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vapour pressure osmometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001082"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A technique used to determine the concentration of osmotically active particles that reduce the vapor pressure of a solution. Vapour pressure osmometry is used to measure the average molecular weight of polymers.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VPO</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vapor pressure osmometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vapor pressure osometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vapor-pressure osmometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vapour pressure osometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vapour-pressure osmometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0001083</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001083"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A technique used to determine the concentration of osmotically active particles that reduce the vapor pressure of a solution. Vapour pressure osmometry is used to measure the average molecular weight of polymers.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- reversed-phase high-performance liquid chromatography-inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001277">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reversed-phase high-performance liquid chromatography-inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000543"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by reversed-phase high-performance liquid chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">burchh</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-05-06T02:16:07Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RP-HPLC-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reversed phase high performance liquid chromatography inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reversed phase high pressure liquid chromatography inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reversed-phase HPLC-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reversed-phase high performance liquid chromatography inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reversed-phase high pressure liquid chromatography-inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0001277</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001277"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by reversed-phase high-performance liquid chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- nanoflow high-performance liquid chromatography-inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001281">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nanoflow high-performance liquid chromatography-inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000543"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000118"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by high-performance liquid chromatography (flow rate nL min-1) before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">burchh</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-05-06T02:39:15Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nHPLC-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nanoHPLC-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nanoflow HPLC ICP MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nanoflow HPLC-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nanoflow HPLC-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nanoflow HPLC/ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nanoflow high performance liquid chromatography inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nanoflow high performance liquid chromatography-ICPMS </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nanoflow high pressure liquid chromatography inductively coupled mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0001281</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001281"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by high-performance liquid chromatography (flow rate nL min-1) before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- reversed-phase nanoflow high-performance liquid chromatography-inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001283">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reversed-phase nanoflow high-performance liquid chromatography-inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001281"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000118"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by reversed-phase high performance liquid chromatography (flow rate nL min-1) before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">burchh</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-05-06T02:56:31Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reversed phase nanoflow high performance liquid chromatography inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reversed phase nanoflow high performance liquid chromatography-ICPMS </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reversed phase nanoflow high pressure liquid chromatography inductively coupled mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reversed-phase nHPLC-ICPMS </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reversed-phase nanoHPLC-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reversed-phase nanoHPLC-ICPMS </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reversed-phase nanoflow HPLC ICP MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reversed-phase nanoflow HPLC-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reversed-phase nanoflow HPLC-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reversed-phase nanoflow HPLC/ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0001283</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001283"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by reversed-phase high performance liquid chromatography (flow rate nL min-1) before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- low-temperature electrothermal vaporisation inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001791">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low-temperature electrothermal vaporisation inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000539"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where a solid sample is vaporised by depositing it on a probe which is rapidly heated (to &lt;1000 deg. C) by passing a current through it. The vaporised sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">burchh</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-05-20T02:37:17Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LTETV-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LTEV-ICPMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low temperature electrothermal vaporisation inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low temperature electrothermal vaporization inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low-temperature electrothermal vaporization inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0001791</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001791"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry where a solid sample is vaporised by depositing it on a probe which is rapidly heated (to &lt;1000 deg. C) by passing a current through it. The vaporised sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1021/ac035437e</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- automated thermal desorption-gas chromatography mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001931">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automated thermal desorption-gas chromatography mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002640"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000118"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first adsorbed onto packed tubes (e.g. Tenax) then each tube is automatically moved into a desorption oven and heated (100--280 deg. C for 5--20 min) to promote thermal desorption of the mixture into the headspace of the tube. The headspace is sampled and used for gas chromatography and the eluent is then ionised and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">burchh</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-06-08T01:31:14Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATC-GCMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATD, GC/MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATD-GC-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATD-GC/MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATD/GC-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATD/GC/MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automated thermal desorption gas chromatography mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automated thermodesorption-gas chromatography mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0001931</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001931"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first adsorbed onto packed tubes (e.g. Tenax) then each tube is automatically moved into a desorption oven and heated (100--280 deg. C for 5--20 min) to promote thermal desorption of the mixture into the headspace of the tube. The headspace is sampled and used for gas chromatography and the eluent is then ionised and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0751401587</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- granulometry -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002119">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">granulometry</rdfs:label>
-	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>	
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The measurement of the size distribution in a collection of grains.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">burchh</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-07-08T09:57:28Z</oboInOwl:creation_date>
@@ -315,7 +1746,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002249">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">porosimetry</rdfs:label>
-	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>	
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The measurement of the pore diameter, pore-size distribution and total pore volume of a sample.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">burchh</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-08-05T06:14:39Z</oboInOwl:creation_date>
@@ -327,6 +1758,204 @@
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The measurement of the pore diameter, pore-size distribution and total pore volume of a sample.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- ellipsometric porosimetry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002250">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ellipsometric porosimetry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002249"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The measurement of the pore diameter, pore-size distribution and total pore volume of a thin porous film sample by measuring the changes in intensity and polarisation of  reflected light during vapour adsorption and desorption.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">burchh</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-08-05T06:16:26Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EP</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0002250</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002250"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The measurement of the pore diameter, pore-size distribution and total pore volume of a thin porous film sample by measuring the changes in intensity and polarisation of  reflected light during vapour adsorption and desorption.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.tsf.2005.08.334</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- ion-pair chromatography-inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002281">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion-pair chromatography-inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000873"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000118"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by ion-pair chromatography (where sample ions are &apos;paired&apos; or neutralised and separated as an ion pair on a reversed-phase column) before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">burchh</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-08-19T02:02:55Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IP-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IP-ICP/MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IPC-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IPC-ICP/MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion pairing chromatography-inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion-pair chromatography inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion-pair chromatography inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion-pairing chromatography-inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0002281</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002281"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by ion-pair chromatography (where sample ions are &apos;paired&apos; or neutralised and separated as an ion pair on a reversed-phase column) before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- parallel ICP-MS and EI-MS detection after GC separation -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002538">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parallel ICP-MS and EI-MS detection after GC separation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000872"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by gas chromatography before part of the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance. Another part of the sample is simultaneously ionised by electrons (energy 70 eV) which have been emitted from a glowing filament and accelerated through an electric field. The ions are then characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">burchh</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-10-21T06:00:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GC-EI-MS/ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GC/EI-MS/ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0002538</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002538"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by gas chromatography before part of the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance. Another part of the sample is simultaneously ionised by electrons (energy 70 eV) which have been emitted from a glowing filament and accelerated through an electric field. The ions are then characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1039/b822668f</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- low-temperature gas chromatography-inductively coupled plasma mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002539">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low-temperature gas chromatography-inductively coupled plasma mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000872"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000118"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by low-temperature gas chromatography (-78 deg.C) before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">burchh</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-10-21T06:07:24Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LT-GC-ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LT-GC/ICP-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low temperature gas chromatography (LT-GC) coupled on-line with inductively coupled plasma mass spectrometry (ICP-MS)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low-temperature gas chromatography inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low-temperature gas chromatography inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0002539</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002539"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first separated by low-temperature gas chromatography (-78 deg.C) before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- thermal desorption-gas chromatography mass spectrometry -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002640">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal desorption-gas chromatography mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000872"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000118"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first adsorbed onto packed tubes (e.g. Tenax) then moved into a desorption oven and heated (100--280 deg. C for 5--20 min) to promote thermal desorption of the mixture into the headspace of the tube. The headspace is sampled and used for gas chromatography and the eluent is then ionised and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">burchh</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-12-11T01:18:41Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TD GC-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TD GC/MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TD-GC-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TD-GC/MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TD-GCMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TD/GC-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TD/GC/MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal desorption GC-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal desorption GC/MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal desorption gas chromatography mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermodesorption GC-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermodesorption GC/MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermodesorption-gas chromatography mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0002640</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002640"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method where a sample mixture is first adsorbed onto packed tubes (e.g. Tenax) then moved into a desorption oven and heated (100--280 deg. C for 5--20 min) to promote thermal desorption of the mixture into the headspace of the tube. The headspace is sampled and used for gas chromatography and the eluent is then ionised and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- thermogravimetry-differential thermal analysis -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002651">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermogravimetry-differential thermal analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000690"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The measurement of the temperature difference between the sample and a reference material during the measurement of the mass of the sample as a function of temperature.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">burchh</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-01-04T04:19:21Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DTA-TG</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DTA-TGA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DTA/TG</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DTA/TGA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TG-DTA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGA-DTA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGDTA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">differential thermal analysis and thermal gravimetry analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">differential thermalgravimetric analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermogravimetric and differential thermal analyses</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermogravimetry coupled to differential thermal analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0002651</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002651"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The measurement of the temperature difference between the sample and a reference material during the measurement of the mass of the sample as a function of temperature.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rsc:hjb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- in situ diffuse reflectance infrared Fourier transform spectroscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002813">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in situ diffuse reflectance infrared Fourier transform spectroscopy</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For example, the sample might be a catalyst, so during those catalytic processes.</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000645"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diffuse reflectance infrared Fourier transform spectroscopy of a sample that is carried out in the environment where the sample might be used.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in situ DRIFT</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in situ DRIFTS</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0002813</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002813"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diffuse reflectance infrared Fourier transform spectroscopy of a sample that is carried out in the environment where the sample might be used.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSC:cb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- assay -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
     
 
 
@@ -357,10 +1986,6 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000110">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has continuant part at all times</rdfs:label>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000110</oboInOwl:id>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000118">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has proper occurrent part</rdfs:label>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000118</oboInOwl:id>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000137">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proper part of continuant at all times</rdfs:label>
