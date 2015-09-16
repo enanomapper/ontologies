@@ -1,0 +1,3012 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://livercancer.imbi.uni-heidelberg.de/ccont"
+     xml:base="http://livercancer.imbi.uni-heidelberg.de/ccont"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:CellCultureOntology="http://livercancer.imbi.uni-heidelberg.de/ccont#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:NCBITaxon="http://purl.org/obo/owl/NCBITaxon#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:IEV="http://purl.org/obo/owl/IEV#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell culture ontology (CCONT)</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1</owl:versionInfo>
+        <efo:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matthias Ganzinger, matthias.ganzinger@med.uni-heidelberg.de</efo:creator>
+        <owl:imports rdf:resource="http://www.ebi.ac.uk/efo/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    <owl:AnnotationProperty rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000186">
+        <rdfs:label xml:lang="en">Snomedid</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000185 -->
+
+    <owl:ObjectProperty rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000185">
+        <rdfs:label xml:lang="en">has_growth_condition</rdfs:label>
+        <efo:definition>growth condition for cell culture</efo:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000196 -->
+
+    <owl:DatatypeProperty rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000196">
+        <rdfs:label xml:lang="en">cytogeneticsProperty</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000000 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000000">
+        <rdfs:label xml:lang="en">supplement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000523"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000001 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000001">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amino acid role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000002 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000002">
+        <rdfs:label xml:lang="en">essential amino acid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000003 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000003">
+        <rdfs:label xml:lang="en">non-essential amino acid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000004 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000004">
+        <rdfs:label xml:lang="en">conditionally essential amino acid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000005 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000005">
+        <rdfs:label xml:lang="en">amino acid</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000001"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000007 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000007">
+        <rdfs:label xml:lang="en">aspartate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000008 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000008">
+        <rdfs:label xml:lang="en">glutamate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000022 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000022">
+        <rdfs:label xml:lang="en">essential amino acid</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000002"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000023 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000023">
+        <rdfs:label xml:lang="en">non-essential amino acid</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000003"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000024 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000024">
+        <rdfs:label xml:lang="en">conditionally essential amino acid</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000004"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000028 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000028">
+        <rdfs:label xml:lang="en">erythromycin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000029 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000029">
+        <rdfs:label xml:lang="en">g418 disulfate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000034 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000034">
+        <rdfs:label xml:lang="en">neomycin trisulfate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000035 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000035">
+        <rdfs:label xml:lang="en">penicillin G</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000036 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000036">
+        <rdfs:label xml:lang="en">polymyin B</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000039 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000039">
+        <rdfs:label xml:lang="en">prolactin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001824"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000040 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000040">
+        <rdfs:label xml:lang="en">somatostatin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001824"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000041 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000041">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">salt role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000042 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000042">
+        <rdfs:label xml:lang="en">monopotassium phosphate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KH2PO4</efo:alternative_term>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000043 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000043">
+        <rdfs:label xml:lang="en">magnesium sulfate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mg SO4</efo:alternative_term>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000044 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000044">
+        <rdfs:label xml:lang="en">disodium hydrogen phosphate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Na2HPO4</efo:alternative_term>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000045 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000045">
+        <rdfs:label xml:lang="en">sodium bicarbonate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NaHCO3</efo:alternative_term>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000046 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000046">
+        <rdfs:label xml:lang="en">salt</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000041"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047">
+        <rdfs:label xml:lang="en">mixture</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000048 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000048">
+        <rdfs:label xml:lang="en">fetal bovine serum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBS</efo:alternative_term>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000049 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000049">
+        <rdfs:label xml:lang="en">bovine calf serum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000050 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000050">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bovine serum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000051 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000051">
+        <rdfs:label xml:lang="en">newborn calf serum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000052 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000052">
+        <rdfs:label xml:lang="en">chicken Serum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000053 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000053">
+        <rdfs:label xml:lang="en">goat serum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000054 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000054">
+        <rdfs:label xml:lang="en">porcine Serum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000055 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000055">
+        <rdfs:label xml:lang="en">rabbit serum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000056 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000056">
+        <rdfs:label xml:lang="en">sheep serum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000057 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000057">
+        <rdfs:label xml:lang="en">human serum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000058 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000058">
+        <rdfs:label xml:lang="en">horse serum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059">
+        <rdfs:label xml:lang="en">serum role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000060 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000060">
+        <rdfs:label xml:lang="en">safety classification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000061 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000061">
+        <rdfs:label xml:lang="en">biosafety level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000060"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000062 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000062">
+        <rdfs:label xml:lang="en">risk group</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000060"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000063 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000063">
+        <rdfs:label xml:lang="en">rsik group 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000062"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000064 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000064">
+        <rdfs:label xml:lang="en">rsik group 2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000062"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000065 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000065">
+        <rdfs:label xml:lang="en">rsik group 3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000062"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000066 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000066">
+        <rdfs:label xml:lang="en">rsik group 4</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000062"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000067 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000067">
+        <rdfs:label xml:lang="en">biosafety level 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000061"/>
+        <CellCultureOntology:CCONT_0000186 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-41E4D</CellCultureOntology:CCONT_0000186>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000068 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000068">
+        <rdfs:label xml:lang="en">biosafety level 2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000061"/>
+        <CellCultureOntology:CCONT_0000186 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-41E4E</CellCultureOntology:CCONT_0000186>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000069 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000069">
+        <rdfs:label xml:lang="en">biosafety level 3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000061"/>
+        <CellCultureOntology:CCONT_0000186 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-41E4F</CellCultureOntology:CCONT_0000186>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000070 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000070">
+        <rdfs:label xml:lang="en">trypsin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000076"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000071 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000071">
+        <rdfs:label xml:lang="en">cell cultivation task</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002694"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000072 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000072">
+        <rdfs:label xml:lang="en">subcultivation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000071"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000073 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000073">
+        <rdfs:label xml:lang="en">seed</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000071"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000074 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000074">
+        <rdfs:label xml:lang="en">split</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000071"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000075 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000075">
+        <rdfs:label xml:lang="en">incubate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000071"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000076 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000076">
+        <rdfs:label xml:lang="en">detachment aid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000077 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000077">
+        <rdfs:label xml:lang="en">confluence rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001444"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000078 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000078">
+        <rdfs:label xml:lang="en">split ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001444"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000079 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000079">
+        <rdfs:label xml:lang="en">seed density</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001444"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000080 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000080">
+        <rdfs:label xml:lang="en">growth mode</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000081 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000081">
+        <rdfs:label xml:lang="en">adherent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000080"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000082 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000082">
+        <rdfs:label xml:lang="en">suspended</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000080"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084">
+        <rdfs:label xml:lang="en">STR marker</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000085 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000085">
+        <rdfs:label xml:lang="en">D3S1358</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000086 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000086">
+        <rdfs:label xml:lang="en">THO1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000087 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000087">
+        <rdfs:label xml:lang="en">D21S11</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000088 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000088">
+        <rdfs:label xml:lang="en">D18S51</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000089 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000089">
+        <rdfs:label xml:lang="en">D5S818</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000090 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000090">
+        <rdfs:label xml:lang="en">D13S317</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000091 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000091">
+        <rdfs:label xml:lang="en">D7S820</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000092 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000092">
+        <rdfs:label xml:lang="en">D16S539</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000093 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000093">
+        <rdfs:label xml:lang="en">CSF1PO</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000094 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000094">
+        <rdfs:label xml:lang="en">vWA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000095 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000095">
+        <rdfs:label xml:lang="en">D8S1179</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000096 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000096">
+        <rdfs:label xml:lang="en">TPOX</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000097 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000097">
+        <rdfs:label xml:lang="en">FGA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000098 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000098">
+        <rdfs:label xml:lang="en">D2S1338</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000099 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000099">
+        <rdfs:label xml:lang="en">D19S433</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000100 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000100">
+        <rdfs:label xml:lang="en">Amelogenin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000101 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000101">
+        <rdfs:label xml:lang="en">cellular product</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000102 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000102">
+        <rdfs:label xml:lang="en">cytogenetics</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000103 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000103">
+        <rdfs:label xml:lang="en">str marker</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000104 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000104">
+        <rdfs:label xml:lang="en">biosafety level 4</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000061"/>
+        <CellCultureOntology:CCONT_0000186 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-41E50</CellCultureOntology:CCONT_0000186>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000177 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000177">
+        <rdfs:label xml:lang="en">alpha-fetoprotein</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000178 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000178">
+        <rdfs:label xml:lang="en">HBsAg</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000179 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000179">
+        <rdfs:label xml:lang="en">EBV</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10239"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000180 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000180">
+        <rdfs:label xml:lang="en">HBV</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10239"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000181 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000181">
+        <rdfs:label xml:lang="en">HCV</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10239"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000182 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000182">
+        <rdfs:label xml:lang="en">HIV</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10239"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000183 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000183">
+        <rdfs:label xml:lang="en">HTLV-I-II</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10239"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000184 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000184">
+        <rdfs:label xml:lang="en">SMRV</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10239"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000187 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000187">
+        <rdfs:label xml:lang="en">HuH-7</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000322"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000182"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000188 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000188">
+        <rdfs:label xml:lang="en">PLC-PRF-5</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000322"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000182"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000189 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000189">
+        <rdfs:label xml:lang="en">FESFPS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000190 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000190">
+        <rdfs:label xml:lang="en">F13B</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000191 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000191">
+        <rdfs:label xml:lang="en">F13A01</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000084"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000192 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000192">
+        <rdfs:label xml:lang="en">THLE-3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000322"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000182"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000193 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000193">
+        <rdfs:label xml:lang="en">THLE-2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000322"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000182"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000194 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000194">
+        <rdfs:label xml:lang="en">Hepa 1-6</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000322"/>
+    </owl:Class>
+    
+
+
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000195 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000195">
+        <rdfs:label xml:lang="en">BNL</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000322"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_15428 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_15428">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_168396 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_168396">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mycophenolic acid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_16976 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16976">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hygromycin B</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_17076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_17076">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">streptomycin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_17822 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_17822">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">serine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_18186 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_18186">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tyrosine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_22653 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_22653">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asparagine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_24898 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24898">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isoleucine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_25017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25017">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leucine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_25094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25094">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lysine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_26271 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26271">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proline</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_26986 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26986">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">threonine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_27266 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27266">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">valine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_27570 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27570">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">histidine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_27897 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27897">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tryptophan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_28044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28044">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenylalanine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_29016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_29016">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arginine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_32599 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_32599">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnesium sulfate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_3393 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_3393">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbenicillin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_34683 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_34683">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disodium hydrogenphosphate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_42820 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_42820">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">guanidine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_48923 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_48923">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erythromycin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_6104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_6104">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kanamycin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_7660 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_7660">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nystatin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:24127"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000293 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000293">
+        <rdfs:label xml:lang="en">Medium condition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000579"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000295 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000295">
+        <rdfs:label xml:lang="en">KBM (medium)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000316"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000296 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000296">
+        <rdfs:label xml:lang="en">KBM-2 (medium)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000316"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000297 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000297">
+        <rdfs:label xml:lang="en">MEGM (medium)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000353"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000298 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000298">
+        <rdfs:label xml:lang="en">MEBM (medium)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000353"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000299 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000299">
+        <rdfs:label xml:lang="en">BEBM (medium)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000352"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000300 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000300">
+        <rdfs:label xml:lang="en">SABM (medium)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000352"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000301 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000301">
+        <rdfs:label xml:lang="en">PrEGM (medium)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000354"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000302 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000302">
+        <rdfs:label xml:lang="en">PrEBM (medium)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000354"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000304 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000304">
+        <rdfs:label xml:lang="en">DMEM (medium)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000311"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000305 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000305">
+        <rdfs:label xml:lang="en">199 medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000341"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000342"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000306 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000306">
+        <rdfs:label xml:lang="en">Animal cell medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000307 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000307">
+        <rdfs:label xml:lang="en">KGM-2 (medium)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000316"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000308 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000308">
+        <rdfs:label xml:lang="en">Rat cell medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000306"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000309 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000309">
+        <rdfs:label xml:lang="en">Mouse cell medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000306"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000310 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000310">
+        <rdfs:label xml:lang="en">Neuronal cell medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000311 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000311">
+        <rdfs:label xml:lang="en">ES cell medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000312 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000312">
+        <rdfs:label xml:lang="en">HeLa medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000313 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000313">
+        <rdfs:label xml:lang="en">BME medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000312"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000314"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000314 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000314">
+        <rdfs:label xml:lang="en">Mouse L-cell medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000315 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000315">
+        <rdfs:label xml:lang="en">Hepatocyte medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000316 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000316">
+        <rdfs:label xml:lang="en">Epidermal keratinocyto medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000317 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000317">
+        <rdfs:label xml:lang="en">Macrophage medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000318 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000318">
+        <rdfs:label xml:lang="en">Amniocyte medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000319 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000319">
+        <rdfs:label xml:lang="en">Peripheral blood medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000320 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000320">
+        <rdfs:label xml:lang="en">Bone marrow medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000321 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000321">
+        <rdfs:label xml:lang="en">Human hematopoietic cell medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000322 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000322">
+        <rdfs:label xml:lang="en">Lymphocyte medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000323 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000323">
+        <rdfs:label xml:lang="en">CHO medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000324 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000324">
+        <rdfs:label xml:lang="en">DG44 medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000325 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000325">
+        <rdfs:label xml:lang="en">293 medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000326 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000326">
+        <rdfs:label xml:lang="en">COS-7 medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000327 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000327">
+        <rdfs:label xml:lang="en">MDCK medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000328 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000328">
+        <rdfs:label xml:lang="en">VERO medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000329 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000329">
+        <rdfs:label xml:lang="en">BHK-21 medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000330 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000330">
+        <rdfs:label xml:lang="en">PK-15 medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000331 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000331">
+        <rdfs:label xml:lang="en">CV-1 medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000332 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000332">
+        <rdfs:label xml:lang="en">WI-38 medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000333 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000333">
+        <rdfs:label xml:lang="en">Hybridoma cell medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000334 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000334">
+        <rdfs:label xml:lang="en">HEp2 medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000335 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000335">
+        <rdfs:label xml:lang="en">A549 medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000336 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000336">
+        <rdfs:label xml:lang="en">BSC-1 medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000337 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000337">
+        <rdfs:label xml:lang="en">Ham&apos;s F-10 medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000323"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000333"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000338"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000338 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000338">
+        <rdfs:label xml:lang="en">Myeloma medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000339 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000339">
+        <rdfs:label xml:lang="en">Ham&apos;s F-12 medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000323"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000333"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000338"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000340 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000340">
+        <rdfs:label xml:lang="en">IMDM (medium)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000322"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000333"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000341 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000341">
+        <rdfs:label xml:lang="en">Chicken aortic smooth muscle cell medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000342 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000342">
+        <rdfs:label xml:lang="en">Fibroblast medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000343 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000343">
+        <rdfs:label xml:lang="en">All-purpose medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000344 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000344">
+        <rdfs:label xml:lang="en">MEM (medium)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000343"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000346 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000346">
+        <rdfs:label xml:lang="en">Alpha MEM (medium)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000333"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000348 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000348">
+        <rdfs:label xml:lang="en">Jurkat cell medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000349 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000349">
+        <rdfs:label xml:lang="en">HL60 medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000350 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000350">
+        <rdfs:label xml:lang="en">Waymouth&apos;s medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000314"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000351 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000351">
+        <rdfs:label xml:lang="en">Mesenchymal cell medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000352 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000352">
+        <rdfs:label xml:lang="en">Human bronchial epithelial cell medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000353 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000353">
+        <rdfs:label xml:lang="en">Mammary epithelial cell medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000354 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000354">
+        <rdfs:label xml:lang="en">Human prostate epithelial cell medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000355 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000355">
+        <rdfs:label xml:lang="en">SAGM (medium)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000352"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000356 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000356">
+        <rdfs:label xml:lang="en">BEGM (medium)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000352"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000357 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000357">
+        <rdfs:label xml:lang="en">KGM (medium)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000316"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000362 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000362">
+        <rdfs:label xml:lang="en">Human vascular smooth muscle medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/IEV#IEV_0000363 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/IEV#IEV_0000363">
+        <rdfs:label xml:lang="en">Human vascular endothelial cell medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/IEV#IEV_0000293"/>
+        <oboInOwl:hasOBONamespace>event</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:1367 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:1367">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001824"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:16449 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:16449">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:16811 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:16811">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:17026 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:17026">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001824"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:17234 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:17234">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:33284"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:17561 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:17561">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:17698 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:17698">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:17833 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:17833">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:17939 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:17939">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582">
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000000"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:24127 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:24127">
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000000"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:26710 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:26710">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:2682 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:2682">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:24127"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:27504 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:27504">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:27666 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:27666">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:27902 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:27902">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:28300 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:28300">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:28971 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:28971">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:22582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:32588 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:32588">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:3312 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:3312">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:33229 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:33229">
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000000"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:41879 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:41879">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001824"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:5931 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do;?chebiId=CHEBI:5931">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001824"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:23965 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:23965">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001824"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000322 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0000322">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000185"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000523"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000523 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000523"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000536 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000536"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000540 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000540"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000548 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000548"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000565 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000565"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000574 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000574"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000589 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000589"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000591 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000591"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000616 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000616"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000618 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000618"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000622 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000622"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000635 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000635"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000677 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000677"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000681 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000681"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000684 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000684"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000691 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000691"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000707 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000707"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000714 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000714"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000719 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000719"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000727 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000727"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000756 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000756"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000757 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000757"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000764 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000764"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000787 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000787"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000795 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000795"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000796 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000796"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000797 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000797"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000802 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000802"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000814 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000814"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000826 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000826"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000835 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000835"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000847 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000847"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000988 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000988"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000999 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000999"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001058 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001058"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001071 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001071"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001282 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001282"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001444 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001444"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001451 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001451"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001642 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001642"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001645 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001645"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001824 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0001824">
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000000"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001948 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001948"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001949 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001949"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001981 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001981"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002422 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002422"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002425 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002425"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002426 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002426"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002427 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002427"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002428 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002428"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002534 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002534"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002542 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002542"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002658 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002658"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002694 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002694"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002890 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002890"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003013 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003013"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003144 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003144"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003233 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003233">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001824"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003739 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003739"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003767 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003767"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003769 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003769"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003785 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003785"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003787 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003787">
+        <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003836 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003836"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003915 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003915"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003969 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003969"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004003 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004003"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004024 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004024"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004145 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004145"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004269 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004269"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004415 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004415"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004416 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004416"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004417 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004417"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004446 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004446"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/Methodological_Variantion_Design -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/Methodological_Variantion_Design"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Disposition -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Disposition"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Function -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Function"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#MaterialEntity -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Quality -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Site -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Site"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+
