@@ -2,27 +2,19 @@
 <rdf:RDF xmlns="http://purl.enanomapper.net/onto/external/chebi-slim.owl#"
      xml:base="http://purl.enanomapper.net/onto/external/chebi-slim.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo#"
-     xmlns:pav="http://purl.org/pav/"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/chebi-slim.owl">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI Release version 133</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI Release version 125</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For any queries contact chebi-help@ebi.ac.uk or http://www.ebi.ac.uk/chebi</rdfs:label>
-        <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slimmer</oboInOwl:auto-generated-by>
+        <owl:versionIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">125</owl:versionIRI>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-03-01 11:29</dc:date>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemical Entities of Biological Interest (ChEBI)</dc:title>
-        <pav:importedFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl</pav:importedFrom>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ChEBI curation team</dc:creator>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
-        <owl:versionIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">133</owl:versionIRI>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemical Entities of Biological Interest (ChEBI) is a freely available dictionary of molecular entities focused on &apos;small&apos; chemical compounds.</dc:description>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-11-01 02:35</dc:date>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-11-23 16:09:39</oboInOwl:date>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ChEBI curation team</dc:creator>
     </owl:Ontology>
     
 
@@ -83,6 +75,89 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo#has_functional_parent -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo#has_functional_parent">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has functional parent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo#has_parent_hydride -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo#has_parent_hydride">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has parent hydride</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo#has_part -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo#has_part">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo#has_role -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo#has_role">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo#is_conjugate_acid_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo#is_conjugate_acid_of">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is conjugate acid of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo#is_conjugate_base_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo#is_conjugate_base_of">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is conjugate base of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo#is_enantiomer_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo#is_enantiomer_of">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is enantiomer of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo#is_substituent_group_from -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo#is_substituent_group_from">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is substituent group from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo#is_tautomer_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo#is_tautomer_of">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is tautomer of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -124,16 +199,16 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_23367 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23367">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.</obo:Definition>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.</obo:Synonym>
+        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.</obo:Definition>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entidad molecular</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entidades moleculares</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entite moleculaire</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular entities</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular entity</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molekulare Entitaet</obo:Synonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular entity</rdfs:label>
     </owl:Class>
     
 
@@ -141,31 +216,31 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_33128 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33128">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C60 fullerene</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33416"/>
-        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fullerene that has formula C60.</obo:Definition>
-        <obo:InChI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChI=1S/C60/c1-2-5-6-3(1)8-12-10-4(1)9-11-7(2)17-21-13(5)23-24-14(6)22-18(8)28-20(12)30-26-16(10)15(9)25-29-19(11)27(17)37-41-31(21)33(23)43-44-34(24)32(22)42-38(28)48-40(30)46-36(26)35(25)45-39(29)47(37)55-49(41)51(43)57-52(44)50(42)56(48)59-54(46)53(45)58(55)60(57)59</obo:InChI>
-        <obo:InChIKey rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMWRBQBLMFGWIX-UHFFFAOYSA-N</obo:InChIKey>
-        <obo:SMILES rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c12c3c4c5c1c1c6c7c2c2c8c3c3c9c4c4c%10c5c5c1c1c6c6c%11c7c2c2c7c8c3c3c8c9c4c4c9c%10c5c5c1c1c6c6c%11c2c2c7c3c3c8c4c4c9c5c1c1c6c2c3c41</obo:SMILES>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(C60-Ih)[5,6]fullerene</obo:Synonym>
+        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fullerene that has formula C60.</obo:Definition>
+        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beilstein:5901022</obo:xref>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Buckminsterfulleren</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Buckyball</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C60</obo:Synonym>
+        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChemIDplus:99685-96-8</obo:xref>
+        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:25118710</obo:xref>
+        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gmelin:100331</obo:xref>
+        <obo:InChI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChI=1S/C60/c1-2-5-6-3(1)8-12-10-4(1)9-11-7(2)17-21-13(5)23-24-14(6)22-18(8)28-20(12)30-26-16(10)15(9)25-29-19(11)27(17)37-41-31(21)33(23)43-44-34(24)32(22)42-38(28)48-40(30)46-36(26)35(25)45-39(29)47(37)55-49(41)51(43)57-52(44)50(42)56(48)59-54(46)53(45)58(55)60(57)59</obo:InChI>
+        <obo:InChIKey rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChIKey=XMWRBQBLMFGWIX-UHFFFAOYSA-N</obo:InChIKey>
+        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIST Chemistry WebBook:99685-96-8</obo:xref>
+        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reaxys:5901022</obo:xref>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[5,6]fullerene-C60-Ih</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[60-Ih]fullerene</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[60]fullerene</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">buckminsterfulereno</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">buckminsterfullerene</obo:Synonym>
+        <obo:SMILES rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c12c3c4c5c1c1c6c7c2c2c8c3c3c9c4c4c%10c5c5c1c1c6c6c%11c7c2c2c7c8c3c3c8c9c4c4c9c%10c5c5c1c1c6c6c%11c2c2c7c3c3c8c4c4c9c5c1c1c6c2c3c41</obo:SMILES>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">footballene</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fullerene 60</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fullerene C60</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soccerballene</obo:Synonym>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beilstein:5901022</obo:xref>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChemIDplus:99685-96-8</obo:xref>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:25118710</obo:xref>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gmelin:100331</obo:xref>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIST Chemistry WebBook:99685-96-8</obo:xref>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reaxys:5901022</obo:xref>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C60 fullerene</rdfs:label>
     </owl:Class>
     
 
@@ -173,22 +248,22 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_33195 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33195">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C70 fullerene</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33416"/>
-        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fullerene that has formula C70.</obo:Definition>
-        <obo:InChI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChI=1S/C70/c1-2-22-5-6-24-13-14-26-11-9-23-4-3(21(1)51-52(22)54(24)55(26)53(23)51)33-31(1)61-35-7-8-27-15-16-29-19-20-30-18-17-28-12-10(25(7)56-57(27)59(29)60(30)58(28)56)37(35)63(33)65-36(4)40(9)67(44(17)42(12)65)69-46(11)47(14)70(50(20)49(18)69)68-43(13)39(6)66(45(16)48(19)68)64-34(5)32(2)62(61)38(8)41(15)64</obo:InChI>
-        <obo:InChIKey rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATLMFJTZZPOKLC-UHFFFAOYSA-N</obo:InChIKey>
-        <obo:SMILES rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c12c3c4c5c1c1c6c7c2c2c8c3c3c9c4c4c%10c5c5c1c1c6c6c%11c7c2c2c7c8c3c3c8c9c4c4c9c%10c5c5c1c1c6c6c%10c%11c2c2c%11c7c3c3c%11c7c(c%102)c2c6c1c1c5c9c5c6c4c8c3c6c7c2c15</obo:SMILES>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(C70-D5h(6))[5,6]fullerene</obo:Synonym>
+        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fullerene that has formula C70.</obo:Definition>
+        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beilstein:6843004</obo:xref>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C70</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C70 fullerene</obo:Synonym>
+        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChemIDplus:115383-22-7</obo:xref>
+        <obo:InChI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChI=1S/C70/c1-2-22-5-6-24-13-14-26-11-9-23-4-3(21(1)51-52(22)54(24)55(26)53(23)51)33-31(1)61-35-7-8-27-15-16-29-19-20-30-18-17-28-12-10(25(7)56-57(27)59(29)60(30)58(28)56)37(35)63(33)65-36(4)40(9)67(44(17)42(12)65)69-46(11)47(14)70(50(20)49(18)69)68-43(13)39(6)66(45(16)48(19)68)64-34(5)32(2)62(61)38(8)41(15)64</obo:InChI>
+        <obo:InChIKey rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChIKey=ATLMFJTZZPOKLC-UHFFFAOYSA-N</obo:InChIKey>
+        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIST Chemistry WebBook:115383-22-7</obo:xref>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[70-D5h]fullerene</obo:Synonym>
+        <obo:SMILES rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c12c3c4c5c1c1c6c7c2c2c8c3c3c9c4c4c%10c5c5c1c1c6c6c%11c7c2c2c7c8c3c3c8c9c4c4c9c%10c5c5c1c1c6c6c%10c%11c2c2c%11c7c3c3c%11c7c(c%102)c2c6c1c1c5c9c5c6c4c8c3c6c7c2c15</obo:SMILES>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fullerene 70</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fullerene C70</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rugbyballene</obo:Synonym>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beilstein:6843004</obo:xref>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChemIDplus:115383-22-7</obo:xref>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIST Chemistry WebBook:115383-22-7</obo:xref>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C70 fullerene</rdfs:label>
     </owl:Class>
     
 
@@ -196,9 +271,10 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_33416 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33416">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fullerene</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_707"/>
-        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A compound composed solely of an even number of carbon atoms, which form a cage-like fused-ring polycyclic system with twelve five-membered rings and the rest six-membered rings. The term has been broadened to include any closed cage structure consisting entirely of three-coordinate carbon atoms.</obo:Definition>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.</obo:Synonym>
+        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A compound composed solely of an even number of carbon atoms, which form a cage-like fused-ring polycyclic system with twelve five-membered rings and the rest six-membered rings. The term has been broadened to include any closed cage structure consisting entirely of three-coordinate carbon atoms.</obo:Definition>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fulleren</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fulereno</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fulerenos</obo:Synonym>
@@ -206,7 +282,6 @@
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fullerenes</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fullereno</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fullerenos</obo:Synonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fullerene</rdfs:label>
     </owl:Class>
     
 
@@ -214,9 +289,9 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_50823 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50823">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetite nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_729"/>
         <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nanoparticle consisting of magnetite.</obo:Definition>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetite nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -224,9 +299,9 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_50824 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50824">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematite nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_729"/>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">haematite nanoparticle</obo:Synonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematite nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -234,11 +309,11 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_50828 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50828">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silicon dioxide nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
         <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nanoparticle consisting of silicon dioxide.</obo:Definition>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O2Si</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silica nanoparticle</obo:Synonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silicon dioxide nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -246,11 +321,11 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_50831 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50831">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">platinum nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
         <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nanoparticle consisting of platinum atoms.</obo:Definition>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pt</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pt NP</obo:Synonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">platinum nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -258,10 +333,10 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_50832 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50832">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cadmium sulfide nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
         <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nanoparticle consisting of cadmium sulfide.</obo:Definition>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CdS</obo:Synonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cadmium sulfide nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -269,9 +344,9 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_50835 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50835">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cadmium selenide nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CdS</obo:Synonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cadmium selenide nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -279,11 +354,11 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_51050 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_51050">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">titanium dioxide nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
         <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nanoparticle consisting of titanium dioxide.</obo:Definition>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O2Ti</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TiO2 nanoparticle</obo:Synonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">titanium dioxide nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -291,9 +366,10 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_52523 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52523">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">palladium-gold nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1893"/>
-        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gold nanoparticle covered with a thin coat of palladium atoms.</obo:Definition>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.</obo:Synonym>
+        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gold nanoparticle covered with a thin coat of palladium atoms.</obo:Definition>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pd core/Au shell bimetallic nanoparticle</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pd-Au bimetallic nanoparticle</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pd-Au nanoparticle</obo:Synonym>
@@ -303,7 +379,6 @@
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PdAu bimetallic nanoparticle</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PdAu nanoparticle</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bimetallic PdAu nanoparticle</obo:Synonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">palladium-gold nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -311,8 +386,8 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_52526 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52526">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silicon nanoparticle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
     </owl:Class>
     
 
@@ -320,12 +395,12 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_52733 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52733">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dieuropium trioxide nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
-        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nanoparticle consisting of dieuropium trioxide.</obo:Definition>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.</obo:Synonym>
+        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nanoparticle consisting of dieuropium trioxide.</obo:Definition>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eu2O3 nanoparticle</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dieuropium trioxide nanoparticles</obo:Synonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dieuropium trioxide nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -333,12 +408,12 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_52853 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52853">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">palladium nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
-        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nanoparticle consisting of palladium atoms.</obo:Definition>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.</obo:Synonym>
+        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nanoparticle consisting of palladium atoms.</obo:Definition>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pd NP</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pd nanoparticle</obo:Synonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">palladium nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -346,11 +421,11 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_52855 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52855">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_707"/>
-        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nanoparticle that contains no carbon.</obo:Definition>
-        <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.</obo:Synonym>
-        <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inorganic nanoparticles</obo:Synonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inorganic nanoparticle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_707"/>
+        <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.</obo:Synonym>
+        <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nanoparticle that contains no carbon.</obo:Definition>
+        <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inorganic nanoparticles</obo:Synonym>
     </owl:Class>
     
 
@@ -358,10 +433,10 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_59999 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_59999">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical substance</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types.</obo:Definition>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemische Substanz</obo:Synonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical substance</rdfs:label>
     </owl:Class>
     
 
@@ -369,8 +444,10 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_82776 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_82776">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coated Ag nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1892"/>
         <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any silver nanoparticle that is specially coated to produce tailored nanoparticles for specific applications.</obo:Definition>
+        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:24568198</obo:xref>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coated Ag NP</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coated Ag NPs</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coated Ag nanoparticles</obo:Synonym>
@@ -382,8 +459,6 @@
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">encapsulated Ag nanoparticles</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">encapsulated silver nanoparticle</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">encapsulated silver nanoparticles</obo:Synonym>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:24568198</obo:xref>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coated Ag nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -391,15 +466,15 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_82778 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_82778">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">citrate-coated Ag NP</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_82776"/>
         <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any coated Ag nanoparticle in which the the silver nanoparticles are encapsulated by citrate.</obo:Definition>
+        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:22148238</obo:xref>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">citrate-coated Ag NPs</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">citrate-coated Ag nanoparticle</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">citrate-coated Ag nanoparticles</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">citrate-coated silver nanoparticle</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">citrate-coated silver nanoparticles</obo:Synonym>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:22148238</obo:xref>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">citrate-coated Ag NP</rdfs:label>
     </owl:Class>
     
 
@@ -407,8 +482,10 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_82780 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_82780">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyvinylpyrrolidone-coated Ag NP</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_82776"/>
         <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any coated Ag nanoparticle in which the the silver nanoparticles are encapsulated by polyvinylpyrrolidone (PVP).</obo:Definition>
+        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:22148238</obo:xref>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PVP-AgNP</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PVP-AgNPs</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poly(vinylpyrrolidone)-coated Ag NP</obo:Synonym>
@@ -418,8 +495,6 @@
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyvinylpyrrolidone-coated Ag NPs</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyvinylpyrrolidone-coated Ag nanoparticle</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyvinylpyrrolidone-coated Ag nanoparticles</obo:Synonym>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:22148238</obo:xref>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyvinylpyrrolidone-coated Ag NP</rdfs:label>
     </owl:Class>
     
 
@@ -427,15 +502,15 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_82781 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_82781">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gum arabic-coated Ag NP</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_82776"/>
         <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any coated Ag nanoparticle in which the the silver nanoparticles are encapsulated by gum arabic.</obo:Definition>
+        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:22148238</obo:xref>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gum arabic-coated Ag NPs</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gum arabic-coated Ag nanoparticle</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gum arabic-coated Ag nanoparticles</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gum arabic-coated silver nanoparticle</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gum arabic-coated silver nanoparticles</obo:Synonym>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:22148238</obo:xref>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gum arabic-coated Ag NP</rdfs:label>
     </owl:Class>
     
 
@@ -443,14 +518,14 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_82783 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_82783">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PVP8-Ag NP</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_82780"/>
         <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any coated Ag nanoparticle in which the the silver nanoparticles are encapsulated by 8 nm thick polyvinylpyrrolidone (PVP).</obo:Definition>
+        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:22148238</obo:xref>
+        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:24726479</obo:xref>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PVP8-Ag NPs</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyvinylpyrrolidone (8 nm) coated-Ag nanoparticle</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyvinylpyrrolidone (8 nm) coated-Ag nanoparticles</obo:Synonym>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:22148238</obo:xref>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:24726479</obo:xref>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PVP8-Ag NP</rdfs:label>
     </owl:Class>
     
 
@@ -458,14 +533,14 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_82784 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_82784">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PVP38-Ag NP</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_82780"/>
         <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any coated Ag nanoparticle in which the the silver nanoparticles are encapsulated by 38 nm thick polyvinylpyrrolidone (PVP).</obo:Definition>
+        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:22148238</obo:xref>
+        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:24726479</obo:xref>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PVP38-Ag NPs</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyvinylpyrrolidone (38 nm) coated-Ag nanoparticle</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyvinylpyrrolidone (38 nm) coated-Ag nanoparticles</obo:Synonym>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:22148238</obo:xref>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:24726479</obo:xref>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PVP38-Ag NP</rdfs:label>
     </owl:Class>
     
 
@@ -473,13 +548,13 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_82785 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_82785">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA5-Ag NP</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_82781"/>
         <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any coated Ag nanoparticle in which the the silver nanoparticles are encapsulated by 5 nm thick gum arabic.</obo:Definition>
+        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:22148238</obo:xref>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA5-Ag NPs</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gum arabic (5 nm)-coated Ag nanoparticle</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gum arabic (5 nm)-coated Ag nanoparticles</obo:Synonym>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:22148238</obo:xref>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA5-Ag NP</rdfs:label>
     </owl:Class>
     
 
@@ -487,13 +562,13 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_82786 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_82786">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA22-Ag NP</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_82781"/>
         <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any coated Ag nanoparticle in which the the silver nanoparticles are encapsulated by 22 nm thick gum arabic.</obo:Definition>
+        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:22148238</obo:xref>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA22-Ag NPs</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gum arabic (22 nm)-coated Ag nanoparticle</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gum arabic (22 nm)-coated Ag nanoparticles</obo:Synonym>
-        <obo:xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CiteXplore:22148238</obo:xref>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA22-Ag NP</rdfs:label>
     </owl:Class>
     
 
@@ -501,53 +576,15 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_83159 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_83159">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">copper(II) oxide nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
         <obo:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inorganic nanoparticle consisting of copper(II) oxide.</obo:Definition>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CuO nanoparticle</obo:Synonym>
         <obo:Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cupric oxide nanoparticle</obo:Synonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">copper(II) oxide nanoparticle</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo#has_functional_parent">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has functional parent</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo#has_parent_hydride">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has parent hydride</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo#has_part">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has part</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo#has_role">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has role</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo#is_conjugate_acid_of">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is conjugate acid of</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo#is_conjugate_base_of">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is conjugate base of</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo#is_enantiomer_of">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is enantiomer of</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo#is_substituent_group_from">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is substituent group from</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo#is_tautomer_of">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is tautomer of</rdfs:label>
-    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.1.0) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
 
