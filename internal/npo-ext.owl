@@ -1,9 +1,19 @@
 <?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
 <rdf:RDF xmlns="http://purl.enanomapper.org/onto/internal/npo-ext.owl#"
      xml:base="http://purl.enanomapper.org/onto/internal/npo-ext.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/">
@@ -26,19 +36,19 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
     
 
 
@@ -74,8 +84,8 @@
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1529 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1529">
-        <obo:IAO_0000118>biopersistence</obo:IAO_0000118>
         <obo:IAO_0000118>persistence</obo:IAO_0000118>
+        <obo:IAO_0000118>biopersistence</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -107,10 +117,10 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000001 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000001">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1897"/>
-        <obo:IAO_0000115>A collection of weakly bound particles or aggregates where the resulting surface area is similar to the sum of the surface areas of the individual components. </obo:IAO_0000115>
-        <obo:IAO_0000119>http://publications.jrc.ec.europa.eu/repository/bitstream/JRC73260/irmm_nanomaterials%20%28online%29.pdf</obo:IAO_0000119>
         <rdfs:label xml:lang="en">agglomerate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1897"/>
+        <obo:IAO_0000119>http://publications.jrc.ec.europa.eu/repository/bitstream/JRC73260/irmm_nanomaterials%20%28online%29.pdf</obo:IAO_0000119>
+        <obo:IAO_0000115>A collection of weakly bound particles or aggregates where the resulting surface area is similar to the sum of the surface areas of the individual components. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -118,10 +128,10 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000002 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000002">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1897"/>
-        <obo:IAO_0000115>A composite particle, comprising of strongly bound or fused smaller particles, where the resulting external surface area may be significantly smaller than the sum of calculated surface areas of the individual components. </obo:IAO_0000115>
-        <obo:IAO_0000119>Adapted from that given in http://publications.jrc.ec.europa.eu/repository/bitstream/JRC73260/irmm_nanomaterials%20%28online%29.pdf</obo:IAO_0000119>
         <rdfs:label xml:lang="en">aggregate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1897"/>
+        <obo:IAO_0000119>Adapted from that given in http://publications.jrc.ec.europa.eu/repository/bitstream/JRC73260/irmm_nanomaterials%20%28online%29.pdf</obo:IAO_0000119>
+        <obo:IAO_0000115>A composite particle, comprising of strongly bound or fused smaller particles, where the resulting external surface area may be significantly smaller than the sum of calculated surface areas of the individual components. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -129,10 +139,10 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000003 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">dustiness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <obo:IAO_0000115>The propensity of a powder to become aerosolised by mechanical agitation. The dustiness of a particular sample is very dependent on its moisture content and static electrical properties. </obo:IAO_0000115>
         <obo:IAO_0000119>RSC technical brief on nanomaterial characterization</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">dustiness</rdfs:label>
     </owl:Class>
     
 
@@ -140,10 +150,10 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000004 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <obo:IAO_0000115>Pour density requires the weighing of a known volume of freshly poured powder.</obo:IAO_0000115>
-        <obo:IAO_0000119>RSC technical brief on nanomaterial characterization</obo:IAO_0000119>
         <rdfs:label xml:lang="en">pour density</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <obo:IAO_0000119>RSC technical brief on nanomaterial characterization</obo:IAO_0000119>
+        <obo:IAO_0000115>Pour density requires the weighing of a known volume of freshly poured powder.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -151,9 +161,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000005 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000005">
+        <rdfs:label xml:lang="en">aluminium oxide nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1541"/>
         <obo:IAO_0000115>A nanoparticle which is basically composed of aluminium oxide.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">aluminium oxide nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -161,9 +171,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000006 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000006">
+        <rdfs:label xml:lang="en">cerium oxide nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1541"/>
         <obo:IAO_0000115>A nanoparticle which is basically composed of cerium oxide.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">cerium oxide nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -171,9 +181,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000007 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000007">
+        <rdfs:label xml:lang="en">nanoclay</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_707"/>
         <obo:IAO_0000115>Nanoclays are nanoparticles of layered mineral silicates.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">nanoclay</rdfs:label>
     </owl:Class>
     
 
@@ -181,9 +191,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000008 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000008">
+        <rdfs:label xml:lang="en">polystyrene nanosphere</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_707"/>
         <obo:IAO_0000115>A nanoparticle that is spherical and composed of polystyrene. </obo:IAO_0000115>
-        <rdfs:label xml:lang="en">polystyrene nanosphere</rdfs:label>
     </owl:Class>
     
 
@@ -191,9 +201,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000009 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <obo:IAO_0000115>An assay that measures the surface chemistry of an entity, e.g. of a nanoparticle. </obo:IAO_0000115>
         <rdfs:label xml:lang="en">surface chemistry assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000070"/>
+        <obo:IAO_0000115>An assay that measures the surface chemistry of an entity, e.g. of a nanoparticle. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -201,11 +211,11 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000010 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000010">
+        <rdfs:label xml:lang="en">expiry date</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1817"/>
         <obo:IAO_0000115>The date beyond which a substance is no longer regarded as fit for use.</obo:IAO_0000115>
-        <obo:IAO_0000118>expiration date</obo:IAO_0000118>
         <obo:IAO_0000118>shelf life</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">expiry date</rdfs:label>
+        <obo:IAO_0000118>expiration date</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -213,9 +223,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000011 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <obo:IAO_0000118>TNF assay</obo:IAO_0000118>
         <rdfs:label xml:lang="en">tumor necrosis factor assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000070"/>
+        <obo:IAO_0000118>TNF assay</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -223,9 +233,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000012 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000012">
+        <rdfs:label xml:lang="en">triclinic-pedial</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000022"/>
         <rdfs:isDefinedBy>synonyms: triclinic hemihedral, C(1)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">triclinic-pedial</rdfs:label>
     </owl:Class>
     
 
@@ -233,9 +243,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000013 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000013">
+        <rdfs:label xml:lang="en">WST-1</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003009"/>
         <rdfs:isDefinedBy>wst-1 cell proliferation assay is a sensitive and accurate assay for cell proliferation and cytotoxicity.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">WST-1</rdfs:label>
     </owl:Class>
     
 
@@ -243,9 +253,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000014 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
+        <rdfs:label xml:lang="en">metalloid nanoparticle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_52855"/>
         <rdfs:isDefinedBy>An inorganic nanoparticle consisting of a metalloid (any element with properties that are intermediate between a metal and a non-metal; generally considered to include B, Si, Ge, As, Sb, and Te)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">metalloid nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -253,8 +263,8 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000015 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000015">
+        <rdfs:label xml:lang="en">Physicochemical Characterization</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003009"/>
-        <rdfs:label xml:lang="zh">Physicochemical Characterization</rdfs:label>
     </owl:Class>
     
 
@@ -262,9 +272,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000016 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000016">
+        <rdfs:label xml:lang="en">copper nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1384"/>
         <rdfs:isDefinedBy>A metallic nanoparticle that consists of copper.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">copper nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -272,8 +282,8 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000017 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000017">
+        <rdfs:label xml:lang="en">DNA Damage Assay</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002167"/>
-        <rdfs:label xml:lang="zh">DNA Damage Assay</rdfs:label>
     </owl:Class>
     
 
@@ -281,8 +291,8 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000018 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000018">
+        <rdfs:label xml:lang="en">Cell Membrane Integrity Assay</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003009"/>
-        <rdfs:label xml:lang="zh">Cell Membrane Integrity Assay</rdfs:label>
     </owl:Class>
     
 
@@ -290,9 +300,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000019 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000019">
+        <rdfs:label xml:lang="en">germanium nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1384"/>
         <rdfs:isDefinedBy>A metallic nanoparticle that consists of germanium.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">germanium nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -300,9 +310,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000020 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000020">
+        <rdfs:label xml:lang="en">aluminum nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1384"/>
         <rdfs:isDefinedBy>A metallic nanoparticle that consists of aluminum.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">aluminum nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -310,9 +320,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000021 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000021">
+        <rdfs:label xml:lang="en">tungsten nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1384"/>
         <rdfs:isDefinedBy>A metal nanoparticle that consists of tungsten.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">tungsten nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -320,9 +330,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000022 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000022">
+        <rdfs:label xml:lang="en">triclinic</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
         <rdfs:isDefinedBy>A crystalline state that is one of the 7 basic crystal systems and the least symmetric of the 14 Bravais lattices. Characteristic for this system is that the three basis vectors are of unequal lengths and none of the angles between any two vectors is 90°.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">triclinic</rdfs:label>
     </owl:Class>
     
 
@@ -330,9 +340,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000023 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000023">
+        <rdfs:label xml:lang="en">molybdenum trioxide nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1541"/>
         <rdfs:isDefinedBy>A metall oxide nanoparticle that consists of molybdenum trioxide.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">molybdenum trioxide nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -340,9 +350,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000024 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000024">
+        <rdfs:label xml:lang="en">cadmium(II) oxide nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1541"/>
         <rdfs:isDefinedBy>A metal oxide nanoparticle that consists of cadmium (II) oxide.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">cadmium(II) oxide nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -350,9 +360,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000025 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000025">
+        <rdfs:label xml:lang="en">manganese (IV) dioxide nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1541"/>
         <rdfs:isDefinedBy>A metal oxide nanoparticle that consists of manganese (IV) dioxide.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">manganese (IV) dioxide nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -360,9 +370,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000026 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33416"/>
+        <rdfs:label xml:lang="en">fullerenol nanoparticle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_33416"/>
         <rdfs:isDefinedBy>Fullerenol is a fullerene with hydroxy groups.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">fullerenol nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -370,9 +380,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000027 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000027">
+        <rdfs:label xml:lang="en">polyethylenglycol nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1375"/>
         <rdfs:isDefinedBy>A nanoparticle that consists of poly ethylen glycol (PEG).</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">polyethylenglycol nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -380,9 +390,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000028 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
+        <rdfs:label xml:lang="en">tricalcium phosphate nanoparticle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_52855"/>
         <rdfs:isDefinedBy>An inorganic nanoparticle that consists of tricalcium phosphate.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">tricalcium phosphate nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -390,9 +400,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000029 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000029">
+        <rdfs:label xml:lang="en">monoclinic</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
         <rdfs:isDefinedBy>A crystalline state that is one of the 7 basic crystal systems. Characteristic for this system is that the three basis vectors are of unequal lengths and in which two of the vectors are perpendiular, while the third meeds the other two at an angle other than 90°.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">monoclinic</rdfs:label>
     </owl:Class>
     
 
@@ -400,9 +410,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000030 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000030">
+        <rdfs:label xml:lang="en">triclinic-pinacoidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000022"/>
         <rdfs:isDefinedBy>synonyms: triclinic normal, C(i), S(2)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">triclinic-pinacoidal</rdfs:label>
     </owl:Class>
     
 
@@ -410,9 +420,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000031 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000031">
+        <rdfs:label xml:lang="en">orthorhombic</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
         <rdfs:isDefinedBy>A crystalline state that is one of the 7 basic crystal systems. Characteristic for this system is that the three basis vectors are orthogonal but of unequal lengths.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">orthorhombic</rdfs:label>
     </owl:Class>
     
 
@@ -420,9 +430,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000032 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000032">
+        <rdfs:label xml:lang="en">tetragonal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
         <rdfs:isDefinedBy>A crystalline state that is one of the 7 basic crystal systems. Characteristic for this system is that the three basis vectors are orthogonal and two of them are of equal length</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">tetragonal</rdfs:label>
     </owl:Class>
     
 
@@ -430,9 +440,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000033 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000033">
+        <rdfs:label xml:lang="en">hexagonal-trigonal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
         <rdfs:isDefinedBy>The hexagonal-trigonal crystal system is one of 7 crystal systems.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">hexagonal-trigonal</rdfs:label>
     </owl:Class>
     
 
@@ -440,9 +450,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000034 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000034">
+        <rdfs:label xml:lang="en">hexagonal-hexagonal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
         <rdfs:isDefinedBy>The hexagonal-hexagonal crystal system is one of 7 crystal systems.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">hexagonal-hexagonal</rdfs:label>
     </owl:Class>
     
 
@@ -450,9 +460,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000035 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000035">
+        <rdfs:label xml:lang="en">cubic</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
         <rdfs:isDefinedBy>Cubic (or isometric) crystal systems have the shape of a cube.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">cubic</rdfs:label>
     </owl:Class>
     
 
@@ -460,9 +470,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000036 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000036">
+        <rdfs:label xml:lang="en">Bravais lattice</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
         <rdfs:isDefinedBy>Bravais lattices are a system to describe crystal structures.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">Bravais lattice</rdfs:label>
     </owl:Class>
     
 
@@ -470,9 +480,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000037 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000037">
+        <rdfs:label xml:lang="en">space group</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
         <rdfs:isDefinedBy>Space groups describe crystallic structures.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">space group</rdfs:label>
     </owl:Class>
     
 
@@ -480,9 +490,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000038 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000038">
+        <rdfs:label xml:lang="en">Miller index</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
         <rdfs:isDefinedBy>Miller indices are a notation system in crystallography.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">Miller index</rdfs:label>
     </owl:Class>
     
 
@@ -490,9 +500,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000039 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000039">
+        <rdfs:label xml:lang="en">monoclinic-sphenoidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000029"/>
         <rdfs:isDefinedBy>synonyms: C(2)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">monoclinic-sphenoidal</rdfs:label>
     </owl:Class>
     
 
@@ -500,9 +510,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000040 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000040">
+        <rdfs:label xml:lang="en">monoclinic-domatic</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000029"/>
         <rdfs:isDefinedBy>synonyms: C(1h), C(1v), C(s)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">monoclinic-domatic</rdfs:label>
     </owl:Class>
     
 
@@ -510,9 +520,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000041 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000041">
+        <rdfs:label xml:lang="en">monoclinic-prismatic</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000029"/>
         <rdfs:isDefinedBy>synonyms: C(2h)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">monoclinic-prismatic</rdfs:label>
     </owl:Class>
     
 
@@ -520,9 +530,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000042 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000042">
+        <rdfs:label xml:lang="en">orthorhombic-sphenoidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000031"/>
         <rdfs:isDefinedBy>synonyms: D(2)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">orthorhombic-sphenoidal</rdfs:label>
     </owl:Class>
     
 
@@ -530,9 +540,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000043 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000043">
+        <rdfs:label xml:lang="en">orthorhombic-pyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000031"/>
         <rdfs:isDefinedBy>synonyms: C(2v)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">orthorhombic-pyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -540,9 +550,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000044 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000044">
+        <rdfs:label xml:lang="en">orthorhombic-bipyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000031"/>
         <rdfs:isDefinedBy>synonyms: D(2h)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">orthorhombic-bipyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -550,9 +560,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000045 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000045">
+        <rdfs:label xml:lang="en">tetragonal-pyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000032"/>
         <rdfs:isDefinedBy>synonyms: C(4)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">tetragonal-pyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -560,9 +570,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000046 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000046">
+        <rdfs:label xml:lang="en">tetragonal-disphenoidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000032"/>
         <rdfs:isDefinedBy>synonyms: S(4)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">tetragonal-disphenoidal</rdfs:label>
     </owl:Class>
     
 
@@ -570,9 +580,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000047 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000047">
+        <rdfs:label xml:lang="en">tetragonal-dipyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000032"/>
         <rdfs:isDefinedBy>synonyms: C(4h)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">tetragonal-dipyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -580,9 +590,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000048 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000048">
+        <rdfs:label xml:lang="en">tetragonal-trapezoidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000032"/>
         <rdfs:isDefinedBy>synonyms: D(4)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">tetragonal-trapezoidal</rdfs:label>
     </owl:Class>
     
 
@@ -590,9 +600,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000049 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000049">
+        <rdfs:label xml:lang="en">premises identifier</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000520"/>
         <rdfs:isDefinedBy>A sequence of characters used to identify the premises where a measurement, sample, or experiment has been performed. Synonym: location identifier, measuring point identifier.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">premises identifier</rdfs:label>
     </owl:Class>
     
 
@@ -600,9 +610,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000050 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000050">
+        <rdfs:label xml:lang="en">ditetragonal-pyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000032"/>
         <rdfs:isDefinedBy>synonyms: C(4v)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">ditetragonal-pyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -610,9 +620,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000051 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000051">
+        <rdfs:label xml:lang="en">tetragonal-scalenoidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000032"/>
         <rdfs:isDefinedBy>synonyms: D(2d)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">tetragonal-scalenoidal</rdfs:label>
     </owl:Class>
     
 
@@ -620,8 +630,8 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000052 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000052">
+        <rdfs:label xml:lang="en">ditetragonal-dipyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000032"/>
-        <rdfs:label xml:lang="zh">ditetragonal-dipyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -629,9 +639,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000053 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000053">
+        <rdfs:label xml:lang="en">trigonal-pyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000033"/>
         <rdfs:isDefinedBy>synonyms: C(3h)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">trigonal-pyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -639,9 +649,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000054 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000054">
+        <rdfs:label xml:lang="en">rhombohedral</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000033"/>
         <rdfs:isDefinedBy>synonyms: S(6), C(3i)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">rhombohedral</rdfs:label>
     </owl:Class>
     
 
@@ -649,9 +659,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000055 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000055">
+        <rdfs:label xml:lang="en">trigonal-trapezoidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000033"/>
         <rdfs:isDefinedBy>synonyms: D(3)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">trigonal-trapezoidal</rdfs:label>
     </owl:Class>
     
 
@@ -659,9 +669,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000056 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000056">
+        <rdfs:label xml:lang="en">ditrigonal-pyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000033"/>
         <rdfs:isDefinedBy>synonyms: C(3v)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">ditrigonal-pyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -669,9 +679,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000057 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000057">
+        <rdfs:label xml:lang="en">ditrigonal-scalahedral</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000033"/>
         <rdfs:isDefinedBy>synonyms: D(3d)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">ditrigonal-scalahedral</rdfs:label>
     </owl:Class>
     
 
@@ -679,9 +689,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000058 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000058">
+        <rdfs:label xml:lang="en">hexagonal-pyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000034"/>
         <rdfs:isDefinedBy>synonyms: C(6)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">hexagonal-pyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -689,9 +699,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000059 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000059">
+        <rdfs:label xml:lang="en">trigonal-dipyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000034"/>
         <rdfs:isDefinedBy>synonyms: C(3h)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">trigonal-dipyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -699,9 +709,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000060 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000060">
+        <rdfs:label xml:lang="en">hexagonal-dipyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000034"/>
         <rdfs:isDefinedBy>synonyms: C(6h)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">hexagonal-dipyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -709,9 +719,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000061 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000061">
+        <rdfs:label xml:lang="en">hexagonal-trapezoidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000034"/>
         <rdfs:isDefinedBy>synonyms: D(6)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">hexagonal-trapezoidal</rdfs:label>
     </owl:Class>
     
 
@@ -719,9 +729,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000062 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000062">
+        <rdfs:label xml:lang="en">dihexagonal-pyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000034"/>
         <rdfs:isDefinedBy>synonyms: C(6v)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">dihexagonal-pyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -729,9 +739,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000063 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000063">
+        <rdfs:label xml:lang="en">ditrigonal-dipyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000034"/>
         <rdfs:isDefinedBy>synonyms: D(3h)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">ditrigonal-dipyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -739,9 +749,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000064 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000064">
+        <rdfs:label xml:lang="en">dihexagonal-dipyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000034"/>
         <rdfs:isDefinedBy>synonyms: D(6h)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">dihexagonal-dipyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -749,9 +759,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000065 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000065">
+        <rdfs:label xml:lang="en">tetrahedral</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000035"/>
         <rdfs:isDefinedBy>synonyms: T</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">tetrahedral</rdfs:label>
     </owl:Class>
     
 
@@ -759,9 +769,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000066 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000066">
+        <rdfs:label xml:lang="en">hextetrahedral</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000035"/>
         <rdfs:isDefinedBy>synonyms: T(d)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">hextetrahedral</rdfs:label>
     </owl:Class>
     
 
@@ -769,9 +779,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000067 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000067">
+        <rdfs:label xml:lang="en">diploidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000035"/>
         <rdfs:isDefinedBy>synonyms: T(h)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">diploidal</rdfs:label>
     </owl:Class>
     
 
@@ -779,9 +789,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000068 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000068">
+        <rdfs:label xml:lang="en">gyroidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000035"/>
         <rdfs:isDefinedBy>synonyms: O</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">gyroidal</rdfs:label>
     </owl:Class>
     
 
@@ -789,9 +799,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000069 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000069">
+        <rdfs:label xml:lang="en">hexoctahedral</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000035"/>
         <rdfs:isDefinedBy>synonyms: O(h)</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">hexoctahedral</rdfs:label>
     </owl:Class>
     
 
@@ -799,9 +809,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000070 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000070">
+        <rdfs:label xml:lang="en">measurement identifier</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000520"/>
         <rdfs:isDefinedBy>A sequence of characters used to identify, name, or characterize the measurement. Measurements are part of a study. Synonym: assay ID, experiment ID</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">measurement identifier</rdfs:label>
     </owl:Class>
     
 
@@ -809,34 +819,34 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000071 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000071">
+        <rdfs:label xml:lang="en">sample identifier</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000520"/>
         <rdfs:isDefinedBy>A sequence of characters used to identify a sample.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="zh">sample identifier</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    <owl:Class rdf:about="&obo;BFO_0000019"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33416 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33416"/>
+    <owl:Class rdf:about="&obo;CHEBI_33416"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_52855 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52855"/>
+    <owl:Class rdf:about="&obo;CHEBI_52855"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
+    <owl:Class rdf:about="&obo;OBI_0000070"/>
     
 
 
@@ -861,5 +871,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
 
