@@ -836,6 +836,372 @@
     
 
 
+    <!-- http://purl.enanomapper.org/onto/ENM_9000073 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000073">
+        <rdfs:label xml:lang="en">Calculated descriptors</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000123"/>
+        <rdfs:isDefinedBy>Descriptors that have been obtained through modelling.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000074 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000074">
+        <rdfs:label xml:lang="en">CDK descriptors</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000123"/>
+        <rdfs:isDefinedBy>A class of descriptors derived using CDK, the Chemistry Development Kit.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000075 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000075">
+        <rdfs:label xml:lang="en">ImageAnalysis descriptors</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000123"/>
+        <rdfs:isDefinedBy>A class of descriptors derived by Image analysis methodologies, developed within the eNanoMapper project.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000076 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000076">
+        <rdfs:label xml:lang="en">Predicted descriptors</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000123"/>
+        <rdfs:isDefinedBy>Descriptors that have been obtained through modelling.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000077 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000077">
+        <rdfs:label xml:lang="en">Area</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>Area: The area of selection in square pixels.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000078 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000078">
+        <rdfs:label xml:lang="en">Mullikens electronegativity xc</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000122"/>
+        <rdfs:isDefinedBy>Mulliken electronegativity  =  -α, where α = the average of the HOMO and LUMO energies, i.e.,  α = ½(εhomo+ εlumo)</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000079 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000079">
+        <rdfs:label xml:lang="en">Aspect ratio X</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>Aspect ratio X, defined as AR_x=dmin_x/max_y, doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000080 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000080">
+        <rdfs:label xml:lang="en">Aspect ratio Y</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>Aspect ratio Y, defined as AR_y=dmin_y/max_x, doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000081 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000081">
+        <rdfs:label xml:lang="en">Bounding Rectangle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>The smallest rectangle enclosing the selection. Uses the headings BX, BY, Width and Height, where BX and BY are the coordinates of the upper left corner of the rectangle. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000082 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000082">
+        <rdfs:label xml:lang="en">Centre of Mass</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>This is the brightness-weighted average of the x and y coordinates all pixels in the image or selection. Uses the XM and YM headings. These coordinates are the first order spatial moments. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000083 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000083">
+        <rdfs:label xml:lang="en">Centroid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>The central point of the selection. This is the average of the x and y coordinates of all of the pixels in the image or selection. Uses the X and Y Results table headings. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000084 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000084">
+        <rdfs:label xml:lang="en">Circularity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>Circularity, equal to 4π × [Area]/[Perimeter]^2 ranges from 0 (infinitely elongated polygon) to 1 (perfect circle). https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000085 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000085">
+        <rdfs:label xml:lang="en">Core size</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000086 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000086">
+        <rdfs:label xml:lang="en">Feret Diameter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>The longest distance between any two points along the selection boundary, also known as maximum caliper.  https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000087 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000087">
+        <rdfs:label xml:lang="en">Fit Ellipse</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>Fit an ellipse to the selection. Uses the headings Major, Minor and Angle. Major and Minor are the primary and secondary axes of the best fitting ellipse. Angle (0-180 degrees) is the angle between the primary axis and a line parallel to the x-axis of the image. The coordinates of the centre of the ellipse are displayed as X and Y if Centroid is checked. Note that ImageJ cannot calculate the length of either the major or the minor axis if Pixel Aspect Ratio in the Set Scale dialog is not 1.0. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000088 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000088">
+        <rdfs:label xml:lang="en">Integrated Density</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>Calculates and displays two values: &quot;IntDen&quot; (the product of Area and Mean Grey Value) and &quot;RawIntDen&quot; (the sum of the pixel values in the image or selection). &quot;IntDen&quot; and &quot;RawIntDen&quot; values are the same for uncalibrated image. doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000089 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000089">
+        <rdfs:label xml:lang="en">Kurtosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>The fourth order moment about the mean. doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000090 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000090">
+        <rdfs:label xml:lang="en">Max Grey Levels</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>The highest grey scale values appearing in the selection.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000091 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000091">
+        <rdfs:label xml:lang="en">Mean Grey Value</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>Average grey value within the selection. In this value the sum of all pixels within the selection is divided by the count of pixels. If the image is not in grey scale then a transformation is made according to the following formula: grey=0.299red+0.587green+0.114blue. http://www.enanomapper.net/deliverables/d4/150801_eNanoMapper-D4_2final.pdf</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000092 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000092">
+        <rdfs:label xml:lang="en">Median</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>The median value of the pixels in the image or selection.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000093 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000093">
+        <rdfs:label xml:lang="en">Min Grey Levels</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>The lowest grey scale values appearing in the selection.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000094 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000094">
+        <rdfs:label xml:lang="en">Modal Grey Value</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>Stands for the most frequently occurring grey value within the selection.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000095 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000095">
+        <rdfs:label xml:lang="en">Particle size in media</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000096 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000096">
+        <rdfs:label xml:lang="en">Perimeter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>The length of the outer boundary of the selection.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000097 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000097">
+        <rdfs:label xml:lang="en">Porosity X</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>&quot;The sum of the relative differences in intensities between values of neighboring pixels (xi and yi) along the X axis.&quot;</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000098 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000098">
+        <rdfs:label xml:lang="en">Porosity Y</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>&quot;The sum of the relative differences in intensities between values of neighboring pixels (xi and yi) along the Y axis.&quot;</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000099 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000099">
+        <rdfs:label xml:lang="en">Roundness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>The inverse of Aspect Ratio, or 4 ×[Area]/π × [Major axis]2. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000100 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000100">
+        <rdfs:label xml:lang="en">Shape Descriptors</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>This is a group of descriptors (Circularity, Aspect Ratio, Roundness and Solidity) that are all calculated when the &quot;Shape descriptors&quot; option is used. http://www.enanomapper.net/deliverables/d4/150801_eNanoMapper-D4_2final.pdf</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000101 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000101">
+        <rdfs:label xml:lang="en">Skewness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>A measure of asymmetry of a frequency distribution; specifically the quotient of the difference between the arithmetic mean and the mode divided by the standard deviation. Positive skewness is defined for the longer slope of the plotted distribution in the direction of increasing variate values (mean greater than mode, or coarser particles exceed finer particles in a particle-size distribution); negative skewness is defined for the longer slope of the plotted distribution in the direction of decreasing variate values (mode greater than mean, or finer particles exceed coarser particles in a particle-size distribution). http://www.oceanscience.net/inletsonline/glossary.php3?name=skewness&amp;start=s1</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000102 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000102">
+        <rdfs:label xml:lang="en">Solidity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>Solidity equals to [Area]/[Convex area]. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000103 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000103">
+        <rdfs:label xml:lang="en">Sphericity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>&quot;The ratio of the surface area of a sphere - with the same volume as the particle considered - to the surface area of the particle.&quot;</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000104 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000104">
+        <rdfs:label xml:lang="en">Surface diameter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>&quot;The diameter of a sphere having the same surface area as the projected particle&quot;</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000105 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000105">
+        <rdfs:label xml:lang="en">Total surface area</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000106 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000106">
+        <rdfs:label xml:lang="en">Volume</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000107 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000107">
+        <rdfs:label xml:lang="en">Volume mass diameter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>&quot;Volume/mass diameter doi: 10.3109/17435390.2014.930195&quot;</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000108 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000108">
+        <rdfs:label xml:lang="en">Volume surface diameter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>&quot;Volume/ surface diameter, doi: 10.3109/17435390.2014.930195&quot;</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000109 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000109">
+        <rdfs:label xml:lang="en">aspect ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000075"/>
+        <rdfs:isDefinedBy>The aspect ratio of the particle’s fitted ellipse, i.e., [Major Axis]/[Minor Axis]. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
 
     <owl:Class rdf:about="&obo;BFO_0000019"/>
@@ -857,6 +1223,18 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
 
     <owl:Class rdf:about="&obo;OBI_0000070"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_000122 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000122"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_000123 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000123"/>
     
 
 
