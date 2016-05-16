@@ -13,23 +13,282 @@
 
 <rdf:RDF xmlns="http://purl.enanomapper.org/onto/internal/endpoints.owl#"
      xml:base="http://purl.enanomapper.org/onto/internal/endpoints.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.enanomapper.org/onto/internal/endpoints.owl">
         <rdfs:comment>This file is part of the eNanoMapper ontology project (http://www.enanomapper.net/)</rdfs:comment>
         <dc:contributor>Egon Willighagen</dc:contributor>
     </owl:Ontology>
     
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000001 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000001">
+        <rdfs:label xml:lang="en">algorithm type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000002 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000002">
+        <rdfs:label xml:lang="en">Supervised learning</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000003 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000003">
+        <rdfs:label xml:lang="en">Unsupervised Learning</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000004 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000004">
+        <rdfs:label xml:lang="en">regression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000005 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000005">
+        <rdfs:label xml:lang="en">classification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000006 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000006">
+        <rdfs:label xml:lang="en">clustering</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000007 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000007">
+        <rdfs:label xml:lang="en">agglomeration clustering methodologies</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000008 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000008">
+        <rdfs:label xml:lang="en">biclustering</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000009 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000009">
+        <rdfs:label xml:lang="en">hierarchical clustering</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000010 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000010">
+        <rdfs:label xml:lang="en">bernoulli naive bayes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000014"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000011 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000011">
+        <rdfs:label xml:lang="en">generalised naive bayes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000014"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000012 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000012">
+        <rdfs:label xml:lang="en">multinomial naive bayes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000013 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000013">
+        <rdfs:label xml:lang="en">Numeric data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000021"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000014 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000014">
+        <rdfs:label xml:lang="en">model-based classification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000015 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000015">
+        <rdfs:label xml:lang="en">instance-based classification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000016 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000016">
+        <rdfs:label xml:lang="en">instance-based regression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000004"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000017 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000017">
+        <rdfs:label xml:lang="en">model-based regression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000004"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000018 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000018">
+        <rdfs:label xml:lang="en">artificial neural network</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000020 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000020">
+        <rdfs:label xml:lang="en">neural networks</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000004"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000021 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000021">
+        <rdfs:label xml:lang="en">datatype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000022 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000022">
+        <rdfs:label xml:lang="en">numeric</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000021"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000023 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000023">
+        <rdfs:label xml:lang="en">string</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000021"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000024 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000024">
+        <rdfs:label xml:lang="en">artificial neural network</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000004"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.enanomapper.org/onto/ENM_0000060 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000060">
         <rdfs:label xml:lang="en">statistical algorithm</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
         <obo:IAO_0000115>An algorithm for the analysis, interpretation, and presentation of data.</obo:IAO_0000115>
     </owl:Class>
+    
 
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000064 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000064"/>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
