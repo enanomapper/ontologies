@@ -21,6 +21,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.enanomapper.org/onto/internal/endpoints.owl">
         <rdfs:comment>This file is part of the eNanoMapper ontology project (http://www.enanomapper.net/)</rdfs:comment>
+        <dc:contributor>Jiakang Chang</dc:contributor>
         <dc:contributor>Egon Willighagen</dc:contributor>
     </owl:Ontology>
     
@@ -319,15 +320,6 @@
     
 
 
-    <!-- http://purl.enanomapper.org/onto/ENM_0000028 -->
-
-    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000028">
-        <rdfs:label xml:lang="en">chemical descriptor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000019"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.enanomapper.org/onto/ENM_0000029 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000029">
@@ -342,7 +334,7 @@
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000030">
         <rdfs:label xml:lang="en">predicted descriptors</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/http://semanticscience.org/resource/CHEMINF_000123"/>
         <rdfs:isDefinedBy>Descriptors that have been obtained through modelling.</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -352,7 +344,7 @@
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000031">
         <rdfs:label xml:lang="en">calculated descriptors</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/http://semanticscience.org/resource/CHEMINF_000123"/>
         <rdfs:isDefinedBy>Descriptors that have been obtained through modelling.</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -362,7 +354,7 @@
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000032">
         <rdfs:label xml:lang="en">cdk descriptors</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/http://semanticscience.org/resource/CHEMINF_000123"/>
         <rdfs:isDefinedBy>A class of descriptors derived using CDK, the Chemistry Development Kit.</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -1240,6 +1232,14 @@
         <rdfs:label xml:lang="en">confusion matrix</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000115"/>
         <rdfs:isDefinedBy>A confusion matrix, also known as an error matrix,[3] is a specific table layout that allows visualization of the performance of an algorithm, typically a supervised learning one (in unsupervised learning it is usually called a matching matrix). https://en.wikipedia.org/wiki/Confusion_matrix</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/http://semanticscience.org/resource/CHEMINF_000123 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/http://semanticscience.org/resource/CHEMINF_000123">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000019"/>
     </owl:Class>
     
 
