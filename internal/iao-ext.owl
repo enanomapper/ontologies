@@ -1,28 +1,17 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
-    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-]>
-
-
 <rdf:RDF xmlns="http://purl.enanomapper.org/onto/internal/iao-ext.owl#"
      xml:base="http://purl.enanomapper.org/onto/internal/iao-ext.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.enanomapper.org/onto/internal/iao-ext.owl">
         <rdfs:comment>This file is part of the eNanoMapper ontology project (http://www.enanomapper.net/)</rdfs:comment>
-        <dc:contributor>Jiakang Chang</dc:contributor>
         <dc:contributor>Egon Willighagen</dc:contributor>
+        <dc:contributor>Jiakang Chang</dc:contributor>
     </owl:Ontology>
     
 
@@ -40,7 +29,7 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     
 
 
@@ -58,8 +47,8 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000001 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:label xml:lang="en">algorithm type</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
     </owl:Class>
     
 
@@ -67,9 +56,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000002 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000002">
-        <rdfs:label xml:lang="en">Supervised learning</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000001"/>
         <rdfs:isDefinedBy>Supervised learning is the machine learning task of inferring a function from labeled training data. The training data consist of a set of training examples. In supervised learning, each example is a pair consisting of input data (input variables) and a desired output values (predicted variables).</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Supervised learning</rdfs:label>
     </owl:Class>
     
 
@@ -77,9 +66,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000003 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000003">
-        <rdfs:label xml:lang="en">Unsupervised Learning</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000001"/>
         <rdfs:isDefinedBy>Unsupervised learning is the machine learning task of inferring a function to describe hidden structure from unlabeled data. Since the examples given to the learner are unlabeled, there is no error or reward signal to evaluate a potential solution. This distinguishes unsupervised learning from supervised learning and reinforcement learning. https://en.wikipedia.org/wiki/Unsupervised_learning</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Unsupervised Learning</rdfs:label>
     </owl:Class>
     
 
@@ -87,9 +76,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000004 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000004">
-        <rdfs:label xml:lang="en">regression</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000002"/>
         <rdfs:isDefinedBy>A statistical process for estimating the relationships among variables. https://en.wikipedia.org/wiki/Regression_analysis</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">regression</rdfs:label>
     </owl:Class>
     
 
@@ -97,9 +86,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000005 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000005">
-        <rdfs:label xml:lang="en">classification</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000002"/>
         <rdfs:isDefinedBy>Classification is the problem of identifying to which of a set of categories (sub-populations) a new observation belongs, on the basis of a training set of data containing observations (or instances) whose category membership is known. https://en.wikipedia.org/wiki/Statistical_classification</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">classification</rdfs:label>
     </owl:Class>
     
 
@@ -107,9 +96,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000006 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000006">
-        <rdfs:label xml:lang="en">clustering</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000003"/>
         <rdfs:isDefinedBy>A methodology that groups data objects based only on information found in the data that describes the objects and their relationships.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">clustering</rdfs:label>
     </owl:Class>
     
 
@@ -117,9 +106,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000007 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000007">
-        <rdfs:label xml:lang="en">agglomeration clustering methodologies</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000006"/>
         <rdfs:isDefinedBy>A hierarchical clustering approach where each observation starts in its own cluster, and pairs of clusters are merged as one moves up the hierarchy. https://en.wikipedia.org/wiki/Hierarchical_clustering</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">agglomeration clustering methodologies</rdfs:label>
     </owl:Class>
     
 
@@ -127,9 +116,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000008 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000006"/>
         <rdfs:label>a data mining method that simultaneously clusters both rows and columns of a matrix</rdfs:label>
         <rdfs:label xml:lang="en">biclustering</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000006"/>
     </owl:Class>
     
 
@@ -137,9 +126,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000009 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000006"/>
         <rdfs:label>Hierarchical clustering is a set of nested clusters that are organized as a tree (source: https://www-users.cs.umn.edu/~kumar/dmbook/ch8.pdf).</rdfs:label>
         <rdfs:label xml:lang="en">hierarchical clustering</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000006"/>
     </owl:Class>
     
 
@@ -147,9 +136,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000010 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000010">
-        <rdfs:label xml:lang="en">bernoulli naive bayes</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000014"/>
         <rdfs:isDefinedBy>Naive Bayes classifiers are a family of simple probabilistic classifiers based on applying Bayes&apos; theorem with strong (naive) independence assumptions between the features. In the multivariate Bernoulli event model, features are independent booleans (binary variables) describing inputs. https://en.wikipedia.org/wiki/Naive_Bayes_classifier#Bernoulli_naive_Bayes</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">bernoulli naive bayes</rdfs:label>
     </owl:Class>
     
 
@@ -157,9 +146,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000011 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000011">
-        <rdfs:label xml:lang="en">generalised naive bayes</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000014"/>
         <rdfs:isDefinedBy>Naive Bayes classifiers are a family of simple probabilistic classifiers based on applying Bayes&apos; theorem with strong (naive) independence assumptions between the features. https://en.wikipedia.org/wiki/Naive_Bayes_classifier</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">generalised naive bayes</rdfs:label>
     </owl:Class>
     
 
@@ -167,9 +156,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000012 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000012">
-        <rdfs:label xml:lang="en">multinomial naive bayes</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000014"/>
         <rdfs:isDefinedBy>In Multinomial Naive Bayes samples (feature vectors) represent the frequencies with which certain events have been generated by a multinomial (p_1,..., p_n) where p_i is the probability that event i occurs (or K such multinomials in the multiclass case). https://en.wikipedia.org/wiki/Naive_Bayes_classifier#Multinomial_naive_Bayes</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">multinomial naive bayes</rdfs:label>
     </owl:Class>
     
 
@@ -177,8 +166,8 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000013 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000013">
-        <rdfs:label xml:lang="en">numeric data entry</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000021"/>
+        <rdfs:label xml:lang="en">numeric data entry</rdfs:label>
     </owl:Class>
     
 
@@ -186,9 +175,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000014 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000014">
-        <rdfs:label xml:lang="en">model-based classification</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000005"/>
         <rdfs:isDefinedBy>Classification based on models.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">model-based classification</rdfs:label>
     </owl:Class>
     
 
@@ -196,9 +185,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000015 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000015">
-        <rdfs:label xml:lang="en">instance-based classification</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000005"/>
         <rdfs:isDefinedBy>Classification where classes are constructed directly from the training instances themselves. https://en.wikipedia.org/wiki/Instance-based_learning</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">instance-based classification</rdfs:label>
     </owl:Class>
     
 
@@ -206,9 +195,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000016 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000016">
-        <rdfs:label xml:lang="en">instance-based regression</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000004"/>
         <rdfs:isDefinedBy>Regression that is instance-based, that is it constructs hypotheses directly from the training instances themselves. https://en.wikipedia.org/wiki/Instance-based_learning</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">instance-based regression</rdfs:label>
     </owl:Class>
     
 
@@ -216,9 +205,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000017 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000017">
-        <rdfs:label xml:lang="en">model-based regression</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000004"/>
         <rdfs:isDefinedBy>Regression that produces models.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">model-based regression</rdfs:label>
     </owl:Class>
     
 
@@ -226,9 +215,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000018 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000018">
-        <rdfs:label xml:lang="en">artificial neural network classification</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000014"/>
         <rdfs:isDefinedBy>Classification performed using artificial neural networks.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">artificial neural network classification</rdfs:label>
     </owl:Class>
     
 
@@ -236,9 +225,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000019 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000019">
-        <rdfs:label xml:lang="en">descriptor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:isDefinedBy>The molecular descriptor is the final result of a logic and mathematical procedure which transforms chemical information encoded within a symbolic representation of a molecule into a useful number or the result of some standardized experiment. https://en.wikipedia.org/wiki/Molecular_descriptor</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">descriptor</rdfs:label>
     </owl:Class>
     
 
@@ -246,9 +235,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000020 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000020">
-        <rdfs:label xml:lang="en">image analysis descriptors</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000019"/>
         <rdfs:isDefinedBy>A class of descriptors derived by Image analysis methodologies, developed within the eNanoMapper project. https://www.enanomapper.net/deliverables/d4/150801_eNanoMapper-D4_2final.pdf</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">image analysis descriptors</rdfs:label>
     </owl:Class>
     
 
@@ -256,8 +245,8 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000021 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label xml:lang="en">data type</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
     </owl:Class>
     
 
@@ -265,8 +254,8 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000022 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000022">
-        <rdfs:label xml:lang="en">numeric</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000021"/>
+        <rdfs:label xml:lang="en">numeric</rdfs:label>
     </owl:Class>
     
 
@@ -274,8 +263,8 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000023 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000023">
-        <rdfs:label xml:lang="en">string</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000021"/>
+        <rdfs:label xml:lang="en">string</rdfs:label>
     </owl:Class>
     
 
@@ -283,9 +272,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000024 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000024">
-        <rdfs:label xml:lang="en">artificial neural network regression</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000004"/>
         <rdfs:isDefinedBy>interconnected neurons used to estimate functions that can depend on a large number of inputs and are generally unknown https://en.wikipedia.org/wiki/Artificial_neural_network</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">artificial neural network regression</rdfs:label>
     </owl:Class>
     
 
@@ -293,9 +282,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000025 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000004"/>
         <rdfs:label>Variable Importance in Projection (VIP) scores estimate the importance of each variable in the projection used in a PLS model. http://wiki.eigenvector.com/index.php?title=Vip</rdfs:label>
         <rdfs:label xml:lang="en">variable importance in projection scores</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000004"/>
     </owl:Class>
     
 
@@ -303,9 +292,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000026 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000026">
-        <rdfs:label>domain of applicability</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000001"/>
         <rdfs:isDefinedBy>The domain of applicability of a QSAR model is the physico-chemical, structural or biological space, knowledge or information on which the training set of the model has been developed, and for which it is applicable to make predictions for new compounds. https://en.wikipedia.org/wiki/Applicability_domain</rdfs:isDefinedBy>
+        <rdfs:label>domain of applicability</rdfs:label>
     </owl:Class>
     
 
@@ -313,9 +302,19 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000027 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000027">
-        <rdfs:label xml:lang="en">quantum mechanical descriptor</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000019"/>
         <rdfs:isDefinedBy>Descriptors derived from quantum mechanical calculations.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">quantum mechanical descriptor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000028 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000024"/>
+        <rdfs:isDefinedBy>A radial basis function network is an artificial neural network that uses radial basis functions as activation functions. The output of the network is a linear combination of radial basis functions of the inputs and neuron parameters. https://en.wikipedia.org/wiki/Radial_basis_function_network</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">radial basis function artificial neural networks regression</rdfs:label>
     </owl:Class>
     
 
@@ -323,9 +322,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000029 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000029">
-        <rdfs:label xml:lang="en">biological descriptor</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000019"/>
         <rdfs:isDefinedBy>Descriptors derived from biological information (partially or fully).</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">biological descriptor</rdfs:label>
     </owl:Class>
     
 
@@ -333,9 +332,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000030 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000030">
-        <rdfs:label xml:lang="en">predicted descriptors</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/http://semanticscience.org/resource/CHEMINF_000123"/>
         <rdfs:isDefinedBy>Descriptors that have been obtained through modelling.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">predicted descriptors</rdfs:label>
     </owl:Class>
     
 
@@ -343,9 +342,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000031 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000031">
-        <rdfs:label xml:lang="en">calculated descriptors</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/http://semanticscience.org/resource/CHEMINF_000123"/>
         <rdfs:isDefinedBy>Descriptors that have been obtained through modelling.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">calculated descriptors</rdfs:label>
     </owl:Class>
     
 
@@ -353,9 +352,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000032 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000032">
-        <rdfs:label xml:lang="en">cdk descriptors</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/http://semanticscience.org/resource/CHEMINF_000123"/>
         <rdfs:isDefinedBy>A class of descriptors derived using CDK, the Chemistry Development Kit.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">cdk descriptors</rdfs:label>
     </owl:Class>
     
 
@@ -363,9 +362,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000033 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000033">
-        <rdfs:label xml:lang="en">aspect ratio x</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>Aspect ratio X, defined as AR_x=dmin_x/max_y, doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">aspect ratio x</rdfs:label>
     </owl:Class>
     
 
@@ -373,9 +372,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000034 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000034">
-        <rdfs:label xml:lang="en">aspect ratio y</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>Aspect ratio Y, defined as AR_y=dmin_y/max_x, doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">aspect ratio y</rdfs:label>
     </owl:Class>
     
 
@@ -383,9 +382,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000035 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000035">
-        <rdfs:label xml:lang="en">bounding rectangle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>The smallest rectangle enclosing the selection. Uses the headings BX, BY, Width and Height, where BX and BY are the coordinates of the upper left corner of the rectangle. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">bounding rectangle</rdfs:label>
     </owl:Class>
     
 
@@ -393,9 +392,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000036 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000036">
-        <rdfs:label xml:lang="en">centre of mass</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>This is the brightness-weighted average of the x and y coordinates all pixels in the image or selection. Uses the XM and YM headings. These coordinates are the first order spatial moments. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">centre of mass</rdfs:label>
     </owl:Class>
     
 
@@ -403,9 +402,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000037 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000037">
-        <rdfs:label xml:lang="en">centroid</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>The central point of the selection. This is the average of the x and y coordinates of all of the pixels in the image or selection. Uses the X and Y Results table headings. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">centroid</rdfs:label>
     </owl:Class>
     
 
@@ -413,9 +412,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000038 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000038">
-        <rdfs:label xml:lang="en">circularity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>Circularity, equal to 4π × [Area]/[Perimeter]^2 ranges from 0 (infinitely elongated polygon) to 1 (perfect circle). https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">circularity</rdfs:label>
     </owl:Class>
     
 
@@ -423,9 +422,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000039 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000039">
-        <rdfs:label xml:lang="en">core size</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>Size of the core.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">core size</rdfs:label>
     </owl:Class>
     
 
@@ -433,9 +432,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000040 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000040">
-        <rdfs:label xml:lang="en">feret diameter</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>The longest distance between any two points along the selection boundary, also known as maximum caliper. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">feret diameter</rdfs:label>
     </owl:Class>
     
 
@@ -443,9 +442,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000041 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000041">
-        <rdfs:label xml:lang="en">fit ellipse</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>Fit an ellipse to the selection. Uses the headings Major, Minor and Angle. Major and Minor are the primary and secondary axes of the best fitting ellipse. Angle (0-180 degrees) is the angle between the primary axis and a line parallel to the x-axis of the image. The coordinates of the centre of the ellipse are displayed as X and Y if Centroid is checked. Note that ImageJ cannot calculate the length of either the major or the minor axis if Pixel Aspect Ratio in the Set Scale dialog is not 1.0. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">fit ellipse</rdfs:label>
     </owl:Class>
     
 
@@ -453,9 +452,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000042 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000042">
-        <rdfs:label xml:lang="en">integrated density</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>Calculates and displays two values: &quot;IntDen&quot; (the product of Area and Mean Grey Value) and &quot;RawIntDen&quot; (the sum of the pixel values in the image or selection). &quot;IntDen&quot; and &quot;RawIntDen&quot; values are the same for uncalibrated image. doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">integrated density</rdfs:label>
     </owl:Class>
     
 
@@ -463,9 +462,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000043 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000043">
-        <rdfs:label xml:lang="en">kurtosis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>The fourth order moment about the mean. doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">kurtosis</rdfs:label>
     </owl:Class>
     
 
@@ -473,9 +472,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000044 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000044">
-        <rdfs:label xml:lang="en">mean grey value</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>Average grey value within the selection. In this value the sum of all pixels within the selection is divided by the count of pixels. If the image is not in grey scale then a transformation is made according to the following formula: grey=0.299red+0.587green+0.114blue. http://www.enanomapper.net/deliverables/d4/150801_eNanoMapper-D4_2final.pdf</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">mean grey value</rdfs:label>
     </owl:Class>
     
 
@@ -483,9 +482,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000045 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000045">
-        <rdfs:label xml:lang="en">median</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>The median value of the pixels in the image or selection.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">median</rdfs:label>
     </owl:Class>
     
 
@@ -493,9 +492,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000046 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000046">
-        <rdfs:label xml:lang="en">min grey levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>The lowest grey scale values appearing in the selection.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">min grey levels</rdfs:label>
     </owl:Class>
     
 
@@ -503,9 +502,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000047 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000047">
-        <rdfs:label xml:lang="en">max grey levels</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>The highest grey scale values appearing in the selection.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">max grey levels</rdfs:label>
     </owl:Class>
     
 
@@ -513,9 +512,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000048 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000048">
-        <rdfs:label xml:lang="en">modal grey value</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>Stands for the most frequently occurring grey value within the selection.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">modal grey value</rdfs:label>
     </owl:Class>
     
 
@@ -523,9 +522,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000049 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000049">
-        <rdfs:label xml:lang="en">particle size in media</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>The size of the particle as measured when in a specific media.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">particle size in media</rdfs:label>
     </owl:Class>
     
 
@@ -533,9 +532,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000050 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000050">
-        <rdfs:label xml:lang="en">perimeter</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>The length of the outer boundary of the selection.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">perimeter</rdfs:label>
     </owl:Class>
     
 
@@ -543,9 +542,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000051 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000051">
-        <rdfs:label xml:lang="en">porosity x</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>The sum of the relative differences in intensities between values of neighboring pixels (xi and yi) along the X axis.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">porosity x</rdfs:label>
     </owl:Class>
     
 
@@ -553,9 +552,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000052 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000052">
-        <rdfs:label xml:lang="en">porosity y</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>The sum of the relative differences in intensities between values of neighboring pixels (xi and yi) along the Y axis.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">porosity y</rdfs:label>
     </owl:Class>
     
 
@@ -563,9 +562,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000053 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000053">
-        <rdfs:label xml:lang="en">roundness</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>The inverse of Aspect Ratio, or 4 ×[Area]/π × [Major axis]2. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">roundness</rdfs:label>
     </owl:Class>
     
 
@@ -573,9 +572,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000054 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000054">
-        <rdfs:label xml:lang="en">shape descriptors</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>This is a group of descriptors (Circularity, Aspect Ratio, Roundness and Solidity) that are all calculated when the &quot;Shape descriptors&quot; option is used. http://www.enanomapper.net/deliverables/d4/150801_eNanoMapper-D4_2final.pdf</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">shape descriptors</rdfs:label>
     </owl:Class>
     
 
@@ -583,9 +582,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000055 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000055">
-        <rdfs:label xml:lang="en">skewness</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>A measure of asymmetry of a frequency distribution; specifically the quotient of the difference between the arithmetic mean and the mode divided by the standard deviation. Positive skewness is defined for the longer slope of the plotted distribution in the direction of increasing variate values (mean greater than mode, or coarser particles exceed finer particles in a particle-size distribution); negative skewness is defined for the longer slope of the plotted distribution in the direction of decreasing variate values (mode greater than mean, or finer particles exceed coarser particles in a particle-size distribution). http://www.oceanscience.net/inletsonline/glossary.php3?name=skewness&amp;start=s1</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">skewness</rdfs:label>
     </owl:Class>
     
 
@@ -593,9 +592,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000056 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000056">
-        <rdfs:label xml:lang="en">solidity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>Solidity equals to [Area]/[Convex area]. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">solidity</rdfs:label>
     </owl:Class>
     
 
@@ -603,9 +602,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000057 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000057">
-        <rdfs:label xml:lang="en">sphericity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>The ratio of the surface area of a sphere - with the same volume as the particle considered - to the surface area of the particle.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">sphericity</rdfs:label>
     </owl:Class>
     
 
@@ -613,9 +612,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000058 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000058">
-        <rdfs:label xml:lang="en">surface diameter</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>The diameter of a sphere having the same surface area as the projected particle</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">surface diameter</rdfs:label>
     </owl:Class>
     
 
@@ -623,9 +622,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000059 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000059">
-        <rdfs:label xml:lang="en">area</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>The sum of the all non-zero pixels. doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">area</rdfs:label>
     </owl:Class>
     
 
@@ -633,9 +632,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000060 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000060">
-        <rdfs:label xml:lang="en">statistical algorithm</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <obo:IAO_0000115>An algorithm for the analysis, interpretation, and presentation of data.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">statistical algorithm</rdfs:label>
     </owl:Class>
     
 
@@ -643,9 +642,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000061 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000061">
-        <rdfs:label xml:lang="en">volume</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>The sum of all non-zero pixels episodes, combining measures of contour elements, assuming that the contour is a square with a side equal to the unity. doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">volume</rdfs:label>
     </owl:Class>
     
 
@@ -653,9 +652,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000062 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000062">
-        <rdfs:label xml:lang="en">volume mass diameter</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>Volume/ mass diameter doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">volume mass diameter</rdfs:label>
     </owl:Class>
     
 
@@ -663,9 +662,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000063 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000063">
-        <rdfs:label xml:lang="en">volume surface diameter</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>Volume/ surface diameter, doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">volume surface diameter</rdfs:label>
     </owl:Class>
     
 
@@ -673,9 +672,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000064 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000064">
-        <rdfs:label xml:lang="en">aspect ratio</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000020"/>
         <rdfs:isDefinedBy>The aspect ratio of the particle’s fitted ellipse, i.e., [Major Axis]/[Minor Axis]. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">aspect ratio</rdfs:label>
     </owl:Class>
     
 
@@ -683,9 +682,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000065 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000065">
-        <rdfs:label xml:lang="en">decision tree</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000014"/>
         <rdfs:isDefinedBy>A decision tree is a decision support tool that uses a tree-like graph or model of decisions and their possible consequences. https://en.wikipedia.org/wiki/Decision_tree</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">decision tree</rdfs:label>
     </owl:Class>
     
 
@@ -693,9 +692,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000066 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000066">
-        <rdfs:label xml:lang="en">gene ontology descriptors</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000029"/>
         <rdfs:isDefinedBy>Gene Ontology Descriptors (GO Descriptors) is a class of descriptors derived by Image analysis methodologies, developed within the eNanoMapper project. https://www.enanomapper.net/deliverables/d4/150801_eNanoMapper-D4_2final.pdf</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">gene ontology descriptors</rdfs:label>
     </owl:Class>
     
 
@@ -703,9 +702,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000067 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000067">
-        <rdfs:label xml:lang="en">go descriptors</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000029"/>
         <rdfs:isDefinedBy>Gene Ontology Descriptors (GO Descriptors) is a class of descriptors derived by Image analysis methodologies, developed within the eNanoMapper project. https://www.enanomapper.net/deliverables/d4/150801_eNanoMapper-D4_2final.pdf</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">go descriptors</rdfs:label>
     </owl:Class>
     
 
@@ -713,8 +712,8 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000068 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000068">
-        <rdfs:label xml:lang="en">bundle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000021"/>
+        <rdfs:label xml:lang="en">bundle</rdfs:label>
     </owl:Class>
     
 
@@ -722,8 +721,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000069 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000069">
-        <rdfs:label xml:lang="en">categorical data</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000021"/>
+        <rdfs:isDefinedBy>Categorical data is the statistical data type consisting of categorical variables or of data that has been converted into that form, for example as grouped data. https://en.wikipedia.org/wiki/Categorical_variable</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">categorical data</rdfs:label>
     </owl:Class>
     
 
@@ -731,9 +731,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000070 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000070">
-        <rdfs:label xml:lang="en">cmi decision tree</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000065"/>
         <rdfs:isDefinedBy>Builds a decision tree which at each node recursively splits the data into subsets using conditional mutual information (CMI) as a criterion. It is a modified version of ID3/C4.5 decision trees.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">cmi decision tree</rdfs:label>
     </owl:Class>
     
 
@@ -741,9 +741,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000071 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000071">
-        <rdfs:label xml:lang="en">id3 decision trees</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000065"/>
         <rdfs:isDefinedBy>Iterative Dichotomiser 3. Decision Tree which uses information gain as data split criterion https://en.wikipedia.org/wiki/ID3_algorithm</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">id3 decision trees</rdfs:label>
     </owl:Class>
     
 
@@ -751,9 +751,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000072 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000072">
-        <rdfs:label xml:lang="en">leverage method</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000026"/>
         <rdfs:isDefinedBy>The leverage method is used to assess the Domain of Applicability, is based on the assumption of a Gaussian data distribution and measures the distance of an observation to the center of X observations. https://eurl-ecvam.jrc.ec.europa.eu/laboratories-research/predictive_toxicology/information-sources/qsar-document-area/applicability_domain1.pdf</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">leverage method</rdfs:label>
     </owl:Class>
     
 
@@ -761,9 +761,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000073 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000073">
-        <rdfs:label xml:lang="en">information resource</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:isDefinedBy>The functions and objects offered by an information processing system.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">information resource</rdfs:label>
     </owl:Class>
     
 
@@ -771,9 +771,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000074 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000074">
-        <rdfs:label xml:lang="en">read accross</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000015"/>
         <rdfs:isDefinedBy>Read-across uses relevant information from analogous (‘source&apos;) substances to predict the properties of ‘target&apos; substances. http://echa.europa.eu/support/grouping-of-substances-and-read-across</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">read accross</rdfs:label>
     </owl:Class>
     
 
@@ -781,9 +781,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000075 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000075">
-        <rdfs:label xml:lang="en">learning</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000073"/>
         <rdfs:isDefinedBy>(Machine) Learning explores the study and construction of algorithms that can learn from and make predictions on data. https://en.wikipedia.org/wiki/Machine_learning</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">learning</rdfs:label>
     </owl:Class>
     
 
@@ -791,9 +791,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000076 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000076">
-        <rdfs:label xml:lang="en">model</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000073"/>
         <rdfs:isDefinedBy>A (mathematical) model is a description of a system using mathematical concepts and language. https://en.wikipedia.org/wiki/Mathematical_model</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">model</rdfs:label>
     </owl:Class>
     
 
@@ -801,9 +801,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000077 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000077">
-        <rdfs:label xml:lang="en">preprocessing</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000073"/>
         <rdfs:isDefinedBy>The tasks performed on a dataset to prepare it for machine learning applications.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">preprocessing</rdfs:label>
     </owl:Class>
     
 
@@ -811,9 +811,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000078 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000078">
-        <rdfs:label xml:lang="en">report</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000073"/>
         <rdfs:isDefinedBy>A summary of the most important results of machine learning calculations.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">report</rdfs:label>
     </owl:Class>
     
 
@@ -821,9 +821,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000079 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000079">
-        <rdfs:label xml:lang="en">task</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000073"/>
         <rdfs:isDefinedBy>A process run internally in the system in order to complete request.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">task</rdfs:label>
     </owl:Class>
     
 
@@ -831,9 +831,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000080 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000080">
-        <rdfs:label xml:lang="en">validation</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000073"/>
         <rdfs:isDefinedBy>Validation is the process of deciding whether the numerical results quantifying hypothesized relationships between variables, obtained from regression analysis, are acceptable as descriptions of the data. https://en.wikipedia.org/wiki/Regression_validation</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">validation</rdfs:label>
     </owl:Class>
     
 
@@ -841,9 +841,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000081 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000081">
-        <rdfs:label xml:lang="en">array calculations</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000078"/>
         <rdfs:isDefinedBy>A field for multi dimensional array results</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">array calculations</rdfs:label>
     </owl:Class>
     
 
@@ -851,9 +851,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000082 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000082">
-        <rdfs:label xml:lang="en">single calculations</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000078"/>
         <rdfs:isDefinedBy>A field for single value results</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">single calculations</rdfs:label>
     </owl:Class>
     
 
@@ -861,9 +861,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000083 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000083">
-        <rdfs:label xml:lang="en">elastic net</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000075"/>
         <rdfs:isDefinedBy>Elastic net is a shrinkage and selection regression method that linearly combines the L1 and L2 penalties of the lasso and ridge methods. https://en.wikipedia.org/wiki/Elastic_net_regularization</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">elastic net</rdfs:label>
     </owl:Class>
     
 
@@ -871,8 +871,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000084 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000084">
-        <rdfs:label xml:lang="en">dependent feature</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000076"/>
+        <rdfs:isDefinedBy>The dependent features represent the output or outcome whose variation is being studied.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">dependent feature</rdfs:label>
     </owl:Class>
     
 
@@ -880,8 +881,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000085 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000085">
-        <rdfs:label xml:lang="en">independent feature</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000076"/>
+        <rdfs:isDefinedBy>When studying the variation of an output or outcome, the independent variables represent inputs or causes, i.e. potential reasons for variation.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">independent feature</rdfs:label>
     </owl:Class>
     
 
@@ -889,9 +891,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000086 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000086">
-        <rdfs:label xml:lang="en">input data</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000076"/>
         <rdfs:isDefinedBy>Data required as input to produce predictions or classifications.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">input data</rdfs:label>
     </owl:Class>
     
 
@@ -899,9 +901,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000087 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000087">
-        <rdfs:label xml:lang="en">input variable</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000076"/>
         <rdfs:isDefinedBy>A variable required as input to a model. The values of input variables are used to produce predictions on certain variables (predicted variables or predicted features).</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">input variable</rdfs:label>
     </owl:Class>
     
 
@@ -909,9 +911,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000088 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000088">
-        <rdfs:label xml:lang="en">model parameter</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000076"/>
         <rdfs:isDefinedBy>Parameter of a model</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">model parameter</rdfs:label>
     </owl:Class>
     
 
@@ -919,9 +921,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000089 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000089">
-        <rdfs:label xml:lang="en">predicted feature</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000076"/>
         <rdfs:isDefinedBy>A feature derived as a result of calculations from known values of other variables (input variables).</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">predicted feature</rdfs:label>
     </owl:Class>
     
 
@@ -929,9 +931,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000090 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000090">
-        <rdfs:label xml:lang="en">required feature</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000076"/>
         <rdfs:isDefinedBy>Independent variables of a model&apos;s 1st transformation sub-model.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">required feature</rdfs:label>
     </owl:Class>
     
 
@@ -939,9 +941,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000091 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000091">
-        <rdfs:label xml:lang="en">partial least squares</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000014"/>
         <rdfs:isDefinedBy>Algorithm that finds a linear model by projecting the predicted variables and the observable variables to a new space. https://en.wikipedia.org/wiki/Partial_least_squares_regression</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">partial least squares</rdfs:label>
     </owl:Class>
     
 
@@ -949,9 +951,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000092 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000092">
-        <rdfs:label xml:lang="en">lasso</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000017"/>
         <rdfs:isDefinedBy>Linear Model trained with L1 prior as regularizer. Optimises the same objective function as Elastic Net.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">lasso</rdfs:label>
     </owl:Class>
     
 
@@ -959,9 +961,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000093 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000093">
-        <rdfs:label xml:lang="en">partial least squares</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000017"/>
         <rdfs:isDefinedBy>Algorithm that finds a linear model by projecting the predicted variables and the observable variables to a new space. https://en.wikipedia.org/wiki/Partial_least_squares_regression</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">partial least squares</rdfs:label>
     </owl:Class>
     
 
@@ -969,9 +971,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000094 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000094">
-        <rdfs:label xml:lang="en">ridge regression</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000017"/>
         <rdfs:isDefinedBy>Ridge Regression is a technique for analyzing multiple regression data that suffer from multicollinearity. When multicollinearity occurs, least squares estimates are unbiased, but their variances are large so they may be far from the true value. By adding a degree of bias to the regression estimates, ridge regression reduces the standard errors. http://www.ncss.com/wp-content/themes/ncss/pdf/Procedures/NCSS/Ridge_Regression.pdf</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">ridge regression</rdfs:label>
     </owl:Class>
     
 
@@ -979,9 +981,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000095 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000095">
-        <rdfs:label xml:lang="en">binary data</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000022"/>
         <rdfs:isDefinedBy>Binary data is data whose unit can take on only two possible states. https://en.wikipedia.org/wiki/Binary_data</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">binary data</rdfs:label>
     </owl:Class>
     
 
@@ -989,9 +991,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000096 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000096">
-        <rdfs:label xml:lang="en">parameter data</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000013"/>
         <rdfs:isDefinedBy>Parameter data</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">parameter data</rdfs:label>
     </owl:Class>
     
 
@@ -999,9 +1001,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000097 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000097">
-        <rdfs:label xml:lang="en">normalization</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000077"/>
         <rdfs:isDefinedBy>Normalization is performed in order to bring the entire probability distributions of adjusted values into alignment and consists of substitung each value of a dataset with the result of this formula: (Xi-μ)/σ, where Xi is each element of the dataset, μ is the average value and σ is the standard deviation.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">normalization</rdfs:label>
     </owl:Class>
     
 
@@ -1009,9 +1011,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000098 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000098">
-        <rdfs:label xml:lang="en">scaling</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000077"/>
         <rdfs:isDefinedBy>Scaling is a method used to standardize the range of independent variables or features of data. In data processing, it is also known as data normalization and is generally performed during the data preprocessing step. https://en.wikipedia.org/wiki/Feature_scaling</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">scaling</rdfs:label>
     </owl:Class>
     
 
@@ -1019,9 +1021,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000099 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000099">
-        <rdfs:label xml:lang="en">chemical hardness</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000027"/>
         <rdfs:isDefinedBy>Chemical hardness (η) is proportional to the second derivative of the total energy of a chemical system with respect to changes in the number of electrons at a fixed nuclear environment. https://en.wikipedia.org/wiki/HSAB_theory#Chemical_hardness</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">chemical hardness</rdfs:label>
     </owl:Class>
     
 
@@ -1029,9 +1031,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000100 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000100">
-        <rdfs:label xml:lang="en">conduction band</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000027"/>
         <rdfs:isDefinedBy>The conduction band is the lowest range of vacant electronic states. https://en.wikipedia.org/wiki/Valence_and_conduction_bands</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">conduction band</rdfs:label>
     </owl:Class>
     
 
@@ -1039,9 +1041,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000101 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000101">
-        <rdfs:label xml:lang="en">electronic chemical potential</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000027"/>
         <rdfs:isDefinedBy>Electronic chemical potential, μ, is a measure of the escaping tendency of an electronic cloud and corresponds to the negative of the electronegativity c. Considering a finite difference approximation and a quadratic dependence of energy on the number of electrons, the electronegativity approximates the loss or gain in charge by the ionization potential IP and electron affinity EA, that is χMU is approximately (IP+EA)/2=-μ , χMU is Mulliken electronegativity.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">electronic chemical potential</rdfs:label>
     </owl:Class>
     
 
@@ -1049,9 +1051,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000102 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000102">
-        <rdfs:label xml:lang="en">mullikens electronegativity xc</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000027"/>
         <rdfs:isDefinedBy>Mulliken electronegativity = -α, where α = the average of the HOMO and LUMO energies, i.e., α = ½(εhomo+ εlumo) http://openmopac.net/manual/super.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">mullikens electronegativity xc</rdfs:label>
     </owl:Class>
     
 
@@ -1059,9 +1061,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000103 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000103">
-        <rdfs:label xml:lang="en">parr and poples absolute hardness</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000027"/>
         <rdfs:isDefinedBy>Parr &amp; Pople absolute hardness = ½(εhomo- εlumo) http://openmopac.net/manual/super.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">parr and poples absolute hardness</rdfs:label>
     </owl:Class>
     
 
@@ -1069,9 +1071,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000104 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000104">
-        <rdfs:label xml:lang="en">polarizability derived from the dipole moment ad</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000027"/>
         <rdfs:isDefinedBy>Polarizability derived from the dipole moment Ad</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">polarizability derived from the dipole moment ad</rdfs:label>
     </owl:Class>
     
 
@@ -1079,9 +1081,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000105 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000105">
-        <rdfs:label xml:lang="en">polarizability derived from the heat of formation ahof</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000027"/>
         <rdfs:isDefinedBy>Polarizability derived from the heat of formation Ahof.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">polarizability derived from the heat of formation ahof</rdfs:label>
     </owl:Class>
     
 
@@ -1089,9 +1091,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000106 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000106">
-        <rdfs:label xml:lang="en">schuurmann mo shift alpha</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000027"/>
         <rdfs:isDefinedBy>Schuurmann MO shift alpha = α, where α = the average of the HOMO and LUMO energies, i.e., α = ½(εhomo+ εlumo) http://openmopac.net/manual/super.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">schuurmann mo shift alpha</rdfs:label>
     </owl:Class>
     
 
@@ -1099,9 +1101,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000107 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000107">
-        <rdfs:label xml:lang="en">solvent accessible surface</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000027"/>
         <rdfs:isDefinedBy>The solvent accessible surface is a continuous surface of the molecule which can be reached by the center of charge of a solvent molecule. http://openmopac.net/manual/cosmo.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">solvent accessible surface</rdfs:label>
     </owl:Class>
     
 
@@ -1109,9 +1111,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000108 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000108">
-        <rdfs:label xml:lang="en">total energy</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000027"/>
         <rdfs:isDefinedBy>Total energy equals to (Eelect + Enuc), where Eelect is the electronic energy, Enuc is the nuclear-nuclear repulsion energy. http://openmopac.net/manual/SCF_calc_hof.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">total energy</rdfs:label>
     </owl:Class>
     
 
@@ -1119,9 +1121,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000109 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000109">
-        <rdfs:label xml:lang="en">total softness</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000027"/>
         <rdfs:isDefinedBy>The total softness S is defined as S=0.5*η, where η is the absolute hardness. Defined in page 629 of: Molecular descriptors for chemoinformatics (2 volumes), Roberto Todeschini, Viviana Consonni, 2009, Volume 41, Wiley-VCH.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">total softness</rdfs:label>
     </owl:Class>
     
 
@@ -1129,9 +1131,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000110 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000110">
-        <rdfs:label xml:lang="en">valance band</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000027"/>
         <rdfs:isDefinedBy>The valence band is the highest range of electron energies in which electrons are normally present at absolute zero temperature. https://en.wikipedia.org/wiki/Valence_and_conduction_bands</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">valance band</rdfs:label>
     </owl:Class>
     
 
@@ -1139,9 +1141,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000111 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000111">
-        <rdfs:label xml:lang="en">zeta potential</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000027"/>
         <rdfs:isDefinedBy>Zeta potential derived from Quantum Mechanics Calculations.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">zeta potential</rdfs:label>
     </owl:Class>
     
 
@@ -1149,9 +1151,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000112 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000112">
-        <rdfs:label xml:lang="en">external validation</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000080"/>
         <rdfs:isDefinedBy>External validation is performed by splitting the available data set into training set for model development and prediction set for model predictivity check.https://en.wikipedia.org/wiki/Quantitative_structure–activity_relationship</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">external validation</rdfs:label>
     </owl:Class>
     
 
@@ -1159,9 +1161,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000113 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000113">
-        <rdfs:label xml:lang="en">split validation</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000080"/>
         <rdfs:isDefinedBy>Split validation splits up the example set into a training and test set and evaluates the model.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">split validation</rdfs:label>
     </owl:Class>
     
 
@@ -1169,9 +1171,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000114 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000114">
-        <rdfs:label xml:lang="en">validation information</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000080"/>
         <rdfs:isDefinedBy>Information on the validation.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">validation information</rdfs:label>
     </owl:Class>
     
 
@@ -1179,9 +1181,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000115 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000115">
-        <rdfs:label xml:lang="en">classification statistics</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000114"/>
         <rdfs:isDefinedBy>Statistical information on the classification.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">classification statistics</rdfs:label>
     </owl:Class>
     
 
@@ -1189,9 +1191,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000116 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000116">
-        <rdfs:label xml:lang="en">cross validation information</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000114"/>
         <rdfs:isDefinedBy>Information on results from the cross validation.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">cross validation information</rdfs:label>
     </owl:Class>
     
 
@@ -1199,9 +1201,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000117 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000117">
-        <rdfs:label xml:lang="en">regression statistics</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000114"/>
         <rdfs:isDefinedBy>Statistical information on the regression.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">regression statistics</rdfs:label>
     </owl:Class>
     
 
@@ -1209,9 +1211,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000118 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000118">
-        <rdfs:label xml:lang="en">y scrambling</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000114"/>
         <rdfs:isDefinedBy>Y Scrambling, also called response permutation, removes the correspondence between the potency and prediction properties of the molecules but keeps the relationships between the individual predictor properties. (p.153) Quantitative Drug Design: A Critical Introduction, Second Edition, Yvonne C. Martin, CRC Press, May 6, 2010</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">y scrambling</rdfs:label>
     </owl:Class>
     
 
@@ -1219,9 +1221,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000119 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000119">
-        <rdfs:label xml:lang="en">class value statistics</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000115"/>
         <rdfs:isDefinedBy>Statistical information on the class values of the classification.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">class value statistics</rdfs:label>
     </owl:Class>
     
 
@@ -1229,9 +1231,29 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000120 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000120">
-        <rdfs:label xml:lang="en">confusion matrix</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000115"/>
         <rdfs:isDefinedBy>A confusion matrix, also known as an error matrix,[3] is a specific table layout that allows visualization of the performance of an algorithm, typically a supervised learning one (in unsupervised learning it is usually called a matching matrix). https://en.wikipedia.org/wiki/Confusion_matrix</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">confusion matrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000121 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000121">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000018"/>
+        <rdfs:isDefinedBy>A radial basis function network is an artificial neural network that uses radial basis functions as activation functions. The output of the network is a linear combination of radial basis functions of the inputs and neuron parameters. https://en.wikipedia.org/wiki/Radial_basis_function_network</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">radial basis function artificial neural networks classification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000122 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000122">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000016"/>
+        <rdfs:isDefinedBy>Read-across uses relevant information from analogous (‘source&apos;) substances to predict the properties of ‘target&apos; substances. http://echa.europa.eu/support/grouping-of-substances-and-read-across</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">read accross</rdfs:label>
     </owl:Class>
     
 
@@ -1246,22 +1268,22 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
-    <owl:Class rdf:about="&obo;IAO_0000027"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
-    <owl:Class rdf:about="&obo;IAO_0000030"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000064 -->
 
-    <owl:Class rdf:about="&obo;IAO_0000064"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000064"/>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
 
