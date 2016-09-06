@@ -1,13 +1,4 @@
 <?xml version="1.0"?>
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-]>
-
 <rdf:RDF xmlns="http://purl.enanomapper.org/onto/internal/iao-ext.owl#"
      xml:base="http://purl.enanomapper.org/onto/internal/iao-ext.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -341,7 +332,7 @@
     <!-- http://purl.enanomapper.org/onto/ENM_8000030 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000030">
-        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/http://semanticscience.org/resource/CHEMINF_000123"/>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000123"/>
         <rdfs:isDefinedBy>Descriptors that have been obtained through modelling.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">predicted descriptors</rdfs:label>
     </owl:Class>
@@ -351,7 +342,7 @@
     <!-- http://purl.enanomapper.org/onto/ENM_8000031 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000031">
-        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/http://semanticscience.org/resource/CHEMINF_000123"/>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000123"/>
         <rdfs:isDefinedBy>Descriptors that have been obtained through modelling.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">calculated descriptors</rdfs:label>
     </owl:Class>
@@ -361,7 +352,7 @@
     <!-- http://purl.enanomapper.org/onto/ENM_8000032 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000032">
-        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/http://semanticscience.org/resource/CHEMINF_000123"/>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000123"/>
         <rdfs:isDefinedBy>A class of descriptors derived using CDK, the Chemistry Development Kit.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">cdk descriptors</rdfs:label>
     </owl:Class>
@@ -1257,14 +1248,6 @@
     
 
 
-    <!-- http://purl.enanomapper.org/onto/http://semanticscience.org/resource/CHEMINF_000123 -->
-
-    <owl:Class rdf:about="http://purl.enanomapper.org/onto/http://semanticscience.org/resource/CHEMINF_000123">
-        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000019"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
@@ -1274,6 +1257,14 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_000123 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000123">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000019"/>
+    </owl:Class>
 </rdf:RDF>
 
 
