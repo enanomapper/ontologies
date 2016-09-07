@@ -27,11 +27,11 @@
         <dc:creator xml:lang="en">Allyson Lister</dc:creator>
         <dc:creator xml:lang="en">Yongqun He</dc:creator>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-12-07</owl:versionInfo>
         <dc:creator xml:lang="en">Tanya Gray</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-07-31</dc:date>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dc:creator xml:lang="en">Bill Bug</dc:creator>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-06-30</owl:versionInfo>
         <dc:contributor xml:lang="en">Advisors for this project come from the IFOMIS group, Saarbruecken and from the Co-ODE group in Manchester</dc:contributor>
         <dc:creator xml:lang="en">Lawrence Hunter</dc:creator>
         <dc:description xml:lang="en">The Ontology for Biomedical Investigations (OBI) is build in a collaborative, international effort and will serve as a resource for annotating biomedical investigations, including the study design, protocols and instrumentation used, the data generated and the types of analysis performed on the data. This ontology arose from the Functional Genomics Investigation Ontology (FuGO) and will contain both terms that are common to all biomedical investigations, including functional genomics investigations and those that are more domain specific.</dc:description>
@@ -48,9 +48,9 @@
         <dc:subject xml:lang="en">An ontology for the annotation of biomedical and functional genomics experiments.</dc:subject>
         <dc:creator xml:lang="en">Melanie Courtot</dc:creator>
         <dc:creator xml:lang="en">Helen Parkinson</dc:creator>
-        <dc:creator xml:lang="en">Luisa Montecchi</dc:creator>
-        <dc:creator xml:lang="en">Jennifer Fostel</dc:creator>
         <dc:creator xml:lang="en">Jeffrey Grethe</dc:creator>
+        <dc:creator xml:lang="en">Jennifer Fostel</dc:creator>
+        <dc:creator xml:lang="en">Luisa Montecchi</dc:creator>
         <dc:creator xml:lang="en">Eric Deutsch</dc:creator>
         <dc:title xml:lang="en">Ontology for Biomedical Investigation</dc:title>
         <dc:creator xml:lang="en">Philip Lord</dc:creator>
@@ -73,7 +73,6 @@
         <dc:creator xml:lang="en">Richard Scheuermann</dc:creator>
         <dc:creator xml:lang="en">John Westbrook</dc:creator>
         <dc:creator xml:lang="en">Barry Smith</dc:creator>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-03-01 11:59:32</oboInOwl:date>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
         <pav:importedFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/obi.owl</pav:importedFrom>
         <dc:creator xml:lang="en">Carlo Torniai</dc:creator>
@@ -84,6 +83,7 @@
         <dc:creator xml:lang="en">Holger Stenzhorn</dc:creator>
         <dc:creator xml:lang="en">Melissa Haendel</dc:creator>
         <dc:creator xml:lang="en">Joe White</dc:creator>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-09-06 20:33:09</oboInOwl:date>
     </owl:Ontology>
     
 
@@ -102,22 +102,6 @@
     <!-- http://protege.stanford.edu/plugins/owl/protege#defaultLanguage -->
 
     <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000062 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000062">
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000063 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000063">
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-    </owl:AnnotationProperty>
     
 
 
@@ -149,12 +133,13 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
-        <obo:IAO_0000111>editor preferred term~editor preferred label</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">editor preferred label</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>editor preferred label</rdfs:label>
         <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
         <rdfs:label>editor preferred term</rdfs:label>
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
@@ -205,7 +190,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <obo:IAO_0000111>definition</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
@@ -235,6 +220,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:label>definition</rdfs:label>
         <rdfs:label xml:lang="en">definition</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <rdfs:label>textual definition</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -1134,6 +1120,24 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000100">
+        <obo:IAO_0000111 xml:lang="en">data set</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Intensity values in a CEL file or from multiple CEL files comprise a data set (as opposed to the CEL files themselves).</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A data item that is an aggregate of other data items of the same type that have something in common. Averages and distributions can be determined for data sets.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009/10/23 Alan Ruttenberg. The intention is that this term represent collections of like data. So this isn&apos;t for, e.g. the whole contents of a cel file, which includes parameters, metadata etc. This is more like java arrays of a certain rather specific type</obo:IAO_0000116>
+        <obo:IAO_0000116>2014-05-05: Data sets are aggregates and thus must include two or more data items. We have chosen not to add logical axioms to make this restriction.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">person:Allyson Lister</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000042</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">data set</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070">
@@ -1208,6 +1212,22 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PlanAndPlannedProcess Branch, IEDB</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radioactivity detection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000251 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000251">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        <obo:IAO_0000111 xml:lang="en">cluster</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Cluster of the lymphocytes population.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A data set which is a subset of data that are a similar to each other in some way.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">person:Allyson</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group:OBI</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">cluster</rdfs:label>
     </owl:Class>
     
 
@@ -1436,7 +1456,7 @@ GROUP:OBI Planned process branch</obo:IAO_0000119>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass spectrometry assay</obo:IAO_0000111>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identification of a proteins cut out from a 2D gel by cleaving it into peptides using trypsin digestion using electrospray ionizatino to ensure the peptides are charged, and accelerating them with an electro magnetic field in which the flight path is determined by the mass / charge ratio of the peptides. Comparing the mass/charge ratio of peptides in the proteins with databases of protein sequences allows to identify which protein gave rise to the peptides.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An assay that identifies the amount and type of material entities present in a sample by fragmenting it and measuring the mass-to-charge ratio of the resulting particles.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An assay that identifies the amount and type of material entities present in a sample by fragmenting it and measuring the��mass-to-charge ratio��of the resulting particles.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass spectrometry assay</rdfs:label>
@@ -1975,7 +1995,7 @@ The principle inhibitor of Thrombin, Factor Xa and other coagulation serine prot
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">western blot analysis</obo:IAO_0000111>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Running a cell lysate on an acrylamide gel in a western blot aparatus to separate the constituent proteins, followed by transfer of the proteins from the gel to a nitrocellulose membrane. Staining this membrane with specific antibodies to detect the presence of specific proteins of interest.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An analyte assay that detects specific peptides in an input material by separating it using gel electrophoresis, transfering the separated molecules to a membrane, and staining them with  antibodies specific to the analyte molecules.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An analyte assay that detects specific��peptides in an input material by separating it using gel electrophoresis, transfering the separated molecules to a membrane, and staining them with�� antibodies��specific to the analyte molecules.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra, IEDB</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra, IEDB</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">western blot analysis</rdfs:label>
@@ -2244,7 +2264,7 @@ or more specific sequences in a DNA sample.</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000910">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radio immuno assay</obo:IAO_0000111>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To evaluate the specificity of antibody binding to 35S-labeled IA-2(256–760) in comparison with 35S-labeled IA-2IC construct, the mutual inhibition activity of different concentrations of unlabeled IA-2IC and/or IA-2(256–760) fragments were tested. Unlabeled recombinant IA-2(256–760) and/or IA-2IC (0.5-, 1-, 2-, and 4-fold the amount of 35S-labeled protein) were added to each tube and incubated overnight at 4°C with patient sera. The following day, after incubation with radiolabeled 35S–IA-2(256–760) or 35S–IA-2IC proteins, samples were processed with the usual radioimmunoprecipitation assay.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To evaluate the specificity of antibody binding to 35S-labeled IA-2(256���760) in comparison with 35S-labeled IA-2IC construct, the mutual inhibition activity of different concentrations of unlabeled IA-2IC and/or IA-2(256���760) fragments were tested. Unlabeled recombinant IA-2(256���760) and/or IA-2IC (0.5-, 1-, 2-, and 4-fold the amount of 35S-labeled protein) were added to each tube and incubated overnight at 4�C with patient sera. The following day, after incubation with radiolabeled 35S���IA-2(256���760) or 35S���IA-2IC proteins, samples were processed with the usual radioimmunoprecipitation assay.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An assay in which a radioactive labeled antigen or antibody is used to determine the interaction between an antigen and its receptor. This can be used to detect the presence of an antigen of interest in an input sample or determine the specificity of an input antibody.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000117>
@@ -3307,7 +3327,7 @@ dosage of a single allele of a gene.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OBI_0001229 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001229">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002059"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002097"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plasmon resonance assay measuring the dissociation constant [KD] of a T cell epitope:MHC:TCR complex</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A T cell epitope equilibrium dissociation constant (KD) determination assay that uses a surface plasmon resonance assay.</obo:IAO_0000115>
@@ -6562,7 +6582,7 @@ See tracker: https://sourceforge.net/p/obi/obi-terms/757/</obo:IAO_0000116>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A purified MHC binding assay that uses fluorescence detection to measure the 50% dissociation of binding temperature of direct ligand binding.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Randi Vita, Jason Greenbaum, Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
-        <obo:OBI_9991118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50% dissociation temperature|purified MHC/direct/fluorescence|°C</obo:OBI_9991118>
+        <obo:OBI_9991118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50% dissociation temperature|purified MHC/direct/fluorescence|�C</obo:OBI_9991118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">purified MHC direct binding assay measuring 50% dissociation of binding temperature [Tm] of a MHC:ligand complex using fluorescence detection</rdfs:label>
     </owl:Class>
     
@@ -6727,7 +6747,7 @@ See tracker: https://sourceforge.net/p/obi/obi-terms/757/</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001634">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001146"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calorimetric binding assay</obo:IAO_0000111>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A solution of a proteins is titrated into a solution containing a specific antibody. The heat released upon their interaction (ΔH) is monitored over time where each peak represents a heat change associated with the injection of a small volume of sample into the reaction cell. As successive amounts of the ligand are titrated into the cell, the quantity of heat absorbed or released is in direct proportion to the amount of binding. As the system reaches saturation, the heat signal diminishes until only heats of dilution are observed. A binding curve is then obtained from a plot of the heats from each injection against the ratio of protein and antibody in the cell . </obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A solution of a proteins is titrated into a solution containing a specific antibody. The heat released upon their interaction (��H) is monitored over time where each peak represents a heat change associated with the injection of a small volume of sample into the reaction cell. As successive amounts of the ligand are titrated into the cell, the quantity of heat absorbed or released is in direct proportion to the amount of binding. As the system reaches saturation, the heat signal diminishes until only heats of dilution are observed. A binding curve is then obtained from a plot of the heats from each injection against the ratio of protein and antibody in the cell . </obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A binding assay in which the heat generated or absorbed during a binding event is measured, which allows determination of binding constants, reaction stoichiometry, enthalpy and entropy.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000117>
@@ -10042,7 +10062,7 @@ http://www.ncbi.nlm.nih.gov/pubmed/25367129</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000443"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immunoblot assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An analyte assay that detects specific molecules in an input material by separating it using gel electrophoresis, transfering the separated molecules to a membrane, and staining them with  antibodies specific to the analyte molecules.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An analyte assay that detects specific��molecules in an input material by separating it using gel electrophoresis, transfering the separated molecules to a membrane, and staining them with�� antibodies��specific to the analyte molecules.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immunoblot assay</rdfs:label>
@@ -11251,6 +11271,240 @@ http://www.ncbi.nlm.nih.gov/pubmed/25367129</obo:IAO_0000112>
         <obo:IAO_0000118 xml:lang="en">transcript expression location detection by fluorescent HCR.</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">PMID 21037591</obo:IAO_0000119>
         <rdfs:label xml:lang="en">transcript expression location detection by hybridization chain reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000748"/>
+        <obo:IAO_0000111 xml:lang="en">Tet-assisted bisulfite sequencing assay</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A bisulfite sequencing assay that identifies genomic methylation patterns by using a bisulfite based protocol with the Tet enzyme to differentiate 5-hydroxylmethylcytosine (5hmC) from 5-methylcytosine (5mC) through a step-wise oxidative demethylation of 5mC, converting it to 5-carboxylcytosine (5caC) while keeping 5hmC protected.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Term request: http://sourceforge.net/p/obi/obi-terms/789/</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Jason Hilton, Chris Stoeckert, Bjoern Peters, OBI-group</obo:IAO_0000117>
+        <obo:IAO_0000118>TAB-seq</obo:IAO_0000118>
+        <obo:IAO_0000118>Tet-assisted bisulfite sequencing</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">http://www.ncbi.nlm.nih.gov/pubmed/23196972</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Tet-assisted bisulfite sequencing assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000748"/>
+        <obo:IAO_0000111 xml:lang="en">MethylC-Capture sequencing assay</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">MethylC-Capture Sequencing approach was introduced as a cost-effective and customizable alternative method for large-scale interrogation of functionally-active methylomes while simultaneously providing genetic variation information in a proof-of-concept epigenome-wide association study of 72 obese individuals, identifying novel disease-associated variants.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A bisulfite sequencing assay in which a whole-genome sequencing library is prepared, bisulfite converted and amplified, followed by a capture enriching for targeted bisulfite-converted DNA fragments that are are subsequently identified by DNA sequencing.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">For details see tracker: https://sourceforge.net/p/obi/obi-terms/773/</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">David Bujold, Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">Capture Methylome</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">MCC-Seq</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">MethylC-Capture Sequencing</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">Allum et al., Nature Commun. 2015 (PMID: 26021296)</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">MethylC-Capture sequencing assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002071"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carboxyfluorescein succinimidyl ester staining assay measuring epitope specific proliferation of T cells</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A T cell epitope specific proliferation assay performed on cells in vitro that uses a CFSE assay.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
+        <obo:OBI_9991118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proliferation|CFSE</obo:OBI_9991118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carboxyfluorescein succinimidyl ester staining assay measuring epitope specific proliferation of T cells</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002059"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">assay measuring the dissociation constant [KD] of a T cell epitope:MHC:TCR complex</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A T cell epitope binding constant determination assay that measures the dissociation constant KD.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Randi Vita, Jason Greenbaum, Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
+        <obo:OBI_9991118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dissociation constant KD|binding assay|nM</obo:OBI_9991118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">assay measuring the dissociation constant [KD] of a T cell epitope:MHC:TCR complex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002098 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002059"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">assay measuring the on rate [kon] of a T cell epitope:MHC:TCR complex</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A T cell epitope binding constant determination assay that measures the on rate.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Randi Vita, Jason Greenbaum, Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
+        <obo:OBI_9991118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">on rate|binding assay|M^-1s^-1</obo:OBI_9991118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">assay measuring the on rate [kon] of a T cell epitope:MHC:TCR complex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002099 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002099">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002059"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">assay measuring the off rate [koff] of a T cell epitope:MHC:TCR complex</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A T cell epitope binding constant determination assay that measures the off rate.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Randi Vita, Jason Greenbaum, Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
+        <obo:OBI_9991118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">off rate|binding assay|1/s</obo:OBI_9991118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">assay measuring the off rate [koff] of a T cell epitope:MHC:TCR complex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002059"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">assay measuring the association constant [KA] of a T cell epitope:MHC:TCR complex</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A T cell epitope binding constant determination assay that measures the association constant KA.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Randi Vita, Jason Greenbaum, Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
+        <obo:OBI_9991118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">association constant KA|binding assay|1/nM</obo:OBI_9991118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">assay measuring the association constant [KA] of a T cell epitope:MHC:TCR complex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001721"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">small-angle scattering assay determining the 3D structure of a B cell epitope:antibody complex</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A B cell epitope 3D structure determination assay that uses a small-angle scattering assay.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Randi Vita, Jason Greenbaum, Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
+        <obo:OBI_9991118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3D structure|small-angle scattering assay</obo:OBI_9991118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">small-angle scattering assay determining the 3D structure of a B cell epitope:antibody complex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001718"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bio-layer interferometry assay measuring the on rate [kon] of a B cell epitope:antibody complex</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A B cell epitope assay that measures the on rate using a bio-layer interferometry assay.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
+        <obo:OBI_9991118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">on rate|bio-layer interferometry assay|M^-1s^-1</obo:OBI_9991118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bio-layer interferometry assay measuring the on rate [kon] of a B cell epitope:antibody complex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001723"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bio-layer interferometry assay measuring the off rate [koff] of a B cell epitope:antibody complex</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A B cell epitope assay that measures the off rate using a bio-layer interferometry assay.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
+        <obo:OBI_9991118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">off rate|bio-layer interferometry assay|1/s</obo:OBI_9991118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bio-layer interferometry assay measuring the off rate [koff] of a B cell epitope:antibody complex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001703"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bio-layer interferometry assay measuring binding of a B cell epitope:antibody complex</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A B cell epitope qualitative binding to antibody assay that uses a bio-layer interferometry assay.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Randi Vita, Jason Greenbaum, Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
+        <obo:OBI_9991118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">qualitative binding|bio-layer interferometry assay</obo:OBI_9991118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bio-layer interferometry assay measuring binding of a B cell epitope:antibody complex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001708"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bio-layer interferometry assay measuring the dissociation constant [KD] of a B cell epitope:antibody complex</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A B cell epitope equilibrium dissociation constant (KD) determination assay that uses a bio-layer interferometry assay.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
+        <obo:OBI_9991118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dissociation constant KD|bio-layer interferometry assay|nM</obo:OBI_9991118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bio-layer interferometry assay measuring the dissociation constant [KD] of a B cell epitope:antibody complex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600017"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carboxyfluorescein succinimidyl ester staining assay</obo:IAO_0000111>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measuring T cell proliferation based on the progressive halving of CFSE fluorescence within daughter cells following each cell division.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a detection of molecular label assay where the amount of carboxyfluorescein succinimidyl ester is measured using fluorescence detection.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CFSE assay</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carboxyfluorescein succinimidyl ester staining assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001146"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bio-layer interferometry assay</obo:IAO_0000111>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detecting the presence of an antibody in a cell culture supernatant by detecting a shift in the interference pattern reflected from a layer of immobilized protein to which the antibody binds.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A binding assay that detects a shift in the interference pattern reflected from a layer of immobilized material on the biosensor tip to measure binding to- or dissociating from the material on the biosensor.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biolayer interferometry, BLI</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bio-layer interferometry assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600045"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">small-angle scattering assay</obo:IAO_0000111>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Targeting a solution of antibody bound to a protein with a neutron beam to determine the binding site of the antibody on the protein</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A 3D structure determination assay in which the scattering pattern of a neutron or x-ray beam targeted at a material entity is recorded at small angles relative to the incident beam to determine the size, shape and structure of the material entity examined. </obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAXS</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">small-angle scattering assay</rdfs:label>
     </owl:Class>
     
 
@@ -13376,6 +13630,12 @@ binary, and takes no temporal argument.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002367 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/UBERON_0002367"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UO_0000008 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/UO_0000008">
@@ -14078,18 +14338,18 @@ binary, and takes no temporal argument.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/obi/2015-12-07/obi.owl -->
+    <!-- http://purl.obolibrary.org/obo/obi/2016-06-30/obi.owl -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/obi/2015-12-07/obi.owl">
-        <rdfs:label>OBI Release 2015-12-07</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/obi/wiki/Releases/2015-12-07"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/obi/2016-06-30/obi.owl">
+        <rdfs:label>OBI Release 2016-06-30</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/obi/wiki/Releases/2016-06-30"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/obi/wiki/Releases/2015-12-07 -->
+    <!-- http://purl.obolibrary.org/obo/obi/wiki/Releases/2016-06-30 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/obi/wiki/Releases/2015-12-07"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/obi/wiki/Releases/2016-06-30"/>
     
 
 
