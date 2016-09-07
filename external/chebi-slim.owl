@@ -13,7 +13,7 @@
      xmlns:obo="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/chebi-slim.owl">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI subsumes and replaces the Chemical Ontology first</rdfs:comment>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-09-07 15:03:14</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-09-07 15:31:11</oboInOwl:date>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI Release version 143</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Author: ChEBI curation team</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developed by Michael Ashburner &amp; Pankaj Jaiswal.</rdfs:comment>
@@ -281,6 +281,12 @@
     
 
 
+    <!-- http://purl.enanomapper.org/onto/ENM_9000016 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000016"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016"/>
@@ -389,6 +395,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_131898 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_131898">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bimetallic nanoparticle consisting of platinum and copper atoms.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:131898</oboInOwl:id>
