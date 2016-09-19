@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.enanomapper.org/onto/external/cheminf-slim.owl#"
      xml:base="http://purl.enanomapper.org/onto/external/cheminf-slim.owl"
      xmlns:cheminf-core="http://semanticscience.org/ontology/cheminf-core.owl#"
@@ -66,6 +66,7 @@
         <dc:contributor>Evan Bolton</dc:contributor>
         <dc:contributor xml:lang="en">Jie Zheng</dc:contributor>
         <dc:contributor xml:lang="en">William Duncan</dc:contributor>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-03-01 11:58:11</oboInOwl:date>
         <dc:contributor xml:lang="en">Gwen Frishkoff</dc:contributor>
         <dc:contributor xml:lang="en">Matt Brush</dc:contributor>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDK descriptor algorithm implementations</dc:title>
@@ -82,7 +83,6 @@
         <dc:contributor xml:lang="en">Chris Mungall</dc:contributor>
         <dc:contributor>Cristian Munteanu</dc:contributor>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The chemical information ontology (cheminf) describes information entities about chemical entities. It provides qualitative and quantitative attributes to richly describe chemicals.</rdfs:comment>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-09-08 15:30:37</oboInOwl:date>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Janna Hastings</dc:contributor>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-02-23</owl:versionInfo>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The chemical information ontology (cheminf) intends to describe information entities about chemical entities. It means to provide  qualitative and quantitative attributes to richly describe chemicals.</rdfs:comment>
@@ -974,12 +974,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.enanomapper.org/onto/ENM_0000019 -->
-
-    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000019"/>
     
 
 
@@ -5192,80 +5186,6 @@ where p is the partial pressure of the solute in the gas above the solution, c i
         <dc:description>Identifier used by the Cancer Chemotherapy National Service Center.</dc:description>
         <cheminf:short_name>NSC number</cheminf:short_name>
         <rdfs:label>National Service Center number</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/CHEMINF_000566 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000566">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000464"/>
-        <obo:IAO_0000115>Identifier used by the RTECS database (http://www.cdc.gov/niosh/rtecs/).</obo:IAO_0000115>
-        <dc:description>Identifier used by the RTECS database (http://www.cdc.gov/niosh/rtecs/).</dc:description>
-        <rdfs:label>RTECS identifier</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/CHEMINF_000802 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000802">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000312"/>
-        <rdfs:label xml:lang="en">number of rule of five violations calculated by RDKit software library version 2015_09_2</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/CHEMINF_000803 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000803">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000245"/>
-        <rdfs:label xml:lang="en">hydrogen bond acceptor count calculated by RDKit software library version 2015_09_2</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/CHEMINF_000804 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000804">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000244"/>
-        <rdfs:label xml:lang="en">hydrogen bond donor count calculated by RDKit software library version 2015_09_2</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/CHEMINF_000805 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000805">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000251"/>
-        <rdfs:label xml:lang="en">logP descriptor calculated by RDKit software library version 2015_09_2</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/CHEMINF_000806 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000806">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000042"/>
-        <rdfs:label xml:lang="en">molecular formula calculated by RDKit software library version 2015_09_2</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/CHEMINF_000807 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000807">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000216"/>
-        <rdfs:label xml:lang="en">average molecular weight calculated by RDKit software library version 2015_09_2</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/CHEMINF_000808 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000808">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000307"/>
-        <rdfs:label xml:lang="en">total polar surface area calculated by RDKit software library version 2015_09_2</rdfs:label>
     </owl:Class>
     
 
