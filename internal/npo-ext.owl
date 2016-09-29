@@ -834,6 +834,25 @@
         <rdfs:isDefinedBy>The ability of a chemical substance to dissolve in a solid, liquid, or gaseous solvent to form a homogeneous solution. The solubility of a given substance is dependent on the solvent used, as well as on temperature and pressure.</rdfs:isDefinedBy>
     </owl:Class>
     
+    <!-- http://purl.enanomapper.org/onto/ENM_9000073 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000073">
+        <rdfs:label xml:lang="en">manganese nanoparticle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#NPO_707"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#has_component_part"/>
+                        <owl:someValuesFrom rdf:resource="#NPO_324"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+	<synonym rdf:datatype="&xsd;string">Mn nanoparticle</synonym>
+        <code rdf:datatype="&xsd;string">NPO_1892</code>
+        <preferred_Name rdf:datatype="&xsd;string">manganese nanoparticle</preferred_Name>
+    </owl:Class>
 
     <!-- http://purl.enanomapper.org/onto/ENM_9000074 -->
 
