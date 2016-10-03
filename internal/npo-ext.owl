@@ -146,12 +146,6 @@
     
 
 
-    <!-- http://purl.bioontology.org/ontology/npo#NPO_324 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_324"/>
-    
-
-
     <!-- http://purl.bioontology.org/ontology/npo#NPO_354 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_354"/>
@@ -889,17 +883,6 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000073 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000073">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/npo#NPO_707"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.enanomapper.org/onto/internal/npo-ext.owl#has_component_part"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_324"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1892</npo-ext:code>
         <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manganese nanoparticle</npo-ext:preferred_Name>
         <npo-ext:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mn nanoparticle</npo-ext:synonym>
