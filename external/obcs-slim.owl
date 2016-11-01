@@ -16,21 +16,21 @@
         <pav:importedFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/obcs.owl</pav:importedFrom>
         <dc:contributor xml:lang="en">Alfred Hero</dc:contributor>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <dc:creator xml:lang="en">Yu Lin</dc:creator>
         <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
         <dc:description xml:lang="en">OBCS stands for the Ontology of Biological and Clinical Statistics. OBCS is an ontology in the domain of biological and clinical statistics. It is aligned with the Basic Formal Ontology (BFO) and the Ontology for Biomedical Investigations (OBI). OBCS imports all possible biostatistics terms in OBI and includes many additional biostatistics terms, some of which were proposed and discussed in the OBI face-to-face workshop in Ann Arbor in 2012.  </dc:description>
         <dc:subject xml:lang="en">A formal ontology in the domain of biological and clinical statistics</dc:subject>
         <dc:contributor xml:lang="en">Anna Maria Masci</dc:contributor>
-        <dc:contributor xml:lang="en">Chris Stoeckert </dc:contributor>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">Yu Lin</dc:creator>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-11-01 11:01:14</oboInOwl:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2016-06-04</dc:date>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
         <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-03-01 11:59:24</oboInOwl:date>
         <dc:creator xml:lang="en">Marcy Harris</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:title xml:lang="en">OBCS: Ontology of Biological and Clinical Statistics</dc:title>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">revision: 85</owl:versionInfo>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.68</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -374,6 +374,14 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
@@ -463,6 +471,7 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>Fisher-Snedecor distribution</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://stattrek.com/probability-distributions/f-distribution.aspx</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>STATO_0000204</oboInOwl:hasDbXref>
         <rdfs:label>F distribution</rdfs:label>
     </owl:Class>
     
@@ -475,6 +484,7 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000115>A continuous probability distribution that is a two-parameter family of continuous probability distributions.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Gamma_distribution</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>STATO_0000268</oboInOwl:hasDbXref>
         <rdfs:label>gamma distribution</rdfs:label>
     </owl:Class>
     
@@ -488,6 +498,7 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>Gaussian distribution</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Normal_distribution</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>STATO_0000227</oboInOwl:hasDbXref>
         <rdfs:label>normal distribution</rdfs:label>
     </owl:Class>
     
@@ -501,6 +512,7 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>t-distribution</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://stattrek.com/probability-distributions/t-distribution.aspx</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>STATO_0000059</oboInOwl:hasDbXref>
         <rdfs:label>Student&apos;s t distribution</rdfs:label>
     </owl:Class>
     
@@ -510,10 +522,11 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
-        <obo:IAO_0000115>a continuous probability distribution of two varialbes that has the tradtional bell shpe; the distribution of one variable is normal each and every alue of the other variable</obo:IAO_0000115>
+        <obo:IAO_0000115>A continuous probability distribution of two variables that has the traditional bell shape and the distribution of one variable is normal to each and every value of the other variable.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
+        <obo:IAO_0000118>bivariate normality</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
-        <rdfs:label>bivariate normality</rdfs:label>
+        <rdfs:label>bivariate normal distribution</rdfs:label>
     </owl:Class>
     
 
@@ -522,7 +535,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
-        <obo:IAO_0000115>a continuous probability that is the distribution of a random variable X if ln(X) is normally distributed</obo:IAO_0000115>
+        <obo:IAO_0000115>A continuous probability that is the distribution of a random variable X if ln(X) is normally distributed</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>log normal, lognormal</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.statistics.com</obo:IAO_0000119>
@@ -535,7 +548,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000115>an information content entity that refers to a distribution of a random variable that can be described using a mathematical formula.</obo:IAO_0000115>
+        <obo:IAO_0000115>An information content entity that refers to a distribution of a random variable that can be described using a mathematical formula.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Probability_distribution</obo:IAO_0000119>
         <rdfs:label>probability distribution</rdfs:label>
@@ -547,7 +560,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000115>an information content entity that represents a type of scale on which a variable is measured, including nominal, ordinal, interval, ratio.</obo:IAO_0000115>
+        <obo:IAO_0000115>An information content entity that represents a type of scale on which a variable is measured, including nominal, ordinal, interval, ratio.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>level of measurement</obo:IAO_0000118>
         <obo:IAO_0000118>scale of  measure</obo:IAO_0000118>
@@ -609,7 +622,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000068">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000010"/>
-        <obo:IAO_0000115>a tabular summary of a set of data showing the number of items in each of several non-overlapping classes or groupings</obo:IAO_0000115>
+        <obo:IAO_0000115>A tabular summary of a set of data showing the number of items in each of several non-overlapping classes or groupings</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://statistics.com</obo:IAO_0000119>
         <rdfs:label>frequency distribution</rdfs:label>
@@ -673,6 +686,7 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000115>A probability distribution that with k degrees of freedom is the distribution of a sum of the squares of k independent standard normal random variables.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Chi-square_distribution</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>STATO_0000229</oboInOwl:hasDbXref>
         <rdfs:label>chi-square distribution</rdfs:label>
     </owl:Class>
     
@@ -685,6 +699,7 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000115>A continuous probability distribution that describes the time between events in a Poisson process, i.e. a process in which events occur continuously and independently at a constant average rate.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Exponential_distribution</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>STATO_0000160</oboInOwl:hasDbXref>
         <rdfs:label>exponential distribution</rdfs:label>
     </owl:Class>
     
@@ -731,6 +746,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
+        <obo:IAO_0000115>The studentized range (q) distribution is a probability distribution used by the Tukey Honestly Significant Difference test. The distribution of the statistic [x̄(k)- x̄(1)]/(s/√n) where random samples of size n have been taken from k independent and identically distributed normal populations, with x̄(1) and x̄(k) being, respectively, the smallest and largest of the k sample means, and s2 being the pooled estimate of the common variance. This statistic is particularly used in multiple comparison tests.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
         <rdfs:label xml:lang="en">studentized range distribution</rdfs:label>
     </owl:Class>
@@ -763,6 +779,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000132">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000010"/>
+        <obo:IAO_0000115>Hotelling T squared distribution is a probability distribution used in multivariate hypothesis testing, which is a univariate distribution proportional to the F-distribution and arises importantly as the distribution of a set of statistics which are natural generalizations of the statistics underlying Student&apos;s t-distribution. In particular, the distribution arises in multivariate statistics in undertaking tests of the differences between the (multivariate) means of different populations, where tests for univariate problems would make use of a t-test. The distribution is named for Harold Hotelling, who developed it[1] as a generalization of Student&apos;s t-distribution. This distribution is commonly used to describe the sample Mahalanobis  distance between two populations.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
         <rdfs:label xml:lang="en">Hotelling T2 distribution</rdfs:label>
     </owl:Class>
@@ -805,6 +822,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000262">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000044"/>
+        <obo:IAO_0000115>Bernoulli distribution is a binomial distribution where the number of trials is equal to 1. notation: B(1,p) The mean is p The variance is p*q</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
         <rdfs:label xml:lang="en">Bernoulli distribution</rdfs:label>
     </owl:Class>
@@ -815,6 +833,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000283">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000067"/>
+        <obo:IAO_0000115>Negative binomial probability distribution is a discrete probability distribution of the number of successes in a sequence of Bernoulli trials before a specified (non-random) number of failures (denoted r) occur. The negative binomial distribution, also known as the Pascal distribution or Pólya distribution, gives the probability of r-1 successes and x failures in x+r-1 trials, and success on the (x+r)th trial.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
         <rdfs:label xml:lang="en">negative binomial distribution</rdfs:label>
     </owl:Class>

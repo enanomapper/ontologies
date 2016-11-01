@@ -1,22 +1,13 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-]>
-
-
-<rdf:RDF xmlns="http://purl.enanomapper.org/onto/internal/npo-ext.owl#"
-     xml:base="http://purl.enanomapper.org/onto/internal/npo-ext.owl"
+<rdf:RDF xmlns="http://purl.enanomapper.org/onto/internal/npo-ext.owl/"
+     xml:base="http://purl.enanomapper.org/onto/internal/npo-ext.owl/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/">
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:npo-ext="http://purl.enanomapper.org/onto/internal/npo-ext.owl#">
     <owl:Ontology rdf:about="http://purl.enanomapper.org/onto/internal/npo-ext.owl">
         <rdfs:comment>This ontology contains proposed extensions to the NanoParticle Ontology, which in due course will be submitted to the NPO. </rdfs:comment>
     </owl:Ontology>
@@ -34,21 +25,56 @@
     
 
 
+    <!-- http://purl.enanomapper.org/onto/internal/npo-ext.owl#code -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.enanomapper.org/onto/internal/npo-ext.owl#code"/>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/internal/npo-ext.owl#preferred_Name -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.enanomapper.org/onto/internal/npo-ext.owl#preferred_Name"/>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/internal/npo-ext.owl#synonym -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.enanomapper.org/onto/internal/npo-ext.owl#synonym"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/internal/npo-ext.owl#has_component_part -->
+
+    <owl:ObjectProperty rdf:about="http://purl.enanomapper.org/onto/internal/npo-ext.owl#has_component_part"/>
     
 
 
@@ -60,6 +86,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1373 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1373"/>
     
 
 
@@ -75,6 +107,12 @@
     
 
 
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1486 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1486"/>
+    
+
+
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1512 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
@@ -84,8 +122,8 @@
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1529 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1529">
-        <obo:IAO_0000118>persistence</obo:IAO_0000118>
         <obo:IAO_0000118>biopersistence</obo:IAO_0000118>
+        <obo:IAO_0000118>persistence</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -93,6 +131,18 @@
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1541 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1541"/>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1542 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1542"/>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1699 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
     
 
 
@@ -108,6 +158,18 @@
     
 
 
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_354 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_354"/>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_401 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_401"/>
+    
+
+
     <!-- http://purl.bioontology.org/ontology/npo#NPO_707 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_707"/>
@@ -117,10 +179,10 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000001 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000001">
-        <rdfs:label xml:lang="en">agglomerate</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1897"/>
-        <obo:IAO_0000119>http://publications.jrc.ec.europa.eu/repository/bitstream/JRC73260/irmm_nanomaterials%20%28online%29.pdf</obo:IAO_0000119>
         <obo:IAO_0000115>A collection of weakly bound particles or aggregates where the resulting surface area is similar to the sum of the surface areas of the individual components. </obo:IAO_0000115>
+        <obo:IAO_0000119>http://publications.jrc.ec.europa.eu/repository/bitstream/JRC73260/irmm_nanomaterials%20%28online%29.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">agglomerate</rdfs:label>
     </owl:Class>
     
 
@@ -128,10 +190,10 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000002 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000002">
-        <rdfs:label xml:lang="en">aggregate</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1897"/>
-        <obo:IAO_0000119>Adapted from that given in http://publications.jrc.ec.europa.eu/repository/bitstream/JRC73260/irmm_nanomaterials%20%28online%29.pdf</obo:IAO_0000119>
         <obo:IAO_0000115>A composite particle, comprising of strongly bound or fused smaller particles, where the resulting external surface area may be significantly smaller than the sum of calculated surface areas of the individual components. </obo:IAO_0000115>
+        <obo:IAO_0000119>Adapted from that given in http://publications.jrc.ec.europa.eu/repository/bitstream/JRC73260/irmm_nanomaterials%20%28online%29.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">aggregate</rdfs:label>
     </owl:Class>
     
 
@@ -139,10 +201,10 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000003 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000003">
-        <rdfs:label xml:lang="en">dustiness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:IAO_0000115>The propensity of a powder to become aerosolised by mechanical agitation. The dustiness of a particular sample is very dependent on its moisture content and static electrical properties. </obo:IAO_0000115>
         <obo:IAO_0000119>RSC technical brief on nanomaterial characterization</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">dustiness</rdfs:label>
     </owl:Class>
     
 
@@ -150,10 +212,10 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000004 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000004">
-        <rdfs:label xml:lang="en">pour density</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
-        <obo:IAO_0000119>RSC technical brief on nanomaterial characterization</obo:IAO_0000119>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:IAO_0000115>Pour density requires the weighing of a known volume of freshly poured powder.</obo:IAO_0000115>
+        <obo:IAO_0000119>RSC technical brief on nanomaterial characterization</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">pour density</rdfs:label>
     </owl:Class>
     
 
@@ -161,9 +223,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000005 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000005">
-        <rdfs:label xml:lang="en">aluminium oxide nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1541"/>
         <obo:IAO_0000115>A nanoparticle which is basically composed of aluminium oxide.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">aluminium oxide nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -171,9 +233,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000006 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000006">
-        <rdfs:label xml:lang="en">cerium oxide nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1541"/>
         <obo:IAO_0000115>A nanoparticle which is basically composed of cerium oxide.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cerium oxide nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -181,9 +243,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000007 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000007">
-        <rdfs:label xml:lang="en">nanoclay</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_707"/>
         <obo:IAO_0000115>Nanoclays are nanoparticles of layered mineral silicates.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">nanoclay</rdfs:label>
     </owl:Class>
     
 
@@ -191,9 +253,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000008 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000008">
-        <rdfs:label xml:lang="en">polystyrene nanosphere</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_707"/>
         <obo:IAO_0000115>A nanoparticle that is spherical and composed of polystyrene. </obo:IAO_0000115>
+        <rdfs:label xml:lang="en">polystyrene nanosphere</rdfs:label>
     </owl:Class>
     
 
@@ -201,9 +263,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000009 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000009">
-        <rdfs:label xml:lang="en">surface chemistry assay</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000115>An assay that measures the surface chemistry of an entity, e.g. of a nanoparticle. </obo:IAO_0000115>
+        <rdfs:label xml:lang="en">surface chemistry assay</rdfs:label>
     </owl:Class>
     
 
@@ -211,11 +273,11 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000010 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000010">
-        <rdfs:label xml:lang="en">expiry date</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1817"/>
         <obo:IAO_0000115>The date beyond which a substance is no longer regarded as fit for use.</obo:IAO_0000115>
-        <obo:IAO_0000118>shelf life</obo:IAO_0000118>
         <obo:IAO_0000118>expiration date</obo:IAO_0000118>
+        <obo:IAO_0000118>shelf life</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">expiry date</rdfs:label>
     </owl:Class>
     
 
@@ -223,9 +285,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000011 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000011">
-        <rdfs:label xml:lang="en">tumor necrosis factor assay</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000118>TNF assay</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">tumor necrosis factor assay</rdfs:label>
     </owl:Class>
     
 
@@ -233,9 +295,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000012 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000012">
-        <rdfs:label xml:lang="en">triclinic-pedial</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000022"/>
         <rdfs:isDefinedBy>synonyms: triclinic hemihedral, C(1)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">triclinic-pedial</rdfs:label>
     </owl:Class>
     
 
@@ -243,9 +305,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000013 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000013">
-        <rdfs:label xml:lang="en">WST-1</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003009"/>
         <rdfs:isDefinedBy>wst-1 cell proliferation assay is a sensitive and accurate assay for cell proliferation and cytotoxicity.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">WST-1</rdfs:label>
     </owl:Class>
     
 
@@ -253,9 +315,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000014 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000014">
-        <rdfs:label xml:lang="en">metalloid nanoparticle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;CHEBI_52855"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
         <rdfs:isDefinedBy>An inorganic nanoparticle consisting of a metalloid (any element with properties that are intermediate between a metal and a non-metal; generally considered to include B, Si, Ge, As, Sb, and Te)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">metalloid nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -263,8 +325,8 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000015 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000015">
-        <rdfs:label xml:lang="en">Physicochemical Characterization</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003009"/>
+        <rdfs:label xml:lang="en">Physicochemical Characterization</rdfs:label>
     </owl:Class>
     
 
@@ -272,9 +334,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000016 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000016">
-        <rdfs:label xml:lang="en">copper nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1384"/>
         <rdfs:isDefinedBy>A metallic nanoparticle that consists of copper.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">copper nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -282,8 +344,8 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000017 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000017">
-        <rdfs:label xml:lang="en">DNA Damage Assay</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002167"/>
+        <rdfs:label xml:lang="en">DNA Damage Assay</rdfs:label>
     </owl:Class>
     
 
@@ -291,8 +353,8 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000018 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000018">
-        <rdfs:label xml:lang="en">Cell Membrane Integrity Assay</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003009"/>
+        <rdfs:label xml:lang="en">Cell Membrane Integrity Assay</rdfs:label>
     </owl:Class>
     
 
@@ -300,9 +362,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000019 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000019">
-        <rdfs:label xml:lang="en">germanium nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1384"/>
         <rdfs:isDefinedBy>A metallic nanoparticle that consists of germanium.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">germanium nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -310,9 +372,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000020 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000020">
-        <rdfs:label xml:lang="en">aluminum nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1384"/>
         <rdfs:isDefinedBy>A metallic nanoparticle that consists of aluminum.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">aluminum nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -320,9 +382,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000021 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000021">
-        <rdfs:label xml:lang="en">tungsten nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1384"/>
         <rdfs:isDefinedBy>A metal nanoparticle that consists of tungsten.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">tungsten nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -330,9 +392,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000022 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000022">
-        <rdfs:label xml:lang="en">triclinic</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
         <rdfs:isDefinedBy>A crystalline state that is one of the 7 basic crystal systems and the least symmetric of the 14 Bravais lattices. Characteristic for this system is that the three basis vectors are of unequal lengths and none of the angles between any two vectors is 90°.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">triclinic</rdfs:label>
     </owl:Class>
     
 
@@ -340,9 +402,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000023 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000023">
-        <rdfs:label xml:lang="en">molybdenum trioxide nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1541"/>
         <rdfs:isDefinedBy>A metall oxide nanoparticle that consists of molybdenum trioxide.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">molybdenum trioxide nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -350,9 +412,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000024 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000024">
-        <rdfs:label xml:lang="en">cadmium(II) oxide nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1541"/>
         <rdfs:isDefinedBy>A metal oxide nanoparticle that consists of cadmium (II) oxide.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">cadmium(II) oxide nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -360,9 +422,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000025 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000025">
-        <rdfs:label xml:lang="en">manganese (IV) dioxide nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1541"/>
         <rdfs:isDefinedBy>A metal oxide nanoparticle that consists of manganese (IV) dioxide.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">manganese (IV) dioxide nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -370,9 +432,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000026 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000026">
-        <rdfs:label xml:lang="en">fullerenol nanoparticle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;CHEBI_33416"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33416"/>
         <rdfs:isDefinedBy>Fullerenol is a fullerene with hydroxy groups.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">fullerenol nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -380,9 +442,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000027 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000027">
-        <rdfs:label xml:lang="en">polyethylenglycol nanoparticle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1375"/>
         <rdfs:isDefinedBy>A nanoparticle that consists of poly ethylen glycol (PEG).</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">polyethylenglycol nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -390,9 +452,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000028 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000028">
-        <rdfs:label xml:lang="en">tricalcium phosphate nanoparticle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;CHEBI_52855"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
         <rdfs:isDefinedBy>An inorganic nanoparticle that consists of tricalcium phosphate.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">tricalcium phosphate nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -400,9 +462,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000029 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000029">
-        <rdfs:label xml:lang="en">monoclinic</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
         <rdfs:isDefinedBy>A crystalline state that is one of the 7 basic crystal systems. Characteristic for this system is that the three basis vectors are of unequal lengths and in which two of the vectors are perpendiular, while the third meeds the other two at an angle other than 90°.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">monoclinic</rdfs:label>
     </owl:Class>
     
 
@@ -410,9 +472,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000030 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000030">
-        <rdfs:label xml:lang="en">triclinic-pinacoidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000022"/>
         <rdfs:isDefinedBy>synonyms: triclinic normal, C(i), S(2)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">triclinic-pinacoidal</rdfs:label>
     </owl:Class>
     
 
@@ -420,9 +482,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000031 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000031">
-        <rdfs:label xml:lang="en">orthorhombic</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
         <rdfs:isDefinedBy>A crystalline state that is one of the 7 basic crystal systems. Characteristic for this system is that the three basis vectors are orthogonal but of unequal lengths.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">orthorhombic</rdfs:label>
     </owl:Class>
     
 
@@ -430,9 +492,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000032 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000032">
-        <rdfs:label xml:lang="en">tetragonal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
         <rdfs:isDefinedBy>A crystalline state that is one of the 7 basic crystal systems. Characteristic for this system is that the three basis vectors are orthogonal and two of them are of equal length</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">tetragonal</rdfs:label>
     </owl:Class>
     
 
@@ -440,9 +502,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000033 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000033">
-        <rdfs:label xml:lang="en">hexagonal-trigonal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
         <rdfs:isDefinedBy>The hexagonal-trigonal crystal system is one of 7 crystal systems.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">hexagonal-trigonal</rdfs:label>
     </owl:Class>
     
 
@@ -450,9 +512,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000034 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000034">
-        <rdfs:label xml:lang="en">hexagonal-hexagonal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
         <rdfs:isDefinedBy>The hexagonal-hexagonal crystal system is one of 7 crystal systems.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">hexagonal-hexagonal</rdfs:label>
     </owl:Class>
     
 
@@ -460,9 +522,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000035 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000035">
-        <rdfs:label xml:lang="en">cubic</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
         <rdfs:isDefinedBy>Cubic (or isometric) crystal systems have the shape of a cube.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">cubic</rdfs:label>
     </owl:Class>
     
 
@@ -470,9 +532,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000036 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000036">
-        <rdfs:label xml:lang="en">Bravais lattice</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
         <rdfs:isDefinedBy>Bravais lattices are a system to describe crystal structures.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Bravais lattice</rdfs:label>
     </owl:Class>
     
 
@@ -480,9 +542,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000037 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000037">
-        <rdfs:label xml:lang="en">space group</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
         <rdfs:isDefinedBy>Space groups describe crystallic structures.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">space group</rdfs:label>
     </owl:Class>
     
 
@@ -490,9 +552,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000038 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000038">
-        <rdfs:label xml:lang="en">Miller index</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
         <rdfs:isDefinedBy>Miller indices are a notation system in crystallography.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Miller index</rdfs:label>
     </owl:Class>
     
 
@@ -500,9 +562,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000039 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000039">
-        <rdfs:label xml:lang="en">monoclinic-sphenoidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000029"/>
         <rdfs:isDefinedBy>synonyms: C(2)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">monoclinic-sphenoidal</rdfs:label>
     </owl:Class>
     
 
@@ -510,9 +572,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000040 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000040">
-        <rdfs:label xml:lang="en">monoclinic-domatic</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000029"/>
         <rdfs:isDefinedBy>synonyms: C(1h), C(1v), C(s)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">monoclinic-domatic</rdfs:label>
     </owl:Class>
     
 
@@ -520,9 +582,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000041 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000041">
-        <rdfs:label xml:lang="en">monoclinic-prismatic</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000029"/>
         <rdfs:isDefinedBy>synonyms: C(2h)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">monoclinic-prismatic</rdfs:label>
     </owl:Class>
     
 
@@ -530,9 +592,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000042 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000042">
-        <rdfs:label xml:lang="en">orthorhombic-sphenoidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000031"/>
         <rdfs:isDefinedBy>synonyms: D(2)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">orthorhombic-sphenoidal</rdfs:label>
     </owl:Class>
     
 
@@ -540,9 +602,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000043 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000043">
-        <rdfs:label xml:lang="en">orthorhombic-pyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000031"/>
         <rdfs:isDefinedBy>synonyms: C(2v)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">orthorhombic-pyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -550,9 +612,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000044 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000044">
-        <rdfs:label xml:lang="en">orthorhombic-bipyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000031"/>
         <rdfs:isDefinedBy>synonyms: D(2h)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">orthorhombic-bipyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -560,9 +622,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000045 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000045">
-        <rdfs:label xml:lang="en">tetragonal-pyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000032"/>
         <rdfs:isDefinedBy>synonyms: C(4)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">tetragonal-pyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -570,9 +632,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000046 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000046">
-        <rdfs:label xml:lang="en">tetragonal-disphenoidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000032"/>
         <rdfs:isDefinedBy>synonyms: S(4)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">tetragonal-disphenoidal</rdfs:label>
     </owl:Class>
     
 
@@ -580,9 +642,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000047 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000047">
-        <rdfs:label xml:lang="en">tetragonal-dipyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000032"/>
         <rdfs:isDefinedBy>synonyms: C(4h)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">tetragonal-dipyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -590,9 +652,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000048 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000048">
-        <rdfs:label xml:lang="en">tetragonal-trapezoidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000032"/>
         <rdfs:isDefinedBy>synonyms: D(4)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">tetragonal-trapezoidal</rdfs:label>
     </owl:Class>
     
 
@@ -600,9 +662,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000049 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000049">
-        <rdfs:label xml:lang="en">premises identifier</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000520"/>
         <rdfs:isDefinedBy>A sequence of characters used to identify the premises where a measurement, sample, or experiment has been performed. Synonym: location identifier, measuring point identifier.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">premises identifier</rdfs:label>
     </owl:Class>
     
 
@@ -610,9 +672,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000050 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000050">
-        <rdfs:label xml:lang="en">ditetragonal-pyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000032"/>
         <rdfs:isDefinedBy>synonyms: C(4v)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">ditetragonal-pyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -620,9 +682,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000051 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000051">
-        <rdfs:label xml:lang="en">tetragonal-scalenoidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000032"/>
         <rdfs:isDefinedBy>synonyms: D(2d)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">tetragonal-scalenoidal</rdfs:label>
     </owl:Class>
     
 
@@ -630,8 +692,8 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000052 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000052">
-        <rdfs:label xml:lang="en">ditetragonal-dipyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000032"/>
+        <rdfs:label xml:lang="en">ditetragonal-dipyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -639,9 +701,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000053 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000053">
-        <rdfs:label xml:lang="en">trigonal-pyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000033"/>
         <rdfs:isDefinedBy>synonyms: C(3h)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">trigonal-pyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -649,9 +711,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000054 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000054">
-        <rdfs:label xml:lang="en">rhombohedral</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000033"/>
         <rdfs:isDefinedBy>synonyms: S(6), C(3i)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">rhombohedral</rdfs:label>
     </owl:Class>
     
 
@@ -659,9 +721,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000055 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000055">
-        <rdfs:label xml:lang="en">trigonal-trapezoidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000033"/>
         <rdfs:isDefinedBy>synonyms: D(3)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">trigonal-trapezoidal</rdfs:label>
     </owl:Class>
     
 
@@ -669,9 +731,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000056 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000056">
-        <rdfs:label xml:lang="en">ditrigonal-pyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000033"/>
         <rdfs:isDefinedBy>synonyms: C(3v)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">ditrigonal-pyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -679,9 +741,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000057 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000057">
-        <rdfs:label xml:lang="en">ditrigonal-scalahedral</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000033"/>
         <rdfs:isDefinedBy>synonyms: D(3d)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">ditrigonal-scalahedral</rdfs:label>
     </owl:Class>
     
 
@@ -689,9 +751,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000058 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000058">
-        <rdfs:label xml:lang="en">hexagonal-pyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000034"/>
         <rdfs:isDefinedBy>synonyms: C(6)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">hexagonal-pyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -699,9 +761,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000059 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000059">
-        <rdfs:label xml:lang="en">trigonal-dipyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000034"/>
         <rdfs:isDefinedBy>synonyms: C(3h)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">trigonal-dipyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -709,9 +771,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000060 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000060">
-        <rdfs:label xml:lang="en">hexagonal-dipyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000034"/>
         <rdfs:isDefinedBy>synonyms: C(6h)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">hexagonal-dipyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -719,9 +781,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000061 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000061">
-        <rdfs:label xml:lang="en">hexagonal-trapezoidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000034"/>
         <rdfs:isDefinedBy>synonyms: D(6)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">hexagonal-trapezoidal</rdfs:label>
     </owl:Class>
     
 
@@ -729,9 +791,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000062 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000062">
-        <rdfs:label xml:lang="en">dihexagonal-pyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000034"/>
         <rdfs:isDefinedBy>synonyms: C(6v)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">dihexagonal-pyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -739,9 +801,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000063 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000063">
-        <rdfs:label xml:lang="en">ditrigonal-dipyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000034"/>
         <rdfs:isDefinedBy>synonyms: D(3h)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">ditrigonal-dipyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -749,9 +811,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000064 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000064">
-        <rdfs:label xml:lang="en">dihexagonal-dipyramidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000034"/>
         <rdfs:isDefinedBy>synonyms: D(6h)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">dihexagonal-dipyramidal</rdfs:label>
     </owl:Class>
     
 
@@ -759,9 +821,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000065 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000065">
-        <rdfs:label xml:lang="en">tetrahedral</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000035"/>
         <rdfs:isDefinedBy>synonyms: T</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">tetrahedral</rdfs:label>
     </owl:Class>
     
 
@@ -769,9 +831,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000066 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000066">
-        <rdfs:label xml:lang="en">hextetrahedral</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000035"/>
         <rdfs:isDefinedBy>synonyms: T(d)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">hextetrahedral</rdfs:label>
     </owl:Class>
     
 
@@ -779,9 +841,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000067 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000067">
-        <rdfs:label xml:lang="en">diploidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000035"/>
         <rdfs:isDefinedBy>synonyms: T(h)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">diploidal</rdfs:label>
     </owl:Class>
     
 
@@ -789,9 +851,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000068 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000068">
-        <rdfs:label xml:lang="en">gyroidal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000035"/>
         <rdfs:isDefinedBy>synonyms: O</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">gyroidal</rdfs:label>
     </owl:Class>
     
 
@@ -799,9 +861,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000069 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000069">
-        <rdfs:label xml:lang="en">hexoctahedral</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000035"/>
         <rdfs:isDefinedBy>synonyms: O(h)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">hexoctahedral</rdfs:label>
     </owl:Class>
     
 
@@ -809,9 +871,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000070 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000070">
-        <rdfs:label xml:lang="en">measurement identifier</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000520"/>
         <rdfs:isDefinedBy>A sequence of characters used to identify, name, or characterize the measurement. Measurements are part of a study. Synonym: assay ID, experiment ID</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">measurement identifier</rdfs:label>
     </owl:Class>
     
 
@@ -819,9 +881,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000071 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000071">
-        <rdfs:label xml:lang="en">sample identifier</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000520"/>
         <rdfs:isDefinedBy>A sequence of characters used to identify a sample.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">sample identifier</rdfs:label>
     </owl:Class>
     
 
@@ -829,14 +891,15 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000072 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000072">
-        <rdfs:label xml:lang="en">solubility endpoint</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
         <rdfs:isDefinedBy>The ability of a chemical substance to dissolve in a solid, liquid, or gaseous solvent to form a homogeneous solution. The solubility of a given substance is dependent on the solvent used, as well as on temperature and pressure.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">solubility endpoint</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.enanomapper.org/onto/ENM_9000073 -->
+<<<<<<< HEAD
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000073">
         <rdfs:label xml:lang="en">glass wool</rdfs:label>
@@ -847,23 +910,44 @@
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+=======
+>>>>>>> 2b1c5a1cbd19657bf377a7a6882ee4a034f164ae
 
-    <owl:Class rdf:about="&obo;BFO_0000019"/>
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000073">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1384"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPO_1892</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manganese nanoparticle</npo-ext:preferred_Name>
+        <npo-ext:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mn nanoparticle</npo-ext:synonym>
+        <rdfs:label xml:lang="en">manganese nanoparticle</rdfs:label>
+    </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEBI_33416 -->
+    <!-- http://purl.enanomapper.org/onto/ENM_9000074 -->
 
-    <owl:Class rdf:about="&obo;CHEBI_33416"/>
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000074">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1486"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000074</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM01000a</npo-ext:preferred_Name>
+        <npo-ext:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NM-100</npo-ext:synonym>
+        <rdfs:label xml:lang="en">JRCNM01000a</rdfs:label>
+    </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEBI_52855 -->
+    <!-- http://purl.enanomapper.org/onto/ENM_9000075 -->
 
-    <owl:Class rdf:about="&obo;CHEBI_52855"/>
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000075">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1486"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000075</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM01001a</npo-ext:preferred_Name>
+        <npo-ext:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NM-101</npo-ext:synonym>
+        <rdfs:label xml:lang="en">JRCNM01001a</rdfs:label>
+    </owl:Class>
     
 
 
+<<<<<<< HEAD
     <!-- http://purl.obolibrary.org/obo/CHEBI_59999 -->
 
     <owl:Class rdf:about="&obo;CHEBI_59999"/>
@@ -871,8 +955,316 @@
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
+=======
+    <!-- http://purl.enanomapper.org/onto/ENM_9000076 -->
+>>>>>>> 2b1c5a1cbd19657bf377a7a6882ee4a034f164ae
 
-    <owl:Class rdf:about="&obo;OBI_0000070"/>
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000076">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1486"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000076</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM01002a</npo-ext:preferred_Name>
+        <npo-ext:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NM-102</npo-ext:synonym>
+        <rdfs:label xml:lang="en">JRCNM01002a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000077 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000077">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1486"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000077</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM01005a</npo-ext:preferred_Name>
+        <npo-ext:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NM-105</npo-ext:synonym>
+        <rdfs:label xml:lang="en">JRCNM01005a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000078 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000078">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1542"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000078</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM01100a</npo-ext:preferred_Name>
+        <npo-ext:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NM-110</npo-ext:synonym>
+        <rdfs:label xml:lang="en">JRCNM01100a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000079 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000079">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1542"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000079</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM62101a</npo-ext:preferred_Name>
+        <rdfs:label xml:lang="en">JRCNM62101a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000080 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000080">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_354"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000080</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM04000a</npo-ext:preferred_Name>
+        <npo-ext:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NM-400</npo-ext:synonym>
+        <rdfs:label xml:lang="en">JRCNM04000a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000081 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000081">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_354"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000081</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM04001a</npo-ext:preferred_Name>
+        <npo-ext:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NM-401</npo-ext:synonym>
+        <rdfs:label xml:lang="en">JRCNM04001a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000082 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000082">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000072"/>
+        <rdfs:isDefinedBy xml:lang="en">The ability of a chemical substance to dissolve in some organic molecules.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Solubility in organic solvents</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000083 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000083">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000099"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000083</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM01003a</npo-ext:preferred_Name>
+        <npo-ext:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NM-103</npo-ext:synonym>
+        <rdfs:label xml:lang="en">JRCNM01003a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000084 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000084">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000099"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000084</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM01004a</npo-ext:preferred_Name>
+        <npo-ext:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NM-104</npo-ext:synonym>
+        <rdfs:label xml:lang="en">JRCNM01004a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000085 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000085">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1542"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000085</npo-ext:code>
+        <rdfs:label xml:lang="en">coated zinc oxide nanoparticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000086 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000086">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000085"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000086</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM01101a</npo-ext:preferred_Name>
+        <npo-ext:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NM-111</npo-ext:synonym>
+        <rdfs:label xml:lang="en">JRCNM01101a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000087 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000087">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1373"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000087</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM02000a</npo-ext:preferred_Name>
+        <npo-ext:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NM-200</npo-ext:synonym>
+        <rdfs:label xml:lang="en">JRCNM02000a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000088 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000088">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1373"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000088</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM02001a</npo-ext:preferred_Name>
+        <npo-ext:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NM-201</npo-ext:synonym>
+        <rdfs:label xml:lang="en">JRCNM02001a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000089 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000089">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1373"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000089</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM02002a</npo-ext:preferred_Name>
+        <npo-ext:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NM-202</npo-ext:synonym>
+        <rdfs:label xml:lang="en">JRCNM02002a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000090 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000090">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1373"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000090</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM02003a</npo-ext:preferred_Name>
+        <npo-ext:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NM-203</npo-ext:synonym>
+        <rdfs:label xml:lang="en">JRCNM02003a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000091 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000091">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1373"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000091</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM02004a</npo-ext:preferred_Name>
+        <npo-ext:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NM-204</npo-ext:synonym>
+        <rdfs:label xml:lang="en">JRCNM02004a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000092 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000092">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1373"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000092</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM02004b</npo-ext:preferred_Name>
+        <rdfs:label xml:lang="en">JRCNM02004b</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000093 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000093">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1373"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000093</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM10404</npo-ext:preferred_Name>
+        <rdfs:label xml:lang="en">JRCNM10404</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000094 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000094">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1486"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000094</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM10201a</npo-ext:preferred_Name>
+        <rdfs:label xml:lang="en">JRCNM10201a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000095 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000095">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1486"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000095</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM62001a</npo-ext:preferred_Name>
+        <rdfs:label xml:lang="en">JRCNM62001a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000096 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000096">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1486"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000096</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM62002a</npo-ext:preferred_Name>
+        <rdfs:label xml:lang="en">JRCNM62002a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000097 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000097">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_401"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000097</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM03300a</npo-ext:preferred_Name>
+        <npo-ext:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NM-330</npo-ext:synonym>
+        <rdfs:label xml:lang="en">JRCNM03300a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000098 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000098">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_401"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000098</npo-ext:code>
+        <npo-ext:preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JRCNM03301a</npo-ext:preferred_Name>
+        <npo-ext:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NM-330 DIS</npo-ext:synonym>
+        <rdfs:label xml:lang="en">JRCNM03301a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000099 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000099">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1486"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENM_9000099</npo-ext:code>
+        <npo-ext:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NM-103</npo-ext:synonym>
+        <rdfs:label xml:lang="en">coated titanium dioxide nanoparticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000100 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115 xml:lang="en">The boiling point of a substance is the temperature at which the vapor pressure of the liquid equals the pressure surrounding the liquid and the liquid changes into a vapor. The boiling point of a liquid varies depending upon the surrounding environmental pressure.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">boiling point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33416 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33416"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_52855 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52855"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
     
 
 
@@ -907,9 +1299,996 @@
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003009">
         <rdfs:label xml:lang="zh">BAO_0003009</rdfs:label>
     </owl:Class>
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000101 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000101">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D1</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000102 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000102">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D2</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000103 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000103">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D3</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000104 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000104">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D4</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000105 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000105">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D5</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000106 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000106">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D6</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000107 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000107">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D7</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000108 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000108">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D8</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000109 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000109">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D9</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000110 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000110">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D10</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000111 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000111">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D11</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000112 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000112">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D12</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000113 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000113">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D13</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000114 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000114">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D14</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000115 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000115">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D15</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000116 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000116">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D16</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000117 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000117">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D17</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000118 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000118">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D18</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000119 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000119">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D19</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000120 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000120">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D20</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000121 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000121">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D21</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000122 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000122">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D22</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000123 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000123">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D23</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000124 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000124">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D24</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000125 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000125">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D25</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000126 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000126">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D26</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000127 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000127">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D27</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000128 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000128">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D28</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000129 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000129">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D29</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000130 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000130">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D30</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000131 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000131">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D31</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000132 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000132">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D32</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000133 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000133">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D33</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000134 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000134">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D34</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000135 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000135">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D35</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000136 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000136">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D36</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000137 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000137">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D37</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000138 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000138">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D38</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000139 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000139">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D39</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000140 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000140">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D40</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000141 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000141">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D41</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000142 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000142">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D42</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000143 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000143">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D43</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000144 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000144">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D44</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000145 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000145">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D45</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000146 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000146">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D46</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000147 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000147">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D47</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000148 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000148">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D48</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000149 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000149">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D49</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000150 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000150">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D50</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000151 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000151">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D51</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000152 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000152">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D52</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000153 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000153">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D53</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000154 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000154">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D54</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000155 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000155">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D55</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000156 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000156">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D56</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000157 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000157">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D57</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000158 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000158">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D58</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000159 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000159">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D59</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000160 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000160">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D60</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000161 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000161">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D61</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000162 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000162">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D62</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000163 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000163">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D63</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000164 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000164">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D64</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000165 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000165">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D65</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000166 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000166">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D66</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000167 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000167">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D67</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000168 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000168">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D68</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000169 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000169">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D69</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000170 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000170">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D70</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000171 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000171">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D71</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000172 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000172">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D72</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000173 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000173">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D73</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000174 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000174">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D74</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000175 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000175">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D75</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000176 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000176">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D76</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000177 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000177">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D77</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000178 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000178">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D78</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000179 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000179">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D79</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000180 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000180">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D80</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000181 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000181">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D81</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000182 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000182">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D82</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000183 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000183">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D83</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000184 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000184">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D84</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000185 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000185">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D85</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000186 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000186">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D86</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000187 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000187">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D87</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000188 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000188">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D88</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000189 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000189">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D89</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000190 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000190">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D90</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000191 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000191">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D91</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000192 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000192">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D92</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000193 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000193">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D93</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000194 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000194">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D94</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000195 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000195">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D95</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000196 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000196">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D96</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000197 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000197">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D97</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000198 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000198">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D98</rdfs:label>
+	</owl:Class>
+
+
+
+	<!-- http://purl.enanomapper.org/onto/ENM_9000199 -->
+
+
+	<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000199">
+		<rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1699"/>
+		<rdfs:label xml:lang="en">D99</rdfs:label>
+	</owl:Class>
+
+
 </rdf:RDF>
 
-
-
-<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
-
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
