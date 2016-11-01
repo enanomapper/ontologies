@@ -23,7 +23,7 @@
         <dc:creator xml:lang="en">Meiu Wong</dc:creator>
         <dc:contributor>Darrell R. Abernethy</dc:contributor>
         <dc:creator>Zuoshuang &quot;Allen&quot; Xiang</dc:creator>
-        <dc:date>2016-07-25</dc:date>
+        <dc:date>2016-10-31</dc:date>
         <dc:description xml:lang="en">The Ontology of Adverse Eventsy (OAE) is a biomedical ontology in the domain of adverse events. OAE aims to standardize adverse event annotation, integrate various adverse event data, and support computer-assisted reasoning.  OAE is a community-based ontology. Its development follows the OBO Foundry principles. Vaccine adverse events have been used as an initial testing use case. OAE also studies adverse events associated with the administration of drug and nutritional products, the operation of surgeries, and the usage of medical devices, etc.</dc:description>
         <dc:title xml:lang="en">OAE: Ontology of Adverse Events</dc:title>
         <dc:creator>Rebecca Racz</dc:creator>
@@ -35,23 +35,23 @@
         <dc:creator>Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:creator>Kevin Mo</dc:creator>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-11-01 11:01:11</oboInOwl:date>
         <dc:contributor>Izabela Birsanescu</dc:contributor>
         <dc:creator xml:lang="en">Shelley Zhang</dc:creator>
         <dc:creator>Jiangan Xie</dc:creator>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-09-06 20:32:59</oboInOwl:date>
         <dc:creator>Sydni Joubran</dc:creator>
         <dc:creator>Liwei Wang</dc:creator>
         <dc:contributor>Elizabeth Blair</dc:contributor>
         <dc:creator xml:lang="en">Desikan Jagannathan</dc:creator>
         <dc:creator>Edison Ong</dc:creator>
         <dc:creator>Abra Guo</dc:creator>
+        <owl:versionInfo xml:lang="en">Vision Release; 1.1.325</owl:versionInfo>
         <dc:creator>Qingping Liu</dc:creator>
         <dc:contributor>Keith Burkhart</dc:contributor>
         <dc:subject xml:lang="en">An ontology for the annotation of the adverse event domain.</dc:subject>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
         <dc:creator>Sirarat Sarntivijai</dc:creator>
-        <owl:versionInfo xml:lang="en">Vision Release; 1.1.322</owl:versionInfo>
         <dc:creator>Barry Smith</dc:creator>
     </owl:Ontology>
     
@@ -1471,8 +1471,10 @@ We made the name changing as a way to make OAE cover the broader sense of the &a
         <obo:IAO_0000115>a pain AE where the pain reachs an extreme level.</obo:IAO_0000115>
         <obo:IAO_0000117>SS, YH, MW</obo:IAO_0000117>
         <rdfs:label>pain in extremity AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12512</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0009763</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10033425</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C78515</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0030196</rdfs:seeAlso>
     </owl:Class>
     
@@ -1489,7 +1491,9 @@ We made the name changing as a way to make OAE cover the broader sense of the &a
         <obo:IAO_0000118>Upper Airway Cough Syndrome</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Post-nasal_drip</obo:IAO_0000119>
         <rdfs:label>postnasal drip AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E13514</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10036402</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C78566</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1610,10 +1614,10 @@ https://www.nlm.nih.gov/medlineplus/ency/article/003088.htm</obo:IAO_0000116>
         <obo:IAO_0000118>lethargy AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Fatigue_%28medical%29</obo:IAO_0000119>
         <rdfs:label>fatigue AE</rdfs:label>
-        <rdfs:seeAlso>CTCAE: E11098</rdfs:seeAlso>
+        <rdfs:seeAlso>CTCAE: E11098 (fatigue); CTCAE: E12709 (lethargy)</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0003388</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10016256 (fatigue); MedDRA: 10024264 (lethargy)</rdfs:seeAlso>
-        <rdfs:seeAlso>NCIt: C3036</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C3036; NCIt: C78416</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0015672</rdfs:seeAlso>
     </owl:Class>
     
@@ -1822,8 +1826,10 @@ https://www.nlm.nih.gov/medlineplus/ency/article/003088.htm</obo:IAO_0000116>
         <obo:IAO_0000118>hot flashes AE</obo:IAO_0000118>
         <obo:IAO_0000118>hot flush AE</obo:IAO_0000118>
         <rdfs:label>hot flushes AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E13781</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0008209</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10020407</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C3109</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0600142</rdfs:seeAlso>
     </owl:Class>
     
@@ -2448,8 +2454,10 @@ https://www.nlm.nih.gov/medlineplus/ency/article/003088.htm</obo:IAO_0000116>
         <obo:IAO_0000117>SS, YH</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.nlm.nih.gov/medlineplus/tremor.html</obo:IAO_0000119>
         <rdfs:label>tremor AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12837</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0001337</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10044565</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C38038</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0040822</rdfs:seeAlso>
     </owl:Class>
     
@@ -3981,8 +3989,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000117>SS, YH</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Anxiety</obo:IAO_0000119>
         <rdfs:label>anxiety AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12883</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0000739</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10002855</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C26696</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0003467</rdfs:seeAlso>
     </owl:Class>
     
@@ -4134,8 +4144,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000118>dyspnoea AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Dyspnoea</obo:IAO_0000119>
         <rdfs:label>dyspnea AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E13368</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0002094</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10013968; MedDRA: 10013963</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C2998</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0013404</rdfs:seeAlso>
         <rdfs:seeAlso>UMLS CUI: C0013404</rdfs:seeAlso>
     </owl:Class>
@@ -4495,8 +4507,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000117>SS, YH</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Nasal_congestion</obo:IAO_0000119>
         <rdfs:label>nasal congestion AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E13450</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0001742</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10028735</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C78500</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0027424</rdfs:seeAlso>
     </owl:Class>
     
@@ -4635,8 +4649,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000117>SS, YH, MW</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.wordinfo.info/words/index/info/view_unit/1631/</obo:IAO_0000119>
         <rdfs:label>pharyngolaryngeal pain AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E13482</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0010833</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10034844</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C78556</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0858635</rdfs:seeAlso>
     </owl:Class>
     
@@ -5135,8 +5151,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000115>a pain AE that has an outcome of headache</obo:IAO_0000115>
         <obo:IAO_0000117>YH, MW</obo:IAO_0000117>
         <rdfs:label>headache AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12678</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0002315</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10019211</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C34661</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0018681</rdfs:seeAlso>
     </owl:Class>
     
@@ -5367,7 +5385,9 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Paraesthesia</obo:IAO_0000119>
         <rdfs:comment>Paresthesia is more generally known as the feeling of &quot;pins and needles&quot; or of a limb being &quot;asleep&quot; (although this is not directly related to the phenomenon of sleep). The manifestation of paresthesia may be transient or chronic.</rdfs:comment>
         <rdfs:label>paresthesia AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12758</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10033775 (paraesthesia); MedDRA: 10033987 (paresthesia).</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C28177</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5428,8 +5448,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000119>WEB: http://www.mayoclinic.org/diseases-conditions/anorexia/basics/definition/con-20033002</obo:IAO_0000119>
         <obo:OAE_0001849 xml:lang="en">厌食症</obo:OAE_0001849>
         <rdfs:label>anorexia AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12252</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0002039</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10002649 (anorexia nervosa); MedDRA: 10061428 (decreased appetite); MedDRA: 10002646 (anorexia).</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C2875</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0003123</rdfs:seeAlso>
     </owl:Class>
     
@@ -5498,11 +5520,11 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Syncope_%28medicine%29</obo:IAO_0000119>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Unconsciousness</obo:IAO_0000119>
         <rdfs:label>syncope AE</rdfs:label>
-        <rdfs:seeAlso>CTCAE:E12832</rdfs:seeAlso>
+        <rdfs:seeAlso>CTCAE: E12832</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0001279</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10024855</rdfs:seeAlso>
-        <rdfs:seeAlso>MedDRA:10042772</rdfs:seeAlso>
-        <rdfs:seeAlso>NCIt:C35053</rdfs:seeAlso>
+        <rdfs:seeAlso>MedDRA: 10042772</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C35053</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0039070</rdfs:seeAlso>
     </owl:Class>
     
@@ -5547,12 +5569,12 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000118>blood pressure increased</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.ncbi.nlm.nih.gov/pubmed/21722707</obo:IAO_0000119>
         <rdfs:label>hypertension AE</rdfs:label>
-        <rdfs:seeAlso>CTCAE:E13785</rdfs:seeAlso>
+        <rdfs:seeAlso>CTCAE: E13785</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0000822</rdfs:seeAlso>
         <rdfs:seeAlso>MP: MP_0000231</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10005750</rdfs:seeAlso>
-        <rdfs:seeAlso>MedDRA:10020772</rdfs:seeAlso>
-        <rdfs:seeAlso>NCIt:C3117</rdfs:seeAlso>
+        <rdfs:seeAlso>MedDRA: 10020772</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C3117</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0020538</rdfs:seeAlso>
     </owl:Class>
     
@@ -5662,8 +5684,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000116>According to the Vaccine Adverse Event Reporting System (VAERS),  &apos;neck pain&apos; was mentioned in 1,323 VAERS reports (1.0%) during1991-2001 (Reference: PMID: 12825543).</obo:IAO_0000116>
         <obo:IAO_0000117>YH, MW</obo:IAO_0000117>
         <rdfs:label>neck pain AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12493</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0003418</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10028836</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C50663</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0007859</rdfs:seeAlso>
     </owl:Class>
     
@@ -6083,7 +6107,9 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000118>mental confusion AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/mental+confusion</obo:IAO_0000119>
         <rdfs:label>confusion AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12889</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10010305 (confused state); MedDRA: 10010300 (confusion)</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C37928</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -6635,7 +6661,9 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000115>a nervous system AE which involves inflammation of the spinal cord, which disrupts central nervous system functions linking the brain and limbs.</obo:IAO_0000115>
         <obo:IAO_0000117>YH, MW</obo:IAO_0000117>
         <rdfs:label>myelitis AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12732</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10028524</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C26832</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -6721,9 +6749,11 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000484">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000426"/>
         <obo:IAO_0000115>a speech disorder that has an outcome of voice alteration</obo:IAO_0000115>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000117>YH, MW</obo:IAO_0000117>
         <rdfs:label>voice alteration AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E13601</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10047681</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C61043</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -7496,7 +7526,9 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000115>a respiratory system AE which has an outcome of sore throat</obo:IAO_0000115>
         <obo:IAO_0000117>YH, MW</obo:IAO_0000117>
         <rdfs:label>sore throat AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E13575</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10041367</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C50747</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -7634,8 +7666,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000117>YH, MW</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/hyperglycemia</obo:IAO_0000119>
         <rdfs:label>hyperglycemia AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12276</rdfs:seeAlso>
         <rdfs:seeAlso>MP: MP_0001559</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10020635 (hyperglycaemia); MedDRA: 10020639  (hyperglycemia)</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C26797</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -7692,12 +7726,12 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000117>YH, MW</obo:IAO_0000117>
         <obo:IAO_0000118>blood pressure decreased, low blood pressure</obo:IAO_0000118>
         <rdfs:label>hypotension AE</rdfs:label>
-        <rdfs:seeAlso>CTCAE:E13791</rdfs:seeAlso>
+        <rdfs:seeAlso>CTCAE: E13791</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0002615</rdfs:seeAlso>
         <rdfs:seeAlso>MP: MP_0001596</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10005734</rdfs:seeAlso>
-        <rdfs:seeAlso>MedDRA:10021097</rdfs:seeAlso>
-        <rdfs:seeAlso>NCIt:C3128</rdfs:seeAlso>
+        <rdfs:seeAlso>MedDRA: 10021097</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C3128</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0020649</rdfs:seeAlso>
     </owl:Class>
     
@@ -7989,8 +8023,9 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000118>respiratory arrest AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/apnea</obo:IAO_0000119>
         <rdfs:label>apnea AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E13306</rdfs:seeAlso>
         <rdfs:seeAlso>MP: MP_0001957</rdfs:seeAlso>
-        <rdfs:seeAlso>MedDRA: 10002974; MedDRA: 10002972</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C26698</rdfs:seeAlso>
         <rdfs:seeAlso>UMLS CUI: C0003578</rdfs:seeAlso>
     </owl:Class>
     
@@ -8081,8 +8116,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000119>WEB: http://www.healthline.com/symptom/seizures</obo:IAO_0000119>
         <obo:OAE_0001849>突然发作</obo:OAE_0001849>
         <rdfs:label>seizure AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12804</rdfs:seeAlso>
         <rdfs:seeAlso>MP: MP_0002064</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10039910 (seizures); MedDRA: 10039906 (seizure)</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C2962</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -8443,8 +8480,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000118>MedDRA: 10046543</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.nlm.nih.gov/medlineplus/urinaryincontinence.html</obo:IAO_0000119>
         <rdfs:label>urinary incontinence AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E13042</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0000020</rdfs:seeAlso>
         <rdfs:seeAlso>MP: MP_0003280</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C78497</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0042024</rdfs:seeAlso>
     </owl:Class>
     
@@ -8668,18 +8707,18 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000619">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000622"/>
         <obo:IAO_0000115 xml:lang="en">a urinary system AE that results in the presence of blood in the urine</obo:IAO_0000115>
-        <obo:IAO_0000116>MedDRA: 10018867 is &quot;haematuria&quot;; MedDRA: 10018870  is &quot;blood urine presence&quot;; MedDRA: 10019450  is &quot;hematuria&quot;.</obo:IAO_0000116>
         <obo:IAO_0000117>YH, SJ, MW</obo:IAO_0000117>
         <obo:IAO_0000118>UMLS CUI: C0018965 (hematuria AND haematuria); UMLS CUI: C0947999 (blood urine presence)</obo:IAO_0000118>
         <obo:IAO_0000118>blood urine</obo:IAO_0000118>
         <obo:IAO_0000118>blood urine presence</obo:IAO_0000118>
         <obo:IAO_0000118>haematuria AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://kidney.niddk.nih.gov/kudiseases/pubs/hematuria/</obo:IAO_0000119>
-        <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/hematuria</obo:IAO_0000119>
         <rdfs:comment>Hematuria AE can be caused by menstruation, vigorous exercise, sexual activity, viral illness, trauma, or infection, such as a urinary tract infection (UTI), along with more serious disorders such as cancer, disease, and clotting.</rdfs:comment>
         <rdfs:label>hematuria AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E13000</rdfs:seeAlso>
         <rdfs:seeAlso>MP: MP_0005161</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10018867 (haematuria); MedDRA: 10018870 (blood urine presence); MedDRA: 10019450 (hematuria)</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C3090</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -9113,10 +9152,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000118>haematoma AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Hematoma</obo:IAO_0000119>
         <rdfs:label>hematoma AE</rdfs:label>
-        <rdfs:seeAlso>CTCAE: E11666</rdfs:seeAlso>
+        <rdfs:seeAlso>CTCAE: E13775 (hematoma); CTCAE: E11666 (brruising)</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0001892</rdfs:seeAlso>
-        <rdfs:seeAlso>MedDRA ID: 10018852; MedDRA ID: 10019428; 10006504</rdfs:seeAlso>
-        <rdfs:seeAlso>NCIt: C37921</rdfs:seeAlso>
+        <rdfs:seeAlso>MedDRA ID: 10018852; MedDRA ID: 10019428; MedDRA: 10006504 (bruising)</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C37921 (Bruising); NCIt: C50579 (Hematoma)</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0018944</rdfs:seeAlso>
     </owl:Class>
     
@@ -9441,7 +9480,9 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000115>joint range of motion decreased AE is a mobility decreased AE that results in limited or decreased range of joint motion</obo:IAO_0000115>
         <obo:IAO_0000117>SS, YH, MW</obo:IAO_0000117>
         <rdfs:label>joint range of motion decreased AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12435</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10048706</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C78403</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -9512,7 +9553,8 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Periorbital_puffiness</obo:IAO_0000119>
         <rdfs:comment>Periorbital puffiness, also known as &quot;puffy eyes&quot; or swelling around the eyes, refers to the appearance of swelling in the tissues around the eyes, called the orbits.</rdfs:comment>
         <rdfs:label>periorbital edema AE</rdfs:label>
-        <rdfs:seeAlso>MedDRA: 10034545; MedDRA: 10054541</rdfs:seeAlso>
+        <rdfs:seeAlso>CTCAE: E13676</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C78530</rdfs:seeAlso>
         <rdfs:seeAlso>UMLS CUI: C0151205</rdfs:seeAlso>
     </owl:Class>
     
@@ -9642,7 +9684,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <rdfs:label>skin ulceration AE</rdfs:label>
         <rdfs:seeAlso>CTCAE: E13730</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0200042</rdfs:seeAlso>
-        <rdfs:seeAlso>MedDRA: 10040943</rdfs:seeAlso>
+        <rdfs:seeAlso>MedDRA: 10040943; MedDRA: 10040947</rdfs:seeAlso>
         <rdfs:seeAlso>NCIt: C54247</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0037299</rdfs:seeAlso>
     </owl:Class>
@@ -9711,7 +9753,8 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000119>WEB: http://www.brooksidepress.org/Products/Military_OBGYN/Textbook/AbnormalBleeding/Bleeding.htm</obo:IAO_0000119>
         <rdfs:comment>vaginal hemorrhage is irregular/heavy bleeding from the vagina. Vaginal hemorrhage is more often associated with pregnancy complications such as miscarriage or placental abruption, but certainly can occur in the absence of pregnancy.</rdfs:comment>
         <rdfs:label>vaginal hemorrhage AE</rdfs:label>
-        <rdfs:seeAlso>MedDRA: 10046910; MedDRA: 10046912</rdfs:seeAlso>
+        <rdfs:seeAlso>CTCAE: E13264</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C26945</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -14319,8 +14362,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000118>hypercalcaemia AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/hypercalcemia</obo:IAO_0000119>
         <rdfs:label>hypercalcemia AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12270</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0003072</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10020583 (hypercalcaemia); MedDRA: 10020587 (hypercalcemia)</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C3112</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0020437</rdfs:seeAlso>
     </owl:Class>
     
@@ -14352,8 +14397,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000118>hyperkalaemia AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/hyperkalemia</obo:IAO_0000119>
         <rdfs:label>hyperkalemia AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12282</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0002153</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10020646 (hyperkalaemia); MedDRA: 10020647 (hyperkalemia)</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C37968</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0020461</rdfs:seeAlso>
     </owl:Class>
     
@@ -14430,8 +14477,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000118>hypertriglyceridaemia AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/hypertriglyceridemia</obo:IAO_0000119>
         <rdfs:label>hypertriglyceridemia AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12299</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0002155</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10020869 (hypertriglyceridaemia); MedDRA: 10020870 (hypertriglyceridemia)</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C37971</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0020557</rdfs:seeAlso>
     </owl:Class>
     
@@ -14447,8 +14496,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000118>hyperuricaemia AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.ncbi.nlm.nih.gov/pubmedhealth/PMH0001459/</obo:IAO_0000119>
         <rdfs:label>hyperuricemia AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12305</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0002149</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10020903 (hyperuricaemia); MedDRA: 10020907 (hyperuricemia)</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C3961</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0740394</rdfs:seeAlso>
     </owl:Class>
     
@@ -14463,8 +14514,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000118>hypoalbuminaemia AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/hypoalbuminemia</obo:IAO_0000119>
         <rdfs:label>hypoalbuminemia AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12310</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0003073</rdfs:seeAlso>
-        <rdfs:seeAlso>MedDRA: 10020942</rdfs:seeAlso>
+        <rdfs:seeAlso>MedDRA: 10020942; MedDRA: 10020943;</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C37972</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0239981</rdfs:seeAlso>
     </owl:Class>
     
@@ -14480,8 +14533,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/hypocalcemia</obo:IAO_0000119>
         <obo:OAE_0001849>低血钙</obo:OAE_0001849>
         <rdfs:label>hypocalcemia AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12316</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0002901</rdfs:seeAlso>
-        <rdfs:seeAlso>MedDRA: 10020947</rdfs:seeAlso>
+        <rdfs:seeAlso>MedDRA: 10020947; MedDRA: 10020949</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C37973</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0020598</rdfs:seeAlso>
     </owl:Class>
     
@@ -14510,8 +14565,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000118>hypoglycaemia AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/hypoglycemia</obo:IAO_0000119>
         <rdfs:label>hypoglycemia AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12322</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0005969</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10020993 (hypoglycaemia); MedDRA: 10021005 (hypoglycemia)</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C3126</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0020615</rdfs:seeAlso>
     </owl:Class>
     
@@ -14540,8 +14597,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000118>hypomagnesaemia AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/Hypomagnesaemia</obo:IAO_0000119>
         <rdfs:label>hypomagnesemia AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12333</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0002917</rdfs:seeAlso>
-        <rdfs:seeAlso>MedDRA: 10021027</rdfs:seeAlso>
+        <rdfs:seeAlso>MedDRA: 10021027; MedDRA: 10021028</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C37975</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0151723</rdfs:seeAlso>
         <rdfs:seeAlso>UMLS CUI: C0151723</rdfs:seeAlso>
     </owl:Class>
@@ -14584,8 +14643,10 @@ WEB: http://connection.ebscohost.com/c/reference-entries/21232773/intraventricul
         <obo:IAO_0000118>hypophosphataemia AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/hypophosphatemia</obo:IAO_0000119>
         <rdfs:label>hypophosphatemia AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12344</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0008285</rdfs:seeAlso>
-        <rdfs:seeAlso>MedDRA: 10021058</rdfs:seeAlso>
+        <rdfs:seeAlso>MedDRA: 10021058; MedDRA: 10021059</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C37977</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0085682</rdfs:seeAlso>
         <rdfs:seeAlso>UMLS CUI: C0085682</rdfs:seeAlso>
     </owl:Class>
@@ -17306,7 +17367,8 @@ WEB: http://connection.ebscohost.com/c/reference-entries/21232773/intraventricul
         <obo:IAO_0000118>palmar-plantar erythrodysaesthesia syndrome AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://news.cancerconnect.com/hand-foot-syndrome-palmar-plantar-erythrodysesthesia/</obo:IAO_0000119>
         <rdfs:label>palmar-plantar erythrodysesthesia syndrome AE</rdfs:label>
-        <rdfs:seeAlso>MedDRA: 10033553; MedDRA: 10054524</rdfs:seeAlso>
+        <rdfs:seeAlso>CTCAE: E13672</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C27177</rdfs:seeAlso>
         <rdfs:seeAlso>UMLS CUI: C0549410</rdfs:seeAlso>
     </owl:Class>
     
@@ -17507,8 +17569,10 @@ WEB: http://connection.ebscohost.com/c/reference-entries/21232773/intraventricul
         <obo:IAO_0000119>WEB: Primary Source: http://www.medterms.com/script/main/art.asp?articlekey=4052 Secondary Source: http://www.ncbi.nlm.nih.gov/pubmed/6430442</obo:IAO_0000119>
         <obo:OAE_0001849>外周缺血</obo:OAE_0001849>
         <rdfs:label>peripheral ischemia AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE:E13810</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0002597</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10034576; MedDRA: 10034578</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C78535</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0235490</rdfs:seeAlso>
     </owl:Class>
     
@@ -17658,8 +17722,10 @@ WEB: http://connection.ebscohost.com/c/reference-entries/21232773/intraventricul
         <obo:IAO_0000119>WEB: http://emedicine.medscape.com/article/1049648-overview</obo:IAO_0000119>
         <obo:IAO_0000119>WEB: http://www.merckmanuals.com/home/skin-disorders/sunlight-and-skin-damage/photosensitivity-reactions</obo:IAO_0000119>
         <rdfs:label>photosensitivity reaction AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E13680</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0000992</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10034972; MedDRA: 10034966</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C38004</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0162830</rdfs:seeAlso>
         <rdfs:seeAlso>UMLS CUI: C0349506; UMLS CUI: C0162830</rdfs:seeAlso>
     </owl:Class>
@@ -17725,7 +17791,9 @@ WEB: http://connection.ebscohost.com/c/reference-entries/21232773/intraventricul
         <obo:IAO_0000118>pleural haemorrhage AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/hemothorax</obo:IAO_0000119>
         <rdfs:label>pleural hemorrhage AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E13492</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10035601; MedDRA: 10055319</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C50582</rdfs:seeAlso>
         <rdfs:seeAlso>UMLS CUI: C0019123</rdfs:seeAlso>
     </owl:Class>
     
@@ -18354,8 +18422,9 @@ WEB: http://connection.ebscohost.com/c/reference-entries/21232773/intraventricul
         <obo:IAO_0000118>pulmonary oedema AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.ncbi.nlm.nih.gov/pubmedhealth/PMH0001195/</obo:IAO_0000119>
         <rdfs:label>pulmonary edema AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E13521</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0100598</rdfs:seeAlso>
-        <rdfs:seeAlso>MedDRA: 10037423; MedDRA: 10037375</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C26868</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0034063</rdfs:seeAlso>
         <rdfs:seeAlso>UMLS CUI: C0034063</rdfs:seeAlso>
     </owl:Class>
@@ -20189,7 +20258,9 @@ WEB: Primary Source: http://www.ncbi.nlm.nih.gov/pubmed/18215115 Secondary Sourc
         <obo:IAO_0000118>tumour lysis syndrome AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.ncbi.nlm.nih.gov/pubmed/15384972</obo:IAO_0000119>
         <rdfs:label>tumor lysis syndrome AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12365</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10045170 (tumour lysis syndrome); MedDRA: 10045152 (tumor lysis syndrome)</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C3425</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -20455,8 +20526,10 @@ WEB: Primary Source: http://www.ncbi.nlm.nih.gov/pubmed/18215115 Secondary Sourc
         <obo:IAO_0000117>SZ, SS, YH, MW</obo:IAO_0000117>
         <obo:IAO_0000118>uterine haemorrhage AE</obo:IAO_0000118>
         <rdfs:label>uterine hemorrhage AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E13237</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0000130</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10046788; MedDRA: 10046789</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C78686</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0042134</rdfs:seeAlso>
     </owl:Class>
     
@@ -23842,7 +23915,8 @@ On an EKG, the QRS wave follows the P wave at a normal speed. Sometimes, though,
         <obo:IAO_0000119>WEB: http://www.nlm.nih.gov/medlineplus/ency/article/000199.htm</obo:IAO_0000119>
         <obo:OAE_0001849>表在性血栓性静脈炎</obo:OAE_0001849>
         <rdfs:label xml:lang="en">superficial thrombophlebitis AE</rdfs:label>
-        <rdfs:seeAlso>MedDRA: 10043595; MedDRA: 10042554</rdfs:seeAlso>
+        <rdfs:seeAlso>CTCAE: E13817</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C78634</rdfs:seeAlso>
         <rdfs:seeAlso>UMLS CUI: C1510431</rdfs:seeAlso>
     </owl:Class>
     
@@ -23913,7 +23987,9 @@ On an EKG, the QRS wave follows the P wave at a normal speed. Sometimes, though,
         <obo:IAO_0000119>WEB: http://www.nhlbi.nih.gov/health/health-topics/topics/stroke/</obo:IAO_0000119>
         <obo:OAE_0001849>中风</obo:OAE_0001849>
         <rdfs:label>stroke AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12826</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10042244</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C3390</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -24334,7 +24410,9 @@ On an EKG, the QRS wave follows the P wave at a normal speed. Sometimes, though,
         <obo:IAO_0000119>WEB: http://www.nlm.nih.gov/medlineplus/ency/article/003140.htm</obo:IAO_0000119>
         <obo:OAE_0001849>尿急</obo:OAE_0001849>
         <rdfs:label>urgent urination AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E13062</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10046593</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C50792</rdfs:seeAlso>
         <rdfs:seeAlso>UMLS CUI: C0439609</rdfs:seeAlso>
     </owl:Class>
     
@@ -27919,7 +27997,9 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <obo:IAO_0000118>hyponatraemia AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.mayoclinic.org/diseases-conditions/hyponatremia/basics/definition/con-20031445</obo:IAO_0000119>
         <rdfs:label xml:lang="en">hyponatremia AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12339</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10021036 (hypnonatraemia); MedDRA: 10021038 (hypnonatremia)</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C37976</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -27983,10 +28063,13 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002125">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000443"/>
-        <obo:IAO_0000115>Blinke AE is a eye disorder AE that an eye AE that shows brief closing of the eyelids by involuntary normal periodic closing, as a protective measure, or by voluntary action.</obo:IAO_0000115>
+        <obo:IAO_0000115>an eye AE that shows abnormal involuntary blinking of the eyelids</obo:IAO_0000115>
         <obo:IAO_0000117>JX, LW, YH</obo:IAO_0000117>
-        <obo:OAE_0001849>闪耀</obo:OAE_0001849>
-        <rdfs:label>blink AE</rdfs:label>
+        <obo:IAO_0000118>corneal reflex abnormal AE</obo:IAO_0000118>
+        <obo:IAO_0000119>URL: https://en.wikipedia.org/wiki/Corneal_reflex</obo:IAO_0000119>
+        <obo:OAE_0001849>睑闭反射反常</obo:OAE_0001849>
+        <rdfs:label>blink reflex abnormal AE</rdfs:label>
+        <rdfs:seeAlso>MedDRA: 10058960</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -31976,7 +32059,9 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <obo:IAO_0000118>irregular menstruation AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Irregular_menstruation</obo:IAO_0000119>
         <rdfs:label>menstruation irregular AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E13125</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10027339 (menstruation irregular); MedDRA: 10022992 (irregular menstruation)</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C35219</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -32347,7 +32432,9 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <obo:IAO_0000118>cerebrospinal fluid leakage AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.hopkinsmedicine.org/neurology_neurosurgery/centers_clinics/brain_tumor/center/skull-base/types/csf-leak.html</obo:IAO_0000119>
         <rdfs:label xml:lang="en">cerebrospinal fluid leak AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12611</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10008164</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C50487</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -33284,8 +33371,10 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <obo:IAO_0000118>hypernaetremia</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://emedicine.medscape.com/article/241094-overview</obo:IAO_0000119>
         <rdfs:label xml:lang="en">hypernatremia AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12293</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0003228</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10020679 (Hypernatraemia); MedDRA: 10020680 (Hypernatremia)</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C37970</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0595878</rdfs:seeAlso>
     </owl:Class>
     
@@ -33670,9 +33759,8 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <rdfs:comment>Trismus is a symptom of tetanus.</rdfs:comment>
         <rdfs:label xml:lang="en">trismus AE</rdfs:label>
         <rdfs:seeAlso>CTCAE:E12541</rdfs:seeAlso>
-        <rdfs:seeAlso>MedDRA：10044684</rdfs:seeAlso>
-        <rdfs:seeAlso>NCIT: C78651</rdfs:seeAlso>
-        <rdfs:seeAlso>NCIt:C78651</rdfs:seeAlso>
+        <rdfs:seeAlso>MedDRA: 10044684</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C78651</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -33914,7 +34002,9 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <obo:IAO_0000119>WEB: http://www.emedicinehealth.com/low_potassium/article_em.htm</obo:IAO_0000119>
         <obo:OAE_0001849>血钾过少</obo:OAE_0001849>
         <rdfs:label xml:lang="en">hypokalaemia AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E12327</rdfs:seeAlso>
         <rdfs:seeAlso>MedDRA: 10021015 (Hypokalaemia); MedDRA: 10021018 (Hypokalemia)</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C37974</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -55798,6 +55888,80 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OAE_0004329 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004329">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000616"/>
+        <obo:IAO_0000115>a diarrhea AE that occurs when the bile acids are not reabsorbed into the bloodstream and enter the large bowel (colon), which causes abnormally high levels of water and salts in the large bowel and the formation of watery diarrhoea.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000118>bile acid malabsorption AE</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://patient.info/health/bile-acid-malabsorptiondiarrhoea-leaflet</obo:IAO_0000119>
+        <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Bile_acid_malabsorption</obo:IAO_0000119>
+        <obo:IAO_0000119>WEB: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3002596/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">bile acid diarrhoea AE</rdfs:label>
+        <rdfs:seeAlso>MedDRA: 10069703</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004330 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004330">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000001"/>
+        <obo:IAO_0000115>an adverse event that has an outcome of nutrition disorder, which can be caused by an insufficient intake of food or of certain nutrients, by an inability of the body to absorb and use nutrients, or by overconsumption of certain foods.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000118>nutrition disorder AE</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://www.who.int/topics/nutrition_disorders/en/</obo:IAO_0000119>
+        <obo:OAE_0001849>营养失调</obo:OAE_0001849>
+        <rdfs:label xml:lang="en">nutritional disorder AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004331 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004331">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004330"/>
+        <obo:IAO_0000115>a nutrional disorder AE that has an outcome of malnutrition, a condition resulting from insufficient nutrients in the body.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: https://medlineplus.gov/ency/article/000404.htm</obo:IAO_0000119>
+        <obo:OAE_0001849>营养不良</obo:OAE_0001849>
+        <rdfs:label xml:lang="en">malnutrition AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004332 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004332">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000455"/>
+        <obo:IAO_0000115>a gastrointestinal disorder AE that has an outcome of the presence of very large numbers of bacteria growing in the small intestine</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000118>BLS AE</obo:IAO_0000118>
+        <obo:IAO_0000118>BOS AE</obo:IAO_0000118>
+        <obo:IAO_0000118>SIBO AE</obo:IAO_0000118>
+        <obo:IAO_0000118>bacterial overgrowth syndrome AE</obo:IAO_0000118>
+        <obo:IAO_0000118>blind loop syndrome AE</obo:IAO_0000118>
+        <obo:IAO_0000118>small bowel bacterial overgrowth AE</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Blind_loop_syndrome</obo:IAO_0000119>
+        <obo:IAO_0000119>WEB: https://medlineplus.gov/ency/article/000222.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">small intestinal bacterial overgrowth AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004333 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004333">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000397"/>
+        <obo:IAO_0000115>an edema face AE where the face has gradually swollen into a rounded shape</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.webmd.com/a-to-z-guides/moon-facies</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">moon face AE</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -58311,13 +58475,13 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
@@ -59878,8 +60042,8 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gosubset_prok"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pombe"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_aspergillus"/>
     </rdf:Description>
@@ -62138,15 +62302,15 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
@@ -62576,9 +62740,6 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
@@ -62631,45 +62792,6 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
@@ -62712,6 +62834,48 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
@@ -62720,9 +62884,6 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         </oboInOwl:hasDefinition>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/obo/owl/PATO#PATO_0001309">
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
@@ -62733,15 +62894,15 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
@@ -62751,6 +62912,9 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasRelatedSynonym>
             <rdf:Description/>
         </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
@@ -62785,12 +62949,12 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
@@ -63068,9 +63232,6 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
@@ -63086,9 +63247,6 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
@@ -63170,27 +63328,33 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
