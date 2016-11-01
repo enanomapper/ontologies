@@ -7,6 +7,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:onto="http://purl.enanomapper.org/onto/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.enanomapper.org/onto/internal/iao-ext.owl">
         <rdfs:comment>This file is part of the eNanoMapper ontology project (http://www.enanomapper.net/)</rdfs:comment>
@@ -24,6 +25,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000222 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.enanomapper.org/onto/ENM_8000222">
+        <rdfs:label xml:lang="en">PrefLabel</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -700,8 +709,9 @@
     <!-- http://purl.enanomapper.org/onto/ENM_8000066 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000066">
-        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000029"/>
-        <rdfs:isDefinedBy>Gene Ontology Descriptors (GO Descriptors) is a class of descriptors derived by Image analysis methodologies, developed within the eNanoMapper project. https://www.enanomapper.net/deliverables/d4/150801_eNanoMapper-D4_2final.pdf</rdfs:isDefinedBy>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000067"/>
+        <onto:ENM_8000222 xml:lang="en">GO descriptor</onto:ENM_8000222>
+        <rdfs:isDefinedBy xml:lang="en">BIO descriptor using Gene Ontology information</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">gene ontology descriptors</rdfs:label>
     </owl:Class>
     
@@ -711,8 +721,8 @@
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000067">
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000029"/>
-        <rdfs:isDefinedBy>Gene Ontology Descriptors (GO Descriptors) is a class of descriptors derived by Image analysis methodologies, developed within the eNanoMapper project. https://www.enanomapper.net/deliverables/d4/150801_eNanoMapper-D4_2final.pdf</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">go descriptors</rdfs:label>
+        <rdfs:isDefinedBy xml:lang="en">Biology descriptors derived from omics data and integrated biological pathway/activities  information</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">BIO descriptors</rdfs:label>
     </owl:Class>
     
 
