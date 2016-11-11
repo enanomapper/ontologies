@@ -29,6 +29,7 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
 
 contact: Stephan Schurer: stephan dot schurer at gmail dot com</rdfs:comment>
         <owl:versionInfo>2.0</owl:versionInfo>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-11-11 14:25:53</oboInOwl:date>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
@@ -41,7 +42,6 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
         <owl:versionInfo>2.1</owl:versionInfo>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-11-01 11:00:17</oboInOwl:date>
         <rdfs:comment>Release date: November 18, 2014</rdfs:comment>
         <rdfs:label>BAO</rdfs:label>
         <dc:date>05/20/2013</dc:date>
@@ -534,6 +534,12 @@ Saminda Abeyruwan, Uma Vempati, Hande Kucuk, Kunie Sakurai, Ubbo Visser, Vance L
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1436 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1436"/>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000035 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000035"/>
     
 
 
@@ -2078,6 +2084,7 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
     <!-- http://www.bioassayontology.org/bao#BAO_0002128 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002128">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000035"/>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
         <obo:IAO_0000115>A measurement of an intrinsic property of a molecular entity.</obo:IAO_0000115>
         <rdfs:label>physical property endpoint</rdfs:label>
