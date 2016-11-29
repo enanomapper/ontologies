@@ -19,6 +19,7 @@
         <dc:date>05/09/2013</dc:date>
         <rdfs:comment>Release date:
 Feb 4th 2014</rdfs:comment>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-11-11 15:58:53</oboInOwl:date>
         <rdfs:comment>created by:
 Uma Vempati, Hande Küçük, Ubbo Visser, Saminda Abeyruwan, Kunie Sakurai, Vance Lemmon, Stephan Schurer*</rdfs:comment>
         <dc:date>06/01/2013</dc:date>
@@ -29,7 +30,6 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
 
 contact: Stephan Schurer: stephan dot schurer at gmail dot com</rdfs:comment>
         <owl:versionInfo>2.0</owl:versionInfo>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-11-11 14:25:53</oboInOwl:date>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
@@ -534,12 +534,6 @@ Saminda Abeyruwan, Uma Vempati, Hande Kucuk, Kunie Sakurai, Ubbo Visser, Vance L
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1436 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1436"/>
-    
-
-
-    <!-- http://purl.enanomapper.org/onto/ENM_0000035 -->
-
-    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000035"/>
     
 
 
@@ -2081,77 +2075,6 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
     
 
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0002128 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002128">
-        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000035"/>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
-        <obo:IAO_0000115>A measurement of an intrinsic property of a molecular entity.</obo:IAO_0000115>
-        <rdfs:label>physical property endpoint</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002129 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002129">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
-        <obo:IAO_0000115>Logarithm (log10) of the Distribution Coefficient, D, which is defined as the ratio of concentrations  of a small molecule / drug distributed between octanol and water.  LogD refers to the distribution of all forms of a compound between the two immiscible phases at equilibrium. It depends on pH of the aqueous phase, which is buffered to a specific value. A larger logD means the compound / drug is more hydrophobic (greasy) and a lower logD corresponds to better solubility in water.</obo:IAO_0000115>
-        <rdfs:label>logD</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002130 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002130">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
-        <obo:IAO_0000115>Logarithm (log10) of the Partition Coefficient, P, which is defined as ratio of concentrations of a small molecule / drug distributed in octanol and water.  LogP refers to the distribution of un-ionized (neutral species of) compound between the two immiscible phases at equilibrium; the pH is adjusted such that the major microspecies is the un-ionized form. A larger logP means the compound / drug is more hydrophobic (greasy) and a lower logP corresponds to better solubility in water.</obo:IAO_0000115>
-        <rdfs:label>logP</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002131 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002131">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
-        <obo:IAO_0000115>pKa is the negative log10 of the acid dissociation constant (Ka) of a molecule. Ka is the equilibrium constant for dissociation of the protonated base (acid) into the free base and a proton (hydromium ion).</obo:IAO_0000115>
-        <rdfs:label>pKa</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002132 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002132">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
-        <obo:IAO_0000115>Percent purity is the ratio of mass of pure compound to the actual mass of the available/vendor supplied compound, multiplied by 100. The majority of compounds and elemental substances are only available with a larger or smaller amount of impurities, which contribute to the mass of the impure compound.</obo:IAO_0000115>
-        <rdfs:label>percent purity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002133 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002133">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002808"/>
-        <obo:IAO_0000115>This is measured to assess the transport of a drug across the cell monolayer in the apical to basolateral (A-B) direction. Typically, CaCo2 cells are used in the permeability measurements during the ADME phase, which model the intestinal epithelium..</obo:IAO_0000115>
-        <rdfs:label>permeability A-B</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002134 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002134">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002808"/>
-        <obo:IAO_0000115>This is measured to assess the transport of a drug across the cell monolayer in the basolateral to apical (B-A) direction. Typically, CaCo2 cells are used in the permeability measurements during the ADME phase, which model the intestinal epithelium.</obo:IAO_0000115>
-        <rdfs:label>permeability B-A</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.bioassayontology.org/bao#BAO_0002136 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002136">
@@ -2974,15 +2897,6 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002807">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0001103"/>
         <rdfs:label xml:lang="en">percent mitotic arrested cells</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002808 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002808">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
-        <rdfs:label xml:lang="en">permeability</rdfs:label>
     </owl:Class>
     
 
