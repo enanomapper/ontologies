@@ -16,9 +16,9 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.enanomapper.org/onto/external/bao-slim.owl">
         <rdfs:label>bioassay ontology</rdfs:label>
-        <dc:date>05/09/2013</dc:date>
         <rdfs:comment>Release date:
 Feb 4th 2014</rdfs:comment>
+        <dc:date>05/09/2013</dc:date>
         <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-11-11 15:58:53</oboInOwl:date>
         <rdfs:comment>created by:
 Uma Vempati, Hande Küçük, Ubbo Visser, Saminda Abeyruwan, Kunie Sakurai, Vance Lemmon, Stephan Schurer*</rdfs:comment>
@@ -487,9 +487,9 @@ Saminda Abeyruwan, Uma Vempati, Hande Kucuk, Kunie Sakurai, Ubbo Visser, Vance L
 
     <!-- http://xmlns.com/foaf/0.1/depicted_by -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/depicted_by">
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depicted_by">
         <oboInOwl:hasDbXref rdf:resource="http://xmlns.com/foaf/0.1/depicted_by"/>
-    </rdf:Description>
+    </owl:AnnotationProperty>
     
 
 
@@ -537,11 +537,17 @@ Saminda Abeyruwan, Uma Vempati, Hande Kucuk, Kunie Sakurai, Ubbo Visser, Vance L
     
 
 
+    <!-- http://purl.enanomapper.org/onto/ENM_0000035 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000035"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -2075,6 +2081,76 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0002128 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002128">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000035"/>
+        <obo:IAO_0000115>A measurement of an intrinsic property of a molecular entity.</obo:IAO_0000115>
+        <rdfs:label>physical property endpoint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002129 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002129">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+        <obo:IAO_0000115>Logarithm (log10) of the Distribution Coefficient, D, which is defined as the ratio of concentrations of a small molecule / drug distributed between octanol and water. LogD refers to the distribution of all forms of a compound between the two immiscible phases at equilibrium. It depends on pH of the aqueous phase, which is buffered to a specific value. A larger logD means the compound / drug is more hydrophobic (greasy) and a lower logD corresponds to better solubility in water.</obo:IAO_0000115>
+        <rdfs:label>logD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002130 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002130">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+        <obo:IAO_0000115>Logarithm (log10) of the Partition Coefficient, P, which is defined as ratio of concentrations of a small molecule / drug distributed in octanol and water. LogP refers to the distribution of un-ionized (neutral species of) compound between the two immiscible phases at equilibrium; the pH is adjusted such that the major microspecies is the un-ionized form. A larger logP means the compound / drug is more hydrophobic (greasy) and a lower logP corresponds to better solubility in water.</obo:IAO_0000115>
+        <rdfs:label>logP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002131 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002131">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+        <obo:IAO_0000115>pKa is the negative log10 of the acid dissociation constant (Ka) of a molecule. Ka is the equilibrium constant for dissociation of the protonated base (acid) into the free base and a proton (hydromium ion).</obo:IAO_0000115>
+        <rdfs:label>pKa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002132 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002132">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+        <obo:IAO_0000115>Percent purity is the ratio of mass of pure compound to the actual mass of the available/vendor supplied compound, multiplied by 100. The majority of compounds and elemental substances are only available with a larger or smaller amount of impurities, which contribute to the mass of the impure compound.</obo:IAO_0000115>
+        <rdfs:label>percent purity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002133 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002133">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002808"/>
+        <obo:IAO_0000115>This is measured to assess the transport of a drug across the cell monolayer in the apical to basolateral (A-B) direction. Typically, CaCo2 cells are used in the permeability measurements during the ADME phase, which model the intestinal epithelium..</obo:IAO_0000115>
+        <rdfs:label>permeability A-B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002134 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002134">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002808"/>
+        <obo:IAO_0000115>This is measured to assess the transport of a drug across the cell monolayer in the basolateral to apical (B-A) direction. Typically, CaCo2 cells are used in the permeability measurements during the ADME phase, which model the intestinal epithelium.</obo:IAO_0000115>
+        <rdfs:label>permeability B-A</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0002136 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002136">
@@ -2897,6 +2973,15 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002807">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0001103"/>
         <rdfs:label xml:lang="en">percent mitotic arrested cells</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002808 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002808">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+        <rdfs:label>permeability</rdfs:label>
     </owl:Class>
     
 
@@ -4055,6 +4140,15 @@ http://www.bilatec.com/weiterepdf/KinetcScan%20HCS%20Reader.pdf</rdfs:comment>
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150015">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0150009"/>
         <rdfs:label xml:lang="en">wide-field microscope</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0200057 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0200057">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+        <rdfs:label>efflux ratio</rdfs:label>
     </owl:Class>
     
 
@@ -6823,10 +6917,10 @@ http://www.bilatec.com/weiterepdf/KinetcScan%20HCS%20Reader.pdf</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002391">
-        <foaf:depicted_by rdf:resource="http://upload.wikimedia.org/wikipedia/commons/1/19/Illu_lymph_capillary.png"/>
         <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0024202"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
+        <foaf:depicted_by rdf:resource="http://upload.wikimedia.org/wikipedia/commons/1/19/Illu_lymph_capillary.png"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Lymph"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
     </rdf:Description>
@@ -15067,5 +15161,5 @@ http://www.bilatec.com/weiterepdf/KinetcScan%20HCS%20Reader.pdf</rdfs:comment>
 
 
 
-<!-- Generated by the OWL API (version 4.1.0) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
