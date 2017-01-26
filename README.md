@@ -17,3 +17,5 @@ We import the NanoParticle Ontology (see http://nano-ontology.org); CHEMINF (htt
 DOI
 --------
 Version 3: [![DOI](https://zenodo.org/badge/20764/enanomapper/ontologies.svg)](https://zenodo.org/badge/latestdoi/20764/enanomapper/ontologies)
+
+Version 4: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.260098.svg)](https://doi.org/10.5281/zenodo.260098)
