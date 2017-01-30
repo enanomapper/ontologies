@@ -15,40 +15,31 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.enanomapper.org/onto/external/bao-slim.owl">
-        <rdfs:label>bioassay ontology</rdfs:label>
-        <rdfs:comment>Release date:
-Feb 4th 2014</rdfs:comment>
-        <dc:date>05/09/2013</dc:date>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-11-11 15:58:53</oboInOwl:date>
-        <rdfs:comment>created by:
-Uma Vempati, Hande Küçük, Ubbo Visser, Saminda Abeyruwan, Kunie Sakurai, Vance Lemmon, Stephan Schurer*</rdfs:comment>
-        <dc:date>06/01/2013</dc:date>
+        <rdfs:label>BioAssay Ontology</rdfs:label>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-01-30 14:55:24</oboInOwl:date>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:date>Jan23rd 2017</dc:date>
+        <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
+
+contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
         <rdfs:comment xml:lang="en">There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
 
 contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
+        <owl:versionInfo>2.2.2</owl:versionInfo>
         <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
 
 contact: Stephan Schurer: stephan dot schurer at gmail dot com</rdfs:comment>
-        <owl:versionInfo>2.0</owl:versionInfo>
+        <rdfs:label>BAO</rdfs:label>
+        <rdfs:comment>Created by:
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+        <dc:date>Jan 23rd 2017</dc:date>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slimmer</oboInOwl:auto-generated-by>
-        <rdfs:label>BioAssay Ontology</rdfs:label>
-        <owl:versionInfo></owl:versionInfo>
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <rdfs:comment>svn:  2986</rdfs:comment>
-        <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
-
-contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
-        <owl:versionInfo>2.1</owl:versionInfo>
-        <rdfs:comment>Release date: November 18, 2014</rdfs:comment>
-        <rdfs:label>BAO</rdfs:label>
-        <dc:date>05/20/2013</dc:date>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
-        <rdfs:comment>Created by:
-Saminda Abeyruwan, Uma Vempati, Hande Kucuk, Kunie Sakurai, Ubbo Visser, Vance Lemmon, Stephan Schurer*</rdfs:comment>
-        <dc:relation>Uma Vempati, Hande Küçük, Ubbo Visser, Saminda Abeyruwan, Kunie Sakurai, Vance Lemmon, Stephan Schurer*</dc:relation>
+        <dc:relation>Created by:
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</dc:relation>
+        <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slimmer</oboInOwl:auto-generated-by>
         <pav:importedFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.bioassayontology.org/bao/bao_complete.owl</pav:importedFrom>
     </owl:Ontology>
     
@@ -323,9 +314,21 @@ Saminda Abeyruwan, Uma Vempati, Hande Kucuk, Kunie Sakurai, Ubbo Visser, Vance L
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/relation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/relation"/>
     
 
 
@@ -537,17 +540,11 @@ Saminda Abeyruwan, Uma Vempati, Hande Kucuk, Kunie Sakurai, Ubbo Visser, Vance L
     
 
 
-    <!-- http://purl.enanomapper.org/onto/ENM_0000035 -->
-
-    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000035"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-    </owl:Class>
+    </rdf:Description>
     
 
 
@@ -581,7 +578,7 @@ Percent cytotoxicity = 100-percent viability</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A set of instructions, methodology, operations, required reagents, instruments to carrie out experiments for the purpose of testing the effect of a perturbing agent in a biological model system, measuring one or multiple effect(s) of the agent facilitated by an assay design method translate the perturbation into a detectable signal to arrive at one or multiple endpoint(s) that quantify or qualify the extent of the perturbation.  Bioassay is described by multiple bioassay components: assay format, biology (biological participants in various role and processes), design method, physical detection method / technology, screened entity, and endpoint. Bioassay includes one or multiple measure groups to describe panel, profiling, multiparametric (or multiplexed) assays (assays that measure more than one effect of the perturbagen on the system that is screened).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A set of instructions, methodology, operations, required reagents, instruments to carry out experiments for the purpose of testing the effect of a perturbing agent in a biological model system, measuring one or multiple effect(s) of the agent facilitated by an assay design method translate the perturbation into a detectable signal to arrive at one or multiple endpoint(s) that quantify or qualify the extent of the perturbation.  Bioassay is described by multiple bioassay components: assay format, biology (biological participants in various role and processes), design method, physical detection method / technology, screened entity, and endpoint. Bioassay includes one or multiple measure groups to describe panel, profiling, multiparametric (or multiplexed) assays (assays that measure more than one effect of the perturbagen on the system that is screened).</obo:IAO_0000115>
         <rdfs:label>bioassay</rdfs:label>
     </owl:Class>
     
@@ -1573,7 +1570,7 @@ In nucleic acid thermodynamics, it is the temperature at which 50% of the DNA st
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000878">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
-        <rdfs:label>CDD Luminometer</rdfs:label>
+        <rdfs:label>CCD Luminometer</rdfs:label>
     </owl:Class>
     
 
@@ -1809,6 +1806,296 @@ In nucleic acid thermodynamics, it is the temperature at which 50% of the DNA st
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001108">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000096"/>
         <rdfs:label>100 percent growth inhibition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001235 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001235">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">EC20</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001236 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001236">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">EC150</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001237 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001237">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">EC90</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001238 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001238">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">IC95</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001239 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001239">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">MIC80</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001240 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001240">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">MIC90</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001241 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001241">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002116"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">ED</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001242 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001242">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002116"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">ED25</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001243 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001243">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002116"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">ED30</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001244 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001244">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002116"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">ED90</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001245 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001245">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002116"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">LD10</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001246 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001246">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002116"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">ID50</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001247 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001247">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002116"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">MinED</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001248 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001248">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002116"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">MTD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001249 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001249">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002116"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">TD50</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001250 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001250">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000656"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">maximal effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001251 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001251">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000082"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">Increase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001252 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001252">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000082"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">percent change</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001253 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001253">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000082"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">percent growth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001254 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001254">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000082"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">percent protection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001255 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001255">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000082"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">percent remaining</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001256 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001256">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000082"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">uptake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001258 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001258">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000587"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">Kinactivation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001259 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001259">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002114"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">residence time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001260 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001260">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002114"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">T</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001262 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001262">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002116"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">ED80</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001263 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001263">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">EC10</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001264 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001264">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">EC25</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001265 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001265">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">IC75</rdfs:label>
     </owl:Class>
     
 
@@ -2077,76 +2364,6 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002126"/>
         <obo:IAO_0000115>The number of median absolute deviations outside the median of control or compound wells.</obo:IAO_0000115>
         <rdfs:label>MAD score</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002128 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002128">
-        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000035"/>
-        <obo:IAO_0000115>A measurement of an intrinsic property of a molecular entity.</obo:IAO_0000115>
-        <rdfs:label>physical property endpoint</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002129 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002129">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
-        <obo:IAO_0000115>Logarithm (log10) of the Distribution Coefficient, D, which is defined as the ratio of concentrations of a small molecule / drug distributed between octanol and water. LogD refers to the distribution of all forms of a compound between the two immiscible phases at equilibrium. It depends on pH of the aqueous phase, which is buffered to a specific value. A larger logD means the compound / drug is more hydrophobic (greasy) and a lower logD corresponds to better solubility in water.</obo:IAO_0000115>
-        <rdfs:label>logD</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002130 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002130">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
-        <obo:IAO_0000115>Logarithm (log10) of the Partition Coefficient, P, which is defined as ratio of concentrations of a small molecule / drug distributed in octanol and water. LogP refers to the distribution of un-ionized (neutral species of) compound between the two immiscible phases at equilibrium; the pH is adjusted such that the major microspecies is the un-ionized form. A larger logP means the compound / drug is more hydrophobic (greasy) and a lower logP corresponds to better solubility in water.</obo:IAO_0000115>
-        <rdfs:label>logP</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002131 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002131">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
-        <obo:IAO_0000115>pKa is the negative log10 of the acid dissociation constant (Ka) of a molecule. Ka is the equilibrium constant for dissociation of the protonated base (acid) into the free base and a proton (hydromium ion).</obo:IAO_0000115>
-        <rdfs:label>pKa</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002132 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002132">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
-        <obo:IAO_0000115>Percent purity is the ratio of mass of pure compound to the actual mass of the available/vendor supplied compound, multiplied by 100. The majority of compounds and elemental substances are only available with a larger or smaller amount of impurities, which contribute to the mass of the impure compound.</obo:IAO_0000115>
-        <rdfs:label>percent purity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002133 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002133">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002808"/>
-        <obo:IAO_0000115>This is measured to assess the transport of a drug across the cell monolayer in the apical to basolateral (A-B) direction. Typically, CaCo2 cells are used in the permeability measurements during the ADME phase, which model the intestinal epithelium..</obo:IAO_0000115>
-        <rdfs:label>permeability A-B</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002134 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002134">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002808"/>
-        <obo:IAO_0000115>This is measured to assess the transport of a drug across the cell monolayer in the basolateral to apical (B-A) direction. Typically, CaCo2 cells are used in the permeability measurements during the ADME phase, which model the intestinal epithelium.</obo:IAO_0000115>
-        <rdfs:label>permeability B-A</rdfs:label>
     </owl:Class>
     
 
@@ -2964,15 +3181,6 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002807">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0001103"/>
         <rdfs:label xml:lang="en">percent mitotic arrested cells</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002808 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002808">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
-        <rdfs:label>permeability</rdfs:label>
     </owl:Class>
     
 
@@ -3907,7 +4115,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
     <!-- http://www.bioassayontology.org/bao#BAO_0010005 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010005">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003003"/>
         <rdfs:label xml:lang="en">single cell protein secretion microfluidic assay</rdfs:label>
     </owl:Class>
     
@@ -4131,15 +4339,6 @@ http://www.bilatec.com/weiterepdf/KinetcScan%20HCS%20Reader.pdf</rdfs:comment>
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150015">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0150009"/>
         <rdfs:label xml:lang="en">wide-field microscope</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0200057 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0200057">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
-        <rdfs:label>efflux ratio</rdfs:label>
     </owl:Class>
     
 
@@ -6908,10 +7107,10 @@ http://www.bilatec.com/weiterepdf/KinetcScan%20HCS%20Reader.pdf</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002391">
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0024202"/>
         <foaf:depicted_by rdf:resource="http://upload.wikimedia.org/wikipedia/commons/1/19/Illu_lymph_capillary.png"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0024202"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Lymph"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
     </rdf:Description>
@@ -15152,5 +15351,5 @@ http://www.bilatec.com/weiterepdf/KinetcScan%20HCS%20Reader.pdf</rdfs:comment>
 
 
 
-<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.1.0) https://github.com/owlcs/owlapi -->
 
