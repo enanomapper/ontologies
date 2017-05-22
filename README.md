@@ -50,4 +50,4 @@ Making Releases
 2. Update internal ontologies in ontologies/internal/
 3. Update the owl.versionInfo of enanomapper.owl
 4. Release the whole repository in Github https://github.com/enanomapper/ontologies/releases 
-5. Update the DIO number of new release: https://zenodo.org/record/260098#.WSLlGcbMyrM
+5. Update the DIO number for new release: https://zenodo.org/record/260098#.WSLlGcbMyrM
