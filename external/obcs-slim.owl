@@ -14,23 +14,20 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.enanomapper.org/onto/external/obcs-slim.owl">
         <pav:importedFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/obcs.owl</pav:importedFrom>
-        <dc:contributor xml:lang="en">Alfred Hero</dc:contributor>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
+        <dc:creator xml:lang="en">Jean-François Ethier</dc:creator>
+        <dc:creator xml:lang="en">Yu Lin</dc:creator>
         <dc:description xml:lang="en">OBCS stands for the Ontology of Biological and Clinical Statistics. OBCS is an ontology in the domain of biological and clinical statistics. It is aligned with the Basic Formal Ontology (BFO) and the Ontology for Biomedical Investigations (OBI). OBCS imports all possible biostatistics terms in OBI and includes many additional biostatistics terms, some of which were proposed and discussed in the OBI face-to-face workshop in Ann Arbor in 2012.  </dc:description>
-        <dc:subject xml:lang="en">A formal ontology in the domain of biological and clinical statistics</dc:subject>
-        <dc:contributor xml:lang="en">Anna Maria Masci</dc:contributor>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">Yu Lin</dc:creator>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-11-01 11:01:14</oboInOwl:date>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2016-06-04</dc:date>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">95</owl:versionInfo>
         <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slimmer</oboInOwl:auto-generated-by>
         <dc:creator xml:lang="en">Marcy Harris</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
-        <dc:format xml:lang="en">OWL-DL</dc:format>
-        <dc:title xml:lang="en">OBCS: Ontology of Biological and Clinical Statistics</dc:title>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">revision: 85</owl:versionInfo>
+        <dc:creator xml:lang="en">Qingzhi Liu</dc:creator>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-05-21 06:34:50</oboInOwl:date>
+        <dc:creator xml:lang="en">Huan Li</dc:creator>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
+        <dc:creator>Adrien Barton</dc:creator>
     </owl:Ontology>
     
 
@@ -341,6 +338,12 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
         <rdfs:label xml:lang="en">temporal interpretation</rdfs:label>
         <foaf:page rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://code.google.com/p/obo-relations/wiki/ROAndTime</foaf:page>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
     
 
 
@@ -736,7 +739,7 @@ JAR: A data item is an approximately justified approximately true approximate be
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000010"/>
         <obo:IAO_0000115 xml:lang="en">Wilks&apos; lambda distribution (named for Samuel S. Wilks), is a probability distribution used in multivariate hypothesis testing, especially with regard to the likelihood-ratio test and Multivariate analysis of variance. It is a multivariate generalization of the univariate F-distribution, and generalizes the F-distribution in the same way that the Hotelling&apos;s T-squared distribution generalizes Student&apos;s t-distribution.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
         <rdfs:label xml:lang="en">Wilk&apos;s lambda distribution</rdfs:label>
     </owl:Class>
     
@@ -746,8 +749,12 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
-        <obo:IAO_0000115>The studentized range (q) distribution is a probability distribution used by the Tukey Honestly Significant Difference test. The distribution of the statistic [x̄(k)- x̄(1)]/(s/√n) where random samples of size n have been taken from k independent and identically distributed normal populations, with x̄(1) and x̄(k) being, respectively, the smallest and largest of the k sample means, and s2 being the pooled estimate of the common variance. This statistic is particularly used in multiple comparison tests.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+        <obo:IAO_0000115 xml:lang="en">The studentized range (q) distribution is a probability distribution used by the Tukey Honestly Significant Difference test. 
+
+The distribution of the statistic
+[x̄(k)- x̄(1)]/(s/√n)
+where random samples of size n have been taken from k independent and identically distributed normal populations, with x̄(1) and x̄(k) being, respectively, the smallest and largest of the k sample means, and s2 being the pooled estimate of the common variance. This statistic is particularly used in multiple comparison tests.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
         <rdfs:label xml:lang="en">studentized range distribution</rdfs:label>
     </owl:Class>
     
@@ -758,7 +765,7 @@ JAR: A data item is an approximately justified approximately true approximate be
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000060">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000067"/>
         <obo:IAO_0000115 xml:lang="en">hypergeometric distribution is a probability distribution that describes the probability of  k successes in n draws from a finite population of size  N containing  K successes without replacement</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
         <rdfs:label xml:lang="en">hypergeometric distribution</rdfs:label>
     </owl:Class>
     
@@ -769,7 +776,7 @@ JAR: A data item is an approximately justified approximately true approximate be
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000103">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000067"/>
         <obo:IAO_0000115 xml:lang="en">the multinomial distribution is a probability distribution which gives the probability of any particular combination of numbers of successes for various categories defined in the context of  n independent trials each of which leads to a success for exactly one of k categories, with each category having a given fixed success probability.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
         <rdfs:label xml:lang="en">multinomial distribution</rdfs:label>
     </owl:Class>
     
@@ -779,8 +786,11 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000132">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000010"/>
-        <obo:IAO_0000115>Hotelling T squared distribution is a probability distribution used in multivariate hypothesis testing, which is a univariate distribution proportional to the F-distribution and arises importantly as the distribution of a set of statistics which are natural generalizations of the statistics underlying Student&apos;s t-distribution. In particular, the distribution arises in multivariate statistics in undertaking tests of the differences between the (multivariate) means of different populations, where tests for univariate problems would make use of a t-test. The distribution is named for Harold Hotelling, who developed it[1] as a generalization of Student&apos;s t-distribution. This distribution is commonly used to describe the sample Mahalanobis  distance between two populations.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+        <obo:IAO_0000115 xml:lang="en">Hotelling T squared distribution is a probability distribution used in multivariate hypothesis testing, which is a univariate distribution proportional to the F-distribution and arises importantly as the distribution of a set of statistics which are natural generalizations of the statistics underlying Student&apos;s t-distribution.
+In particular, the distribution arises in multivariate statistics in undertaking tests of the differences between the (multivariate) means of different populations, where tests for univariate problems would make use of a t-test.
+The distribution is named for Harold Hotelling, who developed it[1] as a generalization of Student&apos;s t-distribution.
+This distribution is commonly used to describe the sample Mahalanobis distance between two populations.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
         <rdfs:label xml:lang="en">Hotelling T2 distribution</rdfs:label>
     </owl:Class>
     
@@ -790,7 +800,22 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000145">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000283"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+        <obo:IAO_0000115 xml:lang="en">the geometric distribution is a negative binomial distribution where r is 1.
+It is useful for modeling the runs of consecutive successes (or failures) in repeated independent trials of a system.
+
+The geometric distribution models the number of successes before one failure in an independent succession of tests where each test results in success or failure.
+
+
+The geometric distribution with prob = p has density
+
+p(x) = p (1-p)^x
+
+for x = 0, 1, 2, …, 0 &lt; p ≤ 1.
+
+If an element of x is not integer, the result of dgeom is zero, with a warning.
+
+The quantile is defined as the smallest value x such that F(x) ≥ p, where F is the distribution function.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
         <rdfs:label xml:lang="en">geometric distribution</rdfs:label>
     </owl:Class>
     
@@ -801,7 +826,7 @@ JAR: A data item is an approximately justified approximately true approximate be
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000177">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
         <obo:IAO_0000115 xml:lang="en">the beta distribution is a continuous probability distributions defined on the interval [0, 1] parametrized by two positive shape parameters, denoted by α and β, that appear as exponents of the random variable and control the shape of the distribution</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
         <rdfs:label>beta distribution</rdfs:label>
     </owl:Class>
     
@@ -812,7 +837,7 @@ JAR: A data item is an approximately justified approximately true approximate be
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000180">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000005"/>
         <obo:IAO_0000115 xml:lang="en">standard normal distribution is a normal distribution with variance = 1 and mean=0</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
         <rdfs:label xml:lang="en">standard normal distribution</rdfs:label>
     </owl:Class>
     
@@ -822,8 +847,14 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000262">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000044"/>
-        <obo:IAO_0000115>Bernoulli distribution is a binomial distribution where the number of trials is equal to 1. notation: B(1,p) The mean is p The variance is p*q</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+        <obo:IAO_0000115 xml:lang="en">Bernoulli distribution is a binomial distribution where the number of trials is equal to 1.
+
+notation: B(1,p)
+
+The mean is p
+
+The variance is p*q</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
         <rdfs:label xml:lang="en">Bernoulli distribution</rdfs:label>
     </owl:Class>
     
@@ -833,8 +864,10 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000283">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000067"/>
-        <obo:IAO_0000115>Negative binomial probability distribution is a discrete probability distribution of the number of successes in a sequence of Bernoulli trials before a specified (non-random) number of failures (denoted r) occur. The negative binomial distribution, also known as the Pascal distribution or Pólya distribution, gives the probability of r-1 successes and x failures in x+r-1 trials, and success on the (x+r)th trial.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+        <obo:IAO_0000115 xml:lang="en">negative binomial probability distribution is a discrete probability distribution of the number of successes in a sequence of Bernoulli trials before a specified (non-random) number of failures (denoted r) occur.
+
+The negative binomial distribution, also known as the Pascal distribution or Pólya distribution, gives the probability of  r-1 successes and x  failures in x+r-1 trials, and success on the (x+r)th trial. </obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
         <rdfs:label xml:lang="en">negative binomial distribution</rdfs:label>
     </owl:Class>
     
