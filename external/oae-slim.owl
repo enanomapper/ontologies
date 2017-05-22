@@ -22,9 +22,9 @@
         <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
         <dc:creator xml:lang="en">Meiu Wong</dc:creator>
         <dc:contributor>Darrell R. Abernethy</dc:contributor>
+        <dc:date>2017-05-06</dc:date>
         <dc:creator>Zuoshuang &quot;Allen&quot; Xiang</dc:creator>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-11-11 15:59:45</oboInOwl:date>
-        <dc:date>2016-10-31</dc:date>
+        <dc:creator>Noemi Garg</dc:creator>
         <dc:description xml:lang="en">The Ontology of Adverse Eventsy (OAE) is a biomedical ontology in the domain of adverse events. OAE aims to standardize adverse event annotation, integrate various adverse event data, and support computer-assisted reasoning.  OAE is a community-based ontology. Its development follows the OBO Foundry principles. Vaccine adverse events have been used as an initial testing use case. OAE also studies adverse events associated with the administration of drug and nutritional products, the operation of surgeries, and the usage of medical devices, etc.</dc:description>
         <dc:title xml:lang="en">OAE: Ontology of Adverse Events</dc:title>
         <dc:creator>Rebecca Racz</dc:creator>
@@ -32,13 +32,16 @@
         <dc:contributor>Sydni Joubran</dc:contributor>
         <dc:creator>&quot;Asiyah&quot; Yu Lin</dc:creator>
         <dc:contributor>Luca Toldo</dc:contributor>
+        <dc:creator>Kelly Yang</dc:creator>
         <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slimmer</oboInOwl:auto-generated-by>
         <dc:creator>Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:format xml:lang="en">OWL-DL</dc:format>
+        <dc:creator xml:lang="en">Bingjian Yang</dc:creator>
         <dc:creator>Kevin Mo</dc:creator>
         <dc:contributor>Izabela Birsanescu</dc:contributor>
         <dc:creator xml:lang="en">Shelley Zhang</dc:creator>
         <dc:creator>Jiangan Xie</dc:creator>
+        <owl:versionInfo xml:lang="en">Vision Release; 1.1.355</owl:versionInfo>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dc:creator>Sydni Joubran</dc:creator>
         <dc:creator>Liwei Wang</dc:creator>
@@ -46,13 +49,13 @@
         <dc:creator xml:lang="en">Desikan Jagannathan</dc:creator>
         <dc:creator>Edison Ong</dc:creator>
         <dc:creator>Abra Guo</dc:creator>
-        <owl:versionInfo xml:lang="en">Vision Release; 1.1.325</owl:versionInfo>
         <dc:creator>Qingping Liu</dc:creator>
         <dc:contributor>Keith Burkhart</dc:contributor>
         <dc:subject xml:lang="en">An ontology for the annotation of the adverse event domain.</dc:subject>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
         <dc:creator>Sirarat Sarntivijai</dc:creator>
         <dc:creator>Barry Smith</dc:creator>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-05-21 06:36:52</oboInOwl:date>
     </owl:Ontology>
     
 
@@ -1636,7 +1639,8 @@ https://www.nlm.nih.gov/medlineplus/ency/article/003088.htm</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001605"/>
-        <obo:IAO_0000115>a microbiology and serology investigation result abnormal AE that has an outcome of CSF culture negative</obo:IAO_0000115>
+        <obo:IAO_0000115>a microbiology and serology investigation result abnormal AE that has an outcome of CSF culture negative. The negative result means no bacteria, viruses, or fungi grew in the laboratory dish.</obo:IAO_0000115>
+        <obo:IAO_0000116>YH: The negative result is normal. It is not an AE.</obo:IAO_0000116>
         <obo:IAO_0000117>SS, YH, EB</obo:IAO_0000117>
         <rdfs:label>CSF culture negative AE</rdfs:label>
     </owl:Class>
@@ -2450,7 +2454,7 @@ https://www.nlm.nih.gov/medlineplus/ency/article/003088.htm</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000418"/>
         <obo:IAO_0000115>a neuropathy AE that is induced by a drug administration</obo:IAO_0000115>
         <obo:IAO_0000117>AG, YH</obo:IAO_0000117>
-        <obo:IAO_0000118>neurotoxicity</obo:IAO_0000118>
+        <obo:IAO_0000119>https://medlineplus.gov/ency/article/000700.htm</obo:IAO_0000119>
         <rdfs:label>drug-induced neuropathy AE</rdfs:label>
     </owl:Class>
     
@@ -3289,6 +3293,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000543"/>
         <obo:IAO_0000115>a skin AE that is characterized by pimples generally on the face, chest and back, caused by clogging of the pores</obo:IAO_0000115>
         <obo:IAO_0000117>DJ, SS, YH</obo:IAO_0000117>
+        <obo:IAO_0000118>acne vulgaris AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/acne</obo:IAO_0000119>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10000496</obo:OAE_0004334>
         <rdfs:label>acne AE</rdfs:label>
@@ -4153,6 +4158,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000117>SS, YH</obo:IAO_0000117>
         <obo:IAO_0000118>dyspnoea AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Dyspnoea</obo:IAO_0000119>
+        <obo:OAE_0001849>呼吸困难</obo:OAE_0001849>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10013963</obo:OAE_0004334>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10013968</obo:OAE_0004334>
         <rdfs:label>dyspnea AE</rdfs:label>
@@ -4416,6 +4422,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000622"/>
         <obo:IAO_0000115>an adverse event that occurs in kidney.</obo:IAO_0000115>
         <obo:IAO_0000117>SS, YH</obo:IAO_0000117>
+        <obo:IAO_0000118>abnormal renal function AE</obo:IAO_0000118>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10038428</obo:OAE_0004334>
         <rdfs:label>kidney AE</rdfs:label>
     </owl:Class>
@@ -5669,8 +5676,9 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000410">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000579"/>
-        <obo:IAO_0000115>a seizure AE that has an outcome of febrile seizure</obo:IAO_0000115>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000115>a seizure AE that has an outcome of a seizure disorder associated with an elevated temperature</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, BY</obo:IAO_0000117>
+        <obo:IAO_0000119>http://emedicine.medscape.com/article/1176205-overview</obo:IAO_0000119>
         <rdfs:label>febrile seizure AE</rdfs:label>
     </owl:Class>
     
@@ -5797,6 +5805,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000119>WEB: http://www.emedicinehealth.com/neuropathy/article_em.htm#types_of_neuropathy</obo:IAO_0000119>
         <obo:IAO_0000119>WEB: http://www.medicalnewstoday.com/articles/147963.php</obo:IAO_0000119>
         <obo:IAO_0000119>WEB: http://www.neuropathy.org/</obo:IAO_0000119>
+        <obo:OAE_0001849>神经病变</obo:OAE_0001849>
         <rdfs:label>neuropathy AE</rdfs:label>
         <rdfs:seeAlso>HPO: HP_0007141</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0442874</rdfs:seeAlso>
@@ -6295,7 +6304,9 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10013946</obo:OAE_0004334>
         <rdfs:comment>Dyspepsia is popularly known as indigestion, meaning hard or difficult digestion. It is a medical condition characterized by chronic or recurrent pain in the upper abdomen, upper abdominal fullness and feeling full earlier than expected when eating.</rdfs:comment>
         <rdfs:label>dyspepsia AE</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">CTCAE: E10617</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0002577</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">NCIt: C26756</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0013395</rdfs:seeAlso>
     </owl:Class>
     
@@ -7053,19 +7064,6 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000115>a muscle spasm AE which has an outcome of generalized spasm, which is an involuntary contraction of a muscle or group of muscles. Spasms may involve skeletal muscle (MUSCLE, SKELETAL) or smooth muscle (MUSCLE, SMOOTH).</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <rdfs:label>generalized spasm AE</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0000504 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000504">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000581"/>
-        <obo:IAO_0000116>According to the Vaccine Adverse Event Reporting System (VAERS), &apos;reflexes decreased&apos;; is an adverse event that was mentioned in 178 VAERS reports (0.1%) during1991-2001 (Reference: PMID: 12825543).</obo:IAO_0000116>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
-        <obo:IAO_0000118>hyporeflexia AE</obo:IAO_0000118>
-        <rdfs:comment>a movement disorder AE that has an outcome of reflexes decreased, an abnormal  decrease in an involuntary response to a peripheral stimulus</rdfs:comment>
-        <rdfs:label>reflexes decreased AE</rdfs:label>
     </owl:Class>
     
 
@@ -8006,7 +8004,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000570">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000001"/>
         <obo:IAO_0000115>an AE that occurs in nervous system.</obo:IAO_0000115>
-        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000117>KY, YH</obo:IAO_0000117>
+        <obo:IAO_0000118>nervous system disorder AE</obo:IAO_0000118>
+        <obo:IAO_0000119>URL: http://www.hopkinsmedicine.org/healthlibrary/conditions/nervous_system_disorders/overview_of_nervous_system_disorders_85,P00799/</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10029202</obo:OAE_0004334>
         <rdfs:label>nervous system AE</rdfs:label>
         <rdfs:seeAlso>MP: MP_0003633</rdfs:seeAlso>
     </owl:Class>
@@ -8247,6 +8248,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000115 xml:lang="en">an abnormal respiration AE which has an outcome of hypoventilation, i.e., reduced alveolar ventilation relative to metabolic carbon dioxide production; results in alveolar carbon dioxide pressure increasing above normal</obo:IAO_0000115>
         <obo:IAO_0000116>According to the Vaccine Adverse Event Reporting System (VAERS),  &apos;hypoventilation&apos; is an adverse event that was mentioned in 321 VAERS reports (0.2%) during1991-2001 (Reference: PMID: 12825543).</obo:IAO_0000116>
         <obo:IAO_0000117>QL, YH</obo:IAO_0000117>
+        <obo:IAO_0000118>respiratory depression AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Hypoventilation</obo:IAO_0000119>
         <obo:OAE_0001849>呼吸抑制</obo:OAE_0001849>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10021133</obo:OAE_0004334>
@@ -8431,8 +8433,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000115 xml:lang="en">an abnormal digestion AE which has an outcome of nausea, a gastric discomfort associated with the inclination to vomit</obo:IAO_0000115>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10028813</obo:OAE_0004334>
         <rdfs:label>nausea AE</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">CTCAE: E10878</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0002018</rdfs:seeAlso>
         <rdfs:seeAlso>MP: MP_0003259; MDR: 10028813</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">NCIt: C3258</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0027497</rdfs:seeAlso>
     </owl:Class>
     
@@ -8672,7 +8676,9 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/diarrhea</obo:IAO_0000119>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10012735</obo:OAE_0004334>
         <rdfs:label>diarrhea AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10572</rdfs:seeAlso>
         <rdfs:seeAlso>MP: MP_0005036</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">NCIt: C2987</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -9422,22 +9428,6 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10017412</obo:OAE_0004334>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10064198</obo:OAE_0004334>
         <rdfs:label>full blood count abnormal AE</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0000671 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000671">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000504"/>
-        <obo:IAO_0000115>a reflexes decreased AE that has an outcome of hyporeflexia</obo:IAO_0000115>
-        <obo:IAO_0000117>SS, YH</obo:IAO_0000117>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Hyporeflexia</obo:IAO_0000119>
-        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10021089</obo:OAE_0004334>
-        <rdfs:comment>hyporeflexia is the condition of below normal or absent reflexes. Hyporeflexia is generally associated with a lower motor neuron deficit (at the alpha motor neurons from the spinal cord to muscle).</rdfs:comment>
-        <rdfs:label>hyporeflexia AE</rdfs:label>
-        <rdfs:seeAlso>HPO: HP_0009072</rdfs:seeAlso>
-        <rdfs:seeAlso>SIDER: C0151888</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -10735,7 +10725,10 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000118>typhlitis AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/caecitis</obo:IAO_0000119>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10006919</obo:OAE_0004334>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10045271</obo:OAE_0004334>
         <rdfs:label>cecitis AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E11058</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C38043</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -11998,7 +11991,6 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000086"/>
         <obo:IAO_0000115>a dermatitis ae that is characterized by the eruption of papules and pustules, typically on the face, scalp, upper chest and back.</obo:IAO_0000115>
         <obo:IAO_0000117>DJ, SS, YH</obo:IAO_0000117>
-        <obo:IAO_0000118>acne AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: https://www.medify.com/conditions/acneiform-dermatitis</obo:IAO_0000119>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10012432</obo:OAE_0004334>
         <rdfs:label>dermatitis acneiform AE</rdfs:label>
@@ -12420,7 +12412,9 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000119>WEB: http://www.ncbi.nlm.nih.gov/pubmedhealth/PMH0001255/</obo:IAO_0000119>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10013836</obo:OAE_0004334>
         <rdfs:label>duodenal ulcer AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10611</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0002588</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C26755</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0013295</rdfs:seeAlso>
     </owl:Class>
     
@@ -14148,6 +14142,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0002405"/>
         <obo:IAO_0000115>a lab test abnormal AE that has an outcome of an increase in amount of hepatic enzyme in body, a liver/biliary system AE that has an outcome of elevated levels of liver enzymes, commonly ALT and AST, may indicate inflammation or damage to liver cells</obo:IAO_0000115>
         <obo:IAO_0000117>DJ, SS, YH</obo:IAO_0000117>
+        <obo:IAO_0000118>elevated liver enzyme AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.mayoclinic.com/health/elevated-liver-enzymes/MY00508</obo:IAO_0000119>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10060795</obo:OAE_0004334>
         <rdfs:label>hepatic enzyme increased AE</rdfs:label>
@@ -14742,6 +14737,8 @@ WEB: http://connection.ebscohost.com/c/reference-entries/21232773/intraventricul
         <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/ileum</obo:IAO_0000119>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10021305</obo:OAE_0004334>
         <rdfs:label>ileal perforation AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10795</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C78355</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -17129,7 +17126,9 @@ WEB: http://connection.ebscohost.com/c/reference-entries/21232773/intraventricul
         <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/oral</obo:IAO_0000119>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10031009</obo:OAE_0004334>
         <rdfs:label>oral pain AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10904</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0010833</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C78509</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0221776</rdfs:seeAlso>
     </owl:Class>
     
@@ -17575,7 +17574,9 @@ WEB: http://connection.ebscohost.com/c/reference-entries/21232773/intraventricul
         <obo:OAE_0001849>牙龈炎</obo:OAE_0001849>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10034536</obo:OAE_0004334>
         <rdfs:label>periodontal disease AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10935</rdfs:seeAlso>
         <rdfs:seeAlso>HPO: HP_0000704</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C63743</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0031090</rdfs:seeAlso>
     </owl:Class>
     
@@ -19361,6 +19362,8 @@ WEB: http://connection.ebscohost.com/c/reference-entries/21232773/intraventricul
         <obo:IAO_0000117>SZ, SS, YH</obo:IAO_0000117>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10041133</obo:OAE_0004334>
         <rdfs:label>small intestine ulcer AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E11038</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C78619</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -20940,7 +20943,10 @@ WEB: Primary Source: http://www.ncbi.nlm.nih.gov/pubmed/18215115 Secondary Sourc
         <obo:IAO_0000117>YH, SS</obo:IAO_0000117>
         <obo:IAO_0000118>oral mucositis</obo:IAO_0000118>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10028116</obo:OAE_0004334>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10028130</obo:OAE_0004334>
         <rdfs:label>mucosal inflammation AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10872</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C26887</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -21085,10 +21091,13 @@ WEB: http://www.nhlbi.nih.gov/health//dci/Diseases/hb/hb_types.html</obo:IAO_000
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001541">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001847"/>
-        <obo:IAO_0000115 xml:lang="en">A thyroiditis AE that  is a self-limited thyroid condition associated with a triphasic clinical course of hyperthyroidism, hypothyroidism, and return to normal thyroid function.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A thyroiditis AE that shows a self-limited thyroid condition associated with a triphasic clinical course of hyperthyroidism, hypothyroidism, and return to normal thyroid function.</obo:IAO_0000115>
+        <obo:IAO_0000117>YL, YH</obo:IAO_0000117>
         <obo:IAO_0000118>SAT</obo:IAO_0000118>
+        <obo:IAO_0000118>painless thyroiditis AE</obo:IAO_0000118>
+        <obo:IAO_0000118>silent thyroiditis AE</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://emedicine.medscape.com/article/125648-overview</obo:IAO_0000119>
-        <dc:creator>YL</dc:creator>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Subacute_lymphocytic_thyroiditis</obo:IAO_0000119>
         <rdfs:label xml:lang="en">subacute thyroiditis AE</rdfs:label>
     </owl:Class>
     
@@ -21125,8 +21134,8 @@ WEB: http://www.nhlbi.nih.gov/health//dci/Diseases/hb/hb_types.html</obo:IAO_000
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001544">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000570"/>
         <obo:IAO_0000115 xml:lang="en">An adverse event that is a disorder of neural development characterized by impaired social interaction and communication, and by restricted and repetitive behavior.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">YL</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://en.wikipedia.org/wiki/Autism</obo:IAO_0000119>
-        <dc:creator xml:lang="en">YL</dc:creator>
         <rdfs:label xml:lang="en">autism AE</rdfs:label>
         <rdfs:seeAlso>HPO: HP_0000717</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0004352</rdfs:seeAlso>
@@ -21759,7 +21768,7 @@ MedDRA (LLT): 10027787 for Mobit type I</obo:IAO_0000116>
         <obo:IAO_0000115>an immunology and allergy investigation result abnormal AE that is characterized by antibodies for epstein barr virus being detected</obo:IAO_0000115>
         <obo:IAO_0000117>EB</obo:IAO_0000117>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10056906</obo:OAE_0004334>
-        <rdfs:label xml:lang="en">epstein barr virus antibody positive AE</rdfs:label>
+        <rdfs:label xml:lang="en">Epstein-Barr virus antibody positive AE</rdfs:label>
     </owl:Class>
     
 
@@ -27133,6 +27142,7 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <obo:IAO_0000117>RR</obo:IAO_0000117>
         <obo:IAO_0000118>hyperaesthesia AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.merriam-webster.com/dictionary/hyperesthesia</obo:IAO_0000119>
+        <obo:OAE_0001849>神经过敏</obo:OAE_0001849>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10020568</obo:OAE_0004334>
         <rdfs:label xml:lang="en">hyperesthesia AE</rdfs:label>
     </owl:Class>
@@ -27303,6 +27313,7 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">a muscle adverse event AE that has an outcome of muscle rigidity, a state of continuous firm, tense muscles with marked resistance to passive movement</obo:IAO_0000115>
         <obo:IAO_0000117>RR</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.healthline.com/symptom/muscle-rigidity</obo:IAO_0000119>
+        <obo:OAE_0001849>肌肉僵硬</obo:OAE_0001849>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10028330</obo:OAE_0004334>
         <rdfs:label xml:lang="en">muscle rigidity AE</rdfs:label>
     </owl:Class>
@@ -27428,6 +27439,7 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <obo:IAO_0000115>a thrombocytopenic purpura AE with no known cause (idiopathic).  Idiopathic thrombocytopenic purpura is a bleeding disorder in which the immune system destroys platelets, which are necesssary for normal blood clotting.  Persons with this disorder have too few platelets in the blood.</obo:IAO_0000115>
         <obo:IAO_0000117>RR</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.nlm.nih.gov/medlineplus/ency/article/000535.htm</obo:IAO_0000119>
+        <obo:OAE_0001849>特发性血小板减少性紫癜</obo:OAE_0001849>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10021245</obo:OAE_0004334>
         <rdfs:label xml:lang="en">idiopathic thrombocytopenic purpura AE</rdfs:label>
     </owl:Class>
@@ -27437,8 +27449,8 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OAE_0002074 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002074">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000580"/>
-        <obo:IAO_0000115>a behavior and neurological AE with an outcome of cerebral palsy, a disorder of movement, muscle tone, or posture that is caused by an insult to the immature, developing brain, most often before birth</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004344"/>
+        <obo:IAO_0000115>A palsy AE that shows cerebral palsy, a disorder of movement, muscle tone, or posture that is caused by an insult to the immature, developing brain, most often before birth</obo:IAO_0000115>
         <obo:IAO_0000117>RR</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.mayoclinic.org/diseases-conditions/cerebral-palsy/basics/definition/con-20030502</obo:IAO_0000119>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10008129</obo:OAE_0004334>
@@ -27892,6 +27904,14 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OAE_0002109 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002109">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0000183"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002118"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000183"/>
         <obo:IAO_0000115>a circulatory AE that is a serious allergic reaction associated with systemic vasodilation that causes low blood pressure which is by definition 30% lower than the person&apos;s baseline or below standard values.</obo:IAO_0000115>
         <obo:IAO_0000117>JX, LW, YH, RR</obo:IAO_0000117>
@@ -28290,7 +28310,7 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002138">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000518"/>
-        <obo:IAO_0000115>Bbnormal sclerotin AE is a bone disorder AE that shows abnormal sclerotin.</obo:IAO_0000115>
+        <obo:IAO_0000115>Abnormal sclerotin AE is a bone disorder AE that shows abnormal sclerotin.</obo:IAO_0000115>
         <obo:IAO_0000117>JX, LW, YH</obo:IAO_0000117>
         <obo:OAE_0001849>骨质异常</obo:OAE_0001849>
         <rdfs:label>abnormal sclerotin AE</rdfs:label>
@@ -31791,8 +31811,8 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OAE_0002414 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002414">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000443"/>
-        <obo:IAO_0000115>Gaze palsy AE is a behavior and neurological AE that is a symmetric limitation of the movements of both eyes in the same direction.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004344"/>
+        <obo:IAO_0000115>A palsy AE that has a symmetric limitation of the movements of both eyes in the same direction.</obo:IAO_0000115>
         <obo:IAO_0000117>JX, YH</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://one.aao.org/bcscsnippetdetail.aspx?id=f5a77965-de2a-4fb0-82fb-5f4089671ad6</obo:IAO_0000119>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10056696</obo:OAE_0004334>
@@ -36372,8 +36392,8 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OAE_0002755 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002755">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001211"/>
-        <obo:IAO_0000115>a nervous system AE that has paralysis of the recurrent laryngeal nerve.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004344"/>
+        <obo:IAO_0000115>a recurrent alsy AE that occurs at the  laryngeal nerve.</obo:IAO_0000115>
         <obo:IAO_0000117>MW, YH</obo:IAO_0000117>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10038130</obo:OAE_0004334>
         <rdfs:label>recurrent laryngeal nerve palsy AE</rdfs:label>
@@ -42156,11 +42176,15 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0003236">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0003235"/>
-        <obo:IAO_0000115>an abnormal reflex AE where the patient has a condition of below normal or absent reflexes (areflexia).</obo:IAO_0000115>
-        <obo:IAO_0000117>JX, YH</obo:IAO_0000117>
+        <obo:IAO_0000115>an abnormal reflex AE where the patient has a condition of below normal or absent reflexes (areflexia). Hyporeflexia is the condition of below normal or absent reflexes. Hyporeflexia is generally associated with a lower motor neuron deficit (at the alpha motor neurons from the spinal cord to muscle).</obo:IAO_0000115>
+        <obo:IAO_0000117>SS, JX, YH</obo:IAO_0000117>
+        <obo:IAO_0000118>reflexes decreased AE</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Hyporeflexia</obo:IAO_0000119>
         <obo:IAO_0000119>WEB: http://www.medicinenet.com/script/main/art.asp?articlekey=20423</obo:IAO_0000119>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10021089</obo:OAE_0004334>
         <rdfs:label xml:lang="en">hyporeflexia AE</rdfs:label>
+        <rdfs:seeAlso>HPO: HP_0009072</rdfs:seeAlso>
+        <rdfs:seeAlso>SIDER: C0151888</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -54967,9 +54991,9 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004260">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001847"/>
-        <obo:IAO_0000115 xml:lang="en">A thyroiditis AE that  is a disease in which the body interprets the thyroid glands and its hormone products T3, T4 and TSH as threats, therefore producing special antibodies that target the thyroid’s cells, thereby destroying it.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A thyroiditis AE where the body interprets the thyroid glands and its hormone products T3, T4 and TSH as threats, therefore producing special antibodies that target the thyroid’s cells, thereby destroying it.</obo:IAO_0000115>
         <obo:IAO_0000117>JX, YH</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">WEB: https://en.wikipedia.org/wiki/Autoimmune_thyroiditis</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Autoimmune_thyroiditis</obo:IAO_0000119>
         <obo:OAE_0001849>自我免疫性甲状腺炎</obo:OAE_0001849>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10049046</obo:OAE_0004334>
         <rdfs:label xml:lang="en">autoimmune thyroiditis AE</rdfs:label>
@@ -55986,6 +56010,1150 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.webmd.com/a-to-z-guides/moon-facies</obo:IAO_0000119>
         <rdfs:label xml:lang="en">moon face AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004335 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004335">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000580"/>
+        <obo:IAO_0000115>a behavioral and neurological AE that has an outcome of impaired daily self care activities.</obo:IAO_0000115>
+        <obo:IAO_0000117>KY, YH</obo:IAO_0000117>
+        <obo:IAO_0000118>ADL impaired AE</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Activities_of_daily_living</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10050954</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">activities of daily living impaired AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004336 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004336">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001664"/>
+        <obo:IAO_0000115>a hematology investigation result abnormal AE that is characterized by an abnomalty in the antibody level in the blood</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, KY</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">antibody test abnormal AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004337 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004337">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004336"/>
+        <obo:IAO_0000115>an antibody test abnormal AE that shows positive antinuclear antibody, which often attack a person&apos;s own cell nucleus.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, KY</obo:IAO_0000117>
+        <obo:IAO_0000118>ANA test abnormal AE</obo:IAO_0000118>
+        <obo:IAO_0000119>URL: http://www.mayoclinic.org/tests-procedures/ana-test/basics/definition/prc-20014566</obo:IAO_0000119>
+        <rdfs:comment>In most cases, a positive ANA test indicates that your immune system has launched a misdirected attack on your own tissue — in other words, an autoimmune reaction. But some people have positive ANA tests even when they&apos;re healthy.
+Ref: http://www.mayoclinic.org/tests-procedures/ana-test/basics/definition/prc-20014566</rdfs:comment>
+        <rdfs:label xml:lang="en">antinuclear antibody positive AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004338 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004338">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000570"/>
+        <obo:IAO_0000115 xml:lang="en">A nervous system AE which refers to an imbalance problem in the part of the nervous system that controls involuntary actions</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">KY, YH</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://medlineplus.gov/autonomicnervoussystemdisorders.html#cat59</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10003840</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">autonomic nervous system imbalance AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004339 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004339">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000293"/>
+        <obo:IAO_0000115>A CSF test result abnormal AE with high glucose levels in the cerebrospinal fluid.</obo:IAO_0000115>
+        <obo:IAO_0000117>KY, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/CSF_glucose</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10050763</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">CSF glucose increased AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004340 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004340">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000293"/>
+        <obo:IAO_0000115>A CSF test result abnormal AE with high immunoglobin levels in the cerebrospinal fluid.</obo:IAO_0000115>
+        <obo:IAO_0000117>KY, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>https://labtestsonline.org/understanding/conditions/multiplesclerosis/start/2/</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10064338</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">CSF immunoglobulin increased AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004341 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004341">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004344"/>
+        <obo:IAO_0000115>A palsy AE with temporary or permanent weakness of the facial muscles on one or both sides of the face.</obo:IAO_0000115>
+        <obo:IAO_0000117>KY, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.facialpalsy.org.uk/about-facial-palsy/what-is-facial-palsy/1395/</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10016060</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">facial palsy AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004342 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004342">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000518"/>
+        <obo:IAO_0000115>A bone AE that refers to structural failure in a disc and advanced signs of aging.</obo:IAO_0000115>
+        <obo:IAO_0000117>KY, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pubmed/16915105</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10061246</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">intervertebral disc degeneration AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004343 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004343">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001643"/>
+        <obo:IAO_0000115>A behavioral and neurological test abnormal AE result that has an abnormal outcome in lumbar puncture involving pain or numbness to the legs, lower back pain, headaches, risk of infection, or risk of bleeding in the spinal canal.</obo:IAO_0000115>
+        <obo:IAO_0000117>KY, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.hopkinsmedicine.org/healthlibrary/test_procedures/neurological/lumbar_puncture_lp_92,p07666/</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10025000</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">lumbar puncture abnormal AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004344 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004344">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000539"/>
+        <obo:IAO_0000115>A paralysis AE accompanied by involuntary tremors.</obo:IAO_0000115>
+        <obo:IAO_0000117>KY, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: https://en.oxforddictionaries.com/definition/palsy</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">WEB: https://en.wikipedia.org/wiki/Palsy</obo:IAO_0000119>
+        <obo:OAE_0001849>麻痹</obo:OAE_0001849>
+        <rdfs:label xml:lang="en">palsy AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004345 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004345">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001643"/>
+        <obo:IAO_0000115>A behavioral and neurological test abnormal AE  that involves an abnormal outcome in the series of simple questions and noninvasive tests in a neurological examination that provides crucial information about the nervous system.</obo:IAO_0000115>
+        <obo:IAO_0000117>KY, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.healthcommunities.com/brain-nerve-tests/what-is-a-neuro-exam.shtml</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10056832</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">neurological examination abnormal AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004346 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004346">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000539"/>
+        <obo:IAO_0000115>A paralysis AE characterized by extreme muscle weakness and loss of muscle tone.</obo:IAO_0000115>
+        <obo:IAO_0000117>KY, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.brainandspinalcord.org/flaccid-paralysis/</obo:IAO_0000119>
+        <obo:OAE_0001849>弛缓性麻痹</obo:OAE_0001849>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10033809</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">paralysis flaccid AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004347 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004347">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000539"/>
+        <obo:IAO_0000115>A paralysis AE on the peroneal nerve leading to loss of movement or sensation on the foot and leg and may lead to complete weakness or paralysis of the foot or leg.</obo:IAO_0000115>
+        <obo:IAO_0000117>KY, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>https://medlineplus.gov/ency/article/000791.htm</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10034701</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">peroneal nerve palsy AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004348 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004348">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0002050"/>
+        <obo:IAO_0000115>A hyperaesthesia AE that occurs at the optic area, reflected by an abnormal sensitivity to light.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, Jiahao Wang</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/optic+hyperesthesia</obo:IAO_0000119>
+        <obo:OAE_0001849>光过敏</obo:OAE_0001849>
+        <rdfs:label xml:lang="en">optic hyperesthesia AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004349 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004349">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000571"/>
+        <obo:IAO_0000115>An abnormal respiration AE that shows a severely deficient supply of oxygen to the body that arises from abnormal breathing.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, Jiahao Wang</obo:IAO_0000117>
+        <obo:IAO_0000118>asphyxiation AE</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Asphyxia</obo:IAO_0000119>
+        <obo:OAE_0001849>窒息</obo:OAE_0001849>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10003497</obo:OAE_0004334>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10003502</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">asphyxia AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004350 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004350">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000435"/>
+        <obo:IAO_0000115 xml:lang="en">An muscle AE showing delayed relaxation (prolonged contraction) of the skeletal muscles after voluntary contraction or electrical stimulation</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, Jiahao Wang</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Myotonia</obo:IAO_0000119>
+        <obo:OAE_0001849>肌强直</obo:OAE_0001849>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10061533</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">myotonia AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004351 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004351">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004350"/>
+        <obo:IAO_0000115 xml:lang="en">An myotonia AE that occurs in the neck.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, Jiahao Wang</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Myotonia</obo:IAO_0000119>
+        <obo:OAE_0001849>颈项强直</obo:OAE_0001849>
+        <rdfs:label xml:lang="en">neck myotonia AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004352 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004352">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000580"/>
+        <obo:IAO_0000115>a behavioral and neurological AE that refers to any pain or discomfort in the abdomen.</obo:IAO_0000115>
+        <obo:IAO_0000117>NG, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Distress_(medicine)</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10000062</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">abdominal distress AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004353 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004353">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000577"/>
+        <obo:IAO_0000115>A blindness AE that refers to the reduced ability to distinguish between colors that are obvious to the rest of the population</obo:IAO_0000115>
+        <obo:IAO_0000117>NG, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Color_blindness</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10010016</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">color blindness AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004354 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004354">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000580"/>
+        <obo:IAO_0000115>a behavioral and neurological AE that is characterized by involuntary muscle contractions that cause abnormal posture and slow, repetitive movements</obo:IAO_0000115>
+        <obo:IAO_0000117>NG, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.webmd.com/brain/dystonia-causes-types-symptoms-and-treatments#1</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10013983</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">dystonia AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004355 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004355">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000580"/>
+        <obo:IAO_0000115>a behavioral and neurological AE that is characterized by potentially impulsive or poorly controlled activity</obo:IAO_0000115>
+        <obo:IAO_0000117>NG, YH</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10015627</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">exciteness AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004356 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004356">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000388"/>
+        <obo:IAO_0000115>a dizziness AE that creates a feeling of a light head caused by a temporary decrease in blood to the brain</obo:IAO_0000115>
+        <obo:IAO_0000117>NG, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Lightheadedness</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10024492</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">lightheadedness AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004357 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004357">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001797"/>
+        <obo:IAO_0000115>a psychiatric disorder AE that is characterized by an elevation or lowering of a person&apos;s mood</obo:IAO_0000115>
+        <obo:IAO_0000117>NG, YH</obo:IAO_0000117>
+        <obo:IAO_0000118>mood problem</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Mood_disorder</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10027952</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">mood disorder AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004358 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004358">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0002421"/>
+        <obo:IAO_0000115>a menstrual disorder AE that is characterized by infrequent menstrual periods</obo:IAO_0000115>
+        <obo:IAO_0000117>NG, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Oligomenorrhea</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10030294</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">oligomenorrhea AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004359 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004359">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000465"/>
+        <obo:IAO_0000115>an ear AE that refers to ear poisoning resulting from exposure to drugs or chemicals that damage the inner ear</obo:IAO_0000115>
+        <obo:IAO_0000117>NG, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Ototoxicity</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10033109</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">ototoxicity AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004360 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004360">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000557"/>
+        <obo:IAO_0000115>an inflammation AE that leads to swelling around the blood vessel wall</obo:IAO_0000115>
+        <obo:IAO_0000117>NG, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>http://medical-dictionary.thefreedictionary.com/periarteritis</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10034462</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">periarteritis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004361 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004361">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000052"/>
+        <obo:IAO_0000115>a tumor AE that is benign and characterized by a small wart-like growth on the skin</obo:IAO_0000115>
+        <obo:IAO_0000117>NG, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Papilloma</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10033722</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">skin papilloma AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004362 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004362">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000392"/>
+        <obo:IAO_0000115>a paresthesia AE characterized by unusual prickling sensations in any part of the body</obo:IAO_0000115>
+        <obo:IAO_0000117>NG, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.mayoclinic.org/symptom-checker/numbness-or-tingling-in-hands-adult/related-factors/itt-20009075</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10043876</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">tingling AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004363 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004363">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000616"/>
+        <obo:IAO_0000115 xml:lang="en">a diarrhea AE that has 4 stools per day over baseline; mild increase in ostomy output compared to baseline.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">MW, EO</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Grade 1 diarrhea AE</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">CTCAE: E10573</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004364 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004364">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000616"/>
+        <obo:IAO_0000115 xml:lang="en">a diarrhea AE that has increased of 4 - 6 stools per day over baseline; moderate increase in ostomy output compared to baseline.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">MW, EO</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Grade 2 diarrhea AE</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">CTCAE: E10574</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004365 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004365">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000616"/>
+        <obo:IAO_0000115 xml:lang="en">a diarrhea AE that has increased of &gt;=7 stools per day over baseline; incontinence; hospitalization indicated; severe increase in ostomy output compared to baseline; limiting self care ADL</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">MW, EO</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Grade 3 diarrhea AE</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">CTCAE: E10575</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004366 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004366">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0002552"/>
+        <obo:IAO_0000115>An epileptic seizure AE that is a complex autosomal dominant disorder usually caused by mutations in SCN1A (a voltage-gated sodium channel). One third of patients have febrile seizures only; two thirds have a variety of epilepsy syndromes, both focal and generalized.</obo:IAO_0000115>
+        <obo:IAO_0000118>GEFS+ AE</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pubmed/25917466</obo:IAO_0000119>
+        <dc:creator>BY, YH</dc:creator>
+        <rdfs:label xml:lang="en">genetic epilepsy with febrile seizures plus AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004367 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004367">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000600"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">MW, EO</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">a nausea AE that has Loss of appetite without alteration in eating habits</rdfs:comment>
+        <rdfs:label xml:lang="en">Grade 1 nausea AE</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">CTCAE: E10879</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004368 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004368">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000600"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">MW, EO</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">a nausea AE that has oral intake decreased without significant weight loss, dehydration or malnutrition</rdfs:comment>
+        <rdfs:label xml:lang="en">Grade 2 nausea AE</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">CTCAE: E10880</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004369 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004369">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000600"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">MW, EO</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">a nausea AE that has inadequate oral caloric or fluid intake; tube feeding, TPN, or hospitalization indicated</rdfs:comment>
+        <rdfs:label xml:lang="en">Grade 3 nausea AE</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">CTCAE: E10881</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004370 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004370">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000488"/>
+        <obo:IAO_0000115>A bacterial infection AE that is induced by the bacterium Bordetella pertussis, which causes an acute respiratory infection marked by severe, spasmodic coughing episodes during the paroxysmal phase.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/books/NBK7813/</obo:IAO_0000119>
+        <dc:creator>BY, YH</dc:creator>
+        <rdfs:label xml:lang="en">Bordetella pertussis infection AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004371 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004371">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001847"/>
+        <obo:IAO_0000115 xml:lang="en">A thyroiditis AE that is caused by an infection with a pathogen (e.g., bacterium or virus).</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Thyroiditis</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10071250</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">infectious thyroiditis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004373 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004373">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001215"/>
+        <obo:IAO_0000115>A neurotoxicity that occurs at the central nervous system. This type of neurotoxity  manifests as altered thought content resulting in psychosis or confusion.</obo:IAO_0000115>
+        <obo:IAO_0000117>BY, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pubmed/24275175</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10071215</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">central nervous system toxicity AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004374 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004374">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000539"/>
+        <obo:IAO_0000115>A paralysis AE that results from infection with any one of the three related poliovirus types (referred to as types P1, P2, and P3) and that attacks the body&apos;s nervous system.</obo:IAO_0000115>
+        <obo:IAO_0000118>infantile paralysis AE</obo:IAO_0000118>
+        <obo:IAO_0000118>polio AE</obo:IAO_0000118>
+        <obo:IAO_0000119>http://www.who.int/biologicals/areas/vaccines/polio/en/</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10036012</obo:OAE_0004334>
+        <dc:creator>BY, YH</dc:creator>
+        <rdfs:label xml:lang="en">poliomyelitis  AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004375 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004375">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000476"/>
+        <obo:IAO_0000115>An immune system AE where a transplant recipient&apos;s immune system attacks the transplanted organ or tissue.</obo:IAO_0000115>
+        <obo:IAO_0000118>transplant rejection AE</obo:IAO_0000118>
+        <obo:IAO_0000119>https://medlineplus.gov/ency/article/000815.htm</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10018650</obo:OAE_0004334>
+        <dc:creator>BY, YH</dc:creator>
+        <rdfs:label xml:lang="en">graft rejection AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004376 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004376">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000565"/>
+        <obo:IAO_0000115>A vasculitis AE that affects medium-sized and small muscular arteries, resulting in microaneurysm formation, aneurysmal rupture with hemorrhage, thrombosis, and, consequently, organ ischemia or infarction.</obo:IAO_0000115>
+        <obo:IAO_0000118>panarteritis nodosa AE</obo:IAO_0000118>
+        <obo:IAO_0000118>polyarteritis nodosa AE</obo:IAO_0000118>
+        <obo:IAO_0000119>http://emedicine.medscape.com/article/330717-overview</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10034462</obo:OAE_0004334>
+        <dc:creator>BY, YH</dc:creator>
+        <rdfs:label xml:lang="en">periarteritis nodosa AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004377 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004377">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0003235"/>
+        <obo:IAO_0000115>An abnormal reflex AE characterized by episodes of shaking or exaggerated shivering which can occur with a high fever.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://patient.info/doctor/rigors</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10039177</obo:OAE_0004334>
+        <dc:creator>BY, YH</dc:creator>
+        <rdfs:label xml:lang="en">rigors AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004378 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004378">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001602"/>
+        <obo:IAO_0000115>An immunology AE in which cells of the lymphatic system grow excessively. It is a AE of the  lymphoid cells and of cells from the reticuloendothelial system that usually occur in people with compromised immune systems.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.medicinenet.com/script/main/art.asp?articlekey=7859</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10061232</obo:OAE_0004334>
+        <dc:creator>BY. YH</dc:creator>
+        <rdfs:label xml:lang="en">lymphoproliferative disorder AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004379 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004379">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000362"/>
+        <obo:IAO_0000115>A rash AE where the rash is present on only one area of the body, which is usually caused by cellulitis, contat dermatitis, and poison ivy.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.everydayhealth.com/symptom-checker/localized-rash</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10062705</obo:OAE_0004334>
+        <dc:creator>BY, YH</dc:creator>
+        <rdfs:label xml:lang="en">localized rash AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004380 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004380">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000418"/>
+        <obo:IAO_0000115>A neuropathy AE that is characterized by recurrent episodes of numbness, tingling, and loss of muscle function in the region associated with the affected nerve, usually an arm, hand, leg, or foot.</obo:IAO_0000115>
+        <obo:IAO_0000118>HNPP AE</obo:IAO_0000118>
+        <obo:IAO_0000119>https://ghr.nlm.nih.gov/condition/hereditary-neuropathy-with-liability-to-pressure-palsies</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10069382</obo:OAE_0004334>
+        <dc:creator>BY, YH</dc:creator>
+        <rdfs:label xml:lang="en">hereditary neuropathy with liability to pressure palsies AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004381 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004381">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000466"/>
+        <obo:IAO_0000115>A viral infection AE that is caused by a Rubella virus. This contagious AE leads to symptoms that can include a low-grade fever, sore throat, and a red rash that starts on the face and spreads to the rest of the body.</obo:IAO_0000115>
+        <obo:IAO_0000118>german measles AE</obo:IAO_0000118>
+        <obo:IAO_0000118>three-day measles AE</obo:IAO_0000118>
+        <obo:IAO_0000119>http://bodyandhealth.canada.com/channel/childhood-vaccinations/related-conditions/rubella</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10018206</obo:OAE_0004334>
+        <dc:creator>BY, YH</dc:creator>
+        <rdfs:label xml:lang="en">Rubella infection AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004382 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004382">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004374"/>
+        <obo:IAO_0000115>A poliomyelitis AE that is associated with oral poliovirus vaccine (OPV) that occurs among healthy OPV recipients and their contacts. It is clinically indistinguishable from poliomyelitis caused by wild-type polio virus, which causes temporary or permanent paralysis.</obo:IAO_0000115>
+        <obo:IAO_0000118>VAPP AE</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3321898/</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10076716</obo:OAE_0004334>
+        <dc:creator>BY, YH</dc:creator>
+        <rdfs:label xml:lang="en">vaccine-associated paralytic poliomyelitis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004383 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004383">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000579"/>
+        <obo:IAO_0000115>A seizure AE that is a rare, catastrophic, lifelong form of epilepsy that begins in the first year of life with frequent and/or prolonged seizures.</obo:IAO_0000115>
+        <obo:IAO_0000118>SMEI AE</obo:IAO_0000118>
+        <obo:IAO_0000118>dravet syndrome AE</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.dravetfoundation.org/what-is-dravet-syndrome/</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10073677</obo:OAE_0004334>
+        <dc:creator>BY, YH</dc:creator>
+        <rdfs:label xml:lang="en">severe myoclonic epilepsy of infancy AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004384 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004384">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000488"/>
+        <obo:IAO_0000115>A bacterial infection AE that is caused by exposure to environmental sources of nontuberculous mycobacteria (NTM), which leads to NTM entering the lungs, causing inflammation in the respiratory system. This AE can lead to progressive lung infection characterized by cough, shortness of breath, fatigue, and weight loss.</obo:IAO_0000115>
+        <obo:IAO_0000118>NTM infection AE</obo:IAO_0000118>
+        <obo:IAO_0000119>http://www.lung.org/lung-health-and-diseases/lung-disease-lookup/nontuberculosis-mycobacteria/learn-about-ntm.html</obo:IAO_0000119>
+        <dc:creator>BY. YH</dc:creator>
+        <rdfs:label xml:lang="en">nontuberculous mycobacteria infection AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004385 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004385">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0002591"/>
+        <obo:IAO_0000115>An immunodeficiency AE that affects the immune system and results in the lack of the ability for the body to generate mature B cells, which manifests as a complete or near-complete lack of proteins called gamma globulins, including antibodies, in their bloodstream. This AE occurs almost exclusively in males. This AE also increases susceptibility to infections.</obo:IAO_0000115>
+        <obo:IAO_0000118>Bruton’s Agammaglobulinemia AE</obo:IAO_0000118>
+        <obo:IAO_0000118>Congenital Agammaglobulinemia AE</obo:IAO_0000118>
+        <obo:IAO_0000118>XLA AE</obo:IAO_0000118>
+        <obo:IAO_0000119>http://primaryimmune.org/about-primary-immunodeficiencies/specific-disease-types/agammaglobulinemia-x-linked-autosomal-recessive/</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/X-linked_agammaglobulinemia</obo:IAO_0000119>
+        <obo:IAO_0000119>https://ghr.nlm.nih.gov/condition/x-linked-agammaglobulinemia</obo:IAO_0000119>
+        <dc:creator>BY. YH</dc:creator>
+        <rdfs:label xml:lang="en">X-linked agammaglobulinemia AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004386 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004386">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001527"/>
+        <obo:IAO_0000115>A multi-organ failure AE that is associated with administration of a Yellow Fever vaccine. This happens when vaccine virus proliferates in multiple organs, causing multiple organ dysfunction syndrome or multiorgan failure and death.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.cdc.gov/travel-training/local/HistoryEpidemiologyandVaccination/page27412.html</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10069197</obo:OAE_0004334>
+        <dc:creator>BY, YH</dc:creator>
+        <rdfs:label xml:lang="en">Yellow Fever vaccine-associated viscerotropic disease AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004387 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004387">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000895"/>
+        <obo:IAO_0000115>A duodenal ulcer AE that alters GI function and requiresTPN indicated; elective operative or endoscopic intervention indicated; limiting self care ADL.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 3 duodenal ulcer AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10614</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004388 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004388">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004229"/>
+        <obo:IAO_0000115>An anus AE that bleed from the anal region.</obo:IAO_0000115>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10055226</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">anal hemorrhage AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10470</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C78168</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004389 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004389">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004388"/>
+        <obo:IAO_0000115>An anal hemorrhage AE that has moderate symptoms; medical intervention or minor cauterization indicated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 2 anal hemorrhage AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10472</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004390 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004390">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001847"/>
+        <obo:IAO_0000115 xml:lang="en">A thyroiditis AE where the thyroiditis inflammation has an acute process.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Thyroiditis</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10043780</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">acute thyroiditis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004391 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004391">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004388"/>
+        <obo:IAO_0000115>An anal hemorrhage AE that has transfusion, radiologic, endoscopic, or elective operative intervention indicated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 3 anal hemorrhage AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10473</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004392 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004392">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000455"/>
+        <obo:IAO_0000115>A gastrointestinal disorder AE that has a narrowing of the lumen of the colon.</obo:IAO_0000115>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10010004</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">colonic stenosis AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10550</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C78243</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004393 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004393">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004392"/>
+        <obo:IAO_0000115>A colonic stenosis AE that altered GI function.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 2 colonic stenosis AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10552</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004394 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004394">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004392"/>
+        <obo:IAO_0000115>A colonic stenosis AE that alters GI function and requires tube feeding or hospitalization.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 3 colonic stenosis AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10553</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004395 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004395">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004228"/>
+        <obo:IAO_0000115>An esophagus AE that has a rupture in the wall of the esophagus.</obo:IAO_0000115>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10055472</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">esophageal perforation AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10665</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C50693</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004396 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004396">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001526"/>
+        <obo:IAO_0000115>A mucosal inflammation AE that has moderate pain which is not interfering with oral intake but modified diet indicated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 2 mucosal inflammation AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10874</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004397 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004397">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001526"/>
+        <obo:IAO_0000115>A mucosal inflammation AE that is interfering with oral intake.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 3 mucosal inflammation AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10875</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004398 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004398">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0002647"/>
+        <obo:IAO_0000115>A dysesthesia AE that has burning or tingling sensation on the lips, tongue or entire mouth.</obo:IAO_0000115>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10054520</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">oral dysesthesia AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10894</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C62545</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004399 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004399">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004398"/>
+        <obo:IAO_0000115>An oral dysesthesia AE that has disabling pain, requires tube feeding and TPN.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 3 Oral dysesthesia AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10897</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004400 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004400">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004398"/>
+        <obo:IAO_0000115>An oral dysesthesia AE that has m oderate pain and is interfering with oral intake.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 2 Oral dysesthesia AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10896</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004401 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004401">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004398"/>
+        <obo:IAO_0000115>An oral dysesthesia AE that has mild discomfort but is not interfering with oral intake.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 1 Oral dysesthesia AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10895</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004402 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004402">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001283"/>
+        <obo:IAO_0000115>A periodontal disease AE that has spontaneous bleeding, severe bone loss with or without tooth loss and osteonecrosis of maxilla or mandible.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 3 periodontal disease AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10938</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004403 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004403">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001283"/>
+        <obo:IAO_0000115>A periodontal disease AE that has moderate gingival recession or gingivitis, multiple sites of bleeding on probing and moderate bone loss.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 2 periodontal disease AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10937</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004404 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004404">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001283"/>
+        <obo:IAO_0000115>A periodontal disease AE that has gingival recession or gingivitis, limited bleeding on probing and mild local bone loss.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 1 periodontal disease AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10936</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004405 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004405">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000197"/>
+        <obo:IAO_0000115>A necrosis AE that there the ecrotic process occurring in the rectal wall.</obo:IAO_0000115>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10065709</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">rectal necrosis AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10967</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C78585</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004406 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004406">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004405"/>
+        <obo:IAO_0000115>A rectal necrosis AE that requires tube feeding or TPN indicated; radiologic, endoscopic, or operative intervention indicated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 3 rectal necrosis AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10968</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004407 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004407">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000557"/>
+        <obo:IAO_0000115>An inflammation AE that has inflammation of the salivary duct.</obo:IAO_0000115>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10056681</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">salivary duct inflammation AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10470</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C78600</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004408 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004408">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004407"/>
+        <obo:IAO_0000115>A salivary duct inflammation AE that has acute salivary gland necrosis; severe secretion-induced symptoms (e.g., thick saliva/oral secretions or gagging); tube feeding or TPN indicated; limiting self care ADL; disabling</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 3 salivary duct inflammation AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E11006</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004409 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004409">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004407"/>
+        <obo:IAO_0000115>A salivary duct inflammation AE that has thick, ropy, sticky saliva; markedly altered taste; alteration in diet indicated; secretion-induced symptoms; limiting instrumental ADL</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 2 salivary duct inflammation AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E11005</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004410 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004410">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004407"/>
+        <obo:IAO_0000115>A salivary duct inflammation AE that has slightly thickened saliva; slightly altered taste (e.g., metallic)</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 1 salivary duct inflammation AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E11004</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004411 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004411">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000557"/>
+        <obo:IAO_0000115>An inflammation AE that has  inflammation of the mucous membrane of the small intestine.</obo:IAO_0000115>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10065710</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">small intestinal mucositis AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E11015</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C78613</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004412 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004412">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004411"/>
+        <obo:IAO_0000115>A small intestinal mucositis AE that has severe pain and is interfering with oral intake; tube feeding, TPN or hospitalization indicated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 3 small intestinal mucositis AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E11018</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004413 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004413">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001409"/>
+        <obo:IAO_0000115>A small intestine ulcer AE that has altered GI function, requires TPN indicated. Elective operative or endoscopic intervention indicated; limiting self care ADL; disablingoperative intervention</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 3 small intestine ulcer AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E11041</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004414 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004414">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001409"/>
+        <obo:IAO_0000115>A small intestine ulcer AE that has altered GI function.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 2 small intestine ulcer AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E11040</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004415 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004415">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001458"/>
+        <obo:IAO_0000115>A tooth disorder AE that has a pathological process of the teeth occurring during tooth development.</obo:IAO_0000115>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10044030</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">tooth development disorder AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E11048</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C35596</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004416 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004416">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004415"/>
+        <obo:IAO_0000115>A tooth development disorder AE that has maldevelopment with impairment not surgically correctable.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 3 tooth development disorder AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E11051</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004417 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004417">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004415"/>
+        <obo:IAO_0000115>A tooth development disorder AE that has impairment correctable with oral surgery</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 2 tooth development disorder AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E11050</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004418 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004418">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004415"/>
+        <obo:IAO_0000115>A tooth development disorder AE that has hypoplasia of tooth or enamel.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 1 tooth development disorder AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E11049</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004419 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004419">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000773"/>
+        <obo:IAO_0000115>A digestive system AE that has abdominal pain, fever, change in bowel habits with ileus and peritoneal signs.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Grade 3 cecitis AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E11059</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004420 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004420">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001847"/>
+        <obo:IAO_0000115 xml:lang="en">A thyroiditis AE where the thyroiditis inflammation has a chronic process.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Thyroiditis</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10043781</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">chronic thyroiditis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004421 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004421">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004420"/>
+        <obo:IAO_0000115 xml:lang="en">A chronic thyroiditis AE that shows a lot of dense fibrous tissue.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000118>Riedel goiter AE</obo:IAO_0000118>
+        <obo:IAO_0000118>Riedel&apos;s thyroiditis AE</obo:IAO_0000118>
+        <obo:IAO_0000118>chronic sclerosing thyroiditis AE</obo:IAO_0000118>
+        <obo:IAO_0000118>chronic thyroiditis wood AE</obo:IAO_0000118>
+        <obo:IAO_0000118>fibrous chronic thyroiditis AE</obo:IAO_0000118>
+        <obo:IAO_0000118>invasive fibrous thyroiditis AE</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.healthfrom.com/Disease/view-3435.html</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10043782</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">chronic fibrous thyroiditis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004424 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004424">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004390"/>
+        <obo:IAO_0000115 xml:lang="en">An acute thyroiditis AE that shows a form of painful, acute thyroiditis resulting from radioactive therapy to treat hyperthyroidism or from radiation to treat head and neck cancer or lymphoma.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Radiation-induced_thyroiditis</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10063885</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">radition thyroiditis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004425 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004425">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004260"/>
+        <obo:IAO_0000115 xml:lang="en">An autoimmune thyroiditis AE where the thyroid gland is gradually destroyed.</obo:IAO_0000115>
+        <obo:IAO_0000117>JX, YH</obo:IAO_0000117>
+        <obo:IAO_0000118>Hashimoto&apos;s disease AE</obo:IAO_0000118>
+        <obo:IAO_0000118>chronic lymphocytic thyroiditis AE</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Autoimmune_thyroiditis</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10069432</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">Hashimoto&apos;s thyroiditis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004426 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004426">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004260"/>
+        <obo:IAO_0000115 xml:lang="en">An autoimmune thyroiditis AE that shows an organ-specific autoimmune disease characterized by thyroid autoantibodies, functional hypothyroidism, and absence of goiter.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://link.springer.com/chapter/10.1007%2F978-1-60327-285-8_42</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10077172</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">atrophic thyroiditis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004427 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004427">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001847"/>
+        <obo:IAO_0000115 xml:lang="en">A thyroiditis AE that occurs after pregnancy and may involve hyperthyroidism, hypothyroidism or the two sequentially.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Postpartum_thyroiditis</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">postpartum thyroiditis AE</rdfs:label>
     </owl:Class>
     
 
@@ -58484,6 +59652,9 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000057">
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
@@ -58510,9 +59681,6 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
@@ -62288,30 +63456,18 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001000">
-        <oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
             <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
             <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
             <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
             <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
+        </oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
@@ -62336,30 +63492,42 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
             <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
             <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
             <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
             <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
             <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
             <rdf:Description/>
-        </oboInOwl:hasDefinition>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002211">
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
@@ -62762,12 +63930,12 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
@@ -62790,51 +63958,9 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
@@ -62865,9 +63991,9 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
             <rdf:Description/>
-        </oboInOwl:hasDefinition>
+        </oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
@@ -62901,27 +64027,60 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/obo/owl/PATO#PATO_0001309">
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.org/obo/owl/obo#attribute_slim"/>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
@@ -62931,9 +64090,24 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
@@ -62943,12 +64117,9 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>
             <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
+        </oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>
             <rdf:Description/>
         </oboInOwl:hasRelatedSynonym>
@@ -62965,51 +64136,48 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasRelatedSynonym>
             <rdf:Description/>
         </oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>
             <rdf:Description/>
         </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>
             <rdf:Description/>
-        </oboInOwl:hasRelatedSynonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>
             <rdf:Description/>
         </oboInOwl:hasRelatedSynonym>
@@ -63233,27 +64401,6 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         </oboInOwl:hasDefinition>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#derives_from">
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
@@ -63269,21 +64416,6 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
@@ -63293,39 +64425,6 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
@@ -63338,21 +64437,24 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
             <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>
-            <rdf:Description/>
-        </oboInOwl:hasExactSynonym>
+        </oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
@@ -63365,18 +64467,18 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
             <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
             <rdf:Description/>
-        </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
+        </oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
@@ -63404,9 +64506,75 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>
             <rdf:Description/>
         </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>
+            <rdf:Description/>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#has_agent">
         <oboInOwl:hasDefinition>
