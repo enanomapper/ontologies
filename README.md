@@ -20,6 +20,19 @@ Version 3: [![DOI](https://zenodo.org/badge/20764/enanomapper/ontologies.svg)](h
 
 Version 4: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.260098.svg)](https://doi.org/10.5281/zenodo.260098)
 
+Opening the ontology in Protégé
+===============================
+
+The stable version can be opened in Protégé with the following step:
+
+1. File → Open from URL...
+2. enter the URL http://purl.enanomapper.org/onto/enanomapper.owl
+
+The development version is opened in the same way, but with a different URL:
+
+1. File → Open from URL...
+2. enter the URL http://purl.enanomapper.org/onto/enanomapper-dev.owl
+
 Building and validating the ontology
 ====================================
 
