@@ -23,7 +23,7 @@ Version 4: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.260098.svg)](http
 Opening the ontology in Protégé
 ===============================
 
-The stable version can be opened in Protégé with the following step:
+The stable version can be opened in [Protégé](https://protege.stanford.edu/) with the following step:
 
 1. File → Open from URL...
 2. enter the URL http://purl.enanomapper.org/onto/enanomapper.owl
