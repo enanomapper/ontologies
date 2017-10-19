@@ -2695,10 +2695,31 @@
 
     <!-- http://purl.enanomapper.org/onto/ENM_9000239 -->
 
-    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000238">
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000239">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_354"/>
         <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mitsui MWCNT-7</npo-ext:code>
         <rdfs:label xml:lang="en">Mitsui MWCNT-7</rdfs:label>
+    </owl:Class>
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000240 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000240">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_707"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NM-220</npo-ext:code>
+        <rdfs:label xml:lang="en">NM-220</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/npo#NPO_707"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_component_part"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_133326"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <synonym rdf:datatype="&xsd;string">BaSO4 nanoparticle</synonym>
     </owl:Class>
 
 
