@@ -54,6 +54,14 @@ BioAssay Ontology):
 The bao.props and bao.iris files contain all the information needed to describe which parts of the BAO ontology
 is retained in the slimmed version.
 
+Tutorials
+=========
+
+Please also check out these tutorials, developed by eNanoMapper, NanoCommons, and OpenRiskNet:
+
+* [Browsing the eNM ontology with BioPortal, AberOWL and Protégé](https://enanomapper.github.io/tutorials/BrowseOntology/)
+* [Adding ontology terms](https://enanomapper.github.io/tutorials/Added%20ontology%20terms/)
+
 Making Releases
 ===============
 
