@@ -12,7 +12,7 @@ nm.owl - nanomaterial descriptors ontology using the CHEMINF ontology
 
 External
 --------
-We import the NanoParticle Ontology (see http://nano-ontology.org); CHEMINF (http://code.google.com/p/semanticchemistry/); parts of ChEBI (http://www.ebi.ac.uk/chebi); and others (TBD). 
+We import the NanoParticle Ontology (see http://nano-ontology.org); CHEMINF (https://github.com/semanticchemistry/semanticchemistry/); parts of ChEBI (http://www.ebi.ac.uk/chebi); and others (TBD). 
 
 DOI
 --------
