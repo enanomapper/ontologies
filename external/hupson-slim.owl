@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.enanomapper.org/onto/external/hupson-slim.owl#"
-     xml:base="http://purl.enanomapper.org/onto/external/hupson-slim.owl"
+<rdf:RDF xmlns="http://purl.enanomapper.net/onto/external/hupson-slim.owl#"
+     xml:base="http://purl.enanomapper.net/onto/external/hupson-slim.owl"
      xmlns:pav="http://purl.org/pav/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -11,44 +11,45 @@
      xmlns:HuPSON="http://scai.fraunhofer.de/HuPSON#"
      xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://purl.enanomapper.org/onto/external/hupson-slim.owl">
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barry Smith: &quot;Beyond Concepts: Ontology as Reality Representation&quot;</dc:source>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barry Smith and Pierre Grenon: &quot;The Cornucopia of Formal Ontological Relations&quot;</dc:source>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon: &quot;BFO in a Nutshell: A Bi-categorial Axiomatization of BFO and Comparison with DOLCE&quot;</dc:source>
-        <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michaela Guendel</oboInOwl:saved-by>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1.1</owl:versionInfo>
+    <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/hupson-slim.owl">
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alan Ruttenberg</dc:contributor>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andrew Spear</dc:contributor>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon</dc:contributor>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Holger Stenzhorn</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michaela Guendel </dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19.5.2011</dc:date>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HuPSON  -  Human Physiology Simulation Ontology
 
 This is a first draft of the HuPSON ontology as a basis and starting point for shared semantics and interoperability of simulations, models, algorithms and other resources in this domain. The ontology contains annotations with MathML expressions which make the mathematical equation types therein contained computer-readable. It is based on the Basic Formal Ontology, adheres to the MIREOT principles and has been evaluated via structural features, competency questions and use case scenarios. </dc:description>
-        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ifomis.org/bfo/1.1</dc:identifier>
-        <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protege 4.1</oboInOwl:auto-generated-by>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon: &quot;Spatio-temporality in Basic Formal Ontology: SNAP and SPAN, Upper-Level Ontology, and Framework for Formalization&quot;</dc:source>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon and Barry Smith: &quot;SNAP and SPAN: Towards Geospatial Dynamics&quot;</dc:source>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barry Smith: &quot;Against Fantology&quot;</dc:source>
         <dc:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</dc:format>
-        <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slimmer</oboInOwl:auto-generated-by>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ifomis.org/bfo/1.1</dc:identifier>
+        <dc:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</dc:language>
+        <dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Institute for Formal Ontology and Medical Information Science (IFOMIS)</dc:publisher>
+        <dc:rights>http://creativecommons.org/licenses/by/3.0</dc:rights>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barry Smith and Pierre Grenon: &quot;The Cornucopia of Formal Ontological Relations&quot;</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barry Smith: &quot;Against Fantology&quot;</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barry Smith: &quot;Basic Tools of Formal Ontology&quot;</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barry Smith: &quot;Beyond Concepts: Ontology as Reality Representation&quot;</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon and Barry Smith: &quot;SNAP and SPAN: Towards Geospatial Dynamics&quot;</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon, Barry Smith and Louis Goldberg: &quot;Biodynamic Ontology: Applying BFO in the Biomedical Domain&quot;</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon: &quot;BFO in a Nutshell: A Bi-categorial Axiomatization of BFO and Comparison with DOLCE&quot;</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon: &quot;Nuts in BFO&apos;s Nutshell: Revisions to the Bi-categorial Axiomatization of BFO&quot;</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon: &quot;Spatio-temporality in Basic Formal Ontology: SNAP and SPAN, Upper-Level Ontology, and Framework for Formalization&quot;</dc:source>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basic Formal Ontology (BFO)</dc:title>
         <pav:importedFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://data.bioontology.org/ontologies/HUPSON/submissions/1/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb</pav:importedFrom>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andrew Spear</dc:contributor>
+        <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protege 4.1</oboInOwl:auto-generated-by>
+        <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slimmer</oboInOwl:auto-generated-by>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013.09</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-09-13 20:23:42</oboInOwl:date>
+        <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michaela Guendel</oboInOwl:saved-by>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is the official owl PATO file as of 19.5.2011, adjusted to the HuPSON simulation ontology needs:
 - unnecessary classes and properties cut out
 - definitions added as string annotation (instead of anonymous instances as in the original file, as in Protege 4.1 this was difficult to handle)
 - classes converted into VPH simulation ontology namespace, but file imports a mapping file that maps the concepts to their original PATO counterparts in their namespace</rdfs:comment>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-05-21 06:36:34</oboInOwl:date>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barry Smith: &quot;Basic Tools of Formal Ontology&quot;</dc:source>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19.5.2011</dc:date>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon: &quot;Nuts in BFO&apos;s Nutshell: Revisions to the Bi-categorial Axiomatization of BFO&quot;</dc:source>
-        <dc:rights>http://creativecommons.org/licenses/by/3.0</dc:rights>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michaela Guendel </dc:creator>
-        <dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Institute for Formal Ontology and Medical Information Science (IFOMIS)</dc:publisher>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013.09</oboInOwl:date>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Holger Stenzhorn</dc:creator>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alan Ruttenberg</dc:contributor>
-        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basic Formal Ontology (BFO)</dc:title>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1.1</owl:versionInfo>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon, Barry Smith and Louis Goldberg: &quot;Biodynamic Ontology: Applying BFO in the Biomedical Domain&quot;</dc:source>
-        <dc:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</dc:language>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon</dc:contributor>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -573,5 +574,6 @@ source: http://en.wikipedia.org/wiki/Rate_constant</HuPSON:SCAIVPH_00000009>
 
 
 
-<!-- Generated by the OWL API (version 4.1.0) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.3.2) https://github.com/owlcs/owlapi -->
+
 
