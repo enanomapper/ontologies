@@ -70,5 +70,6 @@ Making Releases
    * Replace the old *-slim.owl in ontologies/external/
 2. Update internal ontologies in ontologies/internal/
 3. Update the owl.versionInfo of enanomapper.owl
-4. Release the whole repository in Github https://github.com/enanomapper/ontologies/releases 
-5. Update the DOI number for new release: https://zenodo.org/record/260098#.WSLlGcbMyrM
+4. Update the owl.versionInfo of enanomapper-dev.owl
+5. Release the whole repository in Github https://github.com/enanomapper/ontologies/releases 
+6. Update the DOI number for new release: https://zenodo.org/record/260098#.WSLlGcbMyrM
