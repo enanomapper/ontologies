@@ -59,8 +59,8 @@ Tutorials
 
 Please also check out these tutorials, developed by eNanoMapper, NanoCommons, and OpenRiskNet:
 
-* [Browsing the eNM ontology with BioPortal, AberOWL and Protégé](https://enanomapper.github.io/tutorials/BrowseOntology/)
-* [Adding ontology terms](https://enanomapper.github.io/tutorials/Added%20ontology%20terms/)
+* [Browsing the eNM ontology with BioPortal, AberOWL and Protégé](https://enanomapper.github.io/tutorials/BrowseOntology/Tutorial%20browsing%20eNM%20ontology.html)
+* [Adding ontology terms](https://enanomapper.github.io/tutorials/Added%20ontology%20terms/README.html)
 
 Making Releases
 ===============
