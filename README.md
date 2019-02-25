@@ -73,3 +73,15 @@ Making Releases
 4. Update the owl.versionInfo of enanomapper-dev.owl
 5. Release the whole repository in Github https://github.com/enanomapper/ontologies/releases 
 6. Update the DOI number for new release: https://zenodo.org/record/260098#.WSLlGcbMyrM
+
+Funding
+=======
+
+The project has had contributions from various European Commission projects. The eNanoMapper project
+was funded by the European Union’s Seventh Framework Programme for research, technological
+development and demonstration (FP7-NMP-2013-SMALL-7) under grant agreement no. 604134.
+NanoCommons has received funding from European Union Horizon 2020 Programme (H2020) under grant
+agreement nº 731032. OpenRiskNet is funded by the European Commission within Horizon 2020
+EINFRA-22-2016 Programme under grant agreement no. 731075.
+
+
