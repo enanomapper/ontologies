@@ -9,6 +9,9 @@ The ontology is has been developed and maintained by the following EU H2020 proj
 * [OpenRiskNet](https://openrisknet.org/)
 * [eNanoMapper](http://enanomapper.net/) (project ended)
 
+Other NanoSafety Cluster projects that have contributed by providing feedback and collaborations
+include [NANoREG](http://www.nanoreg.eu/) and [GRACIOUS](https://www.h2020gracious.eu/).
+
 External
 --------
 We import slices from third party ontologies. The Slimmer tool is used to extract the bits we include
@@ -100,11 +103,13 @@ Making Releases
 Funding
 =======
 
-The project has had contributions from various European Commission projects. The eNanoMapper project
-was funded by the European Union’s Seventh Framework Programme for research, technological
-development and demonstration (FP7-NMP-2013-SMALL-7) under grant agreement no. 604134.
-NanoCommons has received funding from European Union Horizon 2020 Programme (H2020) under grant
-agreement nº 731032. OpenRiskNet is funded by the European Commission within Horizon 2020
-EINFRA-22-2016 Programme under grant agreement no. 731075.
+The project has had contributions from various European Commission projects. The
+[eNanoMapper](http://enanomapper.net/) project was funded by the European Union’s Seventh
+Framework Programme for research, technological development and demonstration
+(FP7-NMP-2013-SMALL-7) under grant agreement no. [604134](https://cordis.europa.eu/project/rcn/110961/factsheet/en).
+[NanoCommons](https://www.nanocommons.eu/) has received funding from European Union Horizon
+2020 Programme (H2020) under grant agreement nº [731032](https://cordis.europa.eu/project/rcn/212586/factsheet/en).
+[OpenRiskNet](https://openrisknet.org/) is funded by the European Commission within Horizon 2020
+EINFRA-22-2016 Programme under grant agreement no. [731075](https://cordis.europa.eu/project/rcn/206759/factsheet/en).
 
 
