@@ -100,7 +100,7 @@ Making Releases
 3. Update the owl.versionInfo of enanomapper.owl
 4. Update the owl.versionInfo of enanomapper-dev.owl
 5. Release the whole repository in Github https://github.com/enanomapper/ontologies/releases 
-6. Update the DOI number for new release: https://zenodo.org/record/260098#.WSLlGcbMyrM
+6. Update the DOI number for new release: https://zenodo.org/record/260098
 
 Funding
 =======
