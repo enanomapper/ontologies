@@ -3,22 +3,39 @@ Ontologies
 
 The eNanoMapper ontologies aim to provide a comprehensive suite of ontologies for the nanomaterial safety assessment domain (see http://www.enanomapper.net for project information). The full suite of ontologies can be found assembled by imports in the primary enanomapper.owl file. 
 
-
-Internal
---------
-ontology-metadata-slim.owl - excerpt of the IAO (http://information-artifact-ontology.googlecode.com/) including metadata (annotation properties) only. 
-nm.owl - nanomaterial descriptors ontology using the CHEMINF ontology
-
-
 External
 --------
-We import the NanoParticle Ontology (see http://nano-ontology.org); CHEMINF (https://github.com/semanticchemistry/semanticchemistry/); parts of ChEBI (http://www.ebi.ac.uk/chebi); and others (TBD). 
+We import slices from third party ontologies. The Slimmer tool is used to extract the bits we include
+in the eNanoMapper ontology. The slimmed files can be found in the [external](external) folder.
+The full list of ontologies it includes is:
 
-DOI
---------
-Version 3: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.47119.svg)](https://doi.org/10.5281/zenodo.47119)
+* [Adverse Outcome Pathways Ontology](https://github.com/DataSciBurgoon/aop-ontology) (AOP)
+* [BioAssay Ontology](http://bioassayontology.org/) (BAO)
+* [Basic Formal Ontology](http://basic-formal-ontology.org/) (BFO)
+* [Cell Culture Ontology](http://bioportal.bioontology.org/ontologies/CCONT?p=summary) (CCONT)
+* [Chemical Entities of Biological Interest](https://www.ebi.ac.uk/chebi/) (CHEBI)
+* [Chemical Information Ontology](https://github.com/semanticchemistry/semanticchemistry/) (CHEMINF)
+* [Chemical Methods Ontology](https://github.com/rsc-ontologies/rsc-cmo) (CHMO)
+* [Experimental Factor Ontology](https://www.ebi.ac.uk/efo/) (EFO)
+* [Environment Ontology](http://environmentontology.org/) (ENVO)
+* [FRBR-aligned Bibliographic Ontology](https://sparontologies.github.io/fabio/current/fabio.html) (FABIO)
+* [Gene Ontology](http://www.geneontology.org/) (GO)
+* [Human Physiology Simulation Ontology](https://www.scai.fraunhofer.de/en/business-research-areas/bioinformatics/downloads.html) (HUPSON)
+* [Information Artifact Ontology](https://github.com/information-artifact-ontology/IAO/) (IAO)
+* [National Cancer Institute Thesaurus](https://nciterms.nci.nih.gov/) (NCIT)
+* [NanoParticle Ontology](http://www.nano-ontology.org/) (NPO)
+* [Ontology of Adverse Events](http://www.oae-ontology.org/) (OAE)
+* [Ontology of Biological and Clinical Statistics](https://github.com/obcs/obcs) (OBCS)
+* [Ontology for Biomedical Investigations](http://obi-ontology.org/) (OBI)
+* [Phenotype And Trait Ontology](https://github.com/pato-ontology/pato) (PATO)
+* [Semanticscience Integrated Ontology](https://github.com/micheldumontier/semanticscience) (SIO)
+* [Unit Ontology](https://github.com/bio-ontology-research-group/unit-ontology) (UO)
 
-Version 4: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.260098.svg)](https://doi.org/10.5281/zenodo.260098)
+DOI of Releases
+---------------
+
+* Version 3: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.47119.svg)](https://doi.org/10.5281/zenodo.47119)
+* Version 4: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.260098.svg)](https://doi.org/10.5281/zenodo.260098)
 
 Opening the ontology in Protégé
 ===============================
