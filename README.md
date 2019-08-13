@@ -54,12 +54,12 @@ Opening the ontology in Protégé
 The stable version can be opened in [Protégé](https://protege.stanford.edu/) with the following step:
 
 1. File → Open from URL...
-2. enter the URL http://purl.enanomapper.net/onto/enanomapper.owl
+2. enter the URL http://enanomapper.github.io/ontologies/enanomapper.owl
 
 The development version is opened in the same way, but with a different URL:
 
 1. File → Open from URL...
-2. enter the URL http://purl.enanomapper.net/onto/enanomapper-dev.owl
+2. enter the URL http://enanomapper.github.io/ontologies/enanomapper-dev.owl
 
 Building and validating the ontology
 ====================================
