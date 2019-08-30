@@ -1,20 +1,18 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.enanomapper.net/onto/external/obcs-slim.owl#"
      xml:base="http://purl.enanomapper.net/onto/external/obcs-slim.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:pav="http://purl.org/pav/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/obcs-slim.owl">
-        <dc:creator>Adrien Barton</dc:creator>
         <dc:creator xml:lang="en">Barry Smith</dc:creator>
         <dc:creator xml:lang="en">Huan Li</dc:creator>
         <dc:creator xml:lang="en">Jean-François Ethier</dc:creator>
@@ -23,14 +21,13 @@
         <dc:creator xml:lang="en">Qingzhi Liu</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
         <dc:creator xml:lang="en">Yu Lin</dc:creator>
+        <dc:creator>Adrien Barton</dc:creator>
         <dc:description xml:lang="en">OBCS stands for the Ontology of Biological and Clinical Statistics. OBCS is an ontology in the domain of biological and clinical statistics. It is aligned with the Basic Formal Ontology (BFO) and the Ontology for Biomedical Investigations (OBI). OBCS imports all possible biostatistics terms in OBI and includes many additional biostatistics terms, some of which were proposed and discussed in the OBI face-to-face workshop in Ann Arbor in 2012.  </dc:description>
-        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <pav:importedFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/obcs.owl</pav:importedFrom>
-        <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-09-13 20:24:09</oboInOwl:date>
+        <pav:importedFrom>http://purl.obolibrary.org/obo/obcs.owl</pav:importedFrom>
+        <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
+        <oboInOwl:date>2019-08-18 15:27:04</oboInOwl:date>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">101</owl:versionInfo>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
+        <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -43,10 +40,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179">
         <obo:IAO_0000111 xml:lang="en">BFO OWL specification label</obo:IAO_0000111>
@@ -59,6 +58,7 @@
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000180 -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180">
         <obo:IAO_0000111 xml:lang="en">BFO CLIF specification label</obo:IAO_0000111>
@@ -73,6 +73,7 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
         <obo:IAO_0000111 xml:lang="en">editor preferred label</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -81,13 +82,14 @@
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
-        <rdfs:label>editor preferred term</rdfs:label>
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+        <rdfs:label>editor preferred term</rdfs:label>
     </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
         <obo:IAO_0000111 xml:lang="en">example of usage</obo:IAO_0000111>
@@ -103,6 +105,7 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
         <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
         <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
@@ -115,6 +118,7 @@
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <obo:IAO_0000111>definition</obo:IAO_0000111>
@@ -144,15 +148,15 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label>definition</rdfs:label>
         <rdfs:label xml:lang="en">definition</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
+        <rdfs:label>definition</rdfs:label>
+        <rdfs:label>textual definition</rdfs:label>
     </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
         <obo:IAO_0000111 xml:lang="en">editor note</obo:IAO_0000111>
@@ -167,6 +171,7 @@ We also have the outstanding issue of how to aim different definitions to differ
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
         <obo:IAO_0000111 xml:lang="en">term editor</obo:IAO_0000111>
@@ -183,6 +188,7 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
         <obo:IAO_0000111 xml:lang="en">alternative term</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
@@ -197,13 +203,14 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
         <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000119>Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">definition source</rdfs:label>
     </owl:AnnotationProperty>
@@ -211,6 +218,7 @@ We also have the outstanding issue of how to aim different definitions to differ
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
         <obo:IAO_0000111 xml:lang="en">curator note</obo:IAO_0000111>
@@ -224,6 +232,7 @@ We also have the outstanding issue of how to aim different definitions to differ
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <obo:IAO_0000111 xml:lang="en">imported from</obo:IAO_0000111>
@@ -240,6 +249,7 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600">
         <obo:IAO_0000111 xml:lang="en">elucidation</obo:IAO_0000111>
         <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
@@ -252,6 +262,7 @@ We also have the outstanding issue of how to aim different definitions to differ
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000601 -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601">
         <obo:IAO_0000111 xml:lang="en">has associated axiom(nl)</obo:IAO_0000111>
@@ -266,6 +277,7 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000602 -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602">
         <obo:IAO_0000111 xml:lang="en">has associated axiom(fol)</obo:IAO_0000111>
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
@@ -279,6 +291,7 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000221 -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBCS_0000221">
         <obo:IAO_0000112>A normal distribution probability density function has a formula of:
 f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
@@ -290,6 +303,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0001847 -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001847">
         <obo:IAO_0000111 xml:lang="en">ISA alternative term</obo:IAO_0000111>
@@ -308,6 +322,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <!-- http://purl.obolibrary.org/obo/OBI_0001886 -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001886">
         <obo:IAO_0000111 xml:lang="en">NIAID GSCID-BRC alternative term</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -322,19 +337,21 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <!-- http://purl.obolibrary.org/obo/OBI_9991118 -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_9991118">
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB alternative term</obo:IAO_0000111>
+        <obo:IAO_0000111>IEDB alternative term</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An alternative term used by the IEDB.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Randi Vita, Jason Greenbaum, Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB alternative term</rdfs:label>
+        <obo:IAO_0000115>An alternative term used by the IEDB.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON:Randi Vita, Jason Greenbaum, Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119>IEDB</obo:IAO_0000119>
+        <rdfs:label>IEDB alternative term</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000118"/>
     </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900">
         <obo:IAO_0000111 xml:lang="en">temporal interpretation</obo:IAO_0000111>
@@ -346,25 +363,20 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
-        <dc:description xml:lang="en-us">Description may include but is not limited to: an abstract,
-         table of contents, reference to a graphical representation
-         of content or a free-text account of the content.</dc:description>
-        <rdfs:comment xml:lang="en-us">An account of the content of the resource.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-        <rdfs:label>Description</rdfs:label>
-        <rdfs:label xml:lang="en-us">Description</rdfs:label>
-    </owl:AnnotationProperty>
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/source -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source">
         <dc:description xml:lang="en-us">The present resource may be derived from the Source resource
@@ -374,21 +386,44 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
         <rdfs:comment xml:lang="en-us">A reference to a resource from which the present resource
          is derived.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-        <rdfs:label>Source</rdfs:label>
         <rdfs:label xml:lang="en-us">Source</rdfs:label>
+        <rdfs:label>Source</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/pav/importedFrom -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/pav/importedFrom"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#auto-generated-by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#auto-generated-by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#date"/>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+        <rdfs:label>database_cross_reference</rdfs:label>
     </owl:AnnotationProperty>
     
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
         <rdfs:label>label</rdfs:label>
@@ -397,6 +432,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
 
     <!-- http://xmlns.com/foaf/0.1/page -->
+
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/page"/>
     
@@ -410,10 +446,12 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://www.w3.org/2001/XMLSchema#float -->
+
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
     
@@ -421,11 +459,13 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <!-- http://www.w3.org/2001/XMLSchema#integer -->
 
+
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
     
 
 
     <!-- http://www.w3.org/2001/XMLSchema#nonNegativeInteger -->
+
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     
@@ -439,10 +479,12 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
         <obo:IAO_0000111 xml:lang="en">data item</obo:IAO_0000111>
@@ -452,7 +494,6 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
         <obo:IAO_0000116 xml:lang="en">2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: data item deliberatly ambiguous: we merged data set and datum to be one entity, not knowing how to define singular versus plural. So data item is more general than datum.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: removed datum as alternative term as datum specifically refers to singular form, and is thus not an exact synonym.</obo:IAO_0000116>
-        <obo:IAO_0000116>2014-03-31: See discussion at http://odontomachus.wordpress.com/2014/03/30/aboutness-objects-propositions/</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">JAR: datum     -- well, this will be very tricky to define, but maybe some 
 information-like stuff that might be put into a computer and that is 
 meant, by someone, to denote and/or to be interpreted by some 
@@ -460,6 +501,7 @@ process... I would include lists, tables, sentences... I think I might
 defer to Barry, or to Brian Cantwell Smith
 
 JAR: A data item is an approximately justified approximately true approximate belief</obo:IAO_0000116>
+        <obo:IAO_0000116>2014-03-31: See discussion at http://odontomachus.wordpress.com/2014/03/30/aboutness-objects-propositions/</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
@@ -470,6 +512,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000003 -->
+
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
@@ -485,6 +528,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000004 -->
 
+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
         <obo:IAO_0000115>A continuous probability distribution that is a two-parameter family of continuous probability distributions.</obo:IAO_0000115>
@@ -497,6 +541,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000005 -->
+
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
@@ -512,6 +557,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000006 -->
 
+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
         <obo:IAO_0000115>A continuous probability distribution that is is used to estimate population parameters when the sample size is small and/or when the population variance is unknown.</obo:IAO_0000115>
@@ -526,6 +572,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000007 -->
 
+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
         <obo:IAO_0000115>A continuous probability distribution of two variables that has the traditional bell shape and the distribution of one variable is normal to each and every value of the other variable.</obo:IAO_0000115>
@@ -538,6 +585,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000008 -->
+
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
@@ -552,6 +600,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000010 -->
 
+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115>An information content entity that refers to a distribution of a random variable that can be described using a mathematical formula.</obo:IAO_0000115>
@@ -563,6 +612,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000011 -->
+
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
@@ -578,6 +628,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000044 -->
 
+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000044">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000067"/>
         <obo:IAO_0000115>A discrete probability distribution that has the number of successes in a sequence of n independent yes/no experiments, each of which yields success with probability p. Such a success/failure experiment is also called a Bernoulli experiment or Bernoulli trial.</obo:IAO_0000115>
@@ -589,6 +640,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000045 -->
+
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000067"/>
@@ -602,6 +654,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000066 -->
 
+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000066">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000010"/>
         <obo:IAO_0000115>A probability distribution that is associated with continuous variables and has a probability density function.</obo:IAO_0000115>
@@ -613,6 +666,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000067 -->
+
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000067">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000010"/>
@@ -626,6 +680,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000068 -->
 
+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000068">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000010"/>
         <obo:IAO_0000115>A tabular summary of a set of data showing the number of items in each of several non-overlapping classes or groupings</obo:IAO_0000115>
@@ -637,6 +692,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000090 -->
+
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000090">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000011"/>
@@ -651,6 +707,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000091 -->
 
+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000091">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000011"/>
         <obo:IAO_0000115>A measurement scale that placing of data into categories, without any order or structure (see related OBI term of categorical measurement datum).</obo:IAO_0000115>
@@ -662,6 +719,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000092 -->
+
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000092">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000011"/>
@@ -675,6 +733,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000093 -->
 
+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000093">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000011"/>
         <obo:IAO_0000115>A measurement scale  that is similar to an interval scale, i.e. a magnitude of a continuous quantity and a unit magnitude of the same kind; the distinguishing feature of a ratio scale is a meaningful zero value that means the absence of whatever is measured.</obo:IAO_0000115>
@@ -686,6 +745,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000119 -->
+
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000119">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
@@ -700,6 +760,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000125 -->
 
+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000125">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
         <obo:IAO_0000115>A continuous probability distribution that describes the time between events in a Poisson process, i.e. a process in which events occur continuously and independently at a constant average rate.</obo:IAO_0000115>
@@ -713,6 +774,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000210 -->
 
+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000210">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000010"/>
         <obo:IAO_0000115>A probability distribution that represents the probability distribution corresponding to a histogram of data values.</obo:IAO_0000115>
@@ -724,6 +786,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000211 -->
+
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000211">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000005"/>
@@ -739,6 +802,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <!-- http://purl.obolibrary.org/obo/STATO_0000017 -->
 
+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000010"/>
         <obo:IAO_0000115 xml:lang="en">Wilks&apos; lambda distribution (named for Samuel S. Wilks), is a probability distribution used in multivariate hypothesis testing, especially with regard to the likelihood-ratio test and Multivariate analysis of variance. It is a multivariate generalization of the univariate F-distribution, and generalizes the F-distribution in the same way that the Hotelling&apos;s T-squared distribution generalizes Student&apos;s t-distribution.</obo:IAO_0000115>
@@ -749,6 +813,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
 
     <!-- http://purl.obolibrary.org/obo/STATO_0000023 -->
+
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
@@ -765,6 +830,7 @@ where random samples of size n have been taken from k independent and identicall
 
     <!-- http://purl.obolibrary.org/obo/STATO_0000060 -->
 
+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000060">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000067"/>
         <obo:IAO_0000115 xml:lang="en">hypergeometric distribution is a probability distribution that describes the probability of  k successes in n draws from a finite population of size  N containing  K successes without replacement</obo:IAO_0000115>
@@ -776,6 +842,7 @@ where random samples of size n have been taken from k independent and identicall
 
     <!-- http://purl.obolibrary.org/obo/STATO_0000103 -->
 
+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000103">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000067"/>
         <obo:IAO_0000115 xml:lang="en">the multinomial distribution is a probability distribution which gives the probability of any particular combination of numbers of successes for various categories defined in the context of  n independent trials each of which leads to a success for exactly one of k categories, with each category having a given fixed success probability.</obo:IAO_0000115>
@@ -786,6 +853,7 @@ where random samples of size n have been taken from k independent and identicall
 
 
     <!-- http://purl.obolibrary.org/obo/STATO_0000132 -->
+
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000132">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000010"/>
@@ -800,6 +868,7 @@ This distribution is commonly used to describe the sample Mahalanobis distance b
 
 
     <!-- http://purl.obolibrary.org/obo/STATO_0000145 -->
+
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000145">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000283"/>
@@ -826,6 +895,7 @@ The quantile is defined as the smallest value x such that F(x) ≥ p, where F is
 
     <!-- http://purl.obolibrary.org/obo/STATO_0000177 -->
 
+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000177">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
         <obo:IAO_0000115 xml:lang="en">the beta distribution is a continuous probability distributions defined on the interval [0, 1] parametrized by two positive shape parameters, denoted by α and β, that appear as exponents of the random variable and control the shape of the distribution</obo:IAO_0000115>
@@ -837,6 +907,7 @@ The quantile is defined as the smallest value x such that F(x) ≥ p, where F is
 
     <!-- http://purl.obolibrary.org/obo/STATO_0000180 -->
 
+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000180">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000005"/>
         <obo:IAO_0000115 xml:lang="en">standard normal distribution is a normal distribution with variance = 1 and mean=0</obo:IAO_0000115>
@@ -847,6 +918,7 @@ The quantile is defined as the smallest value x such that F(x) ≥ p, where F is
 
 
     <!-- http://purl.obolibrary.org/obo/STATO_0000262 -->
+
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000262">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000044"/>
@@ -864,6 +936,7 @@ The variance is p*q</obo:IAO_0000115>
 
 
     <!-- http://purl.obolibrary.org/obo/STATO_0000283 -->
+
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000283">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000067"/>
@@ -884,10 +957,12 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000002 -->
+
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000002">
         <obo:IAO_0000111 xml:lang="en">example to be eventually removed</obo:IAO_0000111>
@@ -898,16 +973,18 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000103 -->
 
+
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000103">
         <obo:IAO_0000111 xml:lang="en">failed exploratory term</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
         <rdfs:label xml:lang="en">failed exploratory term</rdfs:label>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000120 -->
+
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000120">
         <obo:IAO_0000111 xml:lang="en">metadata complete</obo:IAO_0000111>
@@ -919,16 +996,18 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000121 -->
 
+
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000121">
         <obo:IAO_0000111 xml:lang="en">organizational term</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">term created to ease viewing/sort terms for development purpose, and will not be included in a release</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON:Alan Ruttenberg</obo:IAO_0000117>
         <rdfs:label xml:lang="en">organizational term</rdfs:label>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000122 -->
+
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000122">
         <obo:IAO_0000111 xml:lang="en">ready for release</obo:IAO_0000111>
@@ -940,6 +1019,7 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000123 -->
 
+
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000123">
         <obo:IAO_0000111 xml:lang="en">metadata incomplete</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors.</obo:IAO_0000115>
@@ -949,6 +1029,7 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000124 -->
+
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000124">
         <obo:IAO_0000111 xml:lang="en">uncurated</obo:IAO_0000111>
@@ -960,6 +1041,7 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000125 -->
 
+
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000125">
         <obo:IAO_0000111 xml:lang="en">pending final vetting</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor.</obo:IAO_0000115>
@@ -969,6 +1051,7 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000224 -->
+
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000224">
         <obo:IAO_0000111 xml:lang="en">core</obo:IAO_0000111>
@@ -982,6 +1065,7 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000226 -->
 
+
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000226">
         <obo:IAO_0000111 xml:lang="en">placeholder removed</obo:IAO_0000111>
         <rdfs:label xml:lang="en">placeholder removed</rdfs:label>
@@ -990,6 +1074,7 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000227 -->
+
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000227">
         <obo:IAO_0000111 xml:lang="en">terms merged</obo:IAO_0000111>
@@ -1001,6 +1086,7 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000228 -->
 
+
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000228">
         <obo:IAO_0000111 xml:lang="en">term imported</obo:IAO_0000111>
         <obo:IAO_0000116 xml:lang="en">This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use.</obo:IAO_0000116>
@@ -1010,6 +1096,7 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000229 -->
+
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000229">
         <obo:IAO_0000111 xml:lang="en">term split</obo:IAO_0000111>
@@ -1021,41 +1108,45 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000410 -->
 
+
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000410">
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">universal</obo:IAO_0000111>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hard to give a definition for. Intuitively a &quot;natural kind&quot; rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents.</obo:IAO_0000116>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">universal</rdfs:label>
+        <obo:IAO_0000111>universal</obo:IAO_0000111>
+        <obo:IAO_0000116>Hard to give a definition for. Intuitively a &quot;natural kind&quot; rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents.</obo:IAO_0000116>
+        <obo:IAO_0000117>Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119>A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf</obo:IAO_0000119>
+        <rdfs:label>universal</rdfs:label>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000420 -->
 
+
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000420">
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">defined class</obo:IAO_0000111>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;definitions&quot;, in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal.</obo:IAO_0000116>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">defined class</rdfs:label>
+        <obo:IAO_0000111>defined class</obo:IAO_0000111>
+        <obo:IAO_0000115>A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal</obo:IAO_0000115>
+        <obo:IAO_0000116>&quot;definitions&quot;, in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal.</obo:IAO_0000116>
+        <obo:IAO_0000117>Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:label>defined class</rdfs:label>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000421 -->
 
+
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000421">
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">named class expression</obo:IAO_0000111>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A named class expression is a logical expression that is given a name. The name can be used in place of the expression.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions</obo:IAO_0000116>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">named class expression</rdfs:label>
+        <obo:IAO_0000111>named class expression</obo:IAO_0000111>
+        <obo:IAO_0000115>A named class expression is a logical expression that is given a name. The name can be used in place of the expression.</obo:IAO_0000115>
+        <obo:IAO_0000116>named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions</obo:IAO_0000116>
+        <obo:IAO_0000117>Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:label>named class expression</rdfs:label>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000423 -->
+
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000423">
         <obo:IAO_0000111 xml:lang="en">to be replaced with external ontology term</obo:IAO_0000111>
@@ -1069,6 +1160,7 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000428 -->
 
+
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000428">
         <obo:IAO_0000111 xml:lang="en">requires discussion</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues.</obo:IAO_0000115>
@@ -1081,6 +1173,7 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000228 -->
 
+
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBCS_0000228">
         <obo:IAO_0000115>An confidence interval with 95 percent probability that the true population value can be found. </obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
@@ -1091,50 +1184,55 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000958 -->
 
+
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000958">
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">right handed</obo:IAO_0000111>
+        <obo:IAO_0000111>right handed</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">right handed</rdfs:label>
+        <rdfs:label>right handed</rdfs:label>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000979 -->
 
+
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000979">
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ambidexterous</obo:IAO_0000111>
+        <obo:IAO_0000111>ambidexterous</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ambidexterous</rdfs:label>
+        <rdfs:label>ambidexterous</rdfs:label>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000998 -->
 
+
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000998">
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">left handed</obo:IAO_0000111>
+        <obo:IAO_0000111>left handed</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">left handed</rdfs:label>
+        <rdfs:label>left handed</rdfs:label>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0001004 -->
 
+
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001004">
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edingburgh handedness inventory</obo:IAO_0000111>
+        <obo:IAO_0000111>Edingburgh handedness inventory</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">The Edinburgh Handedness Inventory is a set of questions used to assess the dominance of a person&apos;s right or left hand in everyday activities. </obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Jessica Turner</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:5146491#Oldfield, R.C. (1971). The assessment and analysis of handedness: The Edinburgh inventory. Neuropsychologia, 9, 97-113</obo:IAO_0000119>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEB:http://www.cse.yorku.ca/course_archive/2006-07/W/4441/EdinburghInventory.html</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edingburgh handedness inventory</rdfs:label>
+        <obo:IAO_0000117>PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON:Jessica Turner</obo:IAO_0000117>
+        <obo:IAO_0000119>PMID:5146491#Oldfield, R.C. (1971). The assessment and analysis of handedness: The Edinburgh inventory. Neuropsychologia, 9, 97-113</obo:IAO_0000119>
+        <obo:IAO_0000119>WEB:http://www.cse.yorku.ca/course_archive/2006-07/W/4441/EdinburghInventory.html</obo:IAO_0000119>
+        <rdfs:label>Edingburgh handedness inventory</rdfs:label>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0001901 -->
+
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RO_0001901">
         <obo:IAO_0000111 xml:lang="en">axiom holds for all times</obo:IAO_0000111>
@@ -1176,11 +1274,33 @@ This interpretation is *not* the same as an at-all-times relation
 
     <!-- http://purl.obolibrary.org/obo/iao.owl -->
 
+
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/iao.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+        <dc:description xml:lang="en-us">Description may include but is not limited to: an abstract,
+         table of contents, reference to a graphical representation
+         of content or a free-text account of the content.</dc:description>
+        <rdfs:comment xml:lang="en-us">An account of the content of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en-us">Description</rdfs:label>
+        <rdfs:label>Description</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.3.2) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
 
 

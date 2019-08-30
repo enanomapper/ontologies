@@ -1,55 +1,54 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.enanomapper.net/onto/external/hupson-slim.owl#"
      xml:base="http://purl.enanomapper.net/onto/external/hupson-slim.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:pav="http://purl.org/pav/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:HuPSON="http://scai.fraunhofer.de/HuPSON#"
      xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:HuPSON="http://scai.fraunhofer.de/HuPSON#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/hupson-slim.owl">
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alan Ruttenberg</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andrew Spear</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon</dc:contributor>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Holger Stenzhorn</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michaela Guendel </dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19.5.2011</dc:date>
-        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HuPSON  -  Human Physiology Simulation Ontology
+        <dc:contributor>Alan Ruttenberg</dc:contributor>
+        <dc:contributor>Andrew Spear</dc:contributor>
+        <dc:contributor>Pierre Grenon</dc:contributor>
+        <dc:creator>Holger Stenzhorn</dc:creator>
+        <dc:creator>Michaela Guendel </dc:creator>
+        <dc:date>19.5.2011</dc:date>
+        <dc:description>HuPSON  -  Human Physiology Simulation Ontology
 
 This is a first draft of the HuPSON ontology as a basis and starting point for shared semantics and interoperability of simulations, models, algorithms and other resources in this domain. The ontology contains annotations with MathML expressions which make the mathematical equation types therein contained computer-readable. It is based on the Basic Formal Ontology, adheres to the MIREOT principles and has been evaluated via structural features, competency questions and use case scenarios. </dc:description>
-        <dc:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</dc:format>
-        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ifomis.org/bfo/1.1</dc:identifier>
-        <dc:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</dc:language>
-        <dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Institute for Formal Ontology and Medical Information Science (IFOMIS)</dc:publisher>
+        <dc:format>application/rdf+xml</dc:format>
+        <dc:identifier>http://www.ifomis.org/bfo/1.1</dc:identifier>
+        <dc:language>en</dc:language>
+        <dc:publisher>Institute for Formal Ontology and Medical Information Science (IFOMIS)</dc:publisher>
         <dc:rights>http://creativecommons.org/licenses/by/3.0</dc:rights>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barry Smith and Pierre Grenon: &quot;The Cornucopia of Formal Ontological Relations&quot;</dc:source>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barry Smith: &quot;Against Fantology&quot;</dc:source>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barry Smith: &quot;Basic Tools of Formal Ontology&quot;</dc:source>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barry Smith: &quot;Beyond Concepts: Ontology as Reality Representation&quot;</dc:source>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon and Barry Smith: &quot;SNAP and SPAN: Towards Geospatial Dynamics&quot;</dc:source>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon, Barry Smith and Louis Goldberg: &quot;Biodynamic Ontology: Applying BFO in the Biomedical Domain&quot;</dc:source>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon: &quot;BFO in a Nutshell: A Bi-categorial Axiomatization of BFO and Comparison with DOLCE&quot;</dc:source>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon: &quot;Nuts in BFO&apos;s Nutshell: Revisions to the Bi-categorial Axiomatization of BFO&quot;</dc:source>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon: &quot;Spatio-temporality in Basic Formal Ontology: SNAP and SPAN, Upper-Level Ontology, and Framework for Formalization&quot;</dc:source>
-        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basic Formal Ontology (BFO)</dc:title>
-        <pav:importedFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://data.bioontology.org/ontologies/HUPSON/submissions/1/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb</pav:importedFrom>
-        <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protege 4.1</oboInOwl:auto-generated-by>
-        <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013.09</oboInOwl:date>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-09-13 20:23:42</oboInOwl:date>
-        <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michaela Guendel</oboInOwl:saved-by>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is the official owl PATO file as of 19.5.2011, adjusted to the HuPSON simulation ontology needs:
+        <dc:source>Barry Smith and Pierre Grenon: &quot;The Cornucopia of Formal Ontological Relations&quot;</dc:source>
+        <dc:source>Barry Smith: &quot;Against Fantology&quot;</dc:source>
+        <dc:source>Barry Smith: &quot;Basic Tools of Formal Ontology&quot;</dc:source>
+        <dc:source>Barry Smith: &quot;Beyond Concepts: Ontology as Reality Representation&quot;</dc:source>
+        <dc:source>Pierre Grenon and Barry Smith: &quot;SNAP and SPAN: Towards Geospatial Dynamics&quot;</dc:source>
+        <dc:source>Pierre Grenon, Barry Smith and Louis Goldberg: &quot;Biodynamic Ontology: Applying BFO in the Biomedical Domain&quot;</dc:source>
+        <dc:source>Pierre Grenon: &quot;BFO in a Nutshell: A Bi-categorial Axiomatization of BFO and Comparison with DOLCE&quot;</dc:source>
+        <dc:source>Pierre Grenon: &quot;Nuts in BFO&apos;s Nutshell: Revisions to the Bi-categorial Axiomatization of BFO&quot;</dc:source>
+        <dc:source>Pierre Grenon: &quot;Spatio-temporality in Basic Formal Ontology: SNAP and SPAN, Upper-Level Ontology, and Framework for Formalization&quot;</dc:source>
+        <dc:title>Basic Formal Ontology (BFO)</dc:title>
+        <pav:importedFrom>http://data.bioontology.org/ontologies/HUPSON/submissions/1/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb</pav:importedFrom>
+        <oboInOwl:auto-generated-by>Protege 4.1</oboInOwl:auto-generated-by>
+        <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
+        <oboInOwl:date>2013.09</oboInOwl:date>
+        <oboInOwl:date>2019-08-18 15:27:36</oboInOwl:date>
+        <oboInOwl:saved-by>Michaela Guendel</oboInOwl:saved-by>
+        <rdfs:comment>This is the official owl PATO file as of 19.5.2011, adjusted to the HuPSON simulation ontology needs:
 - unnecessary classes and properties cut out
 - definitions added as string annotation (instead of anonymous instances as in the original file, as in Protege 4.1 this was difficult to handle)
 - classes converted into VPH simulation ontology namespace, but file imports a mapping file that maps the concepts to their original PATO counterparts in their namespace</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1.1</owl:versionInfo>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
+        <rdfs:label>quality</rdfs:label>
+        <owl:versionInfo>1.1.1</owl:versionInfo>
+        <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -62,10 +61,12 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://purl.org/dc/elements/1.1/contributor -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
     
@@ -73,11 +74,13 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/date -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
     
@@ -85,11 +88,13 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/format -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format"/>
     
@@ -97,11 +102,13 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
     <!-- http://purl.org/dc/elements/1.1/identifier -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/language -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language"/>
     
@@ -109,11 +116,13 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
     <!-- http://purl.org/dc/elements/1.1/publisher -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/rights -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
     
@@ -121,17 +130,27 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
     <!-- http://purl.org/dc/elements/1.1/source -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
+    <!-- http://purl.org/pav/importedFrom -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/pav/importedFrom"/>
+    
+
+
     <!-- http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000008 -->
+
 
     <owl:AnnotationProperty rdf:about="http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000008">
         <rdfs:label>PMID</rdfs:label>
@@ -141,6 +160,7 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
     <!-- http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000009 -->
 
+
     <owl:AnnotationProperty rdf:about="http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000009">
         <rdfs:label>definition</rdfs:label>
     </owl:AnnotationProperty>
@@ -148,6 +168,7 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
 
     <!-- http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000954 -->
+
 
     <owl:AnnotationProperty rdf:about="http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000954">
         <rdfs:label>has_raw_presentationMathML</rdfs:label>
@@ -157,6 +178,7 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
     <!-- http://scai.fraunhofer.de/HuPSON#SCAIVPH_09087881 -->
 
+
     <owl:AnnotationProperty rdf:about="http://scai.fraunhofer.de/HuPSON#SCAIVPH_09087881">
         <rdfs:label>has_enhanced_presentationMathML</rdfs:label>
     </owl:AnnotationProperty>
@@ -164,6 +186,7 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
 
     <!-- http://scai.fraunhofer.de/HuPSON#SCAIVPH_16585223 -->
+
 
     <owl:AnnotationProperty rdf:about="http://scai.fraunhofer.de/HuPSON#SCAIVPH_16585223">
         <rdfs:label>has_latex_math</rdfs:label>
@@ -173,6 +196,7 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
     <!-- http://scai.fraunhofer.de/HuPSON#SCAIVPH_71497513 -->
 
+
     <owl:AnnotationProperty rdf:about="http://scai.fraunhofer.de/HuPSON#SCAIVPH_71497513">
         <rdfs:label>has_contentMathML</rdfs:label>
     </owl:AnnotationProperty>
@@ -180,6 +204,7 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
 
     <!-- http://scai.fraunhofer.de/HuPSON#SCAIVPH_89669308 -->
+
 
     <owl:AnnotationProperty rdf:about="http://scai.fraunhofer.de/HuPSON#SCAIVPH_89669308">
         <rdfs:label>searchable</rdfs:label>
@@ -189,11 +214,13 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
     <!-- http://www.geneontology.org/formats/oboInOwl#auto-generated-by -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#auto-generated-by"/>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#comment -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#comment"/>
     
@@ -201,11 +228,13 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
     <!-- http://www.geneontology.org/formats/oboInOwl#date -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#date"/>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#def -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#def"/>
     
@@ -213,11 +242,13 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
     <!-- http://www.geneontology.org/formats/oboInOwl#exact_synonym -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#exact_synonym"/>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#format-version -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#format-version"/>
     
@@ -225,11 +256,13 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDefinition -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDefinition"/>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#narrow_synonym -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#narrow_synonym"/>
     
@@ -237,11 +270,13 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
     <!-- http://www.geneontology.org/formats/oboInOwl#related_synonym -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#related_synonym"/>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#replacedBy -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#replacedBy"/>
     
@@ -249,11 +284,13 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
     <!-- http://www.geneontology.org/formats/oboInOwl#saved-by -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#saved-by"/>
     
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
     
@@ -261,11 +298,13 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
     <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
     
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     
@@ -273,11 +312,13 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
     <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
     
 
 
     <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
     
@@ -291,10 +332,12 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://purl.org/obo/owl/PATO#PATO_0001614 -->
+
 
     <owl:NamedIndividual rdf:about="http://purl.org/obo/owl/PATO#PATO_0001614"/>
     
@@ -302,11 +345,13 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
     <!-- http://purl.org/obo/owl/PATO#PATO_0002245 -->
 
+
     <owl:NamedIndividual rdf:about="http://purl.org/obo/owl/PATO#PATO_0002245"/>
     
 
 
     <!-- http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000908 -->
+
 
     <owl:NamedIndividual rdf:about="http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000908">
         <rdfs:comment>unit: joule-seconds</rdfs:comment>
@@ -316,6 +361,7 @@ This is a first draft of the HuPSON ontology as a basis and starting point for s
 
 
     <!-- http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000937 -->
+
 
     <owl:NamedIndividual rdf:about="http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000937">
         <HuPSON:SCAIVPH_00000009>The Boltzmann constant (k or kB) is the physical constant relating energy at the individual particle level with temperature observed at the collective or bulk level. It is the gas constant R divided by the Avogadro constant NA:
@@ -339,6 +385,7 @@ source: http://en.wikipedia.org/wiki/Boltzmann_constant
 
     <!-- http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000945 -->
 
+
     <owl:NamedIndividual rdf:about="http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000945">
         <HuPSON:SCAIVPH_00000009>In physical cosmology, the cosmological constant (usually denoted by the Greek capital letter lambda) was proposed by Albert Einstein as a modification of his original theory of general relativity to achieve a stationary universe. Einstein abandoned the concept after the observation of the Hubble redshift indicated that the universe might not be stationary, as he had based his theory on the idea that the universe is unchanging.[1] However, the discovery of cosmic acceleration in the 1990s has renewed interest in a cosmological constant.
 
@@ -361,6 +408,7 @@ source: http://en.wikipedia.org/wiki/Cosmological_constant</HuPSON:SCAIVPH_00000
 
 
     <!-- http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000947 -->
+
 
     <owl:NamedIndividual rdf:about="http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000947">
         <HuPSON:SCAIVPH_00000009>The gravitational constant, denoted G, is an empirical physical constant involved in the calculation of the gravitational attraction between objects with mass. It appears in Newton&apos;s law of universal gravitation and in Einstein&apos;s theory of general relativity. It is also known as the universal gravitational constant, Newton&apos;s constant, and colloquially Big G.[1] It should not be confused with &quot;little g&quot; (g), which is the local gravitational field (equivalent to the free-fall acceleration[2]), especially that at the Earth&apos;s surface; see Earth&apos;s gravity and Standard gravity.
@@ -386,6 +434,7 @@ source: http://en.wikipedia.org/wiki/Gravitational_constant</HuPSON:SCAIVPH_0000
 
     <!-- http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000949 -->
 
+
     <owl:NamedIndividual rdf:about="http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000949">
         <HuPSON:SCAIVPH_00000009>The speed of light, usually denoted by c, is a physical constant important in many areas of physics. Light and all other forms of electromagnetic radiation always travel at this speed in empty space (vacuum), regardless of the motion of the source or the inertial frame of reference of the observer. Its value is exactly 299,792,458 metres per second[1] (approximately 186,282 miles per second). In the theory of relativity, c interrelates space and time, and appears in the famous equation of mass energy equivalence E = mc2.[2] It is the speed of all massless particles and associated fields in vacuum, and it is predicted by the current theory to be the gravitational waves and an upper bound on the speed at which energy, matter, and information can travel.
 
@@ -399,6 +448,7 @@ source: http://en.wikipedia.org/wiki/Speed_of_light</HuPSON:SCAIVPH_00000009>
 
 
     <!-- http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000955 -->
+
 
     <owl:NamedIndividual rdf:about="http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000955">
         <HuPSON:SCAIVPH_00000009>The physical constant 
@@ -426,6 +476,7 @@ source: http://en.wikipedia.org/wiki/Permittivity_of_free_space
 
     <!-- http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000973 -->
 
+
     <owl:NamedIndividual rdf:about="http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000973">
         <HuPSON:SCAIVPH_00000009>The relative permittivity of a material under given conditions reflects the extent to which it concentrates electrostatic lines of flux. Technically, it is the ratio of the amount of electrical energy stored in a material by an applied voltage, relative to that stored in a vacuum. Similarly, it is also the ratio of the capacitance of a capacitor using that material as a dielectric, compared to a similar capacitor which has a vacuum as its dielectric.
 
@@ -448,6 +499,7 @@ source: http://en.wikipedia.org/wiki/Dielectric_constant</HuPSON:SCAIVPH_0000000
 
     <!-- http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000982 -->
 
+
     <owl:NamedIndividual rdf:about="http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000982">
         <HuPSON:SCAIVPH_00000009>The gas constant (also known as the molar, universal, or ideal gas constant, denoted by the symbol R or R) is a physical constant which is featured in a large number of fundamental equations in the physical sciences, such as the ideal gas law and the Nernst equation. It is equivalent to the Boltzmann constant, but expressed in units of energy (i.e. the pressure-volume product) per kelvin per mole (rather than energy per kelvin per particle).
 
@@ -465,6 +517,7 @@ source: http://en.wikipedia.org/wiki/Universal_gas_constant</HuPSON:SCAIVPH_0000
 
     <!-- http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000984 -->
 
+
     <owl:NamedIndividual rdf:about="http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000984">
         <HuPSON:SCAIVPH_00000009>number of coulombs per mole of electrons
 
@@ -476,6 +529,7 @@ source: http://en.wikipedia.org/wiki/Nernst_equation</HuPSON:SCAIVPH_00000009>
 
 
     <!-- http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000995 -->
+
 
     <owl:NamedIndividual rdf:about="http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000995">
         <HuPSON:SCAIVPH_00000009>The gas constant (also known as the molar, universal, or ideal gas constant, denoted by the symbol R or R) is a physical constant which is featured in a large number of fundamental equations in the physical sciences, such as the ideal gas law and the Nernst equation. It is equivalent to the Boltzmann constant, but expressed in units of energy (i.e. the pressure-volume product) per kelvin per mole (rather than energy per kelvin per particle).
@@ -500,6 +554,7 @@ source: http://en.wikipedia.org/wiki/Molar_gas_constant</HuPSON:SCAIVPH_00000009
 
     <!-- http://scai.fraunhofer.de/HuPSON#SCAIVPH_00001001 -->
 
+
     <owl:NamedIndividual rdf:about="http://scai.fraunhofer.de/HuPSON#SCAIVPH_00001001">
         <HuPSON:SCAIVPH_00000009> (sometimes written pi) is a mathematical constant whose value is the ratio of any circle&apos;s circumference to its diameter in the Euclidean plane; this is the same value as the ratio of a circle&apos;s area to the square of its radius. It is approximately equal to 3.14159265 in the usual decimal notation. Many formulae from mathematics, science, and engineering involve pi, which makes it one of the most important mathematical constants.[1]
 
@@ -512,6 +567,7 @@ source: http://en.wikipedia.org/wiki/Pi</HuPSON:SCAIVPH_00000009>
 
 
     <!-- http://scai.fraunhofer.de/HuPSON#SCAIVPH_00001010 -->
+
 
     <owl:NamedIndividual rdf:about="http://scai.fraunhofer.de/HuPSON#SCAIVPH_00001010">
         <HuPSON:SCAIVPH_00000009>In chemical kinetics a reaction rate constant k or  
@@ -542,12 +598,13 @@ source: http://en.wikipedia.org/wiki/Rate_constant</HuPSON:SCAIVPH_00000009>
 
     <!-- http://scai.fraunhofer.de/HuPSON#SCAIVPH_00001047 -->
 
+
     <owl:NamedIndividual rdf:about="http://scai.fraunhofer.de/HuPSON#SCAIVPH_00001047">
         <oboInOwl:related_synonym>speed of sound</oboInOwl:related_synonym>
         <rdfs:label>speed of sound constant</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:comment></rdfs:comment>
     </rdf:Description>
     
 
@@ -560,20 +617,21 @@ source: http://en.wikipedia.org/wiki/Rate_constant</HuPSON:SCAIVPH_00000009>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
-        <dc:source>http://www.owl-ontologies.com/Ontology1215011013.owl#DataType</dc:source>
         <dc:source>http://www.owl-ontologies.com/Ontology1215011013.owl#Data</dc:source>
+        <dc:source>http://www.owl-ontologies.com/Ontology1215011013.owl#DataType</dc:source>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/obo/owlapi/sbo#SBO_0000004">
-        <dc:source>http://purl.org/obo/owlapi/sbo#SBO_0000004</dc:source>
         <dc:source>demo:Model</dc:source>
-        <dc:source>http://www.sarala.bioeng.auckland.ac.nz/CellMLOntology.owl#Model</dc:source>
+        <dc:source>http://purl.org/obo/owlapi/sbo#SBO_0000004</dc:source>
         <dc:source>http://www.owl-ontologies.com/Ontology1215011013.owl#Model</dc:source>
+        <dc:source>http://www.sarala.bioeng.auckland.ac.nz/CellMLOntology.owl#Model</dc:source>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.3.2) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
 
 

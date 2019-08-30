@@ -1,26 +1,26 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.enanomapper.net/onto/external/sio-slim.owl#"
      xml:base="http://purl.enanomapper.net/onto/external/sio-slim.owl"
-     xmlns:schema="http://schema.org/"
-     xmlns:pav="http://purl.org/pav/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:resource="http://semanticscience.org/resource/"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:pav="http://purl.org/pav/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:resource="http://semanticscience.org/resource/">
     <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/sio-slim.owl">
         <protege:defaultLanguage>en</protege:defaultLanguage>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contributors are those that engage in discussions in the context of SIO (in alphabetical order):
+        <dc:contributor>Contributors are those that engage in discussions in the context of SIO (in alphabetical order):
 sivaram arabandi
 christopher baker
 joachim baran
@@ -65,23 +65,22 @@ mailing list: http://groups.google.com/group/sio-ontology
 </terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-03-29</terms:issued>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <terms:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">free to use,share,modify. modify with attribution [http://creativecommons.org/licenses/by/4.0/].</terms:rights>
+        <terms:rights>free to use,share,modify. modify with attribution [http://creativecommons.org/licenses/by/4.0/].</terms:rights>
         <terms:title xml:lang="en">Semanticscience Integrated Ontology (SIO)</terms:title>
-        <pav:importedFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://raw.githubusercontent.com/micheldumontier/semanticscience/master/ontology/sio.owl</pav:importedFrom>
+        <pav:importedFrom>https://raw.githubusercontent.com/micheldumontier/semanticscience/master/ontology/sio.owl</pav:importedFrom>
         <cito:citesAsAuthority rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.jbiomedsem.com/content/5/1/14</cito:citesAsAuthority>
         <vann:preferredNamespacePrefix xml:lang="en">sio</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://semanticscience.org/resource/</vann:preferredNamespaceUri>
-        <schema:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">general class inclusion axioms:
+        <vann:preferredNamespaceUri>http://semanticscience.org/resource/</vann:preferredNamespaceUri>
+        <schema:comment>general class inclusion axioms:
 &apos;is part of&apos; some &apos;physical entity&apos; subClassOf &apos;is located in&apos; some &apos;physical entity&apos;
 
 role chains:
 &apos;has capability&apos; o &apos;is realized in&apos; -&gt; &apos;is participant in&apos;</schema:comment>
-        <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-09-13 20:19:47</oboInOwl:date>
+        <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
+        <oboInOwl:date>2019-08-18 15:25:39</oboInOwl:date>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://sio.semanticscience.org</rdfs:seeAlso>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.43</owl:versionInfo>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
+        <owl:versionInfo>1.43</owl:versionInfo>
+        <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -94,10 +93,19 @@ role chains:
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
+    
+
+
+    <!-- http://protege.stanford.edu/plugins/owl/protege#defaultLanguage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     
@@ -105,11 +113,27 @@ role chains:
 
     <!-- http://purl.org/dc/elements/1.1/alternativeName -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/alternativeName"/>
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/description -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
     
@@ -117,11 +141,13 @@ role chains:
 
     <!-- http://purl.org/dc/terms/alternative -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/alternative"/>
     
 
 
     <!-- http://purl.org/dc/terms/alternativeName -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/alternativeName"/>
     
@@ -129,11 +155,13 @@ role chains:
 
     <!-- http://purl.org/dc/terms/contributor -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
     
 
 
     <!-- http://purl.org/dc/terms/creator -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
@@ -141,11 +169,13 @@ role chains:
 
     <!-- http://purl.org/dc/terms/description -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
 
 
     <!-- http://purl.org/dc/terms/issued -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
     
@@ -153,11 +183,13 @@ role chains:
 
     <!-- http://purl.org/dc/terms/license -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
     <!-- http://purl.org/dc/terms/modified -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
     
@@ -165,17 +197,27 @@ role chains:
 
     <!-- http://purl.org/dc/terms/rights -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
     
 
 
     <!-- http://purl.org/dc/terms/title -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
+    <!-- http://purl.org/pav/importedFrom -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/pav/importedFrom"/>
+    
+
+
     <!-- http://purl.org/spar/cito/citesAsAuthority -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/spar/cito/citesAsAuthority"/>
     
@@ -183,11 +225,13 @@ role chains:
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
     
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
@@ -195,11 +239,13 @@ role chains:
 
     <!-- http://schema.org/comment -->
 
+
     <owl:AnnotationProperty rdf:about="http://schema.org/comment"/>
     
 
 
     <!-- http://semanticscience.org/resource/broaderThan -->
+
 
     <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/broaderThan"/>
     
@@ -207,11 +253,13 @@ role chains:
 
     <!-- http://semanticscience.org/resource/equivalentTo -->
 
+
     <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/equivalentTo"/>
     
 
 
     <!-- http://semanticscience.org/resource/example -->
+
 
     <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/example"/>
     
@@ -219,11 +267,13 @@ role chains:
 
     <!-- http://semanticscience.org/resource/hasSynonym -->
 
+
     <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/hasSynonym"/>
     
 
 
     <!-- http://semanticscience.org/resource/narrowerThan -->
+
 
     <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/narrowerThan"/>
     
@@ -231,11 +281,13 @@ role chains:
 
     <!-- http://semanticscience.org/resource/seeAlso -->
 
+
     <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/seeAlso"/>
     
 
 
     <!-- http://semanticscience.org/resource/similarTo -->
+
 
     <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/similarTo"/>
     
@@ -243,11 +295,27 @@ role chains:
 
     <!-- http://semanticscience.org/resource/subset -->
 
+
     <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/subset"/>
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#auto-generated-by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#auto-generated-by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#date"/>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/homepage -->
+
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
     
@@ -261,10 +329,12 @@ role chains:
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1597 -->
+
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1597"/>
     
@@ -272,17 +342,20 @@ role chains:
 
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1793 -->
 
+
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1793"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
     
 
 
     <!-- http://semanticscience.org/resource/SIO_000769 -->
+
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000769">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1793"/>
@@ -294,6 +367,7 @@ role chains:
 
     <!-- http://semanticscience.org/resource/SIO_000770 -->
 
+
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000770">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1793"/>
         <terms:description xml:lang="en">A standard deviation (represented by the symbol σ) is the quantity of  variation from the average (mean, or expected value).</terms:description>
@@ -303,6 +377,7 @@ role chains:
 
 
     <!-- http://semanticscience.org/resource/SIO_001113 -->
+
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001113">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1793"/>
@@ -315,6 +390,7 @@ role chains:
 
     <!-- http://semanticscience.org/resource/SIO_001114 -->
 
+
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001114">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1793"/>
         <terms:description xml:lang="en">A maximal value is largest value of an attribute for the entities in the defined set.</terms:description>
@@ -325,6 +401,7 @@ role chains:
 
 
     <!-- http://semanticscience.org/resource/SIO_001379 -->
+
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001379">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010471"/>
@@ -337,6 +414,7 @@ role chains:
 
     <!-- http://semanticscience.org/resource/SIO_001393 -->
 
+
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001393">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010471"/>
         <obo:IAO_0000115 xml:lang="en">a post-translational modification is a part of a protein that was added, removed, or modified as a result of a chemical reaction after synthesis.</obo:IAO_0000115>
@@ -348,6 +426,7 @@ role chains:
 
     <!-- http://semanticscience.org/resource/SIO_010055 -->
 
+
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <terms:description xml:lang="en">A strain is a genetic variant or kind of microorganism.</terms:description>
@@ -357,6 +436,7 @@ role chains:
 
 
     <!-- http://semanticscience.org/resource/SIO_010074 -->
+
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010074">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010471"/>
@@ -368,6 +448,7 @@ role chains:
 
     <!-- http://semanticscience.org/resource/SIO_010468 -->
 
+
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010468">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010471"/>
         <terms:description xml:lang="en">An alpha helix is structural region of a protein that is characterized by 3.6 residues per turn,  a translation of 1.5 angstroms along the helical axis in which backbone N-H groups form a hydrogen bond to the backbone carboxyl group of the amino acid four residues prior.</terms:description>
@@ -377,6 +458,7 @@ role chains:
 
 
     <!-- http://semanticscience.org/resource/SIO_010469 -->
+
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010469">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010471"/>
@@ -389,6 +471,7 @@ and having their side chains perpendicular to the planar axis.</terms:descriptio
 
     <!-- http://semanticscience.org/resource/SIO_010471 -->
 
+
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010471">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1597"/>
         <terms:description xml:lang="en">A protein part is any submolecule of a protein.</terms:description>
@@ -398,6 +481,6 @@ and having their side chains perpendicular to the planar axis.</terms:descriptio
 
 
 
-<!-- Generated by the OWL API (version 4.3.2) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
 
 
