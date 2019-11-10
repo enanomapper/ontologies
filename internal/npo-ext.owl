@@ -2852,6 +2852,27 @@
     </owl:Class>
 
 
+    <!-- http://purl.enanomapper.org/onto/ENM_9000246 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000246">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_707"/>
+        <npo-ext:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">copper sulfide nanoparticle</npo-ext:code>
+        <rdfs:label xml:lang="en">copper sulfide nanoparticle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/npo#NPO_707"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_component_part"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51110"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CuS nanoparticle</synonym>
+    </owl:Class>
+
+
 </rdf:RDF>
 
 
