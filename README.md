@@ -115,5 +115,6 @@ Framework Programme for research, technological development and demonstration
 2020 Programme (H2020) under grant agreement nº [731032](https://cordis.europa.eu/project/rcn/212586/factsheet/en).
 [OpenRiskNet](https://openrisknet.org/) is funded by the European Commission within Horizon 2020
 EINFRA-22-2016 Programme under grant agreement no. [731075](https://cordis.europa.eu/project/rcn/206759/factsheet/en).
-
+[NanoSolveIt](https://www.nanosolveit.eu/) has received funding from European Union Horizon
+2020 Programme (H2020) under grant agreement no. 814572.
 
