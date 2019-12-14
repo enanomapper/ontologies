@@ -1,7 +1,7 @@
 ---
 name: Ontology Term Request
 about: Report a term missing in the ontology
-title: "[TERM REQUEST]"
+title: "[TERM REQUEST] **add here the label of the term**"
 labels: enhancement
 assignees: ''
 
