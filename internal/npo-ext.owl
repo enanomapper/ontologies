@@ -107,12 +107,18 @@
     
 
 
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1405 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1405"/>
+    
+    
+    
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1486 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1486"/>
+
+
     
-
-
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1512 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1512"/>
@@ -2740,11 +2746,14 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33416"/>
     
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_51086 -->
 
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_51086"/>
+    
+    
     <!-- http://purl.obolibrary.org/obo/CHEBI_52855 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52855"/>
-    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
@@ -2769,6 +2778,17 @@
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002167"/>
     
+
+
+    <!-- http://purl.org/obo/owl/FIX#FIX_0000053-->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/FIX#FIX_0000053"/>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_00005383-->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000538"/>
 
 
     <!-- http://www.bioassayontology.org/bao#BAO_0002775 -->
@@ -3030,6 +3050,84 @@
         <rdfs:label xml:lang="en">addition of chemicals</rdfs:label>
     </owl:Class>
 
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000064 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:isDefinedBy>Technique used to determine the surface area of solid particles.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Brunauer–Emmett–Teller analysis</rdfs:label>
+    </owl:Class>
+
+
+    <!-- http://purl.enanomapper.org/onto//ENM_0000074 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto//ENM_0000074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:isDefinedBy>Optical system that uses laser diffraction to measure particle size.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Mastersizer</rdfs:label>
+    </owl:Class>
+    
+    
+    <!-- http://purl.enanomapper.org/onto//ENM_0000075 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto//ENM_0000075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:label xml:lang="en">Malvern Zetasizer</rdfs:label>
+    </owl:Class>
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000065 -->
+ 
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000065">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1405"/>
+        <rdfs:isDefinedBy>Particle sizing technique based on Brownian motion and scattered light.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Nanoparticle Tracking Analysis</rdfs:label>
+    </owl:Class>
+    
+    
+    <!-- http://purl.enanomapper.org/onto/ENM_0000073 -->
+    
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
+        <rdfs:isDefinedBy>A liquid used to extract a substance from another material.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">extractant</rdfs:label>
+    </owl:Class>
+    
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000094 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000094">
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FIX#FIX_0000053"/>
+        <rdfs:isDefinedBy>A technique which extends the utility of size based chromatography into the colloidal (sub-micron) region.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Hydrodynamic chromatography</rdfs:label>
+    </owl:Class>
+    
+    
+    
+    <!-- http://purl.enanomapper.org/onto/ENM_0000095 -->
+    
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000095">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+        <rdfs:label xml:lang="en">Single Particle Inductively Coupled Plasma Mass Spectrometry</rdfs:label>
+    </owl:Class>
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000096 -->
+    
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+        <rdfs:label xml:lang="en">Single Particle Time of flight Inductively Coupled Plasma Mass Spectrometry</rdfs:label>
+    </owl:Class>
+    
+    
+    <!-- http://purl.enanomapper.org/onto/ENM_0000097 -->
+    
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+        <rdfs:label xml:lang="en">Single-cell Single Particle Inductively Coupled Plasma Mass Spectrometry</rdfs:label>
+    </owl:Class>
+    
 
 </rdf:RDF>
 
