@@ -7,7 +7,7 @@ The ontology is being developed and maintained by the following EU H2020 project
 [funding](README.md#funding) info):
 
 * [NanoCommons](https://www.nanocommons.eu/)
-* [OpenRiskNet](https://openrisknet.org/)
+* [OpenRiskNet](https://openrisknet.org/) (project ended)
 * [eNanoMapper](http://enanomapper.net/) (project ended)
 
 Other NanoSafety Cluster projects that have contributed by providing feedback and collaborations
