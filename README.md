@@ -1,7 +1,7 @@
 The Ontology
 ============
 
-The eNanoMapper ontologies aim to provide a comprehensive suite of ontologies for the nanomaterial safety assessment domain (see http://www.enanomapper.net for project information). The full suite of ontologies can be found assembled by imports in the primary enanomapper.owl file.
+The eNanoMapper ontologies aim to provide a comprehensive suite of ontologies for the nanomaterial safety assessment domain (see http://www.enanomapper.net for project information). The full suite of ontologies can be found assembled by imports in the primary `enanomapper.owl` file.
 
 The ontology is being developed and maintained by the following EU H2020 projects (see also the below
 [funding](README.md#funding) info):
