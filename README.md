@@ -45,8 +45,10 @@ The full list of ontologies it includes is:
 DOI of Releases
 ---------------
 
-* Version 3: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.47119.svg)](https://doi.org/10.5281/zenodo.47119)
+* Version 6: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3382100.svg)](https://doi.org/10.5281/zenodo.3382100)
+* Version 5: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3237535.svg)](https://doi.org/10.5281/zenodo.3237535)
 * Version 4: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.260098.svg)](https://doi.org/10.5281/zenodo.260098)
+* Version 3: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.47119.svg)](https://doi.org/10.5281/zenodo.47119)
 
 Opening the ontology in Protégé
 ===============================
