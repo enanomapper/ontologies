@@ -99,10 +99,10 @@ Making Releases
 
 1. Update external ontologies
    * Download slimed results from Jenkins workspace for each of the external ontologies
-   * Replace the old *-slim.owl in ontologies/external/
-2. Update internal ontologies in ontologies/internal/
-3. Update the owl.versionInfo of enanomapper.owl
-4. Update the owl.versionInfo of enanomapper-dev.owl
+   * Replace the old `*-slim.owl` in `ontologies/external/`
+2. Update internal ontologies in `ontologies/internal/`
+3. Update the owl.versionInfo of `enanomapper.owl`
+4. Update the owl.versionInfo of `enanomapper-dev.owl`
 5. Release the whole repository in Github https://github.com/enanomapper/ontologies/releases 
 6. Update the DOI number for new release: https://zenodo.org/record/260098
 
