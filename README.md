@@ -98,7 +98,7 @@ Making Releases
 ===============
 
 1. Update external ontologies
-   * Download slimed results from Jenkins workspace for each of the external ontologies
+   * Download slimmed results from Jenkins workspace (artifacts) for each of the external ontologies
    * Replace the old `*-slim.owl` in `ontologies/external/`
 2. Test if the `enanomapper.owl` can be loaded without errors in Protege
 3. check if the metadata in the enanomapper.owl is up to data (e.g. names of people who submitted PRs)
