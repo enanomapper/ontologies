@@ -98,13 +98,16 @@ Making Releases
 ===============
 
 1. Update external ontologies
-   * Download slimed results from Jenkins workspace for each of the external ontologies
+   * Download slimmed results from Jenkins workspace (artifacts) for each of the external ontologies
    * Replace the old `*-slim.owl` in `ontologies/external/`
-2. Update internal ontologies in `ontologies/internal/`
-3. Update the owl.versionInfo of `enanomapper.owl`
-4. Update the owl.versionInfo of `enanomapper-dev.owl`
-5. Release the whole repository in Github https://github.com/enanomapper/ontologies/releases 
-6. Update the DOI number for new release: https://zenodo.org/record/260098
+2. Test if the `enanomapper.owl` can be loaded without errors in Protege
+3. check if the metadata in the enanomapper.owl is up to data (e.g. names of people who submitted PRs)
+4. Update internal ontologies in `ontologies/internal/`
+5. Update the owl.versionInfo of `enanomapper.owl`
+6. Update the owl.versionInfo of `enanomapper-dev.owl`
+7. Write markdown for the release with the changes since the previous release
+8. Release the whole repository in GitHub https://github.com/enanomapper/ontologies/releases 
+9. Update the DOI number for new release: https://zenodo.org/record/260098
 
 Funding
 =======
