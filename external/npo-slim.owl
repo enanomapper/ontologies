@@ -17,7 +17,7 @@
         <dc:identifier>http://purl.bioontology.org/ontology/npo</dc:identifier>
         <pav:importedFrom>https://raw.githubusercontent.com/enanomapper/npo/master/npo-inferred.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2021-01-20 16:59:00</oboInOwl:date>
+        <oboInOwl:date>2021-01-21 14:52:37</oboInOwl:date>
         <rdfs:comment>Inferred version created with Pellet reasoner in Protege editor (v. 4.1)</rdfs:comment>
         <rdfs:comment>The NPO was primarily developed by Dennis G. Thomas in collaboration with Nathan A. Baker and Rohit V. Pappu. This development was supported by the NIH through grants U54 CA119342 and U54 HG004028.</rdfs:comment>
         <owl:versionInfo>2013-05-31 (yyyy-mm-dd)</owl:versionInfo>
@@ -2197,7 +2197,6 @@ By understanding different chemical environments, the chemical shift can be used
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1680">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
         <npo:code>NPO_1680</npo:code>
         <npo:preferred_Name>parameter</npo:preferred_Name>
         <rdfs:label>parameter</rdfs:label>
@@ -2257,6 +2256,7 @@ By understanding different chemical environments, the chemical shift can be used
 
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1692">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <npo:code>NPO_1692</npo:code>
         <npo:preferred_Name>independent specific individual quality</npo:preferred_Name>
         <rdfs:label>independent specific individual quality</rdfs:label>
@@ -2610,7 +2610,6 @@ By understanding different chemical environments, the chemical shift can be used
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1779">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
         <npo:code>NPO_1779</npo:code>
         <npo:preferred_Name>datum value</npo:preferred_Name>
         <rdfs:label>datum value</rdfs:label>
@@ -2622,7 +2621,7 @@ By understanding different chemical environments, the chemical shift can be used
 
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1780">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <npo:code>NPO_1780</npo:code>
         <npo:preferred_Name>number</npo:preferred_Name>
         <rdfs:label>number</rdfs:label>
@@ -6022,6 +6021,13 @@ By understanding different chemical environments, the chemical shift can be used
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
 
 
@@ -6431,19 +6437,6 @@ By understanding different chemical environments, the chemical shift can be used
 
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003009"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant -->
-
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant">
-        <npo:code>NPO_1600</npo:code>
-        <npo:dBXrefID>snap:GenericallyDependentContinuant</npo:dBXrefID>
-        <npo:preferred_Name>generically dependent continuant</npo:preferred_Name>
-        <rdfs:comment>Examples: a certain PDF file that exists in different and in several hard drives</rdfs:comment>
-        <rdfs:label>generically_dependent_continuant</rdfs:label>
-    </owl:Class>
 </rdf:RDF>
 
 
