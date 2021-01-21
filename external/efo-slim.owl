@@ -54,7 +54,7 @@ License. </dc:rights>
         <efo:creator>Sirarat Sarntivijai</efo:creator>
         <efo:creator>Tomasz Adamusiak</efo:creator>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2021-01-20 15:07:54</oboInOwl:date>
+        <oboInOwl:date>2021-01-21 10:31:54</oboInOwl:date>
         <rdfs:comment>2021-01-18</rdfs:comment>
         <owl:versionInfo>3.26.0</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
@@ -1297,6 +1297,23 @@ This annotation property may be replaced with an annotation property from an ext
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
+        <obo:IAO_0000115>A quality is an entity that describes some aspect which is intrinsic to that particular object and is dependent on or more material entities in which it inheres in or is borne by. Example the color of a tomato, the ambient temperature of air, the circumference of a waist, the shape of a nose, the mass of a piece of gold, the weight of a chimpanzee</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001436</efo:EFO_URI>
+        <efo:organizational_class>true</efo:organizational_class>
+        <efo:source_definition>A specifically dependent continuant [snap:SpecificallyDependentContinuant] that is exhibited if it inheres in an entity or entities at all (a categorical property).</efo:source_definition>
+        <oboInOwl:hasAlternativeId>http://www.ifomis.org/bfo/1.1/snap#Quality</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>NCIt:C25283</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT:263496004</oboInOwl:hasDbXref>
+        <rdfs:label>quality</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
 
@@ -1659,6 +1676,7 @@ This annotation property may be replaced with an annotation property from an ext
 
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000399">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:IAO_0000115>A developmental stage is spatiotemporal region encompassing some part of the life cycle of an organism, e.g. blastula stage</obo:IAO_0000115>
         <obo:IAO_0000117>James Malone</obo:IAO_0000117>
         <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
