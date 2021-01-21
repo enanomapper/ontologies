@@ -47,7 +47,7 @@
         <dc:creator>Sydni Joubran</dc:creator>
         <dc:creator>Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:creator>Zuoshuang &quot;Allen&quot; Xiang</dc:creator>
-        <dc:date>2019-6-11</dc:date>
+        <dc:date>2020-8-31</dc:date>
         <dc:description xml:lang="en">The Ontology of Adverse Eventsy (OAE) is a biomedical ontology in the domain of adverse events. OAE aims to standardize adverse event annotation, integrate various adverse event data, and support computer-assisted reasoning.  OAE is a community-based ontology. Its development follows the OBO Foundry principles. Vaccine adverse events have been used as an initial testing use case. OAE also studies adverse events associated with the administration of drug and nutritional products, the operation of surgeries, and the usage of medical devices, etc.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
@@ -55,8 +55,8 @@
         <dc:title xml:lang="en">OAE: Ontology of Adverse Events</dc:title>
         <pav:importedFrom>http://purl.obolibrary.org/obo/oae.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2019-08-18 15:26:55</oboInOwl:date>
-        <owl:versionInfo xml:lang="en">1.2.35</owl:versionInfo>
+        <oboInOwl:date>2021-01-20 15:08:23</oboInOwl:date>
+        <owl:versionInfo xml:lang="en">1.2.36</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
@@ -2987,7 +2987,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
         <obo:IAO_0000117>SS, YH</obo:IAO_0000117>
         <obo:OAE_0004334>10057248</obo:OAE_0004334>
         <rdfs:label xml:lang="en">cell death AE</rdfs:label>
-        <rdfs:seeAlso>HPO: HP_0010885</rdfs:seeAlso>
+        <rdfs:seeAlso>GO: GO_0008219</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0007587</rdfs:seeAlso>
     </owl:Class>
     
@@ -3046,8 +3046,9 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000196">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000187"/>
-        <obo:IAO_0000115 xml:lang="en">a cell death AE that has an outcome of apoptosis. </obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a cell death AE that has an outcome of apoptosis, a form of programmed cell death that occurs in multicellular organisms.</obo:IAO_0000115>
         <obo:IAO_0000117>SS, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Apoptosis</obo:IAO_0000119>
         <obo:OAE_0004334>10059512</obo:OAE_0004334>
         <rdfs:label>apoptosis AE</rdfs:label>
     </owl:Class>
@@ -62781,6 +62782,22 @@ Ref: http://www.mayoclinic.org/tests-procedures/ana-test/basics/definition/prc-2
         <obo:IAO_0000119>http://urologygroup.com/conditions-we-treat/urinary-retention/</obo:IAO_0000119>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10058914</obo:OAE_0004334>
         <rdfs:label xml:lang="en">hypotonic urinary bladder AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004522 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004522">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001172"/>
+        <obo:IAO_0000115>An AE with the fragmentation of the nucleus</obo:IAO_0000115>
+        <obo:IAO_0000117>Anthony Huffman, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Karyorrhexis</obo:IAO_0000119>
+        <obo:IAO_0000119>https://jvi.asm.org/content/78/22/12672.long</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.nature.com/articles/43591</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10063393</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">karyorrhexis AE</rdfs:label>
     </owl:Class>
     
 

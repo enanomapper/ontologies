@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.enanomapper.net/onto/external/chmo-slim.owl#"
      xml:base="http://purl.enanomapper.net/onto/external/chmo-slim.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:pav="http://purl.org/pav/"
@@ -12,9 +13,11 @@
      xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/chmo-slim.owl">
+        <dc:description>CHMO, the chemical methods ontology, describes methods used to collect data in chemical experiments, such as mass spectrometry and electron microscopy prepare and separate material for further analysis, such as sample ionisation, chromatography, and electrophoresis synthesise materials, such as epitaxy and continuous vapour deposition It also describes the instruments used in these experiments, such as mass spectrometers and chromatography columns. It is intended to be complementary to the Ontology for Biomedical Investigations (OBI).</dc:description>
+        <dc:title>Chemical Methods Ontology</dc:title>
         <pav:importedFrom>http://purl.obolibrary.org/obo/chmo.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2019-08-18 15:27:45</oboInOwl:date>
+        <oboInOwl:date>2021-01-20 15:01:29</oboInOwl:date>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:saved-by>batchelorc</oboInOwl:saved-by>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
@@ -65,6 +68,20 @@
         <rdfs:label>Non-mining synonym</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
@@ -229,6 +246,20 @@
     
 
 
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1710 -->
+
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1710"/>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1945 -->
+
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1945"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHMO_0000097 -->
 
 
@@ -331,7 +362,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000097"/>
         <obo:IAO_0000115>Microscopy where an ion beam is scanned over the specimen surface and the secondary electrons emitted are detected.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>FIX:0000963</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasExactSynonym>SIM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>SIM</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>CHMO:0000101</oboInOwl:id>
         <rdfs:label>scanning ion microscopy</rdfs:label>
     </owl:Class>
@@ -343,9 +374,112 @@
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000101"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>SIM</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chmo#non-mining_synonym"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000204 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000204">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115>A method for determining structure by measuring the change in direction or energy of X-rays scattered by a sample at low angles (0–10°).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>SAXS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>small angle X-ray scattering</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000204</oboInOwl:id>
+        <rdfs:label>small-angle X-ray scattering</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000204"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A method for determining structure by measuring the change in direction or energy of X-rays scattered by a sample at low angles (0–10°).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FIX:0000223</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000207 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000207">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115>A method for determining structure by measuring the change in direction or energy of X-rays scattered by a sample at wide angles (&gt;10°).  Wide-angle X-ray scattering is used for determining the structure of polymers.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>WAXS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>wide angle X-ray scattering</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000207</oboInOwl:id>
+        <rdfs:label>wide-angle X-ray scattering</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000207"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A method for determining structure by measuring the change in direction or energy of X-rays scattered by a sample at wide angles (&gt;10°).  Wide-angle X-ray scattering is used for determining the structure of polymers.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FIX:0001128</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000258 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000258">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115>A type of atomic emission spectrometry where a high energy laser pulse is used to generate a plasma which acts as the excitation source.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>LIBS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>LIPS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>laser induced plasma spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>laser induced plasma spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>laser-induced breakdown atomic emission spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>laser-induced breakdown atomic-emission spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>laser-induced plasma atomic emission spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>laser-induced plasma atomic emission spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>laser-induced plasma spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>laser-induced plasma spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000258</oboInOwl:id>
+        <rdfs:label>laser-induced breakdown spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000258"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A type of atomic emission spectrometry where a high energy laser pulse is used to generate a plasma which acts as the excitation source.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000305 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000305">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1710"/>
+        <obo:IAO_0000115>X-ray absorption spectroscopy where changes in the X-ray absorption coefficient measured within 40 eV of the absorption edge (the part of the spectrum where the incident X-ray energy matches the binding energy of an electron) are determined as a function of incident X-ray energy.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>NEXAF spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>NEXAFS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>NEXAFS spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>NEXAFSS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>X-ray absorption near edge structure (XANES) spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>X-ray absorption near edge structure spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>X-ray absorption near edge structure spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>X-ray absorption near-edge structure</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>XANES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>XANES spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>XANES spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>near edge X-ray absorption spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>near-edge X-ray absorption fine structure spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000305</oboInOwl:id>
+        <rdfs:label>near-edge X-ray absorption fine structure spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000305"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>X-ray absorption spectroscopy where changes in the X-ray absorption coefficient measured within 40 eV of the absorption edge (the part of the spectrum where the incident X-ray energy matches the binding energy of an electron) are determined as a function of incident X-ray energy.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FIX:0000025</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FIX:0000376</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -357,11 +491,11 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000115>Spectroscopy where a high energy photon ionises a core electron and an electron from a higher energy level descends to take its place, releasing sufficient energy to eject a second so-called &apos;Auger&apos; electron and the energy of the Auger electron is detected as a function of incident photon energy.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>AEES</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>AES</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Auger electron emission spectroscopy</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Auger electron spectrometry</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Auger spectrometry</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Auger spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>AES</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>CHMO:0000339</oboInOwl:id>
         <rdfs:label>Auger electron spectroscopy</rdfs:label>
     </owl:Class>
@@ -373,7 +507,7 @@
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000339"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>AES</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chmo#non-mining_synonym"/>
     </owl:Axiom>
@@ -426,7 +560,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000341"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Spectroscopy where bombardment of a sample with high-energy photons results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons. The wavelength of the incident photons is scanned over an absorption edge in the sample and the Auger electrons emitted are detected as a function of energy.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>DOI:10.1103/PhysRevLett.88.243001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://doi.org/10.1103/PhysRevLett.88.243001</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -483,7 +617,7 @@
         <oboInOwl:hasExactSynonym>EIAES</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>electron-excited Auger electron spectrometry</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>electron-induced Auger electron spectrometry</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>electron-induced Auger electron spectroscopy </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>electron-induced Auger electron spectroscopy</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0000344</oboInOwl:id>
         <rdfs:label>electron-excited Auger electron spectroscopy</rdfs:label>
     </owl:Class>
@@ -525,9 +659,7 @@
         <obo:IAO_0000115>Spectroscopy where ion bombardment of a sample results in the ionisation of core electrons and the emission of so-called &apos;Auger&apos; electrons, which are detected as a function of incident ion energy.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>IAES</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>IEAES</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>IES</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>IIAES</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>INS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ion neutralisation spectrometry</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ion neutralisation spectroscopy</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ion neutralization spectrometry</oboInOwl:hasExactSynonym>
@@ -537,6 +669,7 @@
         <oboInOwl:hasExactSynonym>ion-induced Auger electron spectrometry</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ion-induced Auger electron spectroscopy</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ionelectron spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>INS</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>CHMO:0000346</oboInOwl:id>
         <rdfs:label>ion-excited Auger electron spectroscopy</rdfs:label>
     </owl:Class>
@@ -723,6 +856,29 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000373 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000373">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115>Spectroscopy where a beam of electrons with a known, narrow range of kinetic energies is transmitted through a sample and the energy distribution of the transmitted electrons is measured.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>CHMO:0002296</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>ETS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>TEELS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>electron transmission spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>electron transmission spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000373</oboInOwl:id>
+        <rdfs:label>transmission electron energy loss spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000373"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where a beam of electrons with a known, narrow range of kinetic energies is transmitted through a sample and the energy distribution of the transmitted electrons is measured.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://doi.org/10.1351/goldbook.T06480</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHMO_0000404 -->
 
 
@@ -751,7 +907,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000404"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Spectroscopy where the sample is illuminated with X-rays causing ionisation and the emission of photoelectrons, the energies of which are measured.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>AU:X06716</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://doi.org/10.1351/goldbook.X06716</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -844,7 +1000,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000408"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Spectroscopy where the sample is illuminated with monochromatic &apos;soft&apos; (&lt;300 eV) X-rays causing ionisation and the emission of photoelectrons, the energies of which are measured.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>DOI:10.1107/S0909049502009214</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://doi.org/10.1107/S0909049502009214</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -855,7 +1011,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000420">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001224"/>
         <obo:IAO_0000115>A type of activation analysis where atomic nuclei are excited (by a heavy ion beam or by collision with another nucleus) and their decaying gamma-ray emissions are measured and compared to reference spectra.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>NAA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>NAA</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>CHMO:0000420</oboInOwl:id>
         <rdfs:label>nuclear activation analysis</rdfs:label>
     </owl:Class>
@@ -945,7 +1101,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000541">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000540"/>
-        <obo:IAO_0000115>Mass spectrometry where a solid sample is ground to a fine powder and suspended in a diluent (such as 0.1% HNO3) before being vaporised by a probe which is rapidly heated by passing a current through it. The vaporised sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass spectrometry where a solid sample is ground to a fine powder and suspended in a diluent (such as 0.1% HNO3) before being vaporised by a probe which is rapidly heated by passing a current through it. The vaporised sample is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>SN-ETV-ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>SN-ETV-ICPMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>slurry nebulisation electrothermal vaporisation inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
@@ -957,7 +1113,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000541"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Mass spectrometry where a solid sample is ground to a fine powder and suspended in a diluent (such as 0.1% HNO3) before being vaporised by a probe which is rapidly heated by passing a current through it. The vaporised sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</owl:annotatedTarget>
+        <owl:annotatedTarget>Mass spectrometry where a solid sample is ground to a fine powder and suspended in a diluent (such as 0.1% HNO3) before being vaporised by a probe which is rapidly heated by passing a current through it. The vaporised sample is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -968,7 +1124,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000542">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000539"/>
-        <obo:IAO_0000115>Mass spectrometry where a solid sample is vaporised by depositing it on a probe which is rapidly heated by passing a current through it. The vaporised sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass spectrometry where a solid sample is vaporised by depositing it on a probe which is rapidly heated by passing a current through it. The vaporised sample is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>SS-ETV-ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>SS-ETV-ICPMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>direct solid sampling electrothermal vaporisation inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
@@ -991,7 +1147,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000542"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Mass spectrometry where a solid sample is vaporised by depositing it on a probe which is rapidly heated by passing a current through it. The vaporised sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</owl:annotatedTarget>
+        <owl:annotatedTarget>Mass spectrometry where a solid sample is vaporised by depositing it on a probe which is rapidly heated by passing a current through it. The vaporised sample is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1002,13 +1158,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000543">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000552"/>
-        <obo:IAO_0000115>A method where a sample mixture is first separated by high-performance liquid chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <obo:IAO_0000115>A method where a sample mixture is first separated by high-performance liquid chromatography before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>HPLC ICP MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>HPLC-ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>HPLC-ICPMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>HPLC/ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>high performance liquid chromatography inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>high performance liquid chromatography-ICPMS </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>high performance liquid chromatography-ICPMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>high performance liquid chromatography-inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>high pressure liquid chromatography inductively coupled mass spectroscopy</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0000543</oboInOwl:id>
@@ -1017,8 +1173,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000543"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A method where a sample mixture is first separated by high-performance liquid chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>DOI:10.1039/b813118j</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A method where a sample mixture is first separated by high-performance liquid chromatography before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://doi.org/10.1039/b813118j</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1028,7 +1184,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000544">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000543"/>
-        <obo:IAO_0000115>A method where a sample mixture is first separated by high-performance liquid chromatography with fluorescence detection before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <obo:IAO_0000115>A method where a sample mixture is first separated by high-performance liquid chromatography with fluorescence detection before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>HPLC-FD-ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>high performance liquid chromatography fluorescence detection inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>high performance liquid chromatography fluorescence detection inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
@@ -1038,7 +1194,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000544"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A method where a sample mixture is first separated by high-performance liquid chromatography with fluorescence detection before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <owl:annotatedTarget>A method where a sample mixture is first separated by high-performance liquid chromatography with fluorescence detection before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1049,7 +1205,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000545">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000543"/>
-        <obo:IAO_0000115>A method where a sample mixture is first separated by high-performance liquid chromatography with photodiode array detection before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <obo:IAO_0000115>A method where a sample mixture is first separated by high-performance liquid chromatography with photodiode array detection before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>HPLC-PDA-ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>high performance liquid chromatography photodiode array inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>high performance liquid chromatography photodiode array inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
@@ -1059,7 +1215,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000545"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A method where a sample mixture is first separated by high-performance liquid chromatography with photodiode array detection before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <owl:annotatedTarget>A method where a sample mixture is first separated by high-performance liquid chromatography with photodiode array detection before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1070,7 +1226,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000546">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
-        <obo:IAO_0000115>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The &apos;exact&apos; mass of the sample ions is then determined as opposed to the &apos;nominal&apos; mass (the number of protons and neutrons).</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction. The &apos;exact&apos; mass of the sample ions is then determined as opposed to the &apos;nominal&apos; mass (the number of protons and neutrons).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>HR-ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>HR-ICPMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>high resolution inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
@@ -1081,7 +1237,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000546"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The &apos;exact&apos; mass of the sample ions is then determined as opposed to the &apos;nominal&apos; mass (the number of protons and neutrons).</owl:annotatedTarget>
+        <owl:annotatedTarget>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction. The &apos;exact&apos; mass of the sample ions is then determined as opposed to the &apos;nominal&apos; mass (the number of protons and neutrons).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1092,7 +1248,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000547">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
-        <obo:IAO_0000115>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The beam of ions is then directed into magnetic field, the orientation of which is perpendicular to the beam. The magnetic field forces the charged particles into different circular trajectories, the radii of which depend on the strength of the magnetic field, the accelerating voltage, and the mass of the ion.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction. The beam of ions is then directed into magnetic field, the orientation of which is perpendicular to the beam. The magnetic field forces the charged particles into different circular trajectories, the radii of which depend on the strength of the magnetic field, the accelerating voltage, and the mass of the ion.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>ICP-SF-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>inductively coupled plasma field sector mass spectroscopy</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0000547</oboInOwl:id>
@@ -1101,7 +1257,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000547"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The beam of ions is then directed into magnetic field, the orientation of which is perpendicular to the beam. The magnetic field forces the charged particles into different circular trajectories, the radii of which depend on the strength of the magnetic field, the accelerating voltage, and the mass of the ion.</owl:annotatedTarget>
+        <owl:annotatedTarget>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction. The beam of ions is then directed into magnetic field, the orientation of which is perpendicular to the beam. The magnetic field forces the charged particles into different circular trajectories, the radii of which depend on the strength of the magnetic field, the accelerating voltage, and the mass of the ion.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1112,7 +1268,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000548">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
-        <obo:IAO_0000115>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The mass-to-charge ratio of the sample ions is then measured whilst the ions are held in a stable orbit by an electric field generated by three electrodes.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction. The mass-to-charge ratio of the sample ions is then measured whilst the ions are held in a stable orbit by an electric field generated by three electrodes.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>ICP-three dimensional-Q-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ICP-three dimensional-QMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>inductively coupled plasma three dimensional quadrupole mass spectroscopy</oboInOwl:hasExactSynonym>
@@ -1122,7 +1278,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000548"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The mass-to-charge ratio of the sample ions is then measured whilst the ions are held in a stable orbit by an electric field generated by three electrodes.</owl:annotatedTarget>
+        <owl:annotatedTarget>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction. The mass-to-charge ratio of the sample ions is then measured whilst the ions are held in a stable orbit by an electric field generated by three electrodes.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1133,7 +1289,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000549">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
-        <obo:IAO_0000115>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The sample ions with different masses are then accelerated to the same (known) kinetic energy and the time taken for each ion to reach a detector at a known distance is measured.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction. The sample ions with different masses are then accelerated to the same (known) kinetic energy and the time taken for each ion to reach a detector at a known distance is measured.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>ICP-TOF-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ICP-TOFMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ICP-ToF-MS</oboInOwl:hasExactSynonym>
@@ -1146,7 +1302,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000549"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The sample ions with different masses are then accelerated to the same (known) kinetic energy and the time taken for each ion to reach a detector at a known distance is measured.</owl:annotatedTarget>
+        <owl:annotatedTarget>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction. The sample ions with different masses are then accelerated to the same (known) kinetic energy and the time taken for each ion to reach a detector at a known distance is measured.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1157,7 +1313,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000550">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
-        <obo:IAO_0000115>Mass spectrometry where the sample is vaporised using a laser pulse then ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass spectrometry where the sample is vaporised using a laser pulse then ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>LA ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>LA-ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>LA-ICPMS</oboInOwl:hasExactSynonym>
@@ -1170,7 +1326,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000550"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Mass spectrometry where the sample is vaporised using a laser pulse then ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</owl:annotatedTarget>
+        <owl:annotatedTarget>Mass spectrometry where the sample is vaporised using a laser pulse then ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ISBN:978-0-470-51634-8</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1181,7 +1337,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000551">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000550"/>
-        <obo:IAO_0000115>Mass spectrometry where the sample is vaporised using a laser pulse then ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The sample ions with different masses are then accelerated to the same (known) kinetic energy and the time taken for each ion to reach a detector at a known distance is measured.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass spectrometry where the sample is vaporised using a laser pulse then ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction. The sample ions with different masses are then accelerated to the same (known) kinetic energy and the time taken for each ion to reach a detector at a known distance is measured.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>LA-ICP-TOF-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>LA-ICP-ToF-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>laser ablation inductively coupled plasma time of flight mass spectrometry</oboInOwl:hasExactSynonym>
@@ -1193,7 +1349,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000551"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Mass spectrometry where the sample is vaporised using a laser pulse then ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The sample ions with different masses are then accelerated to the same (known) kinetic energy and the time taken for each ion to reach a detector at a known distance is measured.</owl:annotatedTarget>
+        <owl:annotatedTarget>Mass spectrometry where the sample is vaporised using a laser pulse then ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction. The sample ions with different masses are then accelerated to the same (known) kinetic energy and the time taken for each ion to reach a detector at a known distance is measured.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1204,7 +1360,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000552">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
-        <obo:IAO_0000115>A method where a sample mixture is first separated by liquid chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <obo:IAO_0000115>A method where a sample mixture is first separated by liquid chromatography before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>LC-ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>LC-ICPMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>LC/ICP-MS</oboInOwl:hasExactSynonym>
@@ -1216,7 +1372,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000552"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A method where a sample mixture is first separated by liquid chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <owl:annotatedTarget>A method where a sample mixture is first separated by liquid chromatography before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FIX:0000865</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -1228,7 +1384,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000553">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
-        <obo:IAO_0000115>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. A series of collectors ised used to detect several ion beams simultaneously.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction. A series of collectors ised used to detect several ion beams simultaneously.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>MC-ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>MC-ICPMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>multi collector-inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
@@ -1241,8 +1397,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000553"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. A series of collectors ised used to detect several ion beams simultaneously.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>DOI:10.1039/b808232d</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction. A series of collectors ised used to detect several ion beams simultaneously.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://doi.org/10.1039/b808232d</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1252,7 +1408,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000554">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
-        <obo:IAO_0000115>A method where a sample mixture is first separated by size-exclusion chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <obo:IAO_0000115>A method where a sample mixture is first separated by size-exclusion chromatography before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>CHMO:0000755</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>SEC-ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>SEC-ICPMS</oboInOwl:hasExactSynonym>
@@ -1266,7 +1422,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000554"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A method where a sample mixture is first separated by size-exclusion chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <owl:annotatedTarget>A method where a sample mixture is first separated by size-exclusion chromatography before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1278,7 +1434,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000555">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000543"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000554"/>
-        <obo:IAO_0000115>A method where a sample mixture is first separated by size-exclusion and high-performance liquid chromatographies before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <obo:IAO_0000115>A method where a sample mixture is first separated by size-exclusion and high-performance liquid chromatographies before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>SEC-HPLC-ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>size-exclusion chromatography-high performance liquid chromatography inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>size-exclusion chromatography-high performance liquid chromatography-inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
@@ -1288,7 +1444,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000555"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A method where a sample mixture is first separated by size-exclusion and high-performance liquid chromatographies before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <owl:annotatedTarget>A method where a sample mixture is first separated by size-exclusion and high-performance liquid chromatographies before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1299,7 +1455,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000556">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
-        <obo:IAO_0000115>Mass spectrometry where a sample mixture (a solution in dilute HNO3) is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass spectrometry where a sample mixture (a solution in dilute HNO3) is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>solution ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>solution ICPMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>solution inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
@@ -1310,7 +1466,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000556"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Mass spectrometry where a sample mixture (a solution in dilute HNO3) is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</owl:annotatedTarget>
+        <owl:annotatedTarget>Mass spectrometry where a sample mixture (a solution in dilute HNO3) is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1321,7 +1477,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000557">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000556"/>
-        <obo:IAO_0000115>Mass spectrometry where a sample mixture (a solution in dilute HNO3) is passed through a nebuliser to form a mist of finely dispersed droplets before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass spectrometry where a sample mixture (a solution in dilute HNO3) is passed through a nebuliser to form a mist of finely dispersed droplets before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>SN-ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>solution nebulisation inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>solution nebulization inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
@@ -1332,7 +1488,29 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000557"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Mass spectrometry where a sample mixture (a solution in dilute HNO3) is passed through a nebuliser to form a mist of finely dispersed droplets before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</owl:annotatedTarget>
+        <owl:annotatedTarget>Mass spectrometry where a sample mixture (a solution in dilute HNO3) is passed through a nebuliser to form a mist of finely dispersed droplets before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000565 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000565">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115>Mass spectrometry where the sample is bombarded with a stream of primary mass-selected particles and the secondary ions ejected from the sample are detected by accelerating them to the same (known) kinetic energy and measuring the time taken for each ion to reach a detector at a known distance. This time is dependent on the mass-to-charge ratio of the ion.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>TOF-SIMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ToF-SIMS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>time-of-flight secondary ion mass spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000565</oboInOwl:id>
+        <rdfs:label>time-of-flight secondary ion mass spectrometry</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000565"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Mass spectrometry where the sample is bombarded with a stream of primary mass-selected particles and the secondary ions ejected from the sample are detected by accelerating them to the same (known) kinetic energy and measuring the time taken for each ion to reach a detector at a known distance. This time is dependent on the mass-to-charge ratio of the ion.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FIX:0000959</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1359,6 +1537,28 @@
         <owl:annotatedTarget>Spectroscopy where the diffuse reflection of a single pulse of infrared radiation by a sample is measured, and the spectrum obtained is subject to a Fourier transform.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FIX:0000657</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000678 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000678">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, from a visible laser (500–650 nm), by metal surfaces, where scattering is enhanced by the optical near-field of a metal-coated scanning probe microscopy tip, is detected.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>TERS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tip-enhanced Raman scattering spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tip-enhanced Raman scattering spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000678</oboInOwl:id>
+        <rdfs:label>tip-enhanced Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000678"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, from a visible laser (500–650 nm), by metal surfaces, where scattering is enhanced by the optical near-field of a metal-coated scanning probe microscopy tip, is detected.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://doi.org/10.1002/anie.200460656</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://doi.org/10.1039/b9nr00156e</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1400,7 +1600,7 @@
         <oboInOwl:hasExactSynonym>CE-ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>CE-ICPMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>CE/ICP/MS</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>capillary electrophoresis inductively coupled plasma-mass spectrometry </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>capillary electrophoresis inductively coupled plasma-mass spectrometry</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>capillary electrophoresis-ICPMS</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0000703</oboInOwl:id>
         <rdfs:label>capillary electrophoresis-inductively coupled plasma mass spectrometry</rdfs:label>
@@ -1419,7 +1619,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000750">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
-        <obo:IAO_0000115>A method where a sample mixture is first separated by capillary liquid chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <obo:IAO_0000115>A method where a sample mixture is first separated by capillary liquid chromatography before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>CapLC-ICPMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>cap-LC-ICPMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>capLC-ICPMS</oboInOwl:hasExactSynonym>
@@ -1430,7 +1630,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000750"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A method where a sample mixture is first separated by capillary liquid chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <owl:annotatedTarget>A method where a sample mixture is first separated by capillary liquid chromatography before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1508,7 +1708,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000871">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
-        <obo:IAO_0000115>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The sample is held in a dynamic reaction cell which contains a reagent gas that reacts preferentially with certain species, in order to allow only the analyte ions into the mass-to-charge analyser and the detector.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction. The sample is held in a dynamic reaction cell which contains a reagent gas that reacts preferentially with certain species, in order to allow only the analyte ions into the mass-to-charge analyser and the detector.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>DRC-ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ICP-DRC-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>dynamic reaction cell inductively coupled plasma mass spectroscopy</oboInOwl:hasExactSynonym>
@@ -1518,7 +1718,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000871"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction. The sample is held in a dynamic reaction cell which contains a reagent gas that reacts preferentially with certain species, in order to allow only the analyte ions into the mass-to-charge analyser and the detector.</owl:annotatedTarget>
+        <owl:annotatedTarget>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction. The sample is held in a dynamic reaction cell which contains a reagent gas that reacts preferentially with certain species, in order to allow only the analyte ions into the mass-to-charge analyser and the detector.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1529,7 +1729,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000872">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
-        <obo:IAO_0000115>A method where a sample mixture is first separated by gas chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <obo:IAO_0000115>A method where a sample mixture is first separated by gas chromatography before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>GC-ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>GC-ICP/MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>gas chromatography inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
@@ -1540,7 +1740,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000872"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A method where a sample mixture is first separated by gas chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <owl:annotatedTarget>A method where a sample mixture is first separated by gas chromatography before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1551,7 +1751,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000873">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
-        <obo:IAO_0000115>A method where a sample mixture is first separated by ion-exchange chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <obo:IAO_0000115>A method where a sample mixture is first separated by ion-exchange chromatography before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>IC-ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>IC-ICP/MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>IEC-ICP-MS</oboInOwl:hasExactSynonym>
@@ -1564,7 +1764,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000873"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A method where a sample mixture is first separated by ion-exchange chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <owl:annotatedTarget>A method where a sample mixture is first separated by ion-exchange chromatography before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1594,7 +1794,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001076">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001075"/>
-        <obo:IAO_0000115>A type of elemental analysis accomplished by combustion of the sample at 1200 deg. C in a stream of unreactive gas and excess oxygen and collection of the products (CO2, H2O and NOx). The masses of these combustion products can be used to calculate the composition of the unknown sample.</obo:IAO_0000115>
+        <obo:IAO_0000115>A type of elemental analysis accomplished by combustion of the sample at 1200 °C in a stream of unreactive gas and excess oxygen and collection of the products (CO2, H2O and NOx). The masses of these combustion products can be used to calculate the composition of the unknown sample.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>C, H, N analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>C, H, N elemental analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>C,H,N analysis</oboInOwl:hasExactSynonym>
@@ -1605,7 +1805,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001076"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A type of elemental analysis accomplished by combustion of the sample at 1200 deg. C in a stream of unreactive gas and excess oxygen and collection of the products (CO2, H2O and NOx). The masses of these combustion products can be used to calculate the composition of the unknown sample.</owl:annotatedTarget>
+        <owl:annotatedTarget>A type of elemental analysis accomplished by combustion of the sample at 1200 °C in a stream of unreactive gas and excess oxygen and collection of the products (CO2, H2O and NOx). The masses of these combustion products can be used to calculate the composition of the unknown sample.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1659,7 +1859,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001224">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001075"/>
         <obo:IAO_0000115>A kind of elemental or isotopic analysis based on the measurement of characteristic radiation from nuclides formed directly or indirectly by activation of the test portion.</obo:IAO_0000115>
-        <oboInOwl:created_by>burchh</oboInOwl:created_by>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-03-25T12:02:33Z</oboInOwl:creation_date>
         <oboInOwl:id>CHMO:0001224</oboInOwl:id>
         <rdfs:label>activation analysis</rdfs:label>
@@ -1668,7 +1868,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001224"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A kind of elemental or isotopic analysis based on the measurement of characteristic radiation from nuclides formed directly or indirectly by activation of the test portion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>AU:A00096</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://doi.org/10.1351/goldbook.A00096</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1679,7 +1879,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001225">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001224"/>
         <obo:IAO_0000115>A kind of activation analysis in which the elemental concentrations in the material are calculated from known nuclear constants, irradiation and measurement parameters, rather than by comparing with known standards.</obo:IAO_0000115>
-        <oboInOwl:created_by>burchh</oboInOwl:created_by>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-03-25T12:05:01Z</oboInOwl:creation_date>
         <oboInOwl:id>CHMO:0001225</oboInOwl:id>
         <rdfs:label>absolute activation analysis</rdfs:label>
@@ -1688,7 +1888,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001225"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A kind of activation analysis in which the elemental concentrations in the material are calculated from known nuclear constants, irradiation and measurement parameters, rather than by comparing with known standards.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>AU:A00018</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://doi.org/10.1351/goldbook.A00018</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1698,8 +1898,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001277">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000543"/>
-        <obo:IAO_0000115>A method where a sample mixture is first separated by reversed-phase high-performance liquid chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
-        <oboInOwl:created_by>burchh</oboInOwl:created_by>
+        <obo:IAO_0000115>A method where a sample mixture is first separated by reversed-phase high-performance liquid chromatography before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-05-06T02:16:07Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>RP-HPLC-ICPMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>reversed phase high performance liquid chromatography inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
@@ -1713,7 +1913,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001277"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A method where a sample mixture is first separated by reversed-phase high-performance liquid chromatography before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <owl:annotatedTarget>A method where a sample mixture is first separated by reversed-phase high-performance liquid chromatography before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1724,8 +1924,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001281">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000543"/>
-        <obo:IAO_0000115>A method where a sample mixture is first separated by high-performance liquid chromatography (flow rate nL min-1) before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
-        <oboInOwl:created_by>burchh</oboInOwl:created_by>
+        <obo:IAO_0000115>A method where a sample mixture is first separated by high-performance liquid chromatography (flow rate nL min-1) before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-05-06T02:39:15Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>nHPLC-ICPMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>nanoHPLC-ICPMS</oboInOwl:hasExactSynonym>
@@ -1734,7 +1934,7 @@
         <oboInOwl:hasExactSynonym>nanoflow HPLC-ICPMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>nanoflow HPLC/ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>nanoflow high performance liquid chromatography inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>nanoflow high performance liquid chromatography-ICPMS </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>nanoflow high performance liquid chromatography-ICPMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>nanoflow high pressure liquid chromatography inductively coupled mass spectroscopy</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0001281</oboInOwl:id>
         <rdfs:label>nanoflow high-performance liquid chromatography-inductively coupled plasma mass spectrometry</rdfs:label>
@@ -1742,7 +1942,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001281"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A method where a sample mixture is first separated by high-performance liquid chromatography (flow rate nL min-1) before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <owl:annotatedTarget>A method where a sample mixture is first separated by high-performance liquid chromatography (flow rate nL min-1) before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1753,15 +1953,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001283">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001281"/>
-        <obo:IAO_0000115>A method where a sample mixture is first separated by reversed-phase high performance liquid chromatography (flow rate nL min-1) before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
-        <oboInOwl:created_by>burchh</oboInOwl:created_by>
+        <obo:IAO_0000115>Inductively coupled plasma mass spectrometry where the sample mixture is first separated by reversed-phase nanoflow high performance liquid chromatography.</obo:IAO_0000115>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-05-06T02:56:31Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>reversed phase nanoflow high performance liquid chromatography inductively coupled plasma mass spectrometry</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>reversed phase nanoflow high performance liquid chromatography-ICPMS </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>reversed phase nanoflow high performance liquid chromatography-ICPMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>reversed phase nanoflow high pressure liquid chromatography inductively coupled mass spectroscopy</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>reversed-phase nHPLC-ICPMS </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>reversed-phase nHPLC-ICPMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>reversed-phase nanoHPLC-ICPMS</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>reversed-phase nanoHPLC-ICPMS </oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>reversed-phase nanoflow HPLC ICP MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>reversed-phase nanoflow HPLC-ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>reversed-phase nanoflow HPLC-ICPMS</oboInOwl:hasExactSynonym>
@@ -1772,8 +1971,26 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001283"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A method where a sample mixture is first separated by reversed-phase high performance liquid chromatography (flow rate nL min-1) before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised by mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <owl:annotatedTarget>Inductively coupled plasma mass spectrometry where the sample mixture is first separated by reversed-phase nanoflow high performance liquid chromatography.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001577 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001577">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1945"/>
+        <obo:IAO_0000115>The transfer of a solute from a liquid phase to another immiscible or partially-miscible liquid phase in contact with it.</obo:IAO_0000115>
+        <oboInOwl:id>CHMO:0001577</oboInOwl:id>
+        <rdfs:label>extraction</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001577"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The transfer of a solute from a liquid phase to another immiscible or partially-miscible liquid phase in contact with it.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>OrangeBook:9.4.1</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1783,8 +2000,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001791">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000539"/>
-        <obo:IAO_0000115>Mass spectrometry where a solid sample is vaporised by depositing it on a probe which is rapidly heated (to &lt;1000 deg. C) by passing a current through it. The vaporised sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</obo:IAO_0000115>
-        <oboInOwl:created_by>burchh</oboInOwl:created_by>
+        <obo:IAO_0000115>Mass spectrometry where a solid sample is vaporised by depositing it on a probe which is rapidly heated (to &lt;1000 °C) by passing a current through it. The vaporised sample is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction.</obo:IAO_0000115>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-05-20T02:37:17Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>LTETV-ICPMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>LTEV-ICPMS</oboInOwl:hasExactSynonym>
@@ -1797,8 +2014,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001791"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Mass spectrometry where a solid sample is vaporised by depositing it on a probe which is rapidly heated (to &lt;1000 deg. C) by passing a current through it. The vaporised sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>DOI:10.1021/ac035437e</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>Mass spectrometry where a solid sample is vaporised by depositing it on a probe which is rapidly heated (to &lt;1000 °C) by passing a current through it. The vaporised sample is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://doi.org/10.1021/ac035437e</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1808,8 +2025,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001931">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002640"/>
-        <obo:IAO_0000115>A method where a sample mixture is first adsorbed onto packed tubes (e.g. Tenax) then each tube is automatically moved into a desorption oven and heated (100--280 deg. C for 5--20 min) to promote thermal desorption of the mixture into the headspace of the tube. The headspace is sampled and used for gas chromatography and the eluent is then ionised and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
-        <oboInOwl:created_by>burchh</oboInOwl:created_by>
+        <obo:IAO_0000115>A method where a sample mixture is first adsorbed onto packed tubes (e.g. Tenax) then each tube is automatically moved into a desorption oven and heated (100–280 °C for 5–20 min) to promote thermal desorption of the mixture into the headspace of the tube. The headspace is sampled and used for gas chromatography and the eluent is then ionised and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-06-08T01:31:14Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>ATC-GCMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ATD, GC/MS</oboInOwl:hasExactSynonym>
@@ -1825,7 +2042,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001931"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A method where a sample mixture is first adsorbed onto packed tubes (e.g. Tenax) then each tube is automatically moved into a desorption oven and heated (100--280 deg. C for 5--20 min) to promote thermal desorption of the mixture into the headspace of the tube. The headspace is sampled and used for gas chromatography and the eluent is then ionised and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <owl:annotatedTarget>A method where a sample mixture is first adsorbed onto packed tubes (e.g. Tenax) then each tube is automatically moved into a desorption oven and heated (100–280 °C for 5–20 min) to promote thermal desorption of the mixture into the headspace of the tube. The headspace is sampled and used for gas chromatography and the eluent is then ionised and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ISBN:0751401587</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1837,7 +2054,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002119">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000115>The measurement of the size distribution in a collection of grains.</obo:IAO_0000115>
-        <oboInOwl:created_by>burchh</oboInOwl:created_by>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-08T09:57:28Z</oboInOwl:creation_date>
         <oboInOwl:id>CHMO:0002119</oboInOwl:id>
         <rdfs:label>granulometry</rdfs:label>
@@ -1857,7 +2074,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002249">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000115>The measurement of the pore diameter, pore-size distribution and total pore volume of a sample.</obo:IAO_0000115>
-        <oboInOwl:created_by>burchh</oboInOwl:created_by>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-08-05T06:14:39Z</oboInOwl:creation_date>
         <oboInOwl:id>CHMO:0002249</oboInOwl:id>
         <rdfs:label>porosimetry</rdfs:label>
@@ -1877,7 +2094,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002250">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002249"/>
         <obo:IAO_0000115>The measurement of the pore diameter, pore-size distribution and total pore volume of a thin porous film sample by measuring the changes in intensity and polarisation of  reflected light during vapour adsorption and desorption.</obo:IAO_0000115>
-        <oboInOwl:created_by>burchh</oboInOwl:created_by>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-08-05T06:16:26Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>EP</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0002250</oboInOwl:id>
@@ -1887,7 +2104,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002250"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The measurement of the pore diameter, pore-size distribution and total pore volume of a thin porous film sample by measuring the changes in intensity and polarisation of  reflected light during vapour adsorption and desorption.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>DOI:10.1016/j.tsf.2005.08.334</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://doi.org/10.1016/j.tsf.2005.08.334</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1897,8 +2114,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002281">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000873"/>
-        <obo:IAO_0000115>A method where a sample mixture is first separated by ion-pair chromatography (where sample ions are &apos;paired&apos; or neutralised and separated as an ion pair on a reversed-phase column) before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
-        <oboInOwl:created_by>burchh</oboInOwl:created_by>
+        <obo:IAO_0000115>A method where a sample mixture is first separated by ion-pair chromatography (where sample ions are &apos;paired&apos; or neutralised and separated as an ion pair on a reversed-phase column) before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-08-19T02:02:55Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>IP-ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>IP-ICP/MS</oboInOwl:hasExactSynonym>
@@ -1914,8 +2131,29 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002281"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A method where a sample mixture is first separated by ion-pair chromatography (where sample ions are &apos;paired&apos; or neutralised and separated as an ion pair on a reversed-phase column) before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <owl:annotatedTarget>A method where a sample mixture is first separated by ion-pair chromatography (where sample ions are &apos;paired&apos; or neutralised and separated as an ion pair on a reversed-phase column) before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0002393 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002393">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115>An electrode which responds to the activity of a primary ion in presence of various other (interfering) ions in the sample solution. Ion-selective electrodes contain a selective membrane which contains fixed or mobile sites that interact with ions in solution.</obo:IAO_0000115>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-09-16T11:06:31Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>ISE</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0002393</oboInOwl:id>
+        <rdfs:label>ion-selective electrode</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002393"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An electrode which responds to the activity of a primary ion in presence of various other (interfering) ions in the sample solution. Ion-selective electrodes contain a selective membrane which contains fixed or mobile sites that interact with ions in solution.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:978-3-540-74597-6</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1925,8 +2163,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002538">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000872"/>
-        <obo:IAO_0000115>A method where a sample mixture is first separated by gas chromatography before part of the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance. Another part of the sample is simultaneously ionised by electrons (energy 70 eV) which have been emitted from a glowing filament and accelerated through an electric field. The ions are then characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
-        <oboInOwl:created_by>burchh</oboInOwl:created_by>
+        <obo:IAO_0000115>A method where a sample mixture is first separated by gas chromatography before part of the sample is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance. Another part of the sample is simultaneously ionised by electrons (energy 70 eV) which have been emitted from a glowing filament and accelerated through an electric field. The ions are then characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-10-21T06:00:00Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>GC-EI-MS/ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>GC/EI-MS/ICP-MS</oboInOwl:hasExactSynonym>
@@ -1936,8 +2174,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002538"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A method where a sample mixture is first separated by gas chromatography before part of the sample is ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance. Another part of the sample is simultaneously ionised by electrons (energy 70 eV) which have been emitted from a glowing filament and accelerated through an electric field. The ions are then characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>DOI:10.1039/b822668f</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A method where a sample mixture is first separated by gas chromatography before part of the sample is ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance. Another part of the sample is simultaneously ionised by electrons (energy 70 eV) which have been emitted from a glowing filament and accelerated through an electric field. The ions are then characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://doi.org/10.1039/b822668f</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1947,8 +2185,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002539">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000872"/>
-        <obo:IAO_0000115>A method where a sample mixture is first separated by low-temperature gas chromatography (-78 deg.C) before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
-        <oboInOwl:created_by>burchh</oboInOwl:created_by>
+        <obo:IAO_0000115>A method where a sample mixture is first separated by low-temperature gas chromatography (-78°C) before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-10-21T06:07:24Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>LT-GC-ICP-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>LT-GC/ICP-MS</oboInOwl:hasExactSynonym>
@@ -1961,7 +2199,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002539"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A method where a sample mixture is first separated by low-temperature gas chromatography (-78 deg.C) before being ionised in a plasma (a partially ionised gas---such as Ar---containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <owl:annotatedTarget>A method where a sample mixture is first separated by low-temperature gas chromatography (-78°C) before being ionised in a plasma (a partially ionised gas–-such as Ar–-containing free electrons) which has been generated by electromagnetic induction, and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1972,8 +2210,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002640">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000872"/>
-        <obo:IAO_0000115>A method where a sample mixture is first adsorbed onto packed tubes (e.g. Tenax) then moved into a desorption oven and heated (100--280 deg. C for 5--20 min) to promote thermal desorption of the mixture into the headspace of the tube. The headspace is sampled and used for gas chromatography and the eluent is then ionised and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
-        <oboInOwl:created_by>burchh</oboInOwl:created_by>
+        <obo:IAO_0000115>A method where a sample mixture is first adsorbed onto packed tubes (e.g. Tenax) then moved into a desorption oven and heated (100–280 °C for 5–20 min) to promote thermal desorption of the mixture into the headspace of the tube. The headspace is sampled and used for gas chromatography and the eluent is then ionised and characterised according to mass-to-charge ratio and relative abundance.</obo:IAO_0000115>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-12-11T01:18:41Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>TD GC-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>TD GC/MS</oboInOwl:hasExactSynonym>
@@ -1994,7 +2232,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002640"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A method where a sample mixture is first adsorbed onto packed tubes (e.g. Tenax) then moved into a desorption oven and heated (100--280 deg. C for 5--20 min) to promote thermal desorption of the mixture into the headspace of the tube. The headspace is sampled and used for gas chromatography and the eluent is then ionised and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
+        <owl:annotatedTarget>A method where a sample mixture is first adsorbed onto packed tubes (e.g. Tenax) then moved into a desorption oven and heated (100–280 °C for 5–20 min) to promote thermal desorption of the mixture into the headspace of the tube. The headspace is sampled and used for gas chromatography and the eluent is then ionised and characterised according to mass-to-charge ratio and relative abundance.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2006,7 +2244,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002651">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000690"/>
         <obo:IAO_0000115>The measurement of the temperature difference between the sample and a reference material during the measurement of the mass of the sample as a function of temperature.</obo:IAO_0000115>
-        <oboInOwl:created_by>burchh</oboInOwl:created_by>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-01-04T04:19:21Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>DTA-TG</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>DTA-TGA</oboInOwl:hasExactSynonym>
