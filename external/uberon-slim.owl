@@ -1,0 +1,2749 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.enanomapper.net/onto/external/uberon-slim.owl#"
+     xml:base="http://purl.enanomapper.net/onto/external/uberon-slim.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:pav="http://purl.org/pav/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:obo2="http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:core1="http://purl.obolibrary.org/obo/core#"
+     xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/uberon-slim.owl">
+        <dc:contributor>Alan Ruttenberg</dc:contributor>
+        <dc:contributor>Alexander Diehl</dc:contributor>
+        <dc:contributor>Ann Maglia</dc:contributor>
+        <dc:contributor>Anna Anagnostopoulos</dc:contributor>
+        <dc:contributor>Bgee Project - http://bgee.unil.ch</dc:contributor>
+        <dc:contributor>Bill Bug</dc:contributor>
+        <dc:contributor>Brian K Hall</dc:contributor>
+        <dc:contributor>Carlo Torniai</dc:contributor>
+        <dc:contributor>Catherine Leroy</dc:contributor>
+        <dc:contributor>Ceri Van Slyke</dc:contributor>
+        <dc:contributor>Cynthia Smith</dc:contributor>
+        <dc:contributor>David Hill</dc:contributor>
+        <dc:contributor>David Osumi-Sutherland</dc:contributor>
+        <dc:contributor>Duncan Davidson</dc:contributor>
+        <dc:contributor>Frederic Bastian</dc:contributor>
+        <dc:contributor>Gene Ontology Consortium</dc:contributor>
+        <dc:contributor>George Gkoutos</dc:contributor>
+        <dc:contributor>Hilmar Lapp</dc:contributor>
+        <dc:contributor>James Balhoff</dc:contributor>
+        <dc:contributor>James Malone</dc:contributor>
+        <dc:contributor>Jonathan Bard</dc:contributor>
+        <dc:contributor>Lydie Lane</dc:contributor>
+        <dc:contributor>Marc Robinson-Rechavi</dc:contributor>
+        <dc:contributor>Mark Engelstad - https://orcid.org/0000-0001-5889-4463</dc:contributor>
+        <dc:contributor>Maryann Martone</dc:contributor>
+        <dc:contributor>NIF Project - http://neuinfo.org/</dc:contributor>
+        <dc:contributor>Onard Mejino</dc:contributor>
+        <dc:contributor>PATO Project</dc:contributor>
+        <dc:contributor>Paul Schofield</dc:contributor>
+        <dc:contributor>Paul Sereno</dc:contributor>
+        <dc:contributor>Paula Duek Roggli</dc:contributor>
+        <dc:contributor>Paula Mabee</dc:contributor>
+        <dc:contributor>Phenoscape Project</dc:contributor>
+        <dc:contributor>Rebecca Foulger</dc:contributor>
+        <dc:contributor>Robert Druzinsky</dc:contributor>
+        <dc:contributor>Sarah Whitcher Kansa - https://orcid.org/0000-0001-7920-5321</dc:contributor>
+        <dc:contributor>Shahim Essaid</dc:contributor>
+        <dc:contributor>Suzanna Lewis</dc:contributor>
+        <dc:contributor>Terry Hayamizu</dc:contributor>
+        <dc:contributor>Terry Meehan</dc:contributor>
+        <dc:contributor>Trish Whetzel</dc:contributor>
+        <dc:contributor>Yvonne Bradford</dc:contributor>
+        <dc:contributor>neXtProt project</dc:contributor>
+        <dc:creator>Alex Dececchi</dc:creator>
+        <dc:creator>Anne Niknejad</dc:creator>
+        <dc:creator>Aurelie Comte</dc:creator>
+        <dc:creator>Chris Mungall - http://orcid.org/0000-0002-6601-2165    </dc:creator>
+        <dc:creator>David Blackburn</dc:creator>
+        <dc:creator>Erik Segerdell</dc:creator>
+        <dc:creator>Melissa Haendel</dc:creator>
+        <dc:creator>Nizar Ibrahim</dc:creator>
+        <dc:creator>Wasila Dahdul</dc:creator>
+        <dc:description>Uberon is an integrated cross-species anatomy ontology representing a variety of entities classified according to traditional anatomical criteria such as structure, function and developmental lineage. The ontology includes comprehensive relationships to taxon-specific anatomical ontologies, allowing integration of functional, phenotype and expression data.</dc:description>
+        <dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://uberon.org</dc:publisher>
+        <dc:source rdf:resource="http://dbpedia.org"/>
+        <dc:source rdf:resource="http://palaeos.com"/>
+        <dc:source rdf:resource="http://www.brain-map.org"/>
+        <dc:source rdf:resource="http://braininfo.rprc.washington.edu/"/>
+        <dc:source rdf:resource="http://en.wikipedia.org/wiki/"/>
+        <dc:source rdf:resource="http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-GrossAnatomy.owl"/>
+        <dc:source rdf:resource="http://pons.incf.org/wiki/Common_Upper_Mammalian_Brain_Ontology_%28Cumbo%29"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/aao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/aba.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/aeo.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/bila.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/bto.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/caro.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/ehdaa2.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/emapa.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/fbbt.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/fma.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/ma.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/mp.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/tao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/vhog.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/vsao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/wbbt.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/xao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/zfa.owl"/>
+        <dc:source rdf:resource="http://uri.neuinfo.org/nif/nifstd"/>
+        <dc:source rdf:resource="http://www.e-lico.eu/public/kupo/kupo.owl"/>
+        <dc:source rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wiki.phenotypercn.org/wg/phenotypercn/index.php?title=Neural_Crest_Workshop</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wiki.phenotypercn.org/wiki/August_2012_Notes</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.google.com/document/d/16JZOuH9sh_a8uIXA4cqg0Q1H6MV5yCj3-rhuKsZoV_U/edit</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.google.com/document/d/1MnUgispgGfNQoezYzWzzGTnkAnI0gzRnJIwdip6MMtw/edit</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.google.com/document/d/1cPWBqrl_Qy7XHEWFqtR_PgQX61yRkgGuLaiDpnEXxkE/edit</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.google.com/document/d/1r9kNPpFYGdu0SpJDLyFAVQczBlG0wAZCBMd18gG3Ot8/edit#</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.google.com/spreadsheet/ccc?key=0Aj8NJdyb-leqdDM0R3hTVTRHRExDVjRCSkZEbDc5N1E#gid=0</dc:source>
+        <dc:source>ISBN:0030229073 Invertebrate Zoology, Barnes</dc:source>
+        <dc:source>ISBN:0073040584 Vertebrates, Kardong</dc:source>
+        <dc:source>ISBN:0123813611 Comparative Anatomy and Histology: A Mouse and Human Atlas, Treuting and Dintzis</dc:source>
+        <dc:source>ISBN:0226313379 Fins into Limbs: Evolution, Development, and Transformation, Hall</dc:source>
+        <dc:source>ISBN:0443065837 Human embryology, Larsen</dc:source>
+        <dc:source>ISBN:0471888893 Comparative Vertebrate Neuroanatomy: Evolution and Adaptation by Butler and Hodos</dc:source>
+        <dc:source>ISBN:0683400088 Stedman&apos;s Medical Dictionary</dc:source>
+        <dc:source>ISBN:1588900649 Color Atlas and Textbook of Human Anatomy: Nervous system and sensory organs By Werner Kahle, Michael Frotscher</dc:source>
+        <dc:source>ISBN:1588903958 Principles and practice of pediatric neurosurgery By A. Leland Albright, P. David Adelson, Ian F. Pollack</dc:source>
+        <dc:source>ISBN:1607950324 Craniofacial Embryogenetics &amp; Development, 2nd edition, Sperber</dc:source>
+        <dc:source>ISBN:978-0-12-369548-2 Principles of Developmental Genetics, Sally A Moody</dc:source>
+        <dc:source>ISBN:9780120749034 The laboratory rat</dc:source>
+        <dc:source>ISBN:9780397517251 Surgical anatomy of the hand and upper extremity. By James R. Doyle and Michael J. Botte</dc:source>
+        <dc:source>ISBN:9780674021839 The Tree of Life - Guillaume Lecointre, Herve Le Guyader</dc:source>
+        <dc:source>ISBN:9780878932504 Developmental Biology</dc:source>
+        <dc:source>MESH</dc:source>
+        <dc:source>PMID:11433360 Placental development: lessons from mouse mutants</dc:source>
+        <dc:source>PMID:16417468 Forgotten and novel aspects in pancreas development, Pieler and Chen</dc:source>
+        <dc:title>Uber-anatomy ontology</dc:title>
+        <terms:isReferencedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://genomebiology.com/2012/13/1/R5</terms:isReferencedBy>
+        <terms:isReferencedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ncbi.nlm.nih.gov/pubmed/22293552</terms:isReferencedBy>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <pav:importedFrom>http://purl.obolibrary.org/obo/uberon.owl</pav:importedFrom>
+        <doap:GitRepository rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/cmungall/uberon/</doap:GitRepository>
+        <doap:SVNRepository rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://obo.svn.sourceforge.net/svnroot/obo/uberon/</doap:SVNRepository>
+        <doap:bug-database rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/issues/</doap:bug-database>
+        <doap:mailing-list rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://lists.sourceforge.net/lists/listinfo/obo-anatomy</doap:mailing-list>
+        <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
+        <oboInOwl:date>2021-02-02 16:39:58</oboInOwl:date>
+        <oboInOwl:default-namespace>uberon</oboInOwl:default-namespace>
+        <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
+        <oboInOwl:treat-xrefs-as-equivalent>AEO</oboInOwl:treat-xrefs-as-equivalent>
+        <oboInOwl:treat-xrefs-as-equivalent>BILA</oboInOwl:treat-xrefs-as-equivalent>
+        <oboInOwl:treat-xrefs-as-equivalent>BSPO</oboInOwl:treat-xrefs-as-equivalent>
+        <oboInOwl:treat-xrefs-as-equivalent>CARO</oboInOwl:treat-xrefs-as-equivalent>
+        <oboInOwl:treat-xrefs-as-equivalent>EFO</oboInOwl:treat-xrefs-as-equivalent>
+        <oboInOwl:treat-xrefs-as-equivalent>GO</oboInOwl:treat-xrefs-as-equivalent>
+        <oboInOwl:treat-xrefs-as-equivalent>OG</oboInOwl:treat-xrefs-as-equivalent>
+        <oboInOwl:treat-xrefs-as-equivalent>VSAO</oboInOwl:treat-xrefs-as-equivalent>
+        <oboInOwl:treat-xrefs-as-has-subclass>EHDAA</oboInOwl:treat-xrefs-as-has-subclass>
+        <oboInOwl:treat-xrefs-as-has-subclass>EV</oboInOwl:treat-xrefs-as-has-subclass>
+        <oboInOwl:treat-xrefs-as-has-subclass>NCIT</oboInOwl:treat-xrefs-as-has-subclass>
+        <oboInOwl:treat-xrefs-as-has-subclass>OGES</oboInOwl:treat-xrefs-as-has-subclass>
+        <oboInOwl:treat-xrefs-as-has-subclass>SCTID</oboInOwl:treat-xrefs-as-has-subclass>
+        <oboInOwl:treat-xrefs-as-is_a>VHOG</oboInOwl:treat-xrefs-as-is_a>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>AAO part_of NCBITaxon:8292</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>DHBA part_of NCBITaxon:9606</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>DMBA part_of NCBITaxon:10090</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>EHDAA2 part_of NCBITaxon:9606</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>EMAPA part_of NCBITaxon:10090</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>FBbt part_of NCBITaxon:7227</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>FBdv part_of NCBITaxon:7227</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>FMA part_of NCBITaxon:9606</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>HAO part_of NCBITaxon:7399</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>HBA part_of NCBITaxon:9606</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>HsapDv part_of NCBITaxon:9606</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>MA part_of NCBITaxon:10090</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>MBA part_of NCBITaxon:10090</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>MFO part_of NCBITaxon:8089</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>MmusDv part_of NCBITaxon:10090</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>OlatDv part_of NCBITaxon:8089</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>PBA part_of NCBITaxon:9443</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>SPD part_of NCBITaxon:6893</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>TADS part_of NCBITaxon:6939</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>TAO part_of NCBITaxon:32443</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>TGMA part_of NCBITaxon:44484</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>WBbt part_of NCBITaxon:6237</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>WBls part_of NCBITaxon:6237</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>XAO part_of NCBITaxon:8353</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>ZFA part_of NCBITaxon:7954</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <oboInOwl:treat-xrefs-as-reverse-genus-differentia>ZFS part_of NCBITaxon:7954</oboInOwl:treat-xrefs-as-reverse-genus-differentia>
+        <rdfs:comment>Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/TEMP&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 437 Logical Axioms: 0]</rdfs:comment>
+        <rdfs:comment>Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/uberon-bridge-to-bfo.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 20 Logical Axioms: 9]</rdfs:comment>
+        <rdfs:comment>Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/uberon/disjoint_union_over.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 38 Logical Axioms: 38]</rdfs:comment>
+        <rdfs:comment>Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/uberon/ext.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 26464 Logical Axioms: 4904]</rdfs:comment>
+        <rdfs:comment>Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/uberon/reflexivity_axioms.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 2 Logical Axioms: 2]</rdfs:comment>
+        <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
+        <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://uberon.org</foaf:homepage>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <oboInOwl:hasDbXref>IAO:0000112</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>example_of_usage</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>example_of_usage</oboInOwl:shorthand>
+        <rdfs:label>example of usage</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <oboInOwl:hasDbXref>IAO:0000116</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>editor_note</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>editor_note</oboInOwl:shorthand>
+        <rdfs:label>editor note</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000231 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
+        <oboInOwl:hasDbXref>IAO:0000232</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>curator_notes</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>curator_notes</oboInOwl:shorthand>
+        <rdfs:label>curator notes</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000424 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000424">
+        <rdfs:label>expand expression to</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000425 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000425">
+        <rdfs:label>expand assertion to</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
+        <rdfs:label>term replaced by</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_isReversiblePropertyChain -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_isReversiblePropertyChain"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002161 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002161">
+        <obo:IAO_0000115>S never_in_taxon T iff: S SubClassOf in_taxon only not T</obo:IAO_0000115>
+        <obo:IAO_0000425>Class: &lt;http://www.w3.org/2002/07/owl#Nothing&gt; EquivalentTo: ?X and (RO_0002162 some ?Y)</obo:IAO_0000425>
+        <oboInOwl:hasDbXref>RO:0002161</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>never_in_taxon</oboInOwl:id>
+        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>never_in_taxon</oboInOwl:shorthand>
+        <rdfs:label>never_in_taxon</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002161"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>S never_in_taxon T iff: S SubClassOf in_taxon only not T</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20973947"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002171 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002171">
+        <obo:IAO_0000425>Class: &lt;http://www.w3.org/2002/07/owl#Nothing&gt; EquivalentTo: (BFO_0000050 some ?X) and (BFO_0000050 some ?Y)</obo:IAO_0000425>
+        <oboInOwl:hasDbXref>RO:0002171</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>mutually_spatially_disjoint_with</oboInOwl:id>
+        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>mutually_spatially_disjoint_with</oboInOwl:shorthand>
+        <rdfs:label>mutually_spatially_disjoint_with</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002173 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002173">
+        <obo:IAO_0000115>S ambiguous_for_taxon T if the class S does not have a clear referent in taxon T. An example would be the class &apos;manual digit 1&apos;, which encompasses a homology hypotheses that is accepted for some species (e.g. human and mouse), but does not have a clear referent in Aves - the referent is dependent on the hypothesis embraced, and also on the ontogenetic stage.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>RO:0002173</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>ambiguous_for_taxon</oboInOwl:id>
+        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>ambiguous_for_taxon</oboInOwl:shorthand>
+        <rdfs:label>ambiguous_for_taxon</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002173"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>S ambiguous_for_taxon T if the class S does not have a clear referent in taxon T. An example would be the class &apos;manual digit 1&apos;, which encompasses a homology hypotheses that is accepted for some species (e.g. human and mouse), but does not have a clear referent in Aves - the referent is dependent on the hypothesis embraced, and also on the ontogenetic stage.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PHENOSCPAE:asilomar_mtg</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002174 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002174">
+        <obo:IAO_0000115>S dubious_for_taxon T if it is probably the case that no instances of S can be found in any instance of T.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>RO:0002174</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dubious_for_taxon</oboInOwl:id>
+        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dubious_for_taxon</oboInOwl:shorthand>
+        <rdfs:comment>this relation lacks a strong logical interpretation, but can be used in place of never_in_taxon where it is desirable to state that the definition of the class is too strict for the taxon under consideration, but placing a never_in_taxon link would result in a chain of inconsistencies that will take time to resolve. Example: metencephalon in teleost</rdfs:comment>
+        <rdfs:label>dubious_for_taxon</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002174"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>S dubious_for_taxon T if it is probably the case that no instances of S can be found in any instance of T.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002175 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002175">
+        <obo:IAO_0000115>S present_in_taxon T if some instance of T has some S. This does not means that all instances of T have an S - it may only be certain life stages or sexes that have S</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>RO:0002175</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>applicable for taxon</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>present_in_taxon</oboInOwl:id>
+        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>present_in_taxon</oboInOwl:shorthand>
+        <rdfs:label>present_in_taxon</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002175"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>S present_in_taxon T if some instance of T has some S. This does not means that all instances of T have an S - it may only be certain life stages or sexes that have S</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002475 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002475">
+        <obo:IAO_0000115>A is has_no_connections_with B if there are no parts of A or B that have a connection with the other.</obo:IAO_0000115>
+        <obo:IAO_0000425>Class: &lt;http://www.w3.org/2002/07/owl#Nothing&gt; EquivalentTo: (BFO_0000050 some ?X) and (RO_0002170 some (BFO_0000050 some ?Y))</obo:IAO_0000425>
+        <oboInOwl:hasDbXref>RO:0002475</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>has_no_connections_with</oboInOwl:id>
+        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>has_no_connections_with</oboInOwl:shorthand>
+        <rdfs:label>has_no_connections_with</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002475"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A is has_no_connections_with B if there are no parts of A or B that have a connection with the other.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000001 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000001">
+        <obo:IAO_0000115>An alternate textual definition for a class taken unmodified from an external source. This definition may have been used to derive a generalized definition for the new class.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBPROP:0000001</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>external_definition</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>external_definition</oboInOwl:shorthand>
+        <rdfs:comment>This annotation property may be replaced with an annotation property from an external ontology such as IAO</rdfs:comment>
+        <rdfs:label>external_definition</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An alternate textual definition for a class taken unmodified from an external source. This definition may have been used to derive a generalized definition for the new class.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000002 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000002">
+        <obo:IAO_0000115>A textual description of an axiom loss in this ontology compared to an external ontology.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBPROP:0000002</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>axiom_lost_from_external_ontology</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>axiom_lost_from_external_ontology</oboInOwl:shorthand>
+        <rdfs:comment>This annotation property may be replaced with an annotation property from an external ontology such as IAO</rdfs:comment>
+        <rdfs:label>axiom_lost_from_external_ontology</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A textual description of an axiom loss in this ontology compared to an external ontology.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000003 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000003">
+        <obo:IAO_0000115>Notes on the homology status of this class.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBPROP:0000003</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>homology_notes</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>homology_notes</oboInOwl:shorthand>
+        <rdfs:comment>This annotation property may be replaced with an annotation property from an external ontology such as IAO</rdfs:comment>
+        <rdfs:label>homology_notes</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000003"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Notes on the homology status of this class.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000005 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000005">
+        <obo:IAO_0000115>An alternate comment for a class taken unmodified from an external source. Note that obo format only allows a single comment for a class, and does not provide a structured means of adding provenance info.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBPROP:0000005</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>external_comment</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>external_comment</oboInOwl:shorthand>
+        <rdfs:comment>This annotation property may be replaced with an annotation property from an external ontology such as IAO</rdfs:comment>
+        <rdfs:label>external_comment</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000005"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An alternate comment for a class taken unmodified from an external source. Note that obo format only allows a single comment for a class, and does not provide a structured means of adding provenance info.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000006 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000006">
+        <oboInOwl:hasDbXref>UBPROP:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>implements_design_pattern</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>implements_design_pattern</oboInOwl:shorthand>
+        <rdfs:label>implements_design_pattern</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000007 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000007">
+        <obo:IAO_0000232>Used to connect a class to an adjectival form of its label. For example, a class with label &apos;intestine&apos; may have a relational adjective &apos;intestinal&apos;.</obo:IAO_0000232>
+        <oboInOwl:hasDbXref>UBPROP:0000007</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>has_relational_adjective</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>has_relational_adjective</oboInOwl:shorthand>
+        <rdfs:label>has_relational_adjective</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000008 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000008">
+        <obo:IAO_0000115>Notes on the how instances of this class vary across species.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBPROP:0000008</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>taxon_notes</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>taxon_notes</oboInOwl:shorthand>
+        <rdfs:label>taxon_notes</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Notes on the how instances of this class vary across species.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000009 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000009">
+        <obo:IAO_0000115>Notes on the evolved function of instances of this class.</obo:IAO_0000115>
+        <obo:IAO_0000116>This annotation property may be replaced with an annotation property from an external ontology such as IAO</obo:IAO_0000116>
+        <oboInOwl:hasDbXref>UBPROP:0000009</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>function_notes</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>function_notes</oboInOwl:shorthand>
+        <rdfs:label>function_notes</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000009"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Notes on the evolved function of instances of this class.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000010 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000010">
+        <obo:IAO_0000115>Notes on the structure, composition or histology of instances of this class.</obo:IAO_0000115>
+        <obo:IAO_0000116>This annotation property may be replaced with an annotation property from an external ontology such as IAO</obo:IAO_0000116>
+        <oboInOwl:hasDbXref>UBPROP:0000010</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>structure_notes</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>structure_notes</oboInOwl:shorthand>
+        <rdfs:label>structure_notes</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000010"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Notes on the structure, composition or histology of instances of this class.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000011 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000011">
+        <obo:IAO_0000115>Notes on the ontogenic development of instances of this class.</obo:IAO_0000115>
+        <obo:IAO_0000116>This annotation property may be replaced with an annotation property from an external ontology such as IAO</obo:IAO_0000116>
+        <oboInOwl:hasDbXref>UBPROP:0000011</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>development_notes</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>development_notes</oboInOwl:shorthand>
+        <rdfs:label>development_notes</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Notes on the ontogenic development of instances of this class.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000012 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000012">
+        <obo:IAO_0000115>Notes on how similar or equivalent classes are represented in other ontologies.</obo:IAO_0000115>
+        <obo:IAO_0000116>This annotation property may be replaced with an annotation property from an external ontology such as IAO</obo:IAO_0000116>
+        <oboInOwl:hasDbXref>UBPROP:0000012</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>external_ontology_notes</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>external_ontology_notes</oboInOwl:shorthand>
+        <rdfs:label>external_ontology_notes</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Notes on how similar or equivalent classes are represented in other ontologies.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000013 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000013">
+        <obo:IAO_0000115>Notes on how lexical conventions regarding this class, in particular any issues that may arise due to homonyny or synonymy.</obo:IAO_0000115>
+        <obo:IAO_0000116>This annotation property may be replaced with an annotation property from an external ontology such as IAO</obo:IAO_0000116>
+        <oboInOwl:hasDbXref>UBPROP:0000013</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>terminology_notes</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>terminology_notes</oboInOwl:shorthand>
+        <rdfs:label>terminology_notes</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000013"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Notes on how lexical conventions regarding this class, in particular any issues that may arise due to homonyny or synonymy.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000014 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000014">
+        <obo:IAO_0000115>Notes on how instances of this class functon biomechanically.</obo:IAO_0000115>
+        <obo:IAO_0000116>This annotation property may be replaced with an annotation property from an external ontology such as IAO</obo:IAO_0000116>
+        <oboInOwl:hasDbXref>UBPROP:0000014</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>action_notes</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>action_notes</oboInOwl:shorthand>
+        <rdfs:label>actions_notes</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000014"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Notes on how instances of this class functon biomechanically.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000015 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000015">
+        <obo:IAO_0000115>Notes on the location, position or part-parents of instances of this class.</obo:IAO_0000115>
+        <obo:IAO_0000116>This annotation property may be replaced with an annotation property from an external ontology such as IAO</obo:IAO_0000116>
+        <oboInOwl:hasDbXref>UBPROP:0000015</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>location_notes</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>location_notes</oboInOwl:shorthand>
+        <rdfs:label>location_notes</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000015"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Notes on the location, position or part-parents of instances of this class.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000100 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000100">
+        <oboInOwl:hasDbXref>UBPROP:0000100</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>is_count_of</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>is_count_of</oboInOwl:shorthand>
+        <rdfs:label>is count of</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000101 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000101">
+        <obo:IAO_0000115>A property used in conjunction with repeated_element_number to indicate an axis and directionality along that axis. If P preceding_element_is R, and P is_count_of S, and X P N, and X&apos; P N+1, then it follows that every X R some X&apos;, and the class expression [S and R some X&apos; and inv(R) some X] is empty (i.e. X is followed by X&apos;, with no intermediates)</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBPROP:0000101</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>preceding_element_is</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>preceding_element_is</oboInOwl:shorthand>
+        <rdfs:label>preceding element is</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000101"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A property used in conjunction with repeated_element_number to indicate an axis and directionality along that axis. If P preceding_element_is R, and P is_count_of S, and X P N, and X&apos; P N+1, then it follows that every X R some X&apos;, and the class expression [S and R some X&apos; and inv(R) some X] is empty (i.e. X is followed by X&apos;, with no intermediates)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000102 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000102">
+        <obo:IAO_0000115>A property used to indicate the position of an element where that element is of a type that is serially repeated linearly along some axis for which a total ordering exists. The ordering may represent an ancestral condition</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBPROP:0000102</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>repeated_element_number</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>repeated_element_number</oboInOwl:shorthand>
+        <rdfs:comment>The range is currently non-negative integer</rdfs:comment>
+        <rdfs:label>repeated element number</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000102"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A property used to indicate the position of an element where that element is of a type that is serially repeated linearly along some axis for which a total ordering exists. The ordering may represent an ancestral condition</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000103 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000103">
+        <obo:IAO_0000115>x pharyngeal_arch_number N if and only if (i) x is a pharyngeal arch, and (ii) x is ancestrally pharyngeal arch number N in a series of pharyngeal arches repeated along a antero-posterior axis, with arch_number 1 being the mandibular arch.</obo:IAO_0000115>
+        <obo:UBPROP_0000013>gill arch N = PA N-2. the term branchial_arch is ambiguous.</obo:UBPROP_0000013>
+        <obo:UBPROP_0000100 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002539"/>
+        <obo:UBPROP_0000101 rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000096"/>
+        <oboInOwl:hasDbXref>UBPROP:0000103</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>pharyngeal_arch_number</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>pharyngeal_arch_number</oboInOwl:shorthand>
+        <rdfs:label>pharyngeal arch number</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000103"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>x pharyngeal_arch_number N if and only if (i) x is a pharyngeal arch, and (ii) x is ancestrally pharyngeal arch number N in a series of pharyngeal arches repeated along a antero-posterior axis, with arch_number 1 being the mandibular arch.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000104 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000104">
+        <obo:IAO_0000115>x ray_number N if and only if (i) x is a ray, and (ii) x is ancestrally associated with ray number N in a series of phalanges repeated along a radio-ulnar or equivalent axis, with ray_number 1 being the anteriormost ray.</obo:IAO_0000115>
+        <obo:UBPROP_0000100 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002544"/>
+        <obo:UBPROP_0000101 rdf:resource="http://purl.obolibrary.org/obo/BSPO_1000000"/>
+        <oboInOwl:hasDbXref>UBPROP:0000104</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>ray_number</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>ray_number</oboInOwl:shorthand>
+        <rdfs:comment>The correct terminology is yet to be established; in tetrapods &apos;ray&apos; might mean the mereological sum of the phalanges of a manual digit plus a metatarsal bone (or equivalent for hindlimb)</rdfs:comment>
+        <rdfs:label>ray number</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000104"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>x ray_number N if and only if (i) x is a ray, and (ii) x is ancestrally associated with ray number N in a series of phalanges repeated along a radio-ulnar or equivalent axis, with ray_number 1 being the anteriormost ray.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000105 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000105">
+        <obo:IAO_0000115>x phalanx_number N if and only if (i) x is a phalanx, and (ii) x is phalanx number N in a series of phalanges repeated along an prixomo-distal axis, with phalanx_number 1 being the proximalmost phalanx. Note that in humans, the distalmost phalanx has phlanax_number 3, except in ray_number 1, where the distalmost has phalanx_number 2</obo:IAO_0000115>
+        <obo:UBPROP_0000100 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003221"/>
+        <obo:UBPROP_0000101 rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000100"/>
+        <oboInOwl:hasDbXref>UBPROP:0000105</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>phalanx_number</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>phalanx_number</oboInOwl:shorthand>
+        <rdfs:comment>Most land mammals including humans have a 2-3-3-3-3 formula in both the hands (or paws) and feet. Primitive reptiles typically had the formula 2-3-4-4-5, and this pattern, with some modification, remained in many later reptiles and in the mammal-like reptiles. The phalangeal formula in the flippers of cetaceans (marine mammals) is 2-12-8-1</rdfs:comment>
+        <rdfs:label>phalanx number</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000105"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>x phalanx_number N if and only if (i) x is a phalanx, and (ii) x is phalanx number N in a series of phalanges repeated along an prixomo-distal axis, with phalanx_number 1 being the proximalmost phalanx. Note that in humans, the distalmost phalanx has phlanax_number 3, except in ray_number 1, where the distalmost has phalanx_number 2</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Phalanx_bone#Phalangeal_formula"/>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000106 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000106">
+        <obo:IAO_0000115>x rib_number N if and only if (i) x is a rib, and (ii) x is rib number N in a series of ribs repeated along an anterior-posterior axis, with rib_number 1 being the anteriormost rib. Note that this property counts ribs, *not* the adjoining vertebrae.</obo:IAO_0000115>
+        <obo:UBPROP_0000008>In the early tetrapods, every vertebra bore a pair of ribs, although those on the thoracic vertebrae are typically the longest. In most subsequent forms, many of these early ribs have been lost, and in living amphibians and reptiles, there is great variation in rib structure and number. For example, turtles have only eight pairs of ribs, which are developed into a bony or cartilagenous carapace and plastron, while snakes have numerous ribs running along the full length of their trunk. Frogs typically have no ribs, aside from a sacral pair, which form part of the pelvis. Mammals usually also only have distinct ribs on the thoracic vertebra, although fixed cervical ribs are also present in monotremes. In marsupials and placental mammals, the cervical and lumbar ribs are found only as tiny remnants fused to the vertebrae, where they are referred to as transverse processes. In general, the structure and number of the true ribs in humans is similar to that in other mammals. Unlike reptiles, caudal ribs are never found in mammals.</obo:UBPROP_0000008>
+        <obo:UBPROP_0000012>Note that in TAO, ribs are numbered by *vertebrae*</obo:UBPROP_0000012>
+        <obo:UBPROP_0000100 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002228"/>
+        <obo:UBPROP_0000101 rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000096"/>
+        <oboInOwl:hasDbXref>UBPROP:0000106</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>rib_number</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>rib_number</oboInOwl:shorthand>
+        <rdfs:label>rib number</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000106"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>x rib_number N if and only if (i) x is a rib, and (ii) x is rib number N in a series of ribs repeated along an anterior-posterior axis, with rib_number 1 being the anteriormost rib. Note that this property counts ribs, *not* the adjoining vertebrae.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000106"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
+        <owl:annotatedTarget>Note that in TAO, ribs are numbered by *vertebrae*</owl:annotatedTarget>
+        <oboInOwl:external_ontology>TAO</oboInOwl:external_ontology>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000107 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000107">
+        <obo:IAO_0000115>x vertebra_number N if and only if (i) x is a vertebra, and (ii) x is vertebra number N in a series of vertebras repeated along an anterior-posterior axis, with vertebra_number 1 being the anteriormost vertebra (also known as the atlas).</obo:IAO_0000115>
+        <obo:UBPROP_0000100 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002412"/>
+        <obo:UBPROP_0000101 rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000096"/>
+        <oboInOwl:hasDbXref>UBPROP:0000107</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>vertebra_number</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>vertebra_number</oboInOwl:shorthand>
+        <rdfs:label>vertebra number</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000107"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>x vertebra_number N if and only if (i) x is a vertebra, and (ii) x is vertebra number N in a series of vertebras repeated along an anterior-posterior axis, with vertebra_number 1 being the anteriormost vertebra (also known as the atlas).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000108 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000108">
+        <obo:IAO_0000115>x somite_number N if and only if (i) x is a somite, and (ii) x is somite number N in a series of somites repeated along an anterior-posterior axis, with somite_number 1 being the anteriormost somite.</obo:IAO_0000115>
+        <obo:UBPROP_0000100 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002329"/>
+        <obo:UBPROP_0000101 rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000096"/>
+        <oboInOwl:hasDbXref>UBPROP:0000108</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>somite_number</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>somite_number</oboInOwl:shorthand>
+        <rdfs:label>somite number</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000108"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>x somite_number N if and only if (i) x is a somite, and (ii) x is somite number N in a series of somites repeated along an anterior-posterior axis, with somite_number 1 being the anteriormost somite.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/100"/>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000109 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000109">
+        <obo:IAO_0000115>x paired_appendage_number N if and only if (i) x is a paired_appendage, and (ii) x is paired_appendage number N in a series of paired_appendages repeated along an anterior-posterior axis, with paired_appendage_number 1 being the anteriormost paired_appendage. In vertebrates, this is the pectoral appendage</obo:IAO_0000115>
+        <obo:UBPROP_0000100 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000026"/>
+        <obo:UBPROP_0000101 rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000096"/>
+        <oboInOwl:hasDbXref>UBPROP:0000109</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>paired_appendage_number</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>paired_appendage_number</oboInOwl:shorthand>
+        <rdfs:label>paired_appendage number</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000109"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>x paired_appendage_number N if and only if (i) x is a paired_appendage, and (ii) x is paired_appendage number N in a series of paired_appendages repeated along an anterior-posterior axis, with paired_appendage_number 1 being the anteriormost paired_appendage. In vertebrates, this is the pectoral appendage</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000110 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000110">
+        <obo:IAO_0000115>x appendage_segment_number N if and only if (i) x is a appendage_segment, and (ii) x is appendage_segment number N in a series of appendage_segments repeated along an proximo-distal axis, with appendage_segment_number 1 being the proximalmost appendage_segment (in tetrapods this would be the stylopod, as we do not classify girdles as appendage segments).</obo:IAO_0000115>
+        <obo:UBPROP_0000100 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010758"/>
+        <obo:UBPROP_0000101 rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000100"/>
+        <oboInOwl:hasDbXref>UBPROP:0000110</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>appendage_segment_number</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>appendage_segment_number</oboInOwl:shorthand>
+        <rdfs:comment>Examples: in dropsphila coxa=1, trochanter=2, femur=3, tibia=4, tarsal segments 1-5=5-9, pretarsus=10</rdfs:comment>
+        <rdfs:label>appendage segment number</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000110"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>x appendage_segment_number N if and only if (i) x is a appendage_segment, and (ii) x is appendage_segment number N in a series of appendage_segments repeated along an proximo-distal axis, with appendage_segment_number 1 being the proximalmost appendage_segment (in tetrapods this would be the stylopod, as we do not classify girdles as appendage segments).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000111 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000111">
+        <obo:IAO_0000115>x rhombomere_number N if and only if (i) x is a rhombomere, and (ii) x is rhombomere number N in a series of rhombomeres repeated along an anterior-posterior axis, with rhombomere_number 1 being the anteriormost rhombomere.</obo:IAO_0000115>
+        <obo:UBPROP_0000100 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001892"/>
+        <obo:UBPROP_0000101 rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000096"/>
+        <oboInOwl:hasDbXref>UBPROP:0000111</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>rhombomere_number</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>rhombomere_number</oboInOwl:shorthand>
+        <rdfs:label>rhombomere number</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000111"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>x rhombomere_number N if and only if (i) x is a rhombomere, and (ii) x is rhombomere number N in a series of rhombomeres repeated along an anterior-posterior axis, with rhombomere_number 1 being the anteriormost rhombomere.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000112 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000112">
+        <obo:IAO_0000115>x tooth_number N if and only if (i) x is a tooth, and (ii) x is ancestrally tooth number N in a series of teeth repeated along an anterior-posterior axis, typically on the lateral side of a structure such as a jaw, with tooth_number 1 being the anteriormost. Note that this count refers to the total number of teeth starting from the first, regardless of the type of tooth. If sub-systems are required for numbering within a series of teeth of the same type, consider a subproperty. For example, in a human, maxillary canine = tooth 3 of upper jaw = canine_tooth 1 of upper jaw</obo:IAO_0000115>
+        <obo:UBPROP_0000100 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001091"/>
+        <obo:UBPROP_0000101 rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000096"/>
+        <oboInOwl:hasDbXref>UBPROP:0000112</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>tooth_number</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>tooth_number</oboInOwl:shorthand>
+        <rdfs:label>tooth number</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000113"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000113 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000113">
+        <obo:IAO_0000115>Syntax: upper/lower = I.C.P.M / I.C.P.M. When used with generic tooth class applies to both deciduous and primary. Should also be used with a taxon property.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBPROP:0000113</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dental_formula</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dental_formula</oboInOwl:shorthand>
+        <rdfs:label>dental formula</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000113"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Syntax: upper/lower = I.C.P.M / I.C.P.M. When used with generic tooth class applies to both deciduous and primary. Should also be used with a taxon property.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Dentition#Dental_formula"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000201 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000201">
+        <oboInOwl:hasDbXref>UBPROP:0000201</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>source_atlas</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>source_atlas</oboInOwl:shorthand>
+        <rdfs:label>source atlas</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000202 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000202">
+        <obo:UBPROP_0000012>FMA has terms like &apos;set of X&apos;. In general we do not include set-of terms in uberon, but provide a mapping between the singular form and the FMA set term</obo:UBPROP_0000012>
+        <oboInOwl:hasDbXref>UBPROP:0000202</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>fma_set_term</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>fma_set_term</oboInOwl:shorthand>
+        <rdfs:label>fma_set_term</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000202"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
+        <owl:annotatedTarget>FMA has terms like &apos;set of X&apos;. In general we do not include set-of terms in uberon, but provide a mapping between the singular form and the FMA set term</owl:annotatedTarget>
+        <oboInOwl:external_ontology>FMA</oboInOwl:external_ontology>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/core#provenance_notes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/core#provenance_notes"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/core#somite_number -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/core#somite_number"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/core#source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/core#source"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/core#tooth_number -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/core#tooth_number"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/core#vertebra_number -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/core#vertebra_number"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#ABBREVIATION -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#ABBREVIATION">
+        <rdfs:label>abbreviation</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#BRAIN_NAME_ABV -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#BRAIN_NAME_ABV">
+        <rdfs:label>brain name abbreviations (drosophila)</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#COMPARATIVE_PREFERRED -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#COMPARATIVE_PREFERRED">
+        <rdfs:label>preferred term in the context of comparative anatomy</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#DEPRECATED -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#DEPRECATED">
+        <rdfs:label>A historic synonym, no longer encouraged</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#DEVELOPMENTAL -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#DEVELOPMENTAL">
+        <rdfs:label>developmental term</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#DUBIOUS -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#DUBIOUS">
+        <rdfs:label>dubious or contested synonym</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#HOMOLOGY -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#HOMOLOGY">
+        <rdfs:label>a synonym made on the basis of a possibly homologous structure in another species</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#HUMAN_PREFERRED -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#HUMAN_PREFERRED">
+        <rdfs:label>preferred term when talking about an instance of this class in Homo sapiens</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#INCONSISTENT -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#INCONSISTENT">
+        <rdfs:label>indicates that a synonym is used in an inconsistent or confusing way, typically between species</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#LATIN -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#LATIN">
+        <rdfs:label>latin term</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#MISSPELLING -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#MISSPELLING">
+        <rdfs:label>a mis-spelling that is in common use and thus recorded</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#NON_AMNIOTE -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#NON_AMNIOTE">
+        <rdfs:label>synonym that is inappropriate for amniotes</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#NON_MAMMAL -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#NON_MAMMAL">
+        <rdfs:label>synonym that is inappropriate for mammals</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#PENDING_REVIEW -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#PENDING_REVIEW">
+        <rdfs:label>expert consultation and attribution required</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#PLURAL -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#PLURAL">
+        <rdfs:label>plural term</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#SENSU -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#SENSU">
+        <rdfs:label>taxonomic disambiguation</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#SYSTEMATIC -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#SYSTEMATIC">
+        <rdfs:label>a systematic synonym used as the base name for design patterns</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#cumbo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#cumbo">
+        <rdfs:comment>CUMBO</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#cyclostome_subset -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#cyclostome_subset">
+        <rdfs:comment>cyclostome structures</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#defined_by_cytoarchitecture -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#defined_by_cytoarchitecture">
+        <rdfs:comment>brain region defined by cyto-architecture</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#defined_by_ordinal_series -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#defined_by_ordinal_series">
+        <rdfs:comment>classes that are defined by relative position counting from first in a series of elements along an axis in an individual organism rather than by strict homology</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#developmental_classification -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#developmental_classification">
+        <rdfs:comment>developmental_classification</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#dubious_grouping -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#dubious_grouping">
+        <rdfs:comment>Indicates that subclasses in AOs may be inappropriately linked</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#early_development -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#early_development">
+        <rdfs:comment>A class that represents an early developmental structure, like a blastocyst. This part of the ontology is undergoing review to remove inappropriate grouping classes.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#efo_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#efo_slim">
+        <rdfs:comment>EFO slim</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#emapa_ehdaa2 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#emapa_ehdaa2">
+        <rdfs:comment>derived from the union of EHDAA2 and EMAPA - still to be checked</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#feed_aligned -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#feed_aligned">
+        <rdfs:comment>subset of classes that have logical defs text defs and synonyms aligned with FEED</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#functional_classification -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#functional_classification">
+        <rdfs:comment>functional_classification</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#grouping_class -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#grouping_class">
+        <rdfs:comment>Subset consisting of classes creating for grouping purposes</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#homologous_in -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#homologous_in">
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>homologous_in</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <rdfs:comment>Status: experimental</rdfs:comment>
+        <rdfs:label>homologous_in</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#homology_grouping -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#homology_grouping">
+        <rdfs:comment>A grouping class that depends on an assumption of homology between subclasses</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#inconsistent_with_fma -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#inconsistent_with_fma">
+        <rdfs:comment>classes that have some inconsistency with FMA</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#major_organ -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#major_organ">
+        <rdfs:comment>somewhat fuzzy grouping for analysis purposes, currently composed of something like: liver, heart, skeletal, kidney, bladder, brain, skin, mouth, esophagus, stomach, small intestine, large intestines, trachea nose, lungs, brain, spinal cord,  peripheral nerves, kidneys, ureters, bladder, urethra, gonads</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#metazoa_core -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#metazoa_core">
+        <rdfs:comment>core classes typically found across metazoa. one purpose is to create a rough set of terms that could be used to start a new metazoan AO. Note this subset is not yet fully fleshed out</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#non_informative -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#non_informative">
+        <rdfs:comment>abstract class brought in to group ontology classes but not informative</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#organ_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#organ_slim">
+        <rdfs:comment>organs, excluding individual muscles and skeletal elements</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#pheno_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#pheno_slim">
+        <rdfs:comment>Phenotype slim</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#phenotype_rcn -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#phenotype_rcn">
+        <rdfs:comment>A subset specifically created for the 2012 Phenotype RCN meeting. Includes some human-specific terms that may eventually be removed when they are adequately represented with part of relationships in FMA</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#uberon_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#uberon_slim">
+        <rdfs:comment>Uberon slim - subset that excludes obscure terms and deep compositional terms</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#unverified_taxonomic_grouping -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#unverified_taxonomic_grouping">
+        <rdfs:comment>Indicates that the class encompasses classes from other AOs that have not been verified</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#upper_level -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#upper_level">
+        <rdfs:comment>abstract upper-level terms not directly useful for analysis</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#vertebrate_core -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#vertebrate_core">
+        <rdfs:comment>core classes typically found across vertebrates. one purpose is to create a rough set of terms that could be used to start a new vertebrate AO</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/isReferencedBy -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isReferencedBy"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/pav/importedFrom -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/pav/importedFrom"/>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#GitRepository -->
+
+
+    <owl:AnnotationProperty rdf:about="http://usefulinc.com/ns/doap#GitRepository"/>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#SVNRepository -->
+
+
+    <owl:AnnotationProperty rdf:about="http://usefulinc.com/ns/doap#SVNRepository"/>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#bug-database -->
+
+
+    <owl:AnnotationProperty rdf:about="http://usefulinc.com/ns/doap#bug-database"/>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#mailing-list -->
+
+
+    <owl:AnnotationProperty rdf:about="http://usefulinc.com/ns/doap#mailing-list"/>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#wiki -->
+
+
+    <owl:AnnotationProperty rdf:about="http://usefulinc.com/ns/doap#wiki">
+        <oboInOwl:hasDbXref rdf:resource="http://usefulinc.com/ns/doap#wiki"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>doap-wiki</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>doap-wiki</oboInOwl:shorthand>
+        <rdfs:label>wiki</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty">
+        <rdfs:label>subset_property</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty">
+        <rdfs:label>synonym_type_property</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#auto-generated-by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#auto-generated-by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#cardonality -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#cardonality"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#cases -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#cases"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#component -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#component"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#composition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#composition"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#conflicts -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#conflicts"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#conflicts_with -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#conflicts_with"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#connected_by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#connected_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#consider -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#consider">
+        <rdfs:label>consider</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#consistent_with -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#consistent_with"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#contradicted_by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#contradicted_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#contributor"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#count -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#count"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#date_retrieved -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#date_retrieved"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#default-namespace -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#default-namespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#different_relation_from -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#different_relation_from"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#editor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#editor"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#editor_note -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#editor_note"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#evidence -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#evidence"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#exactly -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#exactly"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#exception -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#exception"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#exceptions -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#exceptions"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#exceptions_url -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#exceptions_url"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#external_class -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#external_class"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#external_class_label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#external_class_label"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#external_ontology -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#external_ontology"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#gene -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#gene"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
+        <rdfs:label>has_alternative_id</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <rdfs:label>has_broad_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label>database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label>has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+        <rdfs:label>has_narrow_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label>has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label>has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasScope -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasScope">
+        <rdfs:label>has_scope</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonymType -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonymType">
+        <rdfs:label>has_synonym_type</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+        <rdfs:label>in_subset</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inconsistent_with -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inconsistent_with"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inferred_by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inferred_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#isAbout -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#isAbout"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_about -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_about"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_class_level -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_class_level"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_entailed -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_entailed"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_indirect -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_indirect"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_inferred -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_inferred"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_metadata_tag -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_redundant -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_redundant"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#laterality -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#laterality"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#min_cardinality -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#min_cardinality"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#min_count -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#min_count"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#missing_from -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#missing_from"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#modified_from -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#modified_from"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#never_in_taxon -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#never_in_taxon"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#not_supported_by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#not_supported_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#note -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#note"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#notes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#notes"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#ontology -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#ontology"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#ontology_class -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#ontology_class"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#order -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#order"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#possible_exception -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#possible_exception"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#proportion -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#proportion"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#quote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#quote"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#reference -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#reference"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#region -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#region"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#saved-by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#saved-by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#seeAlso -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#seeAlso"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
+        <rdfs:label>shorthand</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#souce -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#souce"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#source"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#specialization_within -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#specialization_within"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#src -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#src"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#stage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#stage"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#status"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#submitter -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#submitter"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#taxon -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#taxon"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#taxon_notes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#taxon_notes"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#todo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#todo"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-equivalent -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-equivalent"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-has-subclass -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-has-subclass"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-is_a -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-is_a"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-reverse-genus-differentia -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-reverse-genus-differentia"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#url -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#url"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#version -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#version"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/UBPROP_0000006 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/UBPROP_0000006"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <oboInOwl:hasDbXref rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>seeAlso</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>seeAlso</oboInOwl:shorthand>
+        <rdfs:label>see also</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#deprecated -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depicted_by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depicted_by">
+        <oboInOwl:hasDbXref rdf:resource="http://xmlns.com/foaf/0.1/depicted_by"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>depicted_by</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>depicted_by</oboInOwl:shorthand>
+        <rdfs:label>depicted by</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/page -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/page">
+        <oboInOwl:hasDbXref rdf:resource="http://xmlns.com/foaf/0.1/page"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>foaf-page</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>foaf-page</oboInOwl:shorthand>
+        <rdfs:label>page</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000062 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <obo:IAO_0000115>Anatomical structure that performs a specific function or group of functions [WP].</obo:IAO_0000115>
+        <obo:UBPROP_0000001>Organs are commonly observed as visibly distinct structures, but may also exist as loosely associated clusters of cells that work together to perform a specific function or functions.</obo:UBPROP_0000001>
+        <obo:UBPROP_0000012>CARO v1 does not include a generic &apos;organ&apos; class, only simple and compound organ. CARO v2 may include organ, see https://github.com/obophenotype/caro/issues/4</obo:UBPROP_0000012>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Organ_(anatomy)"/>
+        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0178784"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/272625005"/>
+        <oboInOwl:hasDbXref>BIRNLEX:4</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0020004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000634</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EMAPA:35949</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ENVO:01000162</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:67498</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0003001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C13018</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OpenCyc:Mx4rv5XMb5wpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OpenCyc:Mx4rwP3iWpwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0178784</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>WBbt:0003760</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>anatomical unit</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>body organ</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>element</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0000062</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
+        <rdfs:label>organ</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000062"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Anatomical structure that performs a specific function or group of functions [WP].</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Organ_(anatomy)"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000062"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <owl:annotatedTarget>Organs are commonly observed as visibly distinct structures, but may also exist as loosely associated clusters of cells that work together to perform a specific function or functions.</owl:annotatedTarget>
+        <oboInOwl:source>GO:0048513</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C0178784</owl:annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Organ</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>element</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000115>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C1515976"/>
+        <oboInOwl:hasDbXref>AAO:0010841</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AEO:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BILA:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BIRNLEX:6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0002229</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBbt:10000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBbt_root:00000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:62955</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HAO:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0000001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C12219</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0100000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGMA:0001822</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C1515976</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>WBbt:0000100</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0100000</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>UBERON:0001062</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
+        <rdfs:label>anatomical entity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0001-9114-8737"/>
+        <oboInOwl:hasDbXref>FMA:62955</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C1515976</owl:annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Anatomic_Structure_System_or_Substance</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002530 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002530">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000062"/>
+        <obo:IAO_0000115>an organ that functions as a secretory or excretory organ</obo:IAO_0000115>
+        <obo:UBPROP_0000007>glandular</obo:UBPROP_0000007>
+        <oboInOwl:hasAlternativeId>UBERON:MIAA_0000021</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Gland"/>
+        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C1285092"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/134358001"/>
+        <oboInOwl:hasDbXref>AAO:0000212</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AEO:0000096</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0000522</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000797</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0003096</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA:2161</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA:4475</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA:6522</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EMAPA:18425</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBbt:00100317</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:7146</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:86294</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HAO:0000375</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0003038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MAT:0000021</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MIAA:0000021</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C13319</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OpenCyc:Mx4rwP3vyJwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C1285092</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>WikipediaCategory:Glands</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:Gland</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>glandular organ</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>Druese</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>glandula</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0002530</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
+        <rdfs:label>gland</rdfs:label>
+        <foaf:depicted_by rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://upload.wikimedia.org/wikipedia/commons/a/a1/Gray1026.png</foaf:depicted_by>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002530"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>an organ that functions as a secretory or excretory organ</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>MGI:csmith</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MP:0002163</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002530"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C1285092</owl:annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Gland</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002530"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>glandular organ</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0002-6601-2165"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002530"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Druese</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>BTO:0000522</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002530"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>glandula</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Gland"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002530"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>glandula</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>BTO:0000522</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0006925 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006925">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002530"/>
+        <obo:IAO_0000115>Any gland that is part of the digestive system.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>AAO:0000130</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0000345</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>digestive gland</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0006925</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#organ_slim"/>
+        <rdfs:label>digestive system gland</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006925"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any gland that is part of the digestive system.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>UBERON:cjm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006925"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>digestive gland</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>BTO:0000345</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_2000404">
+        <core1:provenance_notes>This class was sourced from an external ontology (teleost_anatomy). Its definitions, naming conventions and relationships may need to be checked for compatibility with uberon</core1:provenance_notes>
+        <oboInOwl:consider>ZFA:0000404</oboInOwl:consider>
+        <oboInOwl:created_by>teleost_anatomy_curators</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>uberon/phenoscape-anatomy</oboInOwl:hasOBONamespace>
+        <rdfs:label>obsolete paracommissural nucleus</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-contributor</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-contributor</oboInOwl:shorthand>
+        <rdfs:label>contributor</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/elements/1.1/creator"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-creator</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-creator</oboInOwl:shorthand>
+        <rdfs:label>creator</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/elements/1.1/description"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-description</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-description</oboInOwl:shorthand>
+        <rdfs:label>description</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/publisher">
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/elements/1.1/publisher"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-publisher</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-publisher</oboInOwl:shorthand>
+        <rdfs:label>publisher</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/source">
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/elements/1.1/source"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-source</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-source</oboInOwl:shorthand>
+        <rdfs:label>derived from resource</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/elements/1.1/title"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-title</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-title</oboInOwl:shorthand>
+        <rdfs:label>title</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/isReferencedBy">
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/terms/isReferencedBy"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dcterms-isReferencedBy</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dcterms-isReferencedBy</oboInOwl:shorthand>
+        <rdfs:label>is referenced by</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/terms/license"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dcterms-license</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dcterms-license</oboInOwl:shorthand>
+        <rdfs:label>license</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://usefulinc.com/ns/doap#GitRepository">
+        <oboInOwl:hasDbXref rdf:resource="http://usefulinc.com/ns/doap#GitRepository"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>doap-GitRepository</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>doap-GitRepository</oboInOwl:shorthand>
+        <rdfs:label>Git repository</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://usefulinc.com/ns/doap#SVNRepository">
+        <oboInOwl:hasDbXref rdf:resource="http://usefulinc.com/ns/doap#SVNRepository"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>doap-SVNRepository</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>doap-SVNRepository</oboInOwl:shorthand>
+        <rdfs:label>SVN repository</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://usefulinc.com/ns/doap#bug-database">
+        <oboInOwl:hasDbXref rdf:resource="http://usefulinc.com/ns/doap#bug-database"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>doap-bug-database</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>doap-bug-database</oboInOwl:shorthand>
+        <rdfs:label>bug database</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://usefulinc.com/ns/doap#mailing-list">
+        <oboInOwl:hasDbXref rdf:resource="http://usefulinc.com/ns/doap#mailing-list"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>doap-mailing-list</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>doap-mailing-list</oboInOwl:shorthand>
+        <rdfs:label>mailing list</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion">
+        <rdfs:label>has_obo_format_version</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-equivalent">
+        <rdfs:label>treat-xrefs-as-equivalent</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-has-subclass">
+        <rdfs:label>treat-xrefs-as-has-subclass</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-is_a">
+        <rdfs:label>treat-xrefs-as-is_a</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-reverse-genus-differentia">
+        <rdfs:label>treat-xrefs-as-reverse-genus-differentia</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/homepage">
+        <oboInOwl:hasDbXref rdf:resource="http://xmlns.com/foaf/0.1/homepage"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>foaf-homepage</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>foaf-homepage</oboInOwl:shorthand>
+        <rdfs:label>homepage</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+
