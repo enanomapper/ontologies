@@ -107,7 +107,7 @@ Making Releases
 2. Test if the `enanomapper.owl` can be loaded without errors in Protege
    * And run the Makefile with ```make check``` in the ```internal/``` folder
 3. check if the metadata in the enanomapper.owl is up to data (e.g. names of people who submitted PRs)
-4. Update internal ontologies in `ontologies/internal/`
+4. Copy the internal ontologies in `ontologies/internal-dev/` to `ontologies/internal`
 5. Update the owl.versionInfo of `enanomapper.owl`
 6. Update the owl.versionInfo of `enanomapper-dev.owl`
 7. Write markdown for the release with the changes since the previous release
