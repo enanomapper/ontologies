@@ -69,7 +69,11 @@ Building and validating the ontology
 During (and after) the eNanoMapper project the ontology was autobuilt using scripts on
 [a Jenkins server](https://jenm.bigcat.maastrichtuniversity.nl/). The main OWL file (enanomapper.owl)
 refers to slimmed versions of external ontologies, complemented with internal files adding additional
-terms. The slimming of the external ontologies is done with the Slimmer tool, with these commands (for the
+terms. The extensions are OWL files themselves and you can load them in Protege
+and use the ```internal/Makefile``` to run ```xmllint``` on the extensions to see of the OWL
+files are well-formed.
+
+The slimming of the external ontologies is done with the Slimmer tool, with these commands (for the
 BioAssay Ontology):
 
 ```shell
@@ -101,8 +105,9 @@ Making Releases
    * Download slimmed results from Jenkins workspace (artifacts) for each of the external ontologies
    * Replace the old `*-slim.owl` in `ontologies/external/`
 2. Test if the `enanomapper.owl` can be loaded without errors in Protege
+   * And run the Makefile with ```make check``` in the ```internal/``` folder
 3. check if the metadata in the enanomapper.owl is up to data (e.g. names of people who submitted PRs)
-4. Update internal ontologies in `ontologies/internal/`
+4. Copy the internal ontologies in `ontologies/internal-dev/` to `ontologies/internal`
 5. Update the owl.versionInfo of `enanomapper.owl`
 6. Update the owl.versionInfo of `enanomapper-dev.owl`
 7. Write markdown for the release with the changes since the previous release
