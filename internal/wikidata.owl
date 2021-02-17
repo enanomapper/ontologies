@@ -7,7 +7,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:npo="http://purl.bioontology.org/ontology/npo#">
 
     <owl:Ontology rdf:about="http://enanomapper.github.io/ontologies/internal/wikidata.owl">
         <dc:contributor>Egon Willighagen</dc:contributor>
@@ -19,7 +20,7 @@
       <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q41550"/>
       <rdfs:label xml:lang="en">Test No. 490: In Vitro Mammalian Cell Gene Mutation Tests Using the Thymidine Kinase Gene</rdfs:label>
     </owl:Class>
-    
+
     <!-- http://www.wikidata.org/entity/Q57975142 -->
 
     <owl:Class rdf:about="http://www.wikidata.org/entity/Q57975142">
@@ -243,14 +244,14 @@
       <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q41550"/>
       <rdfs:label xml:lang="en">Test No. 106: Adsorption -- Desorption Using a Batch Equilibrium Method</rdfs:label>
     </owl:Class>
-	
+
 	<!-- http://www.wikidata.org/entity/Q41550 -->
 
     <owl:Class rdf:about="http://www.wikidata.org/entity/Q41550">
       <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17564"/>
       <rdfs:label xml:lang="en">Organisation for Economic Cooperation and Development</rdfs:label>
-	  <rdfs:label>OECD</rdfs:label>
+	    <npo:synonym>OECD</npo:synonym>
     </owl:Class>
 
-    
+
 </rdf:RDF>
