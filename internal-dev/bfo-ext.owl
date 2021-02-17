@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.enanomapper.net/onto/internal/bfo-ext.owl#"
+     xml:base="http://purl.enanomapper.net/onto/internal/bfo-ext.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+    <owl:Ontology rdf:about="http://enanomapper.github.io/ontologies/internal/bfo-ext.owl">
+        <dc:contributor>Laurent Winckers</dc:contributor>
+	<dc:license>CC-BY 4.0 https://creativecommons.org/licenses/by/4.0/</dc:license>
+	<rdfs:comment>This ontology contains proposed extensions to the Basic Formal ON, which in due course will be submitted to the BFO. </rdfs:comment>
+    </owl:Ontology>
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000107 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">Preferential orientation</rdfs:label>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000103 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">osmotic concentration</rdfs:label>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000101 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">redox speciation</rdfs:label>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000114">
+  	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  	<obo:IAO_0000115>The evolutionary process by which populations evolve to become distinct species.</obo:IAO_0000115>
+  	<rdfs:label xml:lang="en">Speciation</rdfs:label>
+    </owl:Class>
+   
+</rdf:RDF>

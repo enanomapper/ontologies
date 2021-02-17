@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rdf:RDF
+    xmlns:otee="http://www.opentox.org/echaEndpoints.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Toxicity_to_birds">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EcotoxicEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>3.12</dc:identifier>
+    <dc:title>Toxicity to birds</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#BAF_fish">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#BioAccumulation"/>
+    </rdfs:subClassOf>
+    <dc:identifier>2.5.a</dc:identifier>
+    <dc:title>BAF fish</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Long-term_toxicity_to_fish_egg_sac_fry_growth_inhibition_of_juvenile_fish_early_life_stage_full_life_cycle">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EcotoxicEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>3.5</dc:identifier>
+    <dc:title>Long-term toxicity to fish (egg/sac fry, growth inhibition of juvenile fish, early life stage, full life cycle)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Toxicity_to_earthworms_survival_growth_reproduction">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EcotoxicEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>3.8</dc:identifier>
+    <dc:title>Toxicity to earthworms (survival, growth, reproduction)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#PersistenceAbioticDegradationAir">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EnvironmentalFateParameters"/>
+    </rdfs:subClassOf>
+    <dc:identifier>2.2</dc:identifier>
+    <dc:title>Persistence: Abiotic degradation in air (Phototransformation)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Acute_toxicity_to_fish_lethality">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EcotoxicEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>3.3</dc:identifier>
+    <dc:title>Acute toxicity to fish (lethality)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Ready_not_ready_biodegradability">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#PersistenceBiodegradation"/>
+    </rdfs:subClassOf>
+    <dc:identifier>2.3.a</dc:identifier>
+    <dc:title>Ready/not ready biodegradability</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Long-term_toxicity_survival_growth_reproduction">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#Toxicity_to_birds"/>
+    <dc:identifier>3.12.b</dc:identifier>
+    <dc:title>Long-term toxicity (survival, growth, reproduction)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#PhysicoChemicalEffects">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Endpoints"/>
+    </rdfs:subClassOf>
+    <dc:identifier>1</dc:identifier>
+    <dc:title>Physicochemical effects </dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#ToxicoKinetics">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Endpoints"/>
+    </rdfs:subClassOf>
+    <dc:identifier>5</dc:identifier>
+    <dc:title>Toxicokinetics </dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#AcuteInhalationToxicity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#HumanHealthEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>4.1</dc:identifier>
+    <dc:title>Acute inhalation toicity</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Other_e.g._inhibition_of_specific_enzymes_involved_in_hormone_synthesis_or_regulation_specify_enzyme_s_and_hormone">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EndocrineActivity"/>
+    </rdfs:subClassOf>
+    <dc:identifier>4.18.c</dc:identifier>
+    <dc:title>Other (e.g. inhibition of specific enzymes involved in hormone synthesis or regulation, specify enzyme(s) and hormone)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Blood-brain_barrier_penetration">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#ToxicoKinetics"/>
+    <dc:identifier>5.4</dc:identifier>
+    <dc:title>Blood-brain barrier penetration</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Protein-binding">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#ToxicoKinetics"/>
+    <dc:identifier>5.9</dc:identifier>
+    <dc:title>Protein-binding</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Vegetation-soil_partition_coefficient">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EnvironmentalFateParameters"/>
+    </rdfs:subClassOf>
+    <dc:identifier>2.11</dc:identifier>
+    <dc:title>Vegetation-soil partition coefficient</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Biodegradation_time_frame_primary_ultimate_degradation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#PersistenceBiodegradation"/>
+    </rdfs:subClassOf>
+    <dc:identifier>2.3.b</dc:identifier>
+    <dc:title>Biodegradation time frame (primary, ultimate degradation)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#BAF_other_organisms">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#BioAccumulation"/>
+    </rdfs:subClassOf>
+    <dc:identifier>2.5.b</dc:identifier>
+    <dc:title>BAF other organisms </dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Direct_photolysis">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#PersistenceAbioticDegradationAir"/>
+    <dc:identifier>2.2.a</dc:identifier>
+    <dc:title>Direct photolysis</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Short-term_toxicity_to_Daphnia_immobilisation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EcotoxicEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>3.1</dc:identifier>
+    <dc:title>Short-term toxicity to Daphnia (immobilisation)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Short-term_toxicity_to_algae_inhibition_of_the_exponential_growth_rate">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EcotoxicEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>3.2</dc:identifier>
+    <dc:title>Short-term toxicity to algae (inhibition of the exponential growth rate)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Toxicity_to_soil_invertebrates_survival_growth_reproduction">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EcotoxicEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>3.10</dc:identifier>
+    <dc:title>Toxicity to soil invertebrates (survival, growth, reproduction)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Adsorption_Desorption_in_soil">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EnvironmentalFateParameters"/>
+    </rdfs:subClassOf>
+    <dc:identifier>2.7</dc:identifier>
+    <dc:title>Adsorption/Desorption in soil </dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EcotoxicEffects">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Endpoints"/>
+    </rdfs:subClassOf>
+    <dc:identifier>3</dc:identifier>
+    <dc:title>Ecotoxic effects</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Eye_irritation_corrosion">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#HumanHealthEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>4.9</dc:identifier>
+    <dc:title>Eye irritation/corrosion</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Organic_carbon-sorption_partition_coefficient_organic_carbon_Koc">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EnvironmentalFateParameters"/>
+    </rdfs:subClassOf>
+    <dc:identifier>2.6</dc:identifier>
+    <dc:title>Organic carbon-sorption partition coefficient (organic carbon; Koc)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Indirect_photolysis_OH-radical_reaction_ozone-radical_reaction_other">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#PersistenceAbioticDegradationAir"/>
+    <dc:identifier>2.2.b</dc:identifier>
+    <dc:title>Indirect photolysis (OH-radical reaction, ozone-radical reaction, other)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Mutagenicity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#HumanHealthEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>4.10</dc:identifier>
+    <dc:title>Mutagenicity </dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Placental_barrier_penetration">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#ToxicoKinetics"/>
+    <dc:identifier>5.5</dc:identifier>
+    <dc:title>Placental barrier penetration</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Dissociation_constant_pKa">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#PhysicoChemicalEffects"/>
+    <dc:identifier>1.10</dc:identifier>
+    <dc:title>Dissociation constant (pKa)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#PersistenceBiodegradation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EnvironmentalFateParameters"/>
+    </rdfs:subClassOf>
+    <dc:identifier>2.3</dc:identifier>
+    <dc:title>Persistence: Biodegradation</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Adsorption_Desorption_in_sediment">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EnvironmentalFateParameters"/>
+    </rdfs:subClassOf>
+    <dc:identifier>2.8</dc:identifier>
+    <dc:title>Adsorption/Desorption in sediment</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#In_vivo_pre-natal-developmental_toxicity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#HumanHealthEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>4.16</dc:identifier>
+    <dc:title>In vivo pre-natal-developmental toxicity</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Blood-testis_barrier_penetration">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#ToxicoKinetics"/>
+    <dc:identifier>5.6</dc:identifier>
+    <dc:title>Blood-testis barrier penetration</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Skin_penetration">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#ToxicoKinetics"/>
+    <dc:identifier>5.1</dc:identifier>
+    <dc:title>Skin penetration</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Surface_tension">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#PhysicoChemicalEffects"/>
+    <dc:identifier>1.5</dc:identifier>
+    <dc:title>Surface tension</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#AcuteOralToxicity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#HumanHealthEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>4.2</dc:identifier>
+    <dc:title>Acute oral toxicity</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EndocrineActivity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#HumanHealthEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>4.18</dc:identifier>
+    <dc:title>Endocrine Activity</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Acute_photoirritation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#HumanHealthEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>4.5</dc:identifier>
+    <dc:title>Acute photoirritation</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#PersistenceAbioticDegradationWater">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EnvironmentalFateParameters"/>
+    </rdfs:subClassOf>
+    <dc:identifier>2.1</dc:identifier>
+    <dc:title>Persistence: Abiotic degradation in water</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#In_vitro_reproductive_toxicity_e.g._embryotoxic_effects_in_cell_culture_such_as_embryo_stem_cells">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#HumanHealthEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>4.15</dc:identifier>
+    <dc:title>In vitro reproductive toxicity (e.g. embryotoxic effects in cell culture such as embryo stem cells)  </dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#SkinIrritationCorrosion">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#HumanHealthEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>4.4</dc:identifier>
+    <dc:title>Skin irritation /corrosion</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Toxicity_to_plants_leaves_seed_germination_root_elongation">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#EcotoxicEffects"/>
+    <dc:identifier>3.9</dc:identifier>
+    <dc:title>Toxicity to plants (leaves, seed germination, root elongation)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#SkinSensitisation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#HumanHealthEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>4.6</dc:identifier>
+    <dc:title>Skin sensitisation</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#In_vivo_pre-_peri-_post_natal_development_and_or_fertility_1_or_2_gen._Study_or_enhanced_1_gen_study">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#HumanHealthEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>4.17</dc:identifier>
+    <dc:title>In vivo pre-, peri-, post natal development and / or fertility (1 or 2 gen. Study or enhanced 1 gen study) </dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Gastrointestinal_absorption">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#ToxicoKinetics"/>
+    <dc:identifier>5.3</dc:identifier>
+    <dc:title>Gastrointestinal absorption</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Water_solubility">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#PhysicoChemicalEffects"/>
+    <dc:identifier>1.3</dc:identifier>
+    <dc:title>Water solubility</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Octanol-water_partition_coefficient_Kow">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#PhysicoChemicalEffects"/>
+    <dc:identifier>1.6</dc:identifier>
+    <dc:title>Octanol-water partition coefficient (Kow)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Air-_water_partition_coefficient_Henry_s_law_constant_H">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#PhysicoChemicalEffects"/>
+    <dc:identifier>1.9</dc:identifier>
+    <dc:title>Air- water partition coefficient (Henry`s law constant, H)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Hydrolysis">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#PersistenceAbioticDegradationWater"/>
+    <dc:identifier>2.1.a</dc:identifier>
+    <dc:title>Hydrolysis </dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#BCF_other_organisms">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#BioConcentration"/>
+    </rdfs:subClassOf>
+    <dc:identifier>2.5.b</dc:identifier>
+    <dc:title>BCF other organisms </dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Receptor-binding">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#EndocrineActivity"/>
+    <dc:identifier>4.18.a</dc:identifier>
+    <dc:title>Receptor-binding (specify receptor)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Vegetation-water_partition_coefficient">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EnvironmentalFateParameters"/>
+    </rdfs:subClassOf>
+    <dc:identifier>2.9</dc:identifier>
+    <dc:title>Vegetation-water partition coefficient</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#BioAccumulation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EnvironmentalFateParameters"/>
+    </rdfs:subClassOf>
+    <dc:identifier>2.5</dc:identifier>
+    <dc:title>Bioaccumulation</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Photomutagenicity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#HumanHealthEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>4.11</dc:identifier>
+    <dc:title>Photomutagenicity</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#BCF_fish">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#BioConcentration"/>
+    </rdfs:subClassOf>
+    <dc:identifier>2.4.a</dc:identifier>
+    <dc:title>BCF fish</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Respiratory_sensitisation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#HumanHealthEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>4.7</dc:identifier>
+    <dc:title>Respiratory sensitisation</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Oxidation">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#PersistenceAbioticDegradationWater"/>
+    <dc:identifier>2.1.b</dc:identifier>
+    <dc:title>Oxidation </dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Blood-lung_barrier_penetration">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#ToxicoKinetics"/>
+    <dc:identifier>5.7</dc:identifier>
+    <dc:title>Blood-lung barrier penetration</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Vegetation-air_partition_coefficient">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EnvironmentalFateParameters"/>
+    </rdfs:subClassOf>
+    <dc:identifier>2.10</dc:identifier>
+    <dc:title>Vegetation-air partition coefficient</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Vapour_pressure">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#PhysicoChemicalEffects"/>
+    <dc:identifier>1.4</dc:identifier>
+    <dc:title>Vapour pressure</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Persistence_Others">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#PersistenceAbioticDegradationWater"/>
+    <dc:identifier>2.1.c</dc:identifier>
+    <dc:title>Others</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#EnvironmentalFateParameters">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Endpoints"/>
+    </rdfs:subClassOf>
+    <dc:identifier>2</dc:identifier>
+    <dc:title>Environmental fate parameters </dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#OcularMembranePenetration">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#ToxicoKinetics"/>
+    <dc:identifier>5.2</dc:identifier>
+    <dc:title>Ocular membrane penetration</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Long-term_toxicity_to_Daphnia_lethality_inhibition_of_reproduction">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#EcotoxicEffects"/>
+    <dc:identifier>3.4</dc:identifier>
+    <dc:title>Long-term toxicity to Daphnia (lethality, inhibition of reproduction)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Endpoints">
+    <dc:title>Endpoints</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Octanol-air_partition_coefficient_Koa">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#PhysicoChemicalEffects"/>
+    <dc:identifier>1.8</dc:identifier>
+    <dc:title>Octanol-air partition coefficient (Koa)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Toxicity_to_sediment_organisms_survival_growth_reproduction">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#EcotoxicEffects"/>
+    <dc:identifier>3.11</dc:identifier>
+    <dc:title>Toxicity to sediment organisms (survival, growth, reproduction)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Receptor_binding_and_gene_expression">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#EndocrineActivity"/>
+    <dc:identifier>4.18.b</dc:identifier>
+    <dc:title>Receptor binding and gene expression (specify receptor)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Microbial_inhibition_activated_sludge_respiration_inhibition_inhibition_of_nitrification_other">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#EcotoxicEffects"/>
+    <dc:identifier>3.6</dc:identifier>
+    <dc:title>Microbial inhibition (activated sludge respiration inhibition, inhibition of nitrification, other)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#AcuteDermalToxicity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#HumanHealthEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>4.3</dc:identifier>
+    <dc:title>Acute dermal toxicity</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#BioConcentration">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#EnvironmentalFateParameters"/>
+    <dc:identifier>2.4</dc:identifier>
+    <dc:title>Bioconcentration </dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Octanol-water_distribution_coefficient_D">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#PhysicoChemicalEffects"/>
+    <dc:identifier>1.7</dc:identifier>
+    <dc:title>Octanol-water distribution coefficient (D)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Metabolism">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#ToxicoKinetics"/>
+    <dc:identifier>5.8</dc:identifier>
+    <dc:title>Metabolism (including metabolic clearance)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Melting_point">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#PhysicoChemicalEffects"/>
+    <dc:identifier>1.1</dc:identifier>
+    <dc:title>Melting point</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Photocarcinogenicity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#HumanHealthEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>4.13</dc:identifier>
+    <dc:title>Photocarcinogenicity</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Repeated_dose_toxicity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#HumanHealthEffects"/>
+    </rdfs:subClassOf>
+    <dc:identifier>4.14</dc:identifier>
+    <dc:title>Repeated dose toxicity </dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#HumanHealthEffects">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#Endpoints"/>
+    <dc:identifier>4</dc:identifier>
+    <dc:title>Human health effects</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Photosensitisation">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#HumanHealthEffects"/>
+    <dc:identifier>4.8</dc:identifier>
+    <dc:title>Photosensitisation</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Toxicity_to_soil_microorganisms_inhibition_of_C-mineralisation_inhibition_of_N-mineralisation_other">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#EcotoxicEffects"/>
+    <dc:identifier>3.7</dc:identifier>
+    <dc:title>Toxicity to soil microorganisms (inhibition of C-mineralisation, inhibition of N-mineralisation, other)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Short_term_toxicity_feeding_gavage_other">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#Toxicity_to_birds"/>
+    <dc:identifier>3.12.a</dc:identifier>
+    <dc:title>Short term toxicity (feeding, gavage, other)</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Boiling_point">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#PhysicoChemicalEffects"/>
+    <dc:identifier>1.2</dc:identifier>
+    <dc:title>Boiling point</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#Carcinogenicity">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#HumanHealthEffects"/>
+    <dc:identifier>4.12</dc:identifier>
+    <dc:title>Carcinogenicity</dc:title>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opentox.org/echaEndpoints.owl#DNA-binding">
+    <rdfs:subClassOf rdf:resource="http://www.opentox.org/echaEndpoints.owl#ToxicoKinetics"/>
+    <dc:identifier>5.10</dc:identifier>
+    <dc:title>DNA-binding</dc:title>
+  </owl:Class>
+  <otee:SkinSensitisation rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Skin sensitisation">
+    <dc:title>Skin sensitisation</dc:title>
+  </otee:SkinSensitisation>
+  <otee:Other_e.g._inhibition_of_specific_enzymes_involved_in_hormone_synthesis_or_regulation_specify_enzyme_s_and_hormone rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Other (e_g_ inhibition of specific enzymes involved in hormone synthesis or regulation, specify enzyme(s) and hormone)">
+    <dc:title>Other (e.g. inhibition of specific enzymes involved in hormone synthesis or regulation, specify enzyme(s) and hormone)</dc:title>
+  </otee:Other_e.g._inhibition_of_specific_enzymes_involved_in_hormone_synthesis_or_regulation_specify_enzyme_s_and_hormone>
+  <otee:BCF_other_organisms rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_BCF other organisms">
+    <dc:title>BCF other organisms </dc:title>
+  </otee:BCF_other_organisms>
+  <otee:Protein-binding rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Protein-binding">
+    <dc:title>Protein-binding</dc:title>
+  </otee:Protein-binding>
+  <otee:BioAccumulation rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Bioaccumulation">
+    <dc:title>Bioaccumulation</dc:title>
+  </otee:BioAccumulation>
+  <otee:In_vitro_reproductive_toxicity_e.g._embryotoxic_effects_in_cell_culture_such_as_embryo_stem_cells rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_In vitro reproductive toxicity (e_g_ embryotoxic effects in cell culture such as embryo stem cells)">
+    <dc:title>In vitro reproductive toxicity (e.g. embryotoxic effects in cell culture such as embryo stem cells)  </dc:title>
+  </otee:In_vitro_reproductive_toxicity_e.g._embryotoxic_effects_in_cell_culture_such_as_embryo_stem_cells>
+  <otee:PersistenceBiodegradation rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Persistence: Biodegradation">
+    <dc:title>Persistence: Biodegradation</dc:title>
+  </otee:PersistenceBiodegradation>
+  <otee:Toxicity_to_birds rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Toxicity to birds">
+    <dc:title>Toxicity to birds</dc:title>
+  </otee:Toxicity_to_birds>
+  <otee:Vapour_pressure rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Vapour pressure">
+    <dc:title>Vapour pressure</dc:title>
+  </otee:Vapour_pressure>
+  <otee:Ready_not_ready_biodegradability rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Ready/not ready biodegradability">
+    <dc:title>Ready/not ready biodegradability</dc:title>
+  </otee:Ready_not_ready_biodegradability>
+  <otee:Blood-brain_barrier_penetration rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Blood-brain barrier penetration">
+    <dc:title>Blood-brain barrier penetration</dc:title>
+  </otee:Blood-brain_barrier_penetration>
+  <otee:Receptor_binding_and_gene_expression rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Receptor binding and gene expression (specify receptor)">
+    <dc:title>Receptor binding and gene expression (specify receptor)</dc:title>
+  </otee:Receptor_binding_and_gene_expression>
+  <otee:Skin_penetration rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Skin penetration">
+    <dc:title>Skin penetration</dc:title>
+  </otee:Skin_penetration>
+  <otee:OcularMembranePenetration rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Ocular membrane penetration">
+    <dc:title>Ocular membrane penetration</dc:title>
+  </otee:OcularMembranePenetration>
+  <otee:EndocrineActivity rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Endocrine Activity">
+    <dc:title>Endocrine Activity</dc:title>
+  </otee:EndocrineActivity>
+  <otee:DNA-binding rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_DNA-binding">
+    <dc:title>DNA-binding</dc:title>
+  </otee:DNA-binding>
+  <otee:Gastrointestinal_absorption rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Gastrointestinal absorption">
+    <dc:title>Gastrointestinal absorption</dc:title>
+  </otee:Gastrointestinal_absorption>
+  <otee:AcuteDermalToxicity rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Acute dermal toxicity">
+    <dc:title>Acute dermal toxicity</dc:title>
+  </otee:AcuteDermalToxicity>
+  <otee:Blood-lung_barrier_penetration rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Blood-lung barrier penetration">
+    <dc:title>Blood-lung barrier penetration</dc:title>
+  </otee:Blood-lung_barrier_penetration>
+  <otee:Dissociation_constant_pKa rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Dissociation constant (pKa)">
+    <dc:title>Dissociation constant (pKa)</dc:title>
+  </otee:Dissociation_constant_pKa>
+  <otee:Long-term_toxicity_to_Daphnia_lethality_inhibition_of_reproduction rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Long-term toxicity to Daphnia (lethality, inhibition of reproduction)">
+    <dc:title>Long-term toxicity to Daphnia (lethality, inhibition of reproduction)</dc:title>
+  </otee:Long-term_toxicity_to_Daphnia_lethality_inhibition_of_reproduction>
+  <otee:Vegetation-soil_partition_coefficient rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Vegetation-soil partition coefficient">
+    <dc:title>Vegetation-soil partition coefficient</dc:title>
+  </otee:Vegetation-soil_partition_coefficient>
+  <otee:SkinIrritationCorrosion rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Skin irritation /corrosion">
+    <dc:title>Skin irritation /corrosion</dc:title>
+  </otee:SkinIrritationCorrosion>
+  <otee:Adsorption_Desorption_in_soil rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Adsorption/Desorption in soil">
+    <dc:title>Adsorption/Desorption in soil </dc:title>
+  </otee:Adsorption_Desorption_in_soil>
+  <otee:AcuteOralToxicity rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Acute oral toxicity">
+    <dc:title>Acute oral toxicity</dc:title>
+  </otee:AcuteOralToxicity>
+  <otee:Toxicity_to_sediment_organisms_survival_growth_reproduction rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Toxicity to sediment organisms (survival, growth, reproduction)">
+    <dc:title>Toxicity to sediment organisms (survival, growth, reproduction)</dc:title>
+  </otee:Toxicity_to_sediment_organisms_survival_growth_reproduction>
+  <otee:Photosensitisation rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Photosensitisation">
+    <dc:title>Photosensitisation</dc:title>
+  </otee:Photosensitisation>
+  <otee:Water_solubility rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Water solubility">
+    <dc:title>Water solubility</dc:title>
+  </otee:Water_solubility>
+  <otee:BioConcentration rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Bioconcentration">
+    <dc:title>Bioconcentration </dc:title>
+  </otee:BioConcentration>
+  <otee:Acute_photoirritation rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Acute photoirritation">
+    <dc:title>Acute photoirritation</dc:title>
+  </otee:Acute_photoirritation>
+  <otee:Short-term_toxicity_to_Daphnia_immobilisation rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Short-term toxicity to Daphnia (immobilisation)">
+    <dc:title>Short-term toxicity to Daphnia (immobilisation)</dc:title>
+  </otee:Short-term_toxicity_to_Daphnia_immobilisation>
+  <otee:Short_term_toxicity_feeding_gavage_other rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Short term toxicity (feeding, gavage, other)">
+    <dc:title>Short term toxicity (feeding, gavage, other)</dc:title>
+  </otee:Short_term_toxicity_feeding_gavage_other>
+  <otee:Respiratory_sensitisation rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Respiratory sensitisation">
+    <dc:title>Respiratory sensitisation</dc:title>
+  </otee:Respiratory_sensitisation>
+  <otee:Air-_water_partition_coefficient_Henry_s_law_constant_H rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Air- water partition coefficient (Henry`s law constant, H)">
+    <dc:title>Air- water partition coefficient (Henry`s law constant, H)</dc:title>
+  </otee:Air-_water_partition_coefficient_Henry_s_law_constant_H>
+  <otee:Blood-testis_barrier_penetration rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Blood-testis barrier penetration">
+    <dc:title>Blood-testis barrier penetration</dc:title>
+  </otee:Blood-testis_barrier_penetration>
+  <otee:PersistenceAbioticDegradationAir rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Persistence: Abiotic degradation in air (Phototransformation)">
+    <dc:title>Persistence: Abiotic degradation in air (Phototransformation)</dc:title>
+  </otee:PersistenceAbioticDegradationAir>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+  <otee:ToxicoKinetics rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Toxicokinetics">
+    <dc:title>Toxicokinetics </dc:title>
+  </otee:ToxicoKinetics>
+  <otee:Eye_irritation_corrosion rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Eye irritation/corrosion">
+    <dc:title>Eye irritation/corrosion</dc:title>
+  </otee:Eye_irritation_corrosion>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+  <otee:Acute_toxicity_to_fish_lethality rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Acute toxicity to fish (lethality)">
+    <dc:title>Acute toxicity to fish (lethality)</dc:title>
+  </otee:Acute_toxicity_to_fish_lethality>
+  <otee:Receptor-binding rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Receptor-binding (specify receptor)">
+    <dc:title>Receptor-binding (specify receptor)</dc:title>
+  </otee:Receptor-binding>
+  <otee:Placental_barrier_penetration rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Placental barrier penetration">
+    <dc:title>Placental barrier penetration</dc:title>
+  </otee:Placental_barrier_penetration>
+  <otee:Direct_photolysis rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Direct photolysis">
+    <dc:title>Direct photolysis</dc:title>
+  </otee:Direct_photolysis>
+  <otee:In_vivo_pre-natal-developmental_toxicity rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_In vivo pre-natal-developmental toxicity">
+    <dc:title>In vivo pre-natal-developmental toxicity</dc:title>
+  </otee:In_vivo_pre-natal-developmental_toxicity>
+  <otee:PhysicoChemicalEffects rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Physicochemical effects">
+    <dc:title>Physicochemical effects </dc:title>
+  </otee:PhysicoChemicalEffects>
+  <otee:Mutagenicity rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Mutagenicity">
+    <dc:title>Mutagenicity </dc:title>
+  </otee:Mutagenicity>
+  <otee:Adsorption_Desorption_in_sediment rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Adsorption/Desorption in sediment">
+    <dc:title>Adsorption/Desorption in sediment</dc:title>
+  </otee:Adsorption_Desorption_in_sediment>
+  <otee:Short-term_toxicity_to_algae_inhibition_of_the_exponential_growth_rate rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Short-term toxicity to algae (inhibition of the exponential growth rate)">
+    <dc:title>Short-term toxicity to algae (inhibition of the exponential growth rate)</dc:title>
+  </otee:Short-term_toxicity_to_algae_inhibition_of_the_exponential_growth_rate>
+  <otee:Surface_tension rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Surface tension">
+    <dc:title>Surface tension</dc:title>
+  </otee:Surface_tension>
+  <otee:Long-term_toxicity_survival_growth_reproduction rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Long-term toxicity (survival, growth, reproduction)">
+    <dc:title>Long-term toxicity (survival, growth, reproduction)</dc:title>
+  </otee:Long-term_toxicity_survival_growth_reproduction>
+  <otee:Toxicity_to_plants_leaves_seed_germination_root_elongation rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Toxicity to plants (leaves, seed germination, root elongation)">
+    <dc:title>Toxicity to plants (leaves, seed germination, root elongation)</dc:title>
+  </otee:Toxicity_to_plants_leaves_seed_germination_root_elongation>
+  <otee:Organic_carbon-sorption_partition_coefficient_organic_carbon_Koc rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Organic carbon-sorption partition coefficient (organic carbon; Koc)">
+    <dc:title>Organic carbon-sorption partition coefficient (organic carbon; Koc)</dc:title>
+  </otee:Organic_carbon-sorption_partition_coefficient_organic_carbon_Koc>
+  <otee:Oxidation rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Oxidation">
+    <dc:title>Oxidation </dc:title>
+  </otee:Oxidation>
+  <otee:Vegetation-water_partition_coefficient rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Vegetation-water partition coefficient">
+    <dc:title>Vegetation-water partition coefficient</dc:title>
+  </otee:Vegetation-water_partition_coefficient>
+  <otee:HumanHealthEffects rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Human health effects">
+    <dc:title>Human health effects</dc:title>
+  </otee:HumanHealthEffects>
+  <otee:Melting_point rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Melting point">
+    <dc:title>Melting point</dc:title>
+  </otee:Melting_point>
+  <otee:Persistence_Others rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Others">
+    <dc:title>Others</dc:title>
+  </otee:Persistence_Others>
+  <otee:BCF_fish rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_BCF fish">
+    <dc:title>BCF fish</dc:title>
+  </otee:BCF_fish>
+  <otee:Hydrolysis rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Hydrolysis">
+    <dc:title>Hydrolysis </dc:title>
+  </otee:Hydrolysis>
+  <otee:Vegetation-air_partition_coefficient rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Vegetation-air partition coefficient">
+    <dc:title>Vegetation-air partition coefficient</dc:title>
+  </otee:Vegetation-air_partition_coefficient>
+  <otee:Octanol-water_distribution_coefficient_D rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Octanol-water distribution coefficient (D)">
+    <dc:title>Octanol-water distribution coefficient (D)</dc:title>
+  </otee:Octanol-water_distribution_coefficient_D>
+  <otee:In_vivo_pre-_peri-_post_natal_development_and_or_fertility_1_or_2_gen._Study_or_enhanced_1_gen_study rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_In vivo pre-, peri-, post natal development and / or fertility (1 or 2 gen_ Study or enhanced 1 gen study)">
+    <dc:title>In vivo pre-, peri-, post natal development and / or fertility (1 or 2 gen. Study or enhanced 1 gen study) </dc:title>
+  </otee:In_vivo_pre-_peri-_post_natal_development_and_or_fertility_1_or_2_gen._Study_or_enhanced_1_gen_study>
+  <otee:Carcinogenicity rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Carcinogenicity">
+    <dc:title>Carcinogenicity</dc:title>
+  </otee:Carcinogenicity>
+  <otee:PersistenceAbioticDegradationWater rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Persistence: Abiotic degradation in water">
+    <dc:title>Persistence: Abiotic degradation in water</dc:title>
+  </otee:PersistenceAbioticDegradationWater>
+  <otee:AcuteInhalationToxicity rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Acute inhalation toicity">
+    <dc:title>Acute inhalation toicity</dc:title>
+  </otee:AcuteInhalationToxicity>
+  <otee:BAF_other_organisms rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_BAF other organisms">
+    <dc:title>BAF other organisms </dc:title>
+  </otee:BAF_other_organisms>
+  <otee:Repeated_dose_toxicity rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Repeated dose toxicity">
+    <dc:title>Repeated dose toxicity </dc:title>
+  </otee:Repeated_dose_toxicity>
+  <otee:Octanol-air_partition_coefficient_Koa rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Octanol-air partition coefficient (Koa)">
+    <dc:title>Octanol-air partition coefficient (Koa)</dc:title>
+  </otee:Octanol-air_partition_coefficient_Koa>
+  <otee:Toxicity_to_soil_microorganisms_inhibition_of_C-mineralisation_inhibition_of_N-mineralisation_other rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Toxicity to soil microorganisms (inhibition of C-mineralisation, inhibition of N-mineralisation, other)">
+    <dc:title>Toxicity to soil microorganisms (inhibition of C-mineralisation, inhibition of N-mineralisation, other)</dc:title>
+  </otee:Toxicity_to_soil_microorganisms_inhibition_of_C-mineralisation_inhibition_of_N-mineralisation_other>
+  <otee:Indirect_photolysis_OH-radical_reaction_ozone-radical_reaction_other rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Indirect photolysis (OH-radical reaction, ozone-radical reaction, other)">
+    <dc:title>Indirect photolysis (OH-radical reaction, ozone-radical reaction, other)</dc:title>
+  </otee:Indirect_photolysis_OH-radical_reaction_ozone-radical_reaction_other>
+  <otee:BAF_fish rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_BAF fish">
+    <dc:title>BAF fish</dc:title>
+  </otee:BAF_fish>
+  <otee:Octanol-water_partition_coefficient_Kow rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Octanol-water partition coefficient (Kow)">
+    <dc:title>Octanol-water partition coefficient (Kow)</dc:title>
+  </otee:Octanol-water_partition_coefficient_Kow>
+  <otee:Photocarcinogenicity rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Photocarcinogenicity">
+    <dc:title>Photocarcinogenicity</dc:title>
+  </otee:Photocarcinogenicity>
+  <otee:Toxicity_to_soil_invertebrates_survival_growth_reproduction rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Toxicity to soil invertebrates (survival, growth, reproduction)">
+    <dc:title>Toxicity to soil invertebrates (survival, growth, reproduction)</dc:title>
+  </otee:Toxicity_to_soil_invertebrates_survival_growth_reproduction>
+  <otee:EcotoxicEffects rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Ecotoxic effects">
+    <dc:title>Ecotoxic effects</dc:title>
+  </otee:EcotoxicEffects>
+  <otee:Boiling_point rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Boiling point">
+    <dc:title>Boiling point</dc:title>
+  </otee:Boiling_point>
+  <otee:EnvironmentalFateParameters rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Environmental fate parameters">
+    <dc:title>Environmental fate parameters </dc:title>
+  </otee:EnvironmentalFateParameters>
+  <otee:Long-term_toxicity_to_fish_egg_sac_fry_growth_inhibition_of_juvenile_fish_early_life_stage_full_life_cycle rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Long-term toxicity to fish (egg/sac fry, growth inhibition of juvenile fish, early life stage, full life cycle)">
+    <dc:title>Long-term toxicity to fish (egg/sac fry, growth inhibition of juvenile fish, early life stage, full life cycle)</dc:title>
+  </otee:Long-term_toxicity_to_fish_egg_sac_fry_growth_inhibition_of_juvenile_fish_early_life_stage_full_life_cycle>
+  <otee:Toxicity_to_earthworms_survival_growth_reproduction rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Toxicity to earthworms (survival, growth, reproduction)">
+    <dc:title>Toxicity to earthworms (survival, growth, reproduction)</dc:title>
+  </otee:Toxicity_to_earthworms_survival_growth_reproduction>
+  <otee:Metabolism rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Metabolism (including metabolic clearance)">
+    <dc:title>Metabolism (including metabolic clearance)</dc:title>
+  </otee:Metabolism>
+  <otee:Microbial_inhibition_activated_sludge_respiration_inhibition_inhibition_of_nitrification_other rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Microbial inhibition (activated sludge respiration inhibition, inhibition of nitrification, other)">
+    <dc:title>Microbial inhibition (activated sludge respiration inhibition, inhibition of nitrification, other)</dc:title>
+  </otee:Microbial_inhibition_activated_sludge_respiration_inhibition_inhibition_of_nitrification_other>
+  <otee:Photomutagenicity rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Photomutagenicity">
+    <dc:title>Photomutagenicity</dc:title>
+  </otee:Photomutagenicity>
+  <otee:Biodegradation_time_frame_primary_ultimate_degradation rdf:about="http://www.opentox.org/echaEndpoints.owl#ENDPOINT_Biodegradation time frame (primary, ultimate degradation)">
+    <dc:title>Biodegradation time frame (primary, ultimate degradation)</dc:title>
+  </otee:Biodegradation_time_frame_primary_ultimate_degradation>
+</rdf:RDF>
