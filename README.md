@@ -46,6 +46,7 @@ The full list of ontologies it includes is:
 DOI of Releases
 ---------------
 
+* Version 7: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4600986.svg)](https://doi.org/10.5281/zenodo.4600986)
 * Version 6: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3382100.svg)](https://doi.org/10.5281/zenodo.3382100)
 * Version 5: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3237535.svg)](https://doi.org/10.5281/zenodo.3237535)
 * Version 4: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.260098.svg)](https://doi.org/10.5281/zenodo.260098)
