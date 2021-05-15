@@ -40,6 +40,7 @@ The full list of ontologies it includes is:
 * [Ontology for Biomedical Investigations](http://obi-ontology.org/) (OBI)
 * [Phenotype And Trait Ontology](https://github.com/pato-ontology/pato) (PATO)
 * [Semanticscience Integrated Ontology](https://github.com/micheldumontier/semanticscience) (SIO)
+* [Uber Anatomy Ontology](https://github.com/obophenotype/uberon) (UBERON)
 * [Unit Ontology](https://github.com/bio-ontology-research-group/unit-ontology) (UO)
 
 DOI of Releases
