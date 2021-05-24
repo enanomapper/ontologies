@@ -106,7 +106,7 @@ Making Releases
 1. Update external ontologies
    * Download slimmed results from Jenkins workspace (artifacts) for each of the external ontologies
    * Replace the old `*-slim.owl` in `ontologies/external/`
-2. Test if the `enanomapper.owl` can be loaded without errors in Protege
+2. Test if the `enanomapper.owl` can be loaded without errors in Protégé
    * And run the Makefile with ```make check``` in the ```internal/``` folder
 3. check if the metadata in the enanomapper.owl is up to data (e.g. names of people who submitted PRs)
 4. Copy the internal ontologies in `ontologies/internal-dev/` to `ontologies/internal`
