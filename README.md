@@ -6,13 +6,14 @@ The eNanoMapper ontologies aim to provide a comprehensive suite of ontologies fo
 The ontology is being developed and maintained by the following EU H2020 projects (see also the below
 [funding](README.md#funding) info):
 
+* [NanoSolveIT](https://www.nanosolveit.eu/)
 * [NanoCommons](https://www.nanocommons.eu/)
 * [OpenRiskNet](https://openrisknet.org/) (project ended)
 * [eNanoMapper](http://enanomapper.net/) (project ended)
 
 Other NanoSafety Cluster projects that have contributed by providing feedback and collaborations
-include [NANoREG](http://www.nanoreg.eu/), [NanoReg2](http://www.nanoreg2.eu/),
-[GRACIOUS](https://www.h2020gracious.eu/), and [NanoSolveIT](https://www.nanosolveit.eu/).
+include [NANoREG](http://www.nanoreg.eu/), [NanoReg2](http://www.nanoreg2.eu/), and 
+[GRACIOUS](https://www.h2020gracious.eu/).
 
 External
 --------
