@@ -25,3 +25,17 @@ if [ ${ONTO} == "$ncit" ]; then
     
     # Rename slimmed file to proper name
     mv *-slim.owl ../${ONTO}-slim.owl
+    cd ../
+    rm -r ${ONTO}
+    ls
+    # Check if slimmed file was created
+    
+    if [ -f ${ONTO}-slim.owl ] ; then
+        echo Automated ${ONTO} slimmed build run on `date` >> ../../runs.txt
+    fi
+    
+    if [ ! -f ${ONTO}-slim.owl ]; then
+        echo Failed ${ONTO} slimming on `date` >> ../../runs.txt
+    fi
+
+fi
