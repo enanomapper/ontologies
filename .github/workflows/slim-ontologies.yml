@@ -1,0 +1,502 @@
+name: workflow slim ontologies
+on:
+  workflow_dispatch:
+
+jobs:
+  get-scripts:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Get slimmer
+    - name: get slimmer
+      run: wget -nc https://github.com/enanomapper/slimmer/releases/download/v1.0.2/slimmer-1.0.2-jar-with-dependencies.jar 
+    # Keep artifact
+    - name: artifact slimmer 
+      uses: actions/upload-artifact@v2
+      with:
+        name: slimmer
+        path: slimmer-1.0.2-jar-with-dependencies.jar
+      
+
+# slim all ontologies
+  
+# slim bao
+  slim-bao:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim bao
+      run: bash scripts/src/build-workflow/slim.sh bao
+    # Keep slimmed ontology as an artifact
+    - name: artifact bao-slim 
+      uses: actions/upload-artifact@v2
+      with:
+        name: bao-slim.owl
+        path: ./external
+
+  # apply props
+      
+# slim bfo
+  slim-bfo:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim bfo
+      run: bash scripts/src/build-workflow/slim.sh bfo
+    # Keep slimmed ontology as an artifact
+    - name: artifact bfo-slim 
+      uses: actions/upload-artifact@v2
+      with:
+        name: bfo-slim.owl
+        path: ./external
+
+  # apply props
+      
+# slim ccont
+  slim-ccont:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim ccont
+      run: bash scripts/src/build-workflow/slim.sh ccont
+    # Keep slimmed ontology as an artifact
+    - name: artifact ccont-slim 
+      uses: actions/upload-artifact@v2
+      with:
+        name: ccont-slim.owl
+        path: ./external
+
+  # apply props
+      
+# slim cheminf
+  slim-cheminf:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim cheminf
+      run: bash scripts/src/build-workflow/slim.sh cheminf
+    # Keep slimmed ontology as an artifact
+    - name: artifact cheminf-slim 
+      uses: actions/upload-artifact@v2
+      with:
+        name: cheminf-slim.owl
+        path: ./external
+
+  # apply props
+      
+# slim chmo
+  slim-chmo:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim chmo
+      run: bash scripts/src/build-workflow/slim.sh chmo
+    # Keep slimmed ontology as an artifact
+    - name: artifact chmo-slim 
+      uses: actions/upload-artifact@v2
+      with:
+        name: chmo-slim.owl
+        path: ./external
+
+  # apply props
+      
+# slim efo
+  slim-efo:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim efo
+      run: bash scripts/src/build-workflow/slim.sh efo
+    # Keep slimmed ontology as an artifact
+    - name: artifact efo-slim 
+      uses: actions/upload-artifact@v2
+      with:
+        name: efo-slim.owl
+        path: ./external
+
+  # apply props
+      
+# slim fabio
+  slim-fabio:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim fabio
+      run: bash scripts/src/build-workflow/slim.sh fabio
+    # Keep slimmed ontology as an artifact
+    - name: artifact fabio-slim 
+      uses: actions/upload-artifact@v2
+      with:
+        name: fabio-slim.owl
+        path: ./external
+
+  # apply props
+      
+# slim go
+  slim-go:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim go
+      run: bash scripts/src/build-workflow/slim.sh go
+    # Keep slimmed ontology as an artifact
+    - name: artifact go-slim 
+      uses: actions/upload-artifact@v2
+      with:
+        name: go-slim.owl
+        path: ./external
+
+  # apply props
+      
+# slim iao
+  slim-iao:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim iao
+      run: bash scripts/src/build-workflow/slim.sh iao
+    # Keep slimmed ontology as an artifact
+    - name: artifact iao-slim 
+      uses: actions/upload-artifact@v2
+      with:
+        name: iao-slim.owl
+        path: ./external
+
+  # apply props
+      
+# slim ncit
+  slim-ncit:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim ncit
+      run: bash scripts/src/build-workflow/slim.sh ncit
+    # Keep slimmed ontology as an artifact
+    - name: artifact ncit-slim 
+      uses: actions/upload-artifact@v2
+      with:
+        name: ncit-slim.owl
+        path: ./external
+
+  # apply props
+      
+# slim npo
+  slim-npo:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim npo
+      run: bash scripts/src/build-workflow/slim.sh npo
+    # Keep slimmed ontology as an artifact
+    - name: artifact npo-slim 
+      uses: actions/upload-artifact@v2
+      with:
+        name: npo-slim.owl
+        path: ./external
+
+  # apply props
+      
+# slim oae
+  slim-oae:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim oae
+      run: bash scripts/src/build-workflow/slim.sh oae
+    # Keep slimmed ontology as an artifact
+    - name: artifact oae-slim 
+      uses: actions/upload-artifact@v2
+      with:
+        name: oae-slim.owl
+        path: ./external
+
+  # apply props
+      
+# slim obcs
+  slim-obcs:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim obcs
+      run: bash scripts/src/build-workflow/slim.sh obcs
+    # Keep slimmed ontology as an artifact
+    - name: artifact obcs-slim 
+      uses: actions/upload-artifact@v2
+      with:
+        name: obcs-slim.owl
+        path: ./external
+
+  # apply props
+      
+# slim obi
+  slim-obi:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim obi
+      run: bash scripts/src/build-workflow/slim.sh obi
+    # Keep slimmed ontology as an artifact
+    - name: artifact obi-slim 
+      uses: actions/upload-artifact@v2
+      with:
+        name: obi-slim.owl
+        path: ./external
+
+  # apply props
+      
+# slim pato
+  slim-pato:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim pato
+      run: bash scripts/src/build-workflow/slim.sh pato
+    # Keep slimmed ontology as an artifact
+    - name: artifact pato-slim 
+      uses: actions/upload-artifact@v2
+      with:
+        name: pato-slim.owl
+        path: ./external
+
+  # apply props
+      
+# slim sio
+  slim-sio:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim sio
+      run: bash scripts/src/build-workflow/slim.sh sio
+    # Keep slimmed ontology as an artifact
+    - name: artifact sio-slim 
+      uses: actions/upload-artifact@v2
+      with:
+        name: sio-slim.owl
+        path: ./external
+
+  # apply props
+      
+# slim uo
+  slim-uo:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim uo
+      run: bash scripts/src/build-workflow/slim.sh uo
+    # Keep slimmed ontology as an artifact
+    - name: artifact uo-slim 
+      uses: actions/upload-artifact@v2
+      with:
+        name: uo-slim.owl
+        path: ./external
+
+  # apply props
+      
+# apply props bao
+  props-bao:
+    runs-on: ubuntu-latest
+    needs: slim-bao
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    - name: Apply props bao
+      run: bash scripts/src/build-workflow/props.sh bao
+    # )
+    
+# apply props cheminf
+  props-cheminf:
+    runs-on: ubuntu-latest
+    needs: slim-cheminf
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    - name: Apply props cheminf
+      run: bash scripts/src/build-workflow/props.sh cheminf
+    # )
+    
+# apply props sio
+  props-sio:
+    runs-on: ubuntu-latest
+    needs: slim-sio
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    - name: Apply props sio
+      run: bash scripts/src/build-workflow/props.sh sio
+    # )
+    
+  ## test
+  #test:
+  #  runs-on: ubuntu-latest
+  #  needs: [slim-bao, slim-bfo, slim-ccont, slim-cheminf, slim-chmo, slim-efo, slim-fabio, slim-go, slim-iao, slim-ncit, slim-npo, slim-oae, slim-obcs, slim-obi, slim-pato, slim-sio, slim-uo]
+  #  steps:
+  #  - name: Check out repository
+  #    uses: actions/checkout@v3
+  #  - name: Run mvn clean test 
+  #    run: |
+  #     cd test 
+  #     mvn clean
+  #     cd ../
+  #     zip –r ../test.zip test
+  #  # Keep tests as artifact
+  #  - name: artifact tests
+  #    uses: actions/upload-artifact@v2
+  #    with:
+  #      name: test
+  #      path: test.zip
+
+  
