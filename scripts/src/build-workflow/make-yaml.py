@@ -56,12 +56,6 @@ jobs:
        name: slimmer 
     - name: slim {}
       run: bash scripts/src/build-workflow/slim.sh {}
-    # Keep slimmed ontology as an artifact
-    - name: artifact {}-slim 
-      uses: actions/upload-artifact@v2
-      with:
-        name: {}-slim.owl
-        path: ./external
 
   # apply props
       """.format(ontology,ontology,ontology,ontology,ontology,ontology))
@@ -82,6 +76,19 @@ jobs:
     """.format(prop, prop, prop, prop, prop))
   # Tests
   f.write("""
+  retrieve-owl-artifacts:
+    # Keep slimmed ontology as an artifact
+    runs-on: ubuntu-latest
+    needs: slim-{}
+    steps:
+    - name: owl slims artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: owl-slims
+        path: ./external/*slim.owl""".format(("[slim-" + ", slim-".join(ontologies) + "]").replace("'","")))
+
+
+
   ## test
   #test:
   #  runs-on: ubuntu-latest
@@ -101,5 +108,4 @@ jobs:
   #    with:
   #      name: test
   #      path: test.zip
-
-  """.format(("[slim-" + ", slim-".join(ontologies) + "]").replace("'","")))
+  #""".format(("[slim-" + ", slim-".join(ontologies) + "]").replace("'","")))
