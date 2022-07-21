@@ -7,8 +7,10 @@ if [ ${ONTO} == "$ncit" ]; then
     
     ls
     mkdir -p external/${ONTO}
+    rm external/${ONTO}-slim.owl
+    echo ${ONTO}-slim.owl removed
     cd external/${ONTO}
-   
+    
    
     wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.props
     wget  `grep "owl=" ${ONTO}.props | cut -d'=' -f2`
@@ -31,11 +33,11 @@ if [ ${ONTO} == "$ncit" ]; then
     # Check if slimmed file was created
     
     if [ -f ${ONTO}-slim.owl ] ; then
-        echo Automated ${ONTO} slimmed build run on `date` >> ../../runs.txt
+        echo Automated ${ONTO} slimmed build run on `date` 
     fi
     
     if [ ! -f ${ONTO}-slim.owl ]; then
-        echo Failed ${ONTO} slimming on `date` >> ../../runs.txt
+        echo Failed ${ONTO} slimming on `date`
     fi
 
 fi
