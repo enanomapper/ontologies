@@ -380,7 +380,7 @@ jobs:
   retrieve-owl-artifacts:
     # Keep slimmed ontology as an artifact
     runs-on: ubuntu-latest
-    needs: slim-[slim-bao, slim-bfo, slim-ccont, slim-cheminf, slim-chmo, slim-efo, slim-fabio, slim-go, slim-iao, slim-ncit, slim-npo, slim-oae, slim-obcs, slim-obi, slim-pato, slim-sio, slim-uo]
+    needs: [slim-bao, slim-bfo, slim-ccont, slim-cheminf, slim-chmo, slim-efo, slim-fabio, slim-go, slim-iao, slim-ncit, slim-npo, slim-oae, slim-obcs, slim-obi, slim-pato, slim-sio, slim-uo]
     steps:
     - name: owl slims artifact
       uses: actions/upload-artifact@v2
