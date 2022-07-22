@@ -79,7 +79,7 @@ jobs:
   retrieve-owl-artifacts:
     # Keep slimmed ontology as an artifact
     runs-on: ubuntu-latest
-    needs: slim-{}
+    needs: {}
     steps:
     - name: owl slims artifact
       uses: actions/upload-artifact@v2
