@@ -19,10 +19,10 @@
         <dc:title>Gene Ontology</dc:title>
         <pav:importedFrom>http://purl.obolibrary.org/obo/go.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2021-02-03 09:41:04</oboInOwl:date>
+        <oboInOwl:date>2022-08-11 21:04:23</oboInOwl:date>
         <oboInOwl:default-namespace>gene_ontology</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
-        <owl:versionInfo>2021-01-01</owl:versionInfo>
+        <owl:versionInfo>2022-07-01</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
@@ -108,6 +108,13 @@
         <rdfs:comment>Rhea list of ChEBI terms representing the major species at pH 7.3.</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#creation_date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#creation_date"/>
     
 
 
@@ -266,6 +273,16 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_yeast">
         <rdfs:comment>Yeast GO slim</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#prokaryote_subset -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#prokaryote_subset">
+        <rdfs:comment>GO subset for prokaryotes</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -569,6 +586,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_agr"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
@@ -596,17 +614,20 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009293">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <obo:IAO_0000115>The transfer of genetic information to a bacterium from a bacteriophage or between bacterial or yeast cells mediated by a phage vector.</obo:IAO_0000115>
+        <obo:IAO_0000115>A type of horizontal gene transfer in which genetic material is introduced into a cell mediated by a virus.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/22952</obo:IAO_0000233>
         <oboInOwl:hasDbXref>Wikipedia:Transduction_(genetics)</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0009293</oboInOwl:id>
+        <rdfs:comment>This process occurs both in prokaryotes and in eukaryotes.</rdfs:comment>
         <rdfs:label>transduction</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0009293"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The transfer of genetic information to a bacterium from a bacteriophage or between bacterial or yeast cells mediated by a phage vector.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A type of horizontal gene transfer in which genetic material is introduced into a cell mediated by a virus.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:18265289</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:33597173</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -684,13 +705,6 @@
         <oboInOwl:id>results_in_fission_of</oboInOwl:id>
         <oboInOwl:shorthand>results_in_fission_of</oboInOwl:shorthand>
         <rdfs:label>results_in_fission_of</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GOREL_0002005">
-        <oboInOwl:hasDbXref>GOREL:0002005</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>results_in_fusion_of</oboInOwl:id>
-        <oboInOwl:shorthand>results_in_fusion_of</oboInOwl:shorthand>
-        <rdfs:label>results_in_fusion_of</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GOREL_0012006">
         <oboInOwl:hasDbXref>GOREL:0012006</oboInOwl:hasDbXref>
@@ -895,13 +909,6 @@
         <oboInOwl:shorthand>causally_upstream_of,_negative_effect</oboInOwl:shorthand>
         <rdfs:label>causally upstream of, negative effect</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002313">
-        <oboInOwl:hasDbXref>RO:0002313</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>transports_or_maintains_localization_of</oboInOwl:id>
-        <oboInOwl:shorthand>transports_or_maintains_localization_of</oboInOwl:shorthand>
-        <rdfs:label>transports or maintains localization of</rdfs:label>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002315">
         <oboInOwl:hasDbXref>RO:0002315</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
@@ -951,13 +958,6 @@
         <oboInOwl:shorthand>has_target_end_location</oboInOwl:shorthand>
         <rdfs:label>has target end location</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002340">
-        <oboInOwl:hasDbXref>RO:0002340</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>imports</oboInOwl:id>
-        <oboInOwl:shorthand>imports</oboInOwl:shorthand>
-        <rdfs:label>imports</rdfs:label>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002341">
         <oboInOwl:hasDbXref>RO:0002341</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
@@ -985,13 +985,6 @@
         <oboInOwl:id>results_in_transport_to_from_or_in</oboInOwl:id>
         <oboInOwl:shorthand>results_in_transport_to_from_or_in</oboInOwl:shorthand>
         <rdfs:label>results in transport to from or in</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002345">
-        <oboInOwl:hasDbXref>RO:0002345</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>exports</oboInOwl:id>
-        <oboInOwl:shorthand>exports</oboInOwl:shorthand>
-        <rdfs:label>exports</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002348">
         <oboInOwl:hasDbXref>RO:0002348</oboInOwl:hasDbXref>
@@ -1084,13 +1077,6 @@
         <oboInOwl:shorthand>results_in_movement_of</oboInOwl:shorthand>
         <rdfs:label>results in movement of</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002578">
-        <oboInOwl:hasDbXref>RO:0002578</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>directly_regulates</oboInOwl:id>
-        <oboInOwl:shorthand>directly_regulates</oboInOwl:shorthand>
-        <rdfs:label>directly regulates</rdfs:label>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002588">
         <oboInOwl:hasDbXref>RO:0002588</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
@@ -1117,7 +1103,7 @@
         <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
         <oboInOwl:id>results_in_organization_of</oboInOwl:id>
         <oboInOwl:shorthand>results_in_organization_of</oboInOwl:shorthand>
-        <rdfs:label>results_in_organization_of</rdfs:label>
+        <rdfs:label>results in organization of</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002608">
         <oboInOwl:hasDbXref>RO:0002608</oboInOwl:hasDbXref>
@@ -1125,20 +1111,6 @@
         <oboInOwl:id>process_has_causal_agent</oboInOwl:id>
         <oboInOwl:shorthand>process_has_causal_agent</oboInOwl:shorthand>
         <rdfs:label>process has causal agent</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002629">
-        <oboInOwl:hasDbXref>RO:0002629</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>directly_positively_regulates</oboInOwl:id>
-        <oboInOwl:shorthand>directly_positively_regulates</oboInOwl:shorthand>
-        <rdfs:label>directly positively regulates</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002630">
-        <oboInOwl:hasDbXref>RO:0002630</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>directly_negatively_regulates</oboInOwl:id>
-        <oboInOwl:shorthand>directly_negatively_regulates</oboInOwl:shorthand>
-        <rdfs:label>directly negatively regulates</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0003000">
         <oboInOwl:hasDbXref>RO:0003000</oboInOwl:hasDbXref>
@@ -1181,6 +1153,34 @@
         <oboInOwl:id>acts_on_population_of</oboInOwl:id>
         <oboInOwl:shorthand>acts_on_population_of</oboInOwl:shorthand>
         <rdfs:label>acts on population of</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0012008">
+        <oboInOwl:hasDbXref>RO:0012008</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>results_in_fusion_of</oboInOwl:id>
+        <oboInOwl:shorthand>results_in_fusion_of</oboInOwl:shorthand>
+        <rdfs:label>results in fusion of</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0019000">
+        <oboInOwl:hasDbXref>RO:0019000</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>gene_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>regulates_characteristic</oboInOwl:id>
+        <oboInOwl:shorthand>regulates_characteristic</oboInOwl:shorthand>
+        <rdfs:label>regulates characteristic</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0019001">
+        <oboInOwl:hasDbXref>RO:0019001</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>gene_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>positively_regulates_characteristic</oboInOwl:id>
+        <oboInOwl:shorthand>positively_regulates_characteristic</oboInOwl:shorthand>
+        <rdfs:label>positively regulates characteristic</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0019002">
+        <oboInOwl:hasDbXref>RO:0019002</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>gene_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>negatively_regulates_characteristic</oboInOwl:id>
+        <oboInOwl:shorthand>negatively_regulates_characteristic</oboInOwl:shorthand>
+        <rdfs:label>negatively regulates characteristic</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion">
         <rdfs:label>has_obo_format_version</rdfs:label>
