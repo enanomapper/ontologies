@@ -1,0 +1,537 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/spar/cito#"
+     xml:base="http://purl.org/spar/cito"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.org/spar/cito"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/spar/cito/agreesWith -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/agreesWith">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: We share Galileo&apos;s opinion: the Earth moves [X].</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity agrees with statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">agrees with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/cites -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/cites">
+        <rdfs:comment xml:lang="en">The citing entity cites the cited entity, either directly and explicitly (as in the reference list of a journal article), indirectly (e.g. by citing a more recent paper by the same group on the same topic), or implicitly (e.g. as in artistic quotations or parodies, or in cases of plagiarism).</rdfs:comment>
+        <rdfs:label xml:lang="en">cites</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/citesAsAuthority -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/citesAsAuthority">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: Newton asserted that we are like dwarfs standing on the shoulders of giants [X].</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity cites the cited entity as one that provides an authoritative description or definition of the subject under discussion.</rdfs:comment>
+        <rdfs:label xml:lang="en">cites as authority</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/citesAsDataSource -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/citesAsDataSource">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: Italy has more than ten thousand kilometers of shoreline: see [X].</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity cites the cited entity as source of data.</rdfs:comment>
+        <rdfs:label xml:lang="en">cites as data source</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/citesAsEvidence -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/citesAsEvidence">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: We found an unquestionable demonstration of our hypothesis in [X].</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity cites the cited entity as source of factual evidence for statements it contains.</rdfs:comment>
+        <rdfs:label xml:lang="en">cites as evidence</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/citesAsMetadataDocument -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/citesAsMetadataDocument">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: Basic bibliographic, entity and project metadata relating to this article, recorded in a structured machine-readable form, is available as an additional file [X] accompanying this paper.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity cites the cited entity as being the container of metadata describing the citing entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">cites as metadata document</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/citesAsPotentialSolution -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/citesAsPotentialSolution">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: This risk could be avoided using the approach shown in [X].</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity cites the cited entity as providing or containing a possible solution to the issues being discussed.</rdfs:comment>
+        <rdfs:label xml:lang="en">cites as potential solution</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/citesAsRecommendedReading -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/citesAsRecommendedReading">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: To our knowledge, [X] is the best source of exercises about UML, making it a valuable proposal for beginners.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity cites the cited entity as an item of recommended reading.  This property can be used, for example, to describe references in a lecture reading list, where the cited references are relevant to the general topic of the lecture, but might not be individually cited within the text of the lecture.  Similarly, it could be used to describe items in a &apos;Suggested further reading&apos; list at the end of a book chapter.</rdfs:comment>
+        <rdfs:label xml:lang="en">cites as recommended reading</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/citesAsRelated -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/citesAsRelated">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: An analysis similar to what we proposed here is presented in [X].</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity cites the cited entity as one that is related.</rdfs:comment>
+        <rdfs:label xml:lang="en">cites as related</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/citesAsSourceDocument -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/citesAsSourceDocument">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: Several sections of this work are based on our literature review of the topic published as journal article [X].</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity cites the cited entity as being the entity from which the citing entity is derived, or about which the citing entity contains metadata.</rdfs:comment>
+        <rdfs:label xml:lang="en">cites as source document</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/citesForInformation -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/citesForInformation">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: The grammar of Pascal was introduced in [X].</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity cites the cited entity as a source of information on the subject under discussion.</rdfs:comment>
+        <rdfs:label xml:lang="en">cites for information</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/compiles -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/compiles">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: This book gathers interviews with academic researchers of several disciplines [X].</dc:description>
+        <dc:description xml:lang="en">Note: This property has been imported from the CiTO4Data ontology, usage of which has been deprecated.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity is used to create or compile the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">compiles</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/confirms -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/confirms">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: Our findings are similar to those published in [X].</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity confirms facts, ideas or statements presented in the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">confirms</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/containsAssertionFrom -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/containsAssertionFrom">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: We think that to stand on the top of giants [X] is a valuable principle to follow for our own research.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity contains a statement of fact or a logical assertion (or a collection of such facts and/or assertions) originally present in the cited entity.   This object property is designed to be used to relate a separate abstract, summary or nanopublication to the cited entity upon which it is based.</rdfs:comment>
+        <rdfs:label xml:lang="en">contains assertion from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/corrects -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/corrects">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: The result published in [X] is partially wrong, the correct result is 42.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity corrects statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">corrects</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/credits -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/credits">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: Galileo was the first to observe Jupiter&apos;s satellites [X].</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity acknowledges contributions made by the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">credits</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/critiques -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/critiques">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: The ideas presented in [X] are badly substantantiated.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity critiques statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">critiques</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/derides -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/derides">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: The ideas published in [X] are incredibly stupid.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity express derision for the cited entity, or for ideas or conclusions contained within it.</rdfs:comment>
+        <rdfs:label xml:lang="en">derides</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/describes -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/describes">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: Galileo&apos;s book [X] is a dialog among three scientists about Copernicus&apos; eliocentric theory.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity describes the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">describes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/disagreesWith -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/disagreesWith">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: We do not share Galileo&apos;s opinion [X]: the Earth does not move.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity disagrees with statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">disagrees with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/discusses -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/discusses">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: We now examine if Galileo is right when he writes [X] that the Earth moves.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity discusses statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">discusses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/disputes -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/disputes">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: We doubt that Galileo is right when he writes [X] that the Earth moves.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity disputes statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">disputes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/documents -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/documents">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: Herein we report in detail the complete set of ontological rules defined in the Overlapping Ontology [X].</dc:description>
+        <rdfs:comment>The citing entity documents information about the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">documents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/extends -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/extends">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: We add to Galileo&apos;s findings concerning the Earth [X] that also the Moon moves.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity extends facts, ideas or understandings presented in the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">extends</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/includesExcerptFrom -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/includesExcerptFrom">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">An excerpt is more general than a quotation. It is generally used to indicate a re-published extract from a book, instruction manual, film, radio programme, etc, that need not be what someone said.  For example:
+
+Oxford 01865
+Oxshott 01372
+Oxted 01883
+Oxton 01578
+
+is an excerpt from the UK Dialling Codes section of the Oxford Telephone Directory.</dc:description>
+        <dc:description xml:lang="en">Example: In her work, the author states that even though most Human Information Behaviour researchers are familiar with the literature related to their studies, it is not uncommon for investigators to fail to see the benefits they may gain from previous mistakes [X].</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity includes one or more excerpts from the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">includes excerpt from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/includesQuotationFrom -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/includesQuotationFrom">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">A quotation is a repetition of what someone has said, and is presented &quot;within quotation marks&quot;, for example:
+
+On June 4th 1940, Winston Churchill made a speech on the radio that has since become famous, that included the words: &quot; . . . we shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender . . .&quot;</dc:description>
+        <dc:description xml:lang="en">Example: As Newton wrote in [X]: &quot;We are like dwarfs standing on the shoulders of giants&quot;.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity includes one or more quotations from the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">includes quotation from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/linksTo -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/linksTo">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: The BioSharing registry (https://biosharing.org) can be of use as it describes the standards in detail, including versions where applicable.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity provides a link, in the form of an HTTP Uniform Resource Locator (URL), to the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">links to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/obtainsBackgroundFrom -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/obtainsBackgroundFrom">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: There is a need for more observational studies and studies using narrative causation to describe the potential contribution of information in problem-solving and decision-making [X]; our work addresses these needs.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity obtains background information from the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">obtains background from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/obtainsSupportFrom -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/obtainsSupportFrom">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: Our ideas were also shared by Doe et al. [X].</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity obtains intellectual or factual support from the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">obtains support from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/parodies -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/parodies">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: We act as giants on the shoulders of dwarfs [X]!</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity imitates the characteristic style or content of the cited entity for comic effect, usually without explicit citation.</rdfs:comment>
+        <rdfs:label xml:lang="en">parodies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/plagiarizes -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/plagiarizes">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: The conclusion of our dissertation can be summarised by the following motto, we created specifically for this purpose: we are like dwarfs standing on the shoulders of giants.</dc:description>
+        <rdfs:comment xml:lang="en">A property indicating that the author of the citing entity plagiarizes the cited entity, by including textual or other elements from the cited entity without formal acknowledgement of their source.  The citing entity thus contains no explicit citation of the cited entity, according to the norms of scholarly practice, but cites it implicitly.</rdfs:comment>
+        <rdfs:label xml:lang="en">plagiarizes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/qualifies -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/qualifies">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: Galileo&apos;s masterpiece &apos;Dialogo sopra i due massimi sistemi del mondo&apos; [X] is formally a dialog and substantially a scientific pamphlet.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity qualifies or places conditions or restrictions upon statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">qualifies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/refutes -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/refutes">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: We do not think that all their arguments in favour of their own and against the other strategies are equally convincing [X].</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity refutes statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">refutes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/repliesTo -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/repliesTo">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: We will not investigate the issues of the approach proposed in [X] here, but rather we introduce yet another alternative.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity replies to statements, ideas or criticisms presented in the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">replies to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/retracts -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/retracts">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: We wrote that the Earth moves in [X]; we now retire such statement.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity constitutes a formal retraction of the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">retracts</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/reviews -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/reviews">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: This paper discusses Toulmin&apos;s methodology in modelling argumentation [X], focussing on highlighting advantages and drawbacks of the application of such a methodology in the Social Web.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity reviews statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">reviews</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/ridicules -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/ridicules">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: Galileo said that the Earth &quot;moves&quot; [X]; really? And where is it going?</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity ridicules the cited entity or aspects of its contents.</rdfs:comment>
+        <rdfs:label xml:lang="en">ridicules</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/speculatesOn -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/speculatesOn">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: We believe that if Galileo believed that Earth goes around the Sun [X], he also should believe that Moon goes around Earth.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity speculates on something within or related to the cited entity, without firm evidence.</rdfs:comment>
+        <rdfs:label xml:lang="en">speculates on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/supports -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/supports">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: We support Galileo&apos;s statement [X], that Earth moves.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity provides intellectual or factual support for statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">supports</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/updates -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/updates">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: Earth moves, said Galileo [X]; in addition, we can say now it moves very fast.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity updates statements, ideas, hypotheses or understanding presented in the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">updates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/usesConclusionsFrom -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/usesConclusionsFrom">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: Building upon Galileo&apos;s findings [X], we discovered that all the planets move.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity describes work that uses conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">uses conclusions from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/usesDataFrom -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/usesDataFrom">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: Using the information collected from our recent study [X], we can estimate that there are tens of millions of HTML forms with potentially useful deep-web content.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity describes work that uses data presented in the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">uses data from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/usesMethodIn -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/usesMethodIn">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <dc:description xml:lang="en">Example: We follow [X] in using design patterns for testing.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity describes work that uses a method detailed in the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">uses method in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/citation -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/citation">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:comment xml:lang="en">This property is defined in schema.org and has been added here to align schema.org with CiTO. The object property schema:citation expresses similar semantics to cito:cites except for the explicit definition of domain and range classes, that are schema:CreativeWork according to schema.org. For that reason, it is here defined as a subproperty of cito:cites.</rdfs:comment>
+        <rdfs:label>citation</rdfs:label>
+    </owl:ObjectProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
