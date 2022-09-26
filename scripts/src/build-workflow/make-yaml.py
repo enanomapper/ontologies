@@ -3,16 +3,16 @@
 
 # Variables used throughout the script
 # comment out because aopo takes forever  ontologies = ["aopo","bao","bfo","ccont","cheminf","chmo","efo","fabio","go","hupson","iao","ncit","npo","oae","obcs","obi","pato","sio","uo"]
-ontologies = ["bao","bfo","ccont","cheminf","chmo","efo","fabio","go","iao","ncit","npo","oae","obcs","obi","pato","sio","uo"]
+ontologies = ["aopo", "bao","bfo","bto","ccont","cheminf","chebi","chmo","clo","efo","envo","fabio","go","hupson","iao","ncit","npo","oae","obcs","obi","pato","sio","uberon","uo"]
 
-#props = ["bao", "cheminf","npo", "sio"] props npo keeps failing, removed for testing
-props = ["bao", "cheminf", "sio"]
+props = ["bao", "cheminf","npo", "sio", "ro", "cito"]
 
 test_location = "test"
 
 # Opens the yaml file
 with open("../../../.github/workflows/slim-ontologies.yml", "a+") as f:
   # Writes serialization for the workflow dispatch and getting slimmer
+  f.truncate(0)
   f.write("""name: workflow slim ontologies
 on:
   workflow_dispatch:

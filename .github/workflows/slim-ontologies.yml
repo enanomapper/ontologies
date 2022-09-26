@@ -21,6 +21,25 @@ jobs:
 
 # slim all ontologies
   
+# slim aopo
+  slim-aopo:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim aopo
+      run: bash scripts/src/build-workflow/slim.sh aopo
+
+  # apply props
+      
 # slim bao
   slim-bao:
     runs-on: ubuntu-latest
@@ -56,6 +75,25 @@ jobs:
        name: slimmer 
     - name: slim bfo
       run: bash scripts/src/build-workflow/slim.sh bfo
+
+  # apply props
+      
+# slim bto
+  slim-bto:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim bto
+      run: bash scripts/src/build-workflow/slim.sh bto
 
   # apply props
       
@@ -97,6 +135,25 @@ jobs:
 
   # apply props
       
+# slim chebi
+  slim-chebi:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim chebi
+      run: bash scripts/src/build-workflow/slim.sh chebi
+
+  # apply props
+      
 # slim chmo
   slim-chmo:
     runs-on: ubuntu-latest
@@ -116,6 +173,25 @@ jobs:
 
   # apply props
       
+# slim clo
+  slim-clo:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim clo
+      run: bash scripts/src/build-workflow/slim.sh clo
+
+  # apply props
+      
 # slim efo
   slim-efo:
     runs-on: ubuntu-latest
@@ -132,6 +208,25 @@ jobs:
        name: slimmer 
     - name: slim efo
       run: bash scripts/src/build-workflow/slim.sh efo
+
+  # apply props
+      
+# slim envo
+  slim-envo:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim envo
+      run: bash scripts/src/build-workflow/slim.sh envo
 
   # apply props
       
@@ -170,6 +265,25 @@ jobs:
        name: slimmer 
     - name: slim go
       run: bash scripts/src/build-workflow/slim.sh go
+
+  # apply props
+      
+# slim hupson
+  slim-hupson:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim hupson
+      run: bash scripts/src/build-workflow/slim.sh hupson
 
   # apply props
       
@@ -325,6 +439,25 @@ jobs:
 
   # apply props
       
+# slim uberon
+  slim-uberon:
+    runs-on: ubuntu-latest
+    needs: get-scripts
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Authorize running slim script
+    - name: authorize running slim.sh and slim-ncit.sh
+      run: chmod 755 scripts/src/build-workflow/slim.sh scripts/src/build-workflow/slim-ncit.sh
+    - name: get slimmer
+      uses: actions/download-artifact@v2
+      with:
+       name: slimmer 
+    - name: slim uberon
+      run: bash scripts/src/build-workflow/slim.sh uberon
+
+  # apply props
+      
 # slim uo
   slim-uo:
     runs-on: ubuntu-latest
@@ -366,6 +499,17 @@ jobs:
       run: bash scripts/src/build-workflow/props.sh cheminf
     # )
     
+# apply props npo
+  props-npo:
+    runs-on: ubuntu-latest
+    needs: slim-npo
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    - name: Apply props npo
+      run: bash scripts/src/build-workflow/props.sh npo
+    # )
+    
 # apply props sio
   props-sio:
     runs-on: ubuntu-latest
@@ -377,10 +521,32 @@ jobs:
       run: bash scripts/src/build-workflow/props.sh sio
     # )
     
+# apply props ro
+  props-ro:
+    runs-on: ubuntu-latest
+    needs: slim-ro
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    - name: Apply props ro
+      run: bash scripts/src/build-workflow/props.sh ro
+    # )
+    
+# apply props cito
+  props-cito:
+    runs-on: ubuntu-latest
+    needs: slim-cito
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    - name: Apply props cito
+      run: bash scripts/src/build-workflow/props.sh cito
+    # )
+    
   retrieve-owl-artifacts:
     # Keep slimmed ontology as an artifact
     runs-on: ubuntu-latest
-    needs: [slim-bao, slim-bfo, slim-ccont, slim-cheminf, slim-chmo, slim-efo, slim-fabio, slim-go, slim-iao, slim-ncit, slim-npo, slim-oae, slim-obcs, slim-obi, slim-pato, slim-sio, slim-uo]
+    needs: [slim-aopo, slim-bao, slim-bfo, slim-bto, slim-ccont, slim-cheminf, slim-chebi, slim-chmo, slim-clo, slim-efo, slim-envo, slim-fabio, slim-go, slim-hupson, slim-iao, slim-ncit, slim-npo, slim-oae, slim-obcs, slim-obi, slim-pato, slim-sio, slim-uberon, slim-uo]
     steps:
     - name: owl slims artifact
       uses: actions/upload-artifact@v2
