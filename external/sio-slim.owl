@@ -11,6 +11,7 @@
      xmlns:cito="http://purl.org/spar/cito/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"
      xmlns:terms="http://purl.org/dc/terms/"
@@ -25,6 +26,7 @@ sivaram arabandi
 christopher baker
 joachim baran
 jerven bolleman
+matthew brush
 alison callahan
 leonid chepelev
 kevin cohen
@@ -36,6 +38,7 @@ tatsuya kushida
 luke mccarthy
 jim mccusker
 jose miguel cruz-toledo
+chris mungall
 robert hoehndorf
 simon jupp
 jin-dong kim
@@ -77,9 +80,9 @@ mailing list: http://groups.google.com/group/sio-ontology
 role chains:
 &apos;has capability&apos; o &apos;is realized in&apos; -&gt; &apos;is participant in&apos;</schema:comment>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2021-02-03 09:46:41</oboInOwl:date>
+        <oboInOwl:date>2022-08-11 21:01:39</oboInOwl:date>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://sio.semanticscience.org</rdfs:seeAlso>
-        <owl:versionInfo>1.48</owl:versionInfo>
+        <owl:versionInfo>1.54</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
@@ -244,31 +247,10 @@ role chains:
     
 
 
-    <!-- http://semanticscience.org/resource/example -->
-
-
-    <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/example"/>
-    
-
-
     <!-- http://semanticscience.org/resource/hasSynonym -->
 
 
     <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/hasSynonym"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/narrowerThan -->
-
-
-    <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/narrowerThan"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/seeAlso -->
-
-
-    <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/seeAlso"/>
     
 
 
@@ -297,6 +279,20 @@ role chains:
 
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#date"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
     
 
 
@@ -367,8 +363,8 @@ role chains:
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001113">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1793"/>
+        <terms:alternative>min</terms:alternative>
         <terms:description xml:lang="en">A minimal value is smallest value of an attribute for the entities in the defined set.</terms:description>
-        <resource:hasSynonym>min</resource:hasSynonym>
         <rdfs:label xml:lang="en">minimal value</rdfs:label>
     </owl:Class>
     
@@ -379,8 +375,8 @@ role chains:
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001114">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1793"/>
+        <terms:alternative>max</terms:alternative>
         <terms:description xml:lang="en">A maximal value is largest value of an attribute for the entities in the defined set.</terms:description>
-        <resource:hasSynonym>max</resource:hasSynonym>
         <rdfs:label xml:lang="en">maximal value</rdfs:label>
     </owl:Class>
     
@@ -426,7 +422,7 @@ role chains:
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010074">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010471"/>
-        <terms:description xml:lang="en">An amino acid residue is a part of a molecule that is derived from an amino acid molecule.</terms:description>
+        <terms:description xml:lang="en">An amino acid residue is a submolecule of an amino acid that is part of a larger molecule.</terms:description>
         <rdfs:label xml:lang="en">amino acid residue</rdfs:label>
     </owl:Class>
     
@@ -460,8 +456,8 @@ and having their side chains perpendicular to the planar axis.</terms:descriptio
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010471">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1597"/>
-        <terms:description xml:lang="en">A protein part is any submolecule of a protein.</terms:description>
-        <rdfs:label xml:lang="en">protein part</rdfs:label>
+        <terms:description xml:lang="en">An amino acid polymer submolecule is a submolecule of an amino acid polymer.</terms:description>
+        <rdfs:label xml:lang="en">amino acid polymer submolecule</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

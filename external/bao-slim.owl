@@ -20,11 +20,11 @@
      xmlns:cellline="http://www.ebi.ac.uk/cellline/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/bao-slim.owl">
-        <dc:date>15 Dec 2020</dc:date>
+        <dc:date>8 Jul 2021</dc:date>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <pav:importedFrom>http://bioassayontology.org/bao/bao_complete_merged.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2021-02-03 09:33:20</oboInOwl:date>
+        <oboInOwl:date>2022-08-11 21:04:10</oboInOwl:date>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
@@ -33,7 +33,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:label>BAO</rdfs:label>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <rdfs:label>bioassay ontology</rdfs:label>
-        <owl:versionInfo>2.7</owl:versionInfo>
+        <owl:versionInfo>2.7.2</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
@@ -9437,7 +9437,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080024">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080045"/>
         <obo:IAO_0000115>Any result reported as a simple binary assessment, such as &apos;active/ inactive&apos;, &apos;true/ false&apos;, etc.</obo:IAO_0000115>
         <obo:IAO_0000116>Date from BAE: 5/30/2016</obo:IAO_0000116>
         <obo:IAO_0000119>PubChem AID: 449752</obo:IAO_0000119>
@@ -9461,17 +9461,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080028">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
+        <obo:deprecated>true</obo:deprecated>
         <rdfs:label>quantified endpoint</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0080029 -->
-
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080029">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080028"/>
-        <rdfs:label>quantified entity</rdfs:label>
     </owl:Class>
     
 
@@ -9536,6 +9527,84 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
         <obo:IAO_0000118>% positive control</obo:IAO_0000118>
         <obo:IAO_0000118>percent postive control</obo:IAO_0000118>
         <rdfs:label>perturbagen / positive control ratio endpoint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0080037 -->
+
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080037">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002118"/>
+        <obo:IAO_0000115>Maximum induction effect (dimensionless)</obo:IAO_0000115>
+        <rdfs:label>Emax</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0080039 -->
+
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080039">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000193"/>
+        <obo:IAO_0000115>The maximum observed fold increase.</obo:IAO_0000115>
+        <rdfs:label>max fold increase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0080041 -->
+
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080041">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000583"/>
+        <obo:IAO_0000115>Count of cells as an endpoint</obo:IAO_0000115>
+        <rdfs:label>cell count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0080042 -->
+
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080042">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
+        <obo:IAO_0000115>A ratio endpoint is the relative relation between two quantitative results (a/b)</obo:IAO_0000115>
+        <rdfs:label>ratio endpoint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0080043 -->
+
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080043">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080042"/>
+        <obo:IAO_0000115>The ratio of the concentration of molecule in whole blood (i.e. contains both red blood cells and plasma) to the concentration of molecule in plasma, namely CB/CP.</obo:IAO_0000115>
+        <rdfs:label>blood to plasma ratio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0080044 -->
+
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080044">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080042"/>
+        <obo:IAO_0000115>Ratio of AC50 values</obo:IAO_0000115>
+        <rdfs:label>AC50 Ratio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0080045 -->
+
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080045">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
+        <obo:IAO_0000115>A categorical endpoint is any result that can take one of a limited number of possible values. </obo:IAO_0000115>
+        <rdfs:label>categorical endpoint</rdfs:label>
     </owl:Class>
     
 

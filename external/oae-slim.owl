@@ -35,6 +35,7 @@
         <dc:creator>Barry Smith</dc:creator>
         <dc:creator>David Ameriguian</dc:creator>
         <dc:creator>Edison Ong</dc:creator>
+        <dc:creator>Jessica DeGuise</dc:creator>
         <dc:creator>Jiangan Xie</dc:creator>
         <dc:creator>Kelly Yang</dc:creator>
         <dc:creator>Kevin Mo</dc:creator>
@@ -47,7 +48,7 @@
         <dc:creator>Sydni Joubran</dc:creator>
         <dc:creator>Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:creator>Zuoshuang &quot;Allen&quot; Xiang</dc:creator>
-        <dc:date>2020-8-31</dc:date>
+        <dc:date>2021-8-27</dc:date>
         <dc:description xml:lang="en">The Ontology of Adverse Eventsy (OAE) is a biomedical ontology in the domain of adverse events. OAE aims to standardize adverse event annotation, integrate various adverse event data, and support computer-assisted reasoning.  OAE is a community-based ontology. Its development follows the OBO Foundry principles. Vaccine adverse events have been used as an initial testing use case. OAE also studies adverse events associated with the administration of drug and nutritional products, the operation of surgeries, and the usage of medical devices, etc.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
@@ -55,8 +56,8 @@
         <dc:title xml:lang="en">OAE: Ontology of Adverse Events</dc:title>
         <pav:importedFrom>http://purl.obolibrary.org/obo/oae.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2021-02-03 09:44:07</oboInOwl:date>
-        <owl:versionInfo xml:lang="en">1.2.36</owl:versionInfo>
+        <oboInOwl:date>2022-08-11 21:02:29</oboInOwl:date>
+        <owl:versionInfo xml:lang="en">1.2.44</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
@@ -1971,6 +1972,7 @@ https://www.nlm.nih.gov/medlineplus/ency/article/003088.htm</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000568"/>
         <obo:IAO_0000115>an allergy AE which has an outcome of injection-site allergic reaction</obo:IAO_0000115>
         <obo:OAE_0004334>10022095</obo:OAE_0004334>
@@ -4739,6 +4741,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000322">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000650"/>
         <obo:IAO_0000115>a haematoma AE that has an outcome of injection-site haematoma, which results in a collection of blood outside the blood vessels at the physical area of injection</obo:IAO_0000115>
         <obo:IAO_0000117>SS, YH</obo:IAO_0000117>
@@ -4755,6 +4758,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000323">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000543"/>
         <obo:IAO_0000115>injection-site induration AE is an skin AE that results in hardening or thickening of tissue at the physical injection site</obo:IAO_0000115>
         <obo:IAO_0000117>SS, YH</obo:IAO_0000117>
@@ -4768,6 +4772,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000324">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000373"/>
         <obo:IAO_0000115>injection-site pruritus AE is an pruritus AE that results in an unpleasant sensation that evokes the desire or reflex to scratch at the physical area of injection</obo:IAO_0000115>
         <obo:IAO_0000117>SS, YH</obo:IAO_0000117>
@@ -4784,6 +4789,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000325">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000362"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <obo:IAO_0000115>injection-site rash AE is a rash AE that results in a change of the skin which affects its color, appearance or texture at the physical injection site</obo:IAO_0000115>
         <obo:IAO_0000117>SS, YH</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Rash</obo:IAO_0000119>
@@ -4796,6 +4802,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000326">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000555"/>
         <obo:IAO_0000115>injection-site warmth AE is a homeostasis AE that results in feeling of warmth at the physical injection site</obo:IAO_0000115>
         <obo:IAO_0000117>SS, YH</obo:IAO_0000117>
@@ -5465,6 +5472,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000367">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000584"/>
         <obo:IAO_0000115>a hypersensitivity AE which has an outcome of injection-site hypersensitivity</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
@@ -5477,6 +5485,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000368">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000556"/>
         <obo:IAO_0000115>an edema AE which occurs at the injection site. In this case, a collection of fluid at the injection site is found.</obo:IAO_0000115>
         <obo:IAO_0000117>YH, RR</obo:IAO_0000117>
@@ -5493,6 +5502,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000369">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000374"/>
         <obo:IAO_0000115>a pain AE that occurs in an injection site of a medical intervention</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
@@ -5506,6 +5516,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000370">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000557"/>
         <obo:IAO_0000115>an inflammation AE which has an outcome of injection-site inflammation</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
@@ -5518,6 +5529,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000371">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000427"/>
         <obo:IAO_0000115>a hemorrhage AE that has an outcome of injection-site hemorrhage</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
@@ -5532,6 +5544,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000372">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000052"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <obo:IAO_0000115>a tumor or mass AE that occurs in an injection-site</obo:IAO_0000115>
         <obo:IAO_0000117>YH, SS</obo:IAO_0000117>
         <obo:IAO_0000118>injection site nodule AE</obo:IAO_0000118>
@@ -6920,6 +6933,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000458">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000469"/>
         <obo:IAO_0000115>an abscess AE which has an outcome of injection-site abscess</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
@@ -9800,6 +9814,7 @@ Reference: Kumar A, Parillo JE. Shock: pathophysiology, classification and appro
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000644">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000645"/>
         <obo:IAO_0000115>injection-site erythema AE is an erythema AE that results in redness of skin, caused by hyperermia of the capillaries in the lower layers of the skin at the physical area of injection</obo:IAO_0000115>
         <obo:IAO_0000117>SS, YH</obo:IAO_0000117>
@@ -16147,6 +16162,7 @@ WEB: http://connection.ebscohost.com/c/reference-entries/21232773/intraventricul
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000543"/>
         <obo:IAO_0000115>an adverse event that results in the patient developing a scab at the site of drug injection</obo:IAO_0000115>
         <obo:IAO_0000117>SZ, DJ, SS, YH</obo:IAO_0000117>
@@ -16277,7 +16293,7 @@ WEB: http://connection.ebscohost.com/c/reference-entries/21232773/intraventricul
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001100">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004574"/>
         <obo:IAO_0000115>a thrombosis AE that has an outcome of thrombi in the ventricles</obo:IAO_0000115>
         <obo:IAO_0000117>SZ, DJ, SS, YH</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.cvimaging.northwestern.edu/for-physicians/cardiovascular-mri/indications/intracardiac-thrombus/</obo:IAO_0000119>
@@ -16400,7 +16416,7 @@ WEB: http://connection.ebscohost.com/c/reference-entries/21232773/intraventricul
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001109">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001505"/>
         <obo:IAO_0000115>a thrombosis AE with an outcome of formation of a blood clot located in the internal jugular vein</obo:IAO_0000115>
         <obo:IAO_0000117>SZ, DJ, SS, YH</obo:IAO_0000117>
         <obo:OAE_0004334>10023237</obo:OAE_0004334>
@@ -19375,6 +19391,7 @@ WEB: http://connection.ebscohost.com/c/reference-entries/21232773/intraventricul
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001312">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001505"/>
         <obo:IAO_0000115>a thrombosis AE that has an outcome of formation of a blood clot affecting the hepatic portal vein, can lead to hypertension or reduction of blood supply to the liver</obo:IAO_0000115>
         <obo:IAO_0000117>SZ, SS, YH</obo:IAO_0000117>
         <obo:IAO_0000118>PVT</obo:IAO_0000118>
@@ -19757,7 +19774,6 @@ WEB: http://connection.ebscohost.com/c/reference-entries/21232773/intraventricul
         <obo:IAO_0000118>pulmonary artery thrombosis AE</obo:IAO_0000118>
         <obo:IAO_0000118>pulmonary thrombosis AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.ncbi.nlm.nih.gov/pubmed/23299609</obo:IAO_0000119>
-        <obo:OAE_0004334>10037340</obo:OAE_0004334>
         <obo:OAE_0004334>10037377</obo:OAE_0004334>
         <obo:OAE_0004334>10037437</obo:OAE_0004334>
         <rdfs:label>pulmonary embolism AE</rdfs:label>
@@ -21355,6 +21371,7 @@ WEB: http://connection.ebscohost.com/c/reference-entries/21232773/intraventricul
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001447">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000085"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000588"/>
         <obo:IAO_0000115>a hematopoietic system AE that has an outcome of too many blood platelets or thrombocytes, can result in headache, lightheadedness, vision changes and limb numbness</obo:IAO_0000115>
         <obo:IAO_0000117>SZ, SS, YH</obo:IAO_0000117>
@@ -21370,6 +21387,7 @@ WEB: http://connection.ebscohost.com/c/reference-entries/21232773/intraventricul
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001448">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000085"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000588"/>
         <obo:IAO_0000115>a hematopoietic system AE that has an outcome of decrease in platelets in the blood</obo:IAO_0000115>
         <obo:IAO_0000117>SZ, SS, YH</obo:IAO_0000117>
@@ -22741,6 +22759,7 @@ http://www.encephalitis.info/information/the-illness/types-of-autoimmune-encepha
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001547">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000582"/>
         <obo:IAO_0000115>a sensory capability AE that shows up skin tenderness and occurs in an injection site of a medical intervention</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
@@ -22766,6 +22785,7 @@ http://www.encephalitis.info/information/the-illness/types-of-autoimmune-encepha
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001549">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000582"/>
         <obo:IAO_0000115>a sensory capability AE that shows up muscular soreness at the injection site of a medical intervention</obo:IAO_0000115>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
@@ -25444,7 +25464,7 @@ On an EKG, the QRS wave follows the P wave at a normal speed. Sometimes, though,
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001760">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004574"/>
         <obo:IAO_0000115>a thrombosis AE that is a rare lesion and may be defined as a thrombosis of a vessel without any obvious underlying cause that occurs in the aorta</obo:IAO_0000115>
         <obo:IAO_0000117>SS</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://circ.ahajournals.org/content/17/5/941.full.pdf</obo:IAO_0000119>
@@ -25491,7 +25511,7 @@ On an EKG, the QRS wave follows the P wave at a normal speed. Sometimes, though,
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001763">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000318"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004573"/>
         <obo:IAO_0000115>an arterial thrombosis AE that occurs in the cerebral artery, also referred to as an embolism AE</obo:IAO_0000115>
         <obo:IAO_0000116>[SS] Per DRA and KKB&apos;s comment, this term may also be characterized as a type of embolism even though labeled thrombosis.</obo:IAO_0000116>
         <obo:IAO_0000118>cerebral thrombosis AE</obo:IAO_0000118>
@@ -25507,6 +25527,7 @@ On an EKG, the QRS wave follows the P wave at a normal speed. Sometimes, though,
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001764">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001505"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004573"/>
         <obo:IAO_0000115>a venous thrombosis AE that is characterized by thrombosis of the venous channels in the brain. It is an uncommon cause of cerebral infarction relative to arterial disease, but it is an important consideration because of its potential morbidity.</obo:IAO_0000115>
         <obo:IAO_0000116>[SS] From http://medical-dictionary.thefreedictionary.com/cerebral+venous+thrombosis, Merwarth syndrome - progressive hemiplegia due to venous occlusion. Synonym(s): cerebral venous thrombosis</obo:IAO_0000116>
         <obo:IAO_0000117>SS</obo:IAO_0000117>
@@ -25522,6 +25543,7 @@ On an EKG, the QRS wave follows the P wave at a normal speed. Sometimes, though,
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001765">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001505"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004573"/>
         <obo:IAO_0000115>a venous thrombosis AE that occurs when a blood clot forms in the brain’s venous sinuses that prevents blood from draining out of the brain. As a result, blood cells may break and leak blood into the brain tissues, forming a hemorrhage.</obo:IAO_0000115>
         <obo:IAO_0000117>SS</obo:IAO_0000117>
         <obo:IAO_0000118>CVST</obo:IAO_0000118>
@@ -25549,7 +25571,8 @@ On an EKG, the QRS wave follows the P wave at a normal speed. Sometimes, though,
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001767">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001505"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004583"/>
         <obo:IAO_0000115>a thrombosis that is characterized by a clot that blocks blood flow a mesenteric vein, one of two veins through which blood leaves the intestine. The condition interrupts the blood supply to the intestine and can result in damage to the intestines.</obo:IAO_0000115>
         <obo:IAO_0000116>[SS] http://emedicine.medscape.com/article/193921-overview, Mesenteric venous thrombosis (also known as visceral venous thrombosis) is a rare but lethal form of mesenteric ischemia (see the image below). Antonio Hodgson first described mesenteric ischemia in the latter part of the 15th century. In 1895, Elliot first described mesenteric venous thrombosis as a cause of mesenteric ischemia. By the turn of the 19th century, many review articles and texts were describing the recent advances in the characterization and treatment of mesenteric ischemia, particularly venous thrombosis. In 1935, Warren and Eberhard reported that intestinal infarction resulted from ischemia due to venous thrombosis, and they reported a mortality rate of 34% in patients with venous thrombosis after resection. Unfortunately, despite improvements in therapy, this mortality rate still holds.
 </obo:IAO_0000116>
@@ -25581,7 +25604,8 @@ On an EKG, the QRS wave follows the P wave at a normal speed. Sometimes, though,
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001769">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001505"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004545"/>
         <obo:IAO_0000115>a thrombosis AE that occurs in the vein carrying the blood away from the retina</obo:IAO_0000115>
         <obo:IAO_0000116>[SS] The term &apos;retinal vein thrombosis&apos; is listed as a different class from &apos;retinal vein occlusion&apos; for the difference in the pathological process of how the blockage occurs in the vein.</obo:IAO_0000116>
         <obo:IAO_0000117>SS</obo:IAO_0000117>
@@ -25673,6 +25697,7 @@ On an EKG, the QRS wave follows the P wave at a normal speed. Sometimes, though,
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001777">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000318"/>
         <obo:IAO_0000115>an arterial thrombosis AE that occurs in the limb(s) of the body</obo:IAO_0000115>
         <obo:IAO_0000117>SS</obo:IAO_0000117>
@@ -25740,7 +25765,8 @@ On an EKG, the QRS wave follows the P wave at a normal speed. Sometimes, though,
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001782">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001505"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004582"/>
         <obo:IAO_0000115>a thrombosis AE that occurs in subclavian vein. Among patients with effort-induced thrombosis with subclavian vein stenosis, the thrombosis occurs in the dominant arm in 80% of cases. </obo:IAO_0000115>
         <obo:IAO_0000117>SS</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://emedicine.medscape.com/article/424777-overview#showall</obo:IAO_0000119>
@@ -25785,7 +25811,7 @@ On an EKG, the QRS wave follows the P wave at a normal speed. Sometimes, though,
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001785">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000085"/>
         <obo:IAO_0000115>a thrombosis that is characterized by a blockage of the small veins that carry blood away from the retina. The retina is the layer of tissue at the back of the inner eye that converts light images to nerve signals and sends them to the brain. </obo:IAO_0000115>
         <obo:IAO_0000117>SS</obo:IAO_0000117>
         <obo:IAO_0000118>RVO</obo:IAO_0000118>
@@ -25800,7 +25826,7 @@ On an EKG, the QRS wave follows the P wave at a normal speed. Sometimes, though,
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001786">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004574"/>
         <obo:IAO_0000115>a thrombosis AE that occurs in the atrium (left or right)</obo:IAO_0000115>
         <obo:IAO_0000117>SS</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://ehjcimaging.oxfordjournals.org/content/9/1/204.full</obo:IAO_0000119>
@@ -25814,15 +25840,14 @@ On an EKG, the QRS wave follows the P wave at a normal speed. Sometimes, though,
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001787">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001771"/>
-        <obo:IAO_0000115>an arterial embolism AE that occurs in the coronary artery</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000318"/>
+        <obo:IAO_0000115>an arterial thrombosis AE that occurs in the coronary artery</obo:IAO_0000115>
         <obo:IAO_0000117>SS</obo:IAO_0000117>
-        <obo:IAO_0000118>coronary artery thrombosis AE</obo:IAO_0000118>
         <obo:IAO_0000118>coronary embolism AE</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/Coronary+embolism</obo:IAO_0000119>
         <obo:OAE_0004334>10011084</obo:OAE_0004334>
         <obo:OAE_0004334>10011091</obo:OAE_0004334>
-        <rdfs:label xml:lang="en">coronary artery embolism AE</rdfs:label>
+        <rdfs:label xml:lang="en">coronary artery thrombosis AE</rdfs:label>
     </owl:Class>
     
 
@@ -29018,6 +29043,7 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002041">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000304"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <obo:IAO_0000115>a cellulititis AE that occurs at an injection-site.</obo:IAO_0000115>
         <obo:IAO_0000117>RR</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.nhs.uk/Conditions/Cellulitis/Pages/Symptoms.aspx</obo:IAO_0000119>
@@ -29116,6 +29142,7 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000376"/>
         <obo:IAO_0000115>an urticaria AE that occurs in an injection site</obo:IAO_0000115>
         <obo:IAO_0000117>RR</obo:IAO_0000117>
@@ -29358,6 +29385,7 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000584"/>
         <obo:IAO_0000115>a hypersensitivity AE which has an outcome of type III immune complex mediated reaction, a type of hypersensitivity reaction in which circulating antigen-antibody immune complexes are deposited in post-capillary venules, with subsequent complement fixation</obo:IAO_0000115>
         <obo:IAO_0000117>RR</obo:IAO_0000117>
@@ -29707,6 +29735,7 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002091">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000363"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <obo:IAO_0000115>an infection AE that occurs at an injection-site</obo:IAO_0000115>
         <obo:IAO_0000117>RR</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.merriam-webster.com/dictionary/infection</obo:IAO_0000119>
@@ -59412,6 +59441,7 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004276">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000469"/>
         <obo:IAO_0000115>an abscess AE that occurs at an injection-site. Note that an abscess is a collection of pus that has built up within a tissue of the body.</obo:IAO_0000115>
         <obo:IAO_0000117>JX, YH</obo:IAO_0000117>
@@ -59427,6 +59457,7 @@ http://en.wikipedia.org/wiki/Cardiac_output</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004277">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000211"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
         <obo:IAO_0000115>an ulcer AE that occurs at an injection-site.</obo:IAO_0000115>
         <obo:IAO_0000117>JX, YH</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Ulcer</obo:IAO_0000119>
@@ -62798,6 +62829,784 @@ Ref: http://www.mayoclinic.org/tests-procedures/ana-test/basics/definition/prc-2
         <obo:IAO_0000119>https://www.nature.com/articles/43591</obo:IAO_0000119>
         <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10063393</obo:OAE_0004334>
         <rdfs:label xml:lang="en">karyorrhexis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004523 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004523">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0002580"/>
+        <obo:IAO_0000115>A cardiac disorder AE that shows a disorder of the heart&apos;s electrical activity, which can cause sudden, uncontrollable, dangerous arrhythmias in response to exercise or stress. The term &quot;long QT&quot; refers to an abnormal pattern seen on an EKG (electrocardiogram), a test that detects and records the heart&apos;s electrical activity.</obo:IAO_0000115>
+        <obo:IAO_0000117>Madison Kalter, Jamie Ngai, Beccca Racz, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>LQTS AE</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Long_QT_syndrome</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.nhlbi.nih.gov/health-topics/long-qt-syndrome</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">long QT syndrome AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004524 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004524">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000645"/>
+        <obo:IAO_0000115>an injection-site AE that displays erythema at the injection site.</obo:IAO_0000115>
+        <obo:IAO_0000117>Liwei Wang, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">injection site erythema AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004525 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004525">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
+        <obo:IAO_0000115>an adverse event that occurs immediately after an injection</obo:IAO_0000115>
+        <obo:IAO_0000117>Liwei Wang, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">immediate post-injection reaction AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004526 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004526">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000366"/>
+        <obo:IAO_0000115>an adverse event that displays swelling at the injection site</obo:IAO_0000115>
+        <obo:IAO_0000117>Liwei Wang, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Injection site swelling AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004527 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004527">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001505"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1003880</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">axillary vein thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004528 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004528">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000318"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10063093</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">basilar artery thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004529 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004529">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004573"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10062573</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">brain stem thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004530 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004530">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004574"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10053994</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">cardiac ventricular thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004531 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004531">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10079523</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">catheter site thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004532 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004532">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10007830</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">cavernous sinus thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004533 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004533">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10063176</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">prosthetic cardiac valve thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004534 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004534">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001764"/>
+        <obo:IAO_0000115>An adverse event with the outcome of the cerebral venous sinus thrombosis (CVST), which occurs when a blood clot forms in the brain’s venous sinuses. CVST prevents blood from draining out of the brain. As a result, blood cells may break and leak blood into the brain tissues, forming a hemorrhage.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.hopkinsmedicine.org/health/conditions-and-diseases/cerebral-venous-sinus-thrombosis</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10083037</obo:OAE_0004334>
+        <rdfs:comment>CVST</rdfs:comment>
+        <rdfs:label xml:lang="en">cerebral venous sinus thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004535 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004535">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10072240</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">foetal placental thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004536 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004536">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000318"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004557"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10019636</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">hepatic artery thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004537 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004537">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001505"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004557"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10019713</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">hepatic vein thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004538 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004538">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000318"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004583"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10027397</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">mesenteric artery thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004539 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004539">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000318"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10072564</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">peripheral artery thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004540 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004540">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001448"/>
+        <obo:IAO_0000115>An adverse event in any patient presenting with both acute venous or arterial thrombosis AND new onset thrombocytopenia after a medical intervention such as vaccination.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Jessica DeGuise</obo:IAO_0000117>
+        <obo:IAO_0000118>TTS</obo:IAO_0000118>
+        <obo:IAO_0000119>https://brightoncollaboration.us/wp-content/uploads/2021/04/TTS-Case-Finding-and-Definition-Process.v9.0-April-16-202115853.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">thrombosis with thrombocytopenia syndrome AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004541 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004541">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10077022</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">postpartum thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004542 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004542">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001505"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004541"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10036300</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">postpartum venous thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004543 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004543">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001505"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004561"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10037459</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">pulmonary venous thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004544 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004544">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000318"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004571"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10038380</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">renal artery thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004545 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004545">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004572"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10062108</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">retinal vascular thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004546 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004546">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10071316</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">spinal artery thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004547 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004547">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000318"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004564"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10074600</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">splenic artery thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004548 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004548">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001505"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004564"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10041659</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">splenic vein thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004549 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004549">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10043634</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">thrombosis prophylaxis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004550 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004550">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10063934</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">vascular stent thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004551 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004551">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10078675</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">vascular access site thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004552 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004552">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10069922</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">vascular graft thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004553 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004553">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001505"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10063363</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">brachiocephalic vein thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004554 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004554">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000318"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10057777</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">vertebral artery thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004555 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004555">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001505"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10077623</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">portosplenomesenteric venous thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004556 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004556">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10058568</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">arteriovenous fistula thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004557 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004557">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004570"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10074494</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">hepatic vascular thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004558 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004558">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10069550</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">intrapericardial thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004559 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004559">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000318"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004569"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10081144</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">ophthalmic artery thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004560 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004560">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001505"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004569"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10074349</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">ophthalmic vein thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004561 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004561">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000115>an arterial embolism AE that results in the blockage of the main artery of a lung or one of its branches by a substance that has travelled from elsewhere in the body through the bloodstream</obo:IAO_0000115>
+        <obo:IAO_0000116>[SS] moved by relation &apos;SubclassOf&apos; from lung disorder AE to arterial embolism on 01/07/14 </obo:IAO_0000116>
+        <obo:IAO_0000117>SZ, SS, YH, JD</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.ncbi.nlm.nih.gov/pubmed/23299609</obo:IAO_0000119>
+        <obo:OAE_0004334>10037437</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">pulmonary thrombosis AE</rdfs:label>
+        <rdfs:seeAlso>HPO: HP_0002204</rdfs:seeAlso>
+        <rdfs:seeAlso>SIDER: C0034065</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004562 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004562">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001505"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004571"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10038518</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">renal vein thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004563 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004563">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000318"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004545"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10038831</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">retinal artery thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004564 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004564">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10074601</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">splenic thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004565 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004565">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000318"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004582"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10042334</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">subclavian artery thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004566 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004566">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004583"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10043626</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">thrombosis mesenteric vessel AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004567 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004567">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10044457</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">transverse sinus thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004568 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004568">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10076190</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">vaccination site thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004569 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004569">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">ophthalmic thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004570 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004570">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">hepatic thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004571 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004571">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000318"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">renal thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004572 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004572">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10062108</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">retinal thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004573 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004573">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">brain thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004574 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004574">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <rdfs:label xml:lang="en">cardiac thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004575 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004575">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001505"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10019713</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">visceral venous thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004576 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004576">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004540"/>
+        <obo:IAO_0000115>A definit case of TTS</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Jessica DeGuise</obo:IAO_0000117>
+        <obo:IAO_0000118>Level 1 thrombosis with thrombocytopenia syndrome AE</obo:IAO_0000118>
+        <obo:IAO_0000119>https://brightoncollaboration.us/wp-content/uploads/2021/04/TTS-Case-Finding-and-Definition-Process.v9.0-April-16-202115853.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Level 1 TTS AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004577 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004577">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004540"/>
+        <obo:IAO_0000115>A probable case of TTS</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Jessica DeGuise</obo:IAO_0000117>
+        <obo:IAO_0000118>Level 2 thrombosis with thrombocytopenia syndrome AE</obo:IAO_0000118>
+        <obo:IAO_0000119>https://brightoncollaboration.us/wp-content/uploads/2021/04/TTS-Case-Finding-and-Definition-Process.v9.0-April-16-202115853.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Level 2 TTS AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004578 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004578">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004540"/>
+        <obo:IAO_0000115>A possible case TTS</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Jessica DeGuise</obo:IAO_0000117>
+        <obo:IAO_0000118>Level 3 thrombosis with thrombocytopenia syndrome AE</obo:IAO_0000118>
+        <obo:IAO_0000119>https://brightoncollaboration.us/wp-content/uploads/2021/04/TTS-Case-Finding-and-Definition-Process.v9.0-April-16-202115853.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Level 3 TTS AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004579 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004579">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004540"/>
+        <obo:IAO_0000115>A reported case as TTS but there is insufficient evidence to meet any level of the case.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Jessica DeGuise</obo:IAO_0000117>
+        <obo:IAO_0000118>Level 4 thrombosis with thrombocytopenia syndrome AE</obo:IAO_0000118>
+        <obo:IAO_0000119>https://brightoncollaboration.us/wp-content/uploads/2021/04/TTS-Case-Finding-and-Definition-Process.v9.0-April-16-202115853.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Level 4 TTS AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004580 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004580">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004540"/>
+        <obo:IAO_0000115>most likely not a case of TTS</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Jessica DeGuise</obo:IAO_0000117>
+        <obo:IAO_0000118>Level 5 thrombosis with thrombocytopenia syndrome AE</obo:IAO_0000118>
+        <obo:IAO_0000119>https://brightoncollaboration.us/wp-content/uploads/2021/04/TTS-Case-Finding-and-Definition-Process.v9.0-April-16-202115853.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Level 5 TTS AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004581 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004581">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000318"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0004561"/>
+        <obo:IAO_0000115>an arterial embolism AE that results in the blockage of the main artery of a lung or one of its branches by a substance that has travelled from elsewhere in the body through the bloodstream</obo:IAO_0000115>
+        <obo:IAO_0000116>[SS] moved by relation &apos;SubclassOf&apos; from lung disorder AE to arterial embolism on 01/07/14 </obo:IAO_0000116>
+        <obo:IAO_0000117>SZ, SS, YH, JD</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.ncbi.nlm.nih.gov/pubmed/23299609</obo:IAO_0000119>
+        <obo:OAE_0004334>10037340</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">pulmonary artery thrombosis AE</rdfs:label>
+        <rdfs:seeAlso>HPO: HP_0002204</rdfs:seeAlso>
+        <rdfs:seeAlso>SIDER: C0034065</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004582 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004582">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0001505"/>
+        <obo:IAO_0000115>a thrombosis AE that occurs in subclavian vein. Among patients with effort-induced thrombosis with subclavian vein stenosis, the thrombosis occurs in the dominant arm in 80% of cases. </obo:IAO_0000115>
+        <obo:IAO_0000117>SS</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://emedicine.medscape.com/article/424777-overview#showall</obo:IAO_0000119>
+        <obo:OAE_0004334>10049446</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">subclavian thrombosis AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004583 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004583">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000185"/>
+        <obo:IAO_0000117>Jessica DeGuise, Oliver He</obo:IAO_0000117>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10027397</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">mesenteric thrombosis AE</rdfs:label>
     </owl:Class>
     
 

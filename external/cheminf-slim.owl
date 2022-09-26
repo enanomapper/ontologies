@@ -78,7 +78,7 @@
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <pav:importedFrom>http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2021-02-03 09:36:15</oboInOwl:date>
+        <oboInOwl:date>2022-08-11 21:02:46</oboInOwl:date>
         <rdfs:comment xml:lang="en">An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at https://github.com/information-artifact-ontology/IAO</rdfs:comment>
         <rdfs:comment>Document containing upporting external terms</rdfs:comment>
         <rdfs:comment>IDs allocated to related efforts: PNO: IAO_0020000-IAO_0020999, D_ACTS: IAO_0021000-IAO_0021999</rdfs:comment>
@@ -92,7 +92,7 @@ AutoID - digit count = 6, prefix = CHEMINF_</rdfs:comment>
         <rdfs:seeAlso rdf:resource="http://code.google.com/p/information-artifact-ontology/"/>
         <rdfs:seeAlso rdf:resource="https://github.com/information-artifact-ontology/IAO"/>
         <owl:versionInfo>1.9.2</owl:versionInfo>
-        <owl:versionInfo>1.9.3</owl:versionInfo>
+        <owl:versionInfo>2.0.1</owl:versionInfo>
         <owl:versionInfo>2020-12-09</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
         <owl:versionInfo>alpha</owl:versionInfo>
@@ -231,6 +231,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:label>definition</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -262,6 +263,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">term editor</rdfs:label>
+        <rdfs:label>term editor</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -277,6 +279,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">alternative term</rdfs:label>
+        <rdfs:label>alternative term</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -4146,7 +4149,7 @@ The term &apos;ionization potential&apos; has historically been used but is now 
 
     <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000302">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000464"/>
-        <rdfs:label xml:lang="en">PubMed Identifier</rdfs:label>
+        <rdfs:label xml:lang="en">PubChem Identifier</rdfs:label>
     </owl:Class>
     
 
@@ -5603,6 +5606,124 @@ where p is the partial pressure of the solute in the gas above the solution, c i
     
 
 
+    <!-- http://semanticscience.org/resource/CHEMINF_000517 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000517">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000085"/>
+        <obo:IAO_0000115>An InChI-like descriptor for nanomaterials.</obo:IAO_0000115>
+        <dc:description>An InChI-like descriptor for nanomaterials.</dc:description>
+        <rdfs:label>NInChI descriptor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_000518 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000518">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000061"/>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000085"/>
+        <obo:IAO_0000115>TUCAN is an identifier based on a canonicalization and serialization algorithm that is independent of domain-specific concepts of structure and bonding.</obo:IAO_0000115>
+        <dc:description>TUCAN is an identifier based on a canonicalization and serialization algorithm that is independent of domain-specific concepts of structure and bonding.</dc:description>
+        <rdfs:label>TUCAN descriptor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_000519 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000519">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000027"/>
+        <obo:IAO_0000115>The spatial arrangement of the atoms of a chiral molecular entity (or group) and its stereochemical description e.g. R or S.</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-4378-6061"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-11T08:01:45Z</dc:date>
+        <dc:description>The spatial arrangement of the atoms of a chiral molecular entity (or group) and its stereochemical description e.g. R or S.</dc:description>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1351/goldbook.A00020</dc:source>
+        <rdfs:label xml:lang="en">absolute configuration stereochemical descriptor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_000520 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000520">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000027"/>
+        <obo:IAO_0000115>The configuration of any stereogenic (asymmetric) centre with respect to any other stereogenic centre contained within the same molecular entity. Unlike absolute configuration, relative configuration is reflection-invariant. Relative configuration, distinguishing diastereoisomers, may be denoted by the configurational descriptors R*, R* (or l) and R*, S* (or u) meaning, respectively, that the two centres have identical or opposite configurations. For molecules with more than two asymmetric centres the prefix rel- may be used in front of the name of one enantiomer where R and S have been used. If any centres have known absolute configuration then only R* and S* can be used for the relative configuration.</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-4378-6061"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-11T08:04:08Z</dc:date>
+        <dc:description>The configuration of any stereogenic (asymmetric) centre with respect to any other stereogenic centre contained within the same molecular entity. Unlike absolute configuration, relative configuration is reflection-invariant. Relative configuration, distinguishing diastereoisomers, may be denoted by the configurational descriptors R*, R* (or l) and R*, S* (or u) meaning, respectively, that the two centres have identical or opposite configurations. For molecules with more than two asymmetric centres the prefix rel- may be used in front of the name of one enantiomer where R and S have been used. If any centres have known absolute configuration then only R* and S* can be used for the relative configuration.</dc:description>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1351/goldbook.R05260</dc:source>
+        <rdfs:label xml:lang="en">relative configuration stereochemical descriptor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_000521 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000521">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000031"/>
+        <obo:IAO_0000115>The number of molecules of H2 that would have to be added to a molecule to convert all pi bonds to single bonds, and all rings to acyclic structures.</obo:IAO_0000115>
+        <obo:IAO_0000118>DBE, degree/level of unsaturation, unsaturation index, index of hydrogen deficiency (IHD)</obo:IAO_0000118>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-4378-6061"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-11T08:07:03Z</dc:date>
+        <dc:description>The number of molecules of H2 that would have to be added to a molecule to convert all pi bonds to single bonds, and all rings to acyclic structures.</dc:description>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.chem.ucla.edu/~harding/IGOC/D/double_bond_equivalent.html</dc:source>
+        <rdfs:label xml:lang="en">double bond equivalent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_000522 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000522">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000031"/>
+        <obo:IAO_0000115>The Smallest Set of Smallest Rings (SSSR) is a subset of cycles within a molecular graph (ring). SSSR was the first widely-used cycle set to classify cyclic molecules in cheminformatics. It offers a limited solution to the problem of molecular cycle perception. Unlike the set of all cycles, an SSSR can filter useless or interfering envelope cycles, but offers no guarantee of uniqueness. A given molecular graph can produce multiple SSSRs with no constraints on which one will be obtained.</obo:IAO_0000115>
+        <obo:IAO_0000118>SSSR</obo:IAO_0000118>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-4378-6061"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-11T08:18:30Z</dc:date>
+        <dc:description>The Smallest Set of Smallest Rings (SSSR) is a subset of cycles within a molecular graph (ring). SSSR was the first widely-used cycle set to classify cyclic molecules in cheminformatics. It offers a limited solution to the problem of molecular cycle perception. Unlike the set of all cycles, an SSSR can filter useless or interfering envelope cycles, but offers no guarantee of uniqueness. A given molecular graph can produce multiple SSSRs with no constraints on which one will be obtained.</dc:description>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://depth-first.com/articles/2020/08/31/a-smallest-set-of-smallest-rings/</dc:source>
+        <rdfs:label xml:lang="en">smallest set of smallest rings</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_000523 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000523">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000043"/>
+        <obo:IAO_0000115>A molecular entity name that represents the name of a molecular structure determined by the naming algorithms developed by ACD/Labs.</obo:IAO_0000115>
+        <obo:IAO_0000118>index name</obo:IAO_0000118>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-4378-6061"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-11T08:20:10Z</dc:date>
+        <dc:description>A molecular entity name that represents the name of a molecular structure determined by the naming algorithms developed by ACD/Labs.</dc:description>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.acdlabs.com/products/name/</dc:source>
+        <rdfs:label xml:lang="en">ACD/Labs index name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_000524 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000524">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000113"/>
+        <obo:IAO_0000115>An InChI descriptor that is not the standard and that is created with the fixedH layer option. The fixedH layer is appended to the standard InChI and lists the exact position of the tautomeric hydrogen atoms. It is useful when one wants to represent a specific tautomer of a given structure, because if the InChIs for the tautomers were created without the fixedH layer option, the normalization performed by the InChI generation program would result in these InChIs being identical.</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-4378-6061"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-11T08:22:02Z</dc:date>
+        <dc:description>An InChI descriptor that is not the standard and that is created with the fixedH layer option. The fixedH layer is appended to the standard InChI and lists the exact position of the tautomeric hydrogen atoms. It is useful when one wants to represent a specific tautomer of a given structure, because if the InChIs for the tautomers were created without the fixedH layer option, the normalization performed by the InChI generation program would result in these InChIs being identical.</dc:description>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1186%2Fs13321-015-0068-4</dc:source>
+        <rdfs:label xml:lang="en">InChI with fixedH layer</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://semanticscience.org/resource/CHEMINF_000550 -->
 
 
@@ -5695,6 +5816,47 @@ where p is the partial pressure of the solute in the gas above the solution, c i
         <obo:IAO_0000115>Identifier used by the European Registry of Materials (https://nanocommons.github.io/identifiers/).</obo:IAO_0000115>
         <dc:description>Identifier used by the European Registry of Materials (https://nanocommons.github.io/identifiers/).</dc:description>
         <rdfs:label>European Registry of Materials identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_000570 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000570">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000464"/>
+        <rdfs:label xml:lang="en">SwissLipids identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_000571 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000571">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000464"/>
+        <rdfs:label xml:lang="en">MolMeDB identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_000572 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000572">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000464"/>
+        <rdfs:label xml:lang="en">PDB ligand identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_000573 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000573">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000464"/>
+        <cheminf1:short_name>PDB identifier</cheminf1:short_name>
+        <rdfs:label xml:lang="en">PDB structure identifier</rdfs:label>
     </owl:Class>
     
 
@@ -6916,9 +7078,6 @@ where p is the partial pressure of the solute in the gas above the solution, c i
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/iao/iao-main.owl">
-        <rdfs:seeAlso rdf:resource="http://code.google.com/p/information-artifact-ontology/"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/iao/obsolete.owl">
         <rdfs:seeAlso rdf:resource="http://code.google.com/p/information-artifact-ontology/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">

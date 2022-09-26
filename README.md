@@ -114,8 +114,10 @@ Making Releases
 5. Update the owl.versionInfo of `enanomapper.owl`
 6. Update the owl.versionInfo of `enanomapper-dev.owl`
 7. Write markdown for the release with the changes since the previous release
-8. Release the whole repository in GitHub https://github.com/enanomapper/ontologies/releases 
-9. Update the DOI number for new release: https://zenodo.org/record/260098
+8. Update the CITATION.cff
+9. Tag the git commit matching the release
+10. Release the whole repository in GitHub https://github.com/enanomapper/ontologies/releases 
+11. Update the DOI number for new release: https://zenodo.org/record/260098
 
 Funding
 =======

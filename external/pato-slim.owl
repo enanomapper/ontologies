@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.enanomapper.net/onto/external/pato-slim.owl#"
      xml:base="http://purl.enanomapper.net/onto/external/pato-slim.owl"
+     xmlns:cl="http://purl.obolibrary.org/obo/cl#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:go="http://purl.obolibrary.org/obo/go#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -9,23 +10,35 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:obo1="http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/"
      xmlns:pato="http://purl.obolibrary.org/obo/pato#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
      xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:chebi3="http://purl.obolibrary.org/obo/chebi#1"
+     xmlns:chebi4="http://purl.obolibrary.org/obo/chebi#3"
+     xmlns:chebi5="http://purl.obolibrary.org/obo/chebi#2"
+     xmlns:terms2="http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/"
+     xmlns:ubprop="http://purl.obolibrary.org/obo/ubprop#"
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/pato-slim.owl">
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
         <dc:description>An ontology of phenotypic qualities (properties, attributes or characteristics).</dc:description>
         <dc:title>PATO - the Phenotype And Trait Ontology</dc:title>
         <pav:importedFrom>http://purl.obolibrary.org/obo/pato.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2021-02-03 09:45:38</oboInOwl:date>
+        <oboInOwl:date>2022-08-11 21:03:48</oboInOwl:date>
         <oboInOwl:default-namespace>quality</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
+        <owl:versionInfo>2022-08-10</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
@@ -68,7 +81,6 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:label>definition</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -77,7 +89,14 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <oboInOwl:hasDbXref>IAO:0000116</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>editor_note</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>editor_note</oboInOwl:shorthand>
+        <rdfs:label>editor note</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -116,10 +135,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
 
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
     
 
 
@@ -174,12 +193,40 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002171 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002171"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002174 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002174"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002175 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002175"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002259 -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002259">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002475 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002475"/>
     
 
 
@@ -229,6 +276,13 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0004036 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0004036"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0004049 -->
 
 
@@ -247,6 +301,241 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0040042"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000001 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000002 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000003 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000004 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000004"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000005 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000005"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000006 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000006"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000007 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000007"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000008 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000008"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000009 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000009"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000010 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000010"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000011 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000011"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000012 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000013 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000013"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000103 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000103"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000202 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000202"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_annotation_extension -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_gp2term -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_gp2term">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_ontology -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_ontology">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_gocam -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_gocam">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi#1_STAR -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi#1_STAR">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi#2_STAR -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi#2_STAR">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi#3_STAR -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi#3_STAR">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/charge -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/charge"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/formula -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/formula"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/inchi -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/inchi"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/inchikey -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/inchikey"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/mass -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/mass"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/monoisotopicmass -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/monoisotopicmass"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/smiles -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/smiles"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cl#BDS_subset -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#BDS_subset">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cl#added_for_HCA -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#added_for_HCA">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -272,15 +561,6 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_agr">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/go#goslim_aspergillus -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_aspergillus">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -376,12 +656,37 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/go#goslim_synapse -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_synapse">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/go#goslim_yeast -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_yeast">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#prokaryote_subset -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#prokaryote_subset">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncbitaxon#has_rank -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ncbitaxon#has_rank"/>
     
 
 
@@ -445,6 +750,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/pato#location_grouping -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#location_grouping">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/pato#mpath_slim -->
 
 
@@ -475,6 +789,13 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/pato#seeAlso -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#seeAlso"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/pato#value_slim -->
 
 
@@ -490,6 +811,209 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ro/subsets#ro-eco">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#cumbo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#cumbo">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#developmental_classification -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#developmental_classification">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#early_development -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#early_development">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#efo_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#efo_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#emapa_ehdaa2 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#emapa_ehdaa2">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#functional_classification -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#functional_classification">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#grouping_class -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#grouping_class">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#homology_grouping -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#homology_grouping">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#inconsistent_with_fma -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#inconsistent_with_fma">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#location_grouping -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#location_grouping">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#major_organ -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#major_organ">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#non_informative -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#non_informative">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#organ_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#organ_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#pheno_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#pheno_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#phenotype_rcn -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#phenotype_rcn">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#uberon_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#uberon_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#unverified_taxonomic_grouping -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#unverified_taxonomic_grouping">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#upper_level -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#upper_level">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#vertebrate_core -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#vertebrate_core">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ubprop#_upper_level -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ubprop#_upper_level">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <oboInOwl:hasDbXref>http://purl.org/dc/elements/1.1/creator</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-creator</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-creator</oboInOwl:shorthand>
+        <rdfs:label>creator</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -522,10 +1046,31 @@
     
 
 
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
+        <oboInOwl:hasDbXref>http://purl.org/dc/terms/contributor</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-contributor</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-contributor</oboInOwl:shorthand>
+        <rdfs:label>contributor</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/dc/terms/creator -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
     
 
 
@@ -540,6 +1085,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/pav/importedFrom"/>
+    
+
+
+    <!-- http://purl.org/spar/cito/citesAsAuthority -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/spar/cito/citesAsAuthority"/>
     
 
 
@@ -559,10 +1111,24 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#auto-generated-by -->
 
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#auto-generated-by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#composition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#composition"/>
     
 
 
@@ -572,6 +1138,13 @@
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#consider">
         <rdfs:label>consider</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#consistent_with -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#consistent_with"/>
     
 
 
@@ -596,10 +1169,80 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#date_retrieved -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#date_retrieved"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#default-namespace -->
 
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#default-namespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#editor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#editor"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#evidence -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#evidence"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#exception -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#exception"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#exceptions -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#exceptions"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#exceptions_url -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#exceptions_url"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#external_class -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#external_class"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#external_class_label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#external_class_label"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#external_ontology -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#external_ontology"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#gene -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#gene"/>
     
 
 
@@ -673,6 +1316,20 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasScope -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasScope"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonymType -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonymType"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
 
@@ -689,10 +1346,31 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#inconsistent_with -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inconsistent_with"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inferred_by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inferred_by"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#is_class_level -->
 
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_class_level"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_inferred -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_inferred"/>
     
 
 
@@ -703,12 +1381,131 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#note -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#note"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#notes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#notes"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#ontology -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#ontology"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#order -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#order"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#possible_exception -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#possible_exception"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#reference -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#reference"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#region -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#region"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#seeAlso -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#seeAlso"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
 
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
         <rdfs:label>shorthand</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#source"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#status"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#submitter -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#submitter"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#taxon -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#taxon"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#todo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#todo"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#url -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#url"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#version -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#version"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/IAO_0000233"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/source"/>
     
 
 
@@ -733,10 +1530,17 @@
     
 
 
-    <!-- http://xmlns.com/foaf/0.1/page -->
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
 
 
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/page"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depicted_by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depicted_by"/>
     
 
 
@@ -752,10 +1556,19 @@
     
 
 
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1793 -->
+
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1793"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
 
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016">
+        <rdfs:label xml:lang="en">disposition</rdfs:label>
+    </owl:Class>
     
 
 
@@ -916,11 +1729,13 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000122">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001708"/>
         <obo:IAO_0000115>A 1-D extent quality which is equal to the distance between two points.</obo:IAO_0000115>
+        <pato:seeAlso>https://github.com/pato-ontology/pato/issues/337</pato:seeAlso>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0000122</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:comment>Length often refers to the longer or longest dimension of an object, however, this is not always true. See https://github.com/pato-ontology/pato/issues/337 for full discussion.</rdfs:comment>
         <rdfs:label>length</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -944,6 +1759,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#relational_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:comment>For any biological use of PATO, the concept that should be used is &apos;mass&apos; and not &apos;weight&apos;. For example, increased weight of an organism.</rdfs:comment>
         <rdfs:label>mass</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1017,12 +1833,45 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0000261 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000261">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115>A quality of a single physical entity which is held by a bearer when the latter exhibits a state of growth, differentiation, or development.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000261</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <rdfs:label>maturity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000261"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A quality of a single physical entity which is held by a bearer when the latter exhibits a state of growth, differentiation, or development.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Merriam-Webster:Merriam-Webster</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000371 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000371">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1793"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000371</oboInOwl:id>
+        <rdfs:label>obsolete distance value</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0000380 -->
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000380">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000044"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000912"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0055003"/>
         <obo:IAO_0000115>A frequency which is relatively high.</obo:IAO_0000115>
         <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000381"/>
         <oboInOwl:hasExactSynonym>high frequency</oboInOwl:hasExactSynonym>
@@ -1047,7 +1896,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000381">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000044"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000911"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0055004"/>
         <obo:IAO_0000115>A frequency which is relatively low.</obo:IAO_0000115>
         <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000380"/>
         <oboInOwl:hasExactSynonym>low frequency</oboInOwl:hasExactSynonym>
@@ -1515,10 +2364,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000915">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001708"/>
         <obo:IAO_0000115>A 1-D extent quality which is equal to the dimension through an object as opposed to its length or width.</obo:IAO_0000115>
+        <pato:seeAlso>https://github.com/pato-ontology/pato/issues/337</pato:seeAlso>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0000915</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:comment>Thickness often refers to the smallest 1-D extent compared to the other two orthogonal dimensions, however, this is not always true. See https://github.com/pato-ontology/pato/issues/337 for full discussion.</rdfs:comment>
         <rdfs:label>thickness</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1558,11 +2409,13 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000921">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001708"/>
         <obo:IAO_0000115>A 1-D extent quality which is equal to the distance from one side of an object to another side which is opposite.</obo:IAO_0000115>
+        <pato:seeAlso>https://github.com/pato-ontology/pato/issues/337</pato:seeAlso>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>breadth</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>PATO:0000921</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:comment>Width often refers to the dimension that is greater than the extent in only one of the other two orthogonal dimensions, however, this is not always true. See https://github.com/pato-ontology/pato/issues/337 for full discussion.</rdfs:comment>
         <rdfs:label>width</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1680,6 +2533,27 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A physical quality which inheres in a bearer by virtue of the bearer&apos;s exhibiting density.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001190 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001190">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000261"/>
+        <obo:IAO_0000115>A maturity quality inhering in a bearer by virtue the bearer&apos;s being not fully grown or developed.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001190</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>juvenile</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001190"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A maturity quality inhering in a bearer by virtue the bearer&apos;s being not fully grown or developed.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>thefreedictionary.com:thefreedictionary.com</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1873,14 +2747,21 @@
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001492">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0050001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000161"/>
+        <obo:IAO_0000115>The rate or speed of the change in size of an individual entity or change in number of a population.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0001492</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
-        <rdfs:comment>This term will be obsoleted; Use GO:growth and PATO:rate.</rdfs:comment>
         <rdfs:label>growth rate</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001492"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The rate or speed of the change in size of an individual entity or change in number of a population.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-9900-7880</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0003-4606-0597</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -2144,7 +3025,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001595">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001708"/>
-        <obo:IAO_0000115>A 1-D extent quality inhering in a bearer by virtue of the bearer&apos;s downward or backward or inward dimenision.</obo:IAO_0000115>
+        <obo:IAO_0000115>A 1-D extent quality inhering in a bearer by virtue of the bearer&apos;s downward or backward or inward dimension.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0001595</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
@@ -2154,7 +3035,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001595"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A 1-D extent quality inhering in a bearer by virtue of the bearer&apos;s downward or backward or inward dimenision.</owl:annotatedTarget>
+        <owl:annotatedTarget>A 1-D extent quality inhering in a bearer by virtue of the bearer&apos;s downward or backward or inward dimension.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2473,7 +3354,7 @@
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001714">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000573"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000586"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001334"/>
         <obo:IAO_0000115>A diameter which is relatively large.</obo:IAO_0000115>
         <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001715"/>
@@ -2495,7 +3376,7 @@
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001715">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000574"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000587"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001334"/>
         <obo:IAO_0000115>A diameter which is relatively small.</obo:IAO_0000115>
         <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001714"/>
@@ -2780,7 +3661,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001323"/>
         <obo:IAO_0000115>An area which is relatively high.</obo:IAO_0000115>
         <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0002058"/>
-        <oboInOwl:created_by>George Gkoutos</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
         <oboInOwl:creation_date>2009-03-30T04:11:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0002057</oboInOwl:id>
@@ -2804,7 +3685,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001323"/>
         <obo:IAO_0000115>An area which is relatively low.</obo:IAO_0000115>
         <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0002057"/>
-        <oboInOwl:created_by>George Gkoutos</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
         <oboInOwl:creation_date>2009-03-30T04:12:11Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0002058</oboInOwl:id>
@@ -2826,7 +3707,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002093">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000595"/>
         <obo:IAO_0000115>A volume quality inhering in a degenerating cell by virtue of the bearer&apos;s exhibiting an increase in volume associated with cytoplasmic abnormalities.</obo:IAO_0000115>
-        <oboInOwl:created_by>george</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
         <oboInOwl:creation_date>2009-10-05T12:01:13Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0002093</oboInOwl:id>
@@ -2849,7 +3730,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002141">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001019"/>
         <obo:IAO_0000115>A density quality which lacks pattern.</obo:IAO_0000115>
-        <oboInOwl:created_by>george</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
         <oboInOwl:creation_date>2009-10-28T01:57:53Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0002141</oboInOwl:id>
@@ -2871,7 +3752,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002149">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001788"/>
         <obo:IAO_0000115>A quality inhering in a bearer by virtue of the bearer exhibiting increased density resulting in exhibiting increased degree of radiopacity (in X-rays).</obo:IAO_0000115>
-        <oboInOwl:created_by>george</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
         <oboInOwl:creation_date>2009-11-03T02:59:08Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0002149</oboInOwl:id>
@@ -2893,7 +3774,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002390">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
         <obo:IAO_0000115>A length quality which is equal to the length of any straight line segment that passes from the center of a circle to any endpoint on the circular boundary. The radius is half of the diameter.</obo:IAO_0000115>
-        <oboInOwl:created_by>gkoutos</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
         <oboInOwl:creation_date>2012-11-15T05:17:15Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0002390</oboInOwl:id>
@@ -2916,7 +3797,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002632">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000068"/>
         <obo:IAO_0000115>A quality in which the effect or outcome is not primary or the focus of the observation.</obo:IAO_0000115>
-        <oboInOwl:created_by>haendel</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9114-8737"/>
         <oboInOwl:creation_date>2014-05-26T13:17:45Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0002632</oboInOwl:id>
@@ -2938,7 +3819,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0005015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
         <obo:IAO_0000115>A size quality inhering in an entity or set of entities in which size increases or decreases along the extent of the entity or set.</obo:IAO_0000115>
-        <oboInOwl:created_by>wasila.dahdul</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-3162-7490"/>
         <oboInOwl:creation_date>2014-09-25T15:17:51Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>gradient of size</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
@@ -2961,7 +3842,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0005022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001334"/>
         <obo:IAO_0000115>A diameter that remains constant throughout the extent of an entity.</obo:IAO_0000115>
-        <oboInOwl:created_by>wasila.dahdul</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-3162-7490"/>
         <oboInOwl:creation_date>2014-10-17T14:15:59Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0005022</oboInOwl:id>
@@ -2985,7 +3866,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000599"/>
         <obo:IAO_0000115>A width and length quality which is relatively small, where both width and length are decreased.</obo:IAO_0000115>
         <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0040031"/>
-        <oboInOwl:created_by>http://orcid.org/0000-0001-5208-3432</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-5208-3432"/>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0040030</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
@@ -3002,12 +3883,33 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000600"/>
         <obo:IAO_0000115>A width and length quality that is relatively large, where both width and length are increased.</obo:IAO_0000115>
         <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0040030"/>
-        <oboInOwl:created_by>http://orcid.org/0000-0001-5208-3432</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-5208-3432"/>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0040031</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
         <rdfs:label>increased width and length</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0040045 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0040045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001492"/>
+        <obo:IAO_0000115>The rate or speed of the change in in number of a population.</obo:IAO_0000115>
+        <oboInOwl:created_by>http://orcid.org/0000-0001-5208-3432</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0040045</oboInOwl:id>
+        <rdfs:label>population growth rate</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0040045"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The rate or speed of the change in in number of a population.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-9900-7880</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0003-4606-0597</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -3032,7 +3934,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001164"/>
         <obo:IAO_0000115>A density which is relatively normal or average.</obo:IAO_0000115>
-        <oboInOwl:created_by>Luke Slater</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045031</oboInOwl:id>
@@ -3048,7 +3950,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045050">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
         <obo:IAO_0000115>A size quality which is relatively normal or average</obo:IAO_0000115>
-        <oboInOwl:created_by>Luke Slater</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045050</oboInOwl:id>
@@ -3065,7 +3967,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001323"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
         <obo:IAO_0000115>An area which is relatively normal or average</obo:IAO_0000115>
-        <oboInOwl:created_by>Luke Slater</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045051</oboInOwl:id>
@@ -3082,7 +3984,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001595"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
         <obo:IAO_0000115>A depth quality which is relatively normal or average</obo:IAO_0000115>
-        <oboInOwl:created_by>Luke Slater</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045052</oboInOwl:id>
@@ -3099,7 +4001,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000119"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
         <obo:IAO_0000115>A height which is relatively normal or average</obo:IAO_0000115>
-        <oboInOwl:created_by>Luke Slater</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045053</oboInOwl:id>
@@ -3116,7 +4018,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
         <obo:IAO_0000115>A length quality which is relatively normal or average</obo:IAO_0000115>
-        <oboInOwl:created_by>Luke Slater</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045054</oboInOwl:id>
@@ -3131,9 +4033,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001334"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045054"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
         <obo:IAO_0000115>A diameter which is relatively normal or average</obo:IAO_0000115>
-        <oboInOwl:created_by>Luke Slater</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045055</oboInOwl:id>
@@ -3150,7 +4052,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002041"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045055"/>
         <obo:IAO_0000115>An anterior-posterior diameter which is relatively normal or average</obo:IAO_0000115>
-        <oboInOwl:created_by>Luke Slater</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045056</oboInOwl:id>
@@ -3167,7 +4069,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001711"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045054"/>
         <obo:IAO_0000115>A perimeter which is relatively normal or average</obo:IAO_0000115>
-        <oboInOwl:created_by>Luke Slater</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045057</oboInOwl:id>
@@ -3184,7 +4086,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001648"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045057"/>
         <obo:IAO_0000115>A circumference which is relatively normal or average</obo:IAO_0000115>
-        <oboInOwl:created_by>Luke Slater</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045058</oboInOwl:id>
@@ -3201,7 +4103,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000915"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
         <obo:IAO_0000115>A thickness which is relatively normal or average</obo:IAO_0000115>
-        <oboInOwl:created_by>Luke Slater</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045059</oboInOwl:id>
@@ -3218,7 +4120,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000918"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
         <obo:IAO_0000115>A volume which is relatively normal or average</obo:IAO_0000115>
-        <oboInOwl:created_by>Luke Slater</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045060</oboInOwl:id>
@@ -3236,7 +4138,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000921"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
         <obo:IAO_0000115>A width which is relatively normal or average</obo:IAO_0000115>
-        <oboInOwl:created_by>Luke Slater</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045061</oboInOwl:id>
@@ -3252,7 +4154,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001537"/>
         <obo:IAO_0000115>A solubility which is relatively normal or average</obo:IAO_0000115>
-        <oboInOwl:created_by>Luke Slater</oboInOwl:created_by>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045062</oboInOwl:id>
@@ -3314,6 +4216,94 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The rate of output of a continuous process. Example include: growth rate, cell migration rate, enzyme reaction rate.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-9943-9018</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0055003 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0055003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000912"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0050000"/>
+        <obo:IAO_0000115>A rate of occurrence that is relatively high.</obo:IAO_0000115>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-08-19T09:23:19Z</dc:date>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-4148-4606"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0055003</oboInOwl:id>
+        <rdfs:label>increased rate of occurrence</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0055003"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A rate of occurrence that is relatively high.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0003-4148-4606</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0055004 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0055004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000911"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0050000"/>
+        <obo:IAO_0000115>A rate of occurrence that is relatively low.</obo:IAO_0000115>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-08-19T09:24:35Z</dc:date>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-4148-4606"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0055004</oboInOwl:id>
+        <rdfs:label>decreased rate of occurrence</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0055004"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A rate of occurrence that is relatively low.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0003-4148-4606</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0055005 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0055005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000912"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0050001"/>
+        <obo:IAO_0000115>A rate of output of a continuous process that is relatively high.</obo:IAO_0000115>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-08-19T09:24:56Z</dc:date>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-4148-4606"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0055005</oboInOwl:id>
+        <rdfs:label>increased rate of continuous process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0055005"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A rate of output of a continuous process that is relatively high.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0003-4148-4606</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0055006 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0055006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000911"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0050001"/>
+        <obo:IAO_0000115>A rate of output of a continuous process that is relatively low.</obo:IAO_0000115>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-08-19T09:25:07Z</dc:date>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-4148-4606"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0055006</oboInOwl:id>
+        <rdfs:label>decreased rate of continuous process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0055006"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A rate of output of a continuous process that is relatively low.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0003-4148-4606</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
