@@ -2,8 +2,7 @@
 #!/usr/local/bin/python
 
 # Variables used throughout the script
-# comment out because aopo takes forever  ontologies = ["aopo","bao","bfo","ccont","cheminf","chmo","efo","fabio","go","hupson","iao","ncit","npo","oae","obcs","obi","pato","sio","uo"]
-ontologies = ["aopo", "bao","bfo","bto","ccont","cheminf","chebi","chmo","clo","efo","envo","fabio","go","hupson","iao","ncit","npo","oae","obcs","obi","pato","ro","sio","uberon","uo"]
+ontologies = ["aopo", "bao","bfo","bto","ccont","cheminf","cito","chebi","chmo","clo","efo","envo","fabio","go","hupson","iao","ncit","npo","oae","obcs","obi","pato","ro","sio","uberon","uo"]
 
 props = ["bao", "cheminf","npo", "sio", "ro", "cito"]
 
