@@ -3,8 +3,11 @@
 export ONTO=$1
 if [ ${ONTO} == "$ncit" ]; then 
     ./slim-ncit.sh
-    else
-    
+
+elif [ ${ONTO} == "$hupson" ]; then 
+    ./slim-hupson.sh
+
+else   
     ls
     mkdir -p external/${ONTO}
     rm external/${ONTO}-slim.owl
