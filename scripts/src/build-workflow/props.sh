@@ -3,7 +3,8 @@
 export ONTO=$1
 mkdir -p ontologies
 cd ontologies
-echo ('$http://semanticscience.org/resource/SIO_000300 #has-value\nhttp://semanticscience.org/resource/SIO_000221 #has-unit')>>sio-term-file.txt      
+
+
 wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.props
 wget `grep "owl=" ${ONTO}.props | cut -d'=' -f2`
 ontology=$(basename `grep "owl=" ${ONTO}.props | cut -d'=' -f2`)
@@ -24,7 +25,7 @@ if [ ${ONTO} == "ro" ]; then
 fi
 
 if [ ${ONTO} == "sio" ]; then 
-    ARGS=$"--term-file sio-term-file.txt --select annotations"
+    ARGS=$"--term-file ../config/sio-term-file.txt --select annotations"
 fi
 
 if [ ${ONTO} == "npo" ]; then 
