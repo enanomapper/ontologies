@@ -16,7 +16,7 @@ else
     
    
     wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.props
-    wget  `grep "owl=" ${ONTO}.props | cut -d'=' -f2`
+    wget -N  `grep "owl=" ${ONTO}.props | cut -d'=' -f2`
     wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.iris
     
     
@@ -36,7 +36,7 @@ else
     # Check if slimmed file was created
     
     if [ -f ${ONTO}-slim.owl ] ; then
-        echo Automated ${ONTO} slimmed build run on `date` 
+        echo Automated ${ONTO} slimming run on `date` 
     fi
     
     if [ ! -f ${ONTO}-slim.owl ]; then

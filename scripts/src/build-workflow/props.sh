@@ -17,6 +17,7 @@ if [ ${ONTO} == "bao" ]; then
 fi
 
 if [ ${ONTO} == "cito" ]; then 
+    wget https://raw.githubusercontent.com/SPAROntologies/cito/master/docs/current/cito.owl
     ARGS=$"--term "http://purl.org/spar/cito/cites" --select 'annotations self descendants'"
 fi
 
