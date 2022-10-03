@@ -19,6 +19,7 @@ fi
 if [ ${ONTO} == "cito" ]; then 
     wget https://raw.githubusercontent.com/SPAROntologies/cito/master/docs/current/cito.owl
     ARGS=$"--term "http://purl.org/spar/cito/cites" --select 'annotations self descendants'"
+    sh ./robot filter --input cito.owl ${ARGS} --output ${ONTO}-slim-prop.owl
 fi
 
 if [ ${ONTO} == "ro" ]; then 
@@ -33,4 +34,6 @@ if [ ${ONTO} == "npo" ]; then
     ARGS=$"--term "http://purl.bioontology.org/ontology/npo#has_part" --select annotations"
 fi
 
-sh ./robot filter --input ${ontology} ${ARGS} --output ${ONTO}-slim-prop.owl
+if [ ${ONTO} != "cito" ]; then
+    sh ./robot filter --input ${ontology} ${ARGS} --output ${ONTO}-slim-prop.owl
+fi
