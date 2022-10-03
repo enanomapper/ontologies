@@ -70,15 +70,15 @@
         <dc:description>The Information Artifact Ontology (IAO) is an ontology of information entities, originally driven by work by the OBI digital entity and realizable information entity branch.</dc:description>
         <dc:format>application/rdf+xml</dc:format>
         <dc:language>en</dc:language>
-        <dc:rights>http://creativecommons.org/licenses/by/3.0</dc:rights>
         <dc:title>CDK descriptor algorithm implementations</dc:title>
         <dc:title>Information Artifact Ontology (IAO)</dc:title>
         <dc:title>Supporting terminology for chemical information ontology (cheminf)</dc:title>
         <dc:title>chemical information ontology (cheminf) - information entities about chemical entities</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <terms:license>http://creativecommons.org/publicdomain/zero/1.0/</terms:license>
         <pav:importedFrom>http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2022-08-11 21:02:46</oboInOwl:date>
+        <oboInOwl:date>2022-10-03 07:56:01</oboInOwl:date>
         <rdfs:comment xml:lang="en">An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at https://github.com/information-artifact-ontology/IAO</rdfs:comment>
         <rdfs:comment>Document containing upporting external terms</rdfs:comment>
         <rdfs:comment>IDs allocated to related efforts: PNO: IAO_0020000-IAO_0020999, D_ACTS: IAO_0021000-IAO_0021999</rdfs:comment>
@@ -92,7 +92,7 @@ AutoID - digit count = 6, prefix = CHEMINF_</rdfs:comment>
         <rdfs:seeAlso rdf:resource="http://code.google.com/p/information-artifact-ontology/"/>
         <rdfs:seeAlso rdf:resource="https://github.com/information-artifact-ontology/IAO"/>
         <owl:versionInfo>1.9.2</owl:versionInfo>
-        <owl:versionInfo>2.0.1</owl:versionInfo>
+        <owl:versionInfo>2.1.0</owl:versionInfo>
         <owl:versionInfo>2020-12-09</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
         <owl:versionInfo>alpha</owl:versionInfo>
@@ -771,7 +771,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/elements/1.1/rights -->
 
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -7093,9 +7095,6 @@ where p is the partial pressure of the solute in the gas above the solution, c i
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/language">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
