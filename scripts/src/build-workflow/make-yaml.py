@@ -50,15 +50,18 @@ jobs:
       run: bash scripts/src/build-workflow/props.sh {}
   """.format(prop, prop, prop))
   
-  # PR
+  # Commit and push
   f.write("""
-  # Create PR
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v3
+  # Commit and push
+    - name: Commit OWL files
+      run: |
+        git add external/*.owl
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Updated OWL" OWL/*.owl
+    - name: Push changes
+      uses: ad-m/github-push-action@master
       with:
-        commit-message: Update release files
-        title: 'Update release files'
-        body: |
-          Updates all release files.
-        assignees: {}    
-  """.format(assignees))
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}   
+  """)
