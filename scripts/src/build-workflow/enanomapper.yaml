@@ -2,8 +2,10 @@
 build:
   on-dispatch: True
   scheduled: False
-  external_prefix: "http://enanomapper.github.io/ontologies/external/"
-  internal_prefix: "http://enanomapper.github.io/ontologies/internal/"
+  external_prefix: "https://github.com/jmillanacosta/ontologies/external/"
+  internal_prefix: "https://github.com/jmillanacosta/ontologies/internal/"
+  assignees: jmillanacosta
+  repo: "https://github.com/jmillanacosta/ontologies"
 slim:
   - aopo
   - bao
@@ -38,3 +40,13 @@ props:
   - sio
   - ro
   - cito
+robot-qc:
+  merge: True
+  verify: True
+  report: True
+  validate-profile: True
+
+odk-dashboard: False
+
+
+  
