@@ -1,20 +1,22 @@
 #!/usr/local/bin/python
+import yaml
+with open("enanomapper.yaml", "r") as stream:
+    try:
+        config = yaml.safe_load(stream)
+    except yaml.YAMLError as exc:
+        print(exc)
 
-# Variables used throughout the script
-ontologies = ["aopo", "bao","bfo","bto","ccont","cheminf","cito","chebi","chmo","clo","efo","envo","fabio","go","hupson","iao","ncit","npo","oae","obcs","obi","pato","ro","sio","uberon","uo"]
+slim = config["slim"]
+props = config["props"]
+build = config["build"]
+dispatch = build["dispatch"]
+with open("../../../.github/workflows/slim-ontologies.yml", "a+") as build_yaml:
 
-props = ["bao", "cheminf","npo", "sio", "ro", "cito"]
-
-assignees = "jmillanacosta"
-import pyyaml
-
-# Opens the yaml file
-with open("../../../.github/workflows/slim-ontologies.yml", "a+") as f:
   # Writes serialization for the workflow dispatch and getting slimmer
-  f.truncate(0)
-  f.write("""name: workflow slim ontologies
+  build_yaml.truncate(0)
+  build_yaml.write("""name: workflow slim ontologies
 on:
-  workflow_dispatch:
+  {dispatch}
 
 jobs:
   build:
@@ -24,33 +26,33 @@ jobs:
       uses: actions/checkout@v3
     # Get slimmer
     - name: get slimmer
-      run: wget -nc https://github.com/enanomapper/slimmer/releases/download/v1.0.2/slimmer-1.0.2-jar-with-dependencies.jar 
+      run: wget -nc https://github.com/enanomapper/slimmer/eleases/download/#v1.0.2/slimmer-1.0.2-jar-with-dependencies.ar 
   """)
 
   # Writes serialization to slim all ontologies
-  f.write("""
+  build_yaml.write("""
   # slim all ontologies
   # Authorize running slim script
     - name: authorize running slim scripts
       run: chmod 755 scripts/src/build-workflow/*.sh
   """)
   # Apply slims
-  for ontology in ontologies:
-    f.write("""
+  for ontology in slim:
+    build_yaml.write("""
   # Slim {}
     - name: slim-{}
       run: bash scripts/src/build-workflow/slim.sh {}
   """.format(ontology, ontology, ontology))
   # Apply props
   for prop in props:
-    f.write("""
+    build_yaml.write("""
   # apply props {}
     - name: Apply props {}
       run: bash scripts/src/build-workflow/props.sh {}
   """.format(prop, prop, prop))
   
   # Commit and push
-  f.write("""
+  build_yaml.write("""
   # Commit and push
     - name: Commit OWL files
       run: |
