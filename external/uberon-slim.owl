@@ -117,6 +117,7 @@
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0819-0473"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0956-8634"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1112-5832"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1572-1316"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1604-3078"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1615-2899"/>
@@ -154,7 +155,7 @@
         <doap:bug-database rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/issues/</doap:bug-database>
         <doap:mailing-list rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://lists.sourceforge.net/lists/listinfo/obo-anatomy</doap:mailing-list>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2022-08-11 21:02:08</oboInOwl:date>
+        <oboInOwl:date>2022-10-03 08:01:07</oboInOwl:date>
         <oboInOwl:default-namespace>uberon</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:treat-xrefs-as-equivalent>AEO</oboInOwl:treat-xrefs-as-equivalent>
@@ -199,7 +200,7 @@
         <rdfs:comment>Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/TEMP&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 437 Logical Axioms: 0]</rdfs:comment>
         <rdfs:comment>Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/uberon-bridge-to-bfo.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 20 Logical Axioms: 9]</rdfs:comment>
         <rdfs:comment>Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/uberon/disjoint_union_over.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 38 Logical Axioms: 38]</rdfs:comment>
-        <owl:versionInfo>2022-06-30</owl:versionInfo>
+        <owl:versionInfo>2022-09-30</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
         <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://uberon.org</foaf:homepage>
     </owl:Ontology>
@@ -422,6 +423,13 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMO_0002000 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMO_0002000"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
 
 
@@ -441,6 +449,29 @@
         <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20973947"/>
         <obo:IAO_0000425>Class: &lt;http://www.w3.org/2002/07/owl#Nothing&gt; EquivalentTo: ?X and (RO_0002162 some ?Y)</obo:IAO_0000425>
         <obo:IAO_0000425>Class: ?X DisjointWith: RO_0002162 some ?Y </obo:IAO_0000425>
+        <obo:OMO_0002000>PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX in_taxon: &lt;http://purl.obolibrary.org/obo/RO_0002162&gt;
+PREFIX never_in_taxon: &lt;http://purl.obolibrary.org/obo/RO_0002161&gt;
+CONSTRUCT {
+  in_taxon: a owl:ObjectProperty .
+  ?x owl:disjointWith [
+    a owl:Restriction ;
+    owl:onProperty in_taxon: ;
+    owl:someValuesFrom ?taxon
+  ] .
+  ?x rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty in_taxon: ;
+    owl:someValuesFrom [
+      a owl:Class ;
+      owl:complementOf ?taxon
+    ]
+  ] .
+}
+WHERE {
+  ?x never_in_taxon: ?taxon .
+}</obo:OMO_0002000>
         <oboInOwl:hasDbXref>RO:0002161</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>never_in_taxon</oboInOwl:id>
@@ -464,13 +495,34 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002171">
+        <obo:IAO_0000115>A is mutually_spatially_disjoint_with B if both A and B are classes, and there exists no p such that p is part_of some A and p is part_of some B.</obo:IAO_0000115>
         <obo:IAO_0000425>Class: &lt;http://www.w3.org/2002/07/owl#Nothing&gt; EquivalentTo: (BFO_0000050 some ?X) and (BFO_0000050 some ?Y)</obo:IAO_0000425>
+        <obo:OMO_0002000>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX part_of: &lt;http://purl.obolibrary.org/obo/BFO_0000050&gt;
+PREFIX mutually_spatially_disjoint_with: &lt;http://purl.obolibrary.org/obo/RO_0002171&gt;
+CONSTRUCT {
+  part_of: a owl:ObjectProperty .
+  [
+    a owl:Restriction ;
+    owl:onProperty part_of: ;
+    owl:someValuesFrom ?x ;
+    owl:disjointWith [
+      a owl:Restriction ;
+      owl:onProperty part_of: ;
+      owl:someValuesFrom ?y
+    ]
+  ]
+}
+WHERE {
+  ?x mutually_spatially_disjoint_with: ?y .
+}</obo:OMO_0002000>
         <oboInOwl:hasDbXref>RO:0002171</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>mutually_spatially_disjoint_with</oboInOwl:id>
         <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>mutually_spatially_disjoint_with</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">mutually spatially disjoint with</rdfs:label>
         <rdfs:label>mutually_spatially_disjoint_with</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -529,6 +581,30 @@
         <obo:IAO_0000115>S present_in_taxon T if some instance of T has some S. This does not means that all instances of T have an S - it may only be certain life stages or sexes that have S.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0002-6601-2165</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/22293552"/>
+        <obo:OMO_0002000>PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX in_taxon: &lt;http://purl.obolibrary.org/obo/RO_0002162&gt;
+PREFIX present_in_taxon: &lt;http://purl.obolibrary.org/obo/RO_0002175&gt;
+CONSTRUCT {
+  in_taxon: a owl:ObjectProperty .
+  ?witness rdfs:label ?label .
+  ?witness rdfs:subClassOf ?x .
+  ?witness rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty in_taxon: ;
+    owl:someValuesFrom ?taxon
+  ] .
+}
+WHERE {
+  ?x present_in_taxon: ?taxon .
+  BIND(IRI(CONCAT(
+    &quot;http://purl.obolibrary.org/obo/RO_0002175#&quot;,
+    MD5(STR(?x)),
+    &quot;-&quot;,
+    MD5(STR(?taxon))
+  )) as ?witness)
+  BIND(CONCAT(STR(?x), &quot; in taxon &quot;, STR(?taxon)) AS ?label)
+}</obo:OMO_0002000>
         <oboInOwl:hasDbXref>RO:0002175</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>applicable for taxon</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
@@ -536,6 +612,7 @@
         <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>present_in_taxon</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">present in taxon</rdfs:label>
         <rdfs:label>present in taxon</rdfs:label>
         <rdfs:label>present_in_taxon</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/wiki/Taxon-constraints"/>
@@ -554,6 +631,7 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002259">
         <rdfs:comment></rdfs:comment>
+        <rdfs:label>defined by inverse</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -606,6 +684,13 @@
         <obo:IAO_0000115>If R &lt;- P o Q is a defining property chain axiom, then (1) R -&gt; P o Q holds and (2) Q is either reflexive or locally reflexive. A corollary of this is that P SubPropertyOf R.</obo:IAO_0000115>
         <rdfs:label>is a defining property chain axiom where second argument is reflexive</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0004036 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0004036"/>
     
 
 
@@ -1332,6 +1417,7 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/bspo#vertebrate">
+        <rdfs:label>synonym typically used in the context of vertebrate anatomy</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     </owl:AnnotationProperty>
     
@@ -2116,6 +2202,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/go#prokaryote_subset -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#prokaryote_subset">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#systematic_synonym -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#systematic_synonym">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ncbitaxon#blast_name -->
 
 
@@ -2226,6 +2330,7 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ro/subsets#ro-eco">
+        <rdfs:label>eco subset</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -3642,6 +3747,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
         <obo:IAO_0000115>Anatomical structure that performs a specific function or group of functions [WP].</obo:IAO_0000115>
+        <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_110815"/>
         <obo:UBPROP_0000001>Organs are commonly observed as visibly distinct structures, but may also exist as loosely associated clusters of cells that work together to perform a specific function or functions.</obo:UBPROP_0000001>
         <obo:UBPROP_0000012>CARO v1 does not include a generic &apos;organ&apos; class, only simple and compound organ. CARO v2 may include organ, see https://github.com/obophenotype/caro/issues/4</obo:UBPROP_0000012>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Organ_(anatomy)"/>
@@ -3672,6 +3778,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Anatomical structure that performs a specific function or group of functions [WP].</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Organ_(anatomy)"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000062"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002161"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_110815"/>
+        <oboInOwl:source>Wikipedia</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000062"/>
@@ -3812,6 +3924,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002530">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000062"/>
         <obo:IAO_0000115>An organ that functions as a secretory or excretory organ.</obo:IAO_0000115>
+        <obo:RO_0002171 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001434"/>
         <obo:UBPROP_0000007>glandular</obo:UBPROP_0000007>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Gland"/>
         <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C1285092"/>
@@ -3915,443 +4028,301 @@
         <owl:annotatedTarget>digestive gland</owl:annotatedTarget>
         <oboInOwl:hasDbXref>BTO:0000345</oboInOwl:hasDbXref>
     </owl:Axiom>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000002 -->
-
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000002">
-        <rdfs:label xml:lang="en">example to be eventually removed</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000103 -->
-
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000103">
-        <obo:IAO_0000115 xml:lang="en">The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">failed exploratory term</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000120 -->
-
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000120">
-        <obo:IAO_0000115 xml:lang="en">Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">metadata complete</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000121 -->
-
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000121">
-        <obo:IAO_0000115 xml:lang="en">Term created to ease viewing/sort terms for development purpose, and will not be included in a release</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">organizational term</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000122 -->
-
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000122">
-        <obo:IAO_0000115 xml:lang="en">Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking &quot;ready_for_release&quot; should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed &quot;ready_for_release&quot; will also derived from a chain of ancestor classes that are also &quot;ready_for_release.&quot;</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">ready for release</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000123 -->
-
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000123">
-        <obo:IAO_0000115 xml:lang="en">Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">metadata incomplete</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000124 -->
-
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000124">
-        <obo:IAO_0000115 xml:lang="en">Nothing done yet beyond assigning a unique class ID and proposing a preferred term.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">uncurated</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000125 -->
-
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000125">
-        <obo:IAO_0000115 xml:lang="en">All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">pending final vetting</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000226 -->
-
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000226">
-        <rdfs:label xml:lang="en">placeholder removed</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000227 -->
-
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000227">
-        <rdfs:label xml:lang="en">terms merged</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000228 -->
-
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000228">
-        <rdfs:label xml:lang="en">term imported</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000229 -->
-
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000229">
-        <rdfs:label xml:lang="en">term split</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000410 -->
-
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000410">
-        <rdfs:label xml:lang="en">universal</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000420 -->
-
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000420">
-        <obo:IAO_0000115 xml:lang="en">A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">defined class</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000421 -->
-
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000421">
-        <obo:IAO_0000115 xml:lang="en">A named class expression is a logical expression that is given a name. The name can be used in place of the expression.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">named class expression</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000423 -->
-
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000423">
-        <obo:IAO_0000115 xml:lang="en">Terms with this status should eventually replaced with a term from another ontology.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">to be replaced with external ontology term</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000428 -->
-
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000428">
-        <obo:IAO_0000115 xml:lang="en">A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">requires discussion</rdfs:label>
-    </owl:NamedIndividual>
     <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/23027930"/>
+        <oboInOwl:hasDbXref rdf:resource="https://sourceforge.net/tracker/?func=detail&amp;aid=3515562&amp;group_id=76834&amp;atid=994726"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid53">
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Septum_secondum"/>
-        <oboInOwl:hasDbXref>GO:0003285</oboInOwl:hasDbXref>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Rattlesnake#Rattle"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Lumbar_spinal_cord"/>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Brodmann_area_18"/>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Trapezium_(bone)"/>
+        <oboInOwl:hasDbXref rdf:resource="https://sourceforge.net/tracker/?func=detail&amp;aid=3580301&amp;group_id=76834&amp;atid=1205376"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid59">
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/External_sphincter_muscle_of_female_urethra"/>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/External_sphincter_muscle_of_male_urethra"/>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Anal_gland"/>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Temporomandibular_joint#Ligaments"/>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Eparterial_bronchus"/>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Coat_(animal)"/>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/23153189"/>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Digestive_system_of_gastropods#Hepatopancreas"/>
     </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0002-6601-2165"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Pancreaticoduodenal_artery"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Persistent_left_superior_vena_cava"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Epicondyle"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Intermediate_filament"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Hamate_bone"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid65">
-        <oboInOwl:hasDbXref rdf:resource="http://retina.anatomy.upenn.edu/~lance/eye/retina_gross.html"/>
-        <oboInOwl:hasDbXref>UBERON:CL_meeting_20110725</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid66">
-        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20557782"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20566102"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Pronucleus"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid68">
+    <rdf:Description rdf:nodeID="genid63">
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Hypoblast"/>
         <oboInOwl:hasDbXref rdf:resource="https://sourceforge.net/p/geneontology/ontology-requests/9676/"/>
         <oboInOwl:hasDbXref>GO:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFIN:cvs</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Trapezoid_bone"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/119"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid72">
-        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/14595018"/>
-        <oboInOwl:hasDbXref rdf:resource="https://sourceforge.net/tracker/?func=detail&amp;aid=3123600&amp;group_id=76834&amp;atid=1205376"/>
-    </rdf:Description>
-    <rdf:Description>
         <oboInOwl:hasDbXref rdf:resource="https://sourceforge.net/tracker/?func=detail&amp;aid=3123598&amp;group_id=76834&amp;atid=1205376"/>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Iris_muscle"/>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Anal_gland"/>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Gastric_juice"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Coat_(animal)"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Brodmann_area_9"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Snout"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid79">
-        <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/1161"/>
-        <oboInOwl:hasDbXref>BIRNLEX:1755</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://dev.biologists.org/content/128/22/4573.full"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Internal_spermatic_fascia"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Temporomandibular_joint#Ligaments"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Primordial_phallus"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="https://sourceforge.net/tracker/?func=detail&amp;atid=440764&amp;aid=3413098&amp;group_id=36855"/>
+        <oboInOwl:hasDbXref rdf:resource="http://people.eku.edu/ritchisong/feather_evolution.htm"/>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Facial_skeleton"/>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://www.embryology.ch/anglais/turinary/urinhaute03.html"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Proper_plantar_digital_arteries"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Superior_olivary_complex#Dorsal_periolivary_nucleus_.28DPO.29"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Brodmann_area_39"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Pterion"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Rattlesnake#Rattle"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Brodmann_area_26"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Atlas_(anatomy)#Vertebral_foramen"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://people.eku.edu/ritchisong/feather_evolution.htm"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/21558186"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Digestive_system_of_gastropods#Hepatopancreas"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://www.ana.ed.ac.uk/database/humat/notes/extraemb/mesoder.htm"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Aquatic_predation#Lunge_feeding"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Dorsal_digital_arteries#"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/21558186"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Node_of_ranvier"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Capitate_bone"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/22622577"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Sclera#Histology"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/21558186"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid107">
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/External_sphincter_muscle_of_female_urethra"/>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/External_sphincter_muscle_of_male_urethra"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Pouch_(marsupial)"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Enteric_ganglia"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="https://sourceforge.net/tracker/?func=detail&amp;aid=3580301&amp;group_id=76834&amp;atid=1205376"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/21558186"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Corpus_cavernosum"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Pisiform_joint"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Common_plantar_digital_arteries"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid116">
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Articular"/>
-        <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/98"/>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Snout"/>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Flight_feather"/>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/23027930"/>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Sclera#Histology"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/22622577"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Pisiform_joint"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Node_of_ranvier"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://people.eku.edu/ritchisong/feather_evolution.htm"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Intermediate_filament"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid77">
+        <oboInOwl:hasDbXref rdf:resource="http://retina.anatomy.upenn.edu/~lance/eye/retina_gross.html"/>
+        <oboInOwl:hasDbXref>UBERON:CL_meeting_20110725</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Corpus_cavernosum"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://dev.biologists.org/content/128/22/4573.full"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/21558186"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/119"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Proper_plantar_digital_arteries"/>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Adductor_muscles_of_the_hip"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid120">
-        <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/6"/>
-        <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/7"/>
-    </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/mouse-anatomy-ontology/issues/56"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="https://sourceforge.net/tracker/?func=detail&amp;aid=3515562&amp;group_id=76834&amp;atid=994726"/>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/1264"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/21558186"/>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Brodmann_area_28"/>
     </rdf:Description>
     <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Enteric_ganglia"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid87">
+        <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/1161"/>
+        <oboInOwl:hasDbXref>BIRNLEX:1755</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid88">
+        <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/6"/>
+        <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/7"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Pronucleus"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/21558186"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Primordial_phallus"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Brodmann_area_39"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/23153189"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Gastric_juice"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Brodmann_area_9"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Pterion"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/1264"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Persistent_left_superior_vena_cava"/>
+    </rdf:Description>
+    <rdf:Description>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Neurofilament"/>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Lumbar_spinal_cord"/>
+        <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0002-6601-2165"/>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref rdf:resource="http://people.eku.edu/ritchisong/feather_evolution.htm"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid128">
-        <oboInOwl:hasDbXref>FlyBase:FBrf0007733</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0064792</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/23027930"/>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0003225</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Brodmann_area_26"/>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0003227</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Iris_muscle"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid104">
+        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/14595018"/>
+        <oboInOwl:hasDbXref rdf:resource="https://sourceforge.net/tracker/?func=detail&amp;aid=3123600&amp;group_id=76834&amp;atid=1205376"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Hamate_bone"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Trapezium_(bone)"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Internal_spermatic_fascia"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Common_plantar_digital_arteries"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Pancreaticoduodenal_artery"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/21558186"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Aquatic_predation#Lunge_feeding"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Eparterial_bronchus"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Pouch_(marsupial)"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid114">
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Articular"/>
+        <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/98"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/mouse-anatomy-ontology/issues/56"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Superior_olivary_complex#Dorsal_periolivary_nucleus_.28DPO.29"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Trapezoid_bone"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://www.ana.ed.ac.uk/database/humat/notes/extraemb/mesoder.htm"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid119">
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Septum_secondum"/>
+        <oboInOwl:hasDbXref>GO:0003285</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Atlas_(anatomy)#Vertebral_foramen"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid121">
+        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20557782"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20566102"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://www.embryology.ch/anglais/turinary/urinhaute03.html"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/23027930"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Capitate_bone"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Dorsal_digital_arteries#"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="https://sourceforge.net/tracker/?func=detail&amp;atid=440764&amp;aid=3413098&amp;group_id=36855"/>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Epicondyle"/>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref>MP:0009994</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0021728</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>neuronames:3214</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>HP:0003350</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0072166</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid134">
+    <rdf:Description>
+        <oboInOwl:hasDbXref>GO:0003224</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>ISBN:0073040584</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>GO:0021729</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>neuronames:3218</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>BIRNLEX:1734</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>MP:0009997</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>MP:0009989</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>ISBN:0073040584</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>MP:0009996</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid143">
+        <oboInOwl:hasDbXref>FlyBase:FBrf0007733</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064792</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid144">
         <oboInOwl:hasDbXref>GO:0021729</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GO_REF:0000021</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid145">
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>GO:0060682</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref>PHENOSCAPE:alex</oboInOwl:hasDbXref>
@@ -4360,81 +4331,69 @@
         <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0061249</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MP:0009993</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>HP:0005289</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0003291</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid140">
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>neuronames:3218</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>neuronames:3214</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0072165</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref>EFO:0000240</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0072003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PHENOSCAPE:alex</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0009364</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>BIRNLEX:1734</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>ISBN:0073040584</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0060682</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0021729</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0006943</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>neuronames:3220</oboInOwl:hasDbXref>
+    <rdf:Description rdf:nodeID="genid155">
+        <oboInOwl:hasDbXref>FlyBase:FBrf0002482</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0007196</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0007735</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0034076</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>ISBN:0073040584</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MP:0010003</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0061249</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>neuronames:3221</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0003291</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref>neuronames:3223</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0009993</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PHENOSCAPE:Wasila</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0010003</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid160">
+    <rdf:Description rdf:nodeID="genid161">
         <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>PHENOSCAPE:Wasila</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MP:0009946</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>GO:0003225</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>HP:0000606</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid166">
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>PMCID:PMC2093943</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>BIRNLEX:1732</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref>GO:0061214</oboInOwl:hasDbXref>
@@ -4443,89 +4402,67 @@
         <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0010002</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0009990</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0009996</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0009946</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0009989</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>HP:0000606</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0006943</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid172">
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref>ISBN:0073040584</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0021751</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0009999</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0003224</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0021728</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref>HP:0003832</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0009988</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>BIRNLEX:1732</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0003226</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0009997</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>neuronames:3221</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref>HP:0000864</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0072003</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>PHENOSCAPE:alex</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MP:0009990</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0072165</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>neuronames:3220</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0072166</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MP:0009999</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid187">
-        <oboInOwl:hasDbXref>FlyBase:FBrf0002482</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0007196</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0007735</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0034076</oboInOwl:hasDbXref>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>HP:0003350</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>MP:0009364</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>GO:0021751</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>GO:0003226</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>MP:0009988</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref>ISBN:0073040584</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>PMCID:PMC2093943</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MP:0010002</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HP:0005289</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>GO:0003227</oboInOwl:hasDbXref>
     </rdf:Description>
     
 
