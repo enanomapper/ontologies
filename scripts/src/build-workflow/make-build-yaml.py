@@ -5,9 +5,8 @@ ontologies = ["aopo", "bao","bfo","bto","ccont","cheminf","cito","chebi","chmo",
 
 props = ["bao", "cheminf","npo", "sio", "ro", "cito"]
 
-test_location = "test"
-
 assignees = "jmillanacosta"
+import pyyaml
 
 # Opens the yaml file
 with open("../../../.github/workflows/slim-ontologies.yml", "a+") as f:
