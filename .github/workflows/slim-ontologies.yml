@@ -150,7 +150,7 @@ jobs:
         git add external/*.owl
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git commit -m "Actions - slim updated" .external/*.owl
+        git commit -m "Actions - slim updated" ./external/*.owl
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
