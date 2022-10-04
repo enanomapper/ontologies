@@ -35,7 +35,7 @@ jobs:
         if merge == True:
             qc_yaml.write("""
         - name: merge
-          run: sh robot merge -i  -o enanomapper.owl enanomapper-full.owl""")
+          run: sh robot merge -i enanomapper.owl -o enanomapper.owl enanomapper-full.owl""")
             added_merged = "git add enanomapper-full.owl"
         if verify == True:
             pass
