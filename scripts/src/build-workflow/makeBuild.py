@@ -21,7 +21,7 @@ def main():
   with open("../../../.github/workflows/slim-ontologies.yml", "a+") as  build_yaml:
     # Writes serialization for the workflow dispatch and getting slimmer
     build_yaml.truncate(0)
-    build_yaml.write("""name: workflow slim ontologies
+    build_yaml.write("""name: Build slims
 on:
   {}
 jobs:
@@ -39,22 +39,22 @@ jobs:
     build_yaml.write("""
   # slim all ontologies
   # Authorize running slim script
-    - name: authorize running slimscripts
-      run: chmod 755 scripts/srcbuild-workflow/*.sh
+    - name: authorize running slim scripts
+      run: chmod 755 scripts/src/build-workflow/*.sh
   """)
     # Apply slims
     for ontology in slim:
       build_yaml.write("""
   # Slim {}
     - name: slim-{}
-      run: bash scripts/srcbuild-workflow/slim.sh {}
+      run: bash scripts/src/build-workflow/slim.sh {}
   """.format(ontology, ontology, ontology))
     # Apply props
     for prop in props:
       build_yaml.write("""
   # apply props {}
     - name: Apply props {}
-      run: bash scripts/srcbuild-workflow/props.sh {}
+      run: bash scripts/src/build-workflow/props.sh {}
   """.format(prop, prop, prop))
 
     # Commit and push
