@@ -7,17 +7,15 @@ jobs:
         steps:
         - name: get robot
           run: |
-            pwd
             ls
-            cd scripts/src/build-workflow
             wget https://raw.githubusercontent.com/ontodev/robot/master/bin/robot
             wget https://github.com/ontodev/robot/releases/download/v1.9.0/robot.jar
             chmod 777 robo*
     
         - name: merge
-          run: sh robot merge -i ../../enanomapper.owl -o ../../enanomapper-full.owl
+          run: sh robot merge -i enanomapper.owl -o enanomapper-full.owl
         - name: report
-          run: sh robot report -i ../../enanomapper.owl -o ../../report/report.tsv
+          run: sh robot report -i enanomapper.owl -o ./report/report.tsv
   # Commit and push
         - name: Commit OWL files
           run: |
@@ -26,7 +24,7 @@ jobs:
             git add ./report/*
             git config --local useremail "action@github.com"
             git config --local user.name "GitHub Action"
-            git commit -m "Actions - QC" .report/* enanomapper-full.owl
+            git commit -m "Actions - QC" ./report/* enanomapper-full.owl
         - name: Push changes
           uses: ad-m/github-push-action@master
           with:
