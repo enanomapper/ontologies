@@ -70,7 +70,7 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}   
+        branch: master
   """.format(commit_message))
 
 if __name__ == "__main__":
