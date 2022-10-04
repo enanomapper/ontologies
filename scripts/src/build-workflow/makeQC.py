@@ -16,7 +16,7 @@ def main():
     added_merged = ""
     with open("../../../.github/workflows/qc.yml", "a+") as qc_yaml:
         qc_yaml.truncate(0)
-        qc_yaml.write("""name: workflow qc eNanoMapper
+        qc_yaml.write("""name: QC
 on:
     {}
 jobs:
