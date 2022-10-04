@@ -26,6 +26,7 @@ jobs:
         - name: get robot
           run: |
             pwd
+            ls
             cd scripts/src/build-workflow
             wget {}
             wget {}
