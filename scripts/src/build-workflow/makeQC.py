@@ -42,7 +42,7 @@ jobs:
         if report == True:
             qc_yaml.write("""
         - name: report
-          run: sh robot report -i enanomapper.owl -o report/report.tsv""")
+          run: sh robot report -i enanomapper.owl -o robot-report/report.tsv""")
             added_report = "git add ./report/*"
         if validate == True:
             pass # to be added
@@ -54,7 +54,7 @@ jobs:
           run: |
             {}
             {}
-            git config --local useremail "action@github.com"
+            git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             git commit -m "{}" ./report/* enanomapper-full.owl
         - name: Push changes
