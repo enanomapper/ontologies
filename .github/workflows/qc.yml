@@ -22,7 +22,7 @@ jobs:
         - name: Commit OWL files
           run: |
             git add enanomapper-full.owl
-            git add ./report/*
+            git add ./robot-report/*
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             git commit -m "Actions - QC" ./robot-report/* enanomapper-full.owl

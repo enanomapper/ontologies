@@ -43,7 +43,7 @@ jobs:
             qc_yaml.write("""
         - name: report
           run: sh robot report --fail-on none -i enanomapper.owl -o robot-report/report.tsv""")
-            added_report = "git add ./report/*"
+            added_report = "git add ./robot-report/*"
         if validate == True:
             pass # to be added
         if odk_dashboard == True:
