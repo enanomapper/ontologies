@@ -25,7 +25,8 @@ jobs:
         steps:
         - name: get robot
           run: |
-            cd ./scripts/src/build-workflow
+            pwd
+            cd scripts/src/build-workflow
             wget {}
             wget {}
             chmod 777 robo*
