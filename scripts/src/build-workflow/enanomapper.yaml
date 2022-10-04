@@ -2,6 +2,7 @@
 build:
   dispatch: # only one option, for now
     - workflow_dispatch
+  commit_message: "Actions - slim updated"
   scheduled: False
   external_prefix: "https://github.com/jmillanacosta/ontologies/external/"
   internal_prefix: "https://github.com/jmillanacosta/ontologies/internal/"
@@ -41,11 +42,17 @@ props:
   - sio
   - ro
   - cito
-robot-qc:
+robot-commands:
+  dispatch: # only one option, for now
+    - workflow_dispatch
+  commit-message: "Actions - QC"
+  scheduled: False
   merge: True
-  verify: True
+  verify: False
   report: True
-  validate-profile: True
+  validate-profile: False
+  robot-jar: "https://github.com/ontodev/robot/releases/download/v1.9.0/robot.jar"
+  robot: "https://raw.githubusercontent.com/ontodev/robot/master/bin/robot"
 odk-dashboard: False
 
 
