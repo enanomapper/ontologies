@@ -23,6 +23,8 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
+        - name: checkout repo
+          uses: actions/checkout@v2
         - name: get robot
           run: |
             ls
@@ -33,7 +35,7 @@ jobs:
         if merge == True:
             qc_yaml.write("""
         - name: merge
-          run: sh robot merge -i enanomapper.owl -o enanomapper-full.owl""")
+          run: sh robot merge -i  -o enanomapper.owl enanomapper-full.owl""")
             added_merged = "git add enanomapper-full.owl"
         if verify == True:
             pass
@@ -50,7 +52,6 @@ jobs:
   # Commit and push
         - name: Commit OWL files
           run: |
-            cd ../../
             {}
             {}
             git config --local useremail "action@github.com"

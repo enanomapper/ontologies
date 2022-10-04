@@ -5,6 +5,8 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
+        - name: checkout repo
+          uses: actions/checkout@v2
         - name: get robot
           run: |
             ls
@@ -13,13 +15,12 @@ jobs:
             chmod 777 robo*
     
         - name: merge
-          run: sh robot merge -i enanomapper.owl -o enanomapper-full.owl
+          run: sh robot merge -i  -o enanomapper.owl enanomapper-full.owl
         - name: report
           run: sh robot report -i enanomapper.owl -o ./report/report.tsv
   # Commit and push
         - name: Commit OWL files
           run: |
-            cd ../../
             git add enanomapper-full.owl
             git add ./report/*
             git config --local useremail "action@github.com"
