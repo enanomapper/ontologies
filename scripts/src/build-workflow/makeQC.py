@@ -25,9 +25,7 @@ jobs:
         steps:
         - name: get robot
           run: |
-            pwd
             ls
-            cd scripts/src/build-workflow
             wget {}
             wget {}
             chmod 777 robo*
@@ -35,14 +33,14 @@ jobs:
         if merge == True:
             qc_yaml.write("""
         - name: merge
-          run: sh robot merge -i ../../enanomapper.owl -o ../../enanomapper-full.owl""")
+          run: sh robot merge -i enanomapper.owl -o enanomapper-full.owl""")
             added_merged = "git add enanomapper-full.owl"
         if verify == True:
             pass
         if report == True:
             qc_yaml.write("""
         - name: report
-          run: sh robot report -i ../../enanomapper.owl -o ../../report/report.tsv""")
+          run: sh robot report -i enanomapper.owl -o ./report/report.tsv""")
             added_report = "git add ./report/*"
         if validate == True:
             pass # to be added
@@ -57,7 +55,7 @@ jobs:
             {}
             git config --local useremail "action@github.com"
             git config --local user.name "GitHub Action"
-            git commit -m "{}" .report/* enanomapper-full.owl
+            git commit -m "{}" ./report/* enanomapper-full.owl
         - name: Push changes
           uses: ad-m/github-push-action@master
           with:
