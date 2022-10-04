@@ -17,13 +17,13 @@ jobs:
         - name: merge
           run: sh robot merge -i enanomapper.owl -o enanomapper.owl
         - name: report
-          run: sh robot report -i enanomapper.owl -o report/report.tsv
+          run: sh robot report -i enanomapper.owl -o robot-report/report.tsv
   # Commit and push
         - name: Commit OWL files
           run: |
             git add enanomapper-full.owl
             git add ./report/*
-            git config --local useremail "action@github.com"
+            git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             git commit -m "Actions - QC" ./report/* enanomapper-full.owl
         - name: Push changes
