@@ -54,10 +54,10 @@ jobs:
             {}
             {}
             git config --local useremail "action@github.com"
-            git config --local user.name"GitHub Action"
-            git commit -m "{}" .external/*.owl
+            git config --local user.name "GitHub Action"
+            git commit -m "{}" .report/* enanomapper-full.owl
         - name: Push changes
-          uses: ad-mgithub-push-action@master
+          uses: ad-m/github-push-action@master
           with:
             github_token: ${{ secretsGITHUB_TOKEN }}
             branch: ${{ github.ref }}   
