@@ -2,7 +2,7 @@ name: workflow qc eNanoMapper
 on:
     workflow_dispatch:
 jobs:
-    build:
+    qc:
         runs-on: ubuntu-latest
         steps:
         - name: checkout repo
@@ -25,7 +25,7 @@ jobs:
             git add ./report/*
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
-            git commit -m "Actions - QC" ./report/* enanomapper-full.owl
+            git commit -m "Actions - QC" ./robot-report/* enanomapper-full.owl
         - name: Push changes
           uses: ad-m/github-push-action@master
           with:
