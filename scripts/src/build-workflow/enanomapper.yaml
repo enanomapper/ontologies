@@ -1,7 +1,6 @@
 ---
 build:
-  dispatch: # only one option, for now
-    - workflow_dispatch
+  dispatch: "workflow_dispatch:"
   commit_message: "Actions - slim updated"
   scheduled: False
   external_prefix: "https://github.com/jmillanacosta/ontologies/external/"
@@ -43,8 +42,7 @@ props:
   - ro
   - cito
 robot-commands:
-  dispatch: # only one option, for now
-    - workflow_dispatch
+  dispatch: "workflow_dispatch:"
   commit-message: "Actions - QC"
   scheduled: False
   merge: True
