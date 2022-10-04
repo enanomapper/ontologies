@@ -1,0 +1,33 @@
+name: workflow qc eNanoMapper
+on:
+    workflow_dispatch
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        - name: get robot
+          run: |
+            cd ./scripts/src/build-workflow
+            wget https://raw.githubusercontent.com/ontodev/robot/master/bin/robot
+            wget https://github.com/ontodev/robot/releases/download/v1.9.0/robot.jar
+            chmod 777 robo*
+    
+        - name: merge
+          run: sh robot merge -i ../../enanomapper.owl -o ../../enanomapper-full.owl
+        - name: report
+          run: sh robot report -i ../../enanomapper.owl -o ../../report/report.tsv
+  # Commit and push
+        - name: Commit OWL files
+          run: |
+            cd ../../
+            git add enanomapper-full.owl
+            git add ./report/*
+            git config --local useremail "action@github.com"
+            git config --local user.name"GitHub Action"
+            git commit -m "Actions - QC" .external/*.owl
+        - name: Push changes
+          uses: ad-mgithub-push-action@master
+          with:
+            github_token: ${ secretsGITHUB_TOKEN }
+            branch: ${ github.ref }   
+  
