@@ -32,7 +32,7 @@ jobs:
       uses: actions/checkout@v3
     # Get slimmer
     - name: get slimmer
-      run: wget -nc https://githubcom/enanomapper/slimmereleases/download/  #v1.0.2slimmer-1.02-jar-with-dependencies.ar 
+      run: wget -nc https://github.com/enanomapper/slimmer/releases/download/v1.0.2/slimmer-1.0.2-jar-with-dependencies.jar
   """.format(dispatch))
 
     # Writes serialization to slim all ontologies
@@ -64,10 +64,10 @@ jobs:
       run: |
         git add external/*.owl
         git config --local useremail "action@github.com"
-        git config --local user.name"GitHub Action"
+        git config --local user.name "GitHub Action"
         git commit -m "{}" .external/*.owl
     - name: Push changes
-      uses: ad-mgithub-push-action@master
+      uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secretsGITHUB_TOKEN }}
         branch: ${{ github.ref }}   
