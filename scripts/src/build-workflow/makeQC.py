@@ -11,7 +11,7 @@ def main():
     report = config["robot-commands"]["report"]
     validate = config["robot-commands"]["validate-profile"]
     odk_dashboard = config["odk-dashboard"]
-    dispatch = config["robot-commands"]["dispatch"][0]
+    dispatch = config["robot-commands"]["dispatch"]
     commit_message = config["robot-commands"]["commit-message"]
     added_merged = ""
     with open("../../../.github/workflows/qc.yml", "a+") as qc_yaml:
