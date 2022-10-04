@@ -15,7 +15,7 @@ jobs:
             chmod 777 robo*
     
         - name: merge
-          run: sh robot merge -i  -o enanomapper.owl enanomapper-full.owl
+          run: sh robot merge -i enanomapper.owl -o enanomapper.owl enanomapper-full.owl
         - name: report
           run: sh robot report -i enanomapper.owl -o ./report/report.tsv
   # Commit and push
