@@ -44,6 +44,10 @@ The full list of ontologies it includes is:
 * [Uber Anatomy Ontology](https://github.com/obophenotype/uberon) (UBERON)
 * [Unit Ontology](https://github.com/bio-ontology-research-group/unit-ontology) (UO)
 
+The build of the slims is carried out in this repository through the actions contained in the [workflows](.github/workflows) folder,
+and the resulting slims of external ontologies are commited and pushed automatically to this repository when 
+the workflows are run. Moreover, a series of QC steps described [here](tbd) are performed on the resulting ontology.
+
 DOI of Releases
 ---------------
 
