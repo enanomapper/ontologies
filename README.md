@@ -96,7 +96,7 @@ java -cp ../Slimmer/target/slimmer-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.
 The bao.props and bao.iris files contain all the information needed to describe which parts of the BAO ontology
 is retained in the slimmed version.
 
-The specific slimming steps can be consulted in the [slimming script](https://github.com/jmillanacosta/ontologies/blob/master/scripts/src/build-workflow/slim-ncit.sh) used in the workflow.
+The specific slimming steps can be consulted in the [slimming script](scripts/src/build-workflow/slim-ncit.sh) used in the workflow.
 
 Tutorials
 =========
