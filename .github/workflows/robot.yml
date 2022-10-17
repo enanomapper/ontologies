@@ -20,7 +20,7 @@ jobs:
           run: sh robot report --fail-on none -i enanomapper-full-temp.owl -o robot-report/report.tsv
         - name: diff
           run: |
-            sh robot diff --left enanomapper-full.owl --right -enanomapper-full-temp.owl --output robot-report/diff.txt
+            sh robot diff --left enanomapper-full.owl --right enanomapper-full-temp.owl --output robot-report/diff.txt
             rm enanomapper-full.owl
             mv enanomapper-full-temp.owl enanomapper-full.owl
         - name: reason
