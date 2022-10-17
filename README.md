@@ -1,13 +1,13 @@
 The Ontology
 ============
 
-The eNanoMapper ontologies aim to provide a comprehensive suite of ontologies for the nanomaterial safety assessment domain (see http://www.enanomapper.net for project information). The full suite of ontologies can be found assembled by imports in the primary `enanomapper.owl` file.
+The eNanoMapper ontologies aim to provide a comprehensive suite of ontologies for the nanomaterial safety assessment domain (see http://www.enanomapper.net for project information). The full suite of ontologies can be found assembled by imports in the primary `enanomapper.owl` file, or explicitly asserted in `enanomapper-full.owl`.
 
 The ontology is being developed and maintained by the following EU H2020 projects (see also the below
 [funding](README.md#funding) info):
 
 * [NanoSolveIT](https://www.nanosolveit.eu/)
-* [NanoCommons](https://www.nanocommons.eu/)
+* [NanoCommons](https://www.nanocommons.eu/) (project ended)
 * [OpenRiskNet](https://openrisknet.org/) (project ended)
 * [eNanoMapper](http://enanomapper.net/) (project ended)
 
@@ -44,6 +44,10 @@ The full list of ontologies it includes is:
 * [Uber Anatomy Ontology](https://github.com/obophenotype/uberon) (UBERON)
 * [Unit Ontology](https://github.com/bio-ontology-research-group/unit-ontology) (UO)
 
+The build of the slims is carried out in this repository through the actions contained in the [workflows](.github/workflows) folder,
+and the resulting slims of external ontologies are commited and pushed automatically to this repository when 
+the workflows are run. Moreover, a series of QC steps described [here](tbd) are performed on the resulting ontology.
+
 DOI of Releases
 ---------------
 
@@ -70,9 +74,12 @@ Building and validating the ontology
 ====================================
 
 During (and after) the eNanoMapper project the ontology was autobuilt using scripts on
-[a Jenkins server](https://jenm.bigcat.maastrichtuniversity.nl/). The main OWL file (enanomapper.owl)
-refers to slimmed versions of external ontologies, complemented with internal files adding additional
-terms. The extensions are OWL files themselves and you can load them in Protege
+[a Jenkins server](https://jenm.bigcat.maastrichtuniversity.nl/). After the cyberattack on Maastricht University 
+in 2019, the developers started considering mobving the build to another server. This repository uses
+GitHub Actions to replicate the build process from Jenkins, and adds some extra QC workflows. 
+
+The main OWL file (enanomapper.owl) refers to slimmed versions of external ontologies, complemented with internal 
+files adding additional terms. The extensions are OWL files themselves and you can load them in Protégé
 and use the ```internal/Makefile``` to run ```xmllint``` on the extensions to see of the OWL
 files are well-formed.
 
@@ -93,6 +100,8 @@ java -cp ../Slimmer/target/slimmer-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.
 The bao.props and bao.iris files contain all the information needed to describe which parts of the BAO ontology
 is retained in the slimmed version.
 
+The specific slimming steps can be consulted in the [slimming script](scripts/src/build-workflow/slim-ncit.sh) used in the workflow.
+
 Tutorials
 =========
 
@@ -104,20 +113,18 @@ Please also check out these tutorials, developed by eNanoMapper, NanoCommons, an
 Making Releases
 ===============
 
-1. Update external ontologies
-   * Download slimmed results from Jenkins workspace (artifacts) for each of the external ontologies
-   * Replace the old `*-slim.owl` in `ontologies/external/`
-2. Test if the `enanomapper.owl` can be loaded without errors in Protégé
+
+1. Test if the `enanomapper.owl` can be loaded without errors in Protégé
    * And run the Makefile with ```make check``` in the ```internal/``` folder
-3. check if the metadata in the enanomapper.owl is up to data (e.g. names of people who submitted PRs)
-4. Copy the internal ontologies in `ontologies/internal-dev/` to `ontologies/internal`
-5. Update the owl.versionInfo of `enanomapper.owl`
-6. Update the owl.versionInfo of `enanomapper-dev.owl`
-7. Write markdown for the release with the changes since the previous release
-8. Update the CITATION.cff
-9. Tag the git commit matching the release
-10. Release the whole repository in GitHub https://github.com/enanomapper/ontologies/releases 
-11. Update the DOI number for new release: https://zenodo.org/record/260098
+2. check if the metadata in the enanomapper.owl is up to data (e.g. names of people who submitted PRs)
+3. Copy the internal ontologies in `ontologies/internal-dev/` to `ontologies/internal`
+4. Update the owl.versionInfo of `enanomapper.owl`
+5. Update the owl.versionInfo of `enanomapper-dev.owl`
+6. Write markdown for the release with the changes since the previous release
+7. Update the CITATION.cff
+8. Tag the git commit matching the release
+9. Release the whole repository in GitHub https://github.com/enanomapper/ontologies/releases 
+10. Update the DOI number for new release: https://zenodo.org/record/260098
 
 Funding
 =======
