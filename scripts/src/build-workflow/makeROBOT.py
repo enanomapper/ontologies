@@ -22,7 +22,7 @@ def main():
 on:
     {}
     schedule:
-    - cron: "*/5 * * * *"
+    - cron: "1 * * 1-12 *"
 jobs:
     robot-workflows:
         runs-on: ubuntu-latest
