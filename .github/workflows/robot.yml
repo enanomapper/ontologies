@@ -1,8 +1,8 @@
-name: QC
+name: ROBOT-commands
 on:
     workflow_dispatch:
 jobs:
-    qc:
+    robot-workflows:
         runs-on: ubuntu-latest
         steps:
         - name: checkout repo
@@ -15,9 +15,17 @@ jobs:
             chmod 777 robo*
     
         - name: merge
-          run: sh robot merge -i enanomapper.owl -o enanomapper-full.owl
+          run: sh robot merge -i enanomapper.owl -o enanomapper-full-temp.owl
         - name: report
-          run: sh robot report --fail-on none -i enanomapper.owl -o robot-report/report.tsv
+          run: sh robot report --fail-on none -i enanomapper-full-temp.owl -o robot-report/report.tsv
+        - name: diff
+          run: |
+            sh robot diff --left enanomapper-full.owl --right -enanomapper-full-temp.owl --output robot-report/diff.txt
+            rm enanomapper-full.owl
+            mv enanomapper-full-temp.owl enanomapper-full.owl
+        - name: reason
+          run: sh robot reason --reasoner ELK --annotate-inferred-axioms true --input enanomapper-full.owl --output enanomapper-reasoned.owl
+  
   # Commit and push
         - name: Commit OWL files
           run: |
