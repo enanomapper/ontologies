@@ -25,7 +25,7 @@ def main():
 on:
   {}
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "1 * * 1-12 *"
 jobs:
   build:
     runs-on: ubuntu-latest
