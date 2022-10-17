@@ -71,6 +71,7 @@ jobs:
             {}
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
+            git add enanomapper*
             git commit -m "{}" ./robot-report/* enanomapper*
         - name: Push changes
           uses: ad-m/github-push-action@master
