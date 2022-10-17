@@ -13,14 +13,16 @@ def main():
     odk_dashboard = config["odk-dashboard"]
     dispatch = config["robot-commands"]["dispatch"]
     commit_message = config["robot-commands"]["commit-message"]
+    reason = config["robot-commands"]["reason"]["value"]
+    reasoner = config["robot-commands"]["reason"]["reasoner"]
     added_merged = ""
-    with open("../../../.github/workflows/qc.yml", "a+") as qc_yaml:
-        qc_yaml.truncate(0)
-        qc_yaml.write("""name: QC
+    with open("../../../.github/workflows/robot.yml", "a+") as robot_yaml:
+        robot_yaml.truncate(0)
+        robot_yaml.write("""name: ROBOT-commands
 on:
     {}
 jobs:
-    qc:
+    robot-workflows:
         runs-on: ubuntu-latest
         steps:
         - name: checkout repo
@@ -33,22 +35,33 @@ jobs:
             chmod 777 robo*
     """.format(dispatch, robot, robot_jar))
         if merge == True:
-            qc_yaml.write("""
+            robot_yaml.write("""
         - name: merge
-          run: sh robot merge -i enanomapper.owl -o enanomapper-full.owl""")
+          run: sh robot merge -i enanomapper.owl -o enanomapper-full-temp.owl""")
             added_merged = "git add enanomapper-full.owl"
         if verify == True:
             pass
         if report == True:
-            qc_yaml.write("""
+            robot_yaml.write("""
         - name: report
-          run: sh robot report --fail-on none -i enanomapper.owl -o robot-report/report.tsv""")
+          run: sh robot report --fail-on none -i enanomapper-full-temp.owl -o robot-report/report.tsv
+        - name: diff
+          run: |
+            sh robot diff --left enanomapper-full.owl --right -enanomapper-full-temp.owl --output robot-report/diff.txt
+            rm enanomapper-full.owl
+            mv enanomapper-full-temp.owl enanomapper-full.owl""")
             added_report = "git add ./robot-report/*"
         if validate == True:
             pass # to be added
         if odk_dashboard == True:
             pass # to be added
-        qc_yaml.write("""
+        if reason == True and reasoner in ["ELK", "hermit", "jfact", "whelk"]:
+          robot_yaml.write("""
+        - name: reason
+          run: sh robot reason --reasoner {} --annotate-inferred-axioms true --input enanomapper-full.owl --output enanomapper-reasoned.owl
+  """.format(reasoner))
+
+        robot_yaml.write("""
   # Commit and push
         - name: Commit OWL files
           run: |
