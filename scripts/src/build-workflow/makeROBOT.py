@@ -21,6 +21,8 @@ def main():
         robot_yaml.write("""name: ROBOT-commands
 on:
     {}
+    schedule:
+    - cron: "*/5 * * * *"
 jobs:
     robot-workflows:
         runs-on: ubuntu-latest

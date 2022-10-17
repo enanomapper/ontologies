@@ -24,6 +24,8 @@ def main():
     build_yaml.write("""name: Build slims
 on:
   {}
+  schedule:
+    - cron: "*/5 * * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
