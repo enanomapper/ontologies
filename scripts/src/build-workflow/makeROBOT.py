@@ -15,14 +15,15 @@ def main():
     commit_message = config["robot-commands"]["commit-message"]
     reason = config["robot-commands"]["reason"]["value"]
     reasoner = config["robot-commands"]["reason"]["reasoner"]
+    cron = config["robot-commands"]["reason"]["schedule"]
     added_merged = ""
     with open("../../../.github/workflows/robot.yml", "a+") as robot_yaml:
         robot_yaml.truncate(0)
-        robot_yaml.write("""name: ROBOT-commands
+        robot_yaml.write(f"""name: ROBOT-commands
 on:
-    {}
+    {dispatch}
     schedule:
-    - cron: "1 * * 1-12 *"
+    - cron: {cron}
 jobs:
     robot-workflows:
         runs-on: ubuntu-latest
@@ -32,10 +33,10 @@ jobs:
         - name: get robot
           run: |
             ls
-            wget {}
-            wget {}
+            wget {robot}
+            wget {robot_jar}
             chmod 777 robo*
-    """.format(dispatch, robot, robot_jar))
+    """)
         if merge == True:
             robot_yaml.write("""
         - name: merge
@@ -58,27 +59,27 @@ jobs:
         if odk_dashboard == True:
             pass # to be added
         if reason == True and reasoner in ["ELK", "hermit", "jfact", "whelk"]:
-          robot_yaml.write("""
+          robot_yaml.write(f"""
         - name: reason
-          run: sh robot reason --reasoner {} --annotate-inferred-axioms true --input enanomapper-full.owl --output enanomapper-reasoned.owl
-  """.format(reasoner))
+          run: sh robot reason --reasoner {reasoner} --annotate-inferred-axioms true --input enanomapper-full.owl --output enanomapper-reasoned.owl
+  """)
 
-        robot_yaml.write("""
+        robot_yaml.write(f"""
   # Commit and push
         - name: Commit OWL files
           run: |
-            {}
-            {}
+            {added_merged}
+            {added_report}
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             git add enanomapper*
-            git commit -m "{}" ./robot-report/* enanomapper*
+            git commit -m "{commit_message}" ./robot-report/* enanomapper*
         - name: Push changes
           uses: ad-m/github-push-action@master
           with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
             branch: master   
-  """.format(added_merged, added_report, commit_message))
+  """)
 
 if __name__ == "__main__":
     main()
