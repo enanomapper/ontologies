@@ -1,7 +1,7 @@
 The Ontology
 ============
 
-The eNanoMapper ontologies aim to provide a comprehensive suite of ontologies for the nanomaterial safety assessment domain (see http://www.enanomapper.net for project information). The full suite of ontologies can be found assembled by imports in the primary `enanomapper.owl` file, or explicitly asserted in `enanomapper-full.owl`.
+The eNanoMapper ontologies aim to provide a comprehensive suite of ontologies for the nanomaterial safety assessment domain (see http://www.enanomapper.net for project information). The full suite of ontologies can be found in a modular file using `owl:imports`, [`enanomapper.owl`](enanomapper.owl), or explicitly asserted in [`enanomapper-full.owl`](enanomapper-full.owl).
 
 The ontology is being developed and maintained by the following EU H2020 projects (see also the below
 [funding](README.md#funding) info):
@@ -46,11 +46,16 @@ The full list of ontologies it includes is:
 
 The build of the slims is carried out in this repository through the actions contained in the [workflows](.github/workflows) folder,
 and the resulting slims of external ontologies are commited and pushed automatically to this repository when 
-the workflows are run. Moreover, a series of QC steps described [here](tbd) are performed on the resulting ontology.
+the workflows are run. Moreover, `robot diff` and `robot report` are performed for quality control on the resulting ontology, with their results being stored under [robot-report](/report) after each workflow run.
+
+The configuration file [enanomapper.yaml](scripts/src/build-workflow/enanomapper.yaml) is used by the [python setup scripts](scripts/src/build-workflow/) to set up these workflows each time after being pushed to this repository.
+
+![eNM ontology workflow](/workflow.png)
 
 DOI of Releases
 ---------------
 
+* Version 8: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6984499.svg)](https://doi.org/10.5281/zenodo.6984499)
 * Version 7: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4600986.svg)](https://doi.org/10.5281/zenodo.4600986)
 * Version 6: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3382100.svg)](https://doi.org/10.5281/zenodo.3382100)
 * Version 5: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3237535.svg)](https://doi.org/10.5281/zenodo.3237535)
@@ -75,12 +80,11 @@ Building and validating the ontology
 
 During (and after) the eNanoMapper project the ontology was autobuilt using scripts on
 [a Jenkins server](https://jenm.bigcat.maastrichtuniversity.nl/). After the cyberattack on Maastricht University 
-in 2019, the developers started considering mobving the build to another server. This repository uses
-GitHub Actions to replicate the build process from Jenkins, and adds some extra QC workflows. 
+in 2019, this repository uses GitHub Actions to replicate the Jenkins build process and adds some extra QC workflows and functionalities that allign with the OBO practices (delivering a [full ontology file](enanomapper-full.owl), customizable workflows for ontology build and QC.)
 
 The main OWL file (enanomapper.owl) refers to slimmed versions of external ontologies, complemented with internal 
 files adding additional terms. The extensions are OWL files themselves and you can load them in Protégé
-and use the ```internal/Makefile``` to run ```xmllint``` on the extensions to see of the OWL
+and use the ```internal/Makefile``` to run ```xmllint``` on the extensions to see if the OWL
 files are well-formed.
 
 The slimming of the external ontologies is done with the Slimmer tool, with these commands (for the
@@ -100,7 +104,7 @@ java -cp ../Slimmer/target/slimmer-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.
 The bao.props and bao.iris files contain all the information needed to describe which parts of the BAO ontology
 is retained in the slimmed version.
 
-The specific slimming steps can be consulted in the [slimming script](scripts/src/build-workflow/slim-ncit.sh) used in the workflow.
+The specific slimming steps can be consulted in the [slimming script](scripts/src/build-workflow/slim.sh) used in the workflow.
 
 Tutorials
 =========
