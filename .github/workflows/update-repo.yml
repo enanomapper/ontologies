@@ -1,6 +1,10 @@
-name: update repository YAML configuration
+name: update repository
 on:
-  workflow_dispatch:
+  push:
+    branches:
+    - main
+    paths:
+    - scripts/src/build-workflow/enanomapper.yaml
 jobs:
   update-repo:
     runs-on: ubuntu-latest

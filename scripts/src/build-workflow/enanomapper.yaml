@@ -44,8 +44,8 @@ props:
 robot-commands:
   dispatch: "workflow_dispatch:"
   commit-message: "Actions - QC"
-  scheduled: False
-  merge: True # Most ROBOT actions operate on the full ontology. Better not change to False.
+  schedule: "0 0 1 1-12 *"
+  merge: True # Most ROBOT actions operate on the full ontology enanomapper-full.owl
   verify: False
   report: True
   validate-profile: False

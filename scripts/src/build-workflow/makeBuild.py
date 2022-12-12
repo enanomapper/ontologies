@@ -21,9 +21,9 @@ def main():
   with open("../../../.github/workflows/slim-ontologies.yml", "a+") as  build_yaml:
     # Writes serialization for the workflow dispatch and getting slimmer
     build_yaml.truncate(0)
-    build_yaml.write("""name: Build slims
+    build_yaml.write(f"""name: Build slims
 on:
-  {}
+  {dispatch}
   schedule:
     - cron: "1 * * 1-12 *"
 jobs:
@@ -35,7 +35,7 @@ jobs:
     # Get slimmer
     - name: get slimmer
       run: wget -nc https://github.com/enanomapper/slimmer/releases/download/v1.0.2/slimmer-1.0.2-jar-with-dependencies.jar
-  """.format(dispatch))
+  """)
 
     # Writes serialization to slim all ontologies
     build_yaml.write("""
@@ -46,18 +46,18 @@ jobs:
   """)
     # Apply slims
     for ontology in slim:
-      build_yaml.write("""
-  # Slim {}
-    - name: slim-{}
-      run: bash scripts/src/build-workflow/slim.sh {}
-  """.format(ontology, ontology, ontology))
+      build_yaml.write(f"""
+  # Slim {ontology}
+    - name: slim-{ontology}
+      run: bash scripts/src/build-workflow/slim.sh {ontology}
+  """)
     # Apply props
     for prop in props:
       build_yaml.write("""
-  # apply props {}
-    - name: Apply props {}
-      run: bash scripts/src/build-workflow/props.sh {}
-  """.format(prop, prop, prop))
+  # apply props {prop}
+    - name: Apply props {prop}
+      run: bash scripts/src/build-workflow/props.sh {prop}
+  """)
 
     # Commit and push
     build_yaml.write("""
@@ -67,13 +67,13 @@ jobs:
         git add external/*.owl
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git commit -m "{}" ./external/*.owl
+        git commit -m "{commit_message}" ./external/*.owl
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: master
-  """.format(commit_message))
+  """)
 
 if __name__ == "__main__":
     main()
