@@ -1,4 +1,5 @@
 name: ROBOT-commands
+
 on:
     workflow_dispatch:
     schedule:
@@ -33,10 +34,9 @@ jobs:
           run: |
             git add enanomapper-full.owl
             git add ./robot-report/*
-            git config --local user.email "action@github.com"
-            git config --local user.name "GitHub Action"
             git add enanomapper*
             git commit -m "Actions - QC" ./robot-report/* enanomapper*
+            echo "Commited"
         - name: Push changes
           uses: ad-m/github-push-action@master
           with:
