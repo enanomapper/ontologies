@@ -11,7 +11,10 @@ jobs:
     - name: Check out repository
       uses: actions/checkout@v3
     - name: update according to new yaml settings
-      run: python scripts/src/build-workflow/*.py
+      run:  |
+        cd scripts/src/build-workflow 
+        python scripts/src/build-workflow/*.py
+        cd ../../../
     - name: commit and push changes
       run: |
         git add ./scripts/src/build-workflow/*.py
