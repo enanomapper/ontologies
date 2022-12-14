@@ -2,7 +2,7 @@ name: ROBOT-commands
 on:
     workflow_dispatch:
     schedule:
-    - cron: "1 * * 1-12 *"
+    - cron: "0 0 0 1-12 *"
 jobs:
     robot-workflows:
         runs-on: ubuntu-latest
@@ -31,11 +31,11 @@ jobs:
   # Commit and push
         - name: Commit OWL files
           run: |
-            git config --local user.email "action@github.com"
-            git config --local user.name "GitHub Action"
             git add enanomapper-full.owl
             git add ./robot-report/*
             git add enanomapper*
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
             git commit -m "Actions - QC" ./robot-report/* enanomapper*
         - name: Push changes
           uses: ad-m/github-push-action@master
