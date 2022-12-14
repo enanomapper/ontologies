@@ -23,8 +23,4 @@ jobs:
         git config --local user.name "GitHub Action"
         git add .github/workflows/*.yml
         git commit -m "Updated repository" .github/workflows/*.yml
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.WORKFLOWS }}
-        branch: ${{ github.ref }}   
+        git push
