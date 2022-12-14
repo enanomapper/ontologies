@@ -28,18 +28,17 @@ jobs:
         - name: reason
           run: sh robot reason --reasoner ELK --annotate-inferred-axioms true --input enanomapper-full.owl --output enanomapper-reasoned.owl
   
-  # Commit and push
+# Commit and push
         - name: Commit OWL files
           run: |
             git add enanomapper-full.owl
             git add ./robot-report/*
-            git add enanomapper*
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
+            git add enanomapper*
             git commit -m "Actions - QC" ./robot-report/* enanomapper*
         - name: Push changes
           uses: ad-m/github-push-action@master
           with:
             github_token: ${ secrets.GITHUB_TOKEN }
-            branch: master
- 
+            branch: master   
