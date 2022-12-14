@@ -15,7 +15,7 @@ def main():
     commit_message = config["robot-commands"]["commit-message"]
     reason = config["robot-commands"]["reason"]["value"]
     reasoner = config["robot-commands"]["reason"]["reasoner"]
-    cron = config["robot-commands"]["reason"]["schedule"]
+    cron = config["robot-commands"]["schedule"]
     added_merged = ""
     with open("../../../.github/workflows/robot.yml", "a+") as robot_yaml:
         robot_yaml.truncate(0)
