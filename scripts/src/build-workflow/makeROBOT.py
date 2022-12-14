@@ -74,11 +74,9 @@ jobs:
             git config --local user.name "GitHub Action"
             git add enanomapper*
             git commit -m "{commit_message}" ./robot-report/* enanomapper*
-        - name: Push changes
-          uses: ad-m/github-push-action@master
-          with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            branch: master   
+            git push
+            
+        
   """)
 
 if __name__ == "__main__":
