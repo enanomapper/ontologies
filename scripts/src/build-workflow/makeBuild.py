@@ -18,6 +18,7 @@ def main():
   build = config["build"]
   dispatch = build["dispatch"]
   commit_message= build["commit_message"]
+  schedule = build["schedule"]
   with open("../../../.github/workflows/slim-ontologies.yml", "a+") as  build_yaml:
     # Writes serialization for the workflow dispatch and getting slimmer
     build_yaml.truncate(0)
@@ -25,7 +26,7 @@ def main():
 on:
   {dispatch}
   schedule:
-    - cron: "1 * * 1-12 *"
+    - {schedule}
 jobs:
   build:
     runs-on: ubuntu-latest
