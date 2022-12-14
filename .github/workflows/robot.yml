@@ -1,15 +1,14 @@
 name: ROBOT-commands
-
 on:
     workflow_dispatch:
     schedule:
-    - cron: "0 0 1 1-12 *"
+    - cron: 1 0 1 1-12 *
 jobs:
     robot-workflows:
         runs-on: ubuntu-latest
         steps:
         - name: checkout repo
-          uses: actions/checkout@v3
+          uses: actions/checkout@v2
         - name: get robot
           run: |
             ls
@@ -29,14 +28,16 @@ jobs:
         - name: reason
           run: sh robot reason --reasoner ELK --annotate-inferred-axioms true --input enanomapper-full.owl --output enanomapper-reasoned.owl
   
-# Commit and push
-
+  # Commit and push
         - name: Commit OWL files
           run: |
-            git config --local user.email "action@github.com"
-            git config --local user.name "GitHub Action"
             git add enanomapper-full.owl
             git add ./robot-report/*
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
             git add enanomapper*
             git commit -m "Actions - QC" ./robot-report/* enanomapper*
             git push
+            
+        
+  
