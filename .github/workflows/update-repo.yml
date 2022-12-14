@@ -13,7 +13,8 @@ jobs:
     - name: update according to new yaml settings
       run:  |
         cd scripts/src/build-workflow 
-        python scripts/src/build-workflow/*.py
+        python makeBuild.py
+        python makeROBOT.py
         cd ../../../
     - name: commit and push changes
       run: |
