@@ -18,7 +18,7 @@ jobs:
         cd ../../../
     - name: commit and push changes
       run: |
-        git add ./scripts/src/build-workflow/*.py
+        git add .github/workflows/slim-ontologies.yml .github/workflows/robot.yml
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -m "Updated repository" ./scripts/src/build-workflow/*.py
