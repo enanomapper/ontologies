@@ -18,10 +18,11 @@ jobs:
         cd ../../../
     - name: commit and push changes
       run: |
-        git add .github/workflows/slim-ontologies.yml .github/workflows/robot.yml
+        
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git commit -m "Updated repository" ./scripts/src/build-workflow/*.py
+        git add .github/workflows/*.yml
+        git commit -m "Updated repository" .github/workflows/*.yml
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
