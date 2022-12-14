@@ -11,6 +11,8 @@ jobs:
     steps:
     - name: Check out repository
       uses: actions/checkout@v3
+      with:
+       ssh-key: ${{ secrets.PAT }} 
     - name: update according to new yaml settings
       run:  |
         cd scripts/src/build-workflow 
@@ -19,7 +21,6 @@ jobs:
         cd ../../../
     - name: commit and push changes
       run: |
-        
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add .github/workflows/*.yml
