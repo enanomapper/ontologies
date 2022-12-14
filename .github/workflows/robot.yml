@@ -42,9 +42,4 @@ jobs:
             git add ./robot-report/*
             git add enanomapper*
             git commit -m "Actions - QC" ./robot-report/* enanomapper*
-            echo "Commited"
-        - name: Push changes
-          uses: ad-m/github-push-action@master
-          with:
-            github_token: ${ secrets.GITHUB_TOKEN }
-            branch: main
+            git push
