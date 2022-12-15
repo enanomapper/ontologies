@@ -122,29 +122,29 @@ jobs:
     - name: slim-uo
       run: bash scripts/src/build-workflow/slim.sh uo
   
-  # apply props {prop}
-    - name: Apply props {prop}
-      run: bash scripts/src/build-workflow/props.sh {prop}
+  # apply props bao
+    - name: Apply props bao
+      run: bash scripts/src/build-workflow/props.sh bao
   
-  # apply props {prop}
-    - name: Apply props {prop}
-      run: bash scripts/src/build-workflow/props.sh {prop}
+  # apply props cheminf
+    - name: Apply props cheminf
+      run: bash scripts/src/build-workflow/props.sh cheminf
   
-  # apply props {prop}
-    - name: Apply props {prop}
-      run: bash scripts/src/build-workflow/props.sh {prop}
+  # apply props npo
+    - name: Apply props npo
+      run: bash scripts/src/build-workflow/props.sh npo
   
-  # apply props {prop}
-    - name: Apply props {prop}
-      run: bash scripts/src/build-workflow/props.sh {prop}
+  # apply props sio
+    - name: Apply props sio
+      run: bash scripts/src/build-workflow/props.sh sio
   
-  # apply props {prop}
-    - name: Apply props {prop}
-      run: bash scripts/src/build-workflow/props.sh {prop}
+  # apply props ro
+    - name: Apply props ro
+      run: bash scripts/src/build-workflow/props.sh ro
   
-  # apply props {prop}
-    - name: Apply props {prop}
-      run: bash scripts/src/build-workflow/props.sh {prop}
+  # apply props cito
+    - name: Apply props cito
+      run: bash scripts/src/build-workflow/props.sh cito
   
   # Commit and push
     - name: Commit OWL files
@@ -152,6 +152,6 @@ jobs:
         git add external/*.owl
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git commit -m "{commit_message}" ./external/*.owl
+        git commit -m "Actions - slim updated" ./external/*.owl
         git push
   
