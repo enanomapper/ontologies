@@ -54,14 +54,14 @@ jobs:
   """)
     # Apply props
     for prop in props:
-      build_yaml.write("""
+      build_yaml.write(f"""
   # apply props {prop}
     - name: Apply props {prop}
       run: bash scripts/src/build-workflow/props.sh {prop}
   """)
 
     # Commit and push
-    build_yaml.write("""
+    build_yaml.write(f"""
   # Commit and push
     - name: Commit OWL files
       run: |
