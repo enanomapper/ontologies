@@ -22,7 +22,7 @@ def main():
         robot_yaml.write(f"""name: ROBOT-commands
 on:
     {dispatch}
-    schedule:
+    #schedule:
     workflow_run:
      workflows: ["CI build"]
      types:
