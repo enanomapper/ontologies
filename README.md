@@ -49,7 +49,7 @@ lows](.github/workflows) folder,
 and the resulting slims of external ontologies are commited and pushed automatically to this repository when 
 the workflows are run. Moreover, `robot diff` and `robot report` are performed for quality control on the resulting ontology, with their results being stored under [robot-report](/report) after each workflow run.
 
-The configuration file [enanomapper.yaml](scripts/src/build-workflow/enanomapper.yaml) is used by the [python setup scripts](scripts/src/build-workflow/) to set up these workflows upon push.
+The configuration file [enanomapper.yaml](scripts/src/build-workflow/enanomapper.yaml) is used by the [python setup scripts](scripts/src/build-workflow/) to update the YAML for these workflows ([build](.github/workflows/slim-ontologies.yml), [QC](.github/workflows/robot.yml)) on push via the [update repository workflow](.github/workflows/update-repo.yml). 
 
 ![eNM ontology workflow](workflow.png)
 
@@ -79,9 +79,9 @@ The development version is opened in the same way, but with a different URL:
 Building and validating the ontology
 ====================================
 
-During (and after) the eNanoMapper project the ontology was autobuilt using scripts on
-[a Jenkins server](https://jenm.bigcat.maastrichtuniversity.nl/). After the cyberattack on Maastricht University 
-in 2019, this repository uses GitHub Actions to replicate the Jenkins build process and adds some extra QC workflows and functionalities that allign with the OBO practices (delivering a [full ontology file](enanomapper-full.owl), customizable workflows for ontology build and QC.)
+During (and after) the eNanoMapper project the ontology was autobuilt using scripts on the [BiGCaT
+Jenkins server](https://jenm.bigcat.maastrichtuniversity.nl/). After the cyberattack on Maastricht University 
+in 2019, this repository uses GitHub Actions to replicate the Jenkins build process, and adds a [full ontology file](enanomapper-full.owl) and customizable workflows for ontology build and QC.
 
 The main OWL file (enanomapper.owl) refers to slimmed versions of external ontologies, complemented with internal 
 files adding additional terms. The extensions are OWL files themselves and you can load them in Protégé
