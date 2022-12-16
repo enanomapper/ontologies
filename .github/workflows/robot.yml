@@ -1,8 +1,10 @@
 name: ROBOT-commands
 on:
     workflow_dispatch:
-    schedule:
-    - cron: 1 0 1 1-12 *
+    workflow_run:
+     workflows: ["Build slims"]
+     types:
+      - completed
 jobs:
     robot-workflows:
         runs-on: ubuntu-latest
