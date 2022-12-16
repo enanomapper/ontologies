@@ -26,5 +26,8 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add .github/workflows/*.yml
-        git commit -m "Updated workflow" .github/workflows/*.yml
-        git push
+        git add -A
+        if ! git diff-index --quiet HEAD; then
+          git commit -m "Updated workflow" .github/workflows/*.yml
+          git push
+        fi
