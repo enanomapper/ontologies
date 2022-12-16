@@ -26,7 +26,7 @@ def main():
 on:
   {dispatch}
   schedule:
-    - {schedule}
+    - cron: {schedule}
 jobs:
   build:
     runs-on: ubuntu-latest
