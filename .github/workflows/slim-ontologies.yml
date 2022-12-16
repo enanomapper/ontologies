@@ -2,7 +2,7 @@ name: Build slims
 on:
   workflow_dispatch:
   schedule:
-    - 1 0 1 1-12 *
+    - cron: 1 0 1 1-12 *
 jobs:
   build:
     runs-on: ubuntu-latest
