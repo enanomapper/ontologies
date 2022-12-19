@@ -45,9 +45,9 @@ The full list of ontologies it includes is:
 * [Unit Ontology](https://github.com/bio-ontology-research-group/unit-ontology) (UO)
 
 The build of the slims is carried out in this repository through the actions contained in the [
-lows](.github/workflows) folder,
+.github/workflows](.github/workflows) folder,
 and the resulting slims of external ontologies are commited and pushed automatically to this repository when 
-the workflows are run. Moreover, `robot diff` and `robot report` are performed for quality control on the resulting ontology, with their results being stored under [robot-report](/report) after each workflow run.
+the build workflow is run. After that, `robot diff` and `robot report` are performed for quality control on the resulting ontology, with their results being stored under [/report](/report) after each workflow run.
 
 The configuration file [enanomapper.yaml](scripts/src/build-workflow/enanomapper.yaml) is used by the [python setup scripts](scripts/src/build-workflow/) to update the YAML for these workflows ([build](.github/workflows/slim-ontologies.yml), [QC](.github/workflows/robot.yml)) on push via the [update repository workflow](.github/workflows/update-repo.yml). 
 
