@@ -1,4 +1,12 @@
 #!/usr/local/bin/python
+
+#Generates a GitHub Actions workflow configuration file "Build slims" in YAML format 
+#based on the contents of "enanomapper.yaml". The script reads and parses the contents of this file, 
+#and then extracts specific values from it to use in the configuration file.  
+#Then, it iterates over lists of ontologies and properties stored in "slim" and "props", writing steps to 
+#the configuration file to apply each one using shell scripts. Finally, it writes a step to 
+#commit and push the modified OWL files to the repository.
+
 import yaml
 
 def import_settings(my_yaml):
