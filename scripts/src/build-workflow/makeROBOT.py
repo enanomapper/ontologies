@@ -1,4 +1,12 @@
 #!/usr/local/bin/python
+
+#Generates a GitHub Actions workflow configuration file based on the contents of another 
+#YAML file, "enanomapper.yaml". It reads and parses the contents of this file and extracts 
+#specific values from it to use in the configuration file. The script then opens "robot.yml" 
+#and truncates it to clear its contents before writing the configuration 
+#file and steps for various actions such as merging and reporting. Finally, writes 
+#a step to commit and push the modified files to the repository.
+
 from makeBuild import import_settings
 
 def main():
