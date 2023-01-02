@@ -2,10 +2,10 @@
 # Read the ontology name (first argument) and change to its directory
 export ONTO=$1
 if [ ${ONTO} = "ncit" ]; then 
-    ./slim-ncit.sh
+    bash scripts/src/build-workflow/slim-ncit.sh
 
 elif [ ${ONTO} = "hupson" ]; then 
-    ./slim-hupson.sh
+    bash scripts/src/build-workflow/slim-hupson.sh
 
 else   
     ls
