@@ -1,10 +1,10 @@
 #!/bin/bash
 # Read the ontology name (first argument) and change to its directory
 export ONTO=$1
-if [ ${ONTO} == "$ncit" ]; then 
+if [ ${ONTO} = "ncit" ]; then 
     ./slim-ncit.sh
 
-elif [ ${ONTO} == "$hupson" ]; then 
+elif [ ${ONTO} = "hupson" ]; then 
     ./slim-hupson.sh
 
 else   

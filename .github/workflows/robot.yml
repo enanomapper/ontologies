@@ -1,6 +1,11 @@
 name: ROBOT-commands
 on:
-    workflow_dispatch:
+    
+  workflow_run:
+    workflows: ["CI build"]
+    types:
+      - completed
+    
     #schedule:
     workflow_run:
      workflows: ["CI build"]

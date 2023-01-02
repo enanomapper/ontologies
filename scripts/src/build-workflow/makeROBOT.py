@@ -20,6 +20,14 @@ def main():
     validate = config["robot-commands"]["validate-profile"]
     odk_dashboard = config["odk-dashboard"]
     dispatch = config["robot-commands"]["dispatch"]
+    dispatches_robot = config["build"]["dispatches_robot"]
+    if dispatches_robot == True:
+      dispatch = """
+  workflow_run:
+    workflows: ["CI build"]
+    types:
+      - completed
+    """
     commit_message = config["robot-commands"]["commit-message"]
     reason = config["robot-commands"]["reason"]["value"]
     reasoner = config["robot-commands"]["reason"]["reasoner"]
