@@ -1,0 +1,163 @@
+name: Build slims
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 1 0 1 1-12 *
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    # Get slimmer and robot
+    - name: get slimmer
+      run: wget -nc https://github.com/enanomapper/slimmer/releases/download/v1.0.2/slimmer-1.0.2-jar-with-dependencies.jar
+    - name: get robot
+    run: |
+      cd ./scripts/src/build-workflow
+      wget https://raw.githubusercontent.com/ontodev/robot/master/bin/robot
+      wget https://github.com/ontodev/robot/releases/download/v1.9.0/robot.jar
+      chmod 777 robo*
+  
+  # slim all ontologies
+  # Authorize running slim script
+    - name: authorize running slim scripts
+      run: chmod 755 scripts/src/build-workflow/*.sh
+  
+  # Slim aopo
+    - name: slim-aopo
+      run: bash scripts/src/build-workflow/slim.sh aopo
+  
+  # Slim bao
+    - name: slim-bao
+      run: bash scripts/src/build-workflow/slim.sh bao
+  
+  # Slim bfo
+    - name: slim-bfo
+      run: bash scripts/src/build-workflow/slim.sh bfo
+  
+  # Slim bto
+    - name: slim-bto
+      run: bash scripts/src/build-workflow/slim.sh bto
+  
+  # Slim ccont
+    - name: slim-ccont
+      run: bash scripts/src/build-workflow/slim.sh ccont
+  
+  # Slim cheminf
+    - name: slim-cheminf
+      run: bash scripts/src/build-workflow/slim.sh cheminf
+  
+  # Slim cito
+    - name: slim-cito
+      run: bash scripts/src/build-workflow/slim.sh cito
+  
+  # Slim chebi
+    - name: slim-chebi
+      run: bash scripts/src/build-workflow/slim.sh chebi
+  
+  # Slim chmo
+    - name: slim-chmo
+      run: bash scripts/src/build-workflow/slim.sh chmo
+  
+  # Slim clo
+    - name: slim-clo
+      run: bash scripts/src/build-workflow/slim.sh clo
+  
+  # Slim efo
+    - name: slim-efo
+      run: bash scripts/src/build-workflow/slim.sh efo
+  
+  # Slim envo
+    - name: slim-envo
+      run: bash scripts/src/build-workflow/slim.sh envo
+  
+  # Slim fabio
+    - name: slim-fabio
+      run: bash scripts/src/build-workflow/slim.sh fabio
+  
+  # Slim go
+    - name: slim-go
+      run: bash scripts/src/build-workflow/slim.sh go
+  
+  # Slim hupson
+    - name: slim-hupson
+      run: bash scripts/src/build-workflow/slim.sh hupson
+  
+  # Slim iao
+    - name: slim-iao
+      run: bash scripts/src/build-workflow/slim.sh iao
+  
+  # Slim ncit
+    - name: slim-ncit
+      run: bash scripts/src/build-workflow/slim.sh ncit
+  
+  # Slim npo
+    - name: slim-npo
+      run: bash scripts/src/build-workflow/slim.sh npo
+  
+  # Slim oae
+    - name: slim-oae
+      run: bash scripts/src/build-workflow/slim.sh oae
+  
+  # Slim obcs
+    - name: slim-obcs
+      run: bash scripts/src/build-workflow/slim.sh obcs
+  
+  # Slim obi
+    - name: slim-obi
+      run: bash scripts/src/build-workflow/slim.sh obi
+  
+  # Slim pato
+    - name: slim-pato
+      run: bash scripts/src/build-workflow/slim.sh pato
+  
+  # Slim ro
+    - name: slim-ro
+      run: bash scripts/src/build-workflow/slim.sh ro
+  
+  # Slim sio
+    - name: slim-sio
+      run: bash scripts/src/build-workflow/slim.sh sio
+  
+  # Slim uberon
+    - name: slim-uberon
+      run: bash scripts/src/build-workflow/slim.sh uberon
+  
+  # Slim uo
+    - name: slim-uo
+      run: bash scripts/src/build-workflow/slim.sh uo
+  
+  # apply props bao
+    - name: Apply props bao
+      run: bash scripts/src/build-workflow/props.sh bao
+  
+  # apply props cheminf
+    - name: Apply props cheminf
+      run: bash scripts/src/build-workflow/props.sh cheminf
+  
+  # apply props npo
+    - name: Apply props npo
+      run: bash scripts/src/build-workflow/props.sh npo
+  
+  # apply props sio
+    - name: Apply props sio
+      run: bash scripts/src/build-workflow/props.sh sio
+  
+  # apply props ro
+    - name: Apply props ro
+      run: bash scripts/src/build-workflow/props.sh ro
+  
+  # apply props cito
+    - name: Apply props cito
+      run: bash scripts/src/build-workflow/props.sh cito
+  
+  # Commit and push
+    - name: Commit OWL files
+      run: |
+        git add external-dev/*.owl
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Actions - slim updated" ./external-dev/*.owl
+        git push -f
+  
