@@ -4,8 +4,8 @@
 #YAML file, "enanomapper.yaml". It reads and parses the contents of this file and extracts 
 #specific values from it to use in the configuration file. The script then opens "robot.yml" 
 #and truncates it to clear its contents before writing the configuration 
-#file and steps for various actions such as merging and reporting. Finally, writes 
-#a step to commit and push the modified files to the repository.
+#file and steps for ROBOT merge and report. Finally, writes 
+#a step to commit and pushes the modified files to the repository.
 
 from makeBuild import import_settings
 
@@ -23,12 +23,14 @@ def main():
     dispatches_robot = config["build"]["dispatches_robot"]
     keep_files = config["robot-commands"]["keep_files"]
     if dispatches_robot == True:
-      dispatch = """
+      dispatch_robot = """
   workflow_run:
     workflows: ["Build slims"]
     types:
       - completed
     """
+    else:
+      dispatch_robot = ""
     commit_message = config["robot-commands"]["commit-message"]
     reason = config["robot-commands"]["reason"]["value"]
     reasoner = config["robot-commands"]["reason"]["reasoner"]
@@ -38,12 +40,9 @@ def main():
         robot_yaml.truncate(0)
         robot_yaml.write(f"""name: ROBOT-commands
 on:
-    {dispatch}
-    #schedule:
-    workflow_run:
-     workflows: ["CI build"]
-     types:
-      - completed
+  {dispatch}
+    {dispatch_robot}
+
 jobs:
     robot-workflows:
         runs-on: ubuntu-latest
@@ -60,29 +59,41 @@ jobs:
         if merge == True:
             robot_yaml.write("""
         - name: merge
-          run: sh robot merge -i enanomapper.owl -o enanomapper-full-temp.owl""")
+          run: | 
+            sh robot merge -i enanomapper-dev.owl -o enanomapper-dev-full.owl
+            sh robot merge -i enanomapper.owl -o enanomapper-full.owl
+            """)
             added_merged = "git add enanomapper-full.owl"
         if verify == True:
             pass
         if report == True:
-            robot_yaml.write("""
+          robot_yaml.write("""
         - name: report
-          run: sh robot report --fail-on none -i enanomapper-full-temp.owl -o robot-report/report.tsv
+          run: sh robot report --fail-on none -i enanomapper-dev-full.owl -o robot-report/report.tsv
         - name: diff
           run: |
-            sh robot diff --left enanomapper-full.owl --right enanomapper-full-temp.owl --output robot-report/diff.txt
+            sh robot diff --left enanomapper-full.owl --right enanomapper-dev-full.owl --output robot-report/diff.txt
+            """)
+          if keep_files == False:
+            robot_yaml.write("""
             rm enanomapper-full.owl
-            mv enanomapper-full-temp.owl enanomapper-full.owl""")
-            added_report = "git add ./robot-report/*"
+            rm enanomapper-dev-full.owl
+            """)
+          robot_yaml.write("""
+            sh robot diff --left enanomapper-full.owl --right enanomapper-dev-full.owl --output robot-report/diff.txt
+            rm enanomapper-full.owl
+            rm enanomapper-dev-full.owl
+            """)
+          added_report = "git add ./robot-report/*"
         if validate == True:
             pass # to be added
         if odk_dashboard == True:
             pass # to be added
-        if reason == True and reasoner in ["ELK", "hermit", "jfact", "whelk"]:
-          robot_yaml.write(f"""
-        - name: reason
-          run: sh robot reason --reasoner {reasoner} --annotate-inferred-axioms true --input enanomapper-full.owl --output enanomapper-reasoned.owl
-  """)
+        #if reason == True and reasoner in ["ELK", "hermit", "jfact", "whelk"]:
+        #  robot_yaml.write(f"""
+        #- name: reason
+        #  run: sh robot reason --reasoner {reasoner} --annotate-inferred-axioms true --input enanomapper-full.owl --output enanomapper-reasoned.owl
+ # """)
         if keep_files == True:
           robot_yaml.write(f"""
   # Commit and push
