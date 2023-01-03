@@ -1,24 +1,22 @@
 #!/bin/bash
 # Read the ontology name (first argument) and change to its directory
 export ONTO=$1
+wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.props
+wget -N  `grep "owl=" ${ONTO}.props | cut -d'=' -f2`
+wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.iris
+    
 if [ ${ONTO} = "ncit" ]; then 
-    bash scripts/src/build-workflow/slim-ncit.sh
+    wget https://data.bioontology.org/ontologies/NCIT/submissions/116/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb -O ncit.owl
 
 elif [ ${ONTO} = "hupson" ]; then 
-    bash scripts/src/build-workflow/slim-hupson.sh
+    wget http://data.bioontology.org/ontologies/HUPSON/submissions/1/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb -O hupson.owl
 
 else   
     ls
-    mkdir -p external/${ONTO}
-    rm external/${ONTO}-slim.owl
+    mkdir -p external-dev/${ONTO}
+    rm external-dev/${ONTO}-slim.owl
     echo ${ONTO}-slim.owl removed
-    cd external/${ONTO}
-    
-   
-    wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.props
-    wget -N  `grep "owl=" ${ONTO}.props | cut -d'=' -f2`
-    wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.iris
-    
+    cd external-dev/${ONTO}
     
     # Run slimmer
     

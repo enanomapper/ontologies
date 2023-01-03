@@ -21,6 +21,7 @@ def main():
     odk_dashboard = config["odk-dashboard"]
     dispatch = config["robot-commands"]["dispatch"]
     dispatches_robot = config["build"]["dispatches_robot"]
+    keep_files = config["robot-commands"]["keep_files"]
     if dispatches_robot == True:
       dispatch = """
   workflow_run:
@@ -82,8 +83,8 @@ jobs:
         - name: reason
           run: sh robot reason --reasoner {reasoner} --annotate-inferred-axioms true --input enanomapper-full.owl --output enanomapper-reasoned.owl
   """)
-
-        robot_yaml.write(f"""
+        if keep_files == True:
+          robot_yaml.write(f"""
   # Commit and push
         - name: Commit OWL files
           run: |
@@ -93,9 +94,20 @@ jobs:
             git config --local user.name "GitHub Action"
             git add enanomapper*
             git commit -m "{commit_message}" ./robot-report/* enanomapper*
-            git push
-            
-        
+            git push    
+  """)
+        robot_yaml.write(f"""
+  # Upload artifacts
+        - name: 'Upload eNanoMapper-full'
+          uses: actions/upload-artifact@v3
+          with:
+            name: enanomapper-files
+            path: enanomapper-*
+        - name: 'Upload report'
+          uses: actions/upload-artifact@v3
+          with:
+            name: report
+            path: ./robot-report/* 
   """)
 
 if __name__ == "__main__":
