@@ -77,7 +77,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -m "{commit_message}" ./external-dev/*.owl
-        git push
+        git push -f
   """)
 
 if __name__ == "__main__":
