@@ -47,7 +47,7 @@ The full list of ontologies it includes is:
 The build of the slims is carried out in this repository through the actions contained in the [
 .github/workflows](.github/workflows) folder,
 and the resulting slims of external ontologies are commited and pushed automatically to this repository when 
-the build workflow is run. After that, `robot diff` and `robot report` are performed for quality control on the resulting ontology, with their results being stored under [/report](/report) after each workflow run.
+the build workflow is run under [external-dev](external-dev). After that, `robot diff` and `robot report` are performed for quality control on the resulting ontology, with their results being stored under [/report](/report) after each workflow run.
 
 The configuration file [enanomapper.yaml](scripts/src/build-workflow/enanomapper.yaml) is used by the [python setup scripts](scripts/src/build-workflow/) to update the YAML for these workflows ([build](.github/workflows/slim-ontologies.yml), [QC](.github/workflows/robot.yml)) on push via the [update repository workflow](.github/workflows/update-repo.yml). 
 
@@ -120,7 +120,7 @@ Making Releases
 1. Test if the `enanomapper.owl` can be loaded without errors in Protégé
    * And run the Makefile with ```make check``` in the ```internal/``` folder
 2. check if the metadata in the enanomapper.owl is up to data (e.g. names of people who submitted PRs)
-3. Copy the internal ontologies in `ontologies/internal-dev/` to `ontologies/internal`
+3. Copy the internal ontologies in `ontologies/internal-dev/` to `ontologies/internal` and  `ontologies/external-dev/` to `ontologies/external`
 4. Update the owl.versionInfo of `enanomapper.owl`
 5. Update the owl.versionInfo of `enanomapper-dev.owl`
 6. Write markdown for the release with the changes since the previous release
