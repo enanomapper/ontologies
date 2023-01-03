@@ -36,16 +36,15 @@ jobs:
         - name: reason
           run: sh robot reason --reasoner ELK --annotate-inferred-axioms true --input enanomapper-full.owl --output enanomapper-reasoned.owl
   
-  # Commit and push
-        - name: Commit OWL files
-          run: |
-            git add enanomapper-full.owl
-            git add ./robot-report/*
-            git config --local user.email "action@github.com"
-            git config --local user.name "GitHub Action"
-            git add enanomapper*
-            git commit -m "Actions - QC" ./robot-report/* enanomapper*
-            git push
-            
-        
+  # Upload artifacts
+        - name: 'Upload eNanoMapper-full'
+          uses: actions/upload-artifact@v3
+          with:
+            name: enanomapper-files
+            path: enanomapper-*
+        - name: 'Upload report'
+          uses: actions/upload-artifact@v3
+          with:
+            name: report
+            path: ./robot-report/* 
   
