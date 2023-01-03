@@ -1,16 +1,13 @@
 name: ROBOT-commands
 on:
+  workflow_dispatch:
     
   workflow_run:
     workflows: ["Build slims"]
     types:
       - completed
     
-    #schedule:
-    workflow_run:
-     workflows: ["CI build"]
-     types:
-      - completed
+
 jobs:
     robot-workflows:
         runs-on: ubuntu-latest
@@ -25,17 +22,23 @@ jobs:
             chmod 777 robo*
     
         - name: merge
-          run: sh robot merge -i enanomapper.owl -o enanomapper-full-temp.owl
+          run: | 
+            sh robot merge -i enanomapper-dev.owl -o enanomapper-dev-full.owl
+            sh robot merge -i enanomapper.owl -o enanomapper-full.owl
+            
         - name: report
-          run: sh robot report --fail-on none -i enanomapper-full-temp.owl -o robot-report/report.tsv
+          run: sh robot report --fail-on none -i enanomapper-dev-full.owl -o robot-report/report.tsv
         - name: diff
           run: |
-            sh robot diff --left enanomapper-full.owl --right enanomapper-full-temp.owl --output robot-report/diff.txt
+            sh robot diff --left enanomapper-full.owl --right enanomapper-dev-full.owl --output robot-report/diff.txt
+            
             rm enanomapper-full.owl
-            mv enanomapper-full-temp.owl enanomapper-full.owl
-        - name: reason
-          run: sh robot reason --reasoner ELK --annotate-inferred-axioms true --input enanomapper-full.owl --output enanomapper-reasoned.owl
-  
+            rm enanomapper-dev-full.owl
+            
+            sh robot diff --left enanomapper-full.owl --right enanomapper-dev-full.owl --output robot-report/diff.txt
+            rm enanomapper-full.owl
+            rm enanomapper-dev-full.owl
+            
   # Upload artifacts
         - name: 'Upload eNanoMapper-full'
           uses: actions/upload-artifact@v3
