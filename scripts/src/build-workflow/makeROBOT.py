@@ -79,12 +79,7 @@ jobs:
             rm enanomapper-full.owl
             rm enanomapper-dev-full.owl
             """)
-          robot_yaml.write("""
-            sh robot diff --left enanomapper-full.owl --right enanomapper-dev-full.owl --output robot-report/diff.txt
-            rm enanomapper-full.owl
-            rm enanomapper-dev-full.owl
-            """)
-          added_report = "git add ./robot-report/*"
+        added_report = "git add ./robot-report/*"
         if validate == True:
             pass # to be added
         if odk_dashboard == True:
