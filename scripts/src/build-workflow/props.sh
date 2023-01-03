@@ -39,7 +39,7 @@ fi
 
 if [ ${ONTO} != "cito" ]; then
     echo "------Applying props for ${ONTO}------"
-    sh ./robot filter --input ${ontology} ${ARGS} --output ../../../../external/${ONTO}-slim-prop.owl
+    sh ./robot filter --input ${ontology} ${ARGS} --output ../../../../external-dev/${ONTO}-slim-prop.owl
 fi
 
 echo "Removing temp files"
