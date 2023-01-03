@@ -45,11 +45,11 @@ jobs:
     - name: get slimmer
       run: wget -nc https://github.com/enanomapper/slimmer/releases/download/v1.0.2/slimmer-1.0.2-jar-with-dependencies.jar
     - name: get robot
-    run: |
-      cd ./scripts/src/build-workflow
-      wget https://raw.githubusercontent.com/ontodev/robot/master/bin/robot
-      wget https://github.com/ontodev/robot/releases/download/v1.9.0/robot.jar
-      chmod 777 robo*
+      run: |
+        cd ./scripts/src/build-workflow
+        wget https://raw.githubusercontent.com/ontodev/robot/master/bin/robot
+        wget https://github.com/ontodev/robot/releases/download/v1.9.0/robot.jar
+        chmod 777 robo*
   """)
 
     # Writes serialization to slim all ontologies
