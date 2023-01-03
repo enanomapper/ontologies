@@ -1,0 +1,445 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.enanomapper.net/onto/external/fabio-slim.owl#"
+     xml:base="http://purl.enanomapper.net/onto/external/fabio-slim.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:pav="http://purl.org/pav/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"
+     xmlns:skos1="http://www.w3.org/2008/05/skos#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/fabio-slim.owl">
+        <dc:contributor>David Shotton</dc:contributor>
+        <dc:contributor>Paolo Ciccarese</dc:contributor>
+        <dc:contributor>Tim Clark</dc:contributor>
+        <dc:creator>David Shotton</dc:creator>
+        <dc:creator>Paolo Ciccarese</dc:creator>
+        <dc:creator>Silvio Peroni</dc:creator>
+        <dc:date>2016-07-11</dc:date>
+        <dc:date>2018-03-29</dc:date>
+        <dc:description rdf:resource="https://svn.code.sf.net/p/sempublishing/code/FaBiO/FRBR%20diagram%20with%20new%20Fabio%20verbs.png"/>
+        <dc:description xml:lang="en">This vocabulary is an expression in OWL 2 DL of the basic concepts and relations described in the IFLA report on the Functional Requirements for Bibliographic Records (FRBR), also described in Ian Davis&apos;s RDF vocabulary (http://vocab.org/frbr/core).</dc:description>
+        <dc:description>FaBiO, the FRBR-aligned Bibliographic Ontology, is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references. FaBiO entities are primarily textual publications such as books, magazines, newspapers and journals, and items of their content such as poems, conference papers and editorials.  However, they also include blogs, web pages, datasets, computer algorithms, experimental protocols, formal specifications and vocabularies, legal records, governmental papers, technical and commercial reports and similar publications, and also anthologies, catalogues and similar collections. 
+
+FaBiO classes are structured according to the FRBR schema of Works, Expressions, Manifestations and Items. Additional properties have been added to extends the FRBR data model by linking Works and Manifestations (fabio:hasManifestation and fabio:isManifestationOf), Works and Items (fabio:hasPortrayal and fabio:isPortrayedBy), and Expressions and Items  (fabio:hasRepresentation and fabio:isRepresentedBy).</dc:description>
+        <dc:rights xml:lang="en">This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/).</dc:rights>
+        <dc:title xml:lang="en">Essential FRBR in OWL2 DL</dc:title>
+        <dc:title>FaBiO, the FRBR-aligned Bibliographic Ontology</dc:title>
+        <pav:importedFrom>https://svn.code.sf.net/p/sempublishing/code/FaBiO/2016-07-11-fabio-1_9_3.owl</pav:importedFrom>
+        <vann:preferredNamespacePrefix>fabio</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/spar/fabio/</vann:preferredNamespaceUri>
+        <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
+        <oboInOwl:date>2023-01-03 17:24:28</oboInOwl:date>
+        <rdfs:comment>FaBiO, the FRBR-aligned Bibliographic Ontology, is an ontology for recording and publishing on the Semantic Web bibliographic records of scholarly endeavours. It forms part of SPAR, a suite of Semantic Publishing and Referencing Ontologies.  Other SPAR ontologies are described at http://purl.org/spar/.
+
+This ontology is available at http://purl.org/spar/fabio, and uses the namespace prefix fabio.</rdfs:comment>
+        <rdfs:comment>The Essential FRBR in OWL2 DL Ontology (FRBR) is an expression in OWL 2 DL of the basic concepts and relations described in the IFLA report on the Functional Requirements for Bibliographic Records (FRBR), also described in Ian Davis&apos;s RDF vocabulary.
+
+**URL:** http://purl.org/spar/frbr
+
+**Creators**: [Paolo Ciccarese](http://orcid.org/0000-0002-5156-2703), [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)
+
+**Contributors:**: [David Shotton](http://orcid.org/0000-0001-5506-523X)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)
+
+**Website:** http://www.sparontologies.net/ontologies/frbr</rdfs:comment>
+        <owl:backwardCompatibleWith rdf:resource="https://svn.code.sf.net/p/sempublishing/code/FaBiO/2016-04-19-fabio-1_9_2.owl"/>
+        <owl:priorVersion rdf:resource="http://purl.org/spar/frbr/2011-06-29"/>
+        <owl:priorVersion rdf:resource="https://svn.code.sf.net/p/sempublishing/code/FaBiO/2016-04-19-fabio-1_9_2.owl"/>
+        <owl:versionInfo>1.0.1</owl:versionInfo>
+        <owl:versionInfo>1.9.3</owl:versionInfo>
+        <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/pav/importedFrom -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/pav/importedFrom"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#auto-generated-by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#auto-generated-by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#date"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#note -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2008/05/skos#note">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2008/05/skos#"/>
+        <rdfs:label xml:lang="en">skos:note</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYearMonth -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYearMonth"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
+    <!-- http://purl.org/spar/fabio/JournalVolume -->
+
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/JournalVolume">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:comment xml:lang="en">A particular published volume of a journal, comprising one or more journal issues.</rdfs:comment>
+        <rdfs:label xml:lang="en">journal volume</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/spar/fabio/analog-magnetic-tape -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/analog-magnetic-tape">
+        <rdfs:comment xml:lang="en">An analog medium for magnetic recording of audio and video information, made of a thin magnetizable coating on a long, narrow plastic tape, typically wound on a spool. </rdfs:comment>
+        <rdfs:label xml:lang="en">analog magnetic tape</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/fabio/cd -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/cd">
+        <rdfs:comment xml:lang="en">A non-rewritable optical disc used to store digital data.</rdfs:comment>
+        <rdfs:label xml:lang="en">CD</rdfs:label>
+        <rdfs:label xml:lang="en">compact disk</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/fabio/cloud -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/cloud">
+        <rdfs:comment xml:lang="en">A distributed and commoditized Internet-based computing resource, whereby shared services, software programs, and information storage facilities are provided to computers and other devices on demand, at locations of which the user may be unaware, like the electricity grid.</rdfs:comment>
+        <rdfs:label>cloud</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/fabio/digital-magnetic-tape -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/digital-magnetic-tape">
+        <rdfs:comment xml:lang="en">A rewritable digital medium for magnetic recording of audio, video and other data, made of a thin magnetizable coating on a long, narrow strip of plastic, usually wound on a spool.</rdfs:comment>
+        <rdfs:label xml:lang="en">digital magnetic tape</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/fabio/dvd -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/dvd">
+        <rdfs:comment xml:lang="en">A non-rewritable optical disc storage medium resembling a compact disc (CD), usually used for video and data storage. A DVD has the same physical dimensions as a CD, but is capable of storing more than six times as much data.</rdfs:comment>
+        <rdfs:label xml:lang="en">digital versatile disc</rdfs:label>
+        <rdfs:label xml:lang="en">digital video disc</rdfs:label>
+        <rdfs:label>DVD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/fabio/film -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/film">
+        <rdfs:comment xml:lang="en">A thin flexible strip of plastic or other material coated with light-sensitive emulsion upon which images can be recorded, typically using a camera, usually used to record photographic images or motion pictures.</rdfs:comment>
+        <rdfs:label xml:lang="en">film</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/fabio/floppy-disk -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/floppy-disk">
+        <rdfs:comment xml:lang="en">A rewritable data storage medium that is composed of a disk of thin, flexible (floppy) magnetic storage medium encased in a square or rectangular  plastic shell.  Data are encoded magnetically by a read/write head that float on a cushion of air in close proximity to the surface of the rotated disk.</rdfs:comment>
+        <rdfs:label xml:lang="en">floppy disk</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/fabio/hard-drive -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/hard-drive">
+        <rdfs:comment xml:lang="en">A non-volatile storage device for digital data, composed of one or more rigid discs (platters) mounted side by side on a motor-driven spindle within a metal case. Data are encoded magnetically by read/write heads that float on cushions of air in close proximity to the surfaces of the rotated platters.</rdfs:comment>
+        <rdfs:label xml:lang="en">HD</rdfs:label>
+        <rdfs:label xml:lang="en">hard drive</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/fabio/internet -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/internet">
+        <rdfs:comment xml:lang="en">A global system of interconnected computer networks that uses the standard Internet Protocol Suite (TCP/IP) to serve billions of users worldwide.  The internet connects millions of private, public, academic, business and governmental computers, that are individually attached to local networks linked together by a broad array of electronic, radio and optical networking technologies to form the internet. </rdfs:comment>
+        <rdfs:label xml:lang="en">internet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/fabio/intranet -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/intranet">
+        <rdfs:comment xml:lang="en">A private computer network, unconnected to the internet or separated from it by a firewall,  that uses a network operating system and Internet Protocol technologies to permit an organization&apos;s information to be shared securely within that organization.</rdfs:comment>
+        <rdfs:label>intranet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/fabio/paper -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/paper">
+        <rdfs:comment xml:lang="en">A thin flat material, typically made from wood pulp, mainly used for writing upon, for printing upon or for packaging.</rdfs:comment>
+        <rdfs:label>paper</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/fabio/ram -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/ram">
+        <rdfs:comment xml:lang="en">Abbreviation of Random Access Memory.  A form of rewritable computer data storage that takes the form of integrated circuits that allow data to be stored and accessed in any order (i.e. at random), thereby achieving greater speed than for access of data stored in linear form on digital magnetic tape.</rdfs:comment>
+        <rdfs:label xml:lang="en">RAM</rdfs:label>
+        <rdfs:label xml:lang="en">random access memory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/fabio/solid-state-memory -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/solid-state-memory">
+        <rdfs:comment xml:lang="en">A digital storage device built entirely from solid electronic materials with no moving parts, e.g. a USB flash drive.</rdfs:comment>
+        <rdfs:label xml:lang="en">solid state memory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/fabio/vinyl-disk -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/vinyl-disk">
+        <rdfs:comment xml:lang="en">An analog sound storage medium consisting of a flat disc made of moulded vinyl plastic with an inscribed, modulated spiral groove.</rdfs:comment>
+        <rdfs:label xml:lang="en">vinyl disk</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/fabio/web -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/web">
+        <rdfs:comment xml:lang="en">A system of interlinked hypertext documents written in HTML and accessed using the HTTP protocol via the Internet.</rdfs:comment>
+        <rdfs:label xml:lang="en">WWW</rdfs:label>
+        <rdfs:label xml:lang="en">Web</rdfs:label>
+        <rdfs:label xml:lang="en">World Wide Web</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://purl.org/spar/fabio/SupplementaryInformationFile">
+        <rdfs:comment xml:lang="en">A file accompanying a published journal article, containing additional information of relevance to the article, typically available from the publisher&apos;s web site via a hyperlink from the journal article itself.</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+
