@@ -73,10 +73,10 @@ jobs:
   # Commit and push
     - name: Commit OWL files
       run: |
-        git add external/*.owl
+        git add external-dev/*.owl
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git commit -m "{commit_message}" ./external/*.owl
+        git commit -m "{commit_message}" ./external-dev/*.owl
         git push
   """)
 
