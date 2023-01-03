@@ -18,6 +18,12 @@ else
     echo ${ONTO}-slim.owl removed
     cd external-dev/${ONTO}
     
+   
+    wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.props
+    wget -N  `grep "owl=" ${ONTO}.props | cut -d'=' -f2`
+    wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.iris
+    
+    
     # Run slimmer
     
     java -cp ../../slimmer-1.0.2-jar-with-dependencies.jar com.github.enanomapper.Slimmer .
