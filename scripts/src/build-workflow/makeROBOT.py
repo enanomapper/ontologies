@@ -25,7 +25,7 @@ def main():
     if dispatches_robot == True:
       dispatch = """
   workflow_run:
-    workflows: ["CI build"]
+    workflows: ["Build slims"]
     types:
       - completed
     """
