@@ -1,0 +1,3312 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.enanomapper.net/onto/external/aopo-slim.owl#"
+     xml:base="http://purl.enanomapper.net/onto/external/aopo-slim.owl"
+     xmlns:cl="http://purl.obolibrary.org/obo/cl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:go="http://purl.obolibrary.org/obo/go#"
+     xmlns:hp="http://purl.obolibrary.org/obo/hp#"
+     xmlns:pr="http://purl.obolibrary.org/obo/pr#"
+     xmlns:bao="http://www.bioassayontology.org/bao/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:pav="http://purl.org/pav/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bao6="http://www.bioassayontology.org/bao#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:obo1="http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/"
+     xmlns:obo7="http://purl.obolibrary.org/obo#"
+     xmlns:pato="http://purl.obolibrary.org/obo/pato#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
+     xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:chebi2="http://purl.obolibrary.org/obo/chebi#"
+     xmlns:chebi3="http://purl.obolibrary.org/obo/chebi#1"
+     xmlns:chebi4="http://purl.obolibrary.org/obo/chebi#3"
+     xmlns:chebi5="http://purl.obolibrary.org/obo/chebi#2"
+     xmlns:hsapdv="http://purl.obolibrary.org/obo/hsapdv#"
+     xmlns:ubprop="http://purl.obolibrary.org/obo/ubprop#"
+     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#"
+     xmlns:aop_ontology="http://aopkb.org/aop_ontology#"
+     xmlns:caloha-reqs-vetted="http://purl.obolibrary.org/obo/caloha-reqs-vetted#">
+    <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/aopo-slim.owl">
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/HP_0000001"/>
+        <dc:creator>Human Phenotype Ontology Consortium</dc:creator>
+        <dc:creator>Monarch Initiative</dc:creator>
+        <dc:creator>Peter Robinson</dc:creator>
+        <dc:creator>Sebastian Köhler</dc:creator>
+        <dc:date>05/09/2013</dc:date>
+        <dc:date>10 Nov 2022</dc:date>
+        <dc:date>8 Jul 2021</dc:date>
+        <dc:description>The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities and clinical features encountered in human disease.</dc:description>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+        <dc:relation>Uma Vempati, Hande Küçük, Ubbo Visser, Saminda Abeyruwan, Kunie Sakurai, Vance Lemmon, Stephan Schurer*</dc:relation>
+        <dc:rights>Peter Robinson, Sebastian Koehler, The Human Phenotype Ontology Consortium, and The Monarch Initiative</dc:rights>
+        <dc:subject>Phenotypic abnormalities encountered in human disease</dc:subject>
+        <dc:title>Human Phenotype Ontology</dc:title>
+        <terms:license rdf:resource="https://hpo.jax.org/app/license"/>
+        <pav:importedFrom>https://raw.githubusercontent.com/enanomapper/aop-ontology/patch/hpoUpdate/aopo.owl</pav:importedFrom>
+        <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
+        <oboInOwl:date>2023-01-03 16:48:00</oboInOwl:date>
+        <oboInOwl:date>27:12:2022 19:23</oboInOwl:date>
+        <oboInOwl:default-namespace>chebi_ontology</oboInOwl:default-namespace>
+        <oboInOwl:default-namespace>human_phenotype</oboInOwl:default-namespace>
+        <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
+        <oboInOwl:logical-definition-view-relation>has_part</oboInOwl:logical-definition-view-relation>
+        <oboInOwl:saved-by>Peter Robinson, Sebastian Koehler, Sandra Doelken, Chris Mungall, Melissa Haendel, Nicole Vasilevsky, Monarch Initiative, et al.</oboInOwl:saved-by>
+        <oboInOwl:saved-by>chebi</oboInOwl:saved-by>
+        <rdfs:comment>Author: ChEBI curation team</rdfs:comment>
+        <rdfs:comment>ChEBI Release version 217</rdfs:comment>
+        <rdfs:comment>ChEBI subsumes and replaces the Chemical Ontology first</rdfs:comment>
+        <rdfs:comment>Contact:
+Stephan Schurer
+stephan dot schurer at gmail dot com</rdfs:comment>
+        <rdfs:comment>Created by:
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Caty Chung, Stephan Schurer*</rdfs:comment>
+        <rdfs:comment>Created by:
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+        <rdfs:comment>For any queries contact chebi-help@ebi.ac.uk</rdfs:comment>
+        <rdfs:comment>Please see license of HPO at http://www.human-phenotype-ontology.org</rdfs:comment>
+        <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
+
+contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
+        <rdfs:comment>created by:
+Uma Vempati, Hande Küçük, Ubbo Visser, Saminda Abeyruwan, Kunie Sakurai, Vance Lemmon, Stephan Schurer*</rdfs:comment>
+        <rdfs:comment>developed by Michael Ashburner &amp; Pankaj Jaiswal.</rdfs:comment>
+        <rdfs:label>BAO</rdfs:label>
+        <rdfs:label>BioAssay Ontology</rdfs:label>
+        <rdfs:label>bioassay ontology</rdfs:label>
+        <owl:versionInfo>2.1</owl:versionInfo>
+        <owl:versionInfo>2.7.2</owl:versionInfo>
+        <owl:versionInfo>2.7.4</owl:versionInfo>
+        <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#PubChemAID -->
+
+
+    <owl:AnnotationProperty rdf:about="http://aopkb.org/aop_ontology#PubChemAID"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#PubChemCID -->
+
+
+    <owl:AnnotationProperty rdf:about="http://aopkb.org/aop_ontology#PubChemCID"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#UniProtID -->
+
+
+    <owl:AnnotationProperty rdf:about="http://aopkb.org/aop_ontology#UniProtID"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo#Definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo#Definition"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000180 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0034334 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/HP_0034334">
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-04T11:14:13Z</dc:date>
+        <oboInOwl:created_by>peter</oboInOwl:created_by>
+        <rdfs:label>allelic_requirement</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <oboInOwl:hasDbXref>IAO:0000116</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>editor_note</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>editor_note</oboInOwl:shorthand>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+        <rdfs:label>editor note</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000231 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000234 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000234"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000424 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000424"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000589 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000589"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000601 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000602 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000700 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000700"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0010000 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0010000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <rdfs:label xml:lang="en">term replaced by</rdfs:label>
+        <rdfs:label>term replaced by</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_isReversiblePropertyChain -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_isReversiblePropertyChain"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002161 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002161"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002171 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002171"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002173 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002173"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002174 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002174"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002175 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002175"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002259 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002259">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002575 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002575"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002581 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002581">
+        <obo:IAO_0000115>If R &lt;- P o Q is a defining property chain axiom, then it also holds that R -&gt; P o Q. Note that this cannot be expressed directly in OWL</obo:IAO_0000115>
+        <rdfs:label>is a defining property chain axiom</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002582 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002582">
+        <obo:IAO_0000115>If R &lt;- P o Q is a defining property chain axiom, then (1) R -&gt; P o Q holds and (2) Q is either reflexive or locally reflexive. A corollary of this is that P SubPropertyOf R.</obo:IAO_0000115>
+        <rdfs:label>is a defining property chain axiom where second argument is reflexive</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002604 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002604"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0004036 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0004036"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0004049 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0004049"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0004050 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0004050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0040042 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0040042"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000001 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000002 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000003 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000004 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000004"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000005 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000005"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000006 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000006"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000007 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000007"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000008 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000008"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000009 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000009"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000010 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000010"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000011 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000011"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000012 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000013 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000013"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000014 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000014"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000015 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000103 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000103"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000104 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000104"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000105 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000105"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000106 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000106"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000107 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000107"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000111 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000202 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000202"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_annotation_extension -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_gp2term -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_gp2term">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_ontology -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_ontology">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_gocam -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_gocam">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/caloha-reqs-vetted#PLURAL -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/caloha-reqs-vetted#PLURAL">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi#BRAND_NAME -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi#BRAND_NAME">
+        <rdfs:label>BRAND NAME</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi#INN -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi#INN">
+        <rdfs:label>INN</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi#IUPAC_NAME -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME">
+        <rdfs:label>IUPAC NAME</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi#1_STAR -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi#1_STAR">
+        <rdfs:comment>Preliminary entries</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi#2_STAR -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi#2_STAR">
+        <rdfs:comment>Annotated by 3rd party</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi#3_STAR -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi#3_STAR">
+        <rdfs:comment>Manually annotated by ChEBI Team</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/charge -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/charge"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/formula -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/formula"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/inchi -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/inchi"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/inchikey -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/inchikey"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/mass -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/mass"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/monoisotopicmass -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/monoisotopicmass"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/smiles -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/smiles"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cl#BDS_subset -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#BDS_subset">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cl#PLURAL -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#PLURAL">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cl#added_for_HCA -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#added_for_HCA">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cl#created_by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#created_by"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cl#ro-eco -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#ro-eco">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_agr -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_agr">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_aspergillus -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_aspergillus">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_candida -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_candida">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_chembl -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_chembl">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_drosophila -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_drosophila">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_generic -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_generic">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_metagenomics -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_metagenomics">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_mouse -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_mouse">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_pir -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_pir">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_plant -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_plant">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_pombe -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_pombe">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_synapse -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_synapse">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_yeast -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_yeast">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#prokaryote_subset -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#prokaryote_subset">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#syngo_official_label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#syngo_official_label">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#systematic_synonym -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#systematic_synonym">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hp#abbreviation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hp#abbreviation">
+        <oboInOwl:created_by>HPO:skoehler</oboInOwl:created_by>
+        <rdfs:label>abbreviation</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hp#display_label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hp#display_label">
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-05T13:18:08Z</dc:date>
+        <oboInOwl:created_by>peter</oboInOwl:created_by>
+        <rdfs:label>display label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hp#hposlim_core -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hp#hposlim_core">
+        <rdfs:comment>Core clinical terminology</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hp#is_observable_through -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hp#is_observable_through">
+        <rdfs:label>is_observable_through</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hp#layperson -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hp#layperson">
+        <oboInOwl:created_by>HPO:skoehler</oboInOwl:created_by>
+        <rdfs:label>layperson term</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hp#obsolete_synonym -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hp#obsolete_synonym">
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-05T19:01:17Z</dc:date>
+        <oboInOwl:created_by>peter</oboInOwl:created_by>
+        <rdfs:label>discarded/obsoleted synonym</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hp#plural_form -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hp#plural_form">
+        <oboInOwl:created_by>HPO:skoehler</oboInOwl:created_by>
+        <rdfs:label>plural form</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hp#secondary_consequence -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hp#secondary_consequence">
+        <rdfs:comment>Consequence of a disorder in another organ system.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hp#uk_spelling -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hp#uk_spelling">
+        <oboInOwl:created_by>HPO:skoehler</oboInOwl:created_by>
+        <rdfs:label>UK spelling</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hsapdv#end_dpf -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hsapdv#end_dpf"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hsapdv#end_mpb -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hsapdv#end_mpb"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hsapdv#end_ypb -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hsapdv#end_ypb"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hsapdv#start_dpf -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hsapdv#start_dpf"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hsapdv#start_mpb -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hsapdv#start_mpb"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hsapdv#start_ypb -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hsapdv#start_ypb"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncbitaxon#blast_name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ncbitaxon#blast_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncbitaxon#common_name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ncbitaxon#common_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncbitaxon#equivalent_name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ncbitaxon#equivalent_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncbitaxon#genbank_common_name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ncbitaxon#genbank_common_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncbitaxon#has_rank -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ncbitaxon#has_rank"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncbitaxon#in_part -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ncbitaxon#in_part">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncbitaxon#scientific_name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ncbitaxon#scientific_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncbitaxon#synonym -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ncbitaxon#synonym">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pato#abnormal_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#abnormal_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pato#absent_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#absent_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pato#attribute_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#attribute_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pato#cell_quality -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#cell_quality">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pato#disposition_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#disposition_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pato#hpo_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#hpo_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pato#location_grouping -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#location_grouping">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pato#mpath_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#mpath_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pato#relational_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#relational_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pato#scalar_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#scalar_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pato#value_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#value_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pr#Gene-based -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pr#Gene-based">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pr#PRO-common-name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pr#PRO-common-name">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pr#PRO-short-label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pr#PRO-short-label">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ro/subsets#ro-eco -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ro/subsets#ro-eco">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#ABBREVIATION -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#ABBREVIATION">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#COMPARATIVE_PREFERRED -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#COMPARATIVE_PREFERRED">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#DEPRECATED -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#DEPRECATED">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#DUBIOUS -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#DUBIOUS">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#HOMOLOGY -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#HOMOLOGY">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#HUMAN_PREFERRED -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#HUMAN_PREFERRED">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#INCONSISTENT -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#INCONSISTENT">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#LATIN -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#LATIN">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#MISSPELLING -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#MISSPELLING">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#NON_AMNIOTE -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#NON_AMNIOTE">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#NON_MAMMAL -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#NON_MAMMAL">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#PENDING_REVIEW -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#PENDING_REVIEW">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#PLURAL -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#PLURAL">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#SENSU -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#SENSU">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#SYSTEMATIC -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#SYSTEMATIC">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#cumbo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#cumbo">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#cyclostome_subset -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#cyclostome_subset">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#defined_by_ordinal_series -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#defined_by_ordinal_series">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#developmental_classification -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#developmental_classification">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#early_development -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#early_development">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#efo_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#efo_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#emapa_ehdaa2 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#emapa_ehdaa2">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#feed_aligned -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#feed_aligned">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#functional_classification -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#functional_classification">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#grouping_class -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#grouping_class">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#homology_grouping -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#homology_grouping">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#inconsistent_with_fma -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#inconsistent_with_fma">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#location_grouping -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#location_grouping">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#major_organ -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#major_organ">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#non_informative -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#non_informative">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#organ_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#organ_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#pheno_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#pheno_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#phenotype_rcn -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#phenotype_rcn">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#uberon_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#uberon_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#unverified_taxonomic_grouping -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#unverified_taxonomic_grouping">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#upper_level -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#upper_level">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#vertebrate_core -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#vertebrate_core">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ubprop#_upper_level -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ubprop#_upper_level">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor">
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+        <oboInOwl:hasDbXref>http://purl.org/dc/elements/1.1/contributor</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-contributor</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-contributor</oboInOwl:shorthand>
+        <rdfs:label>contributor</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/relation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/relation"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/pav/importedFrom -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/pav/importedFrom"/>
+    
+
+
+    <!-- http://purl.org/spar/cito/citesAsAuthority -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/spar/cito/citesAsAuthority"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002666 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002666"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao/submitted_by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.bioassayontology.org/bao/submitted_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty">
+        <rdfs:label>subset_property</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty">
+        <rdfs:label>synonym_type_property</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#auto-generated-by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#auto-generated-by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#composition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#composition"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#conflicts -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#conflicts"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#connected_by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#connected_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#consider -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#consider">
+        <rdfs:label>consider</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#consistent_with -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#consistent_with"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#contradicted_by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#contradicted_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#count -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#count"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#date_retrieved -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#date_retrieved"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#default-namespace -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#default-namespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#editor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#editor"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#editor_note -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#editor_note"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#evidence -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#evidence"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#exactly -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#exactly"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#exception -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#exception"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#exceptions -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#exceptions"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#exceptions_url -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#exceptions_url"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#external_class -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#external_class"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#external_class_label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#external_class_label"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#external_ontology -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#external_ontology"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#gene -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#gene"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
+        <rdfs:label>has_alternative_id</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <rdfs:label>has_broad_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label>database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label>has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+        <rdfs:label>has_narrow_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label>has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label>has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasScope -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasScope"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonymType -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonymType">
+        <rdfs:label>has_synonym_type</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+        <rdfs:label>in_subset</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inconsistent_with -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inconsistent_with"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inferred_by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inferred_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_cyclic -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_cyclic"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_entailed -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_entailed"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_indirect -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_indirect"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_inferred -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_inferred"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_metadata_tag -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_redundant -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_redundant"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_transitive -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_transitive"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#logical-definition-view-relation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#logical-definition-view-relation"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#min_count -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#min_count"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#missing_from -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#missing_from"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#modified_from -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#modified_from"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#note -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#note"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#notes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#notes"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#ontology -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#ontology"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#ontology_class -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#ontology_class"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#order -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#order"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#possible_exception -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#possible_exception"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#proportion -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#proportion"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#reference -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#reference"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#region -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#region"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#saved-by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#saved-by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#seeAlso -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#seeAlso"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
+        <rdfs:label>shorthand</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#source"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#specialization_within -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#specialization_within"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#status"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#submitter -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#submitter"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#taxon -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#taxon"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#taxon_notes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#taxon_notes"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#todo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#todo"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#url -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#url"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#version -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#version"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#xref -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#xref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/IAO_0000233"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#deprecated -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depicted_by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depicted_by"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/page -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/page"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#AdverseOutcome -->
+
+
+    <owl:Class rdf:about="http://aopkb.org/aop_ontology#AdverseOutcome">
+        <rdfs:subClassOf rdf:resource="http://aopkb.org/aop_ontology#AopEntity"/>
+        <obo:IAO_0000115>Any undesired and harmful effect or outcome.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#AdverseOutcomePathway -->
+
+
+    <owl:Class rdf:about="http://aopkb.org/aop_ontology#AdverseOutcomePathway">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo7:Definition>An Adverse Outcome Pathway (AOP) is a conceptual framework that portrays existing knowledge concerning the linkage between two anchor points - the Molecular Initiating Event (MIE), and an Adverse Outcome (AO), connected by a chain of Key Events (KE) and the relationships between them (KER).</obo7:Definition>
+    </owl:Class>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#AopEntity -->
+
+
+    <owl:Class rdf:about="http://aopkb.org/aop_ontology#AopEntity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo7:Definition>An entity that is part of an adverse outcome pathway</obo7:Definition>
+    </owl:Class>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#KeyEvent -->
+
+
+    <owl:Class rdf:about="http://aopkb.org/aop_ontology#KeyEvent">
+        <rdfs:subClassOf rdf:resource="http://aopkb.org/aop_ontology#AopEntity"/>
+        <obo:IAO_0000115>A necessary event that must occur for an adverse outcome to develop or be triggered.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#MolecularInitiatingEvent -->
+
+
+    <owl:Class rdf:about="http://aopkb.org/aop_ontology#MolecularInitiatingEvent">
+        <rdfs:subClassOf rdf:resource="http://aopkb.org/aop_ontology#AopEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#AOP_Decreased_Fecundity_via_Aromatase_Inhibition -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#AOP_Decreased_Fecundity_via_Aromatase_Inhibition">
+        <rdfs:label>AOP Decreased Fecundity via Aromatase Inhibition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#AOP_Decreased_Fecundity_via_Estrogen_Receptor-alpha_Inhibition -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#AOP_Decreased_Fecundity_via_Estrogen_Receptor-alpha_Inhibition">
+        <rdfs:label>AOP Decreased Fecundity via Estrogen Receptor-alpha Antagonism</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#AOP_Decreased_Fecundity_via_PPAR-gamma_Activation -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#AOP_Decreased_Fecundity_via_PPAR-gamma_Activation">
+        <rdfs:label>AOP Decreased Fecundity via PPAR-gamma Activation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#AOP_Steatosis_Via_DHB4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#AOP_Steatosis_Via_DHB4">
+        <rdfs:label>AOP Steatosis Via DHB4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#AOP_Steatosis_Via_FXR_and_HSD17B4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#AOP_Steatosis_Via_FXR_and_HSD17B4">
+        <rdfs:label>AOP Steatosis Via FXR and HSD17B4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#AOP_Steatosis_Via_IRS1_AKT_GSK3_and_Lipogenesis -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#AOP_Steatosis_Via_IRS1_AKT_GSK3_and_Lipogenesis">
+        <rdfs:label>AOP Steatosis Via IRS1, AKT, GSK3 and Lipogenesis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#AOP_Steatosis_Via_IRS1_AKT_TSC1_and_Lipogenesis -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#AOP_Steatosis_Via_IRS1_AKT_TSC1_and_Lipogenesis">
+        <rdfs:label>AOP Steatosis Via IRS1, AKT2, TSC1 or TSC2 and Lipogenesis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#AOP_Steatosis_Via_Insulin_AKT_TSC1_and_Lipogenesis -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#AOP_Steatosis_Via_Insulin_AKT_TSC1_and_Lipogenesis"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#AOP_Steatosis_Via_NRF2_and_DHB4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#AOP_Steatosis_Via_NRF2_and_DHB4"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#Akt2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#Akt2"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#Aromatase -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#Aromatase"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#BayesNSMR -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#BayesNSMR">
+        <obo:IAO_0000115>This is the Bayesian natural spline metaregression algorithm. A probability function is derived at each tested concentration within a bioassay using a natural spline metaregression algorithm.</obo:IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#BkF -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#BkF"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#BkF15umBayesNSMRCall -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#BkF15umBayesNSMRCall"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#BkF15umBioAssayResults -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#BkF15umBioAssayResults"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#CMIERelationship_Aromatase_Inhibition -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#CMIERelationship_Aromatase_Inhibition"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#CMIERelationship_Estrogen_Receptor-alpha_Inhibition -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#CMIERelationship_Estrogen_Receptor-alpha_Inhibition"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#CMIERelationship_FXR_Activation -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#CMIERelationship_FXR_Activation"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#CMIERelationship_IRS1_Activation -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#CMIERelationship_IRS1_Activation"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#CMIERelationship_PPAR-gamma_Activation -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#CMIERelationship_PPAR-gamma_Activation"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#CMIERelationship_unknown_dhb4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#CMIERelationship_unknown_dhb4"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#DecreasedFecundity -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#DecreasedFecundity"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#Estradiol -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#Estradiol"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#Estrogen_receptor_alpha -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#Estrogen_receptor_alpha"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#FXR -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#FXR"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#Fecundity -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#Fecundity"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#GSK3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#GSK3"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#HSD17B4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#HSD17B4"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#Hoxb1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#Hoxb1"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#IRS1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#IRS1"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#MIE_Aromatase_Inhibition -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#MIE_Aromatase_Inhibition">
+        <rdf:type rdf:resource="http://aopkb.org/aop_ontology#MolecularInitiatingEvent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#MIE_Estrogen_receptor_alpha_antagonism -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#MIE_Estrogen_receptor_alpha_antagonism">
+        <rdf:type rdf:resource="http://aopkb.org/aop_ontology#MolecularInitiatingEvent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#MIE_FXR_Activation -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#MIE_FXR_Activation">
+        <rdf:type rdf:resource="http://aopkb.org/aop_ontology#MolecularInitiatingEvent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#MIE_HSD17B4_inactivity -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#MIE_HSD17B4_inactivity">
+        <rdf:type rdf:resource="http://aopkb.org/aop_ontology#MolecularInitiatingEvent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#MIE_IRS1_Activation -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#MIE_IRS1_Activation">
+        <rdf:type rdf:resource="http://aopkb.org/aop_ontology#MolecularInitiatingEvent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#MIE_PPAR-gamma_activation -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#MIE_PPAR-gamma_activation">
+        <rdf:type rdf:resource="http://aopkb.org/aop_ontology#MolecularInitiatingEvent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#PPAR-alpha -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#PPAR-alpha"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#PPAR-gamma -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#PPAR-gamma"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#RAR_ligand_mediated_activation -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#RAR_ligand_mediated_activation">
+        <rdf:type rdf:resource="http://aopkb.org/aop_ontology#MolecularInitiatingEvent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#Rheb1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#Rheb1"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#SREBP1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#SREBP1"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#Tsc1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#Tsc1"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#Vitellogenin -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#Vitellogenin"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#activity_activation -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#activity_activation"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#activity_deactivation -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#activity_deactivation"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#antagonism_HSD17B4_unknown_mechanism -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#antagonism_HSD17B4_unknown_mechanism"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#ao-test -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#ao-test">
+        <rdf:type rdf:resource="http://aopkb.org/aop_ontology#AdverseOutcome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#aop_neural_tube_defect_hoxb1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#aop_neural_tube_defect_hoxb1">
+        <rdfs:label>AOP Neural Tube Defect via Hoxb1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#bkf_15um -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#bkf_15um">
+        <bao6:BAO_0002666 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.0</bao6:BAO_0002666>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#enzyme_target -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#enzyme_target"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#expression_activation -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#expression_activation"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#expression_deactivation -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#expression_deactivation"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#hoxb1_gene -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#hoxb1_gene"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#hsd17b4_bioassay -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#hsd17b4_bioassay">
+        <aop_ontology:PubChemAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">893</aop_ontology:PubChemAID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#hsd17b4_percent_activity -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#hsd17b4_percent_activity"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#ind_high_confidence -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#ind_high_confidence"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#ind_low_confidence -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#ind_low_confidence"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#ind_medium_confidence -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#ind_medium_confidence"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#ind_very_high_confidence -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#ind_very_high_confidence"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#ind_very_low_confidence -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#ind_very_low_confidence"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#leads_to -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#leads_to"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#mTORC1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#mTORC1"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#measure_group_bkf_15um -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#measure_group_bkf_15um"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#micromolar -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#micromolar"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#neural_tube_defect -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#neural_tube_defect">
+        <rdfs:label>Neural Tube Defect</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#percent_activiation_normalization -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#percent_activiation_normalization"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#protein_translation -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#protein_translation"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#rar -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#rar"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#rar_rxr_heterodimer -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#rar_rxr_heterodimer"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_akt2_gsk3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_akt2_gsk3"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_akt2_tsc1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_akt2_tsc1"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_aromatase_estrogen -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_aromatase_estrogen"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_estradiol_fecundity -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_estradiol_fecundity"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_estradiol_vitellogenin -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_estradiol_vitellogenin"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_estrogen_receptor-alpha_vitellogenin -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_estrogen_receptor-alpha_vitellogenin"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_fxr_ppar_activation -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_fxr_ppar_activation"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_gsk3_srebp1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_gsk3_srebp1"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_hoxb1_gene_expression_hoxb1_protein_translation -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_hoxb1_gene_expression_hoxb1_protein_translation"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_hoxb1_neural_tube_defect -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_hoxb1_neural_tube_defect"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_hsd17b4_steatosis -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_hsd17b4_steatosis"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_irs1_akt2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_irs1_akt2"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_mie_rar_rxr_heterodimer -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_mie_rar_rxr_heterodimer"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_mtorc1_srebp1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_mtorc1_srebp1"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_ppar-gamma_aromatase -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_ppar-gamma_aromatase"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_ppar_hsd17b4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_ppar_hsd17b4"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_rar_mie -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_rar_mie"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_rar_rxr_heterodimer_hoxb1_gene_expression -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_rar_rxr_heterodimer_hoxb1_gene_expression"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_rheb1_mtorc1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_rheb1_mtorc1"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_srebp1_steatosis -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_srebp1_steatosis"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_tsc1_rheb1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_tsc1_rheb1"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#relationship_vitellogenin_fecundity -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#relationship_vitellogenin_fecundity"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#rxr -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#rxr"/>
+    
+
+
+    <!-- http://aopkb.org/aop_ontology#steatosis -->
+
+
+    <owl:NamedIndividual rdf:about="http://aopkb.org/aop_ontology#steatosis">
+        <rdfs:label>Steatosis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000700">
+        <oboInOwl:hasDbXref>IAO:0000700</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>has_ontology_root_term</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>has_ontology_root_term</oboInOwl:shorthand>
+        <rdfs:label>has ontology root term</rdfs:label>
+        <rdfs:label>preferred_root</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/elements/1.1/description"/>
+        <oboInOwl:hasDbXref>http://purl.org/dc/elements/1.1/description</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-description</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-description</oboInOwl:shorthand>
+        <rdfs:label>description</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/elements/1.1/title"/>
+        <oboInOwl:hasDbXref>http://purl.org/dc/elements/1.1/title</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-title</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-title</oboInOwl:shorthand>
+        <rdfs:label>title</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/terms/license"/>
+        <oboInOwl:hasDbXref>http://purl.org/dc/terms/license</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dcterms-license</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dcterms-license</oboInOwl:shorthand>
+        <rdfs:label>license</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_metadata.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_module_biology.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_module_properties.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_computational.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_detection.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_format.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_function.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_instrument.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_materialentity.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_method.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_organization.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_people.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_phenotype.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_properties.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_quality.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_ro.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_role.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_screenedentity.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_software.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_unit.owl">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion">
+        <rdfs:label>has_obo_format_version</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#logical-definition-view-relation">
+        <rdfs:label>logical-definition-view-relation</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+
