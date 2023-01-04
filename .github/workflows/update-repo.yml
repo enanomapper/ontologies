@@ -23,10 +23,6 @@ jobs:
         python makeROBOT.py
         cd ../../../
 
-    - name: Set up ssh-agent
-      uses: webfactory/ssh-agent@v0.5.4
-      with:
-        ssh-private-key: ${{ secrets.PAT }}   ## needed for pushing into .github/workflows
 
     - name: commit and push changes
       run: |
