@@ -55,7 +55,7 @@ jobs:
             wget {robot}
             wget {robot_jar}
             chmod 777 robo*
-            mkdir -f robot/report
+            mkdir -p robot/report
     """)
         if merge == True:
             robot_yaml.write("""
