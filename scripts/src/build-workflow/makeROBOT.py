@@ -60,7 +60,7 @@ jobs:
             robot_yaml.write("""
         - name: merge
           run: | 
-            sh robot merge -i enanomapper-auto.owl -o enanomapper-auto-full.owl
+            sh robot merge -i enanomapper-dev.owl -o enanomapper-dev-full.owl
             sh robot merge -i enanomapper.owl -o enanomapper-full.owl
             """)
             added_merged = "git add enanomapper-full.owl"
@@ -69,15 +69,15 @@ jobs:
         if report == True:
           robot_yaml.write("""
         - name: report
-          run: sh robot report --fail-on none -i enanomapper-auto-full.owl -o robot-report/report.tsv
+          run: sh robot report --fail-on none -i enanomapper-dev-full.owl -o robot-report/report.tsv
         - name: diff
           run: |
-            sh robot diff --left enanomapper-full.owl --right enanomapper-auto-full.owl --output robot-report/diff.txt
+            sh robot diff --left enanomapper-full.owl --right enanomapper-dev-full.owl --output robot-report/diff.txt
             """)
           if keep_files == False:
             robot_yaml.write("""
             rm enanomapper-full.owl
-            rm enanomapper-auto-full.owl
+            rm enanomapper-dev-full.owl
             """)
         added_report = "git add ./robot-report/*"
         if validate == True:
