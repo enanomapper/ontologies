@@ -118,14 +118,18 @@ Making Releases
 
 
 1. Test if the `enanomapper.owl` can be loaded without errors in Protégé
-   * And run the Makefile with ```make check``` in the ```internal/``` folder
 2. check if the metadata in the enanomapper.owl is up to data (e.g. names of people who submitted PRs)
 3. Copy the internal ontologies in `ontologies/internal-dev/` to `ontologies/internal` and  `ontologies/external-dev/` to `ontologies/external`
-4. Update the owl.versionInfo of `enanomapper.owl`
-5. Update the owl.versionInfo of `enanomapper-dev.owl`
-6. Write markdown for the release with the changes since the previous release
-7. Update the CITATION.cff
-8. Tag the git commit matching the release
+4. Update for `enanomapper.owl` and `enanomapper-dev.owl`:
+   * `owl:versionInfo`
+   * `owl:versionIRI` (only `enanomapper.owl`)
+5. Create a folder `releases/{version}` and store there a copy of the latest `enanomapper.owl` file
+6. Update the CITATION.cff
+   * `title`
+   * `version`
+   * `date-released`
+7. Make a git commit with the changes and tag that commit matching the release
+8. Write markdown for the release with the changes since the previous release
 9. Release the whole repository in GitHub https://github.com/enanomapper/ontologies/releases 
 10. Update the DOI number for new release: https://zenodo.org/record/260098
 

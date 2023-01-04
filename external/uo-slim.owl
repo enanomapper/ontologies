@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.enanomapper.net/onto/external/uo-slim.owl#"
      xml:base="http://purl.enanomapper.net/onto/external/uo-slim.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:pav="http://purl.org/pav/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -14,7 +13,7 @@
     <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/uo-slim.owl">
         <pav:importedFrom>http://purl.obolibrary.org/obo/uo.owl</pav:importedFrom>
         <oboInOwl1:auto-generated-by>Slimmer</oboInOwl1:auto-generated-by>
-        <oboInOwl1:date>2022-08-11 21:03:20</oboInOwl1:date>
+        <oboInOwl1:date>2023-01-04 12:27:26</oboInOwl1:date>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
@@ -29,20 +28,6 @@
      -->
 
 
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/creator -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/date -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
     
 
 
@@ -5749,386 +5734,34 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UO_01200000 -->
+    <!-- http://purl.obolibrary.org/obo/UO_0010064 -->
 
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1010030"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T15:31:43Z</dc:date>
-        <rdfs:comment>A unit volume equivalent to 8 US dry gallons. https://en.wikipedia.org/wiki/Bushel</rdfs:comment>
-        <rdfs:label xml:lang="en">bushel</rdfs:label>
-        <oboInOwl:hasExactSynonym>bsh</oboInOwl:hasExactSynonym>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0010064">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010064"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000129"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UO_01200001 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_01200000"/>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2627-0696"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T15:35:05Z</dc:date>
-        <rdfs:comment xml:lang="en">An area density unit which is equal to the mass of an object in bushels divided by the surface area in acres.</rdfs:comment>
-        <rdfs:label xml:lang="en">bushel per acre</rdfs:label>
-        <oboInOwl:hasExactSynonym>bsh/ac</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200002 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000006"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1000013"/>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2627-0696"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T15:39:14Z</dc:date>
-        <rdfs:comment xml:lang="en">A substance unit equal to a hundredth of a mol or 10^[-2] mol.</rdfs:comment>
-        <rdfs:label xml:lang="en">centimole</rdfs:label>
-        <oboInOwl:hasExactSynonym>cmol</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200003 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000006"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_01200002"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T15:51:48Z</dc:date>
-        <rdfs:comment xml:lang="en">Unit of the cation-exchange capacity.</rdfs:comment>
-        <rdfs:label xml:lang="en">centimole charge per kilogram</rdfs:label>
-        <oboInOwl:hasExactSynonym>cmolc/kg</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>me/100g</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>meq/100g</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200004 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000262"/>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2627-0696"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T15:57:12Z</dc:date>
-        <rdfs:comment xml:lang="en">An electrical conduction unit which is equal to one tenth of a siemen or 10^[-1] siemens.</rdfs:comment>
-        <rdfs:label xml:lang="en">decisiemens</rdfs:label>
-        <oboInOwl:hasExactSynonym>dS</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200005 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000262"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_01200004"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T15:57:19Z</dc:date>
-        <rdfs:comment xml:lang="en">A commonly used unit to measure soil and water salinity. https://ucanr.edu/sites/Salinity/Salinity_Management/Salinity_Basics/Salinity_measurement_and_unit_conversions/</rdfs:comment>
-        <rdfs:label xml:lang="en">decisiemens per metre</rdfs:label>
-        <oboInOwl:hasExactSynonym>dS/m</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200006 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000060"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T16:07:13Z</dc:date>
-        <rdfs:comment xml:lang="en">A speed/velocity unit which is equal to the speed of an object traveling 1-foot distance in one second.</rdfs:comment>
-        <rdfs:label xml:lang="en">feet per second</rdfs:label>
-        <oboInOwl:hasExactSynonym>ft/s</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200007 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000054"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T16:23:40Z</dc:date>
-        <rdfs:comment xml:lang="en">An area density unit which is equal to the mass of an object in grams divided by the surface area in feet squared.</rdfs:comment>
-        <rdfs:label xml:lang="en">gram per square feet</rdfs:label>
-        <oboInOwl:hasExactSynonym>g/ft^[2]</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200008 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000054"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T16:25:53Z</dc:date>
-        <rdfs:comment xml:lang="en">An area density unit which is equal to the mass of an object in grams divided by the surface area in hectare.</rdfs:comment>
-        <rdfs:comment xml:lang="en">g/ha</rdfs:comment>
-        <rdfs:label xml:lang="en">gram per hectare</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200009 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000205"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T16:30:05Z</dc:date>
-        <rdfs:comment xml:lang="en">A volume density unit which is equal to the volume of an object in liters divided by the surface area in acres.</rdfs:comment>
-        <rdfs:label xml:lang="en">liter per acre</rdfs:label>
-        <oboInOwl:hasExactSynonym>l/ac</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200010 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000205"/>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2627-0696"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T16:31:56Z</dc:date>
-        <rdfs:comment xml:lang="en">A volume density unit which is equal to the volume of an object in liters divided by the surface area in hectare.</rdfs:comment>
-        <rdfs:label xml:lang="en">liter per hectare</rdfs:label>
-        <oboInOwl:hasExactSynonym>l/ha</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200011 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000205"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T16:33:11Z</dc:date>
-        <rdfs:comment xml:lang="en">A volume density unit which is equal to the volume of an object in liters divided by the surface area in feet squared.</rdfs:comment>
-        <rdfs:label xml:lang="en">liter per square foot</rdfs:label>
-        <oboInOwl:hasExactSynonym>l/ft^[2]</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200012 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000205"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T16:34:56Z</dc:date>
-        <rdfs:comment xml:lang="en">A volume density unit which is equal to the volume of an object in liters divided by the surface area in meters squared.</rdfs:comment>
-        <rdfs:label xml:lang="en">liter per square meter</rdfs:label>
-        <oboInOwl:hasExactSynonym>l/m^[2]</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200013 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000060"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T16:39:56Z</dc:date>
-        <rdfs:comment xml:lang="en">A speed/velocity unit which is equal to the speed of an object traveling 1-mile distance in one hour.</rdfs:comment>
-        <rdfs:label xml:lang="en">mile per hour</rdfs:label>
-        <oboInOwl:hasExactSynonym>mi/h</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200014 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000205"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T16:45:08Z</dc:date>
-        <rdfs:comment xml:lang="en">A volume density which is equal to the volume of an object in milliliters divided by the surface area in meters squared.</rdfs:comment>
-        <rdfs:label xml:lang="en">milliliter per square meter</rdfs:label>
-        <oboInOwl:hasExactSynonym>mm/m^[2]</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200015 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000054"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T16:56:23Z</dc:date>
-        <rdfs:comment xml:lang="en">An area density unit which is equal to the mass of an object in pounds divided by the surface area in acres.</rdfs:comment>
-        <rdfs:label xml:lang="en">pound per acre</rdfs:label>
-        <oboInOwl:hasExactSynonym>lb/ac</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200016 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000054"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T16:57:34Z</dc:date>
-        <rdfs:comment xml:lang="en">An area density unit which is equal to the mass of an object in pounds divided by the surface area in hectares.</rdfs:comment>
-        <rdfs:label xml:lang="en">pound per hectare</rdfs:label>
-        <oboInOwl:hasExactSynonym>lb/ha</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200017 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200017">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000054"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T16:58:33Z</dc:date>
-        <rdfs:comment xml:lang="en">An area density unit which is equal to the mass of an object in pounds divided by the surface area in feet squared.</rdfs:comment>
-        <rdfs:label xml:lang="en">pound per square foot</rdfs:label>
-        <oboInOwl:hasExactSynonym>lb/ft^[2]</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200018 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200018">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000054"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T16:59:47Z</dc:date>
-        <rdfs:comment xml:lang="en">An area density unit which is equal to the mass of an object in tons divided by the surface area in acres.</rdfs:comment>
-        <rdfs:label xml:lang="en">ton per acre</rdfs:label>
-        <oboInOwl:hasExactSynonym>t/ac</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200019 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200019">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000002"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T17:02:16Z</dc:date>
-        <rdfs:comment xml:lang="en">A mass unit equivalent to 100 kilograms. [1] https://www.ibiblio.org/units/dictQ.html [2] http://ts.nist.gov/ts/htdocs/200/202/SIFedReg.pdf</rdfs:comment>
-        <rdfs:label xml:lang="en">quintal</rdfs:label>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">q</oboInOwl:hasRelatedSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200020 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000054"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T17:10:03Z</dc:date>
-        <rdfs:comment xml:lang="en">An area density unit which is equal to the mass of an object in quintals divided by the surface area in acres.</rdfs:comment>
-        <rdfs:label xml:lang="en">quintal per acre</rdfs:label>
-        <oboInOwl:hasExactSynonym>q/ac</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200021 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000054"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T17:11:12Z</dc:date>
-        <rdfs:comment xml:lang="en">An area density unit which is equal to the mass of an object in quintals divided by the surface area in hectares.</rdfs:comment>
-        <rdfs:label xml:lang="en">quintal per hectare</rdfs:label>
-        <oboInOwl:hasExactSynonym>q/ha</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200022 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000047"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T17:27:19Z</dc:date>
-        <rdfs:comment xml:lang="en">An area unit which is equal to an area enclosed by a square with sides each 1 foot.</rdfs:comment>
-        <rdfs:label xml:lang="en">square foot</rdfs:label>
-        <oboInOwl:hasExactSynonym>ft^[2]</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>sf</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>sq. ft</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200023 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000256"/>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2627-0696"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T17:32:33Z</dc:date>
-        <rdfs:comment xml:lang="en">The ratio of the dynamic viscosity (μ) over the density of the fluid (ρ), which is noted as (length)^2/time. https://en.wikipedia.org/wiki/Viscosity#Kinematic_viscosity</rdfs:comment>
-        <rdfs:label xml:lang="en">kinematic viscosity</rdfs:label>
-        <oboInOwl:hasExactSynonym>momentum diffusivity</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200024 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_01200023"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T17:36:30Z</dc:date>
-        <rdfs:comment xml:lang="en">Unit of kinematic viscosity, specific relative angular momentum and thermal diffusivity.</rdfs:comment>
-        <rdfs:label xml:lang="en">square meter per second</rdfs:label>
-        <oboInOwl:hasExactSynonym>m^[2]/s</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200025 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200025">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000054"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T17:55:38Z</dc:date>
-        <rdfs:comment xml:lang="en">An area density unit which is equal to the cubic length of an object divided by the surface area in hectares.</rdfs:comment>
-        <rdfs:label xml:lang="en">cubic meters per hectare</rdfs:label>
-        <oboInOwl:hasExactSynonym>m^3/ha</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_01200026 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_01200026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000189"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0002-6305-2479"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-15T18:34:29Z</dc:date>
-        <rdfs:comment xml:lang="en">A dimensionless count unit in a given area of square meters.</rdfs:comment>
-        <rdfs:label xml:lang="en">count per square meter</rdfs:label>
+    <!-- http://purl.obolibrary.org/obo/UO_0010065 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0010065">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010065"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000129"/>
     </owl:Class>
     
 
@@ -9690,6 +9323,20 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UO_0010064 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/UO_0010064"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0010065 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/UO_0010065"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -10774,7 +10421,6 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000283">
         <rdfs:comment>&quot;An area density unit which is equal to the mass of an object in kilograms divided by the surface area in hectares.&quot; [UO:GVG]</rdfs:comment>
         <rdfs:label>kilogram per hectare</rdfs:label>
-        <oboInOwl:hasExactSynonym>kg/ha</oboInOwl:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000284">
         <rdfs:comment>&quot;A rate unit which is equal to one over one nanomolar.&quot; [UO:GVG]</rdfs:comment>
@@ -10825,7 +10471,6 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000325">
         <rdfs:comment>&quot;A frequency unit which is equal to one million hertz or 10^[6] V.&quot; [UOC:GVG]</rdfs:comment>
         <rdfs:label>megaHertz</rdfs:label>
-        <oboInOwl:hasRelatedSynonym>MHz</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>mH</oboInOwl:hasRelatedSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000326">
@@ -11076,49 +10721,59 @@
         <oboInOwl:hasExactSynonym>pA</oboInOwl:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010055">
-        <rdfs:comment>&quot;An absorbed dose unit which is equal to 0.01 gray (Gy)&quot;</rdfs:comment>
+        <rdfs:comment>&quot;An absorbed dose unit which is equal to 0.01 gray (Gy)&quot; [NIST:NIST]</rdfs:comment>
         <rdfs:label>centigray</rdfs:label>
         <oboInOwl:hasExactSynonym>cGy</oboInOwl:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010056">
-        <rdfs:comment>&quot;A unit of energy that is equal to one thousand million electronvolts.&quot;</rdfs:comment>
+        <rdfs:comment>&quot;A unit of energy that is equal to one thousand million electronvolts.&quot; []</rdfs:comment>
         <rdfs:label>gigaelectronvolt</rdfs:label>
         <oboInOwl:hasExactSynonym>GeV</oboInOwl:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010057">
-        <rdfs:comment>&quot;Derived unit which is equal to the total kinetic energy of an atomic nucleus in GeV divided by the number of nucleons in the nucleus&quot;</rdfs:comment>
+        <rdfs:comment>&quot;Derived unit which is equal to the total kinetic energy of an atomic nucleus in GeV divided by the number of nucleons in the nucleus&quot; []</rdfs:comment>
         <rdfs:label>gigaelectronvolt per nucleon</rdfs:label>
         <oboInOwl:hasExactSynonym>GeV/nucleon</oboInOwl:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010058">
-        <rdfs:comment>&quot;Derived unit which is equal to the total kinetic energy of an atomic nucleus in MeV divided by the number of nucleons in the nucleus&quot;</rdfs:comment>
+        <rdfs:comment>&quot;Derived unit which is equal to the total kinetic energy of an atomic nucleus in MeV divided by the number of nucleons in the nucleus&quot; []</rdfs:comment>
         <rdfs:label>megaelectronvolt per nucleon</rdfs:label>
         <oboInOwl:hasExactSynonym>MeV/nucleon</oboInOwl:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010059">
-        <rdfs:comment>&quot;A derived unit equal to the energy deposited by ionizing radiation per micron of path length in matter&quot;</rdfs:comment>
+        <rdfs:comment>&quot;A derived unit equal to the energy deposited by ionizing radiation per micron of path length in matter&quot; []</rdfs:comment>
         <rdfs:label>kiloelectronvolt per micron</rdfs:label>
         <oboInOwl:hasExactSynonym>keV/micron</oboInOwl:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010060">
-        <rdfs:comment>&quot;A derived absorbed dose unit which is equal to one gray absorbed per minute.&quot;</rdfs:comment>
+        <rdfs:comment>&quot;A derived absorbed dose unit which is equal to one gray absorbed per minute.&quot; [NIST:NIST]</rdfs:comment>
         <rdfs:label>gray per minute</rdfs:label>
         <oboInOwl:hasExactSynonym>Gy/min</oboInOwl:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010061">
-        <rdfs:comment>&quot;A derived absorbed dose unit which is equal to one centigray absorbed per minute.&quot;</rdfs:comment>
+        <rdfs:comment>&quot;A derived absorbed dose unit which is equal to one centigray absorbed per minute.&quot; [NIST:NIST]</rdfs:comment>
         <rdfs:label>centigray per minute</rdfs:label>
         <oboInOwl:hasExactSynonym>cGy/min</oboInOwl:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010062">
-        <rdfs:comment>&quot;A derived absorbed dose unit which is equal to one milligray absorbed per minute.&quot;</rdfs:comment>
+        <rdfs:comment>&quot;A derived absorbed dose unit which is equal to one milligray absorbed per minute.&quot; [NIST:NIST]</rdfs:comment>
         <rdfs:label>milligray per minute</rdfs:label>
         <oboInOwl:hasExactSynonym>mGy/min</oboInOwl:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010063">
-        <rdfs:comment>&quot;A derived absorbed dose unit which is equal to one milligray absorbed per day.&quot;</rdfs:comment>
+        <rdfs:comment>&quot;A derived absorbed dose unit which is equal to one milligray absorbed per day.&quot; [NIST:NIST]</rdfs:comment>
         <rdfs:label>milligray per day</rdfs:label>
         <oboInOwl:hasExactSynonym>mGy/min</oboInOwl:hasExactSynonym>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010064">
+        <rdfs:comment>&quot;A derived absorbed dose unit which is equal to one milligray absorbed per hour.&quot; [NIST:NIST]</rdfs:comment>
+        <rdfs:label>milligray per hour</rdfs:label>
+        <oboInOwl:hasExactSynonym>mGy/h</oboInOwl:hasExactSynonym>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010065">
+        <rdfs:comment>&quot;A derived absorbed dose unit which is equal to one milligray absorbed per second.&quot; [NIST:NIST]</rdfs:comment>
+        <rdfs:label>milligray per second</rdfs:label>
+        <oboInOwl:hasExactSynonym>mGy/s</oboInOwl:hasExactSynonym>
     </rdf:Description>
 </rdf:RDF>
 
