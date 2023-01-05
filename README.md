@@ -56,6 +56,7 @@ The configuration file [enanomapper.yaml](scripts/src/build-workflow/enanomapper
 DOI of Releases
 ---------------
 
+* Version 9: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7503729.svg)](https://doi.org/10.5281/zenodo.7503729)
 * Version 8: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6984499.svg)](https://doi.org/10.5281/zenodo.6984499)
 * Version 7: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4600986.svg)](https://doi.org/10.5281/zenodo.4600986)
 * Version 6: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3382100.svg)](https://doi.org/10.5281/zenodo.3382100)
