@@ -61,8 +61,8 @@ jobs:
             robot_yaml.write("""
         - name: merge
           run: | 
-            sh robot merge -i enanomapper-dev.owl -o enanomapper-dev-full.owl --annotate-derived-from true
-            sh robot merge -i enanomapper.owl -o enanomapper-full.owl --annotate-derived-from true
+            sh robot merge -i enanomapper-dev.owl -o enanomapper-dev-full.owl
+            sh robot merge -i enanomapper.owl -o enanomapper-full.owl
             """)
             robot_yaml.write(f"""
   # Upload owl artifacts
