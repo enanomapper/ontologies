@@ -73,13 +73,7 @@ jobs:
             path: enanomapper*
   """)
 
-        if keep_files == False:
-          robot_yaml.write("""
-        - name: rm temp owl files
-          run: |
-            rm enanomapper-full.owl
-            rm enanomapper-dev-full.owl
-            """)  
+
         
         added_merged = "git add enanomapper-full.owl"
         if verify == True:
@@ -91,6 +85,16 @@ jobs:
         - name: diff
           run: |
             sh robot diff --left enanomapper-full.owl --right enanomapper-dev-full.owl --output robot-report/diff.txt
+        """)
+        if keep_files == False:
+          robot_yaml.write("""
+        - name: rm temp owl files
+          run: |
+            rm enanomapper-full.owl
+            rm enanomapper-dev-full.owl
+            """) 
+        if report == True:
+          robot_yaml.write(""" 
         - name: 'Upload report'
           uses: actions/upload-artifact@v3
           with:
