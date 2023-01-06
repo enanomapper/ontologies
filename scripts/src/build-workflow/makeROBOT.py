@@ -64,7 +64,24 @@ jobs:
             sh robot merge -i enanomapper-dev.owl -o enanomapper-dev-full.owl
             sh robot merge -i enanomapper.owl -o enanomapper-full.owl
             """)
-            added_merged = "git add enanomapper-full.owl"
+            robot_yaml.write(f"""
+  # Upload owl artifacts
+        - name: 'Upload enanomapper* artifacts'
+          uses: actions/upload-artifact@v3
+          with:
+            name: enanomapper-files
+            path: enanomapper*
+  """)
+
+        if keep_files == False:
+          robot_yaml.write("""
+        - name: rm temp owl files
+          run: |
+            rm enanomapper-full.owl
+            rm enanomapper-dev-full.owl
+            """)  
+        
+        added_merged = "git add enanomapper-full.owl"
         if verify == True:
             pass
         if report == True:
@@ -74,25 +91,15 @@ jobs:
         - name: diff
           run: |
             sh robot diff --left enanomapper-full.owl --right enanomapper-dev-full.owl --output robot-report/diff.txt
-            """)
-          robot_yaml.write(f"""
-  # Upload artifacts
-        - name: 'Upload eNanoMapper-full'
-          uses: actions/upload-artifact@v3
-          with:
-            name: enanomapper-files
-            path: enanomapper*
         - name: 'Upload report'
           uses: actions/upload-artifact@v3
           with:
             name: report
             path: ./robot-report/* 
-  """)
-          if keep_files == False:
-            robot_yaml.write("""
-            rm enanomapper-full.owl
-            rm enanomapper-dev-full.owl
             """)
+          
+
+
         added_report = "git add ./robot-report/*"
         if validate == True:
             pass # to be added
