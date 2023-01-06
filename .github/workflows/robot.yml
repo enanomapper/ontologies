@@ -33,18 +33,18 @@ jobs:
           run: |
             sh robot diff --left enanomapper-full.owl --right enanomapper-dev-full.owl --output robot-report/diff.txt
             
-            rm enanomapper-full.owl
-            rm enanomapper-dev-full.owl
-            
   # Upload artifacts
         - name: 'Upload eNanoMapper-full'
           uses: actions/upload-artifact@v3
           with:
             name: enanomapper-files
-            path: enanomapper-*
+            path: enanomapper*
         - name: 'Upload report'
           uses: actions/upload-artifact@v3
           with:
             name: report
             path: ./robot-report/* 
   
+            rm enanomapper-full.owl
+            rm enanomapper-dev-full.owl
+            
