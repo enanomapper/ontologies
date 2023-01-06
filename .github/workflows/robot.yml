@@ -34,16 +34,17 @@ jobs:
             name: enanomapper-files
             path: enanomapper*
   
-        - name: rm temp owl files
-          run: |
-            rm enanomapper-full.owl
-            rm enanomapper-dev-full.owl
-            
         - name: report
           run: sh robot report --fail-on none -i enanomapper-dev-full.owl -o robot-report/report.tsv
         - name: diff
           run: |
             sh robot diff --left enanomapper-full.owl --right enanomapper-dev-full.owl --output robot-report/diff.txt
+        
+        - name: rm temp owl files
+          run: |
+            rm enanomapper-full.owl
+            rm enanomapper-dev-full.owl
+             
         - name: 'Upload report'
           uses: actions/upload-artifact@v3
           with:
