@@ -27,6 +27,7 @@ jobs:
             
         - name: "make mermaid"
           run: |
+            pip install rdflib
             python scripts/src/build-workflow/make-mmd.py
             mv subclass.md scripts/src/build-workflow/subclass.md
             git add scripts/src/build-workflow/subclass.md
