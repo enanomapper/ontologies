@@ -24,8 +24,8 @@ jobs:
     
         - name: merge
           run: | 
-            sh robot merge -i enanomapper-dev.owl -o enanomapper-dev-full.owl --annotate-derived-from true
-            sh robot merge -i enanomapper.owl -o enanomapper-full.owl --annotate-derived-from true
+            sh robot merge -i enanomapper-dev.owl -o enanomapper-dev-full.owl
+            sh robot merge -i enanomapper.owl -o enanomapper-full.owl
             
   # Upload owl artifacts
         - name: 'Upload enanomapper* artifacts'
