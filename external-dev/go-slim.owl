@@ -12,17 +12,19 @@
      xmlns:obo1="http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"
-     xmlns:terms="http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:terms2="http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/go-slim.owl">
         <dc:description>The Gene Ontology (GO) provides a framework and set of concepts for describing the functions of gene products from all organisms.</dc:description>
         <dc:title>Gene Ontology</dc:title>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <pav:importedFrom>http://purl.obolibrary.org/obo/go.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2023-01-04 12:25:56</oboInOwl:date>
+        <oboInOwl:date>2023-05-01 02:15:58</oboInOwl:date>
         <oboInOwl:default-namespace>gene_ontology</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
-        <owl:versionInfo>2022-12-04</owl:versionInfo>
+        <owl:versionInfo>2023-04-01</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
@@ -320,6 +322,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
@@ -1077,6 +1086,13 @@
         <oboInOwl:shorthand>results_in_movement_of</oboInOwl:shorthand>
         <rdfs:label>results in movement of</rdfs:label>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002578">
+        <oboInOwl:hasDbXref>RO:0002578</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>directly_regulates</oboInOwl:id>
+        <oboInOwl:shorthand>directly_regulates</oboInOwl:shorthand>
+        <rdfs:label>directly regulates</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002588">
         <oboInOwl:hasDbXref>RO:0002588</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
@@ -1111,6 +1127,20 @@
         <oboInOwl:id>process_has_causal_agent</oboInOwl:id>
         <oboInOwl:shorthand>process_has_causal_agent</oboInOwl:shorthand>
         <rdfs:label>process has causal agent</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002629">
+        <oboInOwl:hasDbXref>RO:0002629</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>directly_positively_regulates</oboInOwl:id>
+        <oboInOwl:shorthand>directly_positively_regulates</oboInOwl:shorthand>
+        <rdfs:label>directly positively regulates</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002630">
+        <oboInOwl:hasDbXref>RO:0002630</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>directly_negatively_regulates</oboInOwl:id>
+        <oboInOwl:shorthand>directly_negatively_regulates</oboInOwl:shorthand>
+        <rdfs:label>directly negatively regulates</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0003000">
         <oboInOwl:hasDbXref>RO:0003000</oboInOwl:hasDbXref>
