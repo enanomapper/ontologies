@@ -157,7 +157,7 @@
         <doap:bug-database rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/issues/</doap:bug-database>
         <doap:mailing-list rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://lists.sourceforge.net/lists/listinfo/obo-anatomy</doap:mailing-list>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2023-05-01 02:22:58</oboInOwl:date>
+        <oboInOwl:date>2023-06-01 03:36:27</oboInOwl:date>
         <oboInOwl:default-namespace>uberon</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:treat-xrefs-as-equivalent>AEO</oboInOwl:treat-xrefs-as-equivalent>
@@ -202,7 +202,7 @@
         <rdfs:comment>Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/TEMP&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 437 Logical Axioms: 0]</rdfs:comment>
         <rdfs:comment>Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/uberon-bridge-to-bfo.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 20 Logical Axioms: 9]</rdfs:comment>
         <rdfs:comment>Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/uberon/disjoint_union_over.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 38 Logical Axioms: 38]</rdfs:comment>
-        <owl:versionInfo>2023-04-19</owl:versionInfo>
+        <owl:versionInfo>2023-05-23</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
         <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://uberon.org</foaf:homepage>
     </owl:Ontology>
@@ -340,7 +340,16 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
 
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233">
+        <oboInOwl:hasDbXref>IAO:0000233</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>term_tracker_item</oboInOwl:id>
+        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>term_tracker_item</oboInOwl:shorthand>
+        <rdfs:label>term tracker item</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -1468,6 +1477,15 @@ WHERE {
     
 
 
+    <!-- http://purl.obolibrary.org/obo/chebi#BRAND_NAME -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi#BRAND_NAME">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/chebi#INN -->
 
 
@@ -1593,6 +1611,24 @@ WHERE {
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#added_for_HCA">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cl#blood_and_immune_upper_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#blood_and_immune_upper_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cl#eye_upper_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#eye_upper_slim">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -1756,6 +1792,15 @@ WHERE {
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#systematic_synonym">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#term_scheduled_for_obsoletion -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#term_scheduled_for_obsoletion">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
 
@@ -3664,339 +3709,38 @@ WHERE {
         <oboInOwl:hasDbXref>BTO:0000345</oboInOwl:hasDbXref>
     </owl:Axiom>
     <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Epicondyle</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Neurofilament</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Atlas_(anatomy)#Vertebral_foramen</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Node_of_ranvier</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>HP:0003832</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>https://github.com/obophenotype/uberon/issues/119</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid58">
-        <oboInOwl:hasDbXref>GO:0003285</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>Wikipedia:Septum_secondum</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid59">
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>PMID:22622577</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Gastric_juice</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>https://sourceforge.net/tracker/?func=detail&amp;aid=3123598&amp;group_id=76834&amp;atid=1205376</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>BIRNLEX:1734</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Aquatic_predation#Lunge_feeding</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0021729</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid66">
-        <oboInOwl:hasDbXref>FlyBase:FBrf0007733</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0064792</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Brodmann_area_26</oboInOwl:hasDbXref>
+    <rdf:Description rdf:nodeID="genid53">
+        <oboInOwl:hasDbXref>Wikipedia:Articular</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://github.com/obophenotype/uberon/issues/98</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Pronucleus</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid70">
-        <oboInOwl:hasDbXref>PMID:20557782</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:20566102</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Coat_(animal)</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Anal_gland</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0003227</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0006943</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Pancreaticoduodenal_artery</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0009994</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Pterion</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Intermediate_filament</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0009990</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>https://sourceforge.net/tracker/?func=detail&amp;aid=3515562&amp;group_id=76834&amp;atid=994726</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Rattlesnake#Rattle</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>http://people.eku.edu/ritchisong/feather_evolution.htm</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Digestive_system_of_gastropods#Hepatopancreas</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0009999</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0009946</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid88">
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>neuronames:3214</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Lumbar_spinal_cord</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Trapezoid_bone</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Facial_skeleton</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>neuronames:3218</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>PMID:23027930</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Neurofilament</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0021751</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid99">
-        <oboInOwl:hasDbXref>FlyBase:FBrf0002482</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0007196</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0007735</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0034076</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>http://dev.biologists.org/content/128/22/4573.full</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref>Wikipedia:Adductor_muscles_of_the_hip</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0061249</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>https://sourceforge.net/tracker/?func=detail&amp;aid=3580301&amp;group_id=76834&amp;atid=1205376</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Persistent_left_superior_vena_cava</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0009364</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>https://github.com/obophenotype/uberon/issues/1264</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>neuronames:3220</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0009989</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0072166</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid110">
-        <oboInOwl:hasDbXref>GO:dph</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>Wikipedia:Hypoblast</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>ZFIN:cvs</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://sourceforge.net/p/geneontology/ontology-requests/9676/</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>PHENOSCAPE:Wasila</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid113">
-        <oboInOwl:hasDbXref>GO:0021729</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GO_REF:0000021</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid114">
-        <oboInOwl:hasDbXref>PMID:14595018</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://sourceforge.net/tracker/?func=detail&amp;aid=3123600&amp;group_id=76834&amp;atid=1205376</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0060682</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>http://people.eku.edu/ritchisong/feather_evolution.htm</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid117">
-        <oboInOwl:hasDbXref>Wikipedia:External_sphincter_muscle_of_female_urethra</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>Wikipedia:External_sphincter_muscle_of_male_urethra</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Primordial_phallus</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>neuronames:3221</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>ISBN:0073040584</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>BIRNLEX:1732</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0003291</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>PMID:21558186</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid124">
-        <oboInOwl:hasDbXref>Wikipedia:Articular</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://github.com/obophenotype/uberon/issues/98</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>http://www.ana.ed.ac.uk/database/humat/notes/extraemb/mesoder.htm</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Brodmann_area_9</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Eparterial_bronchus</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Temporomandibular_joint#Ligaments</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>HP:0000864</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Dorsal_digital_arteries#</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>ISBN:0073040584</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0009996</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>HP:0005289</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>PMID:23027930</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid135">
-        <oboInOwl:hasDbXref>https://github.com/obophenotype/uberon/issues/6</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://github.com/obophenotype/uberon/issues/7</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Pisiform_joint</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0021728</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>PMID:21558186</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Corpus_cavernosum</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
         <oboInOwl:hasDbXref>Wikipedia:Internal_spermatic_fascia</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Brodmann_area_28</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0003226</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0061214</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref>HP:0003350</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0009997</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Facial_skeleton</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Common_plantar_digital_arteries</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Pancreaticoduodenal_artery</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0010003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0003227</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>neuronames:3214</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0072003</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid150">
-        <oboInOwl:hasDbXref>UBERON:CL_meeting_20110725</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>http://retina.anatomy.upenn.edu/~lance/eye/retina_gross.html</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Pouch_(marsupial)</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Proper_plantar_digital_arteries</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0009993</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>ISBN:0073040584</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0009988</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>EFO:0000240</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Flight_feather</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Iris_muscle</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref>GO:0003225</oboInOwl:hasDbXref>
@@ -4005,99 +3749,400 @@ WHERE {
         <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Hamate_bone</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://dev.biologists.org/content/128/22/4573.full</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Superior_olivary_complex#Dorsal_periolivary_nucleus_.28DPO.29</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0072165</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>PMCID:PMC2093943</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Capitate_bone</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>GO:0003224</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid168">
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Brodmann_area_18</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>PHENOSCAPE:alex</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>http://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Iris_muscle</oboInOwl:hasDbXref>
+    <rdf:Description rdf:nodeID="genid66">
+        <oboInOwl:hasDbXref>GO:0003285</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Septum_secondum</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref>Wikipedia:Snout</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>PMID:21558186</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Persistent_left_superior_vena_cava</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Brodmann_area_39</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Pouch_(marsupial)</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Trapezium_(bone)</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>Wikipedia:Enteric_ganglia</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>PMID:21558186</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid180">
+    <rdf:Description rdf:nodeID="genid70">
         <oboInOwl:hasDbXref>BIRNLEX:1755</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://github.com/obophenotype/uberon/issues/1161</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>MP:0010002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Proper_plantar_digital_arteries</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>HP:0000606</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Anal_gland</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
-        <oboInOwl:hasDbXref>neuronames:3223</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>PHENOSCAPE:alex</oboInOwl:hasDbXref>
-    </rdf:Description>
-    <rdf:Description>
-        <oboInOwl:hasDbXref>https://sourceforge.net/tracker/?func=detail&amp;atid=440764&amp;aid=3413098&amp;group_id=36855</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0021751</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref>PMID:23153189</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
+        <oboInOwl:hasDbXref>neuronames:3221</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>http://www.ana.ed.ac.uk/database/humat/notes/extraemb/mesoder.htm</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Brodmann_area_18</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>MP:0009993</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>https://github.com/obophenotype/uberon/issues/119</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0006943</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Coat_(animal)</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>GO:0021728</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>MP:0010003</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>BIRNLEX:1734</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>PMCID:PMC2093943</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>PMID:21558186</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>MP:0010002</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>PMID:21558186</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid91">
+        <oboInOwl:hasDbXref>GO:0021729</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO_REF:0000021</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Brodmann_area_9</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid93">
+        <oboInOwl:hasDbXref>https://github.com/obophenotype/uberon/issues/6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://github.com/obophenotype/uberon/issues/7</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>GO:0003224</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>GO:0003291</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Pisiform_joint</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>EFO:0000240</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid98">
+        <oboInOwl:hasDbXref>GO:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Hypoblast</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFIN:cvs</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://sourceforge.net/p/geneontology/ontology-requests/9676/</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>MP:0009990</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Brodmann_area_39</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>PMID:21558186</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Epicondyle</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>GO:0003226</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>GO:0072166</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Corpus_cavernosum</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>MP:0009946</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Hamate_bone</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Gastric_juice</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid111">
+        <oboInOwl:hasDbXref>Wikipedia:External_sphincter_muscle_of_female_urethra</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:External_sphincter_muscle_of_male_urethra</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid112">
+        <oboInOwl:hasDbXref>PMID:20557782</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:20566102</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>neuronames:3220</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Enteric_ganglia</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>PHENOSCAPE:Wasila</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
         <oboInOwl:hasDbXref>ISBN:0073040584</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Digestive_system_of_gastropods#Hepatopancreas</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Atlas_(anatomy)#Vertebral_foramen</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Brodmann_area_26</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref>https://github.com/obophenotype/mouse-anatomy-ontology/issues/56</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Superior_olivary_complex#Dorsal_periolivary_nucleus_.28DPO.29</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Pronucleus</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>PMID:22622577</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>HP:0005289</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Flight_feather</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>GO:0061249</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Capitate_bone</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>PMID:21558186</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>https://sourceforge.net/tracker/?func=detail&amp;aid=3580301&amp;group_id=76834&amp;atid=1205376</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Aquatic_predation#Lunge_feeding</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>https://github.com/obophenotype/uberon/issues/1264</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
         <oboInOwl:hasDbXref>Wikipedia:Sclera#Histology</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid134">
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>neuronames:3218</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Pterion</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>HP:0003832</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>MP:0009996</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid139">
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Dorsal_digital_arteries#</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Brodmann_area_28</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid143">
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>BIRNLEX:1732</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid145">
+        <oboInOwl:hasDbXref>FlyBase:FBrf0007733</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064792</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>MP:0009997</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>HP:0000864</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>GO:0021729</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>PMID:23027930</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>MP:0009989</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>http://people.eku.edu/ritchisong/feather_evolution.htm</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid153">
+        <oboInOwl:hasDbXref>UBERON:CL_meeting_20110725</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://retina.anatomy.upenn.edu/~lance/eye/retina_gross.html</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>MP:0009999</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>PHENOSCAPE:alex</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>ISBN:0073040584</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>GO:0072165</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>http://people.eku.edu/ritchisong/feather_evolution.htm</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Trapezoid_bone</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Node_of_ranvier</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>MP:0009364</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Primordial_phallus</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Trapezium_(bone)</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>MP:0009994</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Intermediate_filament</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref>http://www.embryology.ch/anglais/turinary/urinhaute03.html</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>neuronames:3223</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>GO:0060682</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Temporomandibular_joint#Ligaments</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>GO:0061214</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>GO:0072003</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid175">
+        <oboInOwl:hasDbXref>FlyBase:FBrf0002482</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0007196</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0007735</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0034076</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>ISBN:0073040584</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Common_plantar_digital_arteries</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Rattlesnake#Rattle</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>PMID:23027930</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>MP:0009988</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>https://sourceforge.net/tracker/?func=detail&amp;aid=3123598&amp;group_id=76834&amp;atid=1205376</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>PHENOSCAPE:alex</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Eparterial_bronchus</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid185">
+        <oboInOwl:hasDbXref>PMID:14595018</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://sourceforge.net/tracker/?func=detail&amp;aid=3123600&amp;group_id=76834&amp;atid=1205376</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>https://sourceforge.net/tracker/?func=detail&amp;atid=440764&amp;aid=3413098&amp;group_id=36855</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>ISBN:0073040584</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>https://sourceforge.net/tracker/?func=detail&amp;aid=3515562&amp;group_id=76834&amp;atid=994726</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>HP:0000606</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>Wikipedia:Lumbar_spinal_cord</oboInOwl:hasDbXref>
     </rdf:Description>
     
 
