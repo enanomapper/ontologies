@@ -3,7 +3,7 @@ import re
 import unittest
 
 
-class GrepTest(unittest.TestCase):
+class UniqueIrisTest(unittest.TestCase):
     """
     Unit test for checking if the same exact string appears
     twice in the 'internal' and 'internal-dev' folders.
