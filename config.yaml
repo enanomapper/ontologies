@@ -9,14 +9,18 @@ build:
   assignees: jmillanacosta
   repo: "https://github.com/enanomapper/ontologies"
   dispatches_robot: True
-slim: # needs to be expanded with mirror source + slimmer and/or ROBOT args, that will be passed to the pertinent script(s) in a similar way to the ODK
+versions:
+  - ""
+  - "-auto-dev"
+  - "-auto"
+  - "-dev"
+slims:
   - aopo
   - bao
   - bfo
   - bto
   - ccont
   - cheminf
-  - cito
   - chebi
   - chmo
   - clo
@@ -24,7 +28,6 @@ slim: # needs to be expanded with mirror source + slimmer and/or ROBOT args, tha
   - envo
   - fabio
   - go
-  - hupson
   - iao
   - ncit
   - npo
@@ -32,7 +35,6 @@ slim: # needs to be expanded with mirror source + slimmer and/or ROBOT args, tha
   - obcs
   - obi
   - pato
-  - ro
   - sio
   - uberon
   - uo
@@ -43,7 +45,9 @@ props:
   - sio
   - ro
   - cito
-robot-commands:
+robot:
+  robot-jar: https://github.com/ontodev/robot/releases/download/v1.9.4/robot.jar
+  robot-wrapper: https://raw.githubusercontent.com/ontodev/robot/master/bin/robot
   dispatch: "workflow_dispatch:"
   commit-message: "Actions - QC"
   schedule: "1 0 1 1-12 *"
@@ -51,8 +55,6 @@ robot-commands:
   verify: False
   report: True
   validate-profile: False
-  robot-jar: "https://github.com/ontodev/robot/releases/download/v1.9.0/robot.jar"
-  robot: "https://raw.githubusercontent.com/ontodev/robot/master/bin/robot"
   reason: # Create a separate OWL file with the reasoned ontology 
     reasoner: ELK 
     value: True
