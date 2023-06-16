@@ -14,12 +14,30 @@ jobs:
         steps:
         - name: checkout repo
           uses: actions/checkout@v3
+        - name: retrieve urls from config file
+          run: |
+            config_file="config.yaml"
+            robot_jar=""
+            robot=""
+            slimmer=""
+          
+            while IFS=":" read -r key value; do
+              key=$(echo "$key" | tr -d '[:space:]')
+          
+              case "$key" in
+                robot-jar)
+                  robot_jar=$(echo "$value" | tr -d '[:space:]')
+                  ;;
+                robot-wrapper)
+                  robot=$(echo "$value" | tr -d '[:space:]')
+                  ;;
+              esac
+            done < "$config_file"
         - name: get robot
           run: |
             ls
-            wget https://raw.githubusercontent.com/ontodev/robot/master/bin/robot
-            wget https://github.com/ontodev/robot/releases/download/v1.9.0/robot.jar
-            chmod 777 robo*
+            wget $robot
+            wget $robot_jar
             mkdir -p robot-report
     
         - name: merge

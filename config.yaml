@@ -1,14 +1,4 @@
 ---
-build:
-  dispatch: "workflow_dispatch:"
-  commit_message: "Actions - slim updated"
-  scheduled: False
-  schedule: "1 0 1 1-12 *"
-  external_prefix: "https://github.com/enanomapper/ontologies/external-dev/"
-  internal_prefix: "https://github.com/jmillanacosta/ontologies/internal/"
-  assignees: jmillanacosta
-  repo: "https://github.com/enanomapper/ontologies"
-  dispatches_robot: True
 versions:
   - ""
   - "-auto-dev"
@@ -48,18 +38,7 @@ props:
 robot:
   robot-jar: https://github.com/ontodev/robot/releases/download/v1.9.4/robot.jar
   robot-wrapper: https://raw.githubusercontent.com/ontodev/robot/master/bin/robot
-  dispatch: "workflow_dispatch:"
-  commit-message: "Actions - QC"
-  schedule: "1 0 1 1-12 *"
-  merge: True # Most ROBOT actions operate on the full ontology, enanomapper-full.owl 
-  verify: False
-  report: True
-  validate-profile: False
-  reason: # Create a separate OWL file with the reasoned ontology 
-    reasoner: ELK 
-    value: True
-  keep_files: False
-odk-dashboard: False
+slimmer: https://github.com/enanomapper/slimmer/releases/download/v1.0.2/slimmer-1.0.2-jar-with-dependencies.jar
 
 
   
