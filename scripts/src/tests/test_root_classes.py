@@ -9,7 +9,7 @@ class RobotTest(unittest.TestCase):
     """
     def setUp(self):
         """Set up the configuration file path and the ontology repository path."""
-        self.config_file = '../../../config.yaml'  # Path to the YAML configuration file
+        self.config_file = 'config.yaml'  # Path to the YAML configuration file
         
     def test_query_results(self):
         """
@@ -22,7 +22,7 @@ class RobotTest(unittest.TestCase):
         # Run the command
         subprocess.run(["wget", "https://raw.githubusercontent.com/ontodev/robot/master/bin/robot"])
         subprocess.run(["wget", "https://github.com/ontodev/robot/releases/download/v1.9.0/robot.jar"])
-        subprocess.run(["sh", "robot", "merge", "-i", "../../../enanomapper.owl", "-o", "enanomapper-full.owl"])
+        subprocess.run(["sh", "robot", "merge", "-i", "enanomapper.owl", "-o", "enanomapper-full.owl"])
         subprocess.run(["sh", "robot", "query", "--input", "enanomapper-full.owl", "--query", "assets/test_root.sparql", "result"])
         
         # Check the contents of the results file

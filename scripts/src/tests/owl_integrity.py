@@ -9,8 +9,8 @@ class OWLIntegrityTest(unittest.TestCase):
     
     def setUp(self):
         """Set up the configuration file path and the ontology repository path."""
-        self.config_file = '../../../config.yaml'  # Path to the YAML configuration file
-        self.repo_path = '../../../'  # Path to the ontology repository
+        self.config_file = 'config.yaml'  # Path to the YAML configuration file
+        self.repo_path = ''  # Path to the ontology repository
 
     def test_owl_file_integrity(self):
         """Test case to check the integrity of OWL files."""

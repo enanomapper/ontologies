@@ -17,10 +17,10 @@ class UniqueIrisTest(unittest.TestCase):
         pattern = r'<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_\d+">'
 
         # Search for the pattern in the 'internal' folder
-        internal_results = self._grep_directory(pattern, '../../../internal')
+        internal_results = self._grep_directory(pattern, 'internal')
 
         # Search for the pattern in the 'internal-dev' folder
-        internal_dev_results = self._grep_directory(pattern, '../../../internal-dev')
+        internal_dev_results = self._grep_directory(pattern, 'internal-dev')
 
         # Check for duplicate strings in each folder
         internal_duplicates = self._find_duplicates(internal_results)
@@ -31,12 +31,12 @@ class UniqueIrisTest(unittest.TestCase):
         if internal_duplicates:
             failure_messages.append(f"Duplicate strings found in the 'internal' folder in the following files:")
             for duplicate in internal_duplicates:
-                duplicate_files = self._find_files_with_string(duplicate, '../../../internal')
+                duplicate_files = self._find_files_with_string(duplicate, 'internal')
                 failure_messages.append(f"\n- Duplicate: {duplicate}\n  Files: {', '.join(duplicate_files)}")
         if internal_dev_duplicates:
             failure_messages.append(f"Duplicate strings found in the 'internal-dev' folder in the following files:")
             for duplicate in internal_dev_duplicates:
-                duplicate_files = self._find_files_with_string(duplicate, '../../../internal-dev')
+                duplicate_files = self._find_files_with_string(duplicate, 'internal-dev')
                 failure_messages.append(f"\n- Duplicate: {duplicate}\n  Files: {', '.join(duplicate_files)}")
 
         # Assert that there are no duplicate strings in either folder
