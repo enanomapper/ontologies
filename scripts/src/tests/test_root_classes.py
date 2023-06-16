@@ -23,13 +23,12 @@ class RobotTest(unittest.TestCase):
         subprocess.run(["wget", "https://raw.githubusercontent.com/ontodev/robot/master/bin/robot"])
         subprocess.run(["wget", "https://github.com/ontodev/robot/releases/download/v1.9.0/robot.jar"])
         subprocess.run(["sh", "robot", "merge", "-i", "enanomapper.owl", "-o", "enanomapper-full.owl"])
-        subprocess.run(["sh", "robot", "query", "--input", "enanomapper-full.owl", "--query", "assets/test_root.sparql", "result"])
+        subprocess.run(["sh", "robot", "query", "--input", "enanomapper-full.owl", "--query", "scripts/src/tests/assets/test_root.sparql", "result"])
         
         # Check the contents of the results file
         with open("result", "r") as file:
             result = file.read().strip()
-            file.close()
-        subprocess.run(["rm", "robot", "robot.jar", "enanomapper-full.owl", "result"])
+
         # Assert that the file contains only 'true'
         self.assertEqual(result, "true")
 
