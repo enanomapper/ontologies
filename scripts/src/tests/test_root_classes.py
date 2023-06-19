@@ -30,6 +30,8 @@ class RobotTest(unittest.TestCase):
             result = file.read().strip()
             if len(result)  != 0:
                 res = "passed"
+            else:
+                res = "failed"
             
 
         # Assert that the file contains only 'true'
