@@ -7,10 +7,11 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
-
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xlmns:dcterms="http://purl.org/dc/terms/source>
     <owl:Ontology rdf:about="http://enanomapper.github.io/ontologies/internal/obi-ext.owl">
         <dc:contributor>Laurent Winckers</dc:contributor>
+	<dc:contributor>Javier Millan Acosta</dc:contributor>
 	<dc:license>CC-BY 4.0 https://creativecommons.org/licenses/by/4.0/</dc:license>
 	<rdfs:comment>This ontology contains proposed extensions to the Ontology for Biomedical Investigations, which in due course will be submitted to the OBI. </rdfs:comment>
     </owl:Ontology>
@@ -622,5 +623,13 @@
     </owl:Class>
     
 
+    <!-- http://purl.enanomapper.org/onto/ENM_9000265 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000265">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000009"/>
+        <rdfs:label xml:lang="en">Ferric Reduction Ability of Serum</rdfs:label>
+	<rdfs:label xml:lang="en">FRAS</rdfs:label>
+	<obo:IAO_0000115>Assay measuring the surface reactivity of nanomaterials under physiological conditions to determine their dose-dependent oxidative damage</obo:IAO_0000115>
+</owl:Class>
 
 </rdf:RDF>
