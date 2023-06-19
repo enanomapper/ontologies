@@ -13,7 +13,7 @@ class RobotTest(unittest.TestCase):
         
     def test_query_results(self):
         """
-        Test that the 'results' file contains only the line 'true' after running the ROBOT query command.
+        Test the outcome  of robot query
         """
         config = self.load_configuration()
         robot_wrapper = config['robot']['robot-wrapper']
@@ -26,12 +26,11 @@ class RobotTest(unittest.TestCase):
         subprocess.run(["cat", "result"])
         
         # Check the contents of the results file
-        with open("result", "r") as file:
-            result = file.read().strip()
-            if len(result)  != 0:
-                res = "passed"
-            else:
-                res = "failed"
+        if os.stat('result').st_size==0:
+            res = "passed"
+        else:
+            res= "failed"
+
             
 
         # Assert that the file contains only 'true'
