@@ -1,6 +1,10 @@
 The Ontology
 ============
 
+[![Tests](https://github.com/enanomapper/ontologies/actions/workflows/tests.yml/badge.svg)](https://github.com/enanomapper/ontologies/actions/workflows/tests.yml)
+[![Tests](https://github.com/enanomapper/ontologies/actions/workflows/slim-ontologies.yml/badge.svg)](https://github.com/enanomapper/ontologies/actions/workflows/slim-ontologies.yml)
+
+
 The eNanoMapper ontologies aim to provide a comprehensive suite of ontologies for the nanomaterial safety assessment domain (see http://www.enanomapper.net for project information). The full suite of ontologies can be found in a modular file assembled by imports using `owl:imports`, [enanomapper.owl](enanomapper.owl), or in a complete file with all classes and properties in [enanomapper-full.owl](enanomapper-full.owl).
 
 The ontology is being developed and maintained by the following EU H2020 projects (see also the below
