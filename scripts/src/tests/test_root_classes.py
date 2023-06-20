@@ -33,7 +33,7 @@ class RobotTest(unittest.TestCase):
 
             
 
-        # Assert that the file contains only 'true'
+        # Assert that the file was empty (no unexpected subclasses of entity)
         self.assertEqual(res, "passed")
 
 
