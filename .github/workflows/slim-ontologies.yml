@@ -2,6 +2,9 @@ name: Build slims
 on:
   workflow_dispatch:
   push:
+    branches:
+      - master 
+      - slimmer-bump-test
     paths:
      - 'config.yaml'
   schedule:
