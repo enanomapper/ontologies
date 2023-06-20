@@ -41,8 +41,11 @@ jobs:
               ;;
           esac
         done < "$config_file"
+        echo SLIMMER: $slimmer
+        echo ROBOT JAR: $robot_jar
+        echo ROBOT WRAPPER $robot
     - name: get slimmer
-      run: wget -nc $slimmer
+      run: wget $slimmer
     - name: get robot
       run: |
         cd ./scripts/src/build-workflow
