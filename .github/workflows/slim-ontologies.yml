@@ -12,14 +12,35 @@ jobs:
       with:
        token: ${{ secrets.PAT }} 
     # Get slimmer and robot
+    - name: retrieve urls from config file
+      run: |
+        config_file="config.yaml"
+        robot_jar=""
+        robot=""
+        slimmer=""
+
+        while IFS=":" read -r key value; do
+          key=$(echo "$key" | tr -d '[:space:]')
+
+          case "$key" in
+            robot-jar)
+              robot_jar=$(echo "$value" | tr -d '[:space:]')
+              ;;
+            robot-wrapper)
+              robot=$(echo "$value" | tr -d '[:space:]')
+              ;;
+            slimmer)
+              slimmer=$(echo "$value" | tr -d '[:space:]')
+              ;;
+          esac
+        done < "$config_file"
     - name: get slimmer
-      run: wget -nc https://github.com/enanomapper/slimmer/releases/download/v1.0.2/slimmer-1.0.2-jar-with-dependencies.jar
+      run: wget -nc $slimmer
     - name: get robot
       run: |
         cd ./scripts/src/build-workflow
-        wget https://raw.githubusercontent.com/ontodev/robot/master/bin/robot
-        wget https://github.com/ontodev/robot/releases/download/v1.9.0/robot.jar
-        chmod 777 robo*
+        wget $robot
+        wget $robot_jar
   
   # slim all ontologies
   # Authorize running slim script

@@ -1,0 +1,26 @@
+name: Tests
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master 
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3
+
+    - name: Install dependencies
+      run: pip install -r scripts/src/tests/requirements.txt
+
+    - name: Run tests
+      run: python -m unittest discover scripts/src/tests/
