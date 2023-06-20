@@ -19,7 +19,7 @@ jobs:
       with:
        token: ${{ secrets.PAT }} 
     # Get slimmer and robot
-    - name: retrieve urls from config file
+    - name: add slimmer and robot URLs to environment
       run: |
         config_file="config.yaml"
         robot_jar=""
@@ -44,13 +44,16 @@ jobs:
         echo SLIMMER: $slimmer
         echo ROBOT JAR: $robot_jar
         echo ROBOT WRAPPER $robot
+        echo 'slimmer='${slimmer}'' >> $GITHUB_ENV
+        echo 'robot='${robot}'' >> $GITHUB_ENV
+        echo 'robot_jar='${robot_jar}'' >> GITHUB_ENV
     - name: get slimmer
-      run: wget $slimmer
+      run: wget ${{ env.slimmer }}
     - name: get robot
       run: |
         cd ./scripts/src/build-workflow
-        wget $robot
-        wget $robot_jar
+        wget ${{ env.robot }}
+        wget ${{ env.robot_jar}}
   
   # slim all ontologies
   # Authorize running slim script
