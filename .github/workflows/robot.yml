@@ -33,11 +33,15 @@ jobs:
                   ;;
               esac
             done < "$config_file"
+            echo 'robot='${robot}'' >> $GITHUB_ENV
+            echo 'robot_jar='${robot_jar}'' >> $GITHUB_ENV
+            echo ROBOT JAR: $robot_jar
+            echo ROBOT WRAPPER: $robot
         - name: get robot
           run: |
             ls
-            wget $robot
-            wget $robot_jar
+            wget ${{ env.robot }}
+            wget ${{ env.robot_jar }}
             mkdir -p robot-report
     
         - name: merge
