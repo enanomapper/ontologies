@@ -1,6 +1,9 @@
 #!/bin/bash
 # Read the ontology name (first argument) and change to its directory
 export ONTO=$1
+# Retrieve slimmer version from config file
+slimmer=$(grep -oP '(?<=slimmer: https://github.com/enanomapper/slimmer/releases/download/v1.0.3/)(\S+)' config.yaml)
+echo "Slimmer version: '${slimmer}'"
 wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.props
 wget -N  `grep "owl=" ${ONTO}.props | cut -d'=' -f2`
 wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.iris
@@ -26,7 +29,7 @@ else
     
     # Run slimmer
     
-    java -cp ../../slimmer-1.0.2-jar-with-dependencies.jar com.github.enanomapper.Slimmer .
+    java -cp ../../$slimmer com.github.enanomapper.Slimmer .
     
     # Remove original owl file
     ontology=$(basename `grep "owl=" ${ONTO}.props | cut -d'=' -f2`)
