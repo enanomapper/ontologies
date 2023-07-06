@@ -1,11 +1,11 @@
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
-SELECT ?subclass WHERE {
-  ?subclass rdfs:subClassOf obo:BFO_0000001 .
-  FILTER (?subclass != obo:UBERON_0001062 &&
-          ?subclass != obo:BFO_0000016 &&
-          ?subclass != obo:IAO_0000030 &&
-          ?subclass != obo:BFO_0000040 &&
-          ?subclass != obo:BFO_0000015 &&
-          ?subclass != obo:BFO_0000019)
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT ?class WHERE {
+  ?class a owl:Class .
+  FILTER NOT EXISTS {
+    ?class rdfs:subClassOf ?superclass .
+  }
+  FILTER (?class != obo:BFO_0000001)
 }
