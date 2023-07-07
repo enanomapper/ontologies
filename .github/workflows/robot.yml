@@ -72,4 +72,11 @@ jobs:
           with:
             name: report
             path: ./robot-report/* 
+        - name: Create issue about failure
+          if: failure()
+          uses: JasonEtco/create-an-issue@v2.5.0
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          with:
+            filename: .github/action-issue-template.md
             

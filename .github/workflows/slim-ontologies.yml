@@ -1,15 +1,15 @@
 name: Build slims
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master 
-      - slimmer-bump-test
-    paths:
-     - 'config.yaml'
-     - '.github/workflows/slim-ontologies.yml'
-     - 'config/*'
-     - 'scripts/src/build-workflow/*'
+  #push:
+  #  branches:
+  #    - master 
+  #    - slimmer-bump-test
+  #  paths:
+  #   - 'config.yaml'
+  #   - '.github/workflows/slim-ontologies.yml'
+  #   - 'config/*'
+  #   - 'scripts/src/build-workflow/*'
   schedule:
     - cron: 1 0 1 1-12 *
 jobs:
@@ -193,9 +193,16 @@ jobs:
   # Commit and push
     - name: Commit OWL files
       run: |
+        git pull
         git add external-dev/*.owl
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -m "Actions - slim updated" ./external-dev/*.owl
         git push -f
-  
+    - name: Create issue about failure
+      if: failure()
+      uses: JasonEtco/create-an-issue@v2.5.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        filename: .github/action-issue-template.md
