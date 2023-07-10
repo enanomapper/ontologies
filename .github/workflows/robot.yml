@@ -61,12 +61,28 @@ jobs:
         - name: diff
           run: |
             sh robot diff --left enanomapper-full.owl --right enanomapper-dev-full.owl --output robot-report/diff.txt
-        
+        - name: reason
+          run: |
+            sh robot reason --reasoner ELK --input enanomapper-dev-full.owl -D debug-dev.owl
+            sh robot reason --reasoner ELK --input enanomapper-full.owl -D debug.owl
+            FILE=debug*
+              if test -f "$FILE"; then
+                echo $(DEBUG=True) >> $GITHUB_ENV  
+              fi
+
         - name: rm temp owl files
           run: |
             rm enanomapper-full.owl
             rm enanomapper-dev-full.owl
-             
+            
+  # Upload debug artifacts
+        - name: 'Upload enanomapper* artifacts'
+          uses: actions/upload-artifact@v3
+          if: ${{ env.DEBUG }}
+          with:
+            name: debug-files
+            path: debug*
+            
         - name: 'Upload report'
           uses: actions/upload-artifact@v3
           with:
