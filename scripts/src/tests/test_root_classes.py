@@ -21,9 +21,9 @@ class RobotTest(unittest.TestCase):
         # Run the command
         subprocess.run(["wget", robot_wrapper])
         subprocess.run(["wget", robot_jar])
-        subprocess.run(["sh", "robot", "merge", "-i", "enanomapper.owl", "-o", "enanomapper-full.owl"])
-        subprocess.run(["sh", "robot", "query", "--input", "enanomapper-full.owl", "--query", "scripts/src/tests/assets/test_root.sparql", "result-root"])
-        subprocess.run(["sh", "robot", "query", "--input", "enanomapper-full.owl", "--query", "scripts/src/tests/assets/test_entities.sparql", "result-entities"])
+        subprocess.run(["sh", "robot", "merge", "-i", "enanomapper-dev.owl", "-o", "enanomapper-dev-full.owl"])
+        subprocess.run(["sh", "robot", "query", "--input", "enanomapper-dev-full.owl", "--query", "scripts/src/tests/assets/test_root.sparql", "result-root"])
+        subprocess.run(["sh", "robot", "query", "--input", "enanomapper-dev-full.owl", "--query", "scripts/src/tests/assets/test_entities.sparql", "result-entities"])
         subprocess.run(["cat", "result"])
         
         # Check the contents of the results files, fail or not fail
