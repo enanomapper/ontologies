@@ -29,7 +29,16 @@ class OWLIntegrityTest(unittest.TestCase):
         for version in config['versions']:
             file = os.path.join(self.repo_path, f'enanomapper{version}.owl')
             self.assertTrue(self.is_owl_file_valid(file), f"Invalid eNanoMapper ontology OWL file: enanomapper{version}.owl")
-
+        internal = os.listdir('internal')
+        internal_dev = os.listdir('internal-dev')
+        for i in internal:
+            if 'OWL'.casefold() in i:
+                file = os.path.join(self.repo_path, 'internal', i)
+                self.assertTrue(self.is_owl_file_valid(file), f"Invalid eNanoMapper internal module OWL file: {i}")
+        for i in internal_dev:
+            if 'OWL'.casefold() in i:
+                file = os.path.join(self.repo_path, 'internal-dev', i)
+                self.assertTrue(self.is_owl_file_valid(file), f"Invalid eNanoMapper internal-dev module OWL file: {i}")
     def load_configuration(self):
         """Load the configuration from the YAML file and return it as a dictionary."""
         
@@ -44,6 +53,7 @@ class OWLIntegrityTest(unittest.TestCase):
         Returns:
             bool: True if the file is valid, False otherwise.
         """
+        
         try:
             graph = Graph()
             graph.parse(file_path, format='xml')
@@ -51,6 +61,7 @@ class OWLIntegrityTest(unittest.TestCase):
         except Exception as e:
             print(f"Error parsing OWL file: {file_path}\n{e}")
             return False
+
 
 
 if __name__ == '__main__':
