@@ -1,0 +1,33 @@
+name: File integrity tests
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master 
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3
+
+    - name: Install dependencies
+      run: pip install -r scripts/src/tests/integrity_tests/requirements.txt
+
+    - name: Run tests
+      run: python -m unittest discover scripts/src/tests/integrity_tests/
+    - name: Create issue about failure
+      if: failure()
+      uses: JasonEtco/create-an-issue@v2.5.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        filename: .github/action-issue-template.md

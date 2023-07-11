@@ -122,13 +122,13 @@ Making Releases
 ===============
 
 
-1. Test if the `enanomapper.owl` can be loaded without errors in Protégé
-2. check if the metadata in the enanomapper.owl is up to data (e.g. names of people who submitted PRs)
-3. Copy the internal ontologies in `ontologies/internal-dev/` to `ontologies/internal` and  `ontologies/external-dev/` to `ontologies/external`
-4. Update for `enanomapper.owl` and `enanomapper-dev.owl`:
+1. Check if the metadata in the enanomapper.owl is up to data (e.g. names of people who submitted PRs)
+2. Copy the internal ontologies in `ontologies/internal-dev/` to `ontologies/internal` and  `ontologies/external-dev/` to `ontologies/external`
+3. Update for `enanomapper.owl` and `enanomapper-dev.owl`:
    * `owl:versionInfo`
    * `owl:versionIRI` (only `enanomapper.owl`)
-5. Create a folder `releases/{version}` and store there a copy of the latest `enanomapper.owl` file
+4. Create a folder `releases/{version}` and store there a copy of the latest `enanomapper.owl` file
+5. Manually dispatch the `prerelease-test` workflow and make the pertinent fixes if it fails. Please wait until the `pages-build-deployment` action finishes running to ensure `enanomapper.owl` imports the latest modules.
 6. Update the CITATION.cff
    * `title`
    * `version`

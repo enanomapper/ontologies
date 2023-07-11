@@ -1,10 +1,7 @@
-name: Tests
+name: Pre-release tests
 
 on:
-  pull_request:
-  push:
-    branches:
-      - master 
+  workflow_dispatch:
 
 jobs:
   test:
@@ -20,10 +17,10 @@ jobs:
         python-version: 3
 
     - name: Install dependencies
-      run: pip install -r scripts/src/tests/requirements.txt
+      run: pip install -r scripts/src/tests/prerelease_tests/requirements.txt
 
     - name: Run tests
-      run: python -m unittest discover scripts/src/tests/
+      run: python -m unittest discover scripts/src/tests/prerelease_tests/
     - name: Create issue about failure
       if: failure()
       uses: JasonEtco/create-an-issue@v2.5.0
