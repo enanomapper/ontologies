@@ -10,6 +10,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://enanomapper.github.io/ontologies/internal/bao-ext.owl">
         <dc:contributor>Egon Willighagen</dc:contributor>
+        <dc:contributor>Javier Millan Acosta</dc:contributor>
     </owl:Ontology>
     
 
@@ -31,8 +32,6 @@
         <rdfs:label xml:lang="en">IC50 (Hill model)</rdfs:label>
     </owl:Class>
    
-   
-
     <!-- http://purl.enanomapper.net/onto/ENM_8100002 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_8100002">
@@ -127,6 +126,33 @@
     </owl:Class>
     
 
+    <!-- http://purl.enanomapper.org/onto/ENM_9000268 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000268">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010019"/>
+        <rdfs:label xml:lang="en">Sodium dodecyl sulfate polyacrylamide gel electrophoresis (SDS-PAGE) assay</rdfs:label>
+        <rdfs:label xml:lang="en">SDS-PAGE assay</rdfs:label>
+        <obo:IAO_0000115>Assay used to separate proteins according to their electrophoretic mobility, which is a function of their dimensions, conformation and charge.</obo:IAO_0000115>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000266 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000266">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003009"/>
+        <obo:IAO_0000115>Cell proliferation assay used to assess cytotoxicity. It measures the extracellular conversion of tetrazolium salt WST-8 to formazan products by intracellular mitochondrial oxidoreductases in viable cells.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">WST-8</rdfs:label>
+        <rdfs:label xml:lang="en">WST-8 Cell Proliferation Assay</rdfs:label>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000269 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000269">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>Bioassay which measures the opposition to the flow of electrical current (impedance) through tissues, cell monolayers and single cells when an external alternating current (AC) field is applied. 
+        This assay is label-free and constitutes a reliable alternative with the potential to become a method of choice for the initial screening of toxic effects in nanomaterials. Impedance-based monitoring takes advantage of the passive properties of an object, which occur when the object is composed of dissipative elements, such as ohmic resistors or conservative elements, such as capacitances and inductances . It measures the opposition to the flow of electrical current (impedance) through tissues, cell monolayers and single cells when an external alternating current (AC) field is applied.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Bioimpedance assay</rdfs:label>
+        <rdfs:label xml:lang="en">Impedance-based cell assay</rdfs:label>
+    </owl:Class>
 
 </rdf:RDF>
 
