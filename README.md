@@ -1,6 +1,6 @@
-The eNanoMapper Ontology
+The eNanoMapper Ontology 
 ============
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7503729.svg)](https://doi.org/10.5281/zenodo.7503729)
 [![Build slims](https://github.com/enanomapper/ontologies/actions/workflows/build.yml/badge.svg)](https://github.com/enanomapper/ontologies/actions/workflows/build.yml)
 [![On push file integrity tests](https://github.com/enanomapper/ontologies/actions/workflows/on-push-tests.yml/badge.svg)](https://github.com/enanomapper/ontologies/actions/workflows/on-push-tests.yml)
 [![ROBOT enanomapper-dev build test](https://github.com/enanomapper/ontologies/actions/workflows/dev-tests.yml/badge.svg)](https://github.com/enanomapper/ontologies/actions/workflows/dev-tests.yml)
