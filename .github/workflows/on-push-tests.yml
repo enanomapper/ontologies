@@ -1,10 +1,10 @@
 name: On push file integrity tests
 
 on:
-  pull_request:
-  push:
-    branches:
-      - master 
+  workflow_run:
+    workflows: ["pages-build-deployment"] #Need to wait until the latest modules are deployed to the site
+    types:
+      - completed
 
 jobs:
   test:
