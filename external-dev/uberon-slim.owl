@@ -157,7 +157,7 @@
         <doap:bug-database rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/issues/</doap:bug-database>
         <doap:mailing-list rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://lists.sourceforge.net/lists/listinfo/obo-anatomy</doap:mailing-list>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2023-07-12 13:43:41</oboInOwl:date>
+        <oboInOwl:date>2023-07-12 16:05:49</oboInOwl:date>
         <oboInOwl:default-namespace>uberon</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:treat-xrefs-as-equivalent>AEO</oboInOwl:treat-xrefs-as-equivalent>
@@ -3388,35 +3388,72 @@ WHERE {
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
-        <obo:BFO_0000179>entity</obo:BFO_0000179>
-        <obo:BFO_0000180>Entity</obo:BFO_0000180>
-        <obo:IAO_0000112 xml:lang="en">Julius Caesar</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">Verdi’s Requiem</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the Second World War</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">your body mass index</obo:IAO_0000112>
-        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Entity doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example Werner Ceusters &apos;portions of reality&apos; include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, &apos;How to track absolutely everything&apos; at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf</obo:IAO_0000116>
-        <obo:IAO_0000600 xml:lang="en">An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])</obo:IAO_0000600>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <obo:BFO_0000179>material</obo:BFO_0000179>
+        <obo:BFO_0000180>MaterialEntity</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">a flame</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a forest fire</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a human being</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a hurricane</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a photon</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a puff of smoke</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a sea wave</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a tornado</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an aggregate of human beings.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an energy wave</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an epidemic</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the undetached arm of a human being</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Material entities (continuants) can preserve their identity even while gaining and losing material parts. Continuants are contrasted with occurrents, which unfold themselves in successive temporal parts or phases [60</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Object, Fiat Object Part and Object Aggregate are not intended to be exhaustive of Material Entity. Users are invited to propose new subcategories of Material Entity.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here.</obo:IAO_0000116>
+        <obo:IAO_0000600 xml:lang="en">A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])</obo:IAO_0000600>
+        <obo:IAO_0000601 xml:lang="en">Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">every entity of which a material entity is continuant part is also a material entity. (axiom label in BFO2 Reference: [021-002])</obo:IAO_0000601>
+        <obo:IAO_0000602>(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] </obo:IAO_0000602>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <rdfs:label xml:lang="en">entity</rdfs:label>
+        <rdfs:label xml:lang="en">material entity</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <owl:annotatedTarget xml:lang="en">Entity doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example Werner Ceusters &apos;portions of reality&apos; include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, &apos;How to track absolutely everything&apos; at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000004"/>
-        <rdfs:comment>per discussion with Barry Smith</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/019-002"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <owl:annotatedTarget xml:lang="en">An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/001-001"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/020-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">every entity of which a material entity is continuant part is also a material entity. (axiom label in BFO2 Reference: [021-002])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/021-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/019-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/021-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/020-002"/>
     </owl:Axiom>
     
 
@@ -3561,7 +3598,7 @@ WHERE {
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
@@ -3708,7 +3745,7 @@ WHERE {
         <owl:annotatedTarget>digestive gland</owl:annotatedTarget>
         <oboInOwl:hasDbXref>BTO:0000345</oboInOwl:hasDbXref>
     </owl:Axiom>
-    <rdf:Description rdf:nodeID="genid52">
+    <rdf:Description rdf:nodeID="genid56">
         <oboInOwl:hasDbXref>Wikipedia:Articular</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://github.com/obophenotype/uberon/issues/98</oboInOwl:hasDbXref>
     </rdf:Description>
@@ -3718,11 +3755,11 @@ WHERE {
     <rdf:Description>
         <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid55">
+    <rdf:Description rdf:nodeID="genid59">
         <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid56">
+    <rdf:Description rdf:nodeID="genid60">
         <oboInOwl:hasDbXref>BIRNLEX:1755</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://github.com/obophenotype/uberon/issues/1161</oboInOwl:hasDbXref>
     </rdf:Description>
@@ -3819,7 +3856,7 @@ WHERE {
     <rdf:Description>
         <oboInOwl:hasDbXref>Wikipedia:Primordial_phallus</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid88">
+    <rdf:Description rdf:nodeID="genid92">
         <oboInOwl:hasDbXref>GO:0021729</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GO_REF:0000021</oboInOwl:hasDbXref>
     </rdf:Description>
@@ -3850,7 +3887,7 @@ WHERE {
     <rdf:Description>
         <oboInOwl:hasDbXref>http://www.embryology.ch/anglais/turinary/urinhaute03.html</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid98">
+    <rdf:Description rdf:nodeID="genid102">
         <oboInOwl:hasDbXref>UBERON:CL_meeting_20110725</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://retina.anatomy.upenn.edu/~lance/eye/retina_gross.html</oboInOwl:hasDbXref>
     </rdf:Description>
@@ -3896,7 +3933,7 @@ WHERE {
     <rdf:Description>
         <oboInOwl:hasDbXref>PMID:22622577</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid113">
+    <rdf:Description rdf:nodeID="genid117">
         <oboInOwl:hasDbXref>https://github.com/obophenotype/uberon/issues/6</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://github.com/obophenotype/uberon/issues/7</oboInOwl:hasDbXref>
     </rdf:Description>
@@ -3918,7 +3955,7 @@ WHERE {
     <rdf:Description>
         <oboInOwl:hasDbXref>PMID:23153189</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid120">
+    <rdf:Description rdf:nodeID="genid124">
         <oboInOwl:hasDbXref>Wikipedia:External_sphincter_muscle_of_female_urethra</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:External_sphincter_muscle_of_male_urethra</oboInOwl:hasDbXref>
     </rdf:Description>
@@ -3931,7 +3968,7 @@ WHERE {
     <rdf:Description>
         <oboInOwl:hasDbXref>Wikipedia:Sclera#Histology</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid124">
+    <rdf:Description rdf:nodeID="genid128">
         <oboInOwl:hasDbXref>GO:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Hypoblast</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFIN:cvs</oboInOwl:hasDbXref>
@@ -4072,14 +4109,14 @@ WHERE {
     <rdf:Description>
         <oboInOwl:hasDbXref>Wikipedia:Iris_muscle</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid170">
+    <rdf:Description rdf:nodeID="genid174">
         <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
     </rdf:Description>
     <rdf:Description>
         <oboInOwl:hasDbXref>BIRNLEX:1732</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid172">
+    <rdf:Description rdf:nodeID="genid176">
         <oboInOwl:hasDbXref>FlyBase:FBrf0007733</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0064792</oboInOwl:hasDbXref>
     </rdf:Description>
@@ -4098,11 +4135,11 @@ WHERE {
     <rdf:Description>
         <oboInOwl:hasDbXref>Wikipedia:Pisiform_joint</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid178">
+    <rdf:Description rdf:nodeID="genid182">
         <oboInOwl:hasDbXref>PMID:20557782</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:20566102</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid179">
+    <rdf:Description rdf:nodeID="genid183">
         <oboInOwl:hasDbXref>FlyBase:FBrf0002482</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0007196</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0007735</oboInOwl:hasDbXref>
@@ -4111,11 +4148,11 @@ WHERE {
     <rdf:Description>
         <oboInOwl:hasDbXref>Wikipedia:Trapezoid_bone</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid181">
+    <rdf:Description rdf:nodeID="genid185">
         <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid182">
+    <rdf:Description rdf:nodeID="genid186">
         <oboInOwl:hasDbXref>GO:0003285</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Septum_secondum</oboInOwl:hasDbXref>
     </rdf:Description>
@@ -4125,7 +4162,7 @@ WHERE {
     <rdf:Description>
         <oboInOwl:hasDbXref>ISBN:0073040584</oboInOwl:hasDbXref>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid185">
+    <rdf:Description rdf:nodeID="genid189">
         <oboInOwl:hasDbXref>PMID:14595018</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://sourceforge.net/tracker/?func=detail&amp;aid=3123600&amp;group_id=76834&amp;atid=1205376</oboInOwl:hasDbXref>
     </rdf:Description>
