@@ -1,15 +1,10 @@
 name: Build slims
 on:
   workflow_dispatch:
-  #push:
-  #  branches:
-  #    - master 
-  #    - slimmer-bump-test
-  #  paths:
-  #   - 'config.yaml'
-  #   - '.github/workflows/slim-ontologies.yml'
-  #   - 'config/*'
-  #   - 'scripts/src/build-workflow/*'
+  push:
+    paths:
+     - 'config.yaml'
+     - '.github/workflows/build.yml'
   schedule:
     - cron: 1 0 1 1-12 *
 jobs:
