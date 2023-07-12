@@ -32,16 +32,19 @@ class RobotTest(unittest.TestCase):
         else:
             res= "failed"
 
-        if os.stat('result-root').st_size==0:
+        if os.stat('result-entities').st_size==0:
             res2 = "passed"
         else:
             res2= "failed"
 
             
-
+        with open('result-root', 'r') as f:
+            res_class = f.read()
+        with open('result-entities', 'r') as f:
+            res_entities = f.read()
         # Assert that the file was empty (no unexpected subclasses of entity)
-        self.assertEqual(res, "passed", "Test failed: there is a root element other than entity (OBO:BFO_0000001)")
-        self.assertEqual(res2, "passed",  "Test failed: please check which classes are under entity (OBO:BFO_0000001)")
+        self.assertEqual(res, "passed", f"Test failed: there is a root element other than entity (OBO:BFO_0000001): {res_class}")
+        self.assertEqual(res2, "passed",  f"Test failed: please check which classes are under entity (OBO:BFO_0000001): {res_entities}")
 
 
     def load_configuration(self):
