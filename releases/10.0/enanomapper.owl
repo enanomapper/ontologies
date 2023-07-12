@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.enanomapper.net/ontologies/enanomapper.owl#"
+     xml:base="http://www.enanomapper.net/ontologies/enanomapper.owl"
+     xmlns:entity_attribute3="http://purl.obolibrary.org/obo/envo-p/patterns/entity_attribute/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:obo1="http://purl.obolibrary.org/obo/"
+     xmlns:foo="http://geneontology.org/foo/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:envo="http://purl.obolibrary.org/obo/envo#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#"
+     xmlns:core4="http://purl.obolibrary.org/obo/core#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:Thesaurus="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:pato="http://purl.obolibrary.org/obo/pato#"
+     xmlns:cheminf2="http://www.semanticweb.org/ontologies/cheminf.owl#"
+     xmlns:uo="http://purl.obolibrary.org/obo/uo#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:cheminf-core="http://semanticscience.org/ontology/cheminf-core.owl#"
+     xmlns:uberon="http://purl.obolibrary.org/obo/uberon#"
+     xmlns:pav="http://purl.org/pav/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:resource="http://semanticscience.org/resource/"
+     xmlns:patterns="http://www.co-ode.org/patterns#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:chmo="http://purl.obolibrary.org/obo/chmo#"
+     xmlns:npo="http://purl.bioontology.org/ontology/npo#"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:entity_attribute="http://purl.obolibrary.org/obo/oba/patterns/entity_attribute/"
+     xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
+     xmlns:ccont="http://livercancer.imbi.uni-heidelberg.de/ccont#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:cheminf="http://semanticscience.org/ontology/cheminf.owl#"
+     xmlns:entity_quality="http://purl.obolibrary.org/obo/oba/patterns/entity_quality/"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:obo="http://purl.obolibrary.org/obo#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#">
+    <owl:Ontology rdf:about="http://enanomapper.github.io/ontologies/enanomapper.owl">
+    <owl:imports rdf:resource="http://enanomapper.github.io/ontologies/internal/bao-ext.owl"/>
+	<owl:imports rdf:resource="http://enanomapper.github.io/ontologies/internal/bfo-ext.owl"/>
+    <owl:imports rdf:resource="http://enanomapper.github.io/ontologies/internal/ncit-ext.owl"/>
+	<owl:imports rdf:resource="http://enanomapper.github.io/ontologies/internal/chebi-ext.owl"/>
+	<owl:imports rdf:resource="http://enanomapper.github.io/ontologies/internal/chmo-ext.owl"/>
+	<owl:imports rdf:resource="http://enanomapper.github.io/ontologies/internal/endpoints.owl"/>
+	<owl:imports rdf:resource="http://enanomapper.github.io/ontologies/internal/iao-ext.owl"/>
+        <owl:imports rdf:resource="http://enanomapper.github.io/ontologies/internal/npo-ext.owl"/>
+        <owl:imports rdf:resource="http://enanomapper.github.io/ontologies/internal/obi-ext.owl"/>
+        <owl:imports rdf:resource="http://enanomapper.github.io/ontologies/internal/pato-ext.owl"/>
+        <owl:imports rdf:resource="http://enanomapper.github.io/ontologies/internal/wikidata.owl"/>
+        <owl:imports rdf:resource="http://enanomapper.github.io/ontologies//enanomapper-auto.owl"/>
+        <owl:versionInfo>10.0</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://enanomapper.github.io/ontologies/releases/10.0/enanomapper.owl"/>
+        <dc:contributor>The eNanoMapper Consortium</dc:contributor>
+        <dc:contributor>The NanoCommons Consortium</dc:contributor>
+        <dc:contributor>The RiskGONE Consortium</dc:contributor>
+        <dc:contributor>The ACEnano - Analytical and Characterisation Excellence in nanomaterial risk assessment: A tiered approach (Grant Agreement 720952) Consortium</dc:contributor>
+        <dc:contributor>NanoinformaTIX - Development and Implementation of a Sustainable Modelling Platform for NanoInformatics (Grant Agreement 814426) Consortium</dc:contributor>
+        <rdfs:comment>The eNanoMapper project (https://www.enanomapper.net/), NanoCommons project (https://www.nanocommons.eu/) and ACEnano project (http://acenano-project.eu/) are creating a pan-European computational infrastructure for toxicological data management for ENMs, based on semantic web standards and ontologies. This ontology is an application ontology targeting the full domain of nanomaterial safety assessment. It re-uses several other ontologies including the NPO, CHEMINF, ChEBI, and ENVO.</rdfs:comment>
+        <dc:contributor>Nina Jeliazkova</dc:contributor>
+        <dc:contributor>Janna Hastings</dc:contributor>
+        <dc:contributor>Egon Willighagen</dc:contributor>
+        <dc:contributor>Jiakang Chang</dc:contributor>
+        <dc:license>CC-BY 3.0 https://creativecommons.org/licenses/by/3.0/</dc:license>
+        <dc:contributor>Friederike Ehrhart</dc:contributor>
+        <dc:contributor>Gareth Owen</dc:contributor>
+        <dc:contributor>Linda Rieswijk</dc:contributor>
+        <dc:contributor>Philip Doganis</dc:contributor>
+        <dc:contributor>Haralambos Sarimveis</dc:contributor>
+        <dc:contributor>Oana Florean</dc:contributor>
+        <dc:contributor>Denise Slenter</dc:contributor>
+        <dc:contributor>Laurent Winckers</dc:contributor>
+        <dc:contributor>Ali Ayadi</dc:contributor>
+        <dc:contributor>Javier Millan Acosta</dc:contributor>      
+        <dc:title>eNanoMapper ontology</dc:title>
+        <dc:description>The eNanoMapper project (https://www.enanomapper.net/), NanoCommons project (https://www.nanocommons.eu/) and ACEnano project (http://acenano-project.eu/) are creating a pan-European computational infrastructure for toxicological data management for ENMs, based on semantic web standards and ontologies. This ontology is an application ontology targeting the full domain of nanomaterial safety assessment. It re-uses several other ontologies including the NPO, CHEMINF, ChEBI, and ENVO.</dc:description> 
+    </owl:Ontology>
+</rdf:RDF>
+

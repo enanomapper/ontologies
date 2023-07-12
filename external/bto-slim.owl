@@ -11,14 +11,16 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/bto-slim.owl">
         <dc:description>A structured controlled vocabulary for the source of an enzyme comprising tissues, cell lines, cell types and cell cultures.</dc:description>
         <dc:title>The BRENDA Tissue Ontology (BTO)</dc:title>
+        <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <pav:importedFrom>http://purl.obolibrary.org/obo/bto.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>OBO-Edit 2.3.1</oboInOwl:auto-generated-by>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2023-01-04 12:24:30</oboInOwl:date>
+        <oboInOwl:date>2023-07-12 12:46:56</oboInOwl:date>
         <oboInOwl:date>23:10:2021 16:56</oboInOwl:date>
         <oboInOwl:default-namespace>BrendaTissueOBO</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
@@ -114,6 +116,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
@@ -336,6 +345,25 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BTO_0000759 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000759">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000062"/>
+        <obo:IAO_0000115>1: A large very vascular glandular organ of vertebrates that secretes bile and causes important changes in many of the substances contained in the blood (as by converting sugars into glycogen which it stores up until required and by forming urea). 2: Any of various large compound glands associated with the digestive tract of invertebrate animals and probably concerned with the secretion of digestive enzymes.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>BrendaTissueOBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>BTO:0000759</oboInOwl:id>
+        <rdfs:label>liver</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000759"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>1: A large very vascular glandular organ of vertebrates that secretes bile and causes important changes in many of the substances contained in the blood (as by converting sugars into glycogen which it stores up until required and by forming urea). 2: Any of various large compound glands associated with the digestive tract of invertebrate animals and probably concerned with the secretion of digestive enzymes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=liver</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BTO_0000763 -->
 
 
@@ -466,6 +494,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BTO_0004433 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0004433">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002888"/>
+        <obo:IAO_0000115>Human esophageal cell line; derived in 1986 from human esophageal autopsy tissue by transfection with plasmid pRSV-T consisting of the RSV-LTR promoter and the sequence encoding the simian virus 40 large T-antigen.</obo:IAO_0000115>
+        <oboInOwl:created_by>Marion</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-02-02T02:40:45Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>BrendaTissueOBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>HET1A cell</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>BTO:0004433</oboInOwl:id>
+        <rdfs:label>HET-1A cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0004433"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Human esophageal cell line; derived in 1986 from human esophageal autopsy tissue by transfection with plasmid pRSV-T consisting of the RSV-LTR promoter and the sequence encoding the simian virus 40 large T-antigen.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ATCC_American_Cell_Type_Culture_Collection:http://www.lgcstandards-atcc.org/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BTO_0004602 -->
 
 
@@ -502,6 +552,13 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002888 -->
+
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002888"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -518,6 +575,6 @@
 
 
 
-<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0) https://github.com/owlcs/owlapi/ -->
 
 

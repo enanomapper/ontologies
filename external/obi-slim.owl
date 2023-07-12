@@ -75,16 +75,16 @@
         <dc:creator xml:lang="en">Trish Whetzel</dc:creator>
         <dc:creator xml:lang="en">Yongqun He</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-07-31</dc:date>
-        <dc:description xml:lang="en">The Ontology for Biomedical Investigations (OBI) is build in a collaborative, international effort and will serve as a resource for annotating biomedical investigations, including the study design, protocols and instrumentation used, the data generated and the types of analysis performed on the data. This ontology arose from the Functional Genomics Investigation Ontology (FuGO) and will contain both terms that are common to all biomedical investigations, including functional genomics investigations and those that are more domain specific.</dc:description>
+        <dc:description xml:lang="en">An ontology for representing biomedical investigations, including study designs, the collection and preparation of the targets of investigation, assays, instrumentation and reagents used, as well as the data generated and the types of analysis performed on the data to reach conclusions, and their documentation.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">An ontology for the annotation of biomedical and functional genomics experiments.</dc:subject>
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title>Ontology for Biomedical Investigations</terms:title>
         <pav:importedFrom>http://purl.obolibrary.org/obo/obi.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2023-01-04 12:26:26</oboInOwl:date>
+        <oboInOwl:date>2023-07-12 13:43:02</oboInOwl:date>
         <rdfs:comment>Please cite the OBI consortium http://purl.obolibrary.org/obo/obi where traditional citation is called for. However it is adequate that individual terms be attributed simply by use of the identifying PURL for the term, in projects that refer to them.</rdfs:comment>
-        <owl:versionInfo>2022-12-14</owl:versionInfo>
+        <owl:versionInfo>2023-03-10</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
@@ -1090,6 +1090,13 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     
 
 
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
     <!-- http://www.w3.org/2001/XMLSchema#float -->
 
 
@@ -1179,7 +1186,6 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
         <obo:BFO_0000179>material</obo:BFO_0000179>
         <obo:BFO_0000180>MaterialEntity</obo:BFO_0000180>
         <obo:IAO_0000111 xml:lang="en">material entity</obo:IAO_0000111>
-        <obo:IAO_0000111>material entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">a flame</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">a forest fire</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">a human being</obo:IAO_0000112>
@@ -1207,7 +1213,6 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
         <obo:IAO_0000602>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] </obo:IAO_0000602>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">material entity</rdfs:label>
-        <rdfs:label>material entity</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -1300,6 +1305,27 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000701 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000701">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003540"/>
+        <obo:IAO_0000115>A method where a sample mixture is first separated by liquid chromatography before being ionised and characterised by mass-to-charge ratio and relative abundance using two mass spectrometers in series.</obo:IAO_0000115>
+        <obo:IAO_0000118>LC-MS-MS</obo:IAO_0000118>
+        <obo:IAO_0000118>LC-MS/MS</obo:IAO_0000118>
+        <obo:IAO_0000118>LC-MS2</obo:IAO_0000118>
+        <obo:IAO_0000118>LC-MSMS</obo:IAO_0000118>
+        <obo:IAO_0000118>LC/MS/MS</obo:IAO_0000118>
+        <obo:IAO_0000118>LCMSMS</obo:IAO_0000118>
+        <obo:IAO_0000118>liquid chromatography tandem mass spectrometry</obo:IAO_0000118>
+        <obo:IAO_0000118>liquid chromatography tandem mass spectroscopy</obo:IAO_0000118>
+        <obo:IAO_0000118>liquid chromatography-tandem mass spectroscopy</obo:IAO_0000118>
+        <obo:IAO_0000119>CHMO</obo:IAO_0000119>
+        <rdfs:label>liquid chromatography-tandem mass spectrometry</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
 
@@ -1347,7 +1373,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000112>Assay the wavelength of light emitted by excited Neon atoms. Count of geese flying over a house.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.</obo:IAO_0000115>
-        <obo:IAO_0000116>12/3/12: BP: the reference to the &apos;physical examination&apos; is included to point out that a prediction is not an assay, as that does not require physical examiniation. </obo:IAO_0000116>
+        <obo:IAO_0000116>12/3/12: BP: the reference to the &apos;physical examination&apos; is included to point out that a prediction is not an assay, as that does not require physical examiniation.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">measuring</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">scientific observation</obo:IAO_0000118>
@@ -3207,7 +3233,7 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000111>efficacy of epitope intervention experiment</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An assay that tests  if inducing an epitope specific immune response in an organism has an effect, such as the ability to prevent, treat or exacerbate diseases in the organism. </obo:IAO_0000115>
+        <obo:IAO_0000115>An assay that tests  if inducing an epitope specific immune response in an organism has an effect, such as the ability to prevent, treat or exacerbate diseases in the organism.</obo:IAO_0000115>
         <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000118>efficacy of in vivo intervention</obo:IAO_0000118>
         <rdfs:label>efficacy of epitope intervention experiment</rdfs:label>
@@ -3222,7 +3248,7 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001184"/>
         <obo:IAO_0000111>epitope protection from infectious challenge experiment</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An epitope protection experiment in which the ability of the epitope to protect the host from an infection is assessed. </obo:IAO_0000115>
+        <obo:IAO_0000115>An epitope protection experiment in which the ability of the epitope to protect the host from an infection is assessed.</obo:IAO_0000115>
         <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000118>protection from infectious challenge</obo:IAO_0000118>
         <rdfs:label>epitope protection from infectious challenge experiment</rdfs:label>
@@ -3237,7 +3263,7 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001184"/>
         <obo:IAO_0000111>epitope protection from tumor challenge experiment</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An epitope protection experiment in which the ability of the epitope to protect the host from developing tumors is assessed. </obo:IAO_0000115>
+        <obo:IAO_0000115>An epitope protection experiment in which the ability of the epitope to protect the host from developing tumors is assessed.</obo:IAO_0000115>
         <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000118>protection from tumor challenge</obo:IAO_0000118>
         <rdfs:label>epitope protection from tumor challenge experiment</rdfs:label>
@@ -3252,7 +3278,7 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001178"/>
         <obo:IAO_0000111>epitope protection experiment</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An efficacy of epitope intervention experiment that tests the efficacy of inducing an immune epitope response to prevent disease in a host. </obo:IAO_0000115>
+        <obo:IAO_0000115>An efficacy of epitope intervention experiment that tests the efficacy of inducing an immune epitope response to prevent disease in a host.</obo:IAO_0000115>
         <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000118>protection from challenge</obo:IAO_0000118>
         <rdfs:label>epitope protection experiment</rdfs:label>
@@ -3267,7 +3293,7 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001179"/>
         <obo:IAO_0000111>epitope protection from infectious challenge experiment based on pathogen burden</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An epitope protection from infectious challenge experiment in which the readout is a reduction in the presence of pathogens in the host compared to controls. </obo:IAO_0000115>
+        <obo:IAO_0000115>An epitope protection from infectious challenge experiment in which the readout is a reduction in the presence of pathogens in the host compared to controls.</obo:IAO_0000115>
         <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000118>burden after infectious challenge</obo:IAO_0000118>
         <rdfs:label>epitope protection from infectious challenge experiment based on pathogen burden</rdfs:label>
@@ -3315,7 +3341,7 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001184"/>
         <obo:IAO_0000111>epitope protection experiment based on survival</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An epitope protection experiment that determines the success of the epitope intervention based on increased survival of the host. </obo:IAO_0000115>
+        <obo:IAO_0000115>An epitope protection experiment that determines the success of the epitope intervention based on increased survival of the host.</obo:IAO_0000115>
         <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000118>host survival after challenge</obo:IAO_0000118>
         <rdfs:label>epitope protection experiment based on survival</rdfs:label>
@@ -5924,7 +5950,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000115>A MHC ligand processing and presentation assay in which the presence of a specific ligand in an eluate is detected using the response of T cells that are known to be monospecific for that ligand as a readout.</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON:Randi Vita, Jason Greenbaum, Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000119>IEDB</obo:IAO_0000119>
-        <obo:OBI_9991118>ligand presentation|T cell recognition </obo:OBI_9991118>
+        <obo:OBI_9991118>ligand presentation|T cell recognition</obo:OBI_9991118>
         <rdfs:label>monospecific T cell recognition assay measuring MHC ligand processing and presentation</rdfs:label>
     </owl:Class>
     
@@ -6036,7 +6062,7 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001178"/>
         <obo:IAO_0000111>epitope tolerance induction experiment</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An efficacy of epitope intervention experiment that tests the ability of the intervention to decrease an existing immune response </obo:IAO_0000115>
+        <obo:IAO_0000115>An efficacy of epitope intervention experiment that tests the ability of the intervention to decrease an existing immune response</obo:IAO_0000115>
         <obo:IAO_0000117>IEDB</obo:IAO_0000117>
         <obo:IAO_0000118>tolerance induction</obo:IAO_0000118>
         <obo:IAO_0000119>IEDB</obo:IAO_0000119>
@@ -6199,7 +6225,7 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_1110125"/>
         <obo:IAO_0000111>coelution assay measuring MHC ligand processing and presentation using T cell recognition of HPLC fractionated eluate compared to synthetic ligand</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A MHC ligand processing and presentation assay in which an HPL chromatography is run to separate an input mixture of ligands eluted from MHC into fractions. These fractions are tested for recognition by T cells and compared to the recognition of a synthetic ligand that is presumed to be the recognized epitope. Identical HPLC fractionation and T cell recognition patterns confirm that the specific ligand was presented by MHC molecules. </obo:IAO_0000115>
+        <obo:IAO_0000115>A MHC ligand processing and presentation assay in which an HPL chromatography is run to separate an input mixture of ligands eluted from MHC into fractions. These fractions are tested for recognition by T cells and compared to the recognition of a synthetic ligand that is presumed to be the recognized epitope. Identical HPLC fractionation and T cell recognition patterns confirm that the specific ligand was presented by MHC molecules.</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON:Randi Vita, Jason Greenbaum, Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000119>IEDB</obo:IAO_0000119>
         <obo:OBI_9991118>ligand presentation|coelution</obo:OBI_9991118>
@@ -6267,7 +6293,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000115>A mass spectrometry of MHC ligands that identifies eluted ligands from secreted MHC.</obo:IAO_0000115>
         <obo:IAO_0000117>IEDB</obo:IAO_0000117>
         <obo:IAO_0000119>IEDB</obo:IAO_0000119>
-        <obo:OBI_9991118>ligand presentation|secreted MHC/mass spectrometry </obo:OBI_9991118>
+        <obo:OBI_9991118>ligand presentation|secreted MHC/mass spectrometry</obo:OBI_9991118>
         <rdfs:label>mass spectrometry assay measuring MHC ligand processing and presentation of MHC ligands eluted from secreted MHC</rdfs:label>
     </owl:Class>
     
@@ -7304,14 +7330,15 @@ Previous. An information content entity is a non-realizable information entity t
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001624">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <obo:IAO_0000111>organism identification assay</obo:IAO_0000111>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
+        <obo:IAO_0000111>organism species detection assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An assay that identifies the organism species in a specimen.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that identifies the organism species in a specimen.</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000118>organism identification assay</obo:IAO_0000118>
         <obo:IAO_0000119>NIAID GSCID-BRC metadata working group</obo:IAO_0000119>
-        <rdfs:label>organism identification assay</rdfs:label>
+        <rdfs:label>organism species detection assay</rdfs:label>
     </owl:Class>
     
 
@@ -8474,7 +8501,7 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003146"/>
         <obo:IAO_0000111>assay measuring a binding constant of a B cell epitope:antibody complex</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A B cell epitope recognition assay that quantitavely characterizes the binding of an antibody / BCR with a ligand by determining a binding constant. </obo:IAO_0000115>
+        <obo:IAO_0000115>A B cell epitope recognition assay that quantitavely characterizes the binding of an antibody / BCR with a ligand by determining a binding constant.</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON:Randi Vita, Jason Greenbaum, Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000119>IEDB</obo:IAO_0000119>
         <obo:OBI_9991118>binding constant|binding assay</obo:OBI_9991118>
@@ -11967,7 +11994,7 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003147"/>
         <obo:IAO_0000111>assay measuring a binding constant of a T cell epitope:MHC:TCR complex</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A T cell epitope recognition assay that quantitavely characterizes the binding of a TCR with a ligand by determining a binding constant. </obo:IAO_0000115>
+        <obo:IAO_0000115>A T cell epitope recognition assay that quantitavely characterizes the binding of a TCR with a ligand by determining a binding constant.</obo:IAO_0000115>
         <obo:IAO_0000117>IEDB</obo:IAO_0000117>
         <obo:IAO_0000119>IEDB</obo:IAO_0000119>
         <obo:OBI_9991118>binding constant|binding assay</obo:OBI_9991118>
@@ -12467,7 +12494,7 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002107"/>
         <obo:IAO_0000111>bio-layer interferometry assay measuring the on rate [kon] of a B cell epitope:antibody complex</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A bio-layer interferometry assay that measures the on rate of an antigen with an antibody. </obo:IAO_0000115>
+        <obo:IAO_0000115>A bio-layer interferometry assay that measures the on rate of an antigen with an antibody.</obo:IAO_0000115>
         <obo:IAO_0000117>IEDB</obo:IAO_0000117>
         <obo:IAO_0000119>IEDB</obo:IAO_0000119>
         <obo:OBI_9991118>on rate|bio-layer interferometry assay|M^-1s^-1</obo:OBI_9991118>
@@ -12518,7 +12545,7 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002107"/>
         <obo:IAO_0000111>bio-layer interferometry assay measuring the dissociation constant [KD] of a B cell epitope:antibody complex</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A bio-layer interferometry assay that measures the dissociation constant [KD] of an antigen with an antibody. </obo:IAO_0000115>
+        <obo:IAO_0000115>A bio-layer interferometry assay that measures the dissociation constant [KD] of an antigen with an antibody.</obo:IAO_0000115>
         <obo:IAO_0000117>IEDB</obo:IAO_0000117>
         <obo:IAO_0000119>IEDB</obo:IAO_0000119>
         <obo:OBI_9991118>dissociation constant KD|bio-layer interferometry assay|nM</obo:OBI_9991118>
@@ -12676,7 +12703,7 @@ https://www.doi.org/</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002115">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
         <obo:IAO_0000111>cytometry time of flight assay</obo:IAO_0000111>
-        <obo:IAO_0000112>Whole human blood samples were incubated with lipopolysaccharide (LPS) to examine dose-dependent signaling responses within the toll-like receptor 4 (TLR4) pathway. After LPS stimulation, rare earth metal tagged antibodies against phenotypic markers were used to stain the blood sample (Nd143-CD45RA, Nd145-CD4, Er170-CD3, Sm152-TCR__, Pr141-CD7, Nd146-CD8, Nd142-CD19). A Fluidigm CyTOF version 1 instrument equipped with CyTOF software version 5.1.648 was used to measure and analyze the levels of antibody staining refelctive of the level of expression of those surface receptors.</obo:IAO_0000112>
+        <obo:IAO_0000112>Whole human blood samples were incubated with lipopolysaccharide (LPS) to examine dose-dependent signaling responses within the toll-like receptor 4 (TLR4) pathway. After LPS stimulation, rare earth metal tagged antibodies against phenotypic markers were used to stain the blood sample (Nd143-CD45RA, Nd145-CD4, Er170-CD3, Sm152-TCR__, Pr141-CD7, Nd146-CD8, Nd142-CD19). A Fluidigm CyTOF version 1 instrument equipped with CyTOF software version 5.1.648 was used to measure and analyze the levels of antibody staining reflective of the level of expression of those surface receptors.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A cytometry assay in which the presence of molecules of interest on or in cells is indicated by binding of antibodies labeled with rare earth element tags which are detected by time-of-flight mass spectrometry.</obo:IAO_0000115>
         <obo:IAO_0000117>ImmPort</obo:IAO_0000117>
@@ -14043,12 +14070,11 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002489">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
         <obo:IAO_0000111>differential medium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>an organism identification assay that uses a differential medium to achieve its objective</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that uses a differential medium to achieve its objective.</obo:IAO_0000115>
         <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
-        <obo:IAO_0000118>bacteriological assay</obo:IAO_0000118>
         <obo:IAO_0000119>EuPathDB, https://www.uwyo.edu/molb2210_lab/info/biochemical_tests.htm</obo:IAO_0000119>
         <rdfs:label>differential medium assay</rdfs:label>
     </owl:Class>
@@ -14492,11 +14518,11 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002649">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
         <obo:IAO_0000111>blood microbiology assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115>An organism identification assay that identifies a microorganism in a blood specimen.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that detects microorganisms in a blood specimen.</obo:IAO_0000115>
         <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1064</obo:IAO_0000233>
         <rdfs:label>blood microbiology assay</rdfs:label>
@@ -15415,10 +15441,10 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002728">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
         <obo:IAO_0000111>pathogen detection assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An organism identification assay that aims to detect pathogens.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that detects pathogens.</obo:IAO_0000115>
         <obo:IAO_0000117>VEuPathDB</obo:IAO_0000117>
         <obo:IAO_0000118>pathogen detection method</obo:IAO_0000118>
         <obo:IAO_0000119>IRO:0000137</obo:IAO_0000119>
@@ -15544,16 +15570,16 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002735">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
-        <obo:IAO_0000111>organism identification by size assay</obo:IAO_0000111>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
+        <obo:IAO_0000111>organism detection by size assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An organism identification assay that is based on the size of organism.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that is based on the size of organism.</obo:IAO_0000115>
         <obo:IAO_0000117>VEuPathDB</obo:IAO_0000117>
         <obo:IAO_0000118>by size</obo:IAO_0000118>
         <obo:IAO_0000119>IRO:0000145</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1117</obo:IAO_0000233>
         <obo:IAO_0000234>VEuPathDB</obo:IAO_0000234>
-        <rdfs:label>organism identification by size assay</rdfs:label>
+        <rdfs:label>organism detection by size assay</rdfs:label>
     </owl:Class>
     
 
@@ -15562,16 +15588,16 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002736">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
-        <obo:IAO_0000111>organism identification by cross mating assay</obo:IAO_0000111>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
+        <obo:IAO_0000111>organism detection by cross mating assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An organism identification assay that is based on genetic crossings between specimens collected in the field to determine whether fertile progeny is produced.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that is based on genetic crossings between specimens collected in the field to determine whether fertile progeny is produced.</obo:IAO_0000115>
         <obo:IAO_0000117>VEuPathDB</obo:IAO_0000117>
         <obo:IAO_0000118>cross mating experiment</obo:IAO_0000118>
         <obo:IAO_0000119>MIRO:30000036</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1117</obo:IAO_0000233>
         <obo:IAO_0000234>VEuPathDB</obo:IAO_0000234>
-        <rdfs:label>organism identification by cross mating assay</rdfs:label>
+        <rdfs:label>organism detection by cross mating assay</rdfs:label>
     </owl:Class>
     
 
@@ -15580,16 +15606,16 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002737">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
-        <obo:IAO_0000111>organism identification by cytological chromosome examination assay</obo:IAO_0000111>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
+        <obo:IAO_0000111>organism detection by cytological chromosome examination assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An organism identification assay that is based on analysis of polytene chromosomes through cytological examination of the banding pattern of the species.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that is based on analysis of polytene chromosomes through cytological examination of the banding pattern of the species.</obo:IAO_0000115>
         <obo:IAO_0000117>VEuPathDB</obo:IAO_0000117>
         <obo:IAO_0000118>cytological chromosome examination</obo:IAO_0000118>
         <obo:IAO_0000119>MIRO:30000037</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1117</obo:IAO_0000233>
         <obo:IAO_0000234>VEuPathDB</obo:IAO_0000234>
-        <rdfs:label>organism identification by cytological chromosome examination assay</rdfs:label>
+        <rdfs:label>organism detection by cytological chromosome examination assay</rdfs:label>
     </owl:Class>
     
 
@@ -15598,16 +15624,16 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002738">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
-        <obo:IAO_0000111>organism identification by isoenzyme electrophoresis assay</obo:IAO_0000111>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
+        <obo:IAO_0000111>organism detection by isoenzyme electrophoresis assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An organism identification assay that is based on electrophoresis to determine the isozymes that are present in a specific population to determine the species.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that is based on electrophoresis to determine the isozymes that are present in a specific population to determine the species.</obo:IAO_0000115>
         <obo:IAO_0000117>VEuPathDB</obo:IAO_0000117>
         <obo:IAO_0000118>isoenzyme electrophoresis</obo:IAO_0000118>
         <obo:IAO_0000119>MIRO:30000038</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1117</obo:IAO_0000233>
         <obo:IAO_0000234>VEuPathDB</obo:IAO_0000234>
-        <rdfs:label>organism identification by isoenzyme electrophoresis assay</rdfs:label>
+        <rdfs:label>organism detection by isoenzyme electrophoresis assay</rdfs:label>
     </owl:Class>
     
 
@@ -15616,16 +15642,16 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002739">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
-        <obo:IAO_0000111>organism identification by morphological examination assay</obo:IAO_0000111>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
+        <obo:IAO_0000111>organism detection by morphological examination assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An organism identification assay that is based on examination of morphology and the use of specific &quot;taxonomic keys&quot; to determine the species of the specimen.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that is based on examination of morphology and the use of specific taxonomic keys to determine the species of the specimen.</obo:IAO_0000115>
         <obo:IAO_0000117>VEuPathDB</obo:IAO_0000117>
         <obo:IAO_0000118>morphological examination</obo:IAO_0000118>
         <obo:IAO_0000119>MIRO:30000039</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1117</obo:IAO_0000233>
         <obo:IAO_0000234>VEuPathDB</obo:IAO_0000234>
-        <rdfs:label>organism identification by morphological examination assay</rdfs:label>
+        <rdfs:label>organism detection by morphological examination assay</rdfs:label>
     </owl:Class>
     
 
@@ -15634,17 +15660,17 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002740">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002692"/>
-        <obo:IAO_0000111>organism identification by PCR assay</obo:IAO_0000111>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
+        <obo:IAO_0000111>organism detection by PCR assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An organism identification assay that is based on PCR.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that is based on PCR.</obo:IAO_0000115>
         <obo:IAO_0000117>VEuPathDB</obo:IAO_0000117>
         <obo:IAO_0000118>PCR-based species identification</obo:IAO_0000118>
         <obo:IAO_0000119>MIRO:30000040</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1117</obo:IAO_0000233>
         <obo:IAO_0000234>VEuPathDB</obo:IAO_0000234>
-        <rdfs:label>organism identification by PCR assay</rdfs:label>
+        <rdfs:label>organism detection by PCR assay</rdfs:label>
     </owl:Class>
     
 
@@ -15653,16 +15679,16 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002741">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
-        <obo:IAO_0000111>organism identification by specific DNA hybridization assay</obo:IAO_0000111>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
+        <obo:IAO_0000111>organism detection by specific DNA hybridization assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An organism identification assay that is based on DNA hybrdization.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that is based on DNA hybrdization.</obo:IAO_0000115>
         <obo:IAO_0000117>VEuPathDB</obo:IAO_0000117>
         <obo:IAO_0000118>species specific DNA hybridization</obo:IAO_0000118>
         <obo:IAO_0000119>MIRO:30000041</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1117</obo:IAO_0000233>
         <obo:IAO_0000234>VEuPathDB</obo:IAO_0000234>
-        <rdfs:label>organism identification by specific DNA hybridization assay</rdfs:label>
+        <rdfs:label>organism detection by specific DNA hybridization assay</rdfs:label>
     </owl:Class>
     
 
@@ -15671,16 +15697,16 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002742">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
-        <obo:IAO_0000111>organism identification by salinity tolerance assay</obo:IAO_0000111>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
+        <obo:IAO_0000111>organism detection by salinity tolerance assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An organism identification assay of mosquito species that is on the basis of mosquito survival depending on the salt concentration in the water used to lay their eggs to differentiate between morphologically very similar species.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay of mosquito species that is on the basis of mosquito survival depending on the salt concentration in the water used to lay their eggs to differentiate between morphologically very similar species.</obo:IAO_0000115>
         <obo:IAO_0000117>VEuPathDB</obo:IAO_0000117>
         <obo:IAO_0000118>salinity tolerance tests</obo:IAO_0000118>
         <obo:IAO_0000119>MIRO:30000042</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1117</obo:IAO_0000233>
         <obo:IAO_0000234>VEuPathDB</obo:IAO_0000234>
-        <rdfs:label>organism identification by salinity tolerance assay</rdfs:label>
+        <rdfs:label>organism detection by salinity tolerance assay</rdfs:label>
     </owl:Class>
     
 
@@ -15913,7 +15939,6 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002946">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001501"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
         <obo:IAO_0000111>fluorescence imaging-based apoptosis assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -15934,7 +15959,6 @@ https://www.doi.org/</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002947">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000891"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001501"/>
         <obo:IAO_0000111>fluorescence imaging-based cell proliferation assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A type of cell proliferation assay in which fluorescent dyes are ued to label and detect proteins or structures that can be used to count cells.</obo:IAO_0000115>
@@ -15954,7 +15978,6 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002948">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001501"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
         <obo:IAO_0000111>fluroescence imaging-based cell cycle state assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -15974,7 +15997,6 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002949">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001501"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
         <obo:IAO_0000111>fluorescence imaging-based cell viability assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -15994,7 +16016,6 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002950">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001501"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
         <obo:IAO_0000111>fluorescence imaging-based drug synergy assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -16014,7 +16035,6 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002951">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001501"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
         <obo:IAO_0000111>fluorescence imaging-based cell morphology assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -16036,7 +16056,6 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002952">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001501"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
         <obo:IAO_0000111>fluorescence imaging multiplex cytological profiling</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -16077,7 +16096,6 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002954">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001501"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002953"/>
         <obo:IAO_0000111>fluorescence imaging-based protein phosphorylation state assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -16182,7 +16200,7 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002959">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000470"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003540"/>
         <obo:IAO_0000111>tandem mass tag mass spectrometry assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A type of tandem mass spectrometry where isotopomer labels are employed for accurate quantification and identification of specific proteins.</obo:IAO_0000115>
@@ -16201,7 +16219,6 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002960">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001501"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002082"/>
         <obo:IAO_0000111>fluorescence imaging-based reporter gene assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -16444,7 +16461,13 @@ https://www.doi.org/</obo:IAO_0000119>
         <obo:IAO_0000111>magnetic resonance imaging assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>An imaging assay in which nuclear magnetic resonance is used to produce information about the interior structure and composition of an input material entity.</obo:IAO_0000115>
+        <obo:IAO_0000117>Alexander D. Bartnik, ORCID:0000-0001-9676-7377</obo:IAO_0000117>
+        <obo:IAO_0000117>Alexander D. Diehl, ORCID:0000-0001-9990-8331</obo:IAO_0000117>
+        <obo:IAO_0000117>Lauren M. Wishnie, ORCID:0000-0002-7245-3450</obo:IAO_0000117>
+        <obo:IAO_0000117>Lucas M. Serra, ORCID:0000-0002-2104-0568</obo:IAO_0000117>
+        <obo:IAO_0000117>Mackenzie T. Smith, ORCID:0000-0002-9821-4132</obo:IAO_0000117>
         <obo:IAO_0000117>Rebecca Jackson</obo:IAO_0000117>
+        <obo:IAO_0000117>William D. Duncan, ORCID:0000-0001-9625-1899</obo:IAO_0000117>
         <obo:IAO_0000118>MRI</obo:IAO_0000118>
         <obo:IAO_0000119>url:https://en.wikipedia.org/wiki/Magnetic_resonance_imaging</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1290</obo:IAO_0000233>
@@ -16945,7 +16968,7 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003038">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
         <obo:IAO_0000111>parasite detection assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>An assay that detects parasite in a specimen.</obo:IAO_0000115>
@@ -16962,10 +16985,11 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003039">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003237"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
         <obo:IAO_0000111>feces microbiology assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An assay that detects microorganisms in a feces specimen.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that detects microorganisms in a feces specimen.</obo:IAO_0000115>
         <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
         <obo:IAO_0000118>stool test for microorganisms</obo:IAO_0000118>
         <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
@@ -17048,7 +17072,7 @@ https://www.doi.org/</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003045"/>
         <obo:IAO_0000111>parasite species identification by PCR assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An organism identification assay that identifies the species of parasites by PCR.</obo:IAO_0000115>
+        <obo:IAO_0000115>A parasite detection by PCR assay that identifies the species of parasite.</obo:IAO_0000115>
         <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
         <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1322</obo:IAO_0000233>
@@ -17065,7 +17089,7 @@ https://www.doi.org/</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003038"/>
         <obo:IAO_0000111>parasite detection by PCR assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An assay that detects parasite in a specimen using PCR.</obo:IAO_0000115>
+        <obo:IAO_0000115>A parasite detection assay that uses PCR.</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
@@ -17584,10 +17608,10 @@ https://www.doi.org/</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000443"/>
         <obo:IAO_0000111>SOMAscan assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An analyte assay that uses aptamers to detect protein analytes in serum. </obo:IAO_0000115>
+        <obo:IAO_0000115>An analyte assay that uses aptamers to detect protein analytes in serum.</obo:IAO_0000115>
         <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000117>Randi Vita</obo:IAO_0000117>
-        <obo:IAO_0000119>Rohloff JC, et al. Nucleic acid ligands with protein-like side chains: modified aptamers and their uses as diagnostic and therapeutic agents. Mol Ther Nucleic Acids. 2014;3:e201. </obo:IAO_0000119>
+        <obo:IAO_0000119>Rohloff JC, et al. Nucleic acid ligands with protein-like side chains: modified aptamers and their uses as diagnostic and therapeutic agents. Mol Ther Nucleic Acids. 2014;3:e201.</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1308</obo:IAO_0000233>
         <obo:IAO_0000234>ImmPort</obo:IAO_0000234>
         <rdfs:label>SOMAscan assay</rdfs:label>
@@ -17657,7 +17681,7 @@ https://www.doi.org/</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000920"/>
         <obo:IAO_0000111>antibody detection by cytometric bead array assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A cytometric bead array assay that detects antigen-specific antibodies. In the assay a series of beads are coated with antigens which capture antibodies specific to the antigens. Fluorescent labeled secondary antibodies are used to detect the antibodies of interest. </obo:IAO_0000115>
+        <obo:IAO_0000115>A cytometric bead array assay that detects antigen-specific antibodies. In the assay a series of beads are coated with antigens which capture antibodies specific to the antigens. Fluorescent labeled secondary antibodies are used to detect the antibodies of interest.</obo:IAO_0000115>
         <obo:IAO_0000117>CMI-PB</obo:IAO_0000117>
         <obo:IAO_0000119>CMI-PB</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1399</obo:IAO_0000233>
@@ -19080,10 +19104,11 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003240">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003232"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
         <obo:IAO_0000111>cerebrospinal fluid microbiology assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An organism identification assay that has a cerebrospinal fluid specimen as evaluant.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that detects microorganisms in a cerebrospinal fluid specimen.</obo:IAO_0000115>
         <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
         <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1429</obo:IAO_0000233>
@@ -19096,10 +19121,11 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003241">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003233"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
         <obo:IAO_0000111>endotracheal tube aspirate microbiology assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An organism identification assay that has an endotracheal aspirate specimen as evaluant.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that detects microorganisms in an endotracheal aspirate specimen.</obo:IAO_0000115>
         <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
         <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1429</obo:IAO_0000233>
@@ -19112,10 +19138,11 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003242">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003234"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
         <obo:IAO_0000111>induced sputum microbiology assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An organism identification assay that has an induced sputum specimen as evaluant.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that detects microorganisms in an induced sputum specimen.</obo:IAO_0000115>
         <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
         <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1429</obo:IAO_0000233>
@@ -19128,10 +19155,11 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003282">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003235"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
         <obo:IAO_0000111>lung microbiology assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An organism identification assay that has a lung specimen as evaluant.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that detects microorganisms in a lung specimen.</obo:IAO_0000115>
         <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
         <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1429</obo:IAO_0000233>
@@ -19144,10 +19172,10 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003283">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
         <obo:IAO_0000111>pleural fluid microbiology assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An organism identification assay that has a pleural fluid specimen as evaluant.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that detects microorganisms in a pleural fluid specimen.</obo:IAO_0000115>
         <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
         <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1429</obo:IAO_0000233>
@@ -19160,10 +19188,11 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003284">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002649"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003238"/>
         <obo:IAO_0000111>umbilical cord blood microbiology assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An organism identification assay that has an umbilical cord blood specimen as evaluant.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that detects microorganisms in an umbilical cord blood specimen.</obo:IAO_0000115>
         <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
         <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1429</obo:IAO_0000233>
@@ -19176,10 +19205,10 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003285">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
         <obo:IAO_0000111>nasopharyngeal or oropharyngeal swab microbiology assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An organism identification assay that has a nasopharyngeal or oropharyngeal swab specimen as evaluant.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that detects microorganisms in a nasopharyngeal or oropharyngeal swab specimen.</obo:IAO_0000115>
         <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
         <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1429</obo:IAO_0000233>
@@ -19192,11 +19221,11 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003286">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003043"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
         <obo:IAO_0000111>urine microbiology assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An organism identification assay that has a urine specimen as evaluant.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that detects microorganisms in a urine specimen.</obo:IAO_0000115>
         <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
         <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1429</obo:IAO_0000233>
@@ -19699,7 +19728,7 @@ https://www.doi.org/</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002649"/>
         <obo:IAO_0000111>venous blood microbiology assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A blood microbiology assay that identifies a microorganism in a venous blood specimen.</obo:IAO_0000115>
+        <obo:IAO_0000115>A blood microbiology assay that detects a microorganism in a venous blood specimen.</obo:IAO_0000115>
         <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
         <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1491</obo:IAO_0000233>
@@ -19834,7 +19863,7 @@ https://www.doi.org/</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002649"/>
         <obo:IAO_0000111>placental blood microbiology assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A blood microbiology assay that has a placental blood specimen as evaluant.</obo:IAO_0000115>
+        <obo:IAO_0000115>A blood microbiology assay that detects microorganisms in a placental blood specimen.</obo:IAO_0000115>
         <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
         <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1297</obo:IAO_0000233>
@@ -19866,6 +19895,7 @@ https://www.doi.org/</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003419">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002145"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003236"/>
         <obo:IAO_0000111>antigen specific antibodies in milk assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>An antigen specific antibodies assay that has a milk specimen as evaluant.</obo:IAO_0000115>
@@ -20142,7 +20172,7 @@ https://www.doi.org/</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>An epitope protection from tumor challenge experiment in which the readout is a reduction in the presence of malignant cells in the host compared to controls.</obo:IAO_0000115>
         <obo:IAO_0000117>Hector Guzman-Orozco</obo:IAO_0000117>
-        <obo:IAO_0000118>burden after tumor challenge </obo:IAO_0000118>
+        <obo:IAO_0000118>burden after tumor challenge</obo:IAO_0000118>
         <obo:IAO_0000119>IEDB</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1594</obo:IAO_0000233>
         <rdfs:label>epitope protection from tumor challenge experiment based on burden</rdfs:label>
@@ -20507,10 +20537,10 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003480">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001624"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
         <obo:IAO_0000111>Gram stain assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An organism identification assay that identifies bacteria based on the differential retention of a crystal violet-iodine complex within the cell wall.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism detection assay that identifies bacteria based on the differential retention of a crystal violet-iodine complex within the cell wall.</obo:IAO_0000115>
         <obo:IAO_0000116>Gram-positive bacteria retain the violet stain whereas gram-negative bacteria do not.</obo:IAO_0000116>
         <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
         <obo:IAO_0000119>American Heritage Medical Dictionary</obo:IAO_0000119>
@@ -20601,6 +20631,762 @@ https://www.doi.org/</obo:IAO_0000119>
         <obo:IAO_0000119>IEDB</obo:IAO_0000119>
         <obo:OBI_9991118>TNF release|bioassay</obo:OBI_9991118>
         <rdfs:label>cell culture analyte detection bioassay measuring epitope specific tumor necrosis factor superfamily cytokine production by T cells</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003498 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003498">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000111>organism detection assay</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An assay that detects a type of organism and/or the quantity of individuals of a type of organism.</obo:IAO_0000115>
+        <obo:IAO_0000116>This term is a generalized version of the term previously known as &apos;organism identification assay&apos;, to include classification other than species and to include quantities as outputs.</obo:IAO_0000116>
+        <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
+        <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1633</obo:IAO_0000233>
+        <rdfs:label>organism detection assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003501 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002441"/>
+        <obo:IAO_0000111>functional assessment of individual</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A physical examination of an individual&apos;s ability to perform functional activities.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>functional assessment of individual</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003502 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003502">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003536"/>
+        <obo:IAO_0000111>facial atrophy assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An observational assessment of the loss of facial muscle tissue due to inactivity or disease.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>facial atrophy assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003503 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003503">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003536"/>
+        <obo:IAO_0000111>tongue atrophy assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An observational assessment of the loss of muscle tissue related to tongue movement due to inactivity or disease.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>tongue atrophy assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003504 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003504">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003501"/>
+        <obo:IAO_0000111>forced cough assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A functional assessment of an individual&apos;s ability to cough forcefully.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>forced cough assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003505 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003505">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003501"/>
+        <obo:IAO_0000111>speech test assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A functional assessment of an individual&apos;s ability to understandably repeat spoken sentences.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>speech test assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003506 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003506">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003501"/>
+        <obo:IAO_0000111>finger to finger assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A functional assessment of an individual&apos;s ability to touch index fingers together in front of the sternum without oscillation for a specified duration of time</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>finger to finger assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003507 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003507">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003501"/>
+        <obo:IAO_0000111>nose to finger assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A functional assessment of an individual&apos;s ability to touch their own nose and then touch an examiners finger in front of them and then touch their own nose once more.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>nose to finger assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003508 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003508">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003501"/>
+        <obo:IAO_0000111>dysmetria assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A functional assessment of an individual&apos;s ability to accurately touch a moving target with their finger and then touch their own chin a number of times in a row.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>dysmetria assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003509 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003509">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003501"/>
+        <obo:IAO_0000111>rapid alternating hands assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A functional assessment of an individual&apos;s ability to alternate the forearm between pronation and suppination as quickly as possible during a specified duration of time</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>rapid alternating hands assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003510 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003510">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003501"/>
+        <obo:IAO_0000111>finger taps assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A functional assessment of an individual&apos;s ability to touch their finger-tip to thumb as many times as possible during a specified duration of time.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>finger taps assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003511 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003511">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003501"/>
+        <obo:IAO_0000111>heel along shin assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A functional assessment of an individual&apos;s ability to slide their heel back and forth along their contralateral tibia from the patella to the ankle with the contralateral leg extended.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>heel along shin assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003512 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003512">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003501"/>
+        <obo:IAO_0000111>heel to shin assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A functional assessment of an individual&apos;s ability to tap their heel to the midpoint of the contralateral shin a number of times.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>heel to shin assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003513 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003513">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003536"/>
+        <obo:IAO_0000111>muscle atrophy assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An observational assesment of an individual&apos;s muscle tissue loss due to inactivity or disease.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>muscle atrophy assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003514 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003514">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003501"/>
+        <obo:IAO_0000111>muscle weakness assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A functional assessment of an individual&apos;s ability to perform muscle movement to overcome gravity or physical resistence.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>muscle weakness assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003515 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003515">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003501"/>
+        <obo:IAO_0000111>vibratory sense assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A functional assessment of an individual&apos;s ability to sense vibration.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>vibratory sense assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003516 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003516">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003501"/>
+        <obo:IAO_0000111>position sense assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A functional assessment of an individual&apos;s ability to sense the position of a finger or toe that has been manipulated by minimal random movements.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>position sense assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003517 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003517">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003501"/>
+        <obo:IAO_0000111>deep tendon reflex assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A functional assessment of an individual&apos;s muscle contraction when a muscle is triggered by a signal from a muscle spindle in response to a stimulus applied to a specific trigger point on the body.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>deep tendon reflex assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003518 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003518">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003501"/>
+        <obo:IAO_0000111>limits of stability assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>The functional assessment of an individual&apos;s ability to maintain balance, posture or upright stability.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>limits of stability assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003519 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003519">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003518"/>
+        <obo:IAO_0000111>sitting posture assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A limits of stability assessment designed to assess an individual&apos;s ability to maintain unsupported posture while sitting over a given time period.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>sitting posture assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003520 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003520">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003518"/>
+        <obo:IAO_0000111>stance feet apart assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A limits of stability assessment designed to assess an individual&apos;s ability to maintain a stable stance with feet 20 cm apart.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>stance feet apart assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003521 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003521">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003518"/>
+        <obo:IAO_0000111>stance feet apart assessment, with eyes closed</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A limits of stability assessment designed to assess an individual&apos;s ability to maintain a stable stance with their eyes closed.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>stance feet apart assessment, with eyes closed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003522 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003522">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003518"/>
+        <obo:IAO_0000111>stance feet together assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A limits of stability assessment designed to assess an individual&apos;s ability to maintain a stable stance with feet together.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>stance feet together assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003523 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003523">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003518"/>
+        <obo:IAO_0000111>stance feet together assessment, with eyes closed</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A limits of stability assessment designed to assess an individual&apos;s ability to maintain a stable stance with feet together and eyes closed.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>stance feet together assessment, with eyes closed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003524 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003524">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003518"/>
+        <obo:IAO_0000111>tandem stance assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A limits of stability assessment designed to assess an individual&apos;s ability to maintain a stable stance with feet in tandem placement.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>tandem stance assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003525 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003525">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003518"/>
+        <obo:IAO_0000111>stance on one foot assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A limits of stability assessment designed to assess an individual&apos;s ability to maintain a stable stance on one foot.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>stance on one foot assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003526 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003526">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003518"/>
+        <obo:IAO_0000111>tandem walk assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A limits of stability assessment designed to assess an individual&apos;s ability to maintain balance while walking in a straight line placing steps in tandem.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>tandem walk assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003527 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003527">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003518"/>
+        <obo:IAO_0000111>gait assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A limits of stability assessment designed to assess an individual&apos;s manner or pattern of walking.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>gait assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003528 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003528">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003501"/>
+        <obo:IAO_0000111>bulbar assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A functional assessment of an individual&apos;s lower cranial nerve function via proxy of facial muscle performance.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>bulbar assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003529 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003529">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003501"/>
+        <obo:IAO_0000111>spontaneous speech assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A functional assessment of an individual&apos;s ability to articulate spoken words.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>spontaneous speech assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003530 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003530">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003501"/>
+        <obo:IAO_0000111>limb coordination assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A functional assessment of an individual&apos;s ability to coordinate limb movement.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>limb coordination assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003531 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003531">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003530"/>
+        <obo:IAO_0000111>upper limb coordination assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A limb coordination assessment designed to assess an individual&apos;s ability to coordinate upper limb movement.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>upper limb coordination assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003532 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003532">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003530"/>
+        <obo:IAO_0000111>lower limb coordination assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A limb coordination assessment designed to assess an individual&apos;s ability to coordinate lower limb movement.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>lower limb coordination assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003533 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003533">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003501"/>
+        <obo:IAO_0000111>nervous system functionality assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A functional assesment of an individual&apos;s nerve performance. Specifically the nerves connecting the sensory and motor structures with the central nervous system.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>nervous system functionality assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003534 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003534">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003501"/>
+        <obo:IAO_0000111>upright stability assessment</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A functional assessment of an individual&apos;s ability to maintain upright body posture.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>upright stability assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003535 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003535">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003517"/>
+        <obo:IAO_0000111>deep tendon reflex assessment of the knee joint</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A deep tendon reflex assessment of an individual&apos;s reaction to stimulus applied to a knee joint.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>deep tendon reflex assessment of the knee joint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003536 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003536">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002441"/>
+        <obo:IAO_0000111>observational assessment of individual</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A physical examination of an individual through visual assesment.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>observational assessment of individual</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003537 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003537">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003517"/>
+        <obo:IAO_0000111>deep tendon reflex assessment of the ankle joint</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A deep tendon reflex assessment of an individual&apos;s reaction to stimulus applied to an ankle joint.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>deep tendon reflex assessment of the ankle joint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003538 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003538">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003517"/>
+        <obo:IAO_0000111>deep tendon reflex assessment of the tendon of biceps brachii</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A deep tendon reflex assessment of an individual&apos;s reaction to stimulus applied to a tendon of biceps brachii.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>deep tendon reflex assessment of the tendon of biceps brachii</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003539 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003539">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003517"/>
+        <obo:IAO_0000111>deep tendon reflex assessment of the brachioradialis</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A deep tendon reflex assessment of an individual&apos;s reaction to stimulus applied to a brachioradialis.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Olson, ORCID: 0000-0002-8134-1207</obo:IAO_0000117>
+        <obo:IAO_0000119>Critical Path Institute</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1637</obo:IAO_0000233>
+        <rdfs:label>deep tendon reflex assessment of the brachioradialis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003540 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003540">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000470"/>
+        <obo:IAO_0000111>tandem mass spectrometry assay</obo:IAO_0000111>
+        <obo:IAO_0000112>A precursor ion is selected in the first stage, allowed to fragment and then all resultant masses are scanned in the second mass analyzer and detected in the detector that is positioned after the second mass analyzer. This experiment is commonly performed to identify transitions used for quantification by tandem MS.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A mass spectrometry assay that uses two or more analyzers separated by a region in which ions can be induced to fragment by transfer of energy (frequently by collision with other molecules).</obo:IAO_0000115>
+        <obo:IAO_0000116>Discussed on the OBI developer call 2022-03-07: &apos;tandem mass spectrometry&apos; OBI:0200198 is under  &apos;data transformation&apos; but is actually defined like an assay. Moving OBI:0200198 from &apos;data transformation&apos; to &apos;assay&apos; is a major logical change, so the OBI development team supports obsoleting &apos;tandem mass spectrometry&apos; OBI:0200198 and replacing it with ‘tandem mass spectrometry assay’ OBI:0003540.</obo:IAO_0000116>
+        <obo:IAO_0000117>Hector Guzman-Orozco, ORCID:0000-0003-3430-8997</obo:IAO_0000117>
+        <obo:IAO_0000119>http://purl.obolibrary.org/obo/OBI_0200198</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1506</obo:IAO_0000233>
+        <rdfs:label>tandem mass spectrometry assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003541 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003541">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000661"/>
+        <obo:IAO_0000111>ELISA measuring Orientia tsutsugamushi IgM antibody</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An enzyme-linked immunosorbent assay that detects the IgM antibody that binds Orientia tsutsugamushi.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
+        <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1456</obo:IAO_0000233>
+        <rdfs:label>ELISA measuring Orientia tsutsugamushi IgM antibody</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003542 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003542">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001985"/>
+        <obo:IAO_0000111>microarray assay measuring Dengue IgM antibody</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A microarray assay that detects the IgM antibody that binds Dengue.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
+        <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1456</obo:IAO_0000233>
+        <rdfs:label>microarray assay measuring Dengue IgM antibody</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003543 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003543">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001985"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100023"/>
+        <obo:IAO_0000111>microarray assay measuring NS1</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A microarray assay that detects NS1.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
+        <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1456</obo:IAO_0000233>
+        <rdfs:label>microarray assay measuring NS1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003544 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003544">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001630"/>
+        <obo:IAO_0000111>analytical chromatography measuring Chikungunya IgM antibody</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>Analytical chromatography that detects the IgM antibody that binds Chikungunya.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
+        <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1456</obo:IAO_0000233>
+        <rdfs:label>analytical chromatography measuring Chikungunya IgM antibody</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003545 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003545">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000661"/>
+        <obo:IAO_0000111>ELISA measuring Chikungunya IgM antibody</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An enzyme-linked immunosorbent assay that detects the IgM antibody that binds Chikungunya.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
+        <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1456</obo:IAO_0000233>
+        <rdfs:label>ELISA measuring Chikungunya IgM antibody</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003546 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003546">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000661"/>
+        <obo:IAO_0000111>microarray ELISA measuring Chikungunya IgM antibody</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An enzyme-linked immunosorbent assay that uses a microarray as the solid support and detects the IgM antibody that binds Chikungunya.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
+        <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1456</obo:IAO_0000233>
+        <rdfs:label>microarray ELISA measuring Chikungunya IgM antibody</rdfs:label>
     </owl:Class>
     
 
@@ -25691,6 +26477,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100265">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003232"/>
         <obo:IAO_0000111>tube 4 count cerebrospinal fluid cell count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A cytometry assay that measures the count of cells in cerebrospinal fluid as part of a tube 4 count order</obo:IAO_0000115>
@@ -25706,6 +26493,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100266">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003232"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100023"/>
         <obo:IAO_0000111>cerebrospinal fluid protein assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25722,6 +26510,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100267">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003232"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100020"/>
         <obo:IAO_0000111>cerebrospinal fluid glucose assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25739,6 +26528,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100268">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003232"/>
         <obo:IAO_0000111>tube 1 count cerebrospinal fluid cell count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A cytometry assay that measures the count of cells in cerebrospinal fluid as part of a tube 1 count order</obo:IAO_0000115>
@@ -27693,6 +28483,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100390">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003024"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003232"/>
         <obo:IAO_0000111>cerebrospinal fluid lymphocyte count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A cytometry assay that measures the count of lymphocytes in cerebrospinal fluid</obo:IAO_0000115>
@@ -27709,6 +28500,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100391">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003022"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003232"/>
         <obo:IAO_0000111>cerebrospinal fluid segmented neutrophil count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A cytometry assay that measures the count of segmented neutrophils in cerebrospinal fluid</obo:IAO_0000115>
@@ -27725,6 +28517,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100392">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003232"/>
         <obo:IAO_0000111>cerebrospinal fluid mesothelial cell count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A cytometry assay that measures the count of mesothelial cells in cerebrospinal fluid</obo:IAO_0000115>
@@ -27741,6 +28534,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100393">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003232"/>
         <obo:IAO_0000111>cerebrospinal fluid macrophage count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A cytometry assay that measures the count of macrophages in cerebrospinal fluid</obo:IAO_0000115>
@@ -27757,6 +28551,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100394">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003232"/>
         <obo:IAO_0000111>cerebrospinal fluid basophil count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A cytometry assay that measures the count of basophils in cerebrospinal fluid</obo:IAO_0000115>
@@ -27773,6 +28568,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100395">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003025"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003232"/>
         <obo:IAO_0000111>cerebrospinal fluid monocyte count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A cytometry assay that measures the count of monocytes in cerebrospinal fluid</obo:IAO_0000115>
@@ -27789,6 +28585,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100396">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003232"/>
         <obo:IAO_0000111>cerebrospinal fluid eosinophil count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A cytometry assay that measures the count of eosinophils in cerebrospinal fluid</obo:IAO_0000115>
@@ -28961,7 +29758,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001004">
         <obo:IAO_0000111>Edingburgh handedness inventory</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">The Edinburgh Handedness Inventory is a set of questions used to assess the dominance of a person&apos;s right or left hand in everyday activities. </obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The Edinburgh Handedness Inventory is a set of questions used to assess the dominance of a person&apos;s right or left hand in everyday activities.</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON:Jessica Turner</obo:IAO_0000117>
         <obo:IAO_0000119>PMID:5146491#Oldfield, R.C. (1971). The assessment and analysis of handedness: The Edinburgh inventory. Neuropsychologia, 9, 97-113</obo:IAO_0000119>
@@ -30673,7 +31470,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0002316">
         <obo:IAO_0000111>Stage 0 (AJCC 7th)</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A clinical tumor stage group according to AJCC 7th edition indicating a carcinoma in situ (or melanoma in situ for melanoma of the skin or germ cell neoplasia in situ for testicular germ cell tumors) and generally is considered to have no metastatic potential. </obo:IAO_0000115>
+        <obo:IAO_0000115>A clinical tumor stage group according to AJCC 7th edition indicating a carcinoma in situ (or melanoma in situ for melanoma of the skin or germ cell neoplasia in situ for testicular germ cell tumors) and generally is considered to have no metastatic potential.</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Stoeckert, Helena Ellis</obo:IAO_0000117>
         <obo:IAO_0000118>Stage 0</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Cancer_staging</obo:IAO_0000119>
@@ -30929,7 +31726,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0002333">
         <obo:IAO_0000111>Stage IIA (FIGO)</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion. </obo:IAO_0000115>
+        <obo:IAO_0000115>An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion.</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Stoeckert, Helena Ellis</obo:IAO_0000117>
         <obo:IAO_0000118>Stage IIA</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Cervical_cancer_staging</obo:IAO_0000119>
@@ -30945,7 +31742,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0002334">
         <obo:IAO_0000111>Stage IIA1 (FIGO)</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion &lt;4.0 cm in greatest dimension. </obo:IAO_0000115>
+        <obo:IAO_0000115>An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion &lt;4.0 cm in greatest dimension.</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Stoeckert, Helena Ellis</obo:IAO_0000117>
         <obo:IAO_0000118>Stage IIA1</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Cervical_cancer_staging</obo:IAO_0000119>
@@ -30961,7 +31758,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0002335">
         <obo:IAO_0000111>Stage IIA2 (FIGO)</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion &gt;4.0 cm in greatest dimension. </obo:IAO_0000115>
+        <obo:IAO_0000115>An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion &gt;4.0 cm in greatest dimension.</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Stoeckert, Helena Ellis</obo:IAO_0000117>
         <obo:IAO_0000118>Stage IIA2</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Cervical_cancer_staging</obo:IAO_0000119>
@@ -30977,7 +31774,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0002336">
         <obo:IAO_0000111>Stage IIB (FIGO)</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina with obvious parametrial invasion. </obo:IAO_0000115>
+        <obo:IAO_0000115>An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina with obvious parametrial invasion.</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Stoeckert, Helena Ellis</obo:IAO_0000117>
         <obo:IAO_0000118>Stage IIB</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Cervical_cancer_staging</obo:IAO_0000119>
@@ -31434,6 +32231,51 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:https://eu.biogents.com/about-biogents/</obo:IAO_0000119>
         <rdfs:label>BioGents</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003495 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0003495">
+        <obo:IAO_0000111>Abbott</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A manufacturer of rapid point-of-care assay devices.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB:https://www.globalpointofcare.abbott/en/about.html</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1456</obo:IAO_0000233>
+        <rdfs:label>Abbott</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003496 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0003496">
+        <obo:IAO_0000111>J. Mitra</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A manufacturer of in vitro diagnostic assay kits in India.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB:https://jmitra.co.in/about-us/</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1456</obo:IAO_0000233>
+        <rdfs:label>J. Mitra</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003497 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0003497">
+        <obo:IAO_0000111>InBios</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A manufacturer that specializes in in vitro diagnostic devices designed to test for infectious diseases.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB:https://inbios.com/about/</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1456</obo:IAO_0000233>
+        <rdfs:label>InBios</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -32340,6 +33182,6 @@ binary, and takes no temporal argument.
 
 
 
-<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0) https://github.com/owlcs/owlapi/ -->
 
 

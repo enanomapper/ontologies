@@ -55,15 +55,17 @@ The full list of ontologies it includes is:
 The build of the slims is carried out in this repository through the actions contained in the [
 .github/workflows](.github/workflows) folder,
 and the resulting slims of external ontologies are commited and pushed automatically to this repository when 
-the build workflow is run under [external-dev](external-dev). After that, `robot diff` and `robot report` are performed for quality control on the resulting ontology, with their results being stored under [/report](/report) after each workflow run.
+the build workflow is run under [external-dev](external-dev).
 
-The configuration file [enanomapper.yaml](scripts/src/build-workflow/enanomapper.yaml) is used by the [python setup scripts](scripts/src/build-workflow/) to update the YAML for these workflows ([build](.github/workflows/slim-ontologies.yml), [QC](.github/workflows/robot.yml)) on push via the [update repository workflow](.github/workflows/update-repo.yml). 
+The configuration file [config.yaml](scripts/src/build-workflow/enanomapper.yaml) is used by the build and test workflows to retrieve `ROBOT` and `Slimmer`. There are 3 test workflows:
+-  On push: test for file integrity (`external`, `external-dev`, `internal`, `internal-dev`, `config`) and performs SPARQL queries on `enanomapper-dev.owl` to make sure internal terms have not been added at the top of the class hierarchy or directly under `entity`.
+- Development tests: `robot diff` and `robot report` are performed after each build for QC on the resulting development version of the ontology, with their results being stored as artifacts after each run.
+- Pre-release tests: ensure the modules are updated and the ontology is satisfiable and has the right top-level class hierarchy before making a release. This is the only test that needs to be dispatched manually.
 
-![eNM ontology workflow](workflow.png)
 
 DOI of Releases
 ---------------
-
+* Version 10:
 * Version 9: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7503729.svg)](https://doi.org/10.5281/zenodo.7503729)
 * Version 8: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6984499.svg)](https://doi.org/10.5281/zenodo.6984499)
 * Version 7: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4600986.svg)](https://doi.org/10.5281/zenodo.4600986)
@@ -112,7 +114,7 @@ java -cp ../Slimmer/target/slimmer-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.
 ```
 
 The bao.props and bao.iris files contain all the information needed to describe which parts of the BAO ontology
-is retained in the slimmed version.
+is retained in the slimmed version. This is automatically applied for all modules in the `build` workflow once a month.
 
 Tutorials
 =========
@@ -132,12 +134,12 @@ Making Releases
    * `owl:versionInfo`
    * `owl:versionIRI` (only `enanomapper.owl`)
 4. Create a folder `releases/{version}` and store there a copy of the latest `enanomapper.owl` file
-5. Manually dispatch the `prerelease-test` workflow and make the pertinent fixes if it fails. Please wait until the `pages-build-deployment` action finishes running to ensure `enanomapper.owl` imports the latest modules.
-6. Update the CITATION.cff
+5. Make a git commit with the changes and tag that commit matching the release
+6. Manually dispatch the `prerelease-test` workflow and make the pertinent fixes if it fails. Repeat the tagged git commit after fixing the issues.
+7. Update the CITATION.cff
    * `title`
    * `version`
    * `date-released`
-7. Make a git commit with the changes and tag that commit matching the release
 8. Write markdown for the release with the changes since the previous release
 9. Release the whole repository in GitHub https://github.com/enanomapper/ontologies/releases 
 10. Update the DOI number for new release: https://zenodo.org/record/260098
