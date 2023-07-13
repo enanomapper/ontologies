@@ -58,7 +58,7 @@ The build of the slims is carried out in this repository through the actions con
 and the resulting slims of external ontologies are commited and pushed automatically to this repository when 
 the build workflow is run under [external-dev](external-dev).
 
-The configuration file [config.yaml](scripts/src/build-workflow/enanomapper.yaml) is used by the build and test workflows to retrieve `ROBOT` and `Slimmer`. There are 3 test workflows:
+The configuration file [config.yaml](config.yaml) is used by the build and test workflows to retrieve `ROBOT` and `Slimmer`. There are 3 test workflows:
 -  On push: test for file integrity (`external`, `external-dev`, `internal`, `internal-dev`, `config`) and performs SPARQL queries on `enanomapper-dev.owl` to make sure internal terms have not been added at the top of the class hierarchy or directly under `entity`.
 - Development tests: `robot diff` and `robot report` are performed after each build for QC on the resulting development version of the ontology, with their results being stored as artifacts after each run.
 - Pre-release tests: ensure the modules are updated and the ontology is satisfiable and has the right top-level class hierarchy before making a release. This is the only test that needs to be dispatched manually.
