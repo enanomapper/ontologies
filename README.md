@@ -1,6 +1,7 @@
 The eNanoMapper Ontology 
 ============
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7503729.svg)](https://doi.org/10.5281/zenodo.7503729)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8139894.svg)](https://doi.org/10.5281/zenodo.8139894)
 [![Build slims](https://github.com/enanomapper/ontologies/actions/workflows/build.yml/badge.svg)](https://github.com/enanomapper/ontologies/actions/workflows/build.yml)
 [![On push file integrity tests](https://github.com/enanomapper/ontologies/actions/workflows/on-push-tests.yml/badge.svg)](https://github.com/enanomapper/ontologies/actions/workflows/on-push-tests.yml)
 [![ROBOT enanomapper-dev build test](https://github.com/enanomapper/ontologies/actions/workflows/dev-tests.yml/badge.svg)](https://github.com/enanomapper/ontologies/actions/workflows/dev-tests.yml)
@@ -65,7 +66,7 @@ The configuration file [config.yaml](scripts/src/build-workflow/enanomapper.yaml
 
 DOI of Releases
 ---------------
-* Version 10:
+* Version 10: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8139894.svg)](https://doi.org/10.5281/zenodo.8139894)
 * Version 9: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7503729.svg)](https://doi.org/10.5281/zenodo.7503729)
 * Version 8: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6984499.svg)](https://doi.org/10.5281/zenodo.6984499)
 * Version 7: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4600986.svg)](https://doi.org/10.5281/zenodo.4600986)
