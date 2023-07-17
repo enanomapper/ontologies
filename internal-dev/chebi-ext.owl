@@ -7,15 +7,17 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/">
 
     <owl:Ontology rdf:about="http://enanomapper.github.io/ontologies/internal/chebi-ext.owl">
         <dc:contributor>Laurent Winckers</dc:contributor>
+        <dc:contributor>Javier Millán Acosta</dc:contributor>
 	<dc:license>CC-BY 4.0 https://creativecommons.org/licenses/by/4.0/</dc:license>
 	<rdfs:comment>This ontology contains proposed extensions to the Chemical Entities of Biological Interest, which in due course will be submitted to the ChEBI. </rdfs:comment>
     </owl:Ontology>   
 
-
+ 	
 
     <!-- http://purl.enanomapper.org/onto/ENM_9000026 -->
 
@@ -1046,5 +1048,13 @@
     </owl:Class>
     
 
+    <!-- http://purl.enanomapper.org/onto/ENM_8000239 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000239">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48730"/>
+        <rdfs:isDefinedBy xml:lang="en">Aluminosilicate clay mineral with chemical formula Al2SiO3(OH)4.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">imogolite</rdfs:label>
+        <chebi:formula>Al2SiO3(OH)4</chebi:formula>
+    </owl:Class>
 
 </rdf:RDF>
