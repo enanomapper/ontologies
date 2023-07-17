@@ -2,9 +2,10 @@ name: On push file integrity tests
 
 on:
   workflow_run:
-    workflows: ["pages-build-deployment"] #Need to wait until the latest modules are deployed to the site
+    workflows: ["pages-build-deployment"] #Wait until the latest modules are deployed to the site
     types:
       - completed
+  push:
 
 jobs:
   test:
