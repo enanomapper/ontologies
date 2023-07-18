@@ -50,7 +50,7 @@ fi
     
 if [ ! -f ${ONTO}-slim-prop.owl ]; then
     echo Failed ${ONTO} prop extraction on `date`
-    exit(1)
+    exit 1
 fi
 
 echo "Removing temp files"
