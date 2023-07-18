@@ -42,6 +42,17 @@ if [ ${ONTO} != "cito" ]; then
     sh ./robot filter --input ${ontology} ${ARGS} --output ../../../../external-dev/${ONTO}-slim-prop.owl
 fi
 
+# Check if slimmed file was created
+    
+if [ -f ${ONTO}-slim-prop.owl ] ; then
+    echo Automated ${ONTO} prop extraction run on `date` 
+fi
+    
+if [ ! -f ${ONTO}-slim-prop.owl ]; then
+    echo Failed ${ONTO} prop extraction on `date`
+    exit(1)
+fi
+
 echo "Removing temp files"
 cd ../
 rm -r ontologies
