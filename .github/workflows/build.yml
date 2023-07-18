@@ -60,138 +60,172 @@ jobs:
   
   # Slim aopo
     - name: slim-aopo
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh aopo
   
   # Slim bao
     - name: slim-bao
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh bao
   
   # Slim bfo
     - name: slim-bfo
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh bfo
   
   # Slim bto
     - name: slim-bto
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh bto
   
   # Slim ccont
     - name: slim-ccont
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh ccont
   
   # Slim cheminf
     - name: slim-cheminf
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh cheminf
   
   # Slim cito
     - name: slim-cito
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh cito
   
   # Slim chebi
     - name: slim-chebi
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh chebi
   
   # Slim chmo
     - name: slim-chmo
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh chmo
   
   # Slim clo
     - name: slim-clo
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh clo
   
   # Slim efo
     - name: slim-efo
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh efo
   
   # Slim envo
     - name: slim-envo
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh envo
   
   # Slim fabio
     - name: slim-fabio
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh fabio
   
   # Slim go
     - name: slim-go
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh go
   
   # Slim hupson
     - name: slim-hupson
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh hupson
   
   # Slim iao
     - name: slim-iao
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh iao
   
   # Slim ncit
     - name: slim-ncit
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh ncit
   
   # Slim npo
     - name: slim-npo
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh npo
   
   # Slim oae
     - name: slim-oae
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh oae
   
   # Slim obcs
     - name: slim-obcs
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh obcs
   
   # Slim obi
     - name: slim-obi
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh obi
   
   # Slim pato
     - name: slim-pato
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh pato
   
   # Slim ro
     - name: slim-ro
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh ro
   
   # Slim sio
     - name: slim-sio
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh sio
   
   # Slim uberon
     - name: slim-uberon
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh uberon
   
   # Slim uo
     - name: slim-uo
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh uo
 
   # Slim msio
     - name: slim-msio
+      if: always()
       run: bash scripts/src/build-workflow/slim.sh msio
 
   # apply props bao
     - name: Apply props bao
+      if: always()
       run: bash scripts/src/build-workflow/props.sh bao
   
   # apply props cheminf
     - name: Apply props cheminf
+      if: always()
       run: bash scripts/src/build-workflow/props.sh cheminf
   
   # apply props npo
     - name: Apply props npo
+      if: always()
       run: bash scripts/src/build-workflow/props.sh npo
   
   # apply props sio
     - name: Apply props sio
+      if: always()
       run: bash scripts/src/build-workflow/props.sh sio
   
   # apply props ro
     - name: Apply props ro
+      if: always()
       run: bash scripts/src/build-workflow/props.sh ro
   
   # apply props cito
     - name: Apply props cito
+      if: always()
       run: bash scripts/src/build-workflow/props.sh cito
   
   # Commit and push
     - name: Commit OWL files
+      if: always()
       run: |
         git pull
         git add external-dev/*.owl
