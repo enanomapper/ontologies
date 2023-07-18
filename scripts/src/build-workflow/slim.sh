@@ -48,6 +48,7 @@ else
     
     if [ ! -f ${ONTO}-slim.owl ]; then
         echo Failed ${ONTO} slimming on `date`
+        exit(1)
     fi
 
 fi
