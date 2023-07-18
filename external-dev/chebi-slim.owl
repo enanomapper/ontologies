@@ -18,13 +18,13 @@
     <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/chebi-slim.owl">
         <pav:importedFrom>http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2023-06-08 11:39:04</oboInOwl:date>
-        <oboInOwl:date>27:05:2023 19:23</oboInOwl:date>
+        <oboInOwl:date>2023-07-18 16:33:09</oboInOwl:date>
+        <oboInOwl:date>27:06:2023 19:16</oboInOwl:date>
         <oboInOwl:default-namespace>chebi_ontology</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:saved-by>chebi</oboInOwl:saved-by>
         <rdfs:comment>Author: ChEBI curation team</rdfs:comment>
-        <rdfs:comment>ChEBI Release version 222</rdfs:comment>
+        <rdfs:comment>ChEBI Release version 223</rdfs:comment>
         <rdfs:comment>ChEBI subsumes and replaces the Chemical Ontology first</rdfs:comment>
         <rdfs:comment>For any queries contact chebi-help@ebi.ac.uk</rdfs:comment>
         <rdfs:comment>developed by Michael Ashburner &amp; Pankaj Jaiswal.</rdfs:comment>
@@ -1304,6 +1304,7 @@
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_133354">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48730"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_59999"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60004"/>
         <obo:IAO_0000115>An aluminosilicate mineral consisting mostly of montmorillonite. The different types of bentonite (aluminium bentonite; calcium bentonite; potassium bentonite; sodium bentonite) are named after their dominant element.</obo:IAO_0000115>
@@ -12390,6 +12391,49 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48676"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>fibrin modulating drugs</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_48730 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_48730">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000256"/>
+        <obo:IAO_0000115>Silicate minerals that contain aluminium, silicon, and oxygen, together with other ions. They are a major component of clay minerals.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Wikipedia:Aluminosilicate</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>Alumosilikat</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Alumosilikate</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>aluminosilicates</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>aluminosilicato</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>CHEBI:48730</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>aluminosilicate mineral</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48730"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Alumosilikat</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48730"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Alumosilikate</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48730"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>aluminosilicates</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48730"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>aluminosilicato</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -24328,6 +24372,13 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000256 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000256"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -24344,6 +24395,6 @@
 
 
 
-<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0) https://github.com/owlcs/owlapi/ -->
 
 
