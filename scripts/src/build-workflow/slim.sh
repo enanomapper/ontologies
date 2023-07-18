@@ -14,41 +14,42 @@ if [ ${ONTO} = "ncit" ]; then
 elif [ ${ONTO} = "hupson" ]; then 
     wget http://data.bioontology.org/ontologies/HUPSON/submissions/1/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb -O hupson.owl
 
-else   
-    ls
-    mkdir -p external-dev/${ONTO}
-    rm external-dev/${ONTO}-slim.owl
-    echo ${ONTO}-slim.owl removed
-    cd external-dev/${ONTO}
+fi
+   
+ls
+mkdir -p external-dev/${ONTO}
+rm external-dev/${ONTO}-slim.owl
+echo ${ONTO}-slim.owl removed
+cd external-dev/${ONTO}
     
    
-    wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.props
-    wget -N  `grep "owl=" ${ONTO}.props | cut -d'=' -f2`
-    wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.iris
+wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.props
+wget -N  `grep "owl=" ${ONTO}.props | cut -d'=' -f2`
+wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.iris
     
     
-    # Run slimmer
+# Run slimmer
     
-    java -cp ../../$slimmer com.github.enanomapper.Slimmer .
-    
-    # Remove original owl file
-    ontology=$(basename `grep "owl=" ${ONTO}.props | cut -d'=' -f2`)
-    rm -f $ontology
-    
-    # Rename slimmed file to proper name
-    mv *-slim.owl ../${ONTO}-slim.owl
-    cd ../
-    rm -r ${ONTO}
-    ls
-    # Check if slimmed file was created
-    
-    if [ -f ${ONTO}-slim.owl ] ; then
-        echo Automated ${ONTO} slimming run on `date` 
-    fi
-    
-    if [ ! -f ${ONTO}-slim.owl ]; then
-        echo Failed ${ONTO} slimming on `date`
-        exit 1
-    fi
+java -cp ../../$slimmer com.github.enanomapper.Slimmer .
 
+# Remove original owl file
+ontology=$(basename `grep "owl=" ${ONTO}.props | cut -d'=' -f2`)
+rm -f $ontology
+    
+# Rename slimmed file to proper name
+mv *-slim.owl ../${ONTO}-slim.owl
+cd ../
+rm -r ${ONTO}
+ls
+# Check if slimmed file was created
+    
+if [ -f ${ONTO}-slim.owl ] ; then
+    echo Automated ${ONTO} slimming run on `date` 
 fi
+    
+if [ ! -f ${ONTO}-slim.owl ]; then
+    echo Failed ${ONTO} slimming on `date`
+    exit 1
+fi
+
+
