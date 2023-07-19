@@ -1,21 +1,9 @@
 #!/bin/bash
 # Read the ontology name (first argument) and change to its directory
 export ONTO=$1
-# Retrieve slimmer version from config file
-slimmer=$(grep -oP '(?<=slimmer: https://github.com/enanomapper/slimmer/releases/download/v1.0.3/)(\S+)' config.yaml)
+slimmer=$(ls | grep *with-dependencies.jar)
 echo "Slimmer version: '${slimmer}'"
-wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.props
-wget -N  `grep "owl=" ${ONTO}.props | cut -d'=' -f2`
-wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.iris
-    
-if [ ${ONTO} = "ncit" ]; then 
-    wget https://data.bioontology.org/ontologies/NCIT/submissions/116/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb -O ncit.owl
 
-elif [ ${ONTO} = "hupson" ]; then 
-    wget http://data.bioontology.org/ontologies/HUPSON/submissions/1/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb -O hupson.owl
-
-fi
-   
 ls
 mkdir -p external-dev/${ONTO}
 rm external-dev/${ONTO}-slim.owl
@@ -23,18 +11,16 @@ echo ${ONTO}-slim.owl removed
 cd external-dev/${ONTO}
     
    
-wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.props
-wget -N  `grep "owl=" ${ONTO}.props | cut -d'=' -f2`
-wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.iris
+wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.props --no-cache
+wget -N --no-cache `grep "owl=" ${ONTO}.props | cut -d'=' -f2`
+wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.iris --no-cache
     
     
 # Run slimmer
     
 java -cp ../../$slimmer com.github.enanomapper.Slimmer .
 
-# Remove original owl file
-ontology=$(basename `grep "owl=" ${ONTO}.props | cut -d'=' -f2`)
-rm -f $ontology
+
     
 # Rename slimmed file to proper name
 mv *-slim.owl ../${ONTO}-slim.owl
