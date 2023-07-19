@@ -12,7 +12,7 @@ cd external-dev/${ONTO}
     
    
 wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.props --no-cache
-wget -N --no-cache `grep "owl=" ${ONTO}.props | cut -d'=' -f2`
+wget -N --no-cache `grep "owl=" ${ONTO}.props | cut -d'=' -f2` -O ${ONTO}.owl
 wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.iris --no-cache
     
     

@@ -6,7 +6,7 @@ mkdir -p external-dev/${ONTO}
 cd external-dev/${ONTO}
 echo "------Retrieving dependencies for ${ONTO}------"
 wget -nc https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.props
-wget `grep "owl=" ${ONTO}.props | cut -d'=' -f2`
+wget `grep "owl=" ${ONTO}.props | cut -d'=' -f2` -O ${ONTO}.owl
 ontology=$(basename `grep "owl=" ${ONTO}.props | cut -d'=' -f2`)
 
 echo "------Applying props for ${ONTO}------"
