@@ -87,12 +87,7 @@ jobs:
     - name: slim-cheminf
       if: always()
       run: bash scripts/src/build-workflow/slim.sh cheminf
-  
-  # Slim cito
-    - name: slim-cito
-      if: always()
-      run: bash scripts/src/build-workflow/slim.sh cito
-  
+    
   # Slim chebi
     - name: slim-chebi
       if: always()
@@ -163,11 +158,6 @@ jobs:
       if: always()
       run: bash scripts/src/build-workflow/slim.sh pato
   
-  # Slim ro
-    - name: slim-ro
-      if: always()
-      run: bash scripts/src/build-workflow/slim.sh ro
-  
   # Slim sio
     - name: slim-sio
       if: always()
@@ -203,15 +193,6 @@ jobs:
       if: always()
       run: bash scripts/src/build-workflow/props.sh sio
   
-  # apply props ro
-    - name: Apply props ro
-      if: always()
-      run: bash scripts/src/build-workflow/props.sh ro
-  
-  # apply props cito
-    - name: Apply props cito
-      if: always()
-      run: bash scripts/src/build-workflow/props.sh cito
   
   # Commit and push
     - name: Commit OWL files
