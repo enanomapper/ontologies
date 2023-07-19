@@ -3,8 +3,8 @@ PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
 SELECT DISTINCT ?class WHERE {
-  ?s a owl:Class .
-  ?s rdfs:about ?class
+  ?class a owl:Class .
+  FILTER(ISIRI(?class))
   FILTER NOT EXISTS {
     ?class rdfs:subClassOf ?superclass .
   }

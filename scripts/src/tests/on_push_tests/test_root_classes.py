@@ -19,12 +19,14 @@ class RobotTest(unittest.TestCase):
         robot_wrapper = config['robot']['robot-wrapper']
         robot_jar = config['robot']['robot-jar']
         # Run the command
-        subprocess.run(["wget", robot_wrapper])
-        subprocess.run(["wget", robot_jar])
+        subprocess.run(["wget", "-nc", robot_wrapper])
+        subprocess.run(["wget", "-nc", robot_jar])
+        print('Running robot merge...')
         subprocess.run(["sh", "robot", "merge", "-i", "enanomapper-dev.owl", "-o", "enanomapper-dev-full.owl"])
+        print('Query: test root elements')
         subprocess.run(["sh", "robot", "query", "--input", "enanomapper-dev-full.owl", "--query", "scripts/src/tests/assets/test_root.sparql", "result-root"])
+        print('Query: test direct subclasses of entities')
         subprocess.run(["sh", "robot", "query", "--input", "enanomapper-dev-full.owl", "--query", "scripts/src/tests/assets/test_entities.sparql", "result-entities"])
-        subprocess.run(["cat", "result"])
         
         # Check the contents of the results files, fail or not fail
         if os.stat('result-root').st_size==0:

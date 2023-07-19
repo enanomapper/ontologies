@@ -19,12 +19,11 @@ class RobotTest(unittest.TestCase):
         robot_wrapper = config['robot']['robot-wrapper']
         robot_jar = config['robot']['robot-jar']
         # Run the command
-        subprocess.run(["wget", robot_wrapper])
-        subprocess.run(["wget", robot_jar])
+        subprocess.run(["wget", "-nc", robot_wrapper])
+        subprocess.run(["wget", "-nc", robot_jar])
         subprocess.run(["sh", "robot", "merge", "-i", "enanomapper.owl", "-o", "enanomapper-full.owl"])
         subprocess.run(["sh", "robot", "query", "--input", "enanomapper-full.owl", "--query", "scripts/src/tests/assets/test_root.sparql", "result-root"])
         subprocess.run(["sh", "robot", "query", "--input", "enanomapper-full.owl", "--query", "scripts/src/tests/assets/test_entities.sparql", "result-entities"])
-        subprocess.run(["cat", "result"])
         
         # Check the contents of the results files, fail or not fail
         if os.stat('result-root').st_size==0:
@@ -32,10 +31,11 @@ class RobotTest(unittest.TestCase):
         else:
             res= "failed"
 
-        if os.stat('result-root').st_size==0:
+        if os.stat('result-entities').st_size==0:
             res2 = "passed"
         else:
             res2= "failed"
+        
 
             
 
