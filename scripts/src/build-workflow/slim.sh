@@ -18,7 +18,7 @@ wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ON
     
 # Run slimmer
     
-java -cp ../../$slimmer com.github.enanomapper.Slimmer .
+java -Xmx6g -cp ../../$slimmer com.github.enanomapper.Slimmer .
 
 
     
