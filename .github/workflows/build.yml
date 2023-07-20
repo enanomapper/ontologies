@@ -19,6 +19,7 @@ jobs:
     # Get slimmer and robot
     - name: add slimmer and robot URLs to environment
       run: |
+        echo $(java --version)
         config_file="config.yaml"
         robot_jar=""
         robot=""
