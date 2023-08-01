@@ -82,9 +82,9 @@
         <terms:title>Ontology for Biomedical Investigations</terms:title>
         <pav:importedFrom>http://purl.obolibrary.org/obo/obi.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2023-07-20 12:02:46</oboInOwl:date>
+        <oboInOwl:date>2023-08-01 01:54:38</oboInOwl:date>
         <rdfs:comment>Please cite the OBI consortium http://purl.obolibrary.org/obo/obi where traditional citation is called for. However it is adequate that individual terms be attributed simply by use of the identifying PURL for the term, in projects that refer to them.</rdfs:comment>
-        <owl:versionInfo>2023-03-10</owl:versionInfo>
+        <owl:versionInfo>2023-07-25</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
@@ -1309,6 +1309,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000701">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003097"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003540"/>
         <obo:IAO_0000115>A method where a sample mixture is first separated by liquid chromatography before being ionised and characterised by mass-to-charge ratio and relative abundance using two mass spectrometers in series.</obo:IAO_0000115>
         <obo:IAO_0000118>LC-MS-MS</obo:IAO_0000118>
@@ -1372,8 +1373,9 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000111 xml:lang="en">assay</obo:IAO_0000111>
         <obo:IAO_0000112>Assay the wavelength of light emitted by excited Neon atoms. Count of geese flying over a house.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A planned process that has the objective to produce information about a material entity (the evaluant) by examining it.</obo:IAO_0000115>
         <obo:IAO_0000116>12/3/12: BP: the reference to the &apos;physical examination&apos; is included to point out that a prediction is not an assay, as that does not require physical examiniation.</obo:IAO_0000116>
+        <obo:IAO_0000116>Discussion on OBI call 2023-05-01 resulted in an agreement to revise the textual definition of &apos;assay&apos;.  https://github.com/obi-ontology/obi/issues/1683.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">measuring</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">scientific observation</obo:IAO_0000118>
@@ -12558,11 +12560,11 @@ Previous. An information content entity is a non-realizable information entity t
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002106">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000111>carboxyfluorescein succinimidyl ester staining assay</obo:IAO_0000111>
         <obo:IAO_0000112>Measuring T cell proliferation based on the progressive halving of CFSE fluorescence within daughter cells following each cell division.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>a assay detecting a molecular label assay where the amount of carboxyfluorescein succinimidyl ester is measured using fluorescence detection.</obo:IAO_0000115>
+        <obo:IAO_0000115>An assay using carboxyfluorescein succinimidyl ester staining.</obo:IAO_0000115>
         <obo:IAO_0000117>IEDB</obo:IAO_0000117>
         <obo:IAO_0000118>CFSE assay</obo:IAO_0000118>
         <obo:IAO_0000119>IEDB</obo:IAO_0000119>
@@ -13854,10 +13856,10 @@ https://www.doi.org/</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002441">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <obo:IAO_0000111>physical examination of individual</obo:IAO_0000111>
+        <obo:IAO_0000111>physical examination of an organism</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115>An assay that produces a description of the qualities of an entity that has not been transformed, through observation and physical, non-invasive techniques.</obo:IAO_0000115>
-        <rdfs:label>physical examination of individual</rdfs:label>
+        <obo:IAO_0000115>An assay that produces a description of the qualities of an organism that has not been transformed, through observation and physical, non-invasive techniques.</obo:IAO_0000115>
+        <rdfs:label>physical examination of an organism</rdfs:label>
     </owl:Class>
     
 
@@ -16918,7 +16920,7 @@ https://www.doi.org/</obo:IAO_0000119>
         <obo:IAO_0000111>coma severity assay</obo:IAO_0000111>
         <obo:IAO_0000112>Examining a patient and grading their coma status on the Blantyre or Glasgow coma scale.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115>A physical examination of individual that has the objective to determine the severity of coma in a patient.</obo:IAO_0000115>
+        <obo:IAO_0000115>A physical examination of an organism that has the objective to determine the severity of coma in a patient.</obo:IAO_0000115>
         <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1357</obo:IAO_0000233>
         <obo:IAO_0000234>John Judkins</obo:IAO_0000234>
@@ -21387,6 +21389,117 @@ https://www.doi.org/</obo:IAO_0000119>
         <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1456</obo:IAO_0000233>
         <rdfs:label>microarray ELISA measuring Chikungunya IgM antibody</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003552 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003552">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002439"/>
+        <obo:IAO_0000111>proximity ligation-assisted ChIP-seq</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A chromosome conformation capture assay in which proximity ligation is conducted in nuclei prior to chromatin shearing and immunoprecipitation. Immunopreciptation with an antibody that targets a transcription factor or histone modification allows for selection and enrichment of specific genomic regions for investigation of long-range chromosomal interactions.</obo:IAO_0000115>
+        <obo:IAO_0000117>Hector Guzman-Orozco</obo:IAO_0000117>
+        <obo:IAO_0000118>PLAC-seq</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5143423/</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1145</obo:IAO_0000233>
+        <rdfs:label>proximity ligation-assisted ChIP-seq</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003576 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003576">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
+        <obo:IAO_0000111>skin of body microbiology assay</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An organism detection assay that detects microorganisms in a skin of body specimen.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
+        <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1680</obo:IAO_0000233>
+        <rdfs:label>skin of body microbiology assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003578 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003578">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
+        <obo:IAO_0000111>bone marrow microbiology assay</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An organism detection assay that detects microorganisms in a bone marrow specimen.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
+        <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1680</obo:IAO_0000233>
+        <rdfs:label>bone marrow microbiology assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003580 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003580">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003498"/>
+        <obo:IAO_0000111>nasal aspirate microbiology assay</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An organism detection assay that detects microorganisms in a nasal aspirate specimen.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
+        <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1680</obo:IAO_0000233>
+        <rdfs:label>nasal aspirate microbiology assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003582 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003582">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000891"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002106"/>
+        <obo:IAO_0000111>cell proliferation assay using carboxyfluorescein succinimidyl ester staining</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>A cell proliferation assay that uses carboxyfluorescein succinimidyl ester staining to detect cell division.</obo:IAO_0000115>
+        <obo:IAO_0000117>Sebastian Duesing</obo:IAO_0000117>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1007</obo:IAO_0000233>
+        <rdfs:label>cell proliferation assay using carboxyfluorescein succinimidyl ester staining</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003583 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003583">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
+        <obo:IAO_0000111>cell viability assay</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>A cytometry assay which measures the number of living cells in a population.</obo:IAO_0000115>
+        <obo:IAO_0000117>Sebastian Duesing</obo:IAO_0000117>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1007</obo:IAO_0000233>
+        <rdfs:label>cell viability assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003584 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003584">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003583"/>
+        <obo:IAO_0000111>cell viability assay using Annexin V staining</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>A cell viability assay that uses Annexin V staining to detect apoptotic cells.</obo:IAO_0000115>
+        <obo:IAO_0000117>Sebastian Duesing</obo:IAO_0000117>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1007</obo:IAO_0000233>
+        <rdfs:label>cell viability assay using Annexin V staining</rdfs:label>
     </owl:Class>
     
 
