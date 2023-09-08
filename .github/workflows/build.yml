@@ -1,6 +1,9 @@
 name: Build slims
 on:
   workflow_dispatch:
+  pull_request:
+    paths:
+     - './config/*'
   push:
     paths:
      - 'config.yaml'
