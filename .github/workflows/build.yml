@@ -204,14 +204,17 @@ jobs:
     - name: Apply props ro
       if: always()
       run: bash scripts/src/build-workflow/props.sh ro
+
   # Commit and push
     - name: Commit OWL files
       if: always()
       run: |
-        git pull
-        git add external-dev/*.owl
+        git fetch
+        echo "::set-output name=has_changes::$(git diff --name-only origin/main)"
+        
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        git add external-dev/*.owl
         git commit -m "Actions - slim updated" ./external-dev/*.owl
         git push -f
     - name: Create issue about failure
