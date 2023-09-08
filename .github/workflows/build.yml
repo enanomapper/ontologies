@@ -209,18 +209,10 @@ jobs:
     - name: Commit OWL files
       if: always()
       run: |
-        git fetch
-        echo "::set-output name=has_changes::$(git diff --name-only origin/main)"
-        
+        git pull
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add external-dev/*.owl
         git commit -m "Actions - slim updated" ./external-dev/*.owl
         git push -f
-    - name: Create issue about failure
-      if: failure()
-      uses: JasonEtco/create-an-issue@v2.5.0
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        filename: .github/action-issue-template.md
+
