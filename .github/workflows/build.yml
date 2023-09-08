@@ -204,15 +204,27 @@ jobs:
     - name: Apply props ro
       if: always()
       run: bash scripts/src/build-workflow/props.sh ro
-
   # Commit and push
     - name: Commit OWL files
       if: always()
       run: |
         git pull
+        git add external-dev/*.owl
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add external-dev/*.owl
-        git commit -m "Actions - slim updated" ./external-dev/*.owl
-        git push -f
+        # Check if there are changes to commit
+        if git diff-index --quiet HEAD --; then
+          echo "No changes to commit."
+        else
+            git commit -m "Actions - slim updated" ./external-dev/*.owl || true
+          fi
+        
+        # Check if there are changes to push
+        if [[ $(git rev-parse --abbrev-ref HEAD) == "master" ]]; then
+          if [ -n "$(git cherry -v)" ]; then
+            git push || echo "Push failed."
+          else
+            echo "No changes to push."
+          fi
+        fi
 
