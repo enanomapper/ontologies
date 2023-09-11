@@ -52,7 +52,8 @@ The full list of ontologies it includes is:
 * [Unit Ontology](https://github.com/bio-ontology-research-group/unit-ontology) (UO)
 
 ![slims-dependencies](https://github.com/enanomapper/ontologies/blob/master/assets/slims_graph.png?raw=true)
-![slims-count](https://github.com/enanomapper/ontologies/blob/master/assets/count_prefix.png?raw=true))
+![slims-count](https://github.com/enanomapper/ontologies/blob/master/assets/count_prefix.png?raw=true)
+
 The build of the slims is carried out in this repository through the actions contained in the [
 .github/workflows](.github/workflows) folder,
 and the resulting slims of external ontologies are commited and pushed automatically to this repository when 
