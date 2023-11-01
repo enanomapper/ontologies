@@ -24,17 +24,16 @@
      xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:vocab="https://w3id.org/semapv/vocab/"
      xmlns:chebi2="http://purl.obolibrary.org/obo/chebi#"
      xmlns:chebi3="http://purl.obolibrary.org/obo/chebi#1"
      xmlns:chebi4="http://purl.obolibrary.org/obo/chebi#3"
      xmlns:chebi5="http://purl.obolibrary.org/obo/chebi#2"
      xmlns:terms6="http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/"
-     xmlns:uberon="http://purl.obolibrary.org/obo/uberon#"
      xmlns:ubprop="http://purl.obolibrary.org/obo/ubprop#"
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#"
-     xmlns:caloha-reqs-vetted="http://purl.obolibrary.org/obo/caloha-reqs-vetted#">
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/uberon-slim.owl">
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000104"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
@@ -142,6 +141,7 @@
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-2105-2283"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-2338-2550"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-3691-0324"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
         <terms:contributor rdf:resource="https://www.wikidata.org/wiki/Q11695472"/>
         <terms:contributor rdf:resource="https://www.wikidata.org/wiki/Q23809253"/>
         <terms:contributor rdf:resource="https://www.wikidata.org/wiki/Q4964264"/>
@@ -158,7 +158,7 @@
         <doap:bug-database rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/issues/</doap:bug-database>
         <doap:mailing-list rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://lists.sourceforge.net/lists/listinfo/obo-anatomy</doap:mailing-list>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2023-10-01 01:54:24</oboInOwl:date>
+        <oboInOwl:date>2023-11-01 01:29:07</oboInOwl:date>
         <oboInOwl:default-namespace>uberon</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:treat-xrefs-as-equivalent>AEO</oboInOwl:treat-xrefs-as-equivalent>
@@ -250,6 +250,11 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <obo:IAO_0000111 xml:lang="en">example of usage</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <oboInOwl:hasDbXref>IAO:0000112</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>example_of_usage</oboInOwl:id>
@@ -273,6 +278,31 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: &apos;Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions&apos;  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can&apos;t be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don&apos;t have definitions of &apos;meaning&apos; or &apos;expression&apos; or &apos;property&apos;. For &apos;reference&apos; in the intended sense I think we use the term &apos;denotation&apos;. For &apos;expression&apos;, I think we you mean symbol, or identifier. For &apos;meaning&apos; it differs for class and property. For class we want documentation that let&apos;s the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let&apos;s the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The &apos;intended reader&apos; part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">definition</rdfs:label>
         <rdfs:label>definition</rdfs:label>
@@ -284,6 +314,11 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <obo:IAO_0000111 xml:lang="en">editor note</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obofoundry.org/obo/obi&gt;</obo:IAO_0000119>
         <oboInOwl:hasDbXref>IAO:0000116</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>editor_note</oboInOwl:id>
@@ -320,7 +355,13 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000231 -->
 
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231">
+        <obo:IAO_0000111 xml:lang="en">has obsolescence reason</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Relates an annotation property to an obsolescence reason. The values of obsolescence reasons come from a list of predefined terms, instances of the class obsolescence reason specification.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has obsolescence reason</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -328,6 +369,10 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
+        <obo:IAO_0000111 xml:lang="en">curator note</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">An administrative note of use for a curator but of no use for a user</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
         <oboInOwl:hasDbXref>IAO:0000232</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>curator_notes</oboInOwl:id>
@@ -345,15 +390,28 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233">
+        <obo:IAO_0000111 xml:lang="en">term tracker item</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">An IRI or similar locator for a request or discussion of an ontology term.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000119>
         <oboInOwl:hasDbXref>IAO:0000233</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>term_tracker_item</oboInOwl:id>
-        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>term_tracker_item</oboInOwl:shorthand>
+        <rdfs:comment xml:lang="en">The &apos;tracker item&apos; can associate a tracker with a specific ontology term.</rdfs:comment>
+        <rdfs:label xml:lang="en">term tracker item</rdfs:label>
         <rdfs:label>term tracker item</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000234 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000234"/>
     
 
 
@@ -368,6 +426,14 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000425">
+        <obo:IAO_0000111 xml:lang="en">expand assertion to</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">ObjectProperty: RO???
+Label: spatially disjoint from
+Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.org/obo/BFO_0000051 some ?X)  (http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)&quot;
+</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A macro expansion tag applied to an annotation property which can be expanded into a more detailed axiom.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Chris Mungall</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">expand assertion to</rdfs:label>
         <rdfs:label>expand assertion to</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -412,11 +478,18 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0006012">
+        <obo:IAO_0000111 xml:lang="en">scheduled for obsoletion on or after</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Used when the class or object is scheduled for obsoletion/deprecation on or after a particular date.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Chris Mungall, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000233 xml:lang="en">https://github.com/geneontology/go-ontology/issues/15532</obo:IAO_0000233>
+        <obo:IAO_0000233 xml:lang="en">https://github.com/information-artifact-ontology/ontology-metadata/issues/32</obo:IAO_0000233>
+        <obo:IAO_0000234 xml:lang="en">GO ontology</obo:IAO_0000234>
         <oboInOwl:hasDbXref>IAO:0006012</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>scheduled_for_obsoletion_on_or_after</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>scheduled_for_obsoletion_on_or_after</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">scheduled for obsoletion on or after</rdfs:label>
         <rdfs:label>scheduled for obsoletion on or after</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -433,6 +506,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
+        <obo:IAO_0000111 xml:lang="en">term replaced by</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">Use on obsolete terms, relating the term to another term that can be used as a substitute</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">Add as annotation triples in the granting ontology</rdfs:comment>
+        <rdfs:label xml:lang="en">term replaced by</rdfs:label>
         <rdfs:label>term replaced by</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -442,6 +522,50 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMO_0002000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMO_0003000 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMO_0003000">
+        <obo:IAO_0000112>CHEBI:26523 (reactive oxygen species) has an exact synonym (ROS), which is of type OMO:0003000 (abbreviation)</obo:IAO_0000112>
+        <obo:IAO_0000115>A synonym type for describing abbreviations or initalisms</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/122"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-03</terms:created>
+        <rdfs:label>abbreviation</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMO_0003004 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMO_0003004">
+        <obo:IAO_0000112>CHEBI:23367 (molecular entity) has an exact synonym (molecular entities), which is of the type OMO:0003004 (plural form)</obo:IAO_0000112>
+        <obo:IAO_0000115>A synonym type for describing pluralization synonyms</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/122"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-03</terms:created>
+        <rdfs:label>plural form</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMO_0003011 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMO_0003011">
+        <obo:IAO_0000112>nasopharynx (UBERON:0001728) has the latin name &quot;pars nasalis pharyngis</obo:IAO_0000112>
+        <obo:IAO_0000115>A synonym type for describing Latin term synonyms.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/146"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-10-12</terms:created>
+        <rdfs:label>latin term</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -1461,15 +1585,6 @@ WHERE {
     
 
 
-    <!-- http://purl.obolibrary.org/obo/caloha-reqs-vetted#PLURAL -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/caloha-reqs-vetted#PLURAL">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/chebi#BRAND_NAME -->
 
 
@@ -1578,24 +1693,6 @@ WHERE {
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#BDS_subset">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cl#PLURAL -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#PLURAL">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cl#abbreviation -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#abbreviation">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     </owl:AnnotationProperty>
     
 
@@ -1985,25 +2082,6 @@ WHERE {
     
 
 
-    <!-- http://purl.obolibrary.org/obo/uberon#PLURAL -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon#PLURAL">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/uberon/core#ABBREVIATION -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#ABBREVIATION">
-        <rdfs:label>abbreviation</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/uberon/core#BRAIN_NAME_ABV -->
 
 
@@ -2129,16 +2207,6 @@ WHERE {
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#PENDING_REVIEW">
         <rdfs:label>expert consultation and attribution required</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/uberon/core#PLURAL -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#PLURAL">
-        <rdfs:label>plural term</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     </owl:AnnotationProperty>
     
@@ -2522,6 +2590,13 @@ WHERE {
     
 
 
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
     <!-- http://purl.org/dc/terms/creator -->
 
 
@@ -2540,6 +2615,13 @@ WHERE {
         <oboInOwl:shorthand>dcterms-date</oboInOwl:shorthand>
         <rdfs:label>date</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
 
 
@@ -2741,14 +2823,18 @@ WHERE {
     <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by">
+        <rdfs:label>created by</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date">
+        <rdfs:label>creation date</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -2784,13 +2870,6 @@ WHERE {
 
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#editor"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#editor_note -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#editor_note"/>
     
 
 
@@ -2870,7 +2949,12 @@ WHERE {
 
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <obo:IAO_0000115>An alternative label for a class or property which has a more general meaning than the preferred name/primary label.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
+        <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/18</obo:IAO_0000233>
+        <rdfs:label xml:lang="en">has broad synonym</rdfs:label>
         <rdfs:label>has_broad_synonym</rdfs:label>
+        <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/18</rdfs:seeAlso>
     </owl:AnnotationProperty>
     
 
@@ -2888,7 +2972,12 @@ WHERE {
 
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <obo:IAO_0000115>An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
+        <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</obo:IAO_0000233>
+        <rdfs:label xml:lang="en">has exact synonym</rdfs:label>
         <rdfs:label>has_exact_synonym</rdfs:label>
+        <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</rdfs:seeAlso>
     </owl:AnnotationProperty>
     
 
@@ -2897,7 +2986,12 @@ WHERE {
 
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+        <obo:IAO_0000115>An alternative label for a class or property which has a more specific meaning than the preferred name/primary label.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
+        <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/19</obo:IAO_0000233>
+        <rdfs:label xml:lang="en">has narrow synonym</rdfs:label>
         <rdfs:label>has_narrow_synonym</rdfs:label>
+        <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/19</rdfs:seeAlso>
     </owl:AnnotationProperty>
     
 
@@ -2922,7 +3016,12 @@ WHERE {
 
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <obo:IAO_0000115>An alternative label for a class or property that has been used synonymously with the primary term name, but the usage is not strictly correct.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
+        <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/21</obo:IAO_0000233>
+        <rdfs:label xml:lang="en">has related synonym</rdfs:label>
         <rdfs:label>has_related_synonym</rdfs:label>
+        <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/21</rdfs:seeAlso>
     </owl:AnnotationProperty>
     
 
@@ -2948,7 +3047,9 @@ WHERE {
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
+        <rdfs:label>id</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -3143,13 +3244,6 @@ WHERE {
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#seeAlso -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#seeAlso"/>
-    
-
-
     <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
 
 
@@ -3208,13 +3302,6 @@ WHERE {
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#taxon_notes -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#taxon_notes"/>
-    
-
-
     <!-- http://www.geneontology.org/formats/oboInOwl#todo -->
 
 
@@ -3268,13 +3355,6 @@ WHERE {
 
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#xref"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/IAO_0000232 -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/IAO_0000232"/>
     
 
 
@@ -3335,16 +3415,16 @@ WHERE {
     
 
 
-    <!-- http://xmlns.com/foaf/0.1/depicted_by -->
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
 
 
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depicted_by">
-        <oboInOwl:hasDbXref>http://xmlns.com/foaf/0.1/depicted_by</oboInOwl:hasDbXref>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depiction">
+        <oboInOwl:hasDbXref>http://xmlns.com/foaf/0.1/depiction</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>depicted_by</oboInOwl:id>
+        <oboInOwl:id>depiction</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>depicted_by</oboInOwl:shorthand>
-        <rdfs:label>depicted by</rdfs:label>
+        <oboInOwl:shorthand>depiction</oboInOwl:shorthand>
+        <rdfs:label>depiction</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -3367,6 +3447,32 @@ WHERE {
         <oboInOwl:shorthand>foaf-page</oboInOwl:shorthand>
         <rdfs:label>page</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/semapv/vocab/crossSpeciesExactMatch -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/semapv/vocab/crossSpeciesExactMatch"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
@@ -3675,7 +3781,7 @@ WHERE {
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
         <rdfs:label>gland</rdfs:label>
-        <foaf:depicted_by rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://upload.wikimedia.org/wikipedia/commons/a/a1/Gray1026.png</foaf:depicted_by>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://upload.wikimedia.org/wikipedia/commons/a/a1/Gray1026.png</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002530"/>
@@ -3745,6 +3851,228 @@ WHERE {
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000002">
+        <obo:IAO_0000111 xml:lang="en">example to be eventually removed</obo:IAO_0000111>
+        <rdfs:label xml:lang="en">example to be eventually removed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000103 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000103">
+        <obo:IAO_0000111 xml:lang="en">failed exploratory term</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">failed exploratory term</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000120 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000120">
+        <obo:IAO_0000111 xml:lang="en">metadata complete</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">metadata complete</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000121 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000121">
+        <obo:IAO_0000111 xml:lang="en">organizational term</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Term created to ease viewing/sort terms for development purpose, and will not be included in a release</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">organizational term</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000122 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000122">
+        <obo:IAO_0000111 xml:lang="en">ready for release</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking &quot;ready_for_release&quot; should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed &quot;ready_for_release&quot; will also derived from a chain of ancestor classes that are also &quot;ready_for_release.&quot;</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ready for release</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000123 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000123">
+        <obo:IAO_0000111 xml:lang="en">metadata incomplete</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">metadata incomplete</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000124 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000124">
+        <obo:IAO_0000111 xml:lang="en">uncurated</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Nothing done yet beyond assigning a unique class ID and proposing a preferred term.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">uncurated</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000125 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000125">
+        <obo:IAO_0000111 xml:lang="en">pending final vetting</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">pending final vetting</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000226 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000226">
+        <obo:IAO_0000111 xml:lang="en">placeholder removed</obo:IAO_0000111>
+        <rdfs:label xml:lang="en">placeholder removed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000227 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000227">
+        <obo:IAO_0000111 xml:lang="en">terms merged</obo:IAO_0000111>
+        <obo:IAO_0000116 xml:lang="en">An editor note should explain what were the merged terms and the reason for the merge.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">terms merged</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000228 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000228">
+        <obo:IAO_0000111 xml:lang="en">term imported</obo:IAO_0000111>
+        <obo:IAO_0000116 xml:lang="en">This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">term imported</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000229 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000229">
+        <obo:IAO_0000111 xml:lang="en">term split</obo:IAO_0000111>
+        <obo:IAO_0000116 xml:lang="en">This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">term split</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000410 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000410">
+        <obo:IAO_0000111 xml:lang="en">universal</obo:IAO_0000111>
+        <obo:IAO_0000116 xml:lang="en">Hard to give a definition for. Intuitively a &quot;natural kind&quot; rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">universal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000420 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000420">
+        <obo:IAO_0000111 xml:lang="en">defined class</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">&quot;definitions&quot;, in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">defined class</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000421 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000421">
+        <obo:IAO_0000111 xml:lang="en">named class expression</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A named class expression is a logical expression that is given a name. The name can be used in place of the expression.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">named class expression</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000423 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000423">
+        <obo:IAO_0000111 xml:lang="en">to be replaced with external ontology term</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Terms with this status should eventually replaced with a term from another ontology.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">to be replaced with external ontology term</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000428 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000428">
+        <obo:IAO_0000111 xml:lang="en">requires discussion</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">requires discussion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMO_0001000 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OMO_0001000">
+        <obo:IAO_0000115 xml:lang="en">The term was added to the ontology on the assumption it was in scope, but it turned out later that it was not.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This obsolesence reason should be used conservatively. Typical valid examples are: un-necessary grouping classes in disease ontologies, a phenotype term added on the assumption it was a disease.</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
+        <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/77</obo:IAO_0000233>
+        <obo:IAO_0000234>https://orcid.org/0000-0001-5208-3432</obo:IAO_0000234>
+        <rdfs:label>out of scope</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Annotations
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -3752,13 +4080,15 @@ WHERE {
 
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000700">
+        <obo:IAO_0000111 xml:lang="en">has ontology root term</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Ontology annotation property. Relates an ontology to a term that is a designated root term of the ontology. Display tools like OLS can use terms annotated with this property as the starting point for rendering the ontology class hierarchy. There can be more than one root.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Nicolas Matentzoglu</obo:IAO_0000117>
         <oboInOwl:hasDbXref>IAO:0000700</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>has_ontology_root_term</oboInOwl:id>
-        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>has_ontology_root_term</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">has ontology root term</rdfs:label>
         <rdfs:label>has ontology root term</rdfs:label>
         <rdfs:label>preferred_root</rdfs:label>
     </rdf:Description>
@@ -3881,6 +4211,758 @@ WHERE {
         <oboInOwl:shorthand>foaf-homepage</oboInOwl:shorthand>
         <rdfs:label>homepage</rdfs:label>
     </rdf:Description>
+    <rdf:Description rdf:about="https://orcid.org/0000-0001-5208-3432">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Nicole Vasilevsky</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-5208-3432"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q42763131"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-5208-3432"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Nicole Vasilevsky</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q42763131"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0001-5839-6798">
+        <terms:description>German-Moroccan paleontologist and anatomist</terms:description>
+        <rdfs:label>Nizar Ibrahim</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-5839-6798"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>German-Moroccan paleontologist and anatomist</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q23769268"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-5839-6798"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Nizar Ibrahim</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q23769268"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0001-5889-4463">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Mark Engelstad</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-5889-4463"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q57081970"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-5889-4463"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Mark Engelstad</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q57081970"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0001-7258-9596">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Shawn Zheng Kai Tan</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-7258-9596"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q57023310"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-7258-9596"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Shawn Zheng Kai Tan</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q57023310"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0001-7476-6306">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>David P Hill</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-7476-6306"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q87814353"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-7476-6306"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>David P Hill</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q87814353"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0001-7920-5321">
+        <terms:description>researcher ORCID ID = 0000-0001-7920-5321</terms:description>
+        <rdfs:label>Sarah Whitcher Kansa</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-7920-5321"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher ORCID ID = 0000-0001-7920-5321</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q57773887"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-7920-5321"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Sarah Whitcher Kansa</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q57773887"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0001-7972-3866">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>T Alexander Dececchi</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-7972-3866"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q84802701"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-7972-3866"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>T Alexander Dececchi</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q84802701"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0001-8314-2140">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Raymund Stefancsik</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-8314-2140"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q52097457"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-8314-2140"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Raymund Stefancsik</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q52097457"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0001-9107-0714">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Hilmar Lapp</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-9107-0714"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q28913645"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-9107-0714"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Hilmar Lapp</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q28913645"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0001-9114-8737">
+        <terms:description>American epidemiologist and ontologist</terms:description>
+        <rdfs:label>Melissa Haendel</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-9114-8737"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>American epidemiologist and ontologist</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q28368079"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-9114-8737"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Melissa Haendel</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q28368079"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0001-9625-1899">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>William D Duncan</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q89881908"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>William D Duncan</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q89881908"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0001-9897-3238">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Bonita R Lam</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-9897-3238"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q88768503"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-9897-3238"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Bonita R Lam</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q88768503"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0001-9990-8331">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Alexander D Diehl</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q47502183"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Alexander D Diehl</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q47502183"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-0819-0473">
+        <terms:description>researcher (ORCID 0000-0002-0819-0473)</terms:description>
+        <rdfs:label>Paula Duek Roggli</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-0819-0473"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher (ORCID 0000-0002-0819-0473)</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q90245521"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-0819-0473"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Paula Duek Roggli</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q90245521"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-0956-8634">
+        <terms:description>Researcher ORCID = 0000-0002-0956-8634</terms:description>
+        <rdfs:label>Terry Hayamizu</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-0956-8634"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>Researcher ORCID = 0000-0002-0956-8634</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q110610432"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-0956-8634"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Terry Hayamizu</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q110610432"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-1112-5832">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Stephen D Van Hooser</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-1112-5832"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q41786843"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-1112-5832"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Stephen D Van Hooser</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q41786843"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-1572-1316">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Robert Druzinsky</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-1572-1316"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q56986004"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-1572-1316"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Robert Druzinsky</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q56986004"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-1604-3078">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Alan Ruttenberg</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-1604-3078"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q30508557"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-1604-3078"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Alan Ruttenberg</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q30508557"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-1615-2899">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>James Malone</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-1615-2899"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q47502894"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-1615-2899"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>James Malone</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q47502894"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-1773-2692">
+        <terms:description>Researcher ORCID = 0000-0002-1773-2692</terms:description>
+        <rdfs:label>B Varner</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>Researcher ORCID = 0000-0002-1773-2692</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q114557426"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>B Varner</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q114557426"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-1810-9886">
+        <terms:description>herpetologist</terms:description>
+        <rdfs:label>David C. Blackburn</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-1810-9886"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>herpetologist</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q19978490"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-1810-9886"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>David C. Blackburn</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q19978490"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-2061-091X">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Georgios V. Gkoutos</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q54303216"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Georgios V. Gkoutos</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q54303216"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-2244-7917">
+        <terms:description>researcher, ORCID id # 0000-0002-2244-7917</terms:description>
+        <rdfs:label>Ceri E Van Slyke</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-2244-7917"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher, ORCID id # 0000-0002-2244-7917</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q58034214"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-2244-7917"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Ceri E Van Slyke</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q58034214"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-2825-0621">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Paola Roncaglia</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-2825-0621"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q47139534"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-2825-0621"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Paola Roncaglia</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q47139534"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-2908-3327">
+        <terms:description>data scientist</terms:description>
+        <rdfs:label>Anne Thessen</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-2908-3327"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>data scientist</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q47503085"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-2908-3327"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Anne Thessen</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q47503085"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-3734-1859">
+        <terms:description>Researcher ORCID = 0000-0002-3734-1859</terms:description>
+        <rdfs:label>Carlo Tornial</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-3734-1859"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>Researcher ORCID = 0000-0002-3734-1859</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q114403193"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-3734-1859"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Carlo Tornial</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q114403193"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-5111-7263">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Paul N. Schofield</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-5111-7263"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q56958202"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-5111-7263"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Paul N. Schofield</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q56958202"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-5378-0931">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Laura M Jackson</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-5378-0931"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q63391812"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-5378-0931"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Laura M Jackson</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q63391812"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-6095-8718">
+        <terms:description>researcher ORCID ID = 0000-0002-6095-8718</terms:description>
+        <rdfs:label>Damien Goutte-Gattat</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher ORCID ID = 0000-0002-6095-8718</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q59702685"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Damien Goutte-Gattat</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q59702685"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-6443-9376">
+        <terms:description>Researcher ORCID = 0000-0002-6443-9376</terms:description>
+        <rdfs:label>Jennifer R. Smith</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-6443-9376"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>Researcher ORCID = 0000-0002-6443-9376</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q110616111"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-6443-9376"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Jennifer R. Smith</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q110616111"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-6490-7723">
+        <terms:description>Researcher ORCID = 0000-0002-6490-7723</terms:description>
+        <rdfs:label>Anna V. Anagnostopoulos</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-6490-7723"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>Researcher ORCID = 0000-0002-6490-7723</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q114518281"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-6490-7723"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Anna V. Anagnostopoulos</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q114518281"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-6601-2165">
+        <terms:description>bioinformatics researcher</terms:description>
+        <rdfs:label>Christopher J. Mungall</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>bioinformatics researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q20746118"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Christopher J. Mungall</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q20746118"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-7073-9172">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>David Osumi-Sutherland</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q54303418"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>David Osumi-Sutherland</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q54303418"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-7356-1779">
+        <terms:description>Independent Consultant Semantic Technologies</terms:description>
+        <rdfs:label>Nicolas Matentzoglu</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>Independent Consultant Semantic Technologies</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q60972192"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Nicolas Matentzoglu</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q60972192"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-8406-3871">
+        <terms:description>San Diego researcher with interests in neuroinformatics</terms:description>
+        <rdfs:label>Maryann E. Martone</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-8406-3871"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>San Diego researcher with interests in neuroinformatics</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q28035135"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-8406-3871"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Maryann E. Martone</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q28035135"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-8688-6599">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>James P. Balhoff</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-8688-6599"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q37649212"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-8688-6599"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>James P. Balhoff</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q37649212"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-9185-3994">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Gloria S Pryhuber</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-9185-3994"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q88804939"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-9185-3994"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Gloria S Pryhuber</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q88804939"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-9415-5104">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Frederic B Bastian</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-9415-5104"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q96209982"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-9415-5104"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Frederic B Bastian</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q96209982"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-9611-1279">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Erik Segerdell</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-9611-1279"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q54303422"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-9611-1279"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Erik Segerdell</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q54303422"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-9900-7880">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Yvonne Bradford</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-9900-7880"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q37649111"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-9900-7880"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Yvonne Bradford</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q37649111"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0003-1980-3228">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Terrence F Meehan</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q54303383"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Terrence F Meehan</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q54303383"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0003-2034-601X">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Maria C Keays</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0003-2034-601X"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q44167741"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0003-2034-601X"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Maria C Keays</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q44167741"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0003-2338-2550">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Shahim Essaid</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0003-2338-2550"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q108416458"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0003-2338-2550"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Shahim Essaid</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q108416458"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0003-2699-3066">
+        <terms:description>ecologist</terms:description>
+        <rdfs:label>Meghan Balk</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0003-2699-3066"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>ecologist</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q59763318"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0003-2699-3066"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Meghan Balk</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q59763318"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0003-3162-7490">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Wasila M Dahdul</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0003-3162-7490"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q37649170"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0003-3162-7490"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Wasila M Dahdul</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q37649170"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0003-3308-6245">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Anne Niknejad</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0003-3308-6245"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q56582619"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0003-3308-6245"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Anne Niknejad</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q56582619"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0003-3691-0324">
+        <terms:description>researcher on mouse genome informatics</terms:description>
+        <rdfs:label>Cynthia L Smith</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0003-3691-0324"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher on mouse genome informatics</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q56445645"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0003-3691-0324"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Cynthia L Smith</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q56445645"/>
+    </owl:Axiom>
 </rdf:RDF>
 
 

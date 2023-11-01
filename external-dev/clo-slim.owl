@@ -11,10 +11,8 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:caro="http://purl.obolibrary.org/obo/caro#"
      xmlns:cito="http://purl.org/spar/cito/"
      xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
-     xmlns:fbbt="http://purl.obolibrary.org/obo/fbbt#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:obo1="http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/"
      xmlns:pato="http://purl.obolibrary.org/obo/pato#"
@@ -46,9 +44,9 @@
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <pav:importedFrom>http://purl.obolibrary.org/obo/cl.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2023-10-01 01:36:49</oboInOwl:date>
+        <oboInOwl:date>2023-11-01 01:24:41</oboInOwl:date>
         <rdfs:comment>See PMID:15693950, PMID:12799354, PMID:20123131, PMID:21208450; Contact Alexander Diehl, addiehl@buffalo.edu, University at Buffalo.</rdfs:comment>
-        <owl:versionInfo>2023-09-21</owl:versionInfo>
+        <owl:versionInfo>2023-10-19</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
@@ -122,7 +120,7 @@ We don&apos;t have definitions of &apos;meaning&apos; or &apos;expression&apos; 
 
 Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
 
-We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  </obo:IAO_0000116>
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:label xml:lang="en">definition</rdfs:label>
@@ -298,20 +296,6 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_creation_date -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_creation_date"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_scope -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_scope"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OMO_0002000 -->
 
 
@@ -339,6 +323,20 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-8688-6599"/>
         <rdfs:label>defined by construct</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMO_0003000 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMO_0003000">
+        <obo:IAO_0000112>CHEBI:26523 (reactive oxygen species) has an exact synonym (ROS), which is of type OMO:0003000 (abbreviation)</obo:IAO_0000112>
+        <obo:IAO_0000115>A synonym type for describing abbreviations or initalisms</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/122"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-03</terms:created>
+        <rdfs:label>abbreviation</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -743,41 +741,11 @@ WHERE {
     
 
 
-    <!-- http://purl.obolibrary.org/obo/caro#core -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/caro#core">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/caro#plus -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/caro#plus">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/cl#BDS_subset -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#BDS_subset">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cl#abbreviation -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#abbreviation">
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-03-29T15:09:49Z</dc:date>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
-        <rdfs:label>abbreviation</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     </owl:AnnotationProperty>
     
 
@@ -821,51 +789,6 @@ WHERE {
         <rdfs:comment>a subset of general classes of cell types in the cell ontology.</rdfs:comment>
         <rdfs:label>general_cell_types_upper_slim</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/fbbt#FORMULA -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#FORMULA">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/fbbt#IUPAC_NAME -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#IUPAC_NAME">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/fbbt#InChI -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#InChI">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/fbbt#InChIKey -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#InChIKey">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/fbbt#SMILES -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#SMILES">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     </owl:AnnotationProperty>
     
 
@@ -1151,15 +1074,6 @@ WHERE {
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#mpath_slim">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/pato#relational_slim -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#relational_slim">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -1689,13 +1603,6 @@ WHERE {
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -2252,14 +2159,7 @@ WHERE {
     <!-- http://xmlns.com/foaf/0.1/depicted_by -->
 
 
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depicted_by">
-        <oboInOwl:hasDbXref>http://xmlns.com/foaf/0.1/depicted_by</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>depicted_by</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>depicted_by</oboInOwl:shorthand>
-        <rdfs:label>depicted by</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depicted_by"/>
     
 
 
