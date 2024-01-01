@@ -44,9 +44,9 @@
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <pav:importedFrom>http://purl.obolibrary.org/obo/cl.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2023-12-01 01:39:23</oboInOwl:date>
+        <oboInOwl:date>2024-01-01 01:39:35</oboInOwl:date>
         <rdfs:comment>See PMID:15693950, PMID:12799354, PMID:20123131, PMID:21208450; Contact Alexander Diehl, addiehl@buffalo.edu, University at Buffalo.</rdfs:comment>
-        <owl:versionInfo>2023-10-19</owl:versionInfo>
+        <owl:versionInfo>2023-12-05</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
@@ -337,6 +337,7 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-03</terms:created>
         <rdfs:label>abbreviation</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     </owl:AnnotationProperty>
     
 
@@ -351,6 +352,7 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-03</terms:created>
         <rdfs:label>plural form</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     </owl:AnnotationProperty>
     
 
@@ -793,6 +795,18 @@ WHERE {
     
 
 
+    <!-- http://purl.obolibrary.org/obo/cl#kidney_upper_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#kidney_upper_slim">
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-22T11:18:57Z</terms:date>
+        <rdfs:comment>a subset of general classes related to specific cell types in the kidney</rdfs:comment>
+        <rdfs:label>kidney_upper_slim</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate -->
 
 
@@ -1154,15 +1168,6 @@ WHERE {
     
 
 
-    <!-- http://purl.obolibrary.org/obo/uberon/core#ABBREVIATION -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#ABBREVIATION">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/uberon/core#COMPARATIVE_PREFERRED -->
 
 
@@ -1249,15 +1254,6 @@ WHERE {
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#PENDING_REVIEW">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/uberon/core#PLURAL -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#PLURAL">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     </owl:AnnotationProperty>
     
@@ -1606,6 +1602,13 @@ WHERE {
     
 
 
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
     <!-- http://purl.org/pav/importedFrom -->
 
 
@@ -1692,14 +1695,18 @@ WHERE {
     <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by">
+        <rdfs:label>created by</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date">
+        <rdfs:label>creation date</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -1721,13 +1728,6 @@ WHERE {
 
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#editor"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#editor_note -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#editor_note"/>
     
 
 
@@ -1889,7 +1889,9 @@ WHERE {
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
+        <rdfs:label>id</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -2021,13 +2023,6 @@ WHERE {
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#seeAlso -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#seeAlso"/>
-    
-
-
     <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
 
 
@@ -2093,13 +2088,6 @@ WHERE {
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/IAO_0000232 -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/IAO_0000232"/>
-    
-
-
     <!-- http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/IAO_0000233 -->
 
 
@@ -2156,17 +2144,17 @@ WHERE {
     
 
 
-    <!-- http://xmlns.com/foaf/0.1/depicted_by -->
-
-
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depicted_by"/>
-    
-
-
     <!-- http://xmlns.com/foaf/0.1/depiction -->
 
 
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depiction"/>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depiction">
+        <oboInOwl:hasDbXref>http://xmlns.com/foaf/0.1/depiction</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>depiction</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>depiction</oboInOwl:shorthand>
+        <rdfs:label>depiction</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
