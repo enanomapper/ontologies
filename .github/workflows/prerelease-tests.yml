@@ -9,10 +9,10 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
         python-version: 3
 
@@ -23,7 +23,7 @@ jobs:
       run: python -m unittest discover scripts/src/tests/prerelease_tests/
     - name: Create issue about failure
       if: failure()
-      uses: JasonEtco/create-an-issue@v2.5.0
+      uses: JasonEtco/create-an-issue@v2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
