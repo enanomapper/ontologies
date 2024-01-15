@@ -7,7 +7,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
 
     <owl:Ontology rdf:about="http://enanomapper.github.io/ontologies/internal/chebi-ext.owl">
         <dc:contributor>Laurent Winckers</dc:contributor>
@@ -1045,6 +1046,14 @@
         <rdfs:label xml:lang="en">X-Ray Absorber</rdfs:label>
     </owl:Class>
     
+    <!-- http://purl.enanomapper.org/onto/ENM_8000234 -->
 
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000234">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000099"/>
+        <rdfs:isDefinedBy xml:lang="en"> A titanium dioxide nanoparticle coated with poly(vinylpyrrolidone).</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">poly(vinylpyrrolidone)-coated TiO2 nanoparticle</rdfs:label>
+        <oboInOwl:hasRelatedSynonym>PVP-coated TiO2 nanoparticle</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>TiO2 PVP nanoparticle</oboInOwl:hasRelatedSynonym>
+    </owl:Class>
 
 </rdf:RDF>
