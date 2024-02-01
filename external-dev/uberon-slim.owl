@@ -22,6 +22,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
      xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"
+     xmlns:sssom="https://w3id.org/sssom/"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:vocab="https://w3id.org/semapv/vocab/"
@@ -158,7 +159,7 @@
         <doap:bug-database rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/issues/</doap:bug-database>
         <doap:mailing-list rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://lists.sourceforge.net/lists/listinfo/obo-anatomy</doap:mailing-list>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2024-01-01 01:44:22</oboInOwl:date>
+        <oboInOwl:date>2024-02-01 01:29:07</oboInOwl:date>
         <oboInOwl:default-namespace>uberon</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:treat-xrefs-as-equivalent>AEO</oboInOwl:treat-xrefs-as-equivalent>
@@ -540,6 +541,29 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMO_0003002 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMO_0003002">
+        <obo:IAO_0000115>A synonym type for describing dubious synonyms</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/122"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-03</terms:created>
+        <rdfs:label>dubious synonym</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMO_0003003 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMO_0003003">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMO_0003004 -->
 
 
@@ -565,6 +589,7 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-10-12</terms:created>
         <rdfs:label>latin term</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     </owl:AnnotationProperty>
     
 
@@ -1733,6 +1758,15 @@ WHERE {
     
 
 
+    <!-- http://purl.obolibrary.org/obo/cl#kidney_upper_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#kidney_upper_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate -->
 
 
@@ -1899,15 +1933,6 @@ WHERE {
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ncbitaxon#blast_name">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ncbitaxon#common_name -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ncbitaxon#common_name">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     </owl:AnnotationProperty>
     
@@ -2122,16 +2147,6 @@ WHERE {
     
 
 
-    <!-- http://purl.obolibrary.org/obo/uberon/core#DUBIOUS -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#DUBIOUS">
-        <rdfs:label>dubious or contested synonym</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/uberon/core#HOMOLOGY -->
 
 
@@ -2157,16 +2172,6 @@ WHERE {
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#INCONSISTENT">
         <rdfs:label>indicates that a synonym is used in an inconsistent or confusing way, typically between species</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/uberon/core#LATIN -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#LATIN">
-        <rdfs:label>latin term</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     </owl:AnnotationProperty>
     
@@ -3457,6 +3462,27 @@ WHERE {
     
 
 
+    <!-- https://w3id.org/sssom/author_id -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/author_id"/>
+    
+
+
+    <!-- https://w3id.org/sssom/mapping_justification -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/mapping_justification"/>
+    
+
+
+    <!-- https://w3id.org/sssom/mapping_provider -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/mapping_provider"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -3676,6 +3702,12 @@ WHERE {
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>FBbt:00007003</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>UMLS:C0040300</owl:annotatedTarget>
         <oboInOwl:source>ncithesaurus:Tissue</oboInOwl:source>
     </owl:Axiom>
@@ -3737,6 +3769,12 @@ WHERE {
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>FBbt:10000000</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>UMLS:C1515976</owl:annotatedTarget>
         <oboInOwl:source>ncithesaurus:Anatomic_Structure_System_or_Substance</oboInOwl:source>
     </owl:Axiom>
@@ -3794,6 +3832,12 @@ WHERE {
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002530"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>FBbt:00100317</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002530"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>UMLS:C1285092</owl:annotatedTarget>
         <oboInOwl:source>ncithesaurus:Gland</oboInOwl:source>
     </owl:Axiom>
@@ -3815,7 +3859,7 @@ WHERE {
         <owl:annotatedTarget>glandula</owl:annotatedTarget>
         <oboInOwl:hasDbXref>BTO:0000522</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Gland</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003011"/>
     </owl:Axiom>
     
 
@@ -4260,6 +4304,22 @@ WHERE {
         <owl:annotatedTarget>Mark Engelstad</owl:annotatedTarget>
         <terms:source rdf:resource="http://www.wikidata.org/entity/Q57081970"/>
     </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0001-6677-8489">
+        <terms:description>Researcher ORCID=0000-0001-6677-8489</terms:description>
+        <rdfs:label>Aleix Puig-Barbé</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-6677-8489"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>Researcher ORCID=0000-0001-6677-8489</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q123250332"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-6677-8489"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Aleix Puig-Barbé</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q123250332"/>
+    </owl:Axiom>
     <rdf:Description rdf:about="https://orcid.org/0000-0001-7258-9596">
         <terms:description>researcher</terms:description>
         <rdfs:label>Shawn Zheng Kai Tan</rdfs:label>
@@ -4291,6 +4351,22 @@ WHERE {
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget>David P Hill</owl:annotatedTarget>
         <terms:source rdf:resource="http://www.wikidata.org/entity/Q87814353"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0001-7655-4833">
+        <terms:description>researcher</terms:description>
+        <rdfs:label>Ellen Quardokus</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-7655-4833"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q72310426"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-7655-4833"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Ellen Quardokus</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q72310426"/>
     </owl:Axiom>
     <rdf:Description rdf:about="https://orcid.org/0000-0001-7920-5321">
         <terms:description>researcher ORCID ID = 0000-0001-7920-5321</terms:description>
@@ -4339,6 +4415,22 @@ WHERE {
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget>Raymund Stefancsik</owl:annotatedTarget>
         <terms:source rdf:resource="http://www.wikidata.org/entity/Q52097457"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0001-8415-4848">
+        <terms:description>Researcher ORCID=0000-0001-8415-4848</terms:description>
+        <rdfs:label>Helena Machado</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-8415-4848"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>Researcher ORCID=0000-0001-8415-4848</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q123250336"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0001-8415-4848"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Helena Machado</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q123250336"/>
     </owl:Axiom>
     <rdf:Description rdf:about="https://orcid.org/0000-0001-9107-0714">
         <terms:description>researcher</terms:description>
@@ -4490,14 +4582,14 @@ WHERE {
     </rdf:Description>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-1604-3078"/>
-        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
-        <owl:annotatedTarget>researcher</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Alan Ruttenberg</owl:annotatedTarget>
         <terms:source rdf:resource="http://www.wikidata.org/entity/Q30508557"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-1604-3078"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget>Alan Ruttenberg</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher</owl:annotatedTarget>
         <terms:source rdf:resource="http://www.wikidata.org/entity/Q30508557"/>
     </owl:Axiom>
     <rdf:Description rdf:about="https://orcid.org/0000-0002-1615-2899">
@@ -4515,22 +4607,6 @@ WHERE {
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget>James Malone</owl:annotatedTarget>
         <terms:source rdf:resource="http://www.wikidata.org/entity/Q47502894"/>
-    </owl:Axiom>
-    <rdf:Description rdf:about="https://orcid.org/0000-0002-1773-2692">
-        <terms:description>Researcher ORCID = 0000-0002-1773-2692</terms:description>
-        <rdfs:label>B Varner</rdfs:label>
-    </rdf:Description>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
-        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
-        <owl:annotatedTarget>Researcher ORCID = 0000-0002-1773-2692</owl:annotatedTarget>
-        <terms:source rdf:resource="http://www.wikidata.org/entity/Q114557426"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget>B Varner</owl:annotatedTarget>
-        <terms:source rdf:resource="http://www.wikidata.org/entity/Q114557426"/>
     </owl:Axiom>
     <rdf:Description rdf:about="https://orcid.org/0000-0002-1810-9886">
         <terms:description>herpetologist</terms:description>
@@ -4659,6 +4735,22 @@ WHERE {
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget>Laura M Jackson</owl:annotatedTarget>
         <terms:source rdf:resource="http://www.wikidata.org/entity/Q63391812"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-5480-427X">
+        <terms:description>Researcher ORCID=0000-0002-5480-427X</terms:description>
+        <rdfs:label>Danielle Scafidi</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-5480-427X"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>Researcher ORCID=0000-0002-5480-427X</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q123250374"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-5480-427X"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Danielle Scafidi</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q123250374"/>
     </owl:Axiom>
     <rdf:Description rdf:about="https://orcid.org/0000-0002-6095-8718">
         <terms:description>researcher ORCID ID = 0000-0002-6095-8718</terms:description>
@@ -4916,6 +5008,22 @@ WHERE {
         <owl:annotatedTarget>Meghan Balk</owl:annotatedTarget>
         <terms:source rdf:resource="http://www.wikidata.org/entity/Q59763318"/>
     </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0003-2804-127X">
+        <terms:description>researcher (ORCID 0000-0003-2804-127X)</terms:description>
+        <rdfs:label>Sanjay Jain</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0003-2804-127X"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher (ORCID 0000-0003-2804-127X)</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q56516291"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0003-2804-127X"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Sanjay Jain</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q56516291"/>
+    </owl:Axiom>
     <rdf:Description rdf:about="https://orcid.org/0000-0003-3162-7490">
         <terms:description>researcher</terms:description>
         <rdfs:label>Wasila M Dahdul</rdfs:label>
@@ -4963,6 +5071,22 @@ WHERE {
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget>Cynthia L Smith</owl:annotatedTarget>
         <terms:source rdf:resource="http://www.wikidata.org/entity/Q56445645"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="https://orcid.org/0000-0003-4423-4370">
+        <terms:description>American chemist</terms:description>
+        <rdfs:label>Charles Tapley Hoyt</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>American chemist</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q47475003"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Charles Tapley Hoyt</owl:annotatedTarget>
+        <terms:source rdf:resource="http://www.wikidata.org/entity/Q47475003"/>
     </owl:Axiom>
 </rdf:RDF>
 
