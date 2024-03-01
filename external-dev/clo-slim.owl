@@ -19,6 +19,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"
+     xmlns:sssom="https://w3id.org/sssom/"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:vocab="https://w3id.org/semapv/vocab/"
@@ -44,9 +45,9 @@
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <pav:importedFrom>http://purl.obolibrary.org/obo/cl.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2024-02-01 01:25:02</oboInOwl:date>
+        <oboInOwl:date>2024-03-01 01:26:52</oboInOwl:date>
         <rdfs:comment>See PMID:15693950, PMID:12799354, PMID:20123131, PMID:21208450; Contact Alexander Diehl, addiehl@buffalo.edu, University at Buffalo.</rdfs:comment>
-        <owl:versionInfo>2024-01-04</owl:versionInfo>
+        <owl:versionInfo>2024-02-13</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
@@ -342,6 +343,15 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMO_0003002 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMO_0003002">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMO_0003003 -->
 
 
@@ -361,6 +371,15 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-03</terms:created>
         <rdfs:label>plural form</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMO_0003011 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMO_0003011">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     </owl:AnnotationProperty>
     
@@ -933,6 +952,15 @@ WHERE {
     
 
 
+    <!-- http://purl.obolibrary.org/obo/go#goslim_prokaryote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_prokaryote">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/go#goslim_synapse -->
 
 
@@ -946,15 +974,6 @@ WHERE {
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_yeast">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/go#prokaryote_subset -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#prokaryote_subset">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -1186,15 +1205,6 @@ WHERE {
     
 
 
-    <!-- http://purl.obolibrary.org/obo/uberon/core#DUBIOUS -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#DUBIOUS">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/uberon/core#HOMOLOGY -->
 
 
@@ -1217,15 +1227,6 @@ WHERE {
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#INCONSISTENT">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/uberon/core#LATIN -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#LATIN">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     </owl:AnnotationProperty>
     
@@ -2165,6 +2166,27 @@ WHERE {
     
 
 
+    <!-- https://w3id.org/sssom/author_id -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/author_id"/>
+    
+
+
+    <!-- https://w3id.org/sssom/mapping_justification -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/mapping_justification"/>
+    
+
+
+    <!-- https://w3id.org/sssom/mapping_provider -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/mapping_provider"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2221,6 +2243,7 @@ WHERE {
         <oboInOwl:hasDbXref>VHOG:0001533</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>WBbt:0004017</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>XAO:0003012</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ubprop#_upper_level"/>
         <rdfs:comment>The definition of cell is intended to represent all cells, and thus a cell is defined as a material entity and not an anatomical structure, which implies that it is part of an organism (or the entirety of one).</rdfs:comment>
         <rdfs:label>cell</rdfs:label>
@@ -2240,11 +2263,12 @@ WHERE {
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
         <obo:IAO_0000115>OBSOLETE. A cell that is found in a natural setting, which includes multicellular organism cells &apos;in vivo&apos; (i.e. part of an organism), and unicellular organisms &apos;in environment&apos; (i.e. part of a natural environment).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:resource="https://github.com/obophenotype/cell-ontology/issues/2124"/>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
         <oboInOwl:hasDbXref>CARO:0000013</oboInOwl:hasDbXref>
         <oboInOwl:hasNarrowSynonym>cell in vivo</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ubprop#_upper_level"/>
-        <rdfs:comment>https://github.com/obophenotype/cell-ontology/issues/2124</rdfs:comment>
         <rdfs:label>obsolete native cell</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -2317,6 +2341,7 @@ WHERE {
         <obo:IAO_0000115>Circulating macrophages and tissue macrophages (alveolar macrophages) of lung.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>CALOHA:TS-0576</oboInOwl:hasDbXref>
         <oboInOwl:hasRelatedSynonym>lung macrophages</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>lung macrophage</rdfs:label>
     </owl:Class>
     <owl:Axiom>
