@@ -1,10 +1,8 @@
 name: Suggest IRI upon term request
 on:
-  #issues:
-  #  types:
-  #    - labeled
-  workflow_dispatch:
-  pull_request:
+  issues:
+    types:
+      - labeled
 jobs:
   add-comment:
     #if: github.event.label.name == 'term request'
