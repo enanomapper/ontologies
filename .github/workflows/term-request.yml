@@ -31,11 +31,11 @@ jobs:
                 fi
             done                
                 
-      #- name: Add comment
-      #  run: gh issue comment "$NUMBER" --body "$BODY"
-      #  env:
-      #    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #    GH_REPO: ${{ github.repository }}
-      #    NUMBER: ${{ github.event.issue.number }}
-      #    BODY: >
-      #      Available IRI: {$env.NEW_IRI}
+      - name: Add comment
+        run: gh issue comment "$NUMBER" --body "$BODY"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.issue.number }}
+          BODY: >
+            Available IRI: {$env.NEW_IRI}
