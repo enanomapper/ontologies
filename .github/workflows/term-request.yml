@@ -12,26 +12,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
   
-      - name: Cache IRIs
-        id: cache-iris
-        uses: actions/cache@v4
-        with:
-          path: iris
-          key: ${{ runner.os }}-iris
+
       - name: generate IRI
         run: |
-            # Keep generating random patterns until a non-existing one is found
-            while true; do
-                new_iri=$(bash scripts/src/generate_iri.sh)
-                # Check if the random pattern is not in the CACHE
-                if [[ ! iris =~ $new_iri ]]; then
-                    echo "NEW_IRI=$new_iri" >> $GITHUB_ENV
-                    echo $new_iri
-                    echo $new_iri >> iris
-                    break  # Exit the loop once a non-existing IRI is found
-                fi
-            done                
-                
+          new_iri=$(bash scripts/src/generate_iri.sh)
+          echo "NEW_IRI=$new_iri" >> $GITHUB_ENV
+          echo $new_iri
+                          
       - name: Add comment
         run: gh issue comment "$NUMBER" --body "$BODY"
         env:
@@ -40,11 +27,3 @@ jobs:
           NUMBER: ${{ github.event.issue.number }}
           BODY: >
             **Available IRI**: ${{ env.NEW_IRI }}
-
-      - name: Save cached IRIs
-        id: cache-iris-save
-        uses: actions/cache/save@v4
-        with:
-         path: |
-          iris
-         key: ${{ runner.os }}-iris
