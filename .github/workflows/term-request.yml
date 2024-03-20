@@ -1,0 +1,29 @@
+name: Suggest IRI upon term request
+on:
+  issues:
+    types:
+      - labeled
+jobs:
+  add-comment:
+    if: github.event.label.name == 'term request'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+  
+
+      - name: generate IRI
+        run: |
+          new_iri=$(bash scripts/src/generate_iri.sh)
+          echo "NEW_IRI=$new_iri" >> $GITHUB_ENV
+          echo $new_iri
+                          
+      - name: Add comment
+        run: gh issue comment "$NUMBER" --body "$BODY"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.issue.number }}
+          BODY: >
+            **Available IRI**: ${{ env.NEW_IRI }}
