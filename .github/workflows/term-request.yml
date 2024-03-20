@@ -38,4 +38,4 @@ jobs:
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
           BODY: >
-            Available IRI: {$env.NEW_IRI}
+            **Available IRI**: ${{ env.NEW_IRI }}
