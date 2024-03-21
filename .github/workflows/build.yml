@@ -206,7 +206,7 @@ jobs:
       run: bash scripts/src/build-workflow/props.sh ro
   # Commit and push
     - name: Commit OWL files
-      if: always()
+      if: github.ref == 'refs/heads/master'
       run: |
         git pull
         git add external-dev/*.owl
