@@ -24,7 +24,7 @@
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <pav:importedFrom>http://purl.obolibrary.org/obo/go.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2024-03-01 01:28:10</oboInOwl:date>
+        <oboInOwl:date>2024-03-21 13:12:42</oboInOwl:date>
         <oboInOwl:default-namespace>gene_ontology</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
         <owl:versionInfo>2024-01-17</owl:versionInfo>
@@ -606,6 +606,13 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0003824 -->
 
 
@@ -642,6 +649,37 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0006914 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006914">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <obo:IAO_0000115>The cellular catabolic process in which cells digest cellular materials, such as organelles and other macromolecular constituents, or non-self materials such as intracellular pathogens. Autophagy serves to provide essential nutrients under conditions of cellular stress; or can remodel intracellular structures during cell differentiation.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/25541#issuecomment-1740659745</obo:IAO_0000233>
+        <oboInOwl:hasAlternativeId>GO:0016238</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>Wikipedia:Autophagy_(cellular)</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0006914</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_drosophila"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pombe"/>
+        <rdfs:label>autophagy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006914"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The cellular catabolic process in which cells digest cellular materials, such as organelles and other macromolecular constituents, or non-self materials such as intracellular pathogens. Autophagy serves to provide essential nutrients under conditions of cellular stress; or can remodel intracellular structures during cell differentiation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:autophagy</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0198547684</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:11099404</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:29455577</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:9412464</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0009293 -->
 
 
@@ -665,6 +703,64 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0009987 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009987">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</obo:IAO_0000115>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-12-11T16:56:55Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>GO:0008151</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0044763</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0050875</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>cell physiology</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cellular physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>cell growth and/or maintenance</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>single-organism cellular process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0009987</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <rdfs:comment>This term should not be used for direct annotation. It should be possible to make a more specific annotation to one of the children of this term.</rdfs:comment>
+        <rdfs:label>cellular process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:isa_complete</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048519 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0048519">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <obo:IAO_0000115>Any process that stops, prevents, or reduces the frequency, rate or extent of a biological process. Biological processes are regulated by many means; examples include the control of gene expression, protein modification or interaction with a protein or substrate molecule.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>GO:0043118</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>down regulation of biological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down-regulation of biological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>downregulation of biological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>negative regulation of physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>inhibition of biological process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0048519</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
+        <rdfs:label>negative regulation of biological process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0048519"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that stops, prevents, or reduces the frequency, rate or extent of a biological process. Biological processes are regulated by many means; examples include the control of gene expression, protein modification or interaction with a protein or substrate molecule.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:jid</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0050663 -->
 
 
@@ -674,6 +770,94 @@
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/GO_0001816"/>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051494 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051494">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <obo:IAO_0000115>Any process that stops, prevents, or reduces the frequency, rate or extent of the formation, arrangement of constituent parts, or disassembly of cytoskeletal structures.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>down regulation of cytoskeleton organization</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down-regulation of cytoskeleton organization</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>downregulation of cytoskeleton organization</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>negative regulation of cytoskeleton organisation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>inhibition of cytoskeleton organization</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>negative regulation of cytoskeleton organization and biogenesis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0051494</oboInOwl:id>
+        <rdfs:label>negative regulation of cytoskeleton organization</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051494"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that stops, prevents, or reduces the frequency, rate or extent of the formation, arrangement of constituent parts, or disassembly of cytoskeletal structures.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051494"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>negative regulation of cytoskeleton organisation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051494"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>negative regulation of cytoskeleton organization and biogenesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1902807 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1902807">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048519"/>
+        <obo:IAO_0000115>Any signaling pathway that decreases or inhibits the activity of a cell cycle cyclin-dependent protein kinase to modulate the switch from G1 phase to S phase of the cell cycle.</obo:IAO_0000115>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:creation_date>2014-03-26T16:36:20Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>down regulation of cell cycle G1/S phase transition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down-regulation of cell cycle G1/S phase transition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>downregulation of cell cycle G1/S phase transition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>inhibition of cell cycle G1/S phase transition</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:1902807</oboInOwl:id>
+        <rdfs:label>negative regulation of cell cycle G1/S phase transition</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1902807"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any signaling pathway that decreases or inhibits the activity of a cell cycle cyclin-dependent protein kinase to modulate the switch from G1 phase to S phase of the cell cycle.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:mtg_cell_cycle</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO_REF:0000058</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1902807"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>down regulation of cell cycle G1/S phase transition</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1902807"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>down-regulation of cell cycle G1/S phase transition</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1902807"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>downregulation of cell cycle G1/S phase transition</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1902807"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>inhibition of cell cycle G1/S phase transition</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
