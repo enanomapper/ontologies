@@ -24,7 +24,7 @@
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <pav:importedFrom>http://purl.obolibrary.org/obo/go.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2024-03-21 16:24:55</oboInOwl:date>
+        <oboInOwl:date>2024-03-22 07:22:45</oboInOwl:date>
         <oboInOwl:default-namespace>gene_ontology</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
         <owl:versionInfo>2024-01-17</owl:versionInfo>
@@ -680,6 +680,44 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/24968</obo:IAO_0000233>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-09-19T15:05:24Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>GO:0000004</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0007582</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0044699</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>Wikipedia:Biological_process</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>biological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>single organism process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>single-organism process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0008150</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pombe"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
+        <rdfs:comment>Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this.</rdfs:comment>
+        <rdfs:label>biological_process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:pdt</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0009293 -->
 
 
@@ -707,7 +745,7 @@
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009987">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
         <obo:IAO_0000115>Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</obo:IAO_0000115>
         <oboInOwl:created_by>jl</oboInOwl:created_by>
         <oboInOwl:creation_date>2012-12-11T16:56:55Z</oboInOwl:creation_date>
@@ -731,6 +769,58 @@
         <owl:annotatedTarget>Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:isa_complete</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0032060 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0032060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <obo:IAO_0000115>The assembly of a bleb, a cell extension caused by localized decoupling of the cytoskeleton from the plasma membrane and characterized by rapid formation, rounded shape, and scarcity of organelles within the protrusion. Plasma membrane blebbing occurs during apoptosis and other cellular processes, including cell locomotion, cell division, and as a result of physical or chemical stresses.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>blebbing</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>membrane blebbing</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>cell blebbing</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>plasma membrane bleb assembly</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>plasma membrane blebbing</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0032060</oboInOwl:id>
+        <rdfs:label>bleb assembly</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0032060"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>plasma membrane bleb assembly</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:pr</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0032060"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>plasma membrane blebbing</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:pr</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0032060"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The assembly of a bleb, a cell extension caused by localized decoupling of the cytoskeleton from the plasma membrane and characterized by rapid formation, rounded shape, and scarcity of organelles within the protrusion. Plasma membrane blebbing occurs during apoptosis and other cellular processes, including cell locomotion, cell division, and as a result of physical or chemical stresses.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:mtg_apoptosis</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:12083798</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:16624291</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Bleb_(cell_biology)</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0032060"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+        <owl:annotatedTarget>blebbing</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:pr</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0032060"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+        <owl:annotatedTarget>membrane blebbing</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:pr</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -766,7 +856,7 @@
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0048519">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
         <obo:IAO_0000115>Any process that stops, prevents, or reduces the frequency, rate or extent of a biological process. Biological processes are regulated by many means; examples include the control of gene expression, protein modification or interaction with a protein or substrate molecule.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>GO:0043118</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>down regulation of biological process</oboInOwl:hasExactSynonym>
@@ -845,6 +935,12 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051494"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that stops, prevents, or reduces the frequency, rate or extent of the formation, arrangement of constituent parts, or disassembly of cytoskeletal structures.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051494"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>negative regulation of cytoskeleton organisation</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
@@ -855,11 +951,50 @@
         <owl:annotatedTarget>negative regulation of cytoskeleton organization and biogenesis</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0097553 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0097553">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0098739"/>
+        <obo:IAO_0000115>A process in which a calcium ion is transported from one side of a membrane to the other into the cytosol by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/23015</obo:IAO_0000233>
+        <oboInOwl:created_by>pr</oboInOwl:created_by>
+        <oboInOwl:creation_date>2014-01-23T11:05:13Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>GO:0060401</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasBroadSynonym>calcium transmembrane import into cytosol</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>cytosolic calcium ion transport</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0097553</oboInOwl:id>
+        <rdfs:label>calcium ion transmembrane import into cytosol</rdfs:label>
+    </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051494"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0097553"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Any process that stops, prevents, or reduces the frequency, rate or extent of the formation, arrangement of constituent parts, or disassembly of cytoskeletal structures.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A process in which a calcium ion is transported from one side of a membrane to the other into the cytosol by means of some agent such as a transporter or pore.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0098739 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0098739">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <obo:IAO_0000115>The directed movement of some substance from outside of a cell, across the plasma membrane and into the cytosol.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>uptake</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0098739</oboInOwl:id>
+        <rdfs:label>import across plasma membrane</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0098739"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The directed movement of some substance from outside of a cell, across the plasma membrane and into the cytosol.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -910,6 +1045,198 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1902807"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>inhibition of cell cycle G1/S phase transition</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1903787 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1903787">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>Any process that stops, prevents or reduces the frequency, rate or extent of glutathione biosynthetic process.</obo:IAO_0000115>
+        <oboInOwl:created_by>bf</oboInOwl:created_by>
+        <oboInOwl:creation_date>2015-01-08T17:14:59Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>down regulation of glutathione anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down regulation of glutathione biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down regulation of glutathione biosynthetic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down regulation of glutathione formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down regulation of glutathione synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down-regulation of glutathione anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down-regulation of glutathione biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down-regulation of glutathione biosynthetic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down-regulation of glutathione formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down-regulation of glutathione synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>downregulation of glutathione anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>downregulation of glutathione biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>downregulation of glutathione biosynthetic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>downregulation of glutathione formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>downregulation of glutathione synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>negative regulation of glutathione anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>negative regulation of glutathione biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>negative regulation of glutathione formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>negative regulation of glutathione synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>inhibition of glutathione anabolism</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>inhibition of glutathione biosynthesis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>inhibition of glutathione biosynthetic process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>inhibition of glutathione formation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>inhibition of glutathione synthesis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:1903787</oboInOwl:id>
+        <rdfs:label>negative regulation of glutathione biosynthetic process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that stops, prevents or reduces the frequency, rate or extent of glutathione biosynthetic process.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:PARL</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:bf</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO_REF:0000058</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>down regulation of glutathione anabolism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>down regulation of glutathione biosynthesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>down regulation of glutathione biosynthetic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>down regulation of glutathione formation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>down regulation of glutathione synthesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>down-regulation of glutathione anabolism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>down-regulation of glutathione biosynthesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>down-regulation of glutathione biosynthetic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>down-regulation of glutathione formation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>down-regulation of glutathione synthesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>downregulation of glutathione anabolism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>downregulation of glutathione biosynthesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>downregulation of glutathione biosynthetic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>downregulation of glutathione formation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>downregulation of glutathione synthesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>negative regulation of glutathione anabolism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>negative regulation of glutathione biosynthesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>negative regulation of glutathione formation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>negative regulation of glutathione synthesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>inhibition of glutathione anabolism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>inhibition of glutathione biosynthesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>inhibition of glutathione biosynthetic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>inhibition of glutathione formation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903787"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>inhibition of glutathione synthesis</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
     </owl:Axiom>
     
