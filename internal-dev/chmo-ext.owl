@@ -7,10 +7,11 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
-
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xlmns:bao="http://www.bioassayontology.org/bao#">
     <owl:Ontology rdf:about="http://enanomapper.github.io/ontologies/internal/chmo-ext.owl">
         <dc:contributor>Laurent Winckers</dc:contributor>
+	<dc:contributor>Javier Millan Acosta</dc:contributor>
 	<dc:license>CC-BY 4.0 https://creativecommons.org/licenses/by/4.0/</dc:license>
 	<rdfs:comment>This ontology contains proposed extensions to the Chemical Methods Ontology, which in due course will be submitted to the CHMO. </rdfs:comment>
     </owl:Ontology>
@@ -40,6 +41,11 @@
         <rdfs:label xml:lang="en">CHN analysis</rdfs:label>
     </owl:Class>
     
-
+    <!-- http://purl.enanomapper.net/onto/ENM_5562662 -->
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_5562662">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000087"/>
+	<rdfs:label xml:lang="en">Rhodamine fluorescence microscopy assay</rdfs:label>
+	<bao:BAO_0000208 rdf:resource="http://purl.enanomapper.net/onto/ENM_0295914"/>
+    </owl:Class>
 
 </rdf:RDF>
