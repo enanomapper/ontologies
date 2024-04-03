@@ -45,7 +45,12 @@
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_5562662">
 	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000087"/>
 	<rdfs:label xml:lang="en">Rhodamine fluorescence microscopy assay</rdfs:label>
-	<bao:BAO_0000208 rdf:resource="http://purl.enanomapper.net/onto/ENM_0295914"/>
+	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+                <owl:someValuesFrom rdf:resource="http://purl.enanomapper.net/onto/ENM_0295914"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 </rdf:RDF>
