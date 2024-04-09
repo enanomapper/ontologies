@@ -24,10 +24,10 @@
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <pav:importedFrom>http://purl.obolibrary.org/obo/go.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2024-04-04 14:31:49</oboInOwl:date>
+        <oboInOwl:date>2024-04-09 11:39:08</oboInOwl:date>
         <oboInOwl:default-namespace>gene_ontology</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
-        <owl:versionInfo>2024-01-17</owl:versionInfo>
+        <owl:versionInfo>2024-03-28</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
@@ -113,6 +113,13 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002175 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002175"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/go#chebi_ph7_3 -->
 
 
@@ -140,11 +147,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate -->
+    <!-- http://purl.obolibrary.org/obo/go#gocheck_obsoletion_candidate -->
 
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate">
-        <rdfs:comment>Term not to be used for direct manual annotation</rdfs:comment>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#gocheck_obsoletion_candidate">
+        <rdfs:comment>Terms planned for obsoletion</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -200,11 +207,21 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/go#goslim_euk_cellular_processes_ribbon -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_euk_cellular_processes_ribbon">
+        <rdfs:comment>GO ribbon for eukaroytic cellular processes</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon">
-        <rdfs:comment>FlyBase Drosophila GO ribbon slim</rdfs:comment>
+        <rdfs:comment>Insecta GO ribbon slim</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -260,6 +277,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/go#goslim_plant_ribbon -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_plant_ribbon">
+        <rdfs:comment>Plant GO ribbon</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/go#goslim_pombe -->
 
 
@@ -275,6 +302,16 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_prokaryote">
         <rdfs:comment>GO subset for prokaryotes</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon">
+        <rdfs:comment>Prokaryote GO ribbon slim</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -657,11 +694,14 @@
         <oboInOwl:id>GO:0003824</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_agr"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_euk_cellular_processes_ribbon"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon"/>
         <rdfs:label>catalytic activity</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -694,6 +734,7 @@
         <oboInOwl:id>GO:0006914</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_drosophila"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_euk_cellular_processes_ribbon"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pombe"/>
@@ -8682,6 +8723,13 @@
         <oboInOwl:id>coincident_with</oboInOwl:id>
         <oboInOwl:shorthand>coincident_with</oboInOwl:shorthand>
         <rdfs:label>coincident with</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002010">
+        <oboInOwl:hasDbXref>RO:0002010</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>regulates_in_other_organism</oboInOwl:id>
+        <oboInOwl:shorthand>regulates_in_other_organism</oboInOwl:shorthand>
+        <rdfs:label>regulates in other organism</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002013">
         <oboInOwl:hasDbXref>RO:0002013</oboInOwl:hasDbXref>
