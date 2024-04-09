@@ -632,4 +632,19 @@
 	<obo:IAO_0000115>Assay measuring the surface reactivity of nanomaterials under physiological conditions to determine their dose-dependent oxidative damage</obo:IAO_0000115>
 </owl:Class>
 
+    <!-- http://purl.enanomapper.net/onto/ENM_1855822 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_1855822">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
+        <rdfs:label xml:lang="en">Bronchial Lavage Fluid cytometry assay</rdfs:label>
+	<rdfs:label xml:lang="en">Bronchial Lavage Fluid counts</rdfs:label>
+	<obo:IAO_0000115>Assay counting blood cells like neutrophils, macrophages, eosinophils or lymphocytes in bronchoalveolar lavage fluid</obo:IAO_0000115>
+	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0080041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+</owl:Class>
+
 </rdf:RDF>
