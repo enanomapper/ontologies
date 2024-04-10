@@ -11,7 +11,7 @@ ontology=$(basename `grep "owl=" ${ONTO}.props | cut -d'=' -f2`)
 
 echo "------Applying props for ${ONTO}------"
 ls
-sh ../../robot extract --input ${ontology} --term-file ../../config/${ONTO}-term-file.txt --output ../${ONTO}-slim-prop.owl
+sh ../../robot extract --method BOT --input ${ontology} --term-file ../../config/${ONTO}-term-file.txt --output ../${ONTO}-slim-prop.owl
 
 cd ../../
 rm -r external-dev/${ONTO}
