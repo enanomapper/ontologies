@@ -24,13 +24,19 @@
 
     <!-- http://purl.bioontology.org/ontology/npo#definition -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.bioontology.org/ontology/npo#definition"/>
+    <owl:AnnotationProperty rdf:about="http://purl.bioontology.org/ontology/npo#definition">
+        <rdfs:comment>The property definition is used to indicate the meaning or definition of a class or a class-level association in the NPO.</rdfs:comment>
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.bioontology.org/ontology/npo#preferred_Name -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.bioontology.org/ontology/npo#preferred_Name"/>
+    <owl:AnnotationProperty rdf:about="http://purl.bioontology.org/ontology/npo#preferred_Name">
+        <rdfs:comment>The property preferred name is used to indicate the preferred name of a class or a class-level association in the NPO.</rdfs:comment>
+        <rdfs:label>preferred_name</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -48,7 +54,6 @@
     <!-- http://purl.bioontology.org/ontology/npo#has_part -->
 
     <owl:ObjectProperty rdf:about="http://purl.bioontology.org/ontology/npo#has_part">
-        <rdfs:subPropertyOf rdf:resource="http://purl.bioontology.org/ontology/npo#has_relation_to"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <definition>Transitive parthood relation in which one entity has itself, or another entity as a part, and the relation is valid for use only between continuants or between occurrents but not between a continuant and an occurrent.</definition>
         <preferred_Name>has part</preferred_Name>
@@ -68,22 +73,6 @@ Examples:
 covalent linkage has_part covalent interaction
 visualization of cellular uptake of nanoparticles has_part imaging of nanoparticles</rdfs:comment>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.bioontology.org/ontology/npo#has_relation_to -->
-
-    <owl:ObjectProperty rdf:about="http://purl.bioontology.org/ontology/npo#has_relation_to">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <definition>A relationship to indicate that a class is related to another class.</definition>
-        <preferred_Name>has relation to</preferred_Name>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
 </rdf:RDF>
 
 
