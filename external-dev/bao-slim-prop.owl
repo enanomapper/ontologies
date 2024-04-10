@@ -1,12 +1,55 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_complete_merged.owl#"
      xml:base="http://www.bioassayontology.org/bao/bao_complete_merged.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_complete_merged.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
     
 
 
@@ -21,9 +64,628 @@
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0000182 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000182">
+        <rdfs:subPropertyOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002874"/>
+        <rdfs:label>has response unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000183 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000183">
+        <rdfs:subPropertyOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002874"/>
+        <rdfs:label>has concentration unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000207 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000207">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000600"/>
+        <rdfs:label>has detection method</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000208 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000208">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000559"/>
+        <rdfs:label>has endpoint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0000209 -->
 
-    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000209"/>
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000209">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000426"/>
+        <rdfs:domain rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <rdfs:range rdf:resource="http://www.bioassayontology.org/bao#BAO_0000040"/>
+        <rdfs:label>has measure group</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000212 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000212">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000391"/>
+        <rdfs:label>has assay method</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000335 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000335">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label>has curve fit specification</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000391 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000391">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label>is assay method of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000426 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000426">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.bioassayontology.org/bao#BAO_0000040"/>
+        <rdfs:range rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <rdfs:label>is measure group of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000559 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000559">
+        <rdfs:label>is endpoint of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000600 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000600">
+        <rdfs:label>is detection method of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002668 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002668">
+        <rdfs:subPropertyOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002874"/>
+        <rdfs:label>has time unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002871 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002871">
+        <owl:inverseOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003102"/>
+        <rdfs:label xml:lang="en">is role of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002872 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002872">
+        <owl:inverseOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002874"/>
+        <rdfs:label xml:lang="en">is unit of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002874 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002874">
+        <rdfs:label xml:lang="en">has unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002921 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002921">
+        <rdfs:label xml:lang="en">has organism</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003102 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0003102">
+        <rdfs:label>has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0090005 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0090005">
+        <owl:inverseOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0090006"/>
+        <rdfs:label xml:lang="en">derives into</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0090006 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0090006">
+        <rdfs:comment xml:lang="en">See also BFO_0001009</rdfs:comment>
+        <rdfs:label xml:lang="en">derives from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0090012 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0090012">
+        <owl:inverseOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0090013"/>
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:has_participant</dc:source>
+        <rdfs:label xml:lang="en">has participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0090013 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0090013">
+        <rdfs:label xml:lang="en">participates in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000108 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000108">
+        <rdfs:label>has response value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002666 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002666">
+        <rdfs:label>has concentration value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002669 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002669">
+        <rdfs:label>has time value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002833 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002833">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <obo:IAO_0000115>It is the interval of time between the addition of a perturbagen, substrate or cell modification and the measurement of change, as observed by a detection method in the bioassay.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has incubation time value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_24432 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24432">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002929"/>
+        <obo:IAO_0000111>biological role</obo:IAO_0000111>
+        <obo:IAO_0000118>biological function</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>biological role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000015 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000015">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003112"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090012"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0003043"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0003102"/>
+                                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0002001"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090012"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0003111"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0003102"/>
+                                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0003064"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000209"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.bioassayontology.org/bao#BAO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A set of instructions, methodology, operations, required reagents, instruments to carry out experiments for the purpose of testing the effect of a perturbing agent in a biological model system, measuring one or multiple effect(s) of the agent facilitated by an assay design method translate the perturbation into a detectable signal to arrive at one or multiple endpoint(s) that quantify or qualify the extent of the perturbation.  Bioassay is described by multiple bioassay components: assay format, biology (biological participants in various role and processes), design method, physical detection method / technology, screened entity, and endpoint. Bioassay includes one or multiple measure groups to describe panel, profiling, multiparametric (or multiplexed) assays (assays that measure more than one effect of the perturbagen on the system that is screened).</obo:IAO_0000115>
+        <rdfs:label>bioassay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000035 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000035">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002753"/>
+        <obo:IAO_0000115>The physical method (technology) used to measure / readout the effect caused by a perturbagen in the assay environment.</obo:IAO_0000115>
+        <rdfs:label>physical detection method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000040 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000040">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000207"/>
+                        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000035"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+                        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0002202"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090012"/>
+                        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090012"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0003043"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0003102"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0002001"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090012"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0003111"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0003102"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0003064"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000426"/>
+                        <owl:allValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003112"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000207"/>
+                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0002202"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090012"/>
+                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090012"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0003043"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0003102"/>
+                                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0002001"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090012"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0003111"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0003102"/>
+                                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0003064"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000426"/>
+                <owl:allValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Measure group is used to group and link multiple (different) sets of experimental results to one bioassay. Measure groups thus facilitate the description of multiparametric (or multiplexed) assays, that measure more than one effect of the perturbagen on the system that is screened. It also facilitate the definition of panel and profiling assays, e.g. assays that test compounds against multiple (protein) targets.
+Compare definition of bioassay.
+Measure group links to those classes that can vary among different measurements of a panel assay, profiling assay, multiparametric assay, e.g. target, assay design method, physical detection method, endpoint. Measure group is also used to define derived endpoints, for example concentration-response endpoints obtained by curve fitting a set of results from the same compound tested in the same assay at different concentrations.</obo:IAO_0000115>
+        <rdfs:label>measure group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000076 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000076">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0003102"/>
+                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0002932"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003120"/>
+        <rdfs:label>screened entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000179 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000179">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003115"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000559"/>
+                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The endpoint is a quantitive or qualitative interpretable standardized representation of a perturbation (a change from a defined reference state of a &quot;closed&quot; model system) that is measured by the bioassay.  An endpoint consists of a series of data points, one for each perturbing agent (screened entity) tested the assay.</obo:IAO_0000115>
+        <rdfs:label>endpoint</rdfs:label>
+        <rdfs:label>result</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002001 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24432"/>
+        <rdfs:comment>The role of a molecular entity of being the output of a biological reaction or process that is quantitated either directly (by the presence of a tag or probe) or indirectly in a coupled reaction.</rdfs:comment>
+        <rdfs:label>measured entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002202 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002202">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003028"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000207"/>
+                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The assay design method describes how a biological or physical process screened / investigated in the model system is translated into a detectable signal. This relates to the technology / technologies used to make the assay system work, i.e. enable that the screened process can be detected.  It typically involves some manipulation of the (biological) model system to detect the process of interest.</obo:IAO_0000115>
+        <rdfs:label>assay design method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002753 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002753">
+        <rdfs:label>assay method component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002929 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002929">
+        <rdfs:label>role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002932 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002932">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24432"/>
+        <rdfs:label>screened entity role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003028 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003028">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002753"/>
+        <obo:IAO_0000115>The methods required to perform typical screening assay. These include the assay design methods (to generate a detectable signal) and assay supporting methods. Assay methods include laboratory methods. Computational methods are not currently categorized as assay methods, although some may also be used to process the assay measurement results.</obo:IAO_0000115>
+        <rdfs:label>assay method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003043 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003043">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003116"/>
+        <rdfs:comment>Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity (from OBI).</rdfs:comment>
+        <rdfs:label>molecular entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003064 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24432"/>
+        <obo:IAO_0000115>The role of a molecular entity (protein or nucleic acid) that is the presumed subject of an assay and whose activity is being regulated by an entity with a perturbagen role in that assay.</obo:IAO_0000115>
+        <rdfs:label>target</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003111 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003111">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
+        <rdfs:label>biological macromolecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003112 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003112">
+        <rdfs:label>assay bioassay component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003114 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003114">
+        <rdfs:label>assay biology component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003115 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003115">
+        <rdfs:label>assay result component</rdfs:label>
+        <rdfs:label>assay endpoint component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003116 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003116">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002753"/>
+        <rdfs:label>material entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003120 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003120">
+        <rdfs:label>assay screened entity component</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
