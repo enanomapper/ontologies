@@ -69,4 +69,16 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001193">
 	    <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002888"/>
     </owl:Class>
+
+    <!-- http://purl.enanomapper.net/onto/ENM_0617835 -->
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_0617835">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000010"/>
+    <rdfs:label xml:lang="en">C57BL/6 mouse derived cell line</rdfs:label>
+	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090006"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14424"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
 </rdf:RDF>

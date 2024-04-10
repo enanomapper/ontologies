@@ -53,7 +53,6 @@ jobs:
       run: wget ${{ env.slimmer }}
     - name: get robot
       run: |
-        cd ./scripts/src/build-workflow
         wget ${{ env.robot }}
         wget ${{ env.robot_jar}}
   
@@ -206,8 +205,9 @@ jobs:
       run: bash scripts/src/build-workflow/props.sh ro
   # Commit and push
     - name: Commit OWL files
-      #if: github.ref == 'refs/heads/master'
+      if: github.actor != 'github-actions[bot]'
       run: |
+        git checkout "${{ github.ref_name }}"
         git pull
         git add external-dev/*.owl
         git config --local user.email "action@github.com"
