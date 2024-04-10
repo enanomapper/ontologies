@@ -208,6 +208,7 @@ jobs:
     - name: Commit OWL files
       #if: github.ref == 'refs/heads/master'
       run: |
+        git checkout "${{ github.ref_name }}"
         git pull
         git add external-dev/*.owl
         git config --local user.email "action@github.com"
