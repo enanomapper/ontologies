@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.enanomapper.net/onto/internal/efo-ext.owl#"
+     xml:base="http://purl.enanomapper.net/onto/internal/efo-ext.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+    <owl:Ontology rdf:about="http://enanomapper.github.io/ontologies/internal/efo-ext.owl">
+        <dc:contributor>Javier Millan Acosta</dc:contributor>
+	<dc:license>CC-BY 4.0 https://creativecommons.org/licenses/by/4.0/</dc:license>
+    </owl:Ontology>
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002887 -->
+
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002887">
+	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090006"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14238"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002888 -->
+
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002888">
+	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090006"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14225"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001089 -->
+
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001089">
+	<rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002888"/>
+    </owl:Class>
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002936 -->
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002936">
+	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090006"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C160998"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002779 -->
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002779">
+	    <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002888"/>
+    </owl:Class>
+
+    <!-- http://purl.obolibrary.org/obo/BTO_0000018 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000018">
+	    <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002888"/>
+    </owl:Class>
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001193 -->
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001193">
+	    <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002888"/>
+    </owl:Class>
+</rdf:RDF>
