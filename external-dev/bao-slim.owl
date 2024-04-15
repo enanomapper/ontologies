@@ -24,7 +24,7 @@
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <pav:importedFrom>http://bioassayontology.org/bao/bao_complete_merged.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2024-04-10 15:00:28</oboInOwl:date>
+        <oboInOwl:date>2024-04-15 11:26:53</oboInOwl:date>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
@@ -1926,6 +1926,25 @@ Kd = ([P] [L]) / [PL]
 The dissociation constant has molar units (M), which corresponds to the concentration of ligand [L] at which the binding site on a particular protein is half occupied, i.e. the concentration of ligand, at which the concentration of protein with ligand bound [PL], equals the concentration of protein with no ligand bound [P]. The smaller the dissociation constant, the more tightly bound the ligand is, or the higher the affinity between ligand and protein. http://www.graphpad.com/curvefit/law_of_mass_action.htm
         </obo:IAO_0000115>
         <rdfs:label>Kd</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000040 -->
+
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Measure group is used to group and link multiple (different) sets of experimental results to one bioassay. Measure groups thus facilitate the description of multiparametric (or multiplexed) assays, that measure more than one effect of the perturbagen on the system that is screened. It also facilitate the definition of panel and profiling assays, e.g. assays that test compounds against multiple (protein) targets.
+Compare definition of bioassay.
+Measure group links to those classes that can vary among different measurements of a panel assay, profiling assay, multiparametric assay, e.g. target, assay design method, physical detection method, endpoint. Measure group is also used to define derived endpoints, for example concentration-response endpoints obtained by curve fitting a set of results from the same compound tested in the same assay at different concentrations.</obo:IAO_0000115>
+        <rdfs:label>measure group</rdfs:label>
     </owl:Class>
     
 
