@@ -205,7 +205,7 @@ jobs:
       run: bash scripts/src/build-workflow/props.sh ro
   # Commit and push
     - name: Commit OWL files
-      if: github.actor != 'github-actions[bot]'
+      if: ${{ github.event_name != 'pull_request' || github.event.action != 'closed' || github.event.pull_request.merged == false }} # do not try to commit if not ran in branch but on PR
       run: |
         git checkout "${{ github.ref_name }}"
         git pull
@@ -218,7 +218,6 @@ jobs:
         else
             git commit -m "Actions - slim updated" ./external-dev/*.owl || true
           fi
-        
         # Check if there are changes to push
         if [[ $(git rev-parse --abbrev-ref HEAD) == "${{ github.ref_name }}" ]]; then
           if [ -n "$(git cherry -v)" ]; then
