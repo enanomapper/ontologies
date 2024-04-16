@@ -205,8 +205,10 @@ jobs:
       run: bash scripts/src/build-workflow/props.sh ro
   # Commit and push
     - name: Commit OWL files
-      if: ${{ github.event_name != 'pull_request' || github.event.action != 'closed' || github.event.pull_request.merged == false }} # do not try to commit if not ran in branch but on PR
       run: |
+        if [[ "${{ github.ref_name }}" == *"merge"* ]]; then
+          exit 0
+        fi
         git checkout "${{ github.ref_name }}"
         git pull
         git add external-dev/*.owl

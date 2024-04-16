@@ -1,63 +1,152 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.enanomapper.net/onto/"
-     xml:base="http://purl.enanomapper.net/onto/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+<rdf:RDF xmlns="http://purl.enanomapper.net/onto/internal/ncit-ext.owl#"
+     xml:base="http://purl.enanomapper.net/onto/internal/ncit-ext.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-
-    <owl:Ontology rdf:about="http://www.enanomapper.net/ontologies/nmlco.owl">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://enanomapper.github.io/ontologies/internal/ncit-ext.owl">
         <dc:contributor>Javier Millan Acosta</dc:contributor>
-        <dc:format>application/rdf+xml</dc:format>
-        <dc:title>NMLCO - Nanomaterial Life Cycle Ontology</dc:title>
-        <dc:language>en</dc:language>
-        <dc:rights>http://creativecommons.org/licenses/by/3.0</dc:rights>
-        <dc:description>Ontology covering the domain of nanomaterial life cycle assessment</dc:description> 
     </owl:Ontology>
 
- <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
 
+    <!-- http://purl.enanomapper.org/onto/ENM_9000267 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000267">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C119826"/>
+        <rdfs:isDefinedBy>Pulmonary exposure is performed by instillation of test substance dispersed in a liquid vehicle. The liquid is delivered/blown into the lungs of sedated animals. The exposure is a bolus exposure and the dose is delivered within seconds.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Pulmonary instillation</rdfs:label>
+    </owl:Class>    
     
+    <!-- http://purl.enanomapper.net/onto/ENM_2659304 -->
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <!-- http://purl.enanomapper.net/onto/NMLCO_00000000 -->
-
-    <owl:Class rdf:about="http://purl.enanomapper.net/onto/NMLCO_00000000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>   
-        <rdfs:label xml:lang="en">Nanomaterial lifecycle stage</rdfs:label>
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_2659304">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14238"/>
+        <rdfs:label xml:lang="en">HsdOla:TO mouse</rdfs:label>
     </owl:Class>
 
-    <!-- http://purl.enanomapper.net/onto/NMLCO_00000010 -->
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002888 -->
+        <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002888">
+	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090006"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14238"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
 
-    <owl:Class rdf:about="http://purl.enanomapper.net/onto/NMLCO_00000010">
-        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.net/onto/NMLCO_00000000"/>   
-        <rdfs:label xml:lang="en">Environmental fate</rdfs:label>
+    <!-- http://purl.obolibrary.org/obo/NCIT_C20222 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C20222">
+	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090006"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C160998"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.net/onto/ENM_0893129 -->
+
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_0893129">
+    <rdfs:label xml:lang="en">Murine dendritic cell line</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0002042"/>
+	<rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002887"/>
+    </owl:Class>
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_2866075 -->
+
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_0893129">
+    <rdfs:label xml:lang="en">Human PMØ</rdfs:label>
+    <rdfs:label xml:lang="en">Human peritoneal macrophage cell line</rdfs:label>
+
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0001034"/>
+	<rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002888"/>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.net/onto/ENM_2866074 -->
+
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_2866074">
+    <rdfs:label xml:lang="en">HKC</rdfs:label>
+    <rdfs:label xml:lang="en">Human kidney cell line</rdfs:label>
+
+    <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001643"/>
+	<rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002888"/>
+    </owl:Class>
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_0617835 -->
+
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_0617835">
+    <rdfs:label xml:lang="en">MSC</rdfs:label>
+    <rdfs:label xml:lang="en">Mesothelioma cell line</rdfs:label>
+
+    <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001639"/>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.net/onto/ENM_0617835 -->
+
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_0617835">
+    <rdfs:label xml:lang="en">hMSC</rdfs:label>
+    <rdfs:label xml:lang="en">Human mesothelioma cell line</rdfs:label>
+
+    <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001639"/>
+	<rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002888"/>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.net/onto/ENM_0951914 -->
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_0951914">
+    <rdfs:label xml:lang="en">Lung cell line</rdfs:label>
+    <rdfs:label xml:lang="en">Pulmonary cell line</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000010"/>
+	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090006"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000763"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <!-- http://purl.obolibrary.org/obo/CL_0001035 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001035">
+	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090006"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_7054247 -->
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_7054247">
+    <rdfs:label xml:lang="en">CCL-131</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005214"/>
+    <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002887"/>
+
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.net/onto/ENM_2866074 -->
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_2866074">
+    <rdfs:label xml:lang="en">Mouse platelets</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000233"/>
+    <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002887"/>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.net/onto/ENM_2169340 -->
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_2169340">
+    <rdfs:label xml:lang="en">Organic matter in medium</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C53414"/>
     </owl:Class>
 
 </rdf:RDF>
