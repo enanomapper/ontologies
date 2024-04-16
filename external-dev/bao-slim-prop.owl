@@ -179,7 +179,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.bioassayontology.org/bao#BAO_0000209 -->
 
     <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000209">
-        <rdfs:range rdf:resource="http://www.bioassayontology.org/bao#BAO_0000040"/>
         <rdfs:label>has measure group</rdfs:label>
     </owl:ObjectProperty>
     
@@ -259,28 +258,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000115>It is the interval of time between the addition of a perturbagen, substrate or cell modification and the measurement of change, as observed by a detection method in the bioassay.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">has incubation time value</rdfs:label>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000040 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000040">
-        <obo:IAO_0000115>Measure group is used to group and link multiple (different) sets of experimental results to one bioassay. Measure groups thus facilitate the description of multiparametric (or multiplexed) assays, that measure more than one effect of the perturbagen on the system that is screened. It also facilitate the definition of panel and profiling assays, e.g. assays that test compounds against multiple (protein) targets.
-Compare definition of bioassay.
-Measure group links to those classes that can vary among different measurements of a panel assay, profiling assay, multiparametric assay, e.g. target, assay design method, physical detection method, endpoint. Measure group is also used to define derived endpoints, for example concentration-response endpoints obtained by curve fitting a set of results from the same compound tested in the same assay at different concentrations.</obo:IAO_0000115>
-        <rdfs:label>measure group</rdfs:label>
-    </owl:Class>
 </rdf:RDF>
 
 
