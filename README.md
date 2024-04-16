@@ -2,10 +2,10 @@ The eNanoMapper Ontology
 ============
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8139894.svg)](https://doi.org/10.5281/zenodo.8139894)
-[![Build slims](https://github.com/enanomapper/ontologies/actions/workflows/build.yml/badge.svg)](https://github.com/enanomapper/ontologies/actions/workflows/build.yml)
-[![On push file integrity tests](https://github.com/enanomapper/ontologies/actions/workflows/on-push-tests.yml/badge.svg)](https://github.com/enanomapper/ontologies/actions/workflows/on-push-tests.yml)
-[![ROBOT enanomapper-dev build test](https://github.com/enanomapper/ontologies/actions/workflows/dev-tests.yml/badge.svg)](https://github.com/enanomapper/ontologies/actions/workflows/dev-tests.yml)
-[![Pre-release tests](https://github.com/enanomapper/ontologies/actions/workflows/prerelease-tests.yml/badge.svg)](https://github.com/enanomapper/ontologies/actions/workflows/prerelease-tests.yml)
+[![Build slims](https://github.com/enanomapper/ontologies/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/enanomapper/ontologies/actions/workflows/build.yml)
+[![On push file integrity tests](https://github.com/enanomapper/ontologies/actions/workflows/on-push-tests.yml/badge.svg?branch=master)](https://github.com/enanomapper/ontologies/actions/workflows/on-push-tests.yml)
+[![ROBOT enanomapper-dev build test](https://github.com/enanomapper/ontologies/actions/workflows/dev-tests.yml/badge.svg?branch=master)](https://github.com/enanomapper/ontologies/actions/workflows/dev-tests.yml)
+[![Pre-release tests](https://github.com/enanomapper/ontologies/actions/workflows/prerelease-tests.yml/badge.svg?branch=master)](https://github.com/enanomapper/ontologies/actions/workflows/prerelease-tests.yml)
 
 
 The eNanoMapper ontologies aim to provide a comprehensive suite of ontologies for the nanomaterial safety assessment domain (see http://www.enanomapper.net for project information). The full suite of ontologies can be found in a modular file assembled by imports using `owl:imports`, [enanomapper.owl](enanomapper.owl).
