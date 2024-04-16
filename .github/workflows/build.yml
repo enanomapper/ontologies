@@ -211,7 +211,7 @@ jobs:
         fi
         git checkout "${{ github.ref_name }}"
         git pull
-        git add external-dev/*.owl
+        git add -f external-dev/*.owl
         git config --local user.email "action@github.com"
         git config --local user.name "Slimmer bot"
         # Check if there are changes to commit
