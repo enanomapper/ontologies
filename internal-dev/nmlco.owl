@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.enanomapper.net/onto/"
+     xml:base="http://purl.enanomapper.net/onto/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+
+    <owl:Ontology rdf:about="http://www.enanomapper.net/ontologies/nmlco.owl">
+        <dc:contributor rdf:datatype="&xsd;string">Javier Millan Acosta</dc:contributor>
+        <owl:versionInfo rdf:datatype="&xsd;string">alpha</owl:versionInfo>
+        <dc:format rdf:datatype="&xsd;string">application/rdf+xml</dc:format>
+        <dc:title rdf:datatype="&xsd;string">NMLCO - Nanomaterial Life Cycle Ontology</dc:title>
+        <dc:language rdf:datatype="&xsd;string">en</dc:language>
+        <dc:rights rdf:datatype="&rdf;PlainLiteral">http://creativecommons.org/licenses/by/3.0</dc:rights>
+        <dc:description>Ontology covering the domain of nanomaterial life cycle assessment</dc:description> 
+    </owl:Ontology>
+
+ <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- http://purl.enanomapper.net/onto/NMLCO_00000000 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/NMLCO_00000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>   
+        <rdfs:label xml:lang="en">Nanomaterial lifecycle stage</rdfs:label>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.net/onto/NMLCO_00000010 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/NMLCO_00000010">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.net/onto/NMLCO_00000000"/>   
+        <rdfs:label xml:lang="en">Environmental fate</rdfs:label>
+    </owl:Class>
+
+</rdf:RDF>
