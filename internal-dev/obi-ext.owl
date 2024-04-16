@@ -660,12 +660,26 @@
     <!-- http://purl.enanomapper.net/onto/ENM_5945718 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_5945718">
-        <rdfs:subClassOf rdf:resource=" http://purl.enanomapper.net/onto/ENM_3323767"/>
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.net/onto/ENM_3323767"/>
         <rdfs:label xml:lang="en">Tracheal instillation</rdfs:label>
 	<rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002339"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+</owl:Class>
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_4399735 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_4399735">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000954"/>
+        <rdfs:label xml:lang="en">subcutaneous injection via hydrogel</rdfs:label>
+	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0016004"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_771"/>
             </owl:Restriction>
         </rdfs:subClassOf>
 </owl:Class>
