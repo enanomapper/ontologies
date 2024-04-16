@@ -647,4 +647,27 @@
         </rdfs:subClassOf>
 </owl:Class>
 
+
+    <!-- http://purl.enanomapper.net/onto/ENM_3323767 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_3323767">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600007"/>
+        <rdfs:label xml:lang="en">Instillation</rdfs:label>
+	<obo:IAO_0000115>Drop by drop application of a liquid substance into or onto a location in an organism</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_5945718 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_5945718">
+        <rdfs:subClassOf rdf:resource=" http://purl.enanomapper.net/onto/ENM_3323767"/>
+        <rdfs:label xml:lang="en">Tracheal instillation</rdfs:label>
+	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002339"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+</owl:Class>
+
 </rdf:RDF>
