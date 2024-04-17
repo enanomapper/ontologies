@@ -13,7 +13,7 @@ The eNanoMapper ontologies aim to provide a comprehensive suite of ontologies fo
 The ontology is being developed and maintained by the following EU H2020 projects (see also the below
 [funding](README.md#funding) info):
 
-* [NanoSolveIT](https://www.nanosolveit.eu/)
+* [NanoSolveIT](https://www.nanosolveit.eu/) (project ended)
 * [NanoCommons](https://www.nanocommons.eu/) (project ended)
 * [OpenRiskNet](https://openrisknet.org/) (project ended)
 * [eNanoMapper](http://enanomapper.net/) (project ended)
