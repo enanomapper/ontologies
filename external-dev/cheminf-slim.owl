@@ -18,6 +18,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:cheminf1="http://www.semanticweb.org/ontologies/cheminf.owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:dcmi-terms="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"
      xmlns:cheminf-core="http://semanticscience.org/ontology/cheminf-core.owl#">
     <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/cheminf-slim.owl">
         <protege:defaultLanguage>en</protege:defaultLanguage>
@@ -79,7 +80,7 @@
         <terms:license>http://creativecommons.org/publicdomain/zero/1.0/</terms:license>
         <pav:importedFrom>http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2024-04-16 14:55:21</oboInOwl:date>
+        <oboInOwl:date>2024-04-19 13:39:51</oboInOwl:date>
         <rdfs:comment xml:lang="en">An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at https://github.com/information-artifact-ontology/IAO</rdfs:comment>
         <rdfs:comment>Document containing upporting external terms</rdfs:comment>
         <rdfs:comment>IDs allocated to related efforts: PNO: IAO_0020000-IAO_0020999, D_ACTS: IAO_0021000-IAO_0021999</rdfs:comment>
@@ -1095,6 +1096,13 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     
 
 
+    <!-- https://www.dublincore.org/specifications/dublin-core/dcmi-terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/source"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1809,6 +1817,31 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000115>An aromaticity descriptor is a chemical descriptor which indicates the aromaticity of a molecular entity.</obo:IAO_0000115>
         <dc:description>An aromaticity descriptor is a chemical descriptor which indicates the aromaticity of a molecular entity.</dc:description>
         <rdfs:label>aromaticity descriptor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_000057 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000057">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000025"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-3465-8786"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-09T14:29:12Z</dc:date>
+        <rdfs:label xml:lang="en">melt mass flow rate</rdfs:label>
+        <rdfs:label>file</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_000058 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000058">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000057"/>
+        <obo:IAO_0000115>A MOLfile is a file which contains a MOLfile encoding of a chemical structure representation. It is the concretization of a MOLfile descriptor.</obo:IAO_0000115>
+        <dc:description>A MOLfile is a file which contains a MOLfile encoding of a chemical structure representation. It is the concretization of a MOLfile descriptor.</dc:description>
+        <rdfs:label>MOLfile</rdfs:label>
     </owl:Class>
     
 
@@ -6036,6 +6069,45 @@ where p is the partial pressure of the solute in the gas above the solution, c i
         <obo:IAO_0000115>Descriptor that calculates the sum of the absolute value of the difference between atomic polarizabilities of all bonded atoms in the molecule (including implicit hydrogens).</obo:IAO_0000115>
         <dc:description>Descriptor that calculates the sum of the absolute value of the difference between atomic polarizabilities of all bonded atoms in the molecule (including implicit hydrogens).</dc:description>
         <rdfs:label>Bond Polarizabilities</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_001101 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_001101">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000087"/>
+        <obo:IAO_0000115>Oxidation state is an atomic descriptor that gives the degree of oxidation of an atom in terms of counting electrons. The higher the oxidation state (OS) of a given atom, the greater is its degree of oxidation. [source: IUPAC Gold Book - https://doi.org/10.1351/goldbook.O04365]</obo:IAO_0000115>
+        <dc:description>Oxidation state is an atomic descriptor that gives the degree of oxidation of an atom in terms of counting electrons. The higher the oxidation state (OS) of a given atom, the greater is its degree of oxidation. [source: IUPAC Gold Book - https://doi.org/10.1351/goldbook.O04365]</dc:description>
+        <rdfs:label>oxidation state</rdfs:label>
+        <dcmi-terms:source>https://doi.org/10.1351/goldbook.O04365</dcmi-terms:source>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_001102 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_001102">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000031"/>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000108"/>
+        <obo:IAO_0000115>As applied to a chemical species, the term expresses a kinetic property. A species is said to be more reactive or to have a higher reactivity in some given context than some other (reference) species if it has a larger rate constant for a specified elementary reaction [source: IUPAC Gold Book - https://doi.org/10.1351/goldbook.R05180]</obo:IAO_0000115>
+        <dc:description>As applied to a chemical species, the term expresses a kinetic property. A species is said to be more reactive or to have a higher reactivity in some given context than some other (reference) species if it has a larger rate constant for a specified elementary reaction [source: IUPAC Gold Book - https://doi.org/10.1351/goldbook.R05180]</dc:description>
+        <rdfs:label>reactivity</rdfs:label>
+        <dcmi-terms:source>https://doi.org/10.1351/goldbook.R05180</dcmi-terms:source>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_001103 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_001103">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_001102"/>
+        <obo:IAO_0000115>Property by which a chemical species becomes reactive upon exposure to UV or visible light</obo:IAO_0000115>
+        <dc:description>Property by which a chemical species becomes reactive upon exposure to UV or visible light</dc:description>
+        <rdfs:label>photoreactivity</rdfs:label>
     </owl:Class>
     
 
