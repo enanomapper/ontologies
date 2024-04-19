@@ -35,14 +35,14 @@
         <doap:GitRepository rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/EnvironmentOntology/envo/</doap:GitRepository>
         <doap:bug-database rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/EnvironmentOntology/envo/issues/</doap:bug-database>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2024-02-01 01:25:50</oboInOwl:date>
+        <oboInOwl:date>2024-04-16 14:59:25</oboInOwl:date>
         <oboInOwl:default-namespace>ENVO</oboInOwl:default-namespace>
         <rdfs:comment>Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/modules/chemical_concentration.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 679 Logical Axioms: 119]</rdfs:comment>
         <rdfs:comment>Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/modules/entity_attribute.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 206 Logical Axioms: 34]</rdfs:comment>
         <rdfs:comment>Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/modules/entity_attribute_location.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 168 Logical Axioms: 29]</rdfs:comment>
         <rdfs:comment>Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/modules/entity_quality_location.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 40 Logical Axioms: 6]</rdfs:comment>
         <rdfs:comment>Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/envo/modules/process_attribute.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 21 Logical Axioms: 2]</rdfs:comment>
-        <owl:versionInfo>2023-02-13</owl:versionInfo>
+        <owl:versionInfo>2024-02-16</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
         <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://environmentontology.org/</foaf:homepage>
     </owl:Ontology>
@@ -220,6 +220,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMO_0003004 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMO_0003004">
+        <rdfs:label>plural form</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
 
 
@@ -320,16 +330,6 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/envo#EnvO-Lite-GSC">
         <rdfs:comment>EnvO-Lite-GSC</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/envo#PLURAL -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/envo#PLURAL">
-        <rdfs:label>plurals</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     </owl:AnnotationProperty>
     
 
@@ -1076,7 +1076,7 @@
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000194">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000814"/>
         <obo:IAO_0000115>Broken rock that appears at the bottom of crags, mountain cliffs or valley shoulders.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:scree</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FTT:1078</oboInOwl:hasDbXref>
@@ -1085,10 +1085,8 @@
         <oboInOwl:hasDbXref>SWEETRealm:Talus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>TGN:21508</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Scree</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>TALUS</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>talus slope</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>ENVO:00000194</oboInOwl:id>
         <rdfs:label>scree</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1143,24 +1141,24 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000428">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115>A biome is an ecosystem to which resident ecological communities have evolved adaptations.</obo:IAO_0000115>
-        <oboInOwl:hasAlternativeId>LTER:809</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 xml:lang="en">A biome is an ecosystem which is undergoing climactic ecological succession.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:biome</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>LTER:809</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>major habitat type</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>EcosytemType</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>There has been some concern raised (see Issue #143) about the usefulness of the assertion that organisms have evolved within a given biome. They may have evolved adaptations elsewhere and demonstrating one or the other is often not feasible. Consider relabelling to &quot;environmental system determined by an ecological community&quot; or similar.</rdfs:comment>
+        <rdfs:comment xml:lang="en">In this definition, there is an assumption that no major perturbations are occurring or have occurred in a time frame affects the successional dynamics of the ecosystem. A &quot;major&quot; perturbation is one which disrupts the community&apos;s ability to restore its (near) equilibrium. Usually, pioneer or early secondary successional processes would be in effect in such scenarios.</rdfs:comment>
         <rdfs:label>biome</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000428"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A biome is an ecosystem to which resident ecological communities have evolved adaptations.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">A biome is an ecosystem which is undergoing climactic ecological succession.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>DOI:10.1186/2041-1480-4-43</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Biome</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000428"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>LTER:809</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://vocab.lternet.edu/vocab/vocab/index.php?tema=809&amp;/biomes</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -1521,8 +1519,8 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
-        <obo:IAO_0000115>Sediment is an environmental substance comprised of any particulate matter that can be transported by fluid flow and which eventually is deposited as a layer of solid particles on the bedor bottom of a body of water or other liquid.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000060"/>
+        <obo:IAO_0000115 xml:lang="en">Particulate environmental material which is formed as a result of the transport and deposition of particles by flowing liquid.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:sediment</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EcoLexicon:sedimentation</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>LTER:492</oboInOwl:hasDbXref>
@@ -1531,13 +1529,13 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Sediment</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/envo#EnvO-Lite-GSC"/>
         <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
-        <rdfs:comment>It is recommended to use a combination of sediment terms to describe a more specific sediment type.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Sediment is typically deposited on the bed or bottom of a body of water or other liquid.</rdfs:comment>
         <rdfs:label>sediment</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002007"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Sediment is an environmental substance comprised of any particulate matter that can be transported by fluid flow and which eventually is deposited as a layer of solid particles on the bedor bottom of a body of water or other liquid.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">Particulate environmental material which is formed as a result of the transport and deposition of particles by flowing liquid.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Sediment</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -5078,19 +5076,19 @@ On the uplands, they are thin, poor and gravelly, sandy, or stony and porous, li
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00010483">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115>A portion of environmental material is a fiat object part which forms the medium or part of the medium of an environmental system.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A material entity which other material entities in an environmental system are primarily or partially composed of.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>portion of environmental material</oboInOwl:hasExactSynonym>
-        <rdfs:comment>Everything under this parent must be a mass noun. All subclasses are to be understood as being composed primarily of the named entity, rather than restricted to that entity. For example, &quot;ENVO:water&quot; is to be understood as &quot;environmental material composed primarly of some CHEBI:water&quot;. This class is currently being aligned to the Basic Formal Ontology. Following this alignment, its definition and the definitions of its subclasses will be revised.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Everything under this parent must be a mass noun (i.e. not countable). All subclasses are to be understood as being composed primarily of the named entity, rather than restricted to that entity. For example, &quot;ENVO:water&quot; is to be understood as &quot;environmental material composed primarly of some CHEBI:water&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Instances of this class are portions of environmental materials, such as seawater in bucket, a water parcel in the photic zone of a lake, or the concrete that composes a building part. Instances of these portions may have fiat or non-fiat boundaries. For example, a water parcel has not physical boundaries, while the seawater in a bucket is bounded by the internal surfaces of the bucket.</rdfs:comment>
         <rdfs:label>environmental material</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A portion of environmental material is a fiat object part which forms the medium or part of the medium of an environmental system.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>DOI:10.1186/2041-1480-4-43</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>MA:ma</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>ORCID:0000-0002-4366-3088</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>URL:http://ontology.buffalo.edu/smith/articles/niches.html</oboInOwl:hasDbXref>
+        <owl:annotatedTarget xml:lang="en">A material entity which other material entities in an environmental system are primarily or partially composed of.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://ontology.buffalo.edu/smith/articles/niches.html"/>
+        <oboInOwl:hasDbXref rdf:resource="https://dx.doi.org/10.1186/2041-1480-4-43"/>
+        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/Material"/>
     </owl:Axiom>
     
 
@@ -5337,7 +5335,7 @@ On the uplands, they are thin, poor and gravelly, sandy, or stony and porous, li
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000018">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000814"/>
         <obo:IAO_0000115 xml:lang="en">An environmental material which is composed primarily of pieces of gravel.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:gravel</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SWEETRealm:Gravel</oboInOwl:hasDbXref>
@@ -6734,6 +6732,21 @@ On the uplands, they are thin, poor and gravelly, sandy, or stony and porous, li
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000174 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000174">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000446"/>
+        <obo:IAO_0000115 xml:lang="en">A forest ecosystem which is undergoing climactic ecological succession.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:26:46Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>LTER:212</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SPIRE:Forest</oboInOwl:hasDbXref>
+        <rdfs:label>forest biome</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000175 -->
 
 
@@ -6762,6 +6775,20 @@ On the uplands, they are thin, poor and gravelly, sandy, or stony and porous, li
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000177 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000177">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000446"/>
+        <obo:IAO_0000115>A grassland ecosystem in which dominant ecological communities have reached their climax successional state.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:26:46Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>SPIRE:Savannah_or_grassland</oboInOwl:hasDbXref>
+        <rdfs:label>grassland biome</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000178 -->
 
 
@@ -6776,18 +6803,32 @@ On the uplands, they are thin, poor and gravelly, sandy, or stony and porous, li
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000179 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000179">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000428"/>
+        <obo:IAO_0000115 xml:lang="en">A desert ecosystem which is undergoing climactic ecological succession.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:26:46Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>SPIRE:Desert_or_dune</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset>wwfBiome</oboInOwl:inSubset>
+        <rdfs:label>desert biome</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000180 -->
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000180">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000446"/>
-        <obo:IAO_0000115>A terrestrial biome which comprises a tundra ecosystem that has reached its climax community.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A tundra ecosystem which is undergoing climactic ecological succession.</obo:IAO_0000115>
         <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
         <oboInOwl:creation_date>2013-04-07T14:26:46Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>SPIRE:Tundra</oboInOwl:hasDbXref>
         <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
         <oboInOwl:inSubset>wwfBiome</oboInOwl:inSubset>
-        <rdfs:comment>Preliminary definition.</rdfs:comment>
         <rdfs:label>tundra biome</rdfs:label>
     </owl:Class>
     
@@ -6812,6 +6853,107 @@ On the uplands, they are thin, poor and gravelly, sandy, or stony and porous, li
         <owl:annotatedTarget>A mangrove biome is a terrestrial biome which includes, across its spatial extent, mangrove plants (Rhizophoraceae). Mangrove plants are able to withstand high levels of salinity as well as regions of anoxia and frequent tidal inundation. Mangrove biomes often occur near tropical and sub-tropical estuaries and depositional marine coastal environments where fine sediments (often with high organic content) collect in areas protected from high energy wave action.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ORCID:0000-0002-4366-3088</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Mangrove</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000182 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000182">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000179"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001831"/>
+        <obo:IAO_0000115>A temperate desert biome is a desert biome which has communities adapted to intermediate insolation, low rainfall, and large temperature variations between winter and summer. Winter temperatures may fall below 0 degrees Celsius. Some precipitation in this biome may fall as snow.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:28:08Z</oboInOwl:creation_date>
+        <rdfs:comment>Preliminary definition. The semantics and definitions of &quot;mediterranean&quot;, &quot;subtropical&quot;, &quot;tropical&quot;, &quot;temperate&quot;, &quot;polar&quot;, and similar climate types may be transferred to an &quot;environmental condition&quot; class once the semantics of this class have been established.</rdfs:comment>
+        <rdfs:label>temperate desert biome</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000182"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A temperate desert biome is a desert biome which has communities adapted to intermediate insolation, low rainfall, and large temperature variations between winter and summer. Winter temperatures may fall below 0 degrees Celsius. Some precipitation in this biome may fall as snow.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>WWW:http://www.fs.fed.us/land/ecosysmgmt/colorimagemap/images/340.html</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000183 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000183">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000179"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001830"/>
+        <obo:IAO_0000115>A tropical desert biome is a desert biome which has communities adapted to temperatures above a monthly average of 18 degrees Celsius, high daily temperature ranges of approximately 20 degrees Celsius, very high insolation due to inhibited cloud formation, and very low precipitation. Tropical desert biomes located near coasts with cold upwellings may have cooler temperatures and reduced insolution due to fog.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:28:08Z</oboInOwl:creation_date>
+        <rdfs:comment>Preliminary definition. The semantics and definitions of &quot;mediterranean&quot;, &quot;subtropical&quot;, &quot;tropical&quot;, &quot;temperate&quot;, &quot;polar&quot;, and similar climate types may be transferred to an &quot;environmental condition&quot; class once the semantics of this class have been established.</rdfs:comment>
+        <rdfs:label>tropical desert biome</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000183"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A tropical desert biome is a desert biome which has communities adapted to temperatures above a monthly average of 18 degrees Celsius, high daily temperature ranges of approximately 20 degrees Celsius, very high insolation due to inhibited cloud formation, and very low precipitation. Tropical desert biomes located near coasts with cold upwellings may have cooler temperatures and reduced insolution due to fog.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>WWW:http://www.earthonlinemedia.com/ebooks/tpe_3e/title_page.html</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000184 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000184">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000179"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001832"/>
+        <obo:IAO_0000115>A subtropical desert biome is a desert biome which has communities adapted to temperatures above a monthly average of 18 degrees Celsius, high daily temperature ranges of approximately 20 degrees Celsius, high insolation (but lower than that of a tropical desert biome), inhibited cloud formation, and very low precipitation. Subtropical desert biomes located near coasts with cold upwellings may have cooler temperatures and reduced insolution due to fog.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:28:08Z</oboInOwl:creation_date>
+        <rdfs:comment>Preliminary definition. The semantics and definitions of &quot;mediterranean&quot;, &quot;subtropical&quot;, &quot;tropical&quot;, &quot;temperate&quot;, &quot;polar&quot;, and similar climate types may be transferred to an &quot;environmental condition&quot; class once the semantics of this class have been established.</rdfs:comment>
+        <rdfs:label>subtropical desert biome</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000184"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A subtropical desert biome is a desert biome which has communities adapted to temperatures above a monthly average of 18 degrees Celsius, high daily temperature ranges of approximately 20 degrees Celsius, high insolation (but lower than that of a tropical desert biome), inhibited cloud formation, and very low precipitation. Subtropical desert biomes located near coasts with cold upwellings may have cooler temperatures and reduced insolution due to fog.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>WWW:http://www.earthonlinemedia.com/ebooks/tpe_3e/title_page.html</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Subtropical#Semi-desert.2Fdesert_climate</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000185 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000185">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000179"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001836"/>
+        <obo:IAO_0000115>A montane desert biome is a desert biome which occurs in regions elevated above sea level and which has community structure determined by elevation-dependent environmental conditions.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:28:08Z</oboInOwl:creation_date>
+        <rdfs:comment>Preliminary definition.</rdfs:comment>
+        <rdfs:label>montane desert biome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000186 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000186">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000179"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000339"/>
+        <obo:IAO_0000115>A polar desert biome is a desert biome which is subject to low levels of insolation, annual precipitation less than 250 millimeters, and a mean temperature less than 10 degrees Celsius during its warmest month. Temperature changes in polar deserts frequently cross the freezing point of water.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:28:08Z</oboInOwl:creation_date>
+        <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
+        <rdfs:comment>Preliminary definition. The semantics and definitions of &quot;mediterranean&quot;, &quot;subtropical&quot;, &quot;tropical&quot;, &quot;temperate&quot;, &quot;polar&quot;, and similar climate types may be transferred to an &quot;environmental condition&quot; class once the semantics of this class have been established.</rdfs:comment>
+        <rdfs:label>polar desert biome</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000186"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A polar desert biome is a desert biome which is subject to low levels of insolation, annual precipitation less than 250 millimeters, and a mean temperature less than 10 degrees Celsius during its warmest month. Temperature changes in polar deserts frequently cross the freezing point of water.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Polar_desert</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6886,6 +7028,180 @@ On the uplands, they are thin, poor and gravelly, sandy, or stony and porous, li
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000191 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000191">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000177"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001832"/>
+        <obo:IAO_0000115>A subtropical grassland in which dominant ecological communities have reached their climax successional state.</obo:IAO_0000115>
+        <oboInOwl:creation_date>2013-04-07T14:29:48Z</oboInOwl:creation_date>
+        <oboInOwl:inSubset>wwfBiome</oboInOwl:inSubset>
+        <rdfs:label>subtropical grassland biome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000192 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000192">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000177"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001830"/>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:29:48Z</oboInOwl:creation_date>
+        <oboInOwl:inSubset>wwfBiome</oboInOwl:inSubset>
+        <rdfs:comment>Preliminary definition. The semantics and definitions of &quot;mediterranean&quot;, &quot;subtropical&quot;, &quot;tropical&quot;, &quot;temperate&quot;, &quot;polar&quot;, and similar climate types may be transferred to an &quot;environmental condition&quot; class once the semantics of this class have been established.</rdfs:comment>
+        <rdfs:label>tropical grassland biome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000193 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000193">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000177"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001831"/>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:29:48Z</oboInOwl:creation_date>
+        <oboInOwl:hasBroadSynonym>prairie biome</oboInOwl:hasBroadSynonym>
+        <rdfs:comment>Preliminary definition. The semantics and definitions of &quot;mediterranean&quot;, &quot;subtropical&quot;, &quot;tropical&quot;, &quot;temperate&quot;, &quot;polar&quot;, and similar climate types may be transferred to an &quot;environmental condition&quot; class once the semantics of this class have been established.</rdfs:comment>
+        <rdfs:label>temperate grassland biome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000194 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000194">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000177"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001836"/>
+        <obo:IAO_0000115>A montane grassland biome is a grassland biome which occurs in regions elevated above sea level and which has community structure determined by elevation-dependent environmental conditions.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:29:48Z</oboInOwl:creation_date>
+        <oboInOwl:inSubset>wwfBiome</oboInOwl:inSubset>
+        <rdfs:comment>Preliminary definition.</rdfs:comment>
+        <rdfs:label>montane grassland biome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000195 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000195">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000177"/>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:29:48Z</oboInOwl:creation_date>
+        <oboInOwl:inSubset>wwfBiome</oboInOwl:inSubset>
+        <rdfs:label>flooded grassland biome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000196 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000196">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000174"/>
+        <obo:IAO_0000115>A coniferous forest biome is a forest biome which contains densely packed populations or communities of coniferous trees, strongly limiting light penetration to the forest floor.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:31:01Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>ENVO:01000196</oboInOwl:id>
+        <rdfs:comment>Preliminary definition.</rdfs:comment>
+        <rdfs:label>coniferous forest biome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000197 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000197">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000174"/>
+        <obo:IAO_0000115 xml:lang="en">A broadleaf forest ecosystem which is undergoing climactic ecological succession.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:31:01Z</oboInOwl:creation_date>
+        <rdfs:label>broadleaf forest biome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000198 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000198">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000174"/>
+        <obo:IAO_0000115>A mixed forest in which dominant ecological communities have reached their climax successional state.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:31:01Z</oboInOwl:creation_date>
+        <oboInOwl:inSubset>wwfBiome</oboInOwl:inSubset>
+        <rdfs:label>mixed forest biome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000199 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000199">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000174"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001833"/>
+        <obo:IAO_0000115>A mediterranean forest in which dominant ecological communities have reached their climax successional state.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:31:01Z</oboInOwl:creation_date>
+        <oboInOwl:inSubset>wwfBiome</oboInOwl:inSubset>
+        <rdfs:label>mediterranean forest biome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000200 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000200">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000197"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001830"/>
+        <obo:IAO_0000115>A tropical broadleaf forest in which dominant ecological communities have reached their climax successional state.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:32:28Z</oboInOwl:creation_date>
+        <rdfs:label>tropical broadleaf forest biome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000201 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000201">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000197"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001832"/>
+        <obo:IAO_0000115>A subtropical broadleaf forest in which dominant ecological communities have reached their climax successional state.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:32:28Z</oboInOwl:creation_date>
+        <rdfs:label>subtropical broadleaf forest biome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000202 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000202">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000197"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001831"/>
+        <obo:IAO_0000115>A broadleaf forest which is subject to temperate climate patterns.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:32:28Z</oboInOwl:creation_date>
+        <oboInOwl:inSubset>wwfBiome</oboInOwl:inSubset>
+        <rdfs:label>temperate broadleaf forest biome</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000208 -->
 
 
@@ -6897,6 +7213,69 @@ On the uplands, they are thin, poor and gravelly, sandy, or stony and porous, li
         <oboInOwl:creation_date>2013-04-07T15:01:04Z</oboInOwl:creation_date>
         <rdfs:comment>Preliminary definition. The semantics and definitions of &quot;mediterranean&quot;, &quot;subtropical&quot;, &quot;tropical&quot;, &quot;temperate&quot;, &quot;polar&quot;, and similar climate types may be transferred to an &quot;environmental condition&quot; class once the semantics of this class have been established.</rdfs:comment>
         <rdfs:label>mediterranean woodland biome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000209 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000209">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000196"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001832"/>
+        <obo:IAO_0000115>A coniferous forest biome which is subject to subtropical climate patterns.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:39:14Z</oboInOwl:creation_date>
+        <oboInOwl:inSubset>wwfBiome</oboInOwl:inSubset>
+        <rdfs:comment>Preliminary definition. The semantics and definitions of &quot;mediterranean&quot;, &quot;subtropical&quot;, &quot;tropical&quot;, &quot;temperate&quot;, &quot;polar&quot;, and similar climate types may be transferred to an &quot;environmental condition&quot; class once the semantics of this class have been established.</rdfs:comment>
+        <rdfs:label>subtropical coniferous forest biome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000210 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000210">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000196"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001830"/>
+        <obo:IAO_0000115>A coniferous forest biome which is subject to tropical climate patterns.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:39:14Z</oboInOwl:creation_date>
+        <oboInOwl:inSubset>wwfBiome</oboInOwl:inSubset>
+        <rdfs:comment>Preliminary definition. The semantics and definitions of &quot;mediterranean&quot;, &quot;subtropical&quot;, &quot;tropical&quot;, &quot;temperate&quot;, &quot;polar&quot;, and similar climate types may be transferred to an &quot;environmental condition&quot; class once the semantics of this class have been established.</rdfs:comment>
+        <rdfs:label>tropical coniferous forest biome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000211 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000211">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000196"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001831"/>
+        <obo:IAO_0000115>A coniferous forest biome which is subject to temperate climate patterns.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:39:14Z</oboInOwl:creation_date>
+        <oboInOwl:inSubset>wwfBiome</oboInOwl:inSubset>
+        <rdfs:comment>Preliminary definition. The semantics and definitions of &quot;mediterranean&quot;, &quot;subtropical&quot;, &quot;tropical&quot;, &quot;temperate&quot;, &quot;polar&quot;, and similar climate types may be transferred to an &quot;environmental condition&quot; class once the semantics of this class have been established.</rdfs:comment>
+        <rdfs:label>temperate coniferous forest biome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000212 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000212">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000198"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001831"/>
+        <obo:IAO_0000115>A temperate mixed forest in which dominant ecological communities have reached their climax successional state.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-07T14:39:30Z</oboInOwl:creation_date>
+        <oboInOwl:inSubset>wwfBiome</oboInOwl:inSubset>
+        <rdfs:label>temperate mixed forest biome</rdfs:label>
     </owl:Class>
     
 
@@ -7079,6 +7458,81 @@ On the uplands, they are thin, poor and gravelly, sandy, or stony and porous, li
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000224 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000224">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000191"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001833"/>
+        <obo:IAO_0000115>A subtropical grassland biome which includes communities adapted to hot to warm, dry summers, mild to cold, rainy winters, and the influence of large, usually marine, bodies of water.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-19T11:42:48Z</oboInOwl:creation_date>
+        <rdfs:comment>Preliminary definition. The semantics and definitions of &quot;mediterranean&quot;, &quot;subtropical&quot;, &quot;tropical&quot;, &quot;temperate&quot;, &quot;polar&quot;, and similar climate types may be transferred to an &quot;environmental condition&quot; class once the semantics of this class have been established.</rdfs:comment>
+        <rdfs:label>mediterranean grassland biome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000225 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000225">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000201"/>
+        <obo:IAO_0000115>A subtropical dry broadleaf forest in which dominant ecological communities have reached their climax successional state.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-24T12:04:53Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref rdf:resource="https://www.worldwildlife.org/biomes/tropical-and-subtropical-dry-broadleaf-forests"/>
+        <oboInOwl:inSubset>wwfBiome</oboInOwl:inSubset>
+        <rdfs:label>subtropical dry broadleaf forest biome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000226 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000226">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000201"/>
+        <obo:IAO_0000115>A subtropical moist broadleaf forest in which dominant ecological communities have reached their climax successional state.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-24T12:04:53Z</oboInOwl:creation_date>
+        <oboInOwl:inSubset>wwfBiome</oboInOwl:inSubset>
+        <rdfs:label>subtropical moist broadleaf forest biome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000227 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000227">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000200"/>
+        <obo:IAO_0000115>A tropical dry broadleaf forest in which dominant ecological communities have reached their climax successional state.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-24T12:05:25Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref rdf:resource="https://www.worldwildlife.org/biomes/tropical-and-subtropical-dry-broadleaf-forests"/>
+        <oboInOwl:inSubset>wwfBiome</oboInOwl:inSubset>
+        <rdfs:label>tropical dry broadleaf forest biome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000228 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000228">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000200"/>
+        <obo:IAO_0000115>A tropical moist broadleaf forest in which dominant ecological communities have reached their climax successional state.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-04-24T12:05:25Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>SPIRE:Rainforest</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym>rainforest biome</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset>wwfBiome</oboInOwl:inSubset>
+        <rdfs:label>tropical moist broadleaf forest biome</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000229 -->
 
 
@@ -7098,7 +7552,7 @@ On the uplands, they are thin, poor and gravelly, sandy, or stony and porous, li
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000231">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000140"/>
         <obo:IAO_0000115>Lava is a mixture of molten or semi-molten rock, volatiles, and solids which has extruded beyond a planetary crust.</obo:IAO_0000115>
         <oboInOwl:created_by>PLB</oboInOwl:created_by>
         <oboInOwl:creation_date>2013-05-05T16:52:47Z</oboInOwl:creation_date>
@@ -7243,11 +7697,31 @@ On the uplands, they are thin, poor and gravelly, sandy, or stony and porous, li
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000245 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000245">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000219"/>
+        <obo:IAO_0000115 xml:lang="en">A cropland ecosystem which is undergoing climactic ecological succession.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-06-14T11:45:47Z</oboInOwl:creation_date>
+        <rdfs:label>cropland biome</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000245"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A cropland ecosystem which is undergoing climactic ecological succession.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://dx.doi.org/10.1111/j.1466-8238.2010.00540.x"/>
+        <oboInOwl:hasDbXref rdf:resource="http://dx.doi.org/10.1890/070062"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000246 -->
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000246">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000219"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000428"/>
         <obo:IAO_0000115>A village biome is an anthropogenic terrestrial biome which contains settlements such as villages, towns, and/or small cities and which is primarily used for agricultural activity.</obo:IAO_0000115>
         <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
         <oboInOwl:creation_date>2013-06-14T11:45:47Z</oboInOwl:creation_date>
@@ -7288,11 +7762,10 @@ On the uplands, they are thin, poor and gravelly, sandy, or stony and porous, li
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000248">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000219"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000428"/>
         <obo:IAO_0000115>A dense settlement biome is an anthropogenic terrestrial biome which is primarily used for human habitation, recreation, and industry within built structures with little other land use.</obo:IAO_0000115>
         <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
         <oboInOwl:creation_date>2013-06-14T11:45:47Z</oboInOwl:creation_date>
-        <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>ENVO:01000248</oboInOwl:id>
         <rdfs:label>dense settlement biome</rdfs:label>
     </owl:Class>
@@ -7326,6 +7799,25 @@ On the uplands, they are thin, poor and gravelly, sandy, or stony and porous, li
         <oboInOwl:hasDbXref>DOI:10.1111/j.1466-8238.2010.00540.x</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>DOI:10.1890/070062</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000250 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000250">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000196"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001834"/>
+        <obo:IAO_0000115>A  coniferous forest biome which includes communities adapted to subpolar conditions.</obo:IAO_0000115>
+        <oboInOwl:creation_date>2013-09-04T06:41:53Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>EcoLexicon:taiga</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>LTER:72</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SPIRE:Taiga</oboInOwl:hasDbXref>
+        <oboInOwl:hasNarrowSynonym>boreal forest</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>taiga</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset>wwfBiome</oboInOwl:inSubset>
+        <rdfs:label>subpolar coniferous forest biome</rdfs:label>
+    </owl:Class>
     
 
 
@@ -7590,7 +8082,6 @@ From https://en.wikipedia.org/wiki/ [A mineral] is different from a rock, which 
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000277">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000814"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001125"/>
         <obo:IAO_0000115>Ice which is formed from water.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:resource="https://orcid.org/0000-0002-4366-3088"/>
@@ -8541,7 +9032,7 @@ should be considered, where &quot;rushes&quot;, &quot;sedge&quot;, etc are repre
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000599">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03605006"/>
         <rdfs:label xml:lang="en">river water</rdfs:label>
     </owl:Class>
     
@@ -8626,7 +9117,7 @@ should be considered, where &quot;rushes&quot;, &quot;sedge&quot;, etc are repre
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000648">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000140"/>
         <obo:IAO_0000115>Magma is a mixture of molten or semi-molten rock, volatiles, and solids that is found beneath the uppermost solid layer of a planetary body. Besides molten rock, magma may also contain suspended crystals, dissolved gas and sometimes gas bubbles.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">magma</rdfs:label>
     </owl:Class>
@@ -8643,7 +9134,7 @@ should be considered, where &quot;rushes&quot;, &quot;sedge&quot;, etc are repre
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000660">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000814"/>
         <obo:IAO_0000115>Tephra is fragmental material produced by a volcanic eruption regardless of composition, fragment size or emplacement mechanism.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">tephra</rdfs:label>
     </owl:Class>
@@ -9488,6 +9979,7 @@ should be considered, where &quot;rushes&quot;, &quot;sedge&quot;, etc are repre
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001088">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010505"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000140"/>
         <obo:IAO_0000115>An aerosol which has non-gaseous parts that are primarily composed of liquid droplets.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>SWEETRealm:Aerosol</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>liquid aerosol</oboInOwl:hasExactSynonym>
@@ -9643,7 +10135,7 @@ should be considered, where &quot;rushes&quot;, &quot;sedge&quot;, etc are repre
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001125">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000814"/>
         <obo:IAO_0000115>An ice is an environmental material which is either frozen or which is maintained in a solid state by gravitational forces or pressure.</obo:IAO_0000115>
         <rdfs:comment>Note that ice may be formed at very high temperatures, due to gravitational effects and/or pressure.</rdfs:comment>
         <rdfs:label xml:lang="en">ice</rdfs:label>
@@ -10286,7 +10778,7 @@ should be considered, where &quot;rushes&quot;, &quot;sedge&quot;, etc are repre
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000176"/>
         <obo:IAO_0000115>A shrubland biome which is densely vegetated by dwarf or short mangroves (and associates) that are generally less than 6 meters in height, is tidally influenced,  is located in tropical or subtropical areas.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:resource="https://orcid.org/0000-0002-4366-3088"/>
-        <oboInOwl:hasAlternativeId>CMECS:577</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>CMECS:577</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://cmecscatalog.org/cmecs/classification/unit/577.html</oboInOwl:hasDbXref>
         <oboInOwl:inSubset>envoCmecs</oboInOwl:inSubset>
         <oboInOwl:inSubset>envoMarine</oboInOwl:inSubset>
@@ -10491,6 +10983,7 @@ should be considered, where &quot;rushes&quot;, &quot;sedge&quot;, etc are repre
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001511">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000277"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000140"/>
         <oboInOwl:created_by rdf:resource="https://orcid.org/0000-0002-4366-3088"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-01-14T18:55:42Z</oboInOwl:creation_date>
         <rdfs:comment>Water ice which is formed by the freezing of fresh water.</rdfs:comment>
@@ -11017,6 +11510,21 @@ Currently the new ice classes are not specific to sea water as they may form in 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001798 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001798">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000198"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001830"/>
+        <obo:IAO_0000115>A tropical mixed forest in which dominant ecological communities have reached their climax successional state.</obo:IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0000-0002-4366-3088"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-27T16:05:39Z</dc:date>
+        <oboInOwl:inSubset>wwfBiome</oboInOwl:inSubset>
+        <rdfs:label xml:lang="en">tropical mixed forest biome</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01001820 -->
 
 
@@ -11286,7 +11794,7 @@ Currently the new ice classes are not specific to sea water as they may form in 
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001850">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000814"/>
         <obo:IAO_0000115>An environmental material which is primarily composed of minute ice crystals forming a fuzzy layer over a cold surface by direct deposition of water vapor.</obo:IAO_0000115>
         <dc:creator rdf:resource="https://orcid.org/0000-0002-4366-3088"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-02-12T21:05:54Z</dc:date>
@@ -12592,24 +13100,16 @@ Currently the new ice classes are not specific to sea water as they may form in 
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000140">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_01000797"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_01000798"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_01000815"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
-        <obo:IAO_0000115>A liquid or a gas.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An environmental material which is unable to resist shear forces and continuously deforms when subject to them.</obo:IAO_0000115>
         <oboInOwl:hasNarrowSynonym>fluid</oboInOwl:hasNarrowSynonym>
         <rdfs:label xml:lang="en">fluid environmental material</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000140"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A liquid or a gas.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">An environmental material which is unable to resist shear forces and continuously deforms when subject to them.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/Fluid"/>
         <oboInOwl:hasDbXref>https://github.com/EnvironmentOntology/envo/issues/940</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -14238,6 +14738,137 @@ TREATED THIS as a material entity. could add something like &quot;oil sands depo
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_03605000 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03605000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000156"/>
+        <obo:IAO_0000115>Biofilm consisting of a mixture of algae, cyanobacteria, microbes, and detritus.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Periphyton</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Periphytic biofilm coats the submerged surfaces in most bodies of water</rdfs:comment>
+        <rdfs:label xml:lang="en">periphytic biofilm</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_03605000"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Biofilm consisting of a mixture of algae, cyanobacteria, microbes, and detritus.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://data.neonscience.org/documents/10179/1883159/NEON.DOC.003044vE/05ca8fcc-33ba-a5b2-0e93-8f4001f38c37"/>
+        <oboInOwl:hasDbXref rdf:resource="https://www.frontiersin.org/articles/10.3389/fmicb.2021.684903/full"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03605001 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03605001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03605000"/>
+        <obo:IAO_0000115>Periphyton colonizing rock substrata</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">epilithon</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_03605001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Periphyton colonizing rock substrata</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://data.neonscience.org/documents/10179/1883159/NEON.DOC.003044vE/05ca8fcc-33ba-a5b2-0e93-8f4001f38c37"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03605002 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03605002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03605000"/>
+        <obo:IAO_0000115>Periphyton colonizing silt substrata</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">epipelon</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_03605002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Periphyton colonizing silt substrata</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://data.neonscience.org/documents/10179/1883159/NEON.DOC.003044vE/05ca8fcc-33ba-a5b2-0e93-8f4001f38c37"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03605003 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03605003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03605000"/>
+        <obo:IAO_0000115>Periphyton colonizing surface of aquatic plants</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">epiphyton</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_03605003"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Periphyton colonizing surface of aquatic plants</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://data.neonscience.org/documents/10179/1883159/NEON.DOC.003044vE/05ca8fcc-33ba-a5b2-0e93-8f4001f38c37"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03605004 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03605004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03605000"/>
+        <obo:IAO_0000115>Periphyton colonizing sand substrata</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">epipsammon</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_03605004"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Periphyton colonizing sand substrata</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://data.neonscience.org/documents/10179/1883159/NEON.DOC.003044vE/05ca8fcc-33ba-a5b2-0e93-8f4001f38c37"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03605005 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03605005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03605000"/>
+        <obo:IAO_0000115>Periphyton colonizing woody substrata</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">epixylon</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_03605005"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Periphyton colonizing woody substrata</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://data.neonscience.org/documents/10179/1883159/NEON.DOC.003044vE/05ca8fcc-33ba-a5b2-0e93-8f4001f38c37"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03605006 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03605006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002006"/>
+        <obo:IAO_0000115 xml:lang="en">Water which is part of a stream.</obo:IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0000-0001-9076-6066"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-12T13:48:00Z</dc:date>
+        <rdfs:label xml:lang="en">stream water</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03605008 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03605008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000873"/>
+        <obo:IAO_0000115>A freshwater stream ecosystem which is undergoing climactic ecological succession.</obo:IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0000-0001-9076-6066"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-10T19:19:00Z</dc:date>
+        <rdfs:label xml:lang="en">freshwater stream biome</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_04000007 -->
 
 
@@ -14447,6 +15078,25 @@ TREATED THIS as a material entity. could add something like &quot;oil sands depo
         <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
         <rdfs:label xml:lang="en">synthetic plastic</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_06105205 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_06105205">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00001998"/>
+        <obo:IAO_0000115 xml:lang="en">A soil which has a high bulk density and/or a low porosity. A compacted soil has a reduced rate of both water infiltration and drainage</obo:IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0000-0001-6284-4821"/>
+        <dc:creator rdf:resource="https://orcid.org/0000-0002-8461-9745"/>
+        <rdfs:label xml:lang="en">compacted soil</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105205"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A soil which has a high bulk density and/or a low porosity. A compacted soil has a reduced rate of both water infiltration and drainage</owl:annotatedTarget>
+        <rdfs:comment rdf:resource="https://extension.umn.edu/soil-management-and-health/soil-compaction"/>
+    </owl:Axiom>
     
 
 

@@ -1,12 +1,42 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.bioontology.org/ontology/npo#"
      xml:base="http://purl.bioontology.org/ontology/npo"
+     xmlns:npo="http://purl.bioontology.org/ontology/npo#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.bioontology.org/ontology/npo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.bioontology.org/ontology/npo#definition">
+        <rdfs:comment>The property definition is used to indicate the meaning or definition of a class or a class-level association in the NPO.</rdfs:comment>
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#preferred_Name -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.bioontology.org/ontology/npo#preferred_Name">
+        <rdfs:comment>The property preferred name is used to indicate the preferred name of a class or a class-level association in the NPO.</rdfs:comment>
+        <rdfs:label>preferred_name</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -25,6 +55,23 @@
 
     <owl:ObjectProperty rdf:about="http://purl.bioontology.org/ontology/npo#has_part">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <definition>Transitive parthood relation in which one entity has itself, or another entity as a part, and the relation is valid for use only between continuants or between occurrents but not between a continuant and an occurrent.</definition>
+        <preferred_Name>has part</preferred_Name>
+        <rdfs:comment>(source): OBO Relation Ontology (release version 0.99, date 07:14:2006);  Barry Smith et al, Relations in biomedical ontologies, Genome Biology (2005)</rdfs:comment>
+        <rdfs:comment>If C and C1 are continuant classes, then C has_part C1 means that every instance of C at any time has part some instances of C1 at the same time.
+[formal definition]: C has_part C1 holds true if and only if every continuant c that instantiates C at some time t,  there is some continuant c1 that instantiates C1 at t such that c1 is part of c at t.
+
+Examples:
+fluorescein isothiocyanate has_part isothiocyanate group
+gold quantum dot has_part gold
+core-shell nanoparticle has_part core
+core-shell nanoparticle has_part shell</rdfs:comment>
+        <rdfs:comment>If P and P1 are occurrent classes, then P has_part P1 means  that every instance of P has part some instances of P1.
+[formal definition]:P has_part P1  if and only if every occurrent p that instantiates P  there is some occurrent p1 that instantiates P1 such that p1 is part of p.
+
+Examples:
+covalent linkage has_part covalent interaction
+visualization of cellular uptake of nanoparticles has_part imaging of nanoparticles</rdfs:comment>
     </owl:ObjectProperty>
 </rdf:RDF>
 

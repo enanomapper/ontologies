@@ -80,7 +80,7 @@ mailing list: http://groups.google.com/group/sio-ontology
 role chains:
 &apos;has capability&apos; o &apos;is realized in&apos; -&gt; &apos;is participant in&apos;</schema:comment>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2024-02-01 01:28:51</oboInOwl:date>
+        <oboInOwl:date>2024-04-16 15:02:24</oboInOwl:date>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://sio.semanticscience.org</rdfs:seeAlso>
         <owl:versionInfo>1.59</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
@@ -355,10 +355,39 @@ role chains:
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000475 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000475">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <terms:description xml:lang="en">A biological quality is a quality held by a biological entity.</terms:description>
+        <rdfs:label xml:lang="en">biological quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000476 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000476">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000475"/>
+        <terms:description xml:lang="en">cellular quality is the quality of a cell</terms:description>
+        <rdfs:label xml:lang="en">cellular quality</rdfs:label>
+    </owl:Class>
     
 
 
@@ -380,6 +409,63 @@ role chains:
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1793"/>
         <terms:description xml:lang="en">A standard deviation (represented by the symbol σ) is the quantity of  variation from the average (mean, or expected value).</terms:description>
         <rdfs:label xml:lang="en">standard deviation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000784 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000784">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001405"/>
+        <owl:disjointWith rdf:resource="http://semanticscience.org/resource/SIO_010048"/>
+        <terms:description xml:lang="en">hermaphrodite is a biological sex of an individual with both male and female sexual organs.</terms:description>
+        <resource:equivalentTo>PATO:0001827</resource:equivalentTo>
+        <rdfs:label xml:lang="en">hermaphrodite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000954 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000954">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010058"/>
+        <terms:description xml:lang="en">sick is the status of a living organism that is behaving at a sub-optimal level.</terms:description>
+        <rdfs:label xml:lang="en">sick</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001012 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001012">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010058"/>
+        <terms:description xml:lang="en">healthy is an organismal state of complete physical, mental and social well-being.</terms:description>
+        <rdfs:label xml:lang="en">healthy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001014 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001014">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000475"/>
+        <terms:description xml:lang="en">ethnicity is the biological quality of membership in a social group based on a common heritage.</terms:description>
+        <rdfs:label xml:lang="en">ethnicity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001015 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001015">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000475"/>
+        <terms:description xml:lang="en">race is a characteristic of an individual by heritable phenotypic characteristics, geographic ancestry, physical appearance, ethnicity, and social status.</terms:description>
+        <rdfs:label xml:lang="en">race</rdfs:label>
     </owl:Class>
     
 
@@ -408,6 +494,95 @@ role chains:
     
 
 
+    <!-- http://semanticscience.org/resource/SIO_001263 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001263">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000475"/>
+        <terms:description>zygosity is the quality pertaining to the allelic complement of a biological system at a single locus on the DNA.</terms:description>
+        <rdfs:label xml:lang="en">zygosity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001264 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001264">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001263"/>
+        <terms:description>homozygous is the quality of a biological organism in which there are two identical alleles at a given locus.</terms:description>
+        <rdfs:label xml:lang="en">homozygous</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001265 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001265">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001263"/>
+        <terms:description>homozygous is the quality of a biological organism in which there are two different alleles at a given locus.</terms:description>
+        <rdfs:label xml:lang="en">heterozygous</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001266 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001266">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001263"/>
+        <terms:description>hemizygous is the quality of a biological organism in which, based on the ploidy of the organism, there is half the number of alleles than normal at a given locus.</terms:description>
+        <rdfs:label xml:lang="en">hemizygous</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001267 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001267">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001263"/>
+        <terms:description>nullizygous is the quality of a biological organism in which there are no allelles at a given locus.</terms:description>
+        <rdfs:label xml:lang="en">nullizygous</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001268 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001268">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000475"/>
+        <terms:description>parental transmition is the quality of a biological organism in which the (genetic) material is transmitted from a parental unit.</terms:description>
+        <rdfs:label xml:lang="en">parental transmission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001269 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001269">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001268"/>
+        <owl:disjointWith rdf:resource="http://semanticscience.org/resource/SIO_001270"/>
+        <terms:description>maternally transmitted is the quality of a biological organism in which the (genetic) material is transmitted from the maternal line.</terms:description>
+        <rdfs:label xml:lang="en">maternally transmitted</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001270 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001270">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001268"/>
+        <terms:description>paternally transmitted is the quality of a biological organism in which the (genetic) material is transmitted from the paternal line.</terms:description>
+        <rdfs:label xml:lang="en">paternally transmitted</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://semanticscience.org/resource/SIO_001379 -->
 
 
@@ -432,6 +607,53 @@ role chains:
     
 
 
+    <!-- http://semanticscience.org/resource/SIO_001405 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001405">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010029"/>
+        <owl:disjointWith rdf:resource="http://semanticscience.org/resource/SIO_010052"/>
+        <terms:description xml:lang="en">intersex is a biological sex characterised by birth with genitalia and/or secondary sexual characteristics of indeterminate sex, or which combine features of both sexes.</terms:description>
+        <rdfs:label xml:lang="en">intersex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_010029 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010029">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000475"/>
+        <terms:description xml:lang="en">biological sex is the quality of a biological organism based on reproductive function or organs.</terms:description>
+        <rdfs:label xml:lang="en">biological sex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_010048 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010048">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010029"/>
+        <owl:disjointWith rdf:resource="http://semanticscience.org/resource/SIO_010052"/>
+        <terms:description xml:lang="en">male is a biological sex of an individual with male sexual organs.</terms:description>
+        <resource:equivalentTo>PATO:0000384</resource:equivalentTo>
+        <rdfs:label xml:lang="en">male</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_010052 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010052">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010029"/>
+        <terms:description xml:lang="en">female is a biological sex of an individual with female sexual organs.</terms:description>
+        <rdfs:label xml:lang="en">female</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://semanticscience.org/resource/SIO_010055 -->
 
 
@@ -443,6 +665,59 @@ role chains:
     
 
 
+    <!-- http://semanticscience.org/resource/SIO_010056 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010056">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000475"/>
+        <terms:description xml:lang="en">A phenotype is an observable characteristic of an individual.</terms:description>
+        <rdfs:label xml:lang="en">phenotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_010057 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010057">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010058"/>
+                    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010059"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000475"/>
+        <terms:description xml:lang="en">life status is the quality of whether something is alive or dead.</terms:description>
+        <rdfs:label xml:lang="en">life status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_010058 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010058">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010057"/>
+        <owl:disjointWith rdf:resource="http://semanticscience.org/resource/SIO_010059"/>
+        <terms:description xml:lang="en">alive is the state of a biological organism that exhibits biological functions.</terms:description>
+        <rdfs:label xml:lang="en">alive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_010059 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010059">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010057"/>
+        <terms:description xml:lang="en">dead is the quality of an object in which there is a cessation of all biological functions.</terms:description>
+        <rdfs:label xml:lang="en">dead</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://semanticscience.org/resource/SIO_010074 -->
 
 
@@ -450,6 +725,28 @@ role chains:
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010471"/>
         <terms:description xml:lang="en">An amino acid residue is a submolecule of an amino acid that is part of a larger molecule.</terms:description>
         <rdfs:label xml:lang="en">amino acid residue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_010278 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010278">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000476"/>
+        <terms:description xml:lang="en">ploidy is the cellular quality relating to the amount of DNA contained in a cell.</terms:description>
+        <rdfs:label xml:lang="en">ploidy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_010299 -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010299">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000475"/>
+        <terms:description xml:lang="en">disease is the outward manifestation of one or more disorders.</terms:description>
+        <rdfs:label xml:lang="en">disease</rdfs:label>
     </owl:Class>
     
 
@@ -485,6 +782,39 @@ and having their side chains perpendicular to the planar axis.</terms:descriptio
         <terms:description xml:lang="en">An amino acid polymer submolecule is a submolecule of an amino acid polymer.</terms:description>
         <rdfs:label xml:lang="en">amino acid polymer submolecule</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000476"/>
+            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001014"/>
+            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001015"/>
+            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010029"/>
+            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010056"/>
+            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010057"/>
+            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010299"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001264"/>
+            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001265"/>
+            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001266"/>
+            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001267"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
