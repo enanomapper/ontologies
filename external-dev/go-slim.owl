@@ -24,7 +24,7 @@
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <pav:importedFrom>http://purl.obolibrary.org/obo/go.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2024-05-01 01:32:24</oboInOwl:date>
+        <oboInOwl:date>2024-05-06 12:22:12</oboInOwl:date>
         <oboInOwl:default-namespace>gene_ontology</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
         <owl:versionInfo>2024-04-24</owl:versionInfo>
@@ -636,6 +636,41 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0002149 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0002149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1903409"/>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of hypochlorous acid.</obo:IAO_0000115>
+        <oboInOwl:created_by>hjd</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-10-13T10:32:35Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>HClO biosynthetic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>HOCl biosynthetic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hypochlorous acid biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>hypochlorite biosynthetic process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0002149</oboInOwl:id>
+        <rdfs:comment>Note that this reaction is catalyzed by myeloperoxidase in neutrophils.</rdfs:comment>
+        <rdfs:label>hypochlorous acid biosynthetic process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0002149"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of hypochlorous acid.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:add</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:10085024</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:176150</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0002433 -->
 
 
@@ -702,7 +737,7 @@
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0003824">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
         <obo:IAO_0000115>Catalysis of a biochemical reaction at physiological temperatures. In biologically catalyzed reactions, the reactants are known as substrates, and the catalysts are naturally occurring macromolecular substances known as enzymes. Enzymes possess specific binding sites for substrates, and are usually composed wholly or largely of protein, but RNA that has catalytic activity (ribozyme) is often also regarded as enzymatic.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>Wikipedia:Enzyme</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>enzyme activity</oboInOwl:hasExactSynonym>
@@ -757,6 +792,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0006909 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006909">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <obo:IAO_0000115>A vesicle-mediated transport process that results in the engulfment of external particulate material by phagocytes and their delivery to the lysosome. The particles are initially contained within phagocytic vacuoles (phagosomes), which then fuse with primary lysosomes to effect digestion of the particles.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/24907</obo:IAO_0000233>
+        <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
+        <oboInOwl:hasDbXref>Wikipedia:Phagocytosis</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0006909</oboInOwl:id>
+        <rdfs:label>phagocytosis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006909"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A vesicle-mediated transport process that results in the engulfment of external particulate material by phagocytes and their delivery to the lysosome. The particles are initially contained within phagocytic vacuoles (phagosomes), which then fuse with primary lysosomes to effect digestion of the particles.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0006914 -->
 
 
@@ -806,13 +863,6 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006919"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>caspase activation</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006919"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any process that initiates the activity of the inactive enzyme cysteine-type endopeptidase in the context of an apoptotic process.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:al</oboInOwl:hasDbXref>
@@ -823,6 +873,13 @@
         <oboInOwl:hasDbXref>PMID:14744432</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:18328827</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Caspase</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006919"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>caspase activation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2476,6 +2533,36 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0043277 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043277">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006909"/>
+        <obo:IAO_0000115>The recognition and removal of an apoptotic cell by a neighboring cell or by a phagocyte.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>apoptotic cell removal</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>efferocytosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>programmed cell clearance</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0043277</oboInOwl:id>
+        <rdfs:comment>Note that unlike mammals or Drosophila, C. elegans (and many lower organisms) do not have professional macrophages/phagocytes, instead cell corpses are engulfed by neighboring cells. Cell types that can function as engulfing cells include hypodermal cells, gonadal sheath cells, pharyngeal muscle cells, and intestinal cells.</rdfs:comment>
+        <rdfs:label>apoptotic cell clearance</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0043277"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The recognition and removal of an apoptotic cell by a neighboring cell or by a phagocyte.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:rk</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:14685684</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0043277"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>efferocytosis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:17548650</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0043280 -->
 
 
@@ -2743,6 +2830,37 @@
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/GO_0001816"/>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050665 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050665">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1903409"/>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of hydrogen peroxide (H2O2), a potentially harmful byproduct of aerobic cellular respiration which can cause damage to DNA.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>H2O2 biosynthetic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hydrogen peroxide anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hydrogen peroxide biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hydrogen peroxide formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hydrogen peroxide generation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hydrogen peroxide synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0050665</oboInOwl:id>
+        <rdfs:label>hydrogen peroxide biosynthetic process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0050665"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of hydrogen peroxide (H2O2), a potentially harmful byproduct of aerobic cellular respiration which can cause damage to DNA.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0050665"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>H2O2 biosynthetic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -3745,6 +3863,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0097350 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0097350">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043277"/>
+        <obo:IAO_0000115>The selective elimination of senescent neutrophils from the body by autoregulatory mechanisms.</obo:IAO_0000115>
+        <oboInOwl:created_by>pr</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-06-27T03:53:38Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0097350</oboInOwl:id>
+        <rdfs:label>neutrophil clearance</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0097350"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The selective elimination of senescent neutrophils from the body by autoregulatory mechanisms.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:BHF</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:21957127</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0097553 -->
 
 
@@ -4645,6 +4785,74 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>activation of cell cycle G1/S phase transition</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1903409 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1903409">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of reactive oxygen species, any molecules or ions formed by the incomplete one-electron reduction of oxygen.</obo:IAO_0000115>
+        <oboInOwl:created_by>bf</oboInOwl:created_by>
+        <oboInOwl:creation_date>2014-09-03T09:19:13Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>reactive oxygen species anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>reactive oxygen species biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>reactive oxygen species formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>reactive oxygen species synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>ROS formation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ROS generation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>reactive oxygen species generation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:1903409</oboInOwl:id>
+        <rdfs:label>reactive oxygen species biosynthetic process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903409"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of reactive oxygen species, any molecules or ions formed by the incomplete one-electron reduction of oxygen.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:PARL</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:bf</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO_REF:0000068</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:24252804</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903409"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>reactive oxygen species anabolism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903409"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>reactive oxygen species biosynthesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903409"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>reactive oxygen species formation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903409"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>reactive oxygen species synthesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903409"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>ROS generation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:24252804</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903409"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>reactive oxygen species generation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:24252804</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
