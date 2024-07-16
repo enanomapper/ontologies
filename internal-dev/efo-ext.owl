@@ -84,5 +84,70 @@
         <rdfs:label xml:lang="en">Pulmonary instillation</rdfs:label>
     </owl:Class>  
 
+    <!-- http://purl.enanomapper.net/onto/ENM_5945718 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_5945718">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.net/onto/ENM_3323767"/>
+        <rdfs:label xml:lang="en">Tracheal instillation</rdfs:label>
+	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002339"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+</owl:Class>
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_4399735 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_4399735">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000954"/>
+        <rdfs:label xml:lang="en">subcutaneous injection via hydrogel</rdfs:label>
+	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0016004"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_771"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+</owl:Class>
+
+    <!-- http://purl.enanomapper.net/onto/ENM_3323761 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_3323761">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600007"/>
+        <rdfs:label xml:lang="en">Instillation</rdfs:label>
+	<obo:IAO_0000115>Drop by drop application of a liquid substance into or onto a location in an organism</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000110 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000161"/>
+        <rdfs:label xml:lang="en">Deposition rate</rdfs:label>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000111 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000161"/>
+        <rdfs:label xml:lang="en">Homoaggregation rate</rdfs:label>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000105 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000033"/>
+        <rdfs:label xml:lang="en">Chloride concentration</rdfs:label>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.org/onto/ENM_1200001 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_1200001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0050001"/>
+        <obo:IAO_0000115>The amount of dissolved substance versus time (determined by the crystal forces) as an experimental value, where solid particles (usually crystalline) are released into solution as individual free molecules.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Dissolution rate</rdfs:label>
+    </owl:Class>
+
 
 </rdf:RDF>
