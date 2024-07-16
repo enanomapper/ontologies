@@ -44,6 +44,7 @@
      xmlns:CHEBI="&obo;CHEBI#"
      xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:enm="http://purl.enanomapper.org/onto/"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
 
     <owl:Ontology rdf:about="http://egonw.github.com/ontology/nm.owl">
@@ -54,9 +55,9 @@
         <dc:language rdf:datatype="&xsd;string">en</dc:language>
         <dc:rights rdf:datatype="&rdf;PlainLiteral">http://creativecommons.org/licenses/by/3.0</dc:rights>
         <owl:imports rdf:resource="http://semanticscience.org/ontology/cdk.owl"/>
-        <owl:imports rdf:resource="http://semanticscience.org/ontology/cheminf-algorithms.owl"/>
+        <!-- <owl:imports rdf:resource="http://semanticscience.org/ontology/cheminf-algorithms.owl"/>
         <owl:imports rdf:resource="http://semanticscience.org/ontology/cheminf-core.owl"/>
-        <owl:imports rdf:resource="http://semanticscience.org/ontology/cheminf-external.owl"/>
+        <owl:imports rdf:resource="http://semanticscience.org/ontology/cheminf-external.owl"/> -->
         <owl:imports rdf:resource="http://semanticscience.org/ontology/cheminf.owl"/>
     </owl:Ontology>
 
@@ -340,5 +341,308 @@
           at least 20-30 nm.</description>
         <sio:SIO_000277 rdf:resource="http://dx.doi.org/10.3109/17435390.2010.502980" />
     </owl:Class>
+<!-- http://purl.enanomapper.org/onto/ENM_8000030 -->
 
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000030">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000123"/>
+        <obo:IAO_0000115>Descriptors that have been obtained through modelling.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">predicted descriptors</rdfs:label>
+    </owl:Class>
+    
+    <!-- http://purl.enanomapper.org/onto/ENM_8000031 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000031">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000123"/>
+        <obo:IAO_0000115>Descriptors that have been obtained through modelling.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">calculated descriptors</rdfs:label>
+    </owl:Class>
+    
+    <!-- http://purl.enanomapper.org/onto/ENM_8000032 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000032">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000123"/>
+        <obo:IAO_0000115>A class of descriptors derived using CDK, the Chemistry Development Kit.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cdk descriptors</rdfs:label>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.org/onto/ENM_0000098 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
+        <rdfs:label xml:lang="en">average size</rdfs:label>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000019 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:isDefinedBy>The molecular descriptor is the final result of a logic and mathematical procedure which transforms chemical information encoded within a symbolic representation of a molecule into a useful number or the result of some standardized experiment. https://en.wikipedia.org/wiki/Molecular_descriptor</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">descriptor</rdfs:label>
+    </owl:Class>
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000020 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000020">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000019"/>
+        <rdfs:isDefinedBy>A class of descriptors derived by Image analysis methodologies, developed within the eNanoMapper project. https://www.enanomapper.net/deliverables/d4/150801_eNanoMapper-D4_2final.pdf</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">image analysis descriptors</rdfs:label>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000027 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000027">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000019"/>
+        <rdfs:isDefinedBy>Descriptors derived from quantum mechanical calculations.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">quantum mechanical descriptor</rdfs:label>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000029 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000029">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000019"/>
+        <rdfs:isDefinedBy>Descriptors derived from biological information (partially or fully).</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">biological descriptor</rdfs:label>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000039 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000039">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>Size of the core.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">core size</rdfs:label>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000040 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000040">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>The longest distance between any two points along the selection boundary, also known as maximum caliper. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">feret diameter</rdfs:label>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000042 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000042">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>Calculates and displays two values: &quot;IntDen&quot; (the product of Area and Mean Grey Value) and &quot;RawIntDen&quot; (the sum of the pixel values in the image or selection). &quot;IntDen&quot; and &quot;RawIntDen&quot; values are the same for uncalibrated image. doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">integrated density</rdfs:label>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000043 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000043">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>The fourth order moment about the mean. doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">kurtosis</rdfs:label>
+    </owl:Class>
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000044 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000044">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>Average grey value within the selection. In this value the sum of all pixels within the selection is divided by the count of pixels. If the image is not in grey scale then a transformation is made according to the following formula: grey=0.299red+0.587green+0.114blue. http://www.enanomapper.net/deliverables/d4/150801_eNanoMapper-D4_2final.pdf</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">mean grey value</rdfs:label>
+    </owl:Class>
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000045 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000045">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>The median value of the pixels in the image or selection.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">median</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000046 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000046">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>The lowest grey scale values appearing in the selection.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">min grey levels</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000047 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000047">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>The highest grey scale values appearing in the selection.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">max grey levels</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000048 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000048">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>Stands for the most frequently occurring grey value within the selection.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">modal grey value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000049 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000049">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>The size of the particle as measured when in a specific media.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">particle size in media</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000051 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000051">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>The sum of the relative differences in intensities between values of neighboring pixels (xi and yi) along the X axis.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">porosity x</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000052 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000052">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>The sum of the relative differences in intensities between values of neighboring pixels (xi and yi) along the Y axis.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">porosity y</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000053 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000053">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>The inverse of Aspect Ratio, or 4 ×[Area]/π × [Major axis]2. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">roundness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000054 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000054">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>This is a group of descriptors (Circularity, Aspect Ratio, Roundness and Solidity) that are all calculated when the &quot;Shape descriptors&quot; option is used. http://www.enanomapper.net/deliverables/d4/150801_eNanoMapper-D4_2final.pdf</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">shape descriptors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000055 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000055">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>A measure of asymmetry of a frequency distribution; specifically the quotient of the difference between the arithmetic mean and the mode divided by the standard deviation. Positive skewness is defined for the longer slope of the plotted distribution in the direction of increasing variate values (mean greater than mode, or coarser particles exceed finer particles in a particle-size distribution); negative skewness is defined for the longer slope of the plotted distribution in the direction of decreasing variate values (mode greater than mean, or finer particles exceed coarser particles in a particle-size distribution). http://www.oceanscience.net/inletsonline/glossary.php3?name=skewness&amp;start=s1</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">skewness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000056 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000056">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>Solidity equals to [Area]/[Convex area]. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">solidity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000057 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000057">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>The ratio of the surface area of a sphere - with the same volume as the particle considered - to the surface area of the particle.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">sphericity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000058 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000058">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>The diameter of a sphere having the same surface area as the projected particle</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">surface diameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000059 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000059">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>The sum of the all non-zero pixels. doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000061 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000061">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>The sum of all non-zero pixels episodes, combining measures of contour elements, assuming that the contour is a square with a side equal to the unity. doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">volume</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000062 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000062">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>Volume/ mass diameter doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">volume mass diameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000063 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000063">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>Volume/ surface diameter, doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">volume surface diameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000064 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000064">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <rdfs:isDefinedBy>The aspect ratio of the particle’s fitted ellipse, i.e., [Major Axis]/[Minor Axis]. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">aspect ratio</rdfs:label>
+    </owl:Class>
+    
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000066 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000066">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000067"/>
+        <enm:ENM_8000222 xml:lang="en">GO descriptor</enm:ENM_8000222>
+        <rdfs:isDefinedBy xml:lang="en">BIO descriptor using Gene Ontology information</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">gene ontology descriptors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000067 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000067">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000029"/>
+        <rdfs:isDefinedBy xml:lang="en">Biology descriptors derived from omics data and integrated biological pathway/activities  information</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">BIO descriptors</rdfs:label>
+    </owl:Class>
+        
+    
 </rdf:RDF>
