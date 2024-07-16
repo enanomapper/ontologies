@@ -11,15 +11,7 @@
     <owl:Ontology rdf:about="http://enanomapper.github.io/ontologies/internal/ncit-ext.owl">
         <dc:contributor>Javier Millan Acosta</dc:contributor>
     </owl:Ontology>
-
-
-    <!-- http://purl.enanomapper.org/onto/ENM_9000267 -->
-
-    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000267">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C119826"/>
-        <rdfs:isDefinedBy>Pulmonary exposure is performed by instillation of test substance dispersed in a liquid vehicle. The liquid is delivered/blown into the lungs of sedated animals. The exposure is a bolus exposure and the dose is delivered within seconds.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">Pulmonary instillation</rdfs:label>
-    </owl:Class>    
+  
     
     <!-- http://purl.enanomapper.net/onto/ENM_2659304 -->
 
@@ -134,10 +126,16 @@
     <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002887"/>
     </owl:Class>
 
-    <!-- http://purl.enanomapper.net/onto/ENM_2169340 -->
-    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_2169340">
-    <rdfs:label xml:lang="en">Organic matter in medium</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C53414"/>
+    <!-- http://purl.enanomapper.net/onto/ENM_0617899 -->
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_0617899">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000010"/>
+    <rdfs:label xml:lang="en">C57BL/6 mouse derived cell line</rdfs:label>
+	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090006"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14424"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 </rdf:RDF>
