@@ -69,6 +69,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_1200002"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_1200002"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://semanticscience.org/resource/CHEMINF_000464"/>
+        <onto:submit_to rdf:resource="http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_1200002"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>PMCID is a unique identifier for publications archived in PubMed Central, which may also be indexed in PubMed. </owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl"/>
@@ -85,9 +97,22 @@
     <!-- http://purl.enanomapper.org/onto/ENM_8000019 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:isDefinedBy>The molecular descriptor is the final result of a logic and mathematical procedure which transforms chemical information encoded within a symbolic representation of a molecule into a useful number or the result of some standardized experiment. https://en.wikipedia.org/wiki/Molecular_descriptor</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">descriptor</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000019"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000019"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000019"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -112,6 +137,12 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000019"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>A class of descriptors derived by Image analysis methodologies, developed within the eNanoMapper project. https://www.enanomapper.net/deliverables/d4/150801_eNanoMapper-D4_2final.pdf</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -120,6 +151,12 @@
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">image analysis descriptors</owl:annotatedTarget>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:Axiom>
     
@@ -132,6 +169,18 @@
         <rdfs:isDefinedBy>Descriptors derived from quantum mechanical calculations.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">quantum mechanical descriptor</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000027"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000027"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000019"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000027"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -156,14 +205,26 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000029"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">biological descriptor</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000029"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000019"/>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000029"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>Descriptors derived from biological information (partially or fully).</owl:annotatedTarget>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000029"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">biological descriptor</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:Axiom>
     
@@ -176,6 +237,18 @@
         <obo:IAO_0000115>Descriptors that have been obtained through modelling.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">predicted descriptors</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000030"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000030"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://semanticscience.org/resource/CHEMINF_000123"/>
+        <onto:submit_to rdf:resource="http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000030"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -200,6 +273,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000031"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000031"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://semanticscience.org/resource/CHEMINF_000123"/>
+        <onto:submit_to rdf:resource="http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000031"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Descriptors that have been obtained through modelling.</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl"/>
@@ -220,6 +305,18 @@
         <obo:IAO_0000115>A class of descriptors derived using CDK, the Chemistry Development Kit.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cdk descriptors</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000032"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000032"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://semanticscience.org/resource/CHEMINF_000123"/>
+        <onto:submit_to rdf:resource="http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000032"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -244,6 +341,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000033"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000033"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000033"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>Aspect ratio X, defined as AR_x=dmin_x/max_y, doi: 10.3109/17435390.2014.930195</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -264,6 +373,18 @@
         <rdfs:isDefinedBy>Aspect ratio Y, defined as AR_y=dmin_y/max_x, doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">aspect ratio y</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000034"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000034"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000034"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -288,6 +409,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000035"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000035"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000035"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>The smallest rectangle enclosing the selection. Uses the headings BX, BY, Width and Height, where BX and BY are the coordinates of the upper left corner of the rectangle. https://imagej.nih.gov/ij/docs/guide/146-30.html</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -308,6 +441,18 @@
         <rdfs:isDefinedBy>This is the brightness-weighted average of the x and y coordinates all pixels in the image or selection. Uses the XM and YM headings. These coordinates are the first order spatial moments. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">centre of mass</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000036"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000036"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000036"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -332,6 +477,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000037"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000037"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000037"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>The central point of the selection. This is the average of the x and y coordinates of all of the pixels in the image or selection. Uses the X and Y Results table headings. https://imagej.nih.gov/ij/docs/guide/146-30.html</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -352,6 +509,18 @@
         <rdfs:isDefinedBy>Circularity, equal to 4π × [Area]/[Perimeter]^2 ranges from 0 (infinitely elongated polygon) to 1 (perfect circle). https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">circularity</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000038"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000038"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000038"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -376,6 +545,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000039"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000039"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000039"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>Size of the core.</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -396,6 +577,18 @@
         <rdfs:isDefinedBy>The longest distance between any two points along the selection boundary, also known as maximum caliper. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">feret diameter</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000040"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000040"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000040"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -420,6 +613,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000041"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000041"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000041"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>Fit an ellipse to the selection. Uses the headings Major, Minor and Angle. Major and Minor are the primary and secondary axes of the best fitting ellipse. Angle (0-180 degrees) is the angle between the primary axis and a line parallel to the x-axis of the image. The coordinates of the centre of the ellipse are displayed as X and Y if Centroid is checked. Note that ImageJ cannot calculate the length of either the major or the minor axis if Pixel Aspect Ratio in the Set Scale dialog is not 1.0. https://imagej.nih.gov/ij/docs/guide/146-30.html</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -440,6 +645,18 @@
         <rdfs:isDefinedBy>Calculates and displays two values: &quot;IntDen&quot; (the product of Area and Mean Grey Value) and &quot;RawIntDen&quot; (the sum of the pixel values in the image or selection). &quot;IntDen&quot; and &quot;RawIntDen&quot; values are the same for uncalibrated image. doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">integrated density</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000042"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000042"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000042"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -464,6 +681,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000043"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000043"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000043"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>The fourth order moment about the mean. doi: 10.3109/17435390.2014.930195</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -484,6 +713,18 @@
         <rdfs:isDefinedBy>Average grey value within the selection. In this value the sum of all pixels within the selection is divided by the count of pixels. If the image is not in grey scale then a transformation is made according to the following formula: grey=0.299red+0.587green+0.114blue. http://www.enanomapper.net/deliverables/d4/150801_eNanoMapper-D4_2final.pdf</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">mean grey value</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000044"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000044"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000044"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -508,6 +749,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000045"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000045"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000045"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>The median value of the pixels in the image or selection.</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -528,6 +781,18 @@
         <rdfs:isDefinedBy>The lowest grey scale values appearing in the selection.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">min grey levels</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000046"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000046"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000046"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -552,6 +817,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000047"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000047"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000047"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>The highest grey scale values appearing in the selection.</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -572,6 +849,18 @@
         <rdfs:isDefinedBy>Stands for the most frequently occurring grey value within the selection.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">modal grey value</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000048"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000048"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000048"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -596,14 +885,26 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000049"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
-        <owl:annotatedTarget>The size of the particle as measured when in a specific media.</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">particle size in media</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000049"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">particle size in media</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000049"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000049"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+        <owl:annotatedTarget>The size of the particle as measured when in a specific media.</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:Axiom>
     
@@ -616,6 +917,18 @@
         <rdfs:isDefinedBy>The sum of the relative differences in intensities between values of neighboring pixels (xi and yi) along the X axis.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">porosity x</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000051"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000051"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000051"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -640,6 +953,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000052"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000052"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000052"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>The sum of the relative differences in intensities between values of neighboring pixels (xi and yi) along the Y axis.</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -660,6 +985,18 @@
         <rdfs:isDefinedBy>The inverse of Aspect Ratio, or 4 ×[Area]/π × [Major axis]2. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">roundness</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000053"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000053"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000053"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -684,6 +1021,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000054"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000054"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000054"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>This is a group of descriptors (Circularity, Aspect Ratio, Roundness and Solidity) that are all calculated when the &quot;Shape descriptors&quot; option is used. http://www.enanomapper.net/deliverables/d4/150801_eNanoMapper-D4_2final.pdf</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -704,6 +1053,18 @@
         <rdfs:isDefinedBy>A measure of asymmetry of a frequency distribution; specifically the quotient of the difference between the arithmetic mean and the mode divided by the standard deviation. Positive skewness is defined for the longer slope of the plotted distribution in the direction of increasing variate values (mean greater than mode, or coarser particles exceed finer particles in a particle-size distribution); negative skewness is defined for the longer slope of the plotted distribution in the direction of decreasing variate values (mode greater than mean, or finer particles exceed coarser particles in a particle-size distribution). http://www.oceanscience.net/inletsonline/glossary.php3?name=skewness&amp;start=s1</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">skewness</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000055"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000055"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000055"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -728,6 +1089,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000056"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000056"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000056"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>Solidity equals to [Area]/[Convex area]. https://imagej.nih.gov/ij/docs/guide/146-30.html</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -748,6 +1121,18 @@
         <rdfs:isDefinedBy>The ratio of the surface area of a sphere - with the same volume as the particle considered - to the surface area of the particle.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">sphericity</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000057"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000057"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000057"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -772,6 +1157,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000058"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000058"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000058"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>The diameter of a sphere having the same surface area as the projected particle</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -792,6 +1189,18 @@
         <rdfs:isDefinedBy>The sum of the all non-zero pixels. doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">area</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000059"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000059"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000059"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -816,6 +1225,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000061"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000061"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000061"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>The sum of all non-zero pixels episodes, combining measures of contour elements, assuming that the contour is a square with a side equal to the unity. doi: 10.3109/17435390.2014.930195</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -836,6 +1257,18 @@
         <rdfs:isDefinedBy>Volume/ mass diameter doi: 10.3109/17435390.2014.930195</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">volume mass diameter</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000062"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000062"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000062"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -860,6 +1293,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000063"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000063"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000063"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>Volume/ surface diameter, doi: 10.3109/17435390.2014.930195</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -880,6 +1325,18 @@
         <rdfs:isDefinedBy>The aspect ratio of the particle’s fitted ellipse, i.e., [Major Axis]/[Minor Axis]. https://imagej.nih.gov/ij/docs/guide/146-30.html</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">aspect ratio</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000064"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000064"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000020"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000064"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -903,6 +1360,18 @@
         <rdfs:isDefinedBy xml:lang="en">BIO descriptor using Gene Ontology information</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">gene ontology descriptors</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000066"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000066"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000067"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000066"/>
         <owl:annotatedProperty rdf:resource="http://purl.enanomapper.net/onto/ENM_8000222"/>
@@ -933,6 +1402,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000067"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000067"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000029"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000067"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget xml:lang="en">Biology descriptors derived from omics data and integrated biological pathway/activities  information</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -953,6 +1434,18 @@
         <rdfs:isDefinedBy>Chemical hardness (η) is proportional to the second derivative of the total energy of a chemical system with respect to changes in the number of electrons at a fixed nuclear environment. https://en.wikipedia.org/wiki/HSAB_theory#Chemical_hardness</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">chemical hardness</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000099"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000099"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000027"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000099"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -977,6 +1470,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000100"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000100"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000027"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000100"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>The conduction band is the lowest range of vacant electronic states. https://en.wikipedia.org/wiki/Valence_and_conduction_bands</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -997,6 +1502,18 @@
         <rdfs:isDefinedBy>Electronic chemical potential, μ, is a measure of the escaping tendency of an electronic cloud and corresponds to the negative of the electronegativity c. Considering a finite difference approximation and a quadratic dependence of energy on the number of electrons, the electronegativity approximates the loss or gain in charge by the ionization potential IP and electron affinity EA, that is χMU is approximately (IP+EA)/2=-μ , χMU is Mulliken electronegativity.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">electronic chemical potential</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000101"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000101"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000027"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000101"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -1021,6 +1538,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000102"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000102"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000027"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000102"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>Mulliken electronegativity = -α, where α = the average of the HOMO and LUMO energies, i.e., α = ½(εhomo+ εlumo) http://openmopac.net/manual/super.html</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -1041,6 +1570,18 @@
         <rdfs:isDefinedBy>Parr &amp; Pople absolute hardness = ½(εhomo- εlumo) http://openmopac.net/manual/super.html</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">parr and poples absolute hardness</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000103"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000103"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000027"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000103"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -1065,6 +1606,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000104"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000104"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000027"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000104"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>Polarizability derived from the dipole moment Ad</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -1085,6 +1638,18 @@
         <rdfs:isDefinedBy>Polarizability derived from the heat of formation Ahof.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">polarizability derived from the heat of formation ahof</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000105"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000105"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000027"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000105"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -1109,6 +1674,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000106"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000106"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000027"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000106"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>Schuurmann MO shift alpha = α, where α = the average of the HOMO and LUMO energies, i.e., α = ½(εhomo+ εlumo) http://openmopac.net/manual/super.html</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -1129,6 +1706,18 @@
         <rdfs:isDefinedBy>The solvent accessible surface is a continuous surface of the molecule which can be reached by the center of charge of a solvent molecule. http://openmopac.net/manual/cosmo.html</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">solvent accessible surface</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000107"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000107"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000027"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000107"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -1153,6 +1742,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000108"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000108"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000027"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000108"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>Total energy equals to (Eelect + Enuc), where Eelect is the electronic energy, Enuc is the nuclear-nuclear repulsion energy. http://openmopac.net/manual/SCF_calc_hof.html</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -1173,6 +1774,18 @@
         <rdfs:isDefinedBy>The total softness S is defined as S=0.5*η, where η is the absolute hardness. Defined in page 629 of: Molecular descriptors for chemoinformatics (2 volumes), Roberto Todeschini, Viviana Consonni, 2009, Volume 41, Wiley-VCH.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">total softness</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000109"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000109"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000027"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000109"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -1197,6 +1810,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000110"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000110"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000027"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000110"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>The valence band is the highest range of electron energies in which electrons are normally present at absolute zero temperature. https://en.wikipedia.org/wiki/Valence_and_conduction_bands</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -1219,6 +1844,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000111"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000111"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000027"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000111"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>Zeta potential derived from Quantum Mechanics Calculations.</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -1229,6 +1866,12 @@
         <owl:annotatedTarget xml:lang="en">zeta potential</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
     
 
 

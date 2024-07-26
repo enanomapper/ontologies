@@ -46,6 +46,23 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000208 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000208"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -61,6 +78,18 @@
         <rdfs:label xml:lang="en">CR-mediated phagocytic pathway</rdfs:label>
         <rdfs:label xml:lang="en">Complement receptor-mediated phagocytic pathway</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_2866079"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_2866079"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0002433"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_2866079"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -83,6 +112,18 @@
         <rdfs:label xml:lang="en">MR-mediated phagocytic pathway</rdfs:label>
         <rdfs:label xml:lang="en">Mannose receptor-mediated phagocytic pathway</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9822611"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9822611"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0002433"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9822611"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -108,6 +149,12 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9912998"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9912998"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget> The enzymatic breakdown of a chemical entity</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
@@ -124,6 +171,12 @@
         <owl:annotatedTarget xml:lang="en">Enzymatic degradation</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9912998"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+    </owl:Axiom>
     
 
 
@@ -136,6 +189,30 @@
     <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051641 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051641"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002167 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002167">
+        <rdfs:subClassOf rdf:nodeID="genid14"/>
+    </owl:Class>
+    <owl:Restriction rdf:nodeID="genid14">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0051641"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0002167"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid14"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
 </rdf:RDF>
 
 

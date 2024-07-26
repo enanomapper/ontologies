@@ -52,6 +52,35 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002339 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002339"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0016004 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0016004"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000208 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000208"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -84,6 +113,12 @@
     
 
 
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_771 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_771"/>
+    
+
+
     <!-- http://purl.enanomapper.net/onto/ENM_0298514 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_0298514">
@@ -92,6 +127,18 @@
         <rdfs:label xml:lang="en">Ion leakage</rdfs:label>
         <rdfs:label xml:lang="en">Ion spilling</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_0298514"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_0298514"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1964"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_0298514"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -122,6 +169,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_0468307"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_0468307"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1883"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_0468307"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Functionalization of a nanoparticle through carboxy groups</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
@@ -144,6 +203,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_0468309"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_0468309"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1883"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_0468309"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Functionalization of a nanoparticle via the addition of glucose</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
@@ -162,21 +233,38 @@
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_0801504">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000916"/>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002168"/>
+        <rdfs:subClassOf rdf:nodeID="genid17"/>
         <rdfs:label xml:lang="en">5(6)-Carboxy-2′,7′-dichlorofluorescein diacetate assay</rdfs:label>
         <rdfs:label xml:lang="en">CDFDA assay</rdfs:label>
         <rdfs:label xml:lang="en">TMRM flow cytometry assay</rdfs:label>
         <rdfs:label xml:lang="en">Tetramethylrhodamine methyl ester flow cytometry assay</rdfs:label>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid17">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+    </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_0801504"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">TMRM flow cytometry assay</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
         <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_0801504"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">Tetramethylrhodamine methyl ester flow cytometry assay</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000916"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_0801504"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.bioassayontology.org/bao#BAO_0002168"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_0801504"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid17"/>
         <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -191,6 +279,18 @@
         <owl:annotatedTarget xml:lang="en">CDFDA assay</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_0801504"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">TMRM flow cytometry assay</owl:annotatedTarget>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_0801504"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">Tetramethylrhodamine methyl ester flow cytometry assay</owl:annotatedTarget>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
     
 
 
@@ -198,9 +298,32 @@
 
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_1530072">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002168"/>
+        <rdfs:subClassOf rdf:nodeID="genid25"/>
         <rdfs:label xml:lang="en">TBARS assay</rdfs:label>
         <rdfs:label xml:lang="en">Thiobarbituric Acid Reactive Substances assay</rdfs:label>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid25">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_1530072"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_1530072"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.bioassayontology.org/bao#BAO_0002168"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_1530072"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid25"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_1530072"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -220,8 +343,42 @@
 
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_1648790">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002168"/>
+        <rdfs:subClassOf rdf:nodeID="genid31"/>
+        <rdfs:subClassOf rdf:nodeID="genid33"/>
         <rdfs:label xml:lang="en">Chemiluminiscence of luminol assay detecting reactive oxygen species ex vivo</rdfs:label>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid31">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://purl.enanomapper.net/onto/ENM_3332709"/>
+    </owl:Restriction>
+    <owl:Restriction rdf:nodeID="genid33">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_1648790"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_1648790"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.bioassayontology.org/bao#BAO_0002168"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_1648790"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid31"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_1648790"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid33"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_1648790"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -238,6 +395,18 @@
         <rdfs:label xml:lang="en">HPI assay</rdfs:label>
         <rdfs:label xml:lang="en">Hoechst 33342 / Propidium Iodide (PI) Double Staining assay</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_1648791"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_1648791"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.bioassayontology.org/bao#BAO_0010053"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_1648791"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -257,10 +426,33 @@
 
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_1855822">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
+        <rdfs:subClassOf rdf:nodeID="genid42"/>
         <obo:IAO_0000115>Assay counting blood cells like neutrophils, macrophages, eosinophils or lymphocytes in bronchoalveolar lavage fluid</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Bronchial Lavage Fluid counts</rdfs:label>
         <rdfs:label xml:lang="en">Bronchial Lavage Fluid cytometry assay</rdfs:label>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid42">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0080041"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_1855822"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_1855822"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_1855822"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid42"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_1855822"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -286,8 +478,31 @@
 
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_2012430">
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.net/onto/ENM_3323767"/>
+        <rdfs:subClassOf rdf:nodeID="genid49"/>
         <rdfs:label xml:lang="en">BET surface area assay</rdfs:label>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid49">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://purl.enanomapper.net/onto/ENM_5933788"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_2012430"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_2012430"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.net/onto/ENM_3323767"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_2012430"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid49"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_2012430"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -305,6 +520,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_2012431"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_2012431"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_2012431"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">Phase transition</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
@@ -318,6 +545,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:label xml:lang="en">anatase to rutile phase transformation</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_2012432"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_2012432"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_2012432"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -334,6 +573,18 @@
         <obo:IAO_0000115>Functionalization of a nanoparticle through epoxy groups, comprised of two carbons and an oxygen in a ring formation</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Epoxy-functionalization of a nanoparticle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_2458273"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_2458273"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1883"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_2458273"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -358,6 +609,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_2866079"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_2866079"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0002433"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_2866079"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">CR-mediated phagocytic pathway</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
@@ -380,6 +643,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3079648"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3079648"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1945"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3079648"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Process by which the stacked sheets forming a material are separated through external forces</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
@@ -397,8 +672,31 @@
 
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_3221617">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001501"/>
+        <rdfs:subClassOf rdf:nodeID="genid72"/>
         <rdfs:label xml:lang="en">H2DCFDA fluorescence assay</rdfs:label>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid72">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3221617"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3221617"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0001501"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3221617"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid72"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3221617"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -415,6 +713,18 @@
         <obo:IAO_0000115>Drop by drop application of a liquid substance into or onto a location in an organism</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Instillation</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3323761"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3323761"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0600007"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3323761"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -434,9 +744,32 @@
 
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_3323766">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000916"/>
+        <rdfs:subClassOf rdf:nodeID="genid81"/>
         <rdfs:label xml:lang="en">DHE flow cytometry assay</rdfs:label>
         <rdfs:label xml:lang="en">Dihydroethidium flow cytometry assay</rdfs:label>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid81">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3323766"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3323766"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000916"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3323766"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid81"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3323766"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -456,8 +789,31 @@
 
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_3323767">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:nodeID="genid87"/>
         <rdfs:label xml:lang="en">Surface area assay</rdfs:label>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid87">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/CHEMINF_000247"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3323767"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3323767"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3323767"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid87"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3323767"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -471,9 +827,32 @@
 
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_3323768">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002168"/>
+        <rdfs:subClassOf rdf:nodeID="genid92"/>
         <rdfs:label xml:lang="en">Cellular GSH quantification assay</rdfs:label>
         <rdfs:label xml:lang="en">Cellular glutathione quantification assay</rdfs:label>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid92">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3323768"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3323768"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.bioassayontology.org/bao#BAO_0002168"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3323768"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid92"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3323768"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -489,16 +868,45 @@
     
 
 
+    <!-- http://purl.enanomapper.net/onto/ENM_3332709 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_3332709"/>
+    
+
+
     <!-- http://purl.enanomapper.net/onto/ENM_4399735 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_4399735">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000954"/>
+        <rdfs:subClassOf rdf:nodeID="genid98"/>
         <rdfs:label xml:lang="en">subcutaneous injection via hydrogel</rdfs:label>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid98">
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0016004"/>
+        <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_771"/>
+    </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_4399735"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">subcutaneous injection via hydrogel</owl:annotatedTarget>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_4399735"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_4399735"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000954"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_4399735"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid98"/>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </owl:Axiom>
     
@@ -508,9 +916,32 @@
 
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_4869361">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000916"/>
+        <rdfs:subClassOf rdf:nodeID="genid103"/>
         <rdfs:label xml:lang="en">DCF flow cytometry assay</rdfs:label>
         <rdfs:label xml:lang="en">Dichlorodihydrofluorescein flow cytometry assay</rdfs:label>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid103">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_4869361"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_4869361"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000916"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_4869361"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid103"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_4869361"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -530,9 +961,32 @@
 
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_5562662">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000087"/>
+        <rdfs:subClassOf rdf:nodeID="genid109"/>
         <rdfs:label xml:lang="en">Rhodamine 123 fluorescence microscopy assay</rdfs:label>
         <rdfs:label xml:lang="en">Rhodamine fluorescence microscopy assay</rdfs:label>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid109">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5562662"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5562662"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000087"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5562662"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid109"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5562662"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -557,6 +1011,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5666044"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5666044"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.net/onto/ENM_3323768"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5666044"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">MCB cellular GSH quantification assay</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
@@ -574,8 +1040,31 @@
 
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_5723277">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002993"/>
+        <rdfs:subClassOf rdf:nodeID="genid119"/>
         <rdfs:label xml:lang="en">Autophagy assay</rdfs:label>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid119">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5723277"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5723277"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.bioassayontology.org/bao#BAO_0002993"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5723277"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid119"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5723277"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -594,6 +1083,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5723278"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5723278"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.net/onto/ENM_5723277"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5723278"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">LC3B II assay</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
@@ -607,12 +1108,41 @@
     
 
 
+    <!-- http://purl.enanomapper.net/onto/ENM_5933788 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_5933788"/>
+    
+
+
     <!-- http://purl.enanomapper.net/onto/ENM_5945718 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_5945718">
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.net/onto/ENM_3323767"/>
+        <rdfs:subClassOf rdf:nodeID="genid128"/>
         <rdfs:label xml:lang="en">Tracheal instillation</rdfs:label>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid128">
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002339"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5945718"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5945718"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.net/onto/ENM_3323767"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5945718"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid128"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5945718"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -629,6 +1159,18 @@
         <obo:IAO_0000115>Functionalization of a nanoparticle through hydroxyl groups, comprised of one oxygen atom covalently bonded to one hydrogen atom</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Hydroxy-functionalization of a nanoparticle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_6674110"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_6674110"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1883"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_6674110"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -653,6 +1195,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_7609815"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_7609815"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1883"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_7609815"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Functionalization of a nanoparticle through covalent bonds with amino groups</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
@@ -675,6 +1229,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_8100002"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_8100002"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.bioassayontology.org/bao#BAO_0002167"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_8100002"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The HPRT assay is an in vitro mammalian cell gene mutation test. This test system is appropriate for use in the initial assessment of the genotoxicity of a test article.</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
@@ -688,6 +1254,12 @@
     
 
 
+    <!-- http://purl.enanomapper.net/onto/ENM_8553741 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_8553741"/>
+    
+
+
     <!-- http://purl.enanomapper.net/onto/ENM_9010524 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_9010524">
@@ -695,6 +1267,18 @@
         <obo:IAO_0000115>Embedding of a nanomaterial into nano-enabled paint formulation</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Embedding into nano-enabled paint formulation</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9010524"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9010524"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1945"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9010524"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -719,6 +1303,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9318045"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9318045"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1883"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9318045"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Functionalization of a nanoparticle through carbon-carbon groups</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
@@ -736,9 +1332,32 @@
 
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_9802609">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000916"/>
+        <rdfs:subClassOf rdf:nodeID="genid153"/>
         <rdfs:label xml:lang="en">DHR123 flow cytometry assay</rdfs:label>
         <rdfs:label xml:lang="en">Dihydrorhodamine 123 flow cytometry assay</rdfs:label>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid153">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9802609"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9802609"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000916"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9802609"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid153"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9802609"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -763,6 +1382,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9822611"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9822611"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0002433"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9822611"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">MR-mediated phagocytic pathway</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
@@ -784,6 +1415,18 @@
         <rdfs:label xml:lang="en">Biodegradation</rdfs:label>
         <rdfs:label xml:lang="en">Enzymatic degradation</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9912998"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9912998"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9912998"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -832,6 +1475,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000064"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000064"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1405"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000064"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>Technique used to determine the surface area of solid particles.</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
@@ -852,6 +1507,18 @@
         <rdfs:isDefinedBy>Particle sizing technique based on Brownian motion and scattered light.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Nanoparticle Tracking Analysis</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000065"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000065"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1405"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000065"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -875,6 +1542,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000100"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000100"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1405"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000100"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">force tensiometry</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
@@ -888,6 +1567,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
         <rdfs:label xml:lang="en">Time resolved Single Particle Inductively Coupled Plasma Mass Spectrometry</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000108"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000108"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000538"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000108"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -905,6 +1596,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000109"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000109"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1405"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000109"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">Time resolved nanoparticle tracking analysis</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
@@ -918,6 +1621,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">Column test</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000112"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000112"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000112"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -934,6 +1649,18 @@
         <obo:IAO_0000115>The evolutionary process by which populations evolve to become distinct species.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Speciation</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000114"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/bfo/"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000114"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/bfo/"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_0000114"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -958,6 +1685,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000060"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000060"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000060"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>An exposure medium is a substance through which something else is transmitted or carried during an exposure.</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -979,6 +1718,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000223"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000223"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000223"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">Aerosol Characterisation Assay</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -992,6 +1743,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000891"/>
         <rdfs:label xml:lang="en">Alamar Blue assay</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000224"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000224"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000891"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000224"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1009,6 +1772,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000225"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000225"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000225"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">dustiness assay</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1022,6 +1797,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">Aspect of deposit</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000226"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000226"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000226"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1039,6 +1826,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000227"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000227"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000227"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">barrier integrity assay</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1052,6 +1851,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">batch dispersion assay</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000228"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000228"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000228"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1069,6 +1880,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000229"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000229"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000230"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000229"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">biochem analysis inhalation</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -1082,6 +1905,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">biochemical analysis</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000230"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000230"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000230"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1099,6 +1934,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000231"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000231"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000231"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">Biodistribution</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1112,6 +1959,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000233"/>
         <rdfs:label xml:lang="en">Blood counts</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000232"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000232"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000233"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000232"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1129,6 +1988,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000233"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000233"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000233"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">cell counts</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1142,6 +2013,18 @@
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002993"/>
         <rdfs:label xml:lang="en">colony forming efficiency (CFE) assay</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000235"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000235"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.bioassayontology.org/bao#BAO_0002993"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000235"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1159,6 +2042,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000236"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000236"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000236"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">chromosomal damage in vitro</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1172,6 +2067,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">coating_MALDI-TOF</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000237"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000237"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000237"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1189,6 +2096,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000238"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000238"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000238"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">coating_STEM-EDS</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1202,6 +2121,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">COMET - systemic genotoxicity</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000241"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000241"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000241"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1219,6 +2150,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000242"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000242"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000242"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">composition_EDX</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1232,6 +2175,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">composition ICP-OES</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000243"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000243"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000243"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1249,6 +2204,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000244"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000244"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000244"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">Confocal Raman Microscopy (CRM)</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1262,6 +2229,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">Cytokine secretion MPh</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000246"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000246"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000246"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1279,6 +2258,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000247"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000247"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000247"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">Cytokine levels</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1292,6 +2283,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">density assay</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000248"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000248"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000248"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1309,6 +2312,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000249"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000249"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_9000017"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000249"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">DNA-damage lung</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -1322,6 +2337,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000225"/>
         <rdfs:label xml:lang="en">Dustiness (large drum) assay</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000250"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000250"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000225"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000250"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1339,6 +2366,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000251"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000251"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000225"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000251"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">Dustiness (other set-up) assay</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -1352,6 +2391,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000225"/>
         <rdfs:label xml:lang="en">Dustiness (small drum) assay</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000252"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000252"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000225"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000252"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1369,6 +2420,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000253"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000253"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000225"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000253"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">Dustiness (Vortex Shaker) assay</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -1382,6 +2445,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000248"/>
         <rdfs:label xml:lang="en">effective density assay</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000254"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000254"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_8000248"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000254"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1399,6 +2474,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000255"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000255"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001075"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000255"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">ICP-MS</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
@@ -1412,6 +2499,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001075"/>
         <rdfs:label xml:lang="en">CHN analysis</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000256"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000256"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001075"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000256"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1429,6 +2528,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000257"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000257"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000257"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">FACS analysis</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1442,6 +2553,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">filtration_ICP-MS</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000258"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000258"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000258"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1459,6 +2582,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000259"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000259"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000259"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">filtration_WDXRF</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1472,6 +2607,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">functional groups_ATR-FTIR</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000260"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000260"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000260"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1489,6 +2636,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000261"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000261"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000261"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">functional groups_TGA</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1502,6 +2661,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">hCTA</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000262"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000262"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000262"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1519,6 +2690,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000263"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000263"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000263"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">hemolysis</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1532,6 +2715,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">histopathology</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000264"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000264"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000264"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1549,6 +2744,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000265"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000265"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000265"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">hystopathology</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1562,6 +2769,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">IBM</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000266"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000266"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000266"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1579,6 +2798,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000267"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000267"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000267"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">Impedence_flow cytom</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1592,6 +2823,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">isoElectric point</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000268"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000268"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000268"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1609,6 +2852,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000269"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000269"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000269"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">LDH</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1622,6 +2877,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">lung genotoxicity</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000270"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000270"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000270"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1639,6 +2906,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000271"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000271"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000271"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">mass concentration</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1652,6 +2931,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">Micronuclei - sistemic genotox</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000272"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000272"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000272"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1669,6 +2960,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000273"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000273"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000273"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">Micronucleus</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1682,6 +2985,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">mRNA expression in vivo</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000274"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000274"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000274"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1699,6 +3014,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000275"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000275"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000275"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">MTS</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1712,6 +3039,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">MW digestion + ICP-MS</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000276"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000276"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000276"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1729,6 +3068,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000277"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000277"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000277"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">neutral red uptake assay</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1744,6 +3095,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000278"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000278"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000278"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">NO production</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1755,8 +3118,31 @@
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000279">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:nodeID="genid352"/>
         <rdfs:label xml:lang="en">NP crossing ICP-OES</rdfs:label>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid352">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://purl.enanomapper.net/onto/ENM_8553741"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000279"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000279"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000279"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid352"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000279"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1774,6 +3160,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000280"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000280"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000280"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">NP crossing ToF-SIMS</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1787,6 +3185,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">NP intracell pen(confocal micro</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000281"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000281"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000281"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1804,6 +3214,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000282"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000282"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000282"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">NPs crossing TEM-SEM</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1817,6 +3239,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">oral mucosa 3Dmodel penetration</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000283"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000283"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000283"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1834,6 +3268,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000285"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000285"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000285"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">PIG-A sistemic genotox</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1847,6 +3293,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">Polyclonal proliferation</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000286"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000286"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000286"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1864,6 +3322,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000287"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000287"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000287"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">Potentiometry_H2O sosp</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1877,6 +3347,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">RT- Impedence_adherence cell</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000289"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000289"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000289"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1894,6 +3376,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000290"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000290"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000290"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">Serum cytokine</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1907,6 +3401,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">Serum total antibodies</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000291"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000291"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000291"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1924,6 +3430,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000300"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000300"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000300"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">soil - C. Elegans</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1937,6 +3455,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">TEER</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000301"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000301"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000301"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1954,6 +3484,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000302"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000302"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000302"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">TEM observation</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1967,6 +3509,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">TEM-SEM - intracell penetration</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000303"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000303"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000303"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1984,6 +3538,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000304"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000304"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000304"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">ToF-SIMS</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1997,6 +3563,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">water - algae - P.subcap</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000307"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000307"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000307"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -2014,6 +3592,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000308"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000308"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000308"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">water - fish - D Rerio</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -2027,6 +3617,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">water - microalgae - D. Magna</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000309"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000309"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000309"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -2044,6 +3646,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000310"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000310"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000310"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">WAXD</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -2057,6 +3671,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label xml:lang="en">XRD</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000311"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000311"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000311"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -2074,6 +3700,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000312"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000312"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000312"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">z-pot</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -2088,6 +3726,18 @@
         <obo:IAO_0000115>An assay that measures the surface chemistry of an entity, e.g. of a nanoparticle. </obo:IAO_0000115>
         <rdfs:label xml:lang="en">surface chemistry assay</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000009"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000009"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000009"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2112,6 +3762,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000011"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000011"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <owl:annotatedTarget>TNF assay</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -2132,6 +3794,18 @@
         <rdfs:isDefinedBy>wst-1 cell proliferation assay is a sensitive and accurate assay for cell proliferation and cytotoxicity.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">WST-1</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000013"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000013"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.bioassayontology.org/bao#BAO_0003009"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000013"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -2155,6 +3829,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000015"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000015"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.bioassayontology.org/bao#BAO_0003009"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000015"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">Physicochemical Characterization</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
@@ -2168,6 +3854,18 @@
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002167"/>
         <rdfs:label xml:lang="en">DNA Damage Assay</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000017"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000017"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.bioassayontology.org/bao#BAO_0002167"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000017"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -2185,6 +3883,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000018"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000018"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.bioassayontology.org/bao#BAO_0003009"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000018"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">Cell Membrane Integrity Assay</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
@@ -2200,6 +3910,18 @@
         <rdfs:label xml:lang="en">FRAS</rdfs:label>
         <rdfs:label xml:lang="en">Ferric Reduction Ability of Serum</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000265"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000265"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_9000009"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000265"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2231,6 +3953,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000266"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000266"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.bioassayontology.org/bao#BAO_0003009"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000266"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Cell proliferation assay used to assess cytotoxicity. It measures the extracellular conversion of tetrazolium salt WST-8 to formazan products by intracellular mitochondrial oxidoreductases in viable cells.</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
@@ -2259,6 +3993,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000267"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000267"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCIT_C119826"/>
+        <onto:submit_to rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000267"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedTarget>Pulmonary exposure is performed by instillation of test substance dispersed in a liquid vehicle. The liquid is delivered/blown into the lungs of sedated animals. The exposure is a bolus exposure and the dose is delivered within seconds.</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
@@ -2280,6 +4026,18 @@
         <rdfs:label xml:lang="en">SDS-PAGE assay</rdfs:label>
         <rdfs:label xml:lang="en">Sodium dodecyl sulfate polyacrylamide gel electrophoresis (SDS-PAGE) assay</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000268"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000268"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.bioassayontology.org/bao#BAO_0010019"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000268"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2310,6 +4068,18 @@
         <rdfs:label xml:lang="en">Bioimpedance assay</rdfs:label>
         <rdfs:label xml:lang="en">Impedance-based cell assay</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000269"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000269"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000269"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2368,231 +4138,21 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0051641 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051641"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C119826 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C119826"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OAE_0000314 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C12428 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000314"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0000988 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000988"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0001208 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001208"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0001209 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001209"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0001349 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001349"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0001364 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001364"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0001365 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001365"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0001366 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001366"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0001367 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001367"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0001368 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001368"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0001493 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001493"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0001861 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001861"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0001909 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001909"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0001930 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001930"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0001937 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001937"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0002000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002000"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0002001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002001"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0002130 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002130"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0002257 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002257"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0002263 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002263"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0002401 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002401"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0002537 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002537"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0002661 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002661"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0002672 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002672"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0002689 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002689"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0002690 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002690"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0002775 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002775"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0004435 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004435"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0004437 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004437"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0004438 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004438"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0004439 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004439"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0004443 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004443"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0004446 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004446"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0004448 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004448"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0004460 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004460"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0004461 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004461"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0004462 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0004462"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C12428"/>
     
 
 
@@ -2632,9 +4192,39 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0002167 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002167">
+        <rdfs:subClassOf rdf:nodeID="genid464"/>
+    </owl:Class>
+    <owl:Restriction rdf:nodeID="genid464">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0051641"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0002167"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0002167"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid464"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0600007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600007"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_000247 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000247"/>
     
 
 
@@ -2644,21 +4234,9 @@
     
 
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0000649 -->
+    <!-- http://www.bioassayontology.org/bao#BAO_0000143 -->
 
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000649"/>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000650 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000650"/>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000651 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000651"/>
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000143"/>
     
 
 
@@ -2687,6 +4265,12 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.bioassayontology.org/bao#BAO_0003009"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.bioassayontology.org/bao#BAO_0003009"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="zh">BAO_0003009</owl:annotatedTarget>
         <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
@@ -2706,92 +4290,9 @@
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://www.bioassayontology.org/bao#BAO_0080041 -->
 
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0000314"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0000988"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0001208"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0001209"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0001349"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0001364"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0001365"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0001366"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0001367"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0001368"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0001861"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0001930"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0001937"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002257"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002263"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0004443"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0004446"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0004448"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0004460"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0004461"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0001493"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0001909"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002000"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002001"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002130"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002401"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002537"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002661"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002672"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002775"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0004435"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0004437"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0004438"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0001493"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0001909"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002000"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002001"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002130"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002401"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002537"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002661"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002672"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002775"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0004435"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0004437"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0004438"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0004439"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002689"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0002690"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OAE_0004462"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0000649"/>
-            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0000650"/>
-            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0000651"/>
-        </owl:members>
-    </rdf:Description>
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080041"/>
 </rdf:RDF>
 
 
