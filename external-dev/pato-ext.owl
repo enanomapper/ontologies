@@ -1,12 +1,118 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:pato="http://purl.obolibrary.org/obo/pato#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002604 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002604"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pato#seeAlso -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#seeAlso"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
     
 
 
@@ -43,7 +149,20 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
+        <obo:IAO_0000115>A time quality inhering in a bearer by virtue of how long the bearer has existed.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000011</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>age</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000011"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A time quality inhering in a bearer by virtue of how long the bearer has existed.</annotatedTarget>
+        <oboInOwl:hasDbXref>WordNet:WordNet</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -51,7 +170,42 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
+        <obo:IAO_0000115>A quality inhering in a substance by virtue of the amount of the bearer&apos;s there is mixed with another substance.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>concentration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000033</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#relational_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>concentration of</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000033"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A quality inhering in a substance by virtue of the amount of the bearer&apos;s there is mixed with another substance.</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/concentration</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000044 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0050000"/>
+        <obo:IAO_0000115>A physical quality which inheres in a bearer by virtue of the number of the bearer&apos;s repetitive actions in a particular time.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000044</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>frequency</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000044"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A physical quality which inheres in a bearer by virtue of the number of the bearer&apos;s repetitive actions in a particular time.</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/frequency</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -59,7 +213,20 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000049">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000068"/>
+        <obo:IAO_0000115>A quality inhering in a bearer by virtue of the bearer&apos;s possessing or displaying a distinctive feature in type or degree or effect or force.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000049</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#hpo_slim"/>
+        <rdfs:label>intensity</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000049"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A quality inhering in a bearer by virtue of the bearer&apos;s possessing or displaying a distinctive feature in type or degree or effect or force.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -67,6 +234,10 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000068">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000068</oboInOwl:id>
+        <rdfs:comment>TODO: define this or obsolete it and move children somewhere else.</rdfs:comment>
+        <rdfs:label>qualitative</rdfs:label>
     </Class>
     
 
@@ -75,7 +246,62 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000117">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115>A morphology quality inhering in a bearer by virtue of the bearer&apos;s physical magnitude.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000117</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>size</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A morphology quality inhering in a bearer by virtue of the bearer&apos;s physical magnitude.</annotatedTarget>
+        <oboInOwl:hasDbXref>WordNet:WordNet</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000119 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001708"/>
+        <obo:IAO_0000115>A 1-D extent quality inhering in a bearer by virtue of the bearer&apos;s vertical dimension of extension.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000119</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>height</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000119"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A 1-D extent quality inhering in a bearer by virtue of the bearer&apos;s vertical dimension of extension.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000122 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001708"/>
+        <obo:IAO_0000115>A 1-D extent quality which is equal to the distance between two points.</obo:IAO_0000115>
+        <pato:seeAlso>https://github.com/pato-ontology/pato/issues/337</pato:seeAlso>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000122</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:comment>Length often refers to the longer or longest dimension of an object, however, this is not always true. See https://github.com/pato-ontology/pato/issues/337 for full discussion.</rdfs:comment>
+        <rdfs:label>length</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A 1-D extent quality which is equal to the distance between two points.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -83,7 +309,22 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000125">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
+        <obo:IAO_0000115>A physical quality that inheres in a bearer by virtue of the proportion of the bearer&apos;s amount of matter.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000125</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#relational_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:comment>For any biological use of PATO, the concept that should be used is &apos;mass&apos; and not &apos;weight&apos;. For example, increased weight of an organism.</rdfs:comment>
+        <rdfs:label>mass</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A physical quality that inheres in a bearer by virtue of the proportion of the bearer&apos;s amount of matter.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -91,7 +332,20 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000146">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
+        <obo:IAO_0000115>A physical quality of the thermal energy of a system.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000146</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>temperature</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000146"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A physical quality of the thermal energy of a system.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -99,7 +353,19 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000150">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
+        <obo:IAO_0000115>A morphologic quality inhering in a bearer by virtue of the bearer&apos;s relative size, organization and distribution of its surface elements or the representation or invention of the appearance of its surface; visual and tactile surface characteristics.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000150</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <rdfs:label>texture</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000150"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A morphologic quality inhering in a bearer by virtue of the bearer&apos;s relative size, organization and distribution of its surface elements or the representation or invention of the appearance of its surface; visual and tactile surface characteristics.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -107,7 +373,19 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000161">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115>A quality of a single process inhering in a bearer by virtue of the bearer&apos;s occurrence per unit time.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000161</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>rate</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000161"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A quality of a single process inhering in a bearer by virtue of the bearer&apos;s occurrence per unit time.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:melissa</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -115,7 +393,19 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000261">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
+        <obo:IAO_0000115>A quality of a single physical entity which is held by a bearer when the latter exhibits a state of growth, differentiation, or development.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000261</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <rdfs:label>maturity</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000261"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A quality of a single physical entity which is held by a bearer when the latter exhibits a state of growth, differentiation, or development.</annotatedTarget>
+        <oboInOwl:hasDbXref>Merriam-Webster:Merriam-Webster</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -123,7 +413,521 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000371">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000371</oboInOwl:id>
+        <rdfs:label>obsolete distance value</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
     </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000380 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000380">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000044"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0055003"/>
+        <obo:IAO_0000115>A frequency which is relatively high.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000381"/>
+        <oboInOwl:hasExactSynonym>high frequency</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>frequent</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0000380</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>increased frequency</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000380"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A frequency which is relatively high.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000381 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000381">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000044"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0055004"/>
+        <obo:IAO_0000115>A frequency which is relatively low.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000380"/>
+        <oboInOwl:hasExactSynonym>low frequency</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>infrequent</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0000381</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>decreased frequency</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000381"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A frequency which is relatively low.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000569 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000569">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000119"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000587"/>
+        <obo:IAO_0000115>A height which is relatively low.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000570"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>short</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0000569</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>decreased height</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000569"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A height which is relatively low.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000570 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000570">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000119"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000586"/>
+        <obo:IAO_0000115>A height which is relatively high.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000569"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>tall</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0000570</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>increased height</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000570"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A height which is relatively high.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000573 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000573">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000586"/>
+        <obo:IAO_0000115>A length quality which is relatively large.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000574"/>
+        <oboInOwl:hasExactSynonym>long</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000573</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>increased length</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000573"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A length quality which is relatively large.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000574 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000574">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000587"/>
+        <obo:IAO_0000115>A length quality which is relatively small.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000573"/>
+        <oboInOwl:hasExactSynonym>short</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>shortened</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>stubby</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0000574</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>decreased length</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000574"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A length quality which is relatively small.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000584 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000584">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000595"/>
+        <obo:IAO_0000115>An increased size quality inhering in a bearer by virtue of the bearer&apos;s exhibiting enlargement of a cell or constituent group of cells (for example, organ).</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000585"/>
+        <oboInOwl:hasNarrowSynonym>hypertrophy</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000584</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>hypertrophic</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000584"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An increased size quality inhering in a bearer by virtue of the bearer&apos;s exhibiting enlargement of a cell or constituent group of cells (for example, organ).</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:MAH</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000585 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000585">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000596"/>
+        <obo:IAO_0000115>A decreased size quality inhering in a bearer by virtue of the bearer&apos;s exhibiting reduced size of a cell or constituent group of cells (for example, organ).</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000584"/>
+        <oboInOwl:hasAlternativeId>PATO:0000412</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>shrunken</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000585</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>hypotrophic</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000585"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A decreased size quality inhering in a bearer by virtue of the bearer&apos;s exhibiting reduced size of a cell or constituent group of cells (for example, organ).</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:MAH</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000586 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000586">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
+        <obo:IAO_0000115>A size quality which is relatively high.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000587"/>
+        <oboInOwl:hasAlternativeId>PATO:0001202</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>big</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>enlarged</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>expanded</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>great</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>large</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0000586</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>increased size</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000586"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A size quality which is relatively high.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000587 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000587">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
+        <obo:IAO_0000115>A size quality which is relatively low.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000586"/>
+        <oboInOwl:hasNarrowSynonym>hypoplasia</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>underdeveloped</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>reduced</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>small</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>tiny</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0000587</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>decreased size</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000587"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A size quality which is relatively low.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000591 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000591">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000586"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000915"/>
+        <obo:IAO_0000115>A thickness which is relatively high.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000592"/>
+        <oboInOwl:hasExactSynonym>high thickness</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>stout</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>thickened</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>thick</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0000591</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>increased thickness</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000591"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A thickness which is relatively high.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000592 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000592">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000587"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000915"/>
+        <obo:IAO_0000115>A thickness which is relatively low.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000591"/>
+        <oboInOwl:hasExactSynonym>low thickness</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>slender</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>thin</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0000592</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>decreased thickness</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000592"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A thickness which is relatively low.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000595 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000595">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000586"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000918"/>
+        <obo:IAO_0000115>A volume which is relatively high.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000596"/>
+        <oboInOwl:hasExactSynonym>high volume</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>large volume</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0000595</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>increased volume</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000595"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A volume which is relatively high.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000596 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000596">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000587"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000918"/>
+        <obo:IAO_0000115>A volume which is relatively low.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000595"/>
+        <oboInOwl:hasExactSynonym>low volume</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>small volume</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0000596</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>decreased volume</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000596"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A volume which is relatively low.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000599 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000599">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000587"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000921"/>
+        <obo:IAO_0000115>A width which is relatively small.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000600"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>narrow</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0000599</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>decreased width</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000599"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A width which is relatively small.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000600 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000600">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000586"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000921"/>
+        <obo:IAO_0000115>A width which is relatively large.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000599"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>broad</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>wide</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>wide/broad</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0000600</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>increased width</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000600"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A width which is relatively large.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000911 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000911">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000161"/>
+        <obo:IAO_0000115>A rate which is relatively low.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000912"/>
+        <oboInOwl:hasExactSynonym>slow rate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000911</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>decreased rate</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000911"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A rate which is relatively low.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATO:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000912 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000912">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000161"/>
+        <obo:IAO_0000115>A rate which is relatively high.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000911"/>
+        <oboInOwl:hasExactSynonym>fast rate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>high rate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000912</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>increased rate</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000912"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A rate which is relatively high.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATO:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000915 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000915">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001708"/>
+        <obo:IAO_0000115>A 1-D extent quality which is equal to the dimension through an object as opposed to its length or width.</obo:IAO_0000115>
+        <pato:seeAlso>https://github.com/pato-ontology/pato/issues/337</pato:seeAlso>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000915</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:comment>Thickness often refers to the smallest 1-D extent compared to the other two orthogonal dimensions, however, this is not always true. See https://github.com/pato-ontology/pato/issues/337 for full discussion.</rdfs:comment>
+        <rdfs:label>thickness</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000915"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A 1-D extent quality which is equal to the dimension through an object as opposed to its length or width.</annotatedTarget>
+        <oboInOwl:hasDbXref>WordNet:WordNet</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000918 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000918">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001710"/>
+        <obo:IAO_0000115>A 3-D extent quality inhering in a bearer by virtue of the bearer&apos;s amount of 3-dimensional space it occupies.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000918</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>volume</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000918"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A 3-D extent quality inhering in a bearer by virtue of the bearer&apos;s amount of 3-dimensional space it occupies.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000921 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000921">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001708"/>
+        <obo:IAO_0000115>A 1-D extent quality which is equal to the distance from one side of an object to another side which is opposite.</obo:IAO_0000115>
+        <pato:seeAlso>https://github.com/pato-ontology/pato/issues/337</pato:seeAlso>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>breadth</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0000921</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:comment>Width often refers to the dimension that is greater than the extent in only one of the other two orthogonal dimensions, however, this is not always true. See https://github.com/pato-ontology/pato/issues/337 for full discussion.</rdfs:comment>
+        <rdfs:label>width</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000921"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A 1-D extent quality which is equal to the distance from one side of an object to another side which is opposite.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000969 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000969">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000587"/>
+        <obo:IAO_0000115>A size quality inhering in a bearer by virtue of the bearer&apos;s being abnormally small.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>dwarfed</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000969</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>dwarf-like</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000969"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A size quality inhering in a bearer by virtue of the bearer&apos;s being abnormally small.</annotatedTarget>
+        <oboInOwl:hasDbXref>Answers.com:Answers.com</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -131,7 +935,21 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000973">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
+        <obo:IAO_0000115>A structure quality inhering in a bearer by virtue of the bearer&apos;s disposition to admit the passage of gas or liquid through pores or interstices.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000973</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#disposition_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>porosity</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000973"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A structure quality inhering in a bearer by virtue of the bearer&apos;s disposition to admit the passage of gas or liquid through pores or interstices.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -145,7 +963,40 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115>A physical quality which inheres in a bearer by virtue of some influence is exerted by the bearer&apos;s mass per unit size.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>density</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0001019</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>mass density</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001019"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A physical quality which inheres in a bearer by virtue of some influence is exerted by the bearer&apos;s mass per unit size.</annotatedTarget>
+        <oboInOwl:hasDbXref>WordNet:WordNet</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001164 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001164">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001019"/>
+        <obo:IAO_0000115>A physical quality which inheres in a bearer by virtue of the bearer&apos;s exhibiting density.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001164</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>dense</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001164"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A physical quality which inheres in a bearer by virtue of the bearer&apos;s exhibiting density.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -153,7 +1004,19 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001190">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000261"/>
+        <obo:IAO_0000115>A maturity quality inhering in a bearer by virtue the bearer&apos;s being not fully grown or developed.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001190</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>juvenile</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001190"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A maturity quality inhering in a bearer by virtue the bearer&apos;s being not fully grown or developed.</annotatedTarget>
+        <oboInOwl:hasDbXref>thefreedictionary.com:thefreedictionary.com</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -161,15 +1024,151 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001241">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115>A quality which inheres in a continuant.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>PATO:0001237</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>PATO:0001238</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>snap:Quality</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>monadic quality of a continuant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>multiply inhering quality of a physical entity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>quality of a continuant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>quality of a single physical entity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>quality of an object</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>quality of continuant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>monadic quality of an object</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>monadic quality of continuant</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001241</oboInOwl:id>
+        <rdfs:comment>Relational qualities are qualities that hold between multiple entities. Normal (monadic) qualities such as the shape of a eyeball exist purely as a quality of that eyeball. A relational quality such as sensitivity to light is a quality of that eyeball (and connecting nervous system) as it relates to incoming light waves/particles.</rdfs:comment>
+        <rdfs:label>physical object quality</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A quality which inheres in a continuant.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001300 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001300">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000101"/>
+        <obo:IAO_0000115>An EM radiation quality in which the EM radiation is within the fiat range of the spectrum visible deemed to be light.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001300</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <rdfs:label>optical quality</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001300"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An EM radiation quality in which the EM radiation is within the fiat range of the spectrum visible deemed to be light.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001323 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001323">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001709"/>
+        <obo:IAO_0000115>A 2-D extent quality inhering in a bearer by virtue of the bearer&apos;s two dimensional extent.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001323</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>area</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001323"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A 2-D extent quality inhering in a bearer by virtue of the bearer&apos;s two dimensional extent.</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Area</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001334 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001334">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001708"/>
+        <obo:IAO_0000115>A length quality which is equal to the length of any straight line segment that passes through the center of a circle and whose endpoints are on the circular boundary.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001334</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>diameter</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001334"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A length quality which is equal to the length of any straight line segment that passes through the center of a circle and whose endpoints are on the circular boundary.</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Diameter</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001351 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001351">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001019"/>
+        <obo:IAO_0000115>A density quality which inheres in a bearer by virtue of some influence exerted by the bearer&apos;s mass on a given area.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001351</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>area density</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001351"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A density quality which inheres in a bearer by virtue of some influence exerted by the bearer&apos;s mass on a given area.</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Area_density</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001352 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001352">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001019"/>
+        <obo:IAO_0000115>A density quality which is equal to the mass exerting an influence on a one-dimensional object.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001352</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>linear density</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001352"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A density quality which is equal to the mass exerting an influence on a one-dimensional object.</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Linear_density</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001353 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001353">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001019"/>
+        <obo:IAO_0000115>A density quality which inheres in a bearer by virtue of some influence exerted by the bearer&apos;s mass on a given volume.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001353</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>volumetric density</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001353"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A density quality which inheres in a bearer by virtue of some influence exerted by the bearer&apos;s mass on a given volume.</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Mass_density</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -177,7 +1176,170 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001464">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
+        <obo:IAO_0000115>A quality that is equal to the potential energy per unit charge associated with a static (time-invariant) electric field, also called the electrostatic potential.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001464</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>electric potential</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001464"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A quality that is equal to the potential energy per unit charge associated with a static (time-invariant) electric field, also called the electrostatic potential.</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Electric_potential</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001472 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001472">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000587"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001595"/>
+        <obo:IAO_0000115>A depth which is relatively low.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001596"/>
+        <oboInOwl:hasAlternativeId>PATO:0001692</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>low depth</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>shallow</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001472</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>decreased depth</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001472"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A depth which is relatively low.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001492 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001492">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000161"/>
+        <obo:IAO_0000115>The rate or speed of the change in size of an individual entity or change in number of a population.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001492</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>growth rate</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001492"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>The rate or speed of the change in size of an individual entity or change in number of a population.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-9900-7880</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0003-4606-0597</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001493 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001493">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001492"/>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001494"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001493</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:comment>This term will be obsoleted; Use GO:growth and PATO:rate.</rdfs:comment>
+        <rdfs:label>hypertrophic growth</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001494 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001494">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001492"/>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001493"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001494</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:comment>This term will be obsoleted; Use GO:growth and PATO:rate.</rdfs:comment>
+        <rdfs:label>hypotrophic growth</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001520 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001520">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000044"/>
+        <obo:IAO_0000115>The frequency of transmitted vibrations.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001520</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>sound frequency</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001520"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>The frequency of transmitted vibrations.</annotatedTarget>
+        <oboInOwl:hasDbXref>thefreedictionary.com:thefreedictionary.com</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001524 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001524">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001520"/>
+        <obo:IAO_0000115>A sound frequency in the range of 0-20 Hz.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001524</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>intrasonic</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001524"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A sound frequency in the range of 0-20 Hz.</annotatedTarget>
+        <oboInOwl:hasDbXref>studyphysics:studyphysics</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001525 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001525">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001520"/>
+        <obo:IAO_0000115>A sound frequency in the range of 20 to 20.000 Hz.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001525</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>sonic</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001525"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A sound frequency in the range of 20 to 20.000 Hz.</annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www.studyphysics.ca/</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001526 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001526">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001520"/>
+        <obo:IAO_0000115>A sound frequency in the range of 20 000 + Hz.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001526</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>ultrasonic</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001526"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A sound frequency in the range of 20 000 + Hz.</annotatedTarget>
+        <oboInOwl:hasDbXref>studyphysics:studyphysics</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -185,7 +1347,68 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001536">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115>A molecular quality that inheres in a molecular entity by virtue of the bearer&apos;s disposition to dissolve in a liquid.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001536</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#disposition_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#relational_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>solubility</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001536"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A molecular quality that inheres in a molecular entity by virtue of the bearer&apos;s disposition to dissolve in a liquid.</annotatedTarget>
+        <oboInOwl:hasDbXref>edp:edp</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001537 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001537">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001536"/>
+        <disjointWith rdf:resource="http://purl.obolibrary.org/obo/PATO_0001538"/>
+        <obo:IAO_0000115>A solubility quality inhering in a substance by virtue of the bearer&apos;s disposition to dissolve in a liquid.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001538"/>
+        <oboInOwl:hasExactSynonym>soluble</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001537</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#disposition_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#relational_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>soluble in</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001537"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A solubility quality inhering in a substance by virtue of the bearer&apos;s disposition to dissolve in a liquid.</annotatedTarget>
+        <oboInOwl:hasDbXref>edp:edp</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001538 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001538">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001536"/>
+        <obo:IAO_0000115>A solubility quality inhering in a substance by virtue of the bearer&apos;s inability of a substance to dissolve in a liquid.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001537"/>
+        <oboInOwl:hasExactSynonym>insoluble</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001538</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#disposition_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#relational_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>insoluble in</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001538"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A solubility quality inhering in a substance by virtue of the bearer&apos;s inability of a substance to dissolve in a liquid.</annotatedTarget>
+        <oboInOwl:hasDbXref>edp:edp</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -193,7 +1416,46 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001555">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
+        <obo:IAO_0000115>The number of parts of a particular type that the bearer entity has. This is a relational quality, and thus holds between two entities: the bearer of the quality, and the type of parts.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>OBO_REL:has_part</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>extra or missing physical or functional parts</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>has or lacks parts of type</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>mereological quality</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>number of</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>cardinality</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>number</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0001555</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#relational_slim"/>
+        <rdfs:label>has number of</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001555"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>The number of parts of a particular type that the bearer entity has. This is a relational quality, and thus holds between two entities: the bearer of the quality, and the type of parts.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:CJM</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001571 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001571">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000586"/>
+        <obo:IAO_0000115>A size quality inhering in a bearer by virtue of the bearer&apos;s being made wider or larger in all dimensions.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001571</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>dilated</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001571"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A size quality inhering in a bearer by virtue of the bearer&apos;s being made wider or larger in all dimensions.</annotatedTarget>
+        <oboInOwl:hasDbXref>WordNet:WordNet</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -201,7 +1463,543 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001585">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
+        <obo:IAO_0000115>A physical quality inhering in a bearer by virtue of the bearer&apos;s disposition to transmit of an entity through a medium.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001585</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#disposition_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:comment>Examples could be heat or electricity or sound.</rdfs:comment>
+        <rdfs:label>conductivity</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001585"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A physical quality inhering in a bearer by virtue of the bearer&apos;s disposition to transmit of an entity through a medium.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001595 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001595">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001708"/>
+        <obo:IAO_0000115>A 1-D extent quality inhering in a bearer by virtue of the bearer&apos;s downward or backward or inward dimension.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001595</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>depth</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001595"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A 1-D extent quality inhering in a bearer by virtue of the bearer&apos;s downward or backward or inward dimension.</annotatedTarget>
+        <oboInOwl:hasDbXref>WordNet:WordNet</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001596 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001596">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000586"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001595"/>
+        <obo:IAO_0000115>A depth quality which is relatively high.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001472"/>
+        <oboInOwl:hasAlternativeId>PATO:0001666</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>deep</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001596</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>increased depth</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001596"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A depth quality which is relatively high.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATO:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001602 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001602">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000586"/>
+        <obo:IAO_0000115>A size quality inhering in a bearer by virtue of the bearer&apos;s being abnormally expanded or increased in size.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>expanded</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0001602</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>distended</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001602"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A size quality inhering in a bearer by virtue of the bearer&apos;s being abnormally expanded or increased in size.</annotatedTarget>
+        <oboInOwl:hasDbXref>WordNet:WordNet</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001623 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001623">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000587"/>
+        <obo:IAO_0000115>A size quality inhering in a bearer by virtue of a part or parts of the bearer&apos;s being decreased in size due to reduction in tissue mass through wasting.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>atrophic</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001623</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>atrophied</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001623"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A size quality inhering in a bearer by virtue of a part or parts of the bearer&apos;s being decreased in size due to reduction in tissue mass through wasting.</annotatedTarget>
+        <oboInOwl:hasDbXref>Wiikipedia:Wasting</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Atrophy</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001648 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001648">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001711"/>
+        <obo:IAO_0000115>An 1-D extent quality which is equal to the length of the closed curve of a circle.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001648</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>circumference</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001648"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An 1-D extent quality which is equal to the length of the closed curve of a circle.</annotatedTarget>
+        <oboInOwl:hasDbXref>WordNet:WordNet</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001663 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001663">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001537"/>
+        <obo:IAO_0000115>A solubility which is relatively high.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001664"/>
+        <oboInOwl:hasExactSynonym>high solubility</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001663</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#disposition_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#relational_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>increased solubility</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001663"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A solubility which is relatively high.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATO:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001664 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001664">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001537"/>
+        <obo:IAO_0000115>A solubility which is relatively low.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001663"/>
+        <oboInOwl:hasExactSynonym>low solubility</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001664</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#disposition_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#relational_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>decreased solubility</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001664"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A solubility which is relatively low.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATO:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001679 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001679">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000918"/>
+        <obo:IAO_0000115>A volume quality inhering in a mass of substance by virtue of the amount of 3-dimensional space it occupies.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001679</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:comment>The reciprocal of density.</rdfs:comment>
+        <rdfs:label>specific volume</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001679"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A volume quality inhering in a mass of substance by virtue of the amount of 3-dimensional space it occupies.</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Specific_volume</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001680 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001680">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000918"/>
+        <obo:IAO_0000115>A volume quality inhering in a homogeneous substance containing 6.02 x 1023 atoms or molecules by virtue of the amount of 3-dimensional space it occupies.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001680</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>molar volume</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001680"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A volume quality inhering in a homogeneous substance containing 6.02 x 1023 atoms or molecules by virtue of the amount of 3-dimensional space it occupies.</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Molar_volume</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001708 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001708">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
+        <obo:IAO_0000115>A size quality inhering in an bearer by virtue of the bearer&apos;s extension in one dimension.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>1-D size</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001708</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <rdfs:label>1-D extent</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001708"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A size quality inhering in an bearer by virtue of the bearer&apos;s extension in one dimension.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001709 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001709">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
+        <obo:IAO_0000115>A size quality inhering in an bearer by virtue of the bearer&apos;s extension in two dimensions.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>2-D size</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001709</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <rdfs:label>2-D extent</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001709"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A size quality inhering in an bearer by virtue of the bearer&apos;s extension in two dimensions.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001710 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001710">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
+        <obo:IAO_0000115>A size quality inhering in an bearer by virtue of the bearer&apos;s extension in three dimensions.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>3D size</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001710</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <rdfs:label>3-D extent</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001710"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A size quality inhering in an bearer by virtue of the bearer&apos;s extension in three dimensions.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001711 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001711">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001708"/>
+        <obo:IAO_0000115>An 1-D extent quality inhering in two-dimensional bearer by virtue of being equal to the distance around it.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001711</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>perimeter</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001711"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An 1-D extent quality inhering in two-dimensional bearer by virtue of being equal to the distance around it.</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Perimeter</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001712 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001712">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000573"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001711"/>
+        <obo:IAO_0000115>A perimeter which is relatively high.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001713"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001712</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>increased perimeter</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001712"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A perimeter which is relatively high.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001713 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001713">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000574"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001711"/>
+        <obo:IAO_0000115>A perimeter which is relatively low.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001712"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001713</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>decreased perimeter</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001713"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A perimeter which is relatively low.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001714 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001714">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000586"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001334"/>
+        <obo:IAO_0000115>A diameter which is relatively large.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001715"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001714</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>increased diameter</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001714"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A diameter which is relatively large.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001715 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001715">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000587"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001334"/>
+        <obo:IAO_0000115>A diameter which is relatively small.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001714"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001715</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>decreased diameter</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001715"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A diameter which is relatively small.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001780 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001780">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000587"/>
+        <obo:IAO_0000115>A size quality inhering in a bearer by virtue of the bearer&apos;s being abnormally developed, usually due to malnutrition.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>dystrophied</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>dystrophy</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0001780</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>dystrophic</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001780"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A size quality inhering in a bearer by virtue of the bearer&apos;s being abnormally developed, usually due to malnutrition.</annotatedTarget>
+        <oboInOwl:hasDbXref>Wiikipedia:Wiikipedia</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001781 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001781">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000915"/>
+        <obo:IAO_0000115>A thickness quality which lacks pattern.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001781</oboInOwl:id>
+        <rdfs:label>irregular thickness</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001781"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A thickness quality which lacks pattern.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001788 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001788">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001164"/>
+        <obo:IAO_0000115>A density which is higher relative to the normal or average.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001790"/>
+        <oboInOwl:hasExactSynonym>high density</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001788</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>increased mass density</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001788"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A density which is higher relative to the normal or average.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001790 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001790">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001164"/>
+        <obo:IAO_0000115>A density which is lower relative to the normal or average.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001788"/>
+        <oboInOwl:hasExactSynonym>low density</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001790</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>decreased mass density</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001790"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A density which is lower relative to the normal or average.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001898 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001898">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001648"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001712"/>
+        <obo:IAO_0000115>A circumference which is relatively high.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001899"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001898</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>increased circumference</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001898"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A circumference which is relatively high.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001899 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001899">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001648"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001713"/>
+        <obo:IAO_0000115>A circumference which is relatively low.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001898"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001899</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>decreased circumference</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001899"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A circumference which is relatively low.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001940 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001940">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000586"/>
+        <obo:IAO_0000115>A size quality inhering in a bearer by virtue of the bearer&apos;s being many folds greater relative to the normal average.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>giant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001940</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>gigantic</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001940"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A size quality inhering in a bearer by virtue of the bearer&apos;s being many folds greater relative to the normal average.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:UMH</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001986 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001986">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001536"/>
+        <obo:IAO_0000115>A quality inhering in a bearer by virtue of the bearer&apos;s passing into solution.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001986</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#relational_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>dissolved</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001986"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A quality inhering in a bearer by virtue of the bearer&apos;s passing into solution.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -209,7 +2007,214 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000150"/>
+        <obo:IAO_0000115>A texture quality that exists through a liquid cover on the surface of the bearer.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0002012</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>coating</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0002012"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A texture quality that exists through a liquid cover on the surface of the bearer.</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:Wikipedia</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002041 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001334"/>
+        <obo:IAO_0000115>A diameter that is along the anterior-posterior axis.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0002041</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>anterior-posterior diameter</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0002041"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A diameter that is along the anterior-posterior axis.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002042 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001715"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002041"/>
+        <obo:IAO_0000115>An anterior-posterior diameter quality which is relatively small.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0002043"/>
+        <oboInOwl:hasExactSynonym>low anterior-posterior diameter</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0002042</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>decreased anterior-posterior diameter</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0002042"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An anterior-posterior diameter quality which is relatively small.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002043 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001714"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002041"/>
+        <obo:IAO_0000115>An anterior-posterior diameter quality which is relatively large.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0002042"/>
+        <oboInOwl:hasExactSynonym>high anterior-posterior diameter</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0002043</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>increased anterior-posterior diameter</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0002043"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An anterior-posterior diameter quality which is relatively large.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002057 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000586"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001323"/>
+        <obo:IAO_0000115>An area which is relatively high.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0002058"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
+        <oboInOwl:creation_date>2009-03-30T04:11:43Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0002057</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>increased area</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0002057"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An area which is relatively high.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002058 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000587"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001323"/>
+        <obo:IAO_0000115>An area which is relatively low.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0002057"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
+        <oboInOwl:creation_date>2009-03-30T04:12:11Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0002058</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>decreased area</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0002058"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An area which is relatively low.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002093 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000595"/>
+        <obo:IAO_0000115>A volume quality inhering in a degenerating cell by virtue of the bearer&apos;s exhibiting an increase in volume associated with cytoplasmic abnormalities.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
+        <oboInOwl:creation_date>2009-10-05T12:01:13Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0002093</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>ballooning</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0002093"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A volume quality inhering in a degenerating cell by virtue of the bearer&apos;s exhibiting an increase in volume associated with cytoplasmic abnormalities.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002141 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001019"/>
+        <obo:IAO_0000115>A density quality which lacks pattern.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
+        <oboInOwl:creation_date>2009-10-28T01:57:53Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0002141</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>irregular density</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0002141"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A density quality which lacks pattern.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002149 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001788"/>
+        <obo:IAO_0000115>A quality inhering in a bearer by virtue of the bearer exhibiting increased density resulting in exhibiting increased degree of radiopacity (in X-rays).</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
+        <oboInOwl:creation_date>2009-11-03T02:59:08Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0002149</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>ivory</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0002149"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A quality inhering in a bearer by virtue of the bearer exhibiting increased density resulting in exhibiting increased degree of radiopacity (in X-rays).</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002390 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002390">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
+        <obo:IAO_0000115>A length quality which is equal to the length of any straight line segment that passes from the center of a circle to any endpoint on the circular boundary. The radius is half of the diameter.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
+        <oboInOwl:creation_date>2012-11-15T05:17:15Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0002390</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>radius</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0002390"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A length quality which is equal to the length of any straight line segment that passes from the center of a circle to any endpoint on the circular boundary. The radius is half of the diameter.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATO:DS</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 
@@ -217,7 +2222,511 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002632">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000068"/>
+        <obo:IAO_0000115>A quality in which the effect or outcome is not primary or the focus of the observation.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9114-8737"/>
+        <oboInOwl:creation_date>2014-05-26T13:17:45Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0002632</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#hpo_slim"/>
+        <rdfs:label>secondary</rdfs:label>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0002632"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A quality in which the effect or outcome is not primary or the focus of the observation.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATO:MAH</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0005015 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0005015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
+        <obo:IAO_0000115>A size quality inhering in an entity or set of entities in which size increases or decreases along the extent of the entity or set.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-3162-7490"/>
+        <oboInOwl:creation_date>2014-09-25T15:17:51Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>gradient of size</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0005015</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>tapered size</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0005015"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A size quality inhering in an entity or set of entities in which size increases or decreases along the extent of the entity or set.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:WD</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0005022 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0005022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001334"/>
+        <obo:IAO_0000115>A diameter that remains constant throughout the extent of an entity.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-3162-7490"/>
+        <oboInOwl:creation_date>2014-10-17T14:15:59Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0005022</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>uniform diameter</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0005022"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A diameter that remains constant throughout the extent of an entity.</annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:WD</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0040030 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0040030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000574"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000599"/>
+        <obo:IAO_0000115>A width and length quality which is relatively small, where both width and length are decreased.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0040031"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-5208-3432"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0040030</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>decreased width and length</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0040031 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0040031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000573"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000600"/>
+        <obo:IAO_0000115>A width and length quality that is relatively large, where both width and length are increased.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0040030"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-5208-3432"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0040031</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>increased width and length</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0040045 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0040045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001492"/>
+        <obo:IAO_0000115>The rate or speed of the change in in number of a population.</obo:IAO_0000115>
+        <oboInOwl:created_by>http://orcid.org/0000-0001-5208-3432</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0040045</oboInOwl:id>
+        <rdfs:label>population growth rate</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0040045"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>The rate or speed of the change in in number of a population.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-9900-7880</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0003-4606-0597</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0045000 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000161"/>
+        <obo:IAO_0000115>A rate which is relatively normal.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0045000</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>normal rate</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0045031 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001164"/>
+        <obo:IAO_0000115>A density which is relatively normal or average.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0045031</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>normal mass density</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0045050 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
+        <obo:IAO_0000115>A size quality which is relatively normal or average</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0045050</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>normal size</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0045051 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001323"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
+        <obo:IAO_0000115>An area which is relatively normal or average</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0045051</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>normal area</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0045052 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001595"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
+        <obo:IAO_0000115>A depth quality which is relatively normal or average</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0045052</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>normal depth</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0045053 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000119"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
+        <obo:IAO_0000115>A height which is relatively normal or average</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0045053</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>normal height</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0045054 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
+        <obo:IAO_0000115>A length quality which is relatively normal or average</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0045054</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>normal length</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0045055 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001334"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
+        <obo:IAO_0000115>A diameter which is relatively normal or average</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0045055</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>normal diameter</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0045056 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002041"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045055"/>
+        <obo:IAO_0000115>An anterior-posterior diameter which is relatively normal or average</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0045056</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>normal anterior-posterior diameter</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0045057 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001711"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045054"/>
+        <obo:IAO_0000115>A perimeter which is relatively normal or average</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0045057</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>normal perimeter</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0045058 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001648"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045057"/>
+        <obo:IAO_0000115>A circumference which is relatively normal or average</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0045058</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>normal circumference</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0045059 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000915"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
+        <obo:IAO_0000115>A thickness which is relatively normal or average</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0045059</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>normal thickness</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0045060 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000918"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
+        <obo:IAO_0000115>A volume which is relatively normal or average</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0045060</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>normal volume</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0045061 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000921"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
+        <obo:IAO_0000115>A width which is relatively normal or average</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0045061</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>normal width</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0045062 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001537"/>
+        <obo:IAO_0000115>A solubility which is relatively normal or average</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0045062</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#disposition_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#relational_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>normal solubility</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0045087 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000044"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045000"/>
+        <obo:IAO_0000115>A frequency which is relatively normal.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0045087</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>normal frequency</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0050000 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0050000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000161"/>
+        <obo:IAO_0000115>The number of repeated events per unit time, occurring in a repeating series. (e.g. the number of heart beats occurring over 1 minute)</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0050000</oboInOwl:id>
+        <rdfs:label>rate of occurence</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0050000"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>The number of repeated events per unit time, occurring in a repeating series. (e.g. the number of heart beats occurring over 1 minute)</annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-9943-9018</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0050001 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0050001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000161"/>
+        <obo:IAO_0000115>The rate of output of a continuous process. Example include: growth rate, cell migration rate, enzyme reaction rate.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0050001</oboInOwl:id>
+        <rdfs:label>rate of continuous process</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0050001"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>The rate of output of a continuous process. Example include: growth rate, cell migration rate, enzyme reaction rate.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-9943-9018</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0055003 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0055003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000912"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0050000"/>
+        <obo:IAO_0000115>A rate of occurrence that is relatively high.</obo:IAO_0000115>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-08-19T09:23:19Z</dc:date>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-4148-4606"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0055003</oboInOwl:id>
+        <rdfs:label>increased rate of occurrence</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0055003"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A rate of occurrence that is relatively high.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0003-4148-4606</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0055004 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0055004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000911"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0050000"/>
+        <obo:IAO_0000115>A rate of occurrence that is relatively low.</obo:IAO_0000115>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-08-19T09:24:35Z</dc:date>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-4148-4606"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0055004</oboInOwl:id>
+        <rdfs:label>decreased rate of occurrence</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0055004"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A rate of occurrence that is relatively low.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0003-4148-4606</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0055005 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0055005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000912"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0050001"/>
+        <obo:IAO_0000115>A rate of output of a continuous process that is relatively high.</obo:IAO_0000115>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-08-19T09:24:56Z</dc:date>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-4148-4606"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0055005</oboInOwl:id>
+        <rdfs:label>increased rate of continuous process</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0055005"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A rate of output of a continuous process that is relatively high.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0003-4148-4606</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0055006 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0055006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000911"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0050001"/>
+        <obo:IAO_0000115>A rate of output of a continuous process that is relatively low.</obo:IAO_0000115>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-08-19T09:25:07Z</dc:date>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-4148-4606"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0055006</oboInOwl:id>
+        <rdfs:label>decreased rate of continuous process</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0055006"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A rate of output of a continuous process that is relatively low.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0003-4148-4606</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0070064 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0070064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001710"/>
+        <obo:IAO_0000115>A 3-D extent quality inhering in a bearer by virtue of the spatial region that is defined by the maximal span of the bearer&apos;s dendritic arbor.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-7258-9596"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-5260-9315"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0070064</oboInOwl:id>
+        <rdfs:label>dendritic field size</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0070064"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A 3-D extent quality inhering in a bearer by virtue of the spatial region that is defined by the maximal span of the bearer&apos;s dendritic arbor.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0001-7258-9596</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-1373-1705</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-5260-9315</oboInOwl:hasDbXref>
+    </Axiom>
     
 
 

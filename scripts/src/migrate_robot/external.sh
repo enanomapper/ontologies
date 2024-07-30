@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Patterns to look for in the .iris files
-opt="[+,-]"                   # Add-remove pattern
+opt="^[+,-]"                   # Add-remove pattern
 descendant="D"                # Descendant pattern
-sc="(?<=:)http:.+?(?=\s.)"    # Subclass pattern
+sc="(?<=:)\s*http[^\s]+"    # Subclass pattern
 spc="http:.+(?=\):)"          # Superclass pattern
 comment="(?<=\s).+"           # Comment pattern
 
@@ -23,7 +23,6 @@ ontologies=("fabio" "aopo" "obi" "bfo" "ccont" "pato" "cheminf" "sio" "chmo" "np
 # Process each ontology
 for ONTO in "${ontologies[@]}"; do
     echo Processing config file for $ONTO 
-    wget -nc -q "https://raw.githubusercontent.com/enanomapper/ontologies/master/config/${ONTO}.iris"
     # Initialize temporary files
     tmp_add_with_descendants="external-dev/term-files/add/${ONTO}_add_D.txt.tmp"
     tmp_add_without_descendants="external-dev/term-files/add/${ONTO}_add.txt.tmp"
@@ -48,19 +47,17 @@ for ONTO in "${ontologies[@]}"; do
         add_comment=$(echo "$line" | grep -Po "$comment")
         add_opt=$(echo "$line" | grep -Po "$opt")
         add_d=$(echo "$line" | grep -Po "$descendant")
-
         if [[ -z $add_d ]]; then 
             add_d="no"
         else 
             add_d="$descendant"
         fi
-
         # Add term
         if [[ $add_opt == *"+"* ]]; then
             # Add with descendants
-            if [[ $add_d == "$descendant" && -n $add_sc && -n $add_comment ]]; then
+            if [[ $add_d == "$descendant" && -n $add_sc ]]; then
                 echo "${add_sc} # ${add_comment}" >> "$tmp_add_with_descendants"
-            elif [[ $add_d != "$descendant" && -n $add_sc && -n $add_comment ]]; then
+            elif [[ $add_d != "$descendant" && -n $add_sc ]]; then
                 # Add without descendants
                 echo "${add_sc} # ${add_comment}" >> "$tmp_add_without_descendants"
             fi
@@ -74,13 +71,13 @@ for ONTO in "${ontologies[@]}"; do
         # Remove term
         if [[ $add_opt == *"-"* ]]; then
             # Remove with descendants
-            if [[ $add_d == "$descendant" && -n $add_sc && -n $add_comment ]]; then
+            if [[ $add_d == "$descendant" && -n $add_sc  ]]; then
                 echo "${add_sc} # ${add_comment}" >> "$tmp_remove_with_descendants"
-            elif [[ $add_d != "$descendant" && -n $add_sc && -n $add_comment ]]; then
+            elif [[ $add_d != "$descendant" && -n $add_sc  ]]; then
                 echo "${add_sc} # ${add_comment}" >> "$tmp_remove_without_descendants"
             fi
         fi
-    done < "${ONTO}.iris"
+    done < "config/${ONTO}.iris"
 
     # Move or remove files if they are not empty
     for file in "$tmp_add_with_descendants" "$tmp_add_without_descendants" "$tmp_remove_with_descendants" "$tmp_remove_without_descendants" "$tmp_subclass_assertion" ; do
@@ -109,28 +106,29 @@ ontologies=("fabio" "aopo" "obi" "bfo" "ccont" "pato" "cheminf" "sio" "chmo" "np
             "cito" "clo" "iao" "ro" "msio")
 
 for ONTO in "${ontologies[@]}"; do
-    wget -nc -O external-dev/tmp/source/${ONTO}.owl `grep "owl=" config/${ONTO}.props | cut -d'=' -f2`
+    wget -nc -O external-dev/tmp/source/${ONTO}.owl $(grep "owl=" config/${ONTO}.props | cut -d'=' -f2)
     # Case
     add_D=external-dev/term-files/add/${ONTO}_add_D.txt
     add=external-dev/term-files/add/${ONTO}_add.txt
     remove=external-dev/term-files/remove/${ONTO}_remove.txt
     remove_D=external-dev/term-files/remove/${ONTO}_remove_D.txt
     file_status="$([[ -f $add ]] && echo 1 || echo 0)$( [[ -f $add_D ]] && echo 1 || echo 0)$( [[ -f $remove ]] && echo 1 || echo 0)$( [[ -f $remove_D ]] && echo 1 || echo 0)"
-    echo $file_status $ONTO
     case $file_status in
         1111)
             echo Settings: add, add_D, remove, and remove_D all existing
             echo 1111
             sh robot \
-                filter \
+                merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
+                filter \
                     --term-file $add_D \
                     --select "annotations self descendants" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add_D.owl
             sh robot \
-                filter \
+                merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
+                filter \
                     --term-file $add \
                     --select "annotations self" \
                     --signature false \
@@ -152,15 +150,17 @@ for ONTO in "${ontologies[@]}"; do
             echo 1110
             echo Settings: add, add_D, and remove existing but no remove_D
             sh robot \
-                filter \
+                merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
+                filter \
                     --term-file $add_D \
                     --select "annotations self descendants" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add_D.owl
             sh robot \
-                filter \
+                merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
+                filter \
                     --term-file $add \
                     --select "annotations self" \
                     --signature false \
@@ -179,15 +179,17 @@ for ONTO in "${ontologies[@]}"; do
             echo Settings: add, add_D, and remove_D existing but no remove
             echo 1101
             sh robot \
-                filter \
+                merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
+                filter \
                     --term-file $add_D \
                     --select "annotations self descendants" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add_D.owl
             sh robot \
-                filter \
+                merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
+                filter \
                     --term-file $add \
                     --select "annotations self" \
                     --signature false \
@@ -206,6 +208,7 @@ for ONTO in "${ontologies[@]}"; do
             echo 1100
             sh robot \
                 filter \
+                    -vvv \
                     --input external-dev/tmp/source/${ONTO}.owl \
                     --term-file $add_D \
                     --select "annotations self descendants" \
@@ -213,18 +216,22 @@ for ONTO in "${ontologies[@]}"; do
                     --output external-dev/tmp/${ONTO}_add_D.owl
             sh robot \
                 filter \
-                    --input external-dev/tmp/${ONTO}_add_D.owl \
+                    -vvv \
+                    --input external-dev/tmp/source/${ONTO}.owl \
                     --term-file $add \
                     --select "annotations self" \
                     --signature false \
+                merge \
+                    --input external-dev/tmp/${ONTO}_add_D.owl \
                     --output external-dev/tmp/${ONTO}_no_spcs.owl
             ;;
         1011)
             echo Settings: add, remove, and remove_D existing but no add_D
             echo 1011
             sh robot \
-                filter \
+                merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
+                filter \
                     --term-file $add \
                     --select "annotations self" \
                     --signature false \
@@ -245,8 +252,9 @@ for ONTO in "${ontologies[@]}"; do
             echo 1010
             echo Settings: add and remove existing but no add_D or remove_D
             sh robot \
-                filter \
+                merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
+                filter \
                     --term-file $add \
                     --select "annotations self" \
                     --signature false \
@@ -262,8 +270,9 @@ for ONTO in "${ontologies[@]}"; do
             echo 1001
             echo Settings: add and remove_D existing but no add_D or remove
             sh robot \
-                filter \
+                merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
+                filter \
                     --term-file $add \
                     --select "annotations self" \
                     --signature false \
@@ -279,8 +288,9 @@ for ONTO in "${ontologies[@]}"; do
             echo 1000
             echo Settings: only add existing
             sh robot \
-                filter \
+                merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
+                filter \
                     --term-file $add \
                     --select "annotations self" \
                     --signature false \
@@ -290,8 +300,9 @@ for ONTO in "${ontologies[@]}"; do
             echo 0111
             echo Settings: add_D, remove, and remove_D existing but no add
             sh robot \
-                filter \
+                merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
+                filter \
                     --term-file $add_D \
                     --select "annotations self descendants" \
                     --signature false \
@@ -307,8 +318,9 @@ for ONTO in "${ontologies[@]}"; do
             echo 0110
             echo Settings: add_D and remove existing but no add or remove_D
             sh robot \
-                filter \
+                merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
+                filter \
                     --term-file $add_D \
                     --select "annotations self descendants" \
                     --signature false \
@@ -321,8 +333,9 @@ for ONTO in "${ontologies[@]}"; do
             echo 0101
             echo Settings: add_D and remove_D existing but no add or remove
             sh robot \
-                filter \
+                merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
+                filter \
                     --term-file $add_D \
                     --select "annotations self descendants" \
                     --signature false \
@@ -336,8 +349,9 @@ for ONTO in "${ontologies[@]}"; do
             echo 0100
             echo Settings: only add_D existing
             sh robot \
-                filter \
+                merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
+                filter \
                     --term-file $add_D \
                     --select "annotations self descendants" \
                     --signature false \
@@ -350,6 +364,7 @@ for ONTO in "${ontologies[@]}"; do
             template \
                 --template "external-dev/templates/${ONTO}_subclass_assertion.csv" \
             merge \
+                --include-annotations true \
                 --input external-dev/tmp/${ONTO}_no_spcs.owl \
                 --output external-dev/${ONTO}-ext.owl
 
