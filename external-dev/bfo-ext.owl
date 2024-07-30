@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.w3.org/2002/07/owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/bfo.owl#"
+     xml:base="http://purl.obolibrary.org/obo/bfo.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <Ontology/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bfo.owl"/>
     
 
 
@@ -24,55 +24,55 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
 
-    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000180 -->
 
-    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
 
-    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
-    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
 
-    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000601 -->
 
-    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000602 -->
 
-    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0010000 -->
 
-    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0010000"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0010000"/>
     
 
 
@@ -89,7 +89,7 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
         <obo:BFO_0000179>entity</obo:BFO_0000179>
         <obo:BFO_0000180>Entity</obo:BFO_0000180>
         <obo:IAO_0000112 xml:lang="en">Julius Caesar</obo:IAO_0000112>
@@ -101,27 +101,27 @@
         <obo:IAO_0000600 xml:lang="en">An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])</obo:IAO_0000600>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">entity</rdfs:label>
-    </Class>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <annotatedTarget xml:lang="en">Entity doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example Werner Ceusters &apos;portions of reality&apos; include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, &apos;How to track absolutely everything&apos; at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf</annotatedTarget>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">Entity doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example Werner Ceusters &apos;portions of reality&apos; include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, &apos;How to track absolutely everything&apos; at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000004"/>
         <rdfs:comment>per discussion with Barry Smith</rdfs:comment>
         <rdfs:seeAlso rdf:resource="http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf"/>
-    </Axiom>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <annotatedTarget xml:lang="en">An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])</annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/001-001"/>
-    </Axiom>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:BFO_0000179>process</obo:BFO_0000179>
         <obo:BFO_0000180>Process</obo:BFO_0000180>
@@ -137,25 +137,25 @@
         <obo:IAO_0000602>(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] </obo:IAO_0000602>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">process</rdfs:label>
-    </Class>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <annotatedTarget xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</annotatedTarget>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/083-003"/>
-    </Axiom>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <annotatedTarget>(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] </annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/083-003"/>
-    </Axiom>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:BFO_0000179>disposition</obo:BFO_0000179>
         <obo:BFO_0000180>Disposition</obo:BFO_0000180>
@@ -170,37 +170,37 @@
         <obo:IAO_0000602>(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] </obo:IAO_0000602>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">disposition</rdfs:label>
-    </Class>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <annotatedTarget xml:lang="en">b is a disposition means: b is a realizable entity &amp; b’s bearer is some material entity &amp; b is such that if it ceases to exist, then its bearer is physically changed, &amp; b’s realization occurs when and because this bearer is in some special physical circumstances, &amp; this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])</annotatedTarget>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">b is a disposition means: b is a realizable entity &amp; b’s bearer is some material entity &amp; b is such that if it ceases to exist, then its bearer is physically changed, &amp; b’s realization occurs when and because this bearer is in some special physical circumstances, &amp; this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/062-002"/>
-    </Axiom>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <annotatedTarget xml:lang="en">If b is a realizable entity then for all t at which b exists, b s-depends_on some material entity at t. (axiom label in BFO2 Reference: [063-002])</annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">If b is a realizable entity then for all t at which b exists, b s-depends_on some material entity at t. (axiom label in BFO2 Reference: [063-002])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/063-002"/>
-    </Axiom>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <annotatedTarget>(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] </annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/063-002"/>
-    </Axiom>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <annotatedTarget>(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] </annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/062-002"/>
-    </Axiom>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:BFO_0000179>quality</obo:BFO_0000179>
         <obo:BFO_0000180>Quality</obo:BFO_0000180>
@@ -216,37 +216,37 @@
         <obo:IAO_0000602>(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] </obo:IAO_0000602>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">quality</rdfs:label>
-    </Class>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <annotatedTarget xml:lang="en">a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])</annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/055-001"/>
-    </Axiom>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <annotatedTarget xml:lang="en">If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])</annotatedTarget>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/105-001"/>
-    </Axiom>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <annotatedTarget>(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] </annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/055-001"/>
-    </Axiom>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <annotatedTarget>(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] </annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/105-001"/>
-    </Axiom>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/055-001"/>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <obo:BFO_0000179>function</obo:BFO_0000179>
         <obo:BFO_0000180>Function</obo:BFO_0000180>
@@ -258,25 +258,25 @@
         <obo:IAO_0000602>(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] </obo:IAO_0000602>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">function</rdfs:label>
-    </Class>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <annotatedTarget xml:lang="en">A function is a disposition that exists in virtue of the bearer’s physical make-up and this physical make-up is something the bearer possesses because it came into being, either through evolution (in the case of natural biological entities) or through intentional design (in the case of artifacts), in order to realize processes of a certain sort. (axiom label in BFO2 Reference: [064-001])</annotatedTarget>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">A function is a disposition that exists in virtue of the bearer’s physical make-up and this physical make-up is something the bearer possesses because it came into being, either through evolution (in the case of natural biological entities) or through intentional design (in the case of artifacts), in order to realize processes of a certain sort. (axiom label in BFO2 Reference: [064-001])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/064-001"/>
-    </Axiom>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <annotatedTarget>(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] </annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/064-001"/>
-    </Axiom>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:BFO_0000179>material</obo:BFO_0000179>
         <obo:BFO_0000180>MaterialEntity</obo:BFO_0000180>
@@ -303,54 +303,54 @@
         <obo:IAO_0000602>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] </obo:IAO_0000602>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">material entity</rdfs:label>
-    </Class>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <annotatedTarget xml:lang="en">A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])</annotatedTarget>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/019-002"/>
-    </Axiom>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <annotatedTarget xml:lang="en">Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])</annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/020-002"/>
-    </Axiom>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <annotatedTarget xml:lang="en">every entity of which a material entity is continuant part is also a material entity. (axiom label in BFO2 Reference: [021-002])</annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">every entity of which a material entity is continuant part is also a material entity. (axiom label in BFO2 Reference: [021-002])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/021-002"/>
-    </Axiom>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <annotatedTarget>(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] </annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/019-002"/>
-    </Axiom>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <annotatedTarget>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] </annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/021-002"/>
-    </Axiom>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <annotatedTarget>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] </annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/020-002"/>
-    </Axiom>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33250 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33250">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33250">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </Class>
+    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 
