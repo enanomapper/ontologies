@@ -3063,6 +3063,16 @@ In nucleic acid thermodynamics, it is the temperature at which 50% of the DNA st
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0001257 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001257">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label>efflux ratio</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0001258 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001258">
@@ -3405,6 +3415,69 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002128">
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
+        <obo:IAO_0000115>A measurement of an intrinsic property of a molecular entity.</obo:IAO_0000115>
+        <rdfs:label>physical property endpoint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002129 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002129">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+        <obo:IAO_0000115>Logarithm (log10) of the Distribution Coefficient, D, which is defined as the ratio of concentrations  of a small molecule / drug distributed between octanol and water.  LogD refers to the distribution of all forms of a compound between the two immiscible phases at equilibrium. It depends on pH of the aqueous phase, which is buffered to a specific value. A larger logD means the compound / drug is more hydrophobic (greasy) and a lower logD corresponds to better solubility in water.</obo:IAO_0000115>
+        <rdfs:label>logD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002130 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002130">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+        <obo:IAO_0000115>Logarithm (log10) of the Partition Coefficient, P, which is defined as ratio of concentrations of a small molecule / drug distributed in octanol and water.  LogP refers to the distribution of un-ionized (neutral species of) compound between the two immiscible phases at equilibrium; the pH is adjusted such that the major microspecies is the un-ionized form. A larger logP means the compound / drug is more hydrophobic (greasy) and a lower logP corresponds to better solubility in water.</obo:IAO_0000115>
+        <rdfs:label>logP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002131 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002131">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+        <obo:IAO_0000115>pKa is the negative log10 of the acid dissociation constant (Ka) of a molecule. Ka is the equilibrium constant for dissociation of the protonated base (acid) into the free base and a proton (hydromium ion).</obo:IAO_0000115>
+        <rdfs:label>pKa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002132 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002132">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+        <obo:IAO_0000115>Percent purity is the ratio of mass of pure compound to the actual mass of the available/vendor supplied compound, multiplied by 100. The majority of compounds and elemental substances are only available with a larger or smaller amount of impurities, which contribute to the mass of the impure compound.</obo:IAO_0000115>
+        <rdfs:label>percent purity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002133 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002133">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002808"/>
+        <obo:IAO_0000115>This is measured to assess the transport of a drug across the cell monolayer in the apical to basolateral (A-B) direction. Typically, CaCo2 cells are used in the permeability measurements during the ADME phase, which model the intestinal epithelium..</obo:IAO_0000115>
+        <rdfs:label>permeability A-B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002134 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002134">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002808"/>
+        <obo:IAO_0000115>This is measured to assess the transport of a drug across the cell monolayer in the basolateral to apical (B-A) direction. Typically, CaCo2 cells are used in the permeability measurements during the ADME phase, which model the intestinal epithelium.</obo:IAO_0000115>
+        <rdfs:label>permeability B-A</rdfs:label>
     </owl:Class>
     
 
@@ -4329,6 +4402,15 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002807">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0001103"/>
         <rdfs:label>percent mitotic arrested cells</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002808 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002808">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+        <rdfs:label>permeability</rdfs:label>
     </owl:Class>
     
 
@@ -8853,6 +8935,18 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0080036 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080036">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+        <obo:IAO_0000118>RIS</obo:IAO_0000118>
+        <obo:IAO_0000118>Relative Induction Score (RIS) </obo:IAO_0000118>
+        <bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+        <rdfs:label>Relative Induction Score</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0080037 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080037">
@@ -8863,12 +8957,32 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0080038 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080038">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+        <obo:IAO_0000115>This is a measurement of how strongly a chemical species attenuates light at a given wavelength. Common units are L/(mol*cm).</obo:IAO_0000115>
+        <rdfs:label>molar attenuation coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0080039 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080039">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000193"/>
         <obo:IAO_0000115>The maximum observed fold increase.</obo:IAO_0000115>
         <rdfs:label>max fold increase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0080040 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080040">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+        <obo:IAO_0000115>The fraction of compound that does not bind to substrate (e.x. plasma proteins)</obo:IAO_0000115>
+        <rdfs:label>fraction unbound</rdfs:label>
     </owl:Class>
     
 
@@ -9634,6 +9748,36 @@ http://www.bilatec.com/weiterepdf/KinetcScan%20HCS%20Reader.pdf</rdfs:comment>
         <obo:IAO_0000115>IN Cell Analyzer 6500HS is a laser-based high-content imaging system featuring IRIS confocal technology.</obo:IAO_0000115>
         <obo:IAO_0000118></obo:IAO_0000118>
         <rdfs:label>IN Cell Analyzer 6500</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0190004 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0190004">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+        <obo:IAO_0000115>Negative base-10 logarithm of KI, the equilibrium dissociation constant (Ki) of an antogonist-receptor complex</obo:IAO_0000115>
+        <rdfs:label>pKi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0190005 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0190005">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+        <obo:IAO_0000115>Negative base-10 logarithm of a solution&apos;s KD (drug affinity dissociation constant)</obo:IAO_0000115>
+        <rdfs:label>pKd</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0190006 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0190006">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+        <obo:IAO_0000115>Negative base-10 logarithm of a solution&apos;s base dissociation constant (Kb)</obo:IAO_0000115>
+        <rdfs:label>pKb</rdfs:label>
     </owl:Class>
     
 
