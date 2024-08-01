@@ -86,7 +86,24 @@
      -->
 
     
-   
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1468 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1468"/>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1710 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1710"/>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1945 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1945"/>
+    
 
 
     <!-- http://purl.obolibrary.org/obo/CHMO_0000097 -->
@@ -275,7 +292,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0000305 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000305">
-
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1710"/>
         <obo:IAO_0000115>X-ray absorption spectroscopy where changes in the X-ray absorption coefficient measured within 40 eV of the absorption edge (the part of the spectrum where the incident X-ray energy matches the binding energy of an electron) are determined as a function of incident X-ray energy.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>NEXAF spectroscopy</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>NEXAFS</oboInOwl:hasExactSynonym>
@@ -1736,7 +1753,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001577 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001577">
-
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1945"/>
         <obo:IAO_0000115>The transfer of a solute from a liquid phase to another immiscible or partially-miscible liquid phase in contact with it.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001577</oboInOwl:id>
         <rdfs:label>extraction</rdfs:label>
@@ -2036,7 +2053,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002855 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002855">
-
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
         <obo:IAO_0000115>The mass of the product of a synthesis expressed as a percentage of the theoretical maxiμm mass given the masses of the reactants.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002855</oboInOwl:id>
         <rdfs:label>percentage yield</rdfs:label>
@@ -2053,7 +2070,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002928 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002928">
-
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1468"/>
         <obo:IAO_0000115>Spectroscopy that uses thermal analysis to probe the surface chemistry of heterogeneous catalysts.</obo:IAO_0000115>
         <oboInOwl:created_by>http://orcid.org/0000-0002-4166-7093</oboInOwl:created_by>
         <oboInOwl:hasExactSynonym>TPSR</oboInOwl:hasExactSynonym>
@@ -2070,6 +2087,9 @@
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0000179 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000179"/>
 </rdf:RDF>
 
 

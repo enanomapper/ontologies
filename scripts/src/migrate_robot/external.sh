@@ -6,6 +6,39 @@ sc="(?<=:)\s*http[^\s]+"    # Subclass pattern
 spc="http:.+(?=\):)"          # Superclass pattern
 comment="(?<=\s).+"           # Comment pattern
 
+# Namespace-curie function
+replace_namespaces() {
+  local input_file="$1"
+  local temp_file=$(mktemp)
+
+  # Declare an associative array with the namespaces
+  declare -A namespaces=(
+    ["http://www.bioassayontology.org/bao#"]="bao"
+    ["http://purl.bioontology.org/ontology/npo#"]="npo"
+    ["http://semanticscience.org/resource/"]="sio"
+    ["http://purl.org/spar/fabio/"]="fabio"
+    ["http://semanticscience.org/resource/"]="cheminf"
+    ["http://livercancer.imbi.uni-heidelberg.de/ccont#"]="ccont"
+    ["http://purl.enanomapper.org/onto/"]="enm"
+    ["http://purl.obolibrary.org/obo/"]="obo"
+    ["http://aopkb.org/aop_ontology#"]="aopo"
+    ["http://www.ebi.ac.uk/efo/"]="efo"
+  )
+
+  # Create a sed expression to replace namespaces with CURIEs
+  sed_expr=""
+  for url in "${!namespaces[@]}"; do
+    prefix="${namespaces[$url]}"
+    sed_expr+="s|${url}|${prefix}:|g;"
+  done
+
+  # Use sed to perform the replacements
+  sed "$sed_expr" "$input_file" > "$temp_file"
+
+  # Replace the original file with the modified content
+  mv "$temp_file" "$input_file"
+}
+
 # Remove 
 echo Removing files
 rm external-dev/term-files/add/*
@@ -17,7 +50,6 @@ rm external-dev/templates/*subclass_assertion.csv
 ontologies=("fabio" "aopo" "obi" "bfo" "ccont" "pato" "cheminf" "sio" "chmo" "npo" 
             "uo" "bao" "ncit" "uberon" "chebi" "oae" "envo" "go" "efo" "obcs" "bto" 
             "cito" "clo" "iao" "ro" "msio")
-# Process each ontology
 # Process each ontology
 for ONTO in "${ontologies[@]}"; do
     SC=False
@@ -36,15 +68,9 @@ for ONTO in "${ontologies[@]}"; do
     > "$tmp_remove_without_descendants"
     > "$tmp_subclass_assertion"
 
-    # Output ROBOT template headers
-    echo "IRI,subClassOf" > "$tmp_subclass_assertion"
-    echo "ID,SC %" >> "$tmp_subclass_assertion"
-
-
     # Initialize the SC flag
     SC=False
-
-    while IFS= read -r line || [[ -n "$line" ]]; do
+    while IFS= read -r line || [[ -n $line ]]; do
         add_sc=$(echo "$line" | grep -Po "$sc")
         add_spc=$(echo "$line" | grep -Po "$spc")
         add_comment=$(echo "$line" | grep -Po "$comment")
@@ -55,7 +81,6 @@ for ONTO in "${ontologies[@]}"; do
         else 
             add_d="$descendant"
         fi
-
         # Add term
         if [[ $add_opt == *"+"* ]]; then
             # Add with descendants
@@ -72,7 +97,6 @@ for ONTO in "${ontologies[@]}"; do
                 echo "${add_sc},${add_spc}" >> "$tmp_subclass_assertion"
             fi
         fi
-
         # Remove term
         if [[ $add_opt == *"-"* ]]; then
             # Remove with descendants
@@ -83,25 +107,25 @@ for ONTO in "${ontologies[@]}"; do
             fi
         fi
     done < "config/${ONTO}.iris"
-
     # Move or remove files if they are not empty
     for file in "$tmp_add_with_descendants" "$tmp_add_without_descendants" "$tmp_remove_with_descendants" "$tmp_remove_without_descendants" "$tmp_subclass_assertion" ; do
         if [[ -s $file ]]; then
+            replace_namespaces $file
             mv "$file" "${file%.tmp}"
         else
             rm "$file"
         fi
     done
-
     if [[ $SC == False ]]; then
         rm external-dev/templates/${ONTO}_subclass_assertion.csv
     else
         sort -r external-dev/templates/${ONTO}_subclass_assertion.csv | uniq > tmp_sc
         rm external-dev/templates/${ONTO}_subclass_assertion.csv
         mv tmp_sc external-dev/templates/${ONTO}_subclass_assertion.csv
+        # Output ROBOT template headers
+        echo "ID,SC %" | cat - "external-dev/templates/${ONTO}_subclass_assertion.csv" > temp && mv temp "external-dev/templates/${ONTO}_subclass_assertion.csv"
+        echo "IRI,subClassOf" | cat - "external-dev/templates/${ONTO}_subclass_assertion.csv" > temp && mv temp "external-dev/templates/${ONTO}_subclass_assertion.csv"
     fi
-
-
 done
 
 
@@ -120,7 +144,7 @@ for ONTO in "${ontologies[@]}"; do
     wget -nc -O external-dev/tmp/source/${ONTO}.owl $(grep "owl=" config/${ONTO}.props | cut -d'=' -f2)
     if [[ "$ONTO" == "npo" ]]; then
     echo "Reasoning NPO (ELK)"
-        bash robot \
+        bash robot --prefixes "external-dev/prefixes.json" \
             reason --reasoner ELK --annotate-inferred-axioms true \
             --input external-dev/tmp/source/${ONTO}.owl --output external-dev/tmp/source/${ONTO}.owl
     fi
@@ -135,7 +159,7 @@ for ONTO in "${ontologies[@]}"; do
         1111)
             echo "[${ONTO}] Settings: add, add_D, remove, and remove_D all existing"
             
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
@@ -143,7 +167,7 @@ for ONTO in "${ontologies[@]}"; do
                     --select "annotations self descendants" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add_D.owl
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
@@ -151,7 +175,7 @@ for ONTO in "${ontologies[@]}"; do
                     --select "annotations self" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add.owl    
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/${ONTO}_add_D.owl \
                     --input external-dev/tmp/${ONTO}_add.owl \
@@ -167,7 +191,7 @@ for ONTO in "${ontologies[@]}"; do
         1110)
             
             echo "[${ONTO}] Settings: add, add_D, and remove existing but no remove_D"
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
@@ -175,7 +199,7 @@ for ONTO in "${ontologies[@]}"; do
                     --select "annotations self descendants" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add_D.owl
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
@@ -183,7 +207,7 @@ for ONTO in "${ontologies[@]}"; do
                     --select "annotations self" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add.owl    
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/${ONTO}_add_D.owl \
                     --input external-dev/tmp/${ONTO}_add.owl \
@@ -196,7 +220,7 @@ for ONTO in "${ontologies[@]}"; do
         1101)
             echo "[${ONTO}] Settings: add, add_D, and remove_D existing but no remove"
             
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
@@ -204,7 +228,7 @@ for ONTO in "${ontologies[@]}"; do
                     --select "annotations self descendants" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add_D.owl
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
@@ -212,7 +236,7 @@ for ONTO in "${ontologies[@]}"; do
                     --select "annotations self" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add.owl    
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/${ONTO}_add_D.owl \
                     --input external-dev/tmp/${ONTO}_add.owl \
@@ -224,14 +248,14 @@ for ONTO in "${ontologies[@]}"; do
         1100)
             echo "[${ONTO}] Settings: add and add_D existing but no remove or remove_D"
             
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 filter \
                     --input external-dev/tmp/source/${ONTO}.owl \
                     --term-file $add_D \
                     --select "annotations self descendants" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add_D.owl
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 filter \
                     --input external-dev/tmp/source/${ONTO}.owl \
                     --term-file $add \
@@ -244,7 +268,7 @@ for ONTO in "${ontologies[@]}"; do
         1011)
             echo "[${ONTO}] Settings: add, remove, and remove_D existing but no add_D"
             
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
@@ -252,7 +276,7 @@ for ONTO in "${ontologies[@]}"; do
                     --select "annotations self" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add.owl    
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/${ONTO}_add_D.owl \
                     --input external-dev/tmp/${ONTO}_add.owl \
@@ -267,7 +291,7 @@ for ONTO in "${ontologies[@]}"; do
         1010)
             
             echo "[${ONTO}] Settings: add and remove existing but no add_D or remove_D"
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
@@ -275,7 +299,7 @@ for ONTO in "${ontologies[@]}"; do
                     --select "annotations self" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add.owl    
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 remove \
                     --input external-dev/tmp/${ONTO}_add.owl \
                     --term-file $remove \
@@ -285,7 +309,7 @@ for ONTO in "${ontologies[@]}"; do
         1001)
             
             echo "[${ONTO}] Settings: add and remove_D existing but no add_D or remove"
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
@@ -293,7 +317,7 @@ for ONTO in "${ontologies[@]}"; do
                     --select "annotations self" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add.owl    
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 remove \
                     --input external-dev/tmp/${ONTO}_add.owl   \
                     --term-file $remove_D \
@@ -303,7 +327,7 @@ for ONTO in "${ontologies[@]}"; do
         1000)
             
             echo "[${ONTO}] Settings: only add existing"
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
@@ -315,7 +339,7 @@ for ONTO in "${ontologies[@]}"; do
         0111)
             
             echo "[${ONTO}] Settings: add_D, remove, and remove_D existing but no add"
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
@@ -333,7 +357,7 @@ for ONTO in "${ontologies[@]}"; do
         0110)
             
             echo "[${ONTO}] Settings: add_D and remove existing but no add or remove_D"
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
@@ -348,7 +372,7 @@ for ONTO in "${ontologies[@]}"; do
         0101)
             
             echo "[${ONTO}] Settings: add_D and remove_D existing but no add or remove"
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
@@ -364,7 +388,7 @@ for ONTO in "${ontologies[@]}"; do
         0100)
             
             echo "[${ONTO}] Settings: only add_D existing"
-            bash robot \
+            bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
@@ -378,15 +402,12 @@ for ONTO in "${ontologies[@]}"; do
     # Template subclassOf assertions
     timestamp=$(date -I)
     if [[ -f "external-dev/templates/${ONTO}_subclass_assertion.csv" ]]; then
-        prefix=$(dirname $(sed -n '3p' external-dev/templates/${ONTO}_subclass_assertion.csv | cut -d ',' -f 1))
-        echo Inject SC via template. Prefix: $prefix
-        bash robot \
+        echo Inject SC via template. 
+        bash robot --prefixes "external-dev/prefixes.json" \
             template \
                 --template "external-dev/templates/${ONTO}_subclass_assertion.csv" \
-                --prefix "${ONTO}: $prefix/" \
-                --prefix "npo_: http://purl.bioontology.org/ontology/npo#" \
                 --output external-dev/tmp/${ONTO}_spcs.owl
-        bash robot \
+        bash robot --prefixes "external-dev/prefixes.json" \
             merge \
                 --include-annotations true \
                 --input external-dev/tmp/${ONTO}_no_spcs.owl \
@@ -394,25 +415,18 @@ for ONTO in "${ontologies[@]}"; do
                 --output external-dev/${ONTO}-ext.owl \
             annotate \
                 --ontology-iri "http://purl.enanomapper.net/onto/external/${ONTO}-slim.owl" \
-                --annotation owl:versionInfo "This ontology subset was generated automatically with ROBOT (http://robot.obolibrary.org)" \
-                --annotation oboInOwl:date "$timestamp (yyy-mm-dd)"     
+                --annotation http://www.w3.org/2002/07/owl#versionInfo "This ontology subset was generated automatically with ROBOT (http://robot.obolibrary.org)" \
+                --annotation http://www.geneontology.org/formats/oboInOwl#date "$timestamp (yyy-mm-dd)"     
 
     else
         cp external-dev/tmp/${ONTO}_no_spcs.owl external-dev/${ONTO}-ext.owl
     fi
-    # Fixes prefix appearing as class
-    echo "Attempting to remove class: $prefix/$ONTO"
-    bash robot \
-        remove \
-            --term "$prefix/$ONTO" \
-            --input external-dev/${ONTO}-ext.owl \
-            --output external-dev/${ONTO}-ext.owl
     
     # Add props, if exist
     if [[ -f "config/${ONTO}-term-file.txt" ]]; then 
         echo Extracting object and data properties
         cp config/${ONTO}-term-file.txt external-dev/props/${ONTO}-term-file.txt
-        bash robot \
+        bash robot --prefixes "external-dev/prefixes.json" \
             extract \
                 --method subset --input  external-dev/tmp/source/${ONTO}.owl \
                 --term-file external-dev/props/${ONTO}-term-file.txt \
@@ -423,4 +437,4 @@ for ONTO in "${ontologies[@]}"; do
 done
 
 
-rm -r external-dev/tmp
+#rm -r external-dev/tmp
