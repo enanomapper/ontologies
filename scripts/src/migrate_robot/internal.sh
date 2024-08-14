@@ -175,7 +175,8 @@ sh robot \
         --inputs "internal-dev/*int.owl" \
         --input enanomapper-dev-old.owl \
         --input "internal-dev/endpoints.owl" \
-        --inputs "external-dev/*" \
+        --inputs "external-dev/*slim.owl" \
+        --inputs "external-dev/*slim-prop.owl" \
         --include-annotations true \
         --output enanomapper-all.owl
 
@@ -206,6 +207,9 @@ sh robot \
         --signature false \
     unmerge \
         --input enanomapper-auto-dev-full.owl \
+    remove \
+        --term http://purl.bioontology.org/ontology/npo#NPO_1436 \
+        --select "self descendants" \
     annotate \
         --ontology-iri "https://raw.githubusercontent.com/enanomapper/ontologies/refactor-internal/assays_methods.owl" \
         --version-iri "http://enanomapper.github.io/ontologies/releases/11.0/internal/ontologies/assays_methods.owl" \
@@ -358,9 +362,20 @@ sh robot \
         --ontology-iri "https://raw.githubusercontent.com/enanomapper/ontologies/refactor-internal/information_content_entity.owl" \
         --version-iri "http://enanomapper.github.io/ontologies/releases/11.0/internal/ontologies/information_content_entity.owl" \
         --output internal-dev/ontologies/information_content_entity.owl
-
 sh robot \
     unmerge \
         --input internal-dev/ontologies/information_content_entity.owl \
         --input internal-dev/ontologies/assays_methods.owl \
         --output internal-dev/ontologies/information_content_entity.owl
+# Instruments
+sh robot \
+    filter \
+        --input enanomapper-all.owl \
+        --term http://purl.bioontology.org/ontology/npo#NPO_1436 \
+        --select "annotations self descendants" \
+        --signature false \
+        --trim false \
+    annotate \
+        --ontology-iri "https://raw.githubusercontent.com/enanomapper/ontologies/refactor-internal/instrument.owl" \
+        --version-iri "http://enanomapper.github.io/ontologies/releases/11.0/internal/ontologies/instrument.owl" \
+        --output internal-dev/ontologies/instrument.owl    

@@ -7,7 +7,8 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:onto="http://purl.enanomapper.net/onto/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/enanomapper/ontologies/refactor-internal/endpoints.owl">
         <owl:versionIRI rdf:resource="http://enanomapper.github.io/ontologies/releases/11.0/internal/ontologies/endpoints.owl"/>
     </owl:Ontology>
@@ -46,6 +47,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
     
 
 
@@ -843,6 +850,7 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000035 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
         <rdfs:label xml:lang="en">physchem property endpoint</rdfs:label>
     </owl:Class>
@@ -870,6 +878,7 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000038 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
         <rdfs:label xml:lang="en">Uptake</rdfs:label>
     </owl:Class>
@@ -915,6 +924,7 @@
     <!-- http://purl.enanomapper.org/onto/ENM_0000043 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
         <rdfs:label xml:lang="en">Biological property endpoint</rdfs:label>
     </owl:Class>
@@ -1366,6 +1376,7 @@
     <!-- http://purl.enanomapper.org/onto/ENM_9000072 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
         <rdfs:isDefinedBy>The ability of a chemical substance to dissolve in a solid, liquid, or gaseous solvent to form a homogeneous solution. The solubility of a given substance is dependent on the solvent used, as well as on temperature and pressure.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">solubility endpoint</rdfs:label>
@@ -1431,9 +1442,38 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHMO_0002855 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002855">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>The mass of the product of a synthesis expressed as a percentage of the theoretical maxiμm mass given the masses of the reactants.</obo:IAO_0000115>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002855"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The mass of the product of a synthesis expressed as a percentage of the theoretical maxiμm mass given the masses of the reactants.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
     <!-- http://semanticscience.org/resource/CHEMINF_000247 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000247"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000016 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
     
 
 
@@ -1449,9 +1489,19 @@
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0000180 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000180">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0000181 -->
 
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000181"/>
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000181">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
     
 
 
@@ -1467,10 +1517,40 @@
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0000585 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000585">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002114 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002118 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0002128 -->
 
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002128">
-        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000035"/>
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002128"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002136 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002136">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </owl:Class>
     
 
@@ -1484,6 +1564,14 @@
     <!-- http://www.bioassayontology.org/bao#BAO_0002752 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002752"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002758 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002758">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
     
 
 
@@ -1521,6 +1609,14 @@
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0080028 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0080041 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080041"/>
@@ -1529,10 +1625,20 @@
 
     <!-- http://www.bioassayontology.org/bao#BAO_0080042 -->
 
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080042"/>
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0080045 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 

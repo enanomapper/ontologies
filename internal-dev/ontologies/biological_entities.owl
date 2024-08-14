@@ -1,13 +1,16 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://raw.githubusercontent.com/enanomapper/ontologies/refactor-internal/biological_entities.owl#"
      xml:base="https://raw.githubusercontent.com/enanomapper/ontologies/refactor-internal/biological_entities.owl"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:onto="http://purl.enanomapper.net/onto/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sssom="https://w3id.org/sssom/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/enanomapper/ontologies/refactor-internal/biological_entities.owl">
         <owl:versionIRI rdf:resource="http://enanomapper.github.io/ontologies/releases/11.0/internal/ontologies/biological_entities.owl"/>
     </owl:Ontology>
@@ -31,15 +34,153 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_P325 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P325"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P375 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P375"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P378 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P378"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P383 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P383"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P384 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P384"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P385 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P385"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P386 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P386"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P393 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P393"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P394 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P394"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P395 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P395"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P396 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P396"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P397 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P397"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002161 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002161"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/definition_citation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/definition_citation"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonymType -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonymType"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#source -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#source"/>
+    
+
+
     <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    
+
+
+    <!-- https://w3id.org/sssom/mapping_justification -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/mapping_justification"/>
     
 
 
@@ -474,40 +615,90 @@
 
     <!-- http://purl.obolibrary.org/obo/BTO_0000763 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000763"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000763">
+        <obo:IAO_0000115>One of the usually paired compound saccular thoracic organs that constitute the basic respiratory organ of air-breathing vertebrates.</obo:IAO_0000115>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000763"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>One of the usually paired compound saccular thoracic organs that constitute the basic respiratory organ of air-breathing vertebrates.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=lung</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BTO_0001034 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0001034"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0001034">
+        <obo:IAO_0000115>Macrophage found in peritoneum and that can be obtained by lavage.</obo:IAO_0000115>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001034"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Macrophage found in peritoneum and that can be obtained by lavage.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>The_Dictionary_of_Cell_and_Molecular_Biology:Third_Edition</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BTO_0002042 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0002042"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0002042">
+        <obo:IAO_0000115>A special type of cell that is a key regulator of the immune system, acting as a professional antigen-presenting cell, APC, capable of activating naive T cells and stimulating the growth and differentiation of B cells. Dendritic cells are found, for example, in the lymph nodes and spleen. As an APC, a dendritic cell can retain antigen for long periods on its surface, present the antigen to a T or B cell and so influence their behavior.</obo:IAO_0000115>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0002042"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A special type of cell that is a key regulator of the immune system, acting as a professional antigen-presenting cell, APC, capable of activating naive T cells and stimulating the growth and differentiation of B cells. Dendritic cells are found, for example, in the lymph nodes and spleen. As an APC, a dendritic cell can retain antigen for long periods on its surface, present the antigen to a T or B cell and so influence their behavior.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Medical_Dictionary:http://www.medterms.com/</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CL_0000010 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000010"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000010">
+        <obo:IAO_0000115>A cell in vitro that is or has been maintained or propagated as part of a cell culture.</obo:IAO_0000115>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000010"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A cell in vitro that is or has been maintained or propagated as part of a cell culture.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ReO:mhb</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CL_0000233 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000233"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000233">
+        <obo:IAO_0000115>A non-nucleated disk-shaped cell formed by extrusion from megakaryocytes, found in the blood of all mammals, and mainly involved in blood coagulation.</obo:IAO_0000115>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000233"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A non-nucleated disk-shaped cell formed by extrusion from megakaryocytes, found in the blood of all mammals, and mainly involved in blood coagulation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:add</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:dsd</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D001792</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:11110672</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:16987572</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:17204662</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:17479180</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:20414831</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Platelet</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CL_0001035 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001035">
-        <rdfs:subClassOf rdf:nodeID="genid51"/>
+        <rdfs:subClassOf rdf:nodeID="genid56"/>
+        <obo:IAO_0000115>A connective tissue cell found in bone.</obo:IAO_0000115>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid51">
+    <owl:Restriction rdf:nodeID="genid56">
         <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090006"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
     </owl:Restriction>
@@ -520,54 +711,686 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001035"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid51"/>
+        <owl:annotatedTarget rdf:nodeID="genid56"/>
         <onto:submit_to rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001035"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A connective tissue cell found in bone.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:add</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO_REF:0000034</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCIT_C12366 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C12366">
+        <obo:IAO_0000115>The structural organ comprised of specialized connective tissue that forms the skeletal components of the body.</obo:IAO_0000115>
+        <obo:NCIT_P325>Calcified connective tissue that forms the skeletal components of the body. (NCI)</obo:NCIT_P325>
+        <obo:NCIT_P375>Bone</obo:NCIT_P375>
+        <obo:NCIT_P375>Bone, NOS</obo:NCIT_P375>
+        <oboInOwl:hasExactSynonym>BONE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Bone</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Bone, NOS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Bones</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Osseous</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The structural organ comprised of specialized connective tissue that forms the skeletal components of the body.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <owl:annotatedTarget>Calcified connective tissue that forms the skeletal components of the body. (NCI)</owl:annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>Bone</owl:annotatedTarget>
+        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>biospecimen_anatomic_site</obo:NCIT_P395>
+        <obo:NCIT_P396>GDC</obo:NCIT_P396>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>Bone</owl:annotatedTarget>
+        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>treatment_anatomic_sites</obo:NCIT_P395>
+        <obo:NCIT_P396>GDC</obo:NCIT_P396>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>Bone, NOS</owl:annotatedTarget>
+        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>progression_or_recurrence_anatomic_site</obo:NCIT_P395>
+        <obo:NCIT_P396>GDC</obo:NCIT_P396>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>Bone, NOS</owl:annotatedTarget>
+        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>site_of_resection_or_biopsy</obo:NCIT_P395>
+        <obo:NCIT_P396>GDC</obo:NCIT_P396>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>Bone, NOS</owl:annotatedTarget>
+        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>sites_of_involvement</obo:NCIT_P395>
+        <obo:NCIT_P396>GDC</obo:NCIT_P396>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>Bone, NOS</owl:annotatedTarget>
+        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>tissue_or_organ_of_origin</obo:NCIT_P395>
+        <obo:NCIT_P396>GDC</obo:NCIT_P396>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>Bone, NOS</owl:annotatedTarget>
+        <obo:NCIT_P393>Related To</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>C41.9</obo:NCIT_P395>
+        <obo:NCIT_P396>ICDO3</obo:NCIT_P396>
+        <obo:NCIT_P397>3.1</obo:NCIT_P397>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>Bone, NOS</owl:annotatedTarget>
+        <obo:NCIT_P393>Related To</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>C41.9</obo:NCIT_P395>
+        <obo:NCIT_P396>ICDO3</obo:NCIT_P396>
+        <obo:NCIT_P397>3.2</obo:NCIT_P397>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>BONE</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Bone</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CPTAC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Bone</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CTDC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Bone</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>GDC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Bone</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Bone</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386>AML</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Bone</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386>EWS</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Bone</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386>GCT</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Bone</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386>HL</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Bone</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386>OS</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Bone</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>mCode</obo:NCIT_P384>
+        <obo:NCIT_P385>BON</obo:NCIT_P385>
+        <obo:NCIT_P386>HL7</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Bone</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>caDSR</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Bone, NOS</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>GDC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Bones</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12366"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Osseous</owl:annotatedTarget>
+        <obo:NCIT_P383>AD</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCIT_C12428 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C12428">
+        <obo:IAO_0000115>The fibrocartilaginous, mucous-lined tube passing from the larynx to the bronchi.</obo:IAO_0000115>
+        <obo:NCIT_P325>The airway that leads from the larynx (voice box) to the bronchi (large airways that lead to the lungs).</obo:NCIT_P325>
+        <obo:NCIT_P325>The fibrocartilaginous tube extending from the larynx to the bronchi.</obo:NCIT_P325>
+        <obo:NCIT_P325>The trachea is the portion of the airway that attaches to the bronchi as it branches.</obo:NCIT_P325>
+        <obo:NCIT_P375>Trachea</obo:NCIT_P375>
+        <oboInOwl:hasExactSynonym>TRACHEA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Trachea</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Tracheal structure (body structure)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Windpipe</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cartilaginous trachea</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>trachea</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>vertebrate trachea</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>windpipe</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Tracheal structure (body structure)</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>mCode</obo:NCIT_P384>
+        <obo:NCIT_P385>44567001</obo:NCIT_P385>
+        <obo:NCIT_P386>SNOMED CT</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Windpipe</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>cartilaginous trachea</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>UBERON</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>trachea</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI-GLOSS</obo:NCIT_P384>
+        <obo:NCIT_P385>CDR0000046623</obo:NCIT_P385>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>trachea</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>UBERON</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>vertebrate trachea</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>UBERON</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>windpipe</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI-GLOSS</obo:NCIT_P384>
+        <obo:NCIT_P385>CDR0000044379</obo:NCIT_P385>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>windpipe</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>UBERON</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The fibrocartilaginous, mucous-lined tube passing from the larynx to the bronchi.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <owl:annotatedTarget>The airway that leads from the larynx (voice box) to the bronchi (large airways that lead to the lungs).</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI-GLOSS</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <owl:annotatedTarget>The fibrocartilaginous tube extending from the larynx to the bronchi.</owl:annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <owl:annotatedTarget>The trachea is the portion of the airway that attaches to the bronchi as it branches.</owl:annotatedTarget>
+        <obo:NCIT_P378>UBERON</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>Trachea</owl:annotatedTarget>
+        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>primary_site</obo:NCIT_P395>
+        <obo:NCIT_P396>GDC</obo:NCIT_P396>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>Trachea</owl:annotatedTarget>
+        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>progression_or_recurrence_anatomic_site</obo:NCIT_P395>
+        <obo:NCIT_P396>GDC</obo:NCIT_P396>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>Trachea</owl:annotatedTarget>
+        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>site_of_resection_or_biopsy</obo:NCIT_P395>
+        <obo:NCIT_P396>GDC</obo:NCIT_P396>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>Trachea</owl:annotatedTarget>
+        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>sites_of_involvement</obo:NCIT_P395>
+        <obo:NCIT_P396>GDC</obo:NCIT_P396>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>Trachea</owl:annotatedTarget>
+        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>tissue_or_organ_of_origin</obo:NCIT_P395>
+        <obo:NCIT_P396>GDC</obo:NCIT_P396>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>Trachea</owl:annotatedTarget>
+        <obo:NCIT_P393>Related To</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>C33.9</obo:NCIT_P395>
+        <obo:NCIT_P396>ICDO3</obo:NCIT_P396>
+        <obo:NCIT_P397>3.1</obo:NCIT_P397>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>Trachea</owl:annotatedTarget>
+        <obo:NCIT_P393>Related To</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>C33.9</obo:NCIT_P395>
+        <obo:NCIT_P396>ICDO3</obo:NCIT_P396>
+        <obo:NCIT_P397>3.2</obo:NCIT_P397>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>TRACHEA</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Trachea</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>GDC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Trachea</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Trachea</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386>OS</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12428"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Trachea</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>caDSR</obo:NCIT_P384>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCIT_C14225 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14225"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14225">
+        <obo:IAO_0000115>The bipedal primate mammal, Homo sapiens; belonging to man or mankind; pertaining to man or to the race of man; use of man as experimental subject or unit of analysis in research.</obo:IAO_0000115>
+        <obo:NCIT_P325>The bipedal primate mammal assigned to the species Homo sapiens.</obo:NCIT_P325>
+        <obo:NCIT_P325>The bipedal primate mammal, Homo sapiens; belonging to man or mankind; pertaining to man or to the race of man; use of man as experimental subject or unit of analysis in research.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>HUMAN</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Homo sapiens</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Human</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Human, General</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14225"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The bipedal primate mammal, Homo sapiens; belonging to man or mankind; pertaining to man or to the race of man; use of man as experimental subject or unit of analysis in research.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14225"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <owl:annotatedTarget>The bipedal primate mammal assigned to the species Homo sapiens.</owl:annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14225"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <owl:annotatedTarget>The bipedal primate mammal, Homo sapiens; belonging to man or mankind; pertaining to man or to the race of man; use of man as experimental subject or unit of analysis in research.</owl:annotatedTarget>
+        <obo:NCIT_P378>PQCMC</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14225"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>HUMAN</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14225"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Homo sapiens</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14225"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Homo sapiens</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14225"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Human</owl:annotatedTarget>
+        <obo:NCIT_P383>AD</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14225"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Human</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>PQCMC</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14225"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Human</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14225"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Human, General</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCIT_C14238 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14238"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14238">
+        <obo:IAO_0000115>Any of numerous species of small rodents belonging to the genus Mus and various related genera of the family Muridae.</obo:IAO_0000115>
+        <obo:NCIT_P325>Any of numerous species of small rodents belonging to the genus Mus and various related genera of the family Muridae. (NCI)</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>MOUSE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Mammals, Mice</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Mice</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Mouse</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Murine</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Mus</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14238"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any of numerous species of small rodents belonging to the genus Mus and various related genera of the family Muridae.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14238"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <owl:annotatedTarget>Any of numerous species of small rodents belonging to the genus Mus and various related genera of the family Muridae. (NCI)</owl:annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14238"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>MOUSE</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14238"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Mammals, Mice</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14238"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Mice</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14238"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Mouse</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14238"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Murine</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14238"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Mus</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCIT_C14424 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14424"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14424">
+        <obo:IAO_0000115>Derived by Little (1921) from A Lathrop stocks and separated out before 1937, the C57BL/6 mouse has a black coat and is one of the most widely used inbred strains. It accounts for 14% of all mouse inbred strain laboratory usage. The strain carries a Y chromosome of Asian Mus musculus origin and a LINE-1 element from Mus spretus, suggesting that up to 6.5% of the genome is Mus spretus in origin. Substrain C57BL/6 differs from other substrains at multiple loci, including H9, Igh2 and Lv, on chromosome 4. This mouse model is prone to the development of fatty lesions in the aorta similar to atheromatous plaque in humans, as well as hyperglycemia, hyperinsulinemia, hypercholesterolemia and non-insulin-dependent diabetes mellitus in response to a high fat diet. The C57BL/6 strain exhibits good reproductive performance and hermaphroditism in this substrain has been shown to occur.</obo:IAO_0000115>
+        <obo:NCIT_P325>Derived by Little (1921) from A Lathrop stocks and separated out before 1937, the C57BL/6 mouse has a black coat and carries a Y chromosome of Asian Mus musculus origin and a LINE-1 element from Mus spretus. Substrain C57BL/6 differs from other substrains at multiple loci, including H9, Igh2 and Lv, on chromosome 4. This mouse model is prone to the development of fatty lesions in the aorta similar to atheromatous plaque in humans, as well as hyperglycemia, hyperinsulinemia, hypercholesterolemia and non-insulin-dependent diabetes mellitus in response to a high fat diet.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>B6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C57BL/6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C57BL/6 Mouse</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14424"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Derived by Little (1921) from A Lathrop stocks and separated out before 1937, the C57BL/6 mouse has a black coat and is one of the most widely used inbred strains. It accounts for 14% of all mouse inbred strain laboratory usage. The strain carries a Y chromosome of Asian Mus musculus origin and a LINE-1 element from Mus spretus, suggesting that up to 6.5% of the genome is Mus spretus in origin. Substrain C57BL/6 differs from other substrains at multiple loci, including H9, Igh2 and Lv, on chromosome 4. This mouse model is prone to the development of fatty lesions in the aorta similar to atheromatous plaque in humans, as well as hyperglycemia, hyperinsulinemia, hypercholesterolemia and non-insulin-dependent diabetes mellitus in response to a high fat diet. The C57BL/6 strain exhibits good reproductive performance and hermaphroditism in this substrain has been shown to occur.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14424"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <owl:annotatedTarget>Derived by Little (1921) from A Lathrop stocks and separated out before 1937, the C57BL/6 mouse has a black coat and carries a Y chromosome of Asian Mus musculus origin and a LINE-1 element from Mus spretus. Substrain C57BL/6 differs from other substrains at multiple loci, including H9, Igh2 and Lv, on chromosome 4. This mouse model is prone to the development of fatty lesions in the aorta similar to atheromatous plaque in humans, as well as hyperglycemia, hyperinsulinemia, hypercholesterolemia and non-insulin-dependent diabetes mellitus in response to a high fat diet.</owl:annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14424"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>B6</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14424"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>C57BL/6</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14424"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>C57BL/6</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>JAX</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14424"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>C57BL/6 Mouse</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCIT_C160998 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C160998"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C160998">
+        <obo:NCIT_P325>Any of numerous species of rodents belonging to the genus Rattus and/or various related genera of the family Muridae.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>Mammals, Rats</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>RAT</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Rat</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C160998"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <owl:annotatedTarget>Any of numerous species of rodents belonging to the genus Rattus and/or various related genera of the family Muridae.</owl:annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C160998"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Mammals, Rats</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C160998"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>RAT</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C160998"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Rat</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCIT_C20222 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C20222">
-        <rdfs:subClassOf rdf:nodeID="genid54"/>
+        <rdfs:subClassOf rdf:nodeID="genid137"/>
+        <oboInOwl:hasExactSynonym>Rat Cell Line</oboInOwl:hasExactSynonym>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid54">
+    <owl:Restriction rdf:nodeID="genid137">
         <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090006"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C160998"/>
     </owl:Restriction>
@@ -580,8 +1403,15 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20222"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid54"/>
+        <owl:annotatedTarget rdf:nodeID="genid137"/>
         <onto:submit_to rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20222"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Rat Cell Line</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
     </owl:Axiom>
     
 
@@ -667,9 +1497,9 @@
     <!-- http://www.ebi.ac.uk/efo/EFO_0002887 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002887">
-        <rdfs:subClassOf rdf:nodeID="genid63"/>
+        <rdfs:subClassOf rdf:nodeID="genid147"/>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid63">
+    <owl:Restriction rdf:nodeID="genid147">
         <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090006"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14238"/>
     </owl:Restriction>
@@ -682,7 +1512,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002887"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid63"/>
+        <owl:annotatedTarget rdf:nodeID="genid147"/>
         <onto:submit_to rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
     </owl:Axiom>
     
@@ -691,9 +1521,9 @@
     <!-- http://www.ebi.ac.uk/efo/EFO_0002888 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002888">
-        <rdfs:subClassOf rdf:nodeID="genid66"/>
+        <rdfs:subClassOf rdf:nodeID="genid150"/>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid66">
+    <owl:Restriction rdf:nodeID="genid150">
         <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090006"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14225"/>
     </owl:Restriction>
@@ -706,7 +1536,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002888"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid66"/>
+        <owl:annotatedTarget rdf:nodeID="genid150"/>
         <onto:submit_to rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
     </owl:Axiom>
     
@@ -715,9 +1545,9 @@
     <!-- http://www.ebi.ac.uk/efo/EFO_0002936 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002936">
-        <rdfs:subClassOf rdf:nodeID="genid69"/>
+        <rdfs:subClassOf rdf:nodeID="genid153"/>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid69">
+    <owl:Restriction rdf:nodeID="genid153">
         <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0090006"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C160998"/>
     </owl:Restriction>
@@ -730,7 +1560,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002936"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid69"/>
+        <owl:annotatedTarget rdf:nodeID="genid153"/>
         <onto:submit_to rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
     </owl:Axiom>
     
@@ -739,9 +1569,596 @@
     <!-- http://www.ebi.ac.uk/efo/EFO_0005214 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0005214"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BTO_0000269">
+        <obo:IAO_0000115>The part of the large intestine that extends from the cecum to the rectum.</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000269"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The part of the large intestine that extends from the cecum to the rectum.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=colon</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BTO_0000331">
+        <obo:IAO_0000115>Mouse connective tissue fibroblast, established from the normal subcutaneous areolar and adipose tissue of a male C3H/An mouse; used as target in TNF detection assays.</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000331"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Mouse connective tissue fibroblast, established from the normal subcutaneous areolar and adipose tissue of a male C3H/An mouse; used as target in TNF detection assays.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Deutsche_Sammlung_von_Mikroorganismen_und_Zellkulturen_GmbH:DSMZ</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BTO_0000341">
+        <obo:IAO_0000115>The thin muscle below the lungs and heart that separates the chest from the abdomen.</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000341"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The thin muscle below the lungs and heart that separates the chest from the abdomen.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Cancer.gov_Dictionary:http://www.nci.nih.gov/dictionary</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BTO_0000745">
+        <obo:IAO_0000115>A cell of a carcinoma discovered by dr. Margaret r. Lewis of the wistar institute in 1951. This tumour originated spontaneously as a carcinoma of the lung of a c57bl mouse. The tumour does not appear to be grossly haemorrhagic and the majority of the tumour tissue is a semifirm homogeneous mass. It is also called 3ll and llc and is used as a transplantable malignancy.</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000745"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A cell of a carcinoma discovered by dr. Margaret r. Lewis of the wistar institute in 1951. This tumour originated spontaneously as a carcinoma of the lung of a c57bl mouse. The tumour does not appear to be grossly haemorrhagic and the majority of the tumour tissue is a semifirm homogeneous mass. It is also called 3ll and llc and is used as a transplantable malignancy.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Online_Medical_Dictionary:http://cancerweb.ncl.ac.uk/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BTO_0000759">
+        <obo:IAO_0000115>1: A large very vascular glandular organ of vertebrates that secretes bile and causes important changes in many of the substances contained in the blood (as by converting sugars into glycogen which it stores up until required and by forming urea). 2: Any of various large compound glands associated with the digestive tract of invertebrate animals and probably concerned with the secretion of digestive enzymes.</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000759"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>1: A large very vascular glandular organ of vertebrates that secretes bile and causes important changes in many of the substances contained in the blood (as by converting sugars into glycogen which it stores up until required and by forming urea). 2: Any of various large compound glands associated with the digestive tract of invertebrate animals and probably concerned with the secretion of digestive enzymes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=liver</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BTO_0001025">
+        <obo:IAO_0000115>A mixture of monocytes and lymphocytes; blood leucocytes from which granulocytes have been separated and removed.</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001025"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A mixture of monocytes and lymphocytes; blood leucocytes from which granulocytes have been separated and removed.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>The_Dictionary_of_Cell_and_Molecular_Biology:Third_Edition</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BTO_0001279">
+        <obo:IAO_0000115>The cord of nervous tissue that extends from the brain lengthwise along the back in the vertebral canal, gives off the pairs of spinal nerves, carries impulses to and from the brain, and serves as a center for initiating and coordinating many reflex acts.</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001279"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The cord of nervous tissue that extends from the brain lengthwise along the back in the vertebral canal, gives off the pairs of spinal nerves, carries impulses to and from the brain, and serves as a center for initiating and coordinating many reflex acts.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=spinal+cord</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BTO_0001957">
+        <obo:IAO_0000115>Mouse embryo/fetus calvaria fibroblasts; established from the calvaria of an embryo/fetus C57BL/6 mouse; described to differentiate to osteoblasts and to produce collagen.</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001957"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Mouse embryo/fetus calvaria fibroblasts; established from the calvaria of an embryo/fetus C57BL/6 mouse; described to differentiate to osteoblasts and to produce collagen.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Deutsche_Sammlung_von_Mikroorganismen_und_Zellkulturen_GmbH:DSMZ</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BTO_0002922">
+        <obo:IAO_0000115>A normal cell of the bronchial epithelium.</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0002922"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A normal cell of the bronchial epithelium.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>curators:mg</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BTO_0003151">
+        <obo:IAO_0000115>Human pulmonary artery endothelial cell line.</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0003151"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Human pulmonary artery endothelial cell line.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:18373958</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BTO_0004433">
+        <obo:IAO_0000115>Human esophageal cell line; derived in 1986 from human esophageal autopsy tissue by transfection with plasmid pRSV-T consisting of the RSV-LTR promoter and the sequence encoding the simian virus 40 large T-antigen.</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0004433"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Human esophageal cell line; derived in 1986 from human esophageal autopsy tissue by transfection with plasmid pRSV-T consisting of the RSV-LTR promoter and the sequence encoding the simian virus 40 large T-antigen.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ATCC_American_Cell_Type_Culture_Collection:http://www.lgcstandards-atcc.org/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BTO_0004602">
+        <obo:IAO_0000115>Human aortic endothelial cell line.</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0004602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Human aortic endothelial cell line.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Invitrogen:http://products.invitrogen.com/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BTO_0004625">
+        <obo:IAO_0000115>The plasmacytoid dendritic cell, pDC, is a type of white blood cell. The primary function of this cell type is to produce type I interferon when the body is infected by a virus. The pDC has special surface receptors that can detect many types of viruses.</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0004625"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The plasmacytoid dendritic cell, pDC, is a type of white blood cell. The primary function of this cell type is to produce type I interferon when the body is infected by a virus. The pDC has special surface receptors that can detect many types of viruses.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>eScienceNews:A_new_mechanism_regulates_type_I_interferon_production_in_white_blood_cells</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BTO_0004721">
+        <obo:IAO_0000115>The most common division of dendritic cells is myeloid versus plasmacytoid. The myeloid dendritic cells are developed from myeloid precursors and are most similar to monocytes. They are made up of at least two subsets: 1. the more common mDC-1, which is a major stimulator of T cells and 2. the extremely rare mDC-2, which may have a function in fighting wound infection. They secrete IL-12.</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0004721"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The most common division of dendritic cells is myeloid versus plasmacytoid. The myeloid dendritic cells are developed from myeloid precursors and are most similar to monocytes. They are made up of at least two subsets: 1. the more common mDC-1, which is a major stimulator of T cells and 2. the extremely rare mDC-2, which may have a function in fighting wound infection. They secrete IL-12.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Answers.com:http://www.answers.com/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BTO_0004722">
+        <obo:IAO_0000115>These cells constitute a population of medium-sized mononuclear cells with plasmacytoid features in the T-cell zones of human lymphoid tissues, and in the thymus and lymph nodes of patients with various inflammatory and neoplastic diseases. They have been shown to express several antigens expressed on myelomonocytes, monocytes, and macrophages but lack markers for B-cells and plasma cells.</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0004722"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>These cells constitute a population of medium-sized mononuclear cells with plasmacytoid features in the T-cell zones of human lymphoid tissues, and in the thymus and lymph nodes of patients with various inflammatory and neoplastic diseases. They have been shown to express several antigens expressed on myelomonocytes, monocytes, and macrophages but lack markers for B-cells and plasma cells.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>COPE_Cytokines_&amp;_Cells_Online_Pathfinder_Encyclopaedia:http://www.copewithcytokines.de/cope.cgi</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BTO_0004723">
+        <obo:IAO_0000115>Dendritic cells that develop from lymphoid precursors.</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0004723"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Dendritic cells that develop from lymphoid precursors.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>COPE_Cytokines_&amp;_Cells_Online_Pathfinder_Encyclopaedia:http://www.copewithcytokines.de/cope.cgi</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000081">
+        <obo:IAO_0000115>A cell found predominately in the blood.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ZFA:0009044</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000081"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A cell found predominately in the blood.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:add</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000081"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ZFA:0009044</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0007010">
+        <obo:IAO_0000115>Skeletogenic cell that has the potential to transform into an osteoblast, and develops from neural crest or mesodermal cells.</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0007010"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Skeletogenic cell that has the potential to transform into an osteoblast, and develops from neural crest or mesodermal cells.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GO_REF:0000034</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C14206">
+        <obo:IAO_0000115>A common, gram negative gut bacterium that has been studied intensively by geneticists because of its small genome size, normal lack of pathogenicity, and ease of growth in the laboratory.</obo:IAO_0000115>
+        <obo:NCIT_P325>Any bacterial organism that can be assigned to the species Escherichia coli.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>E. coli</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ESCHERICHIA COLI</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Escherichia coli</oboInOwl:hasExactSynonym>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14206"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A common, gram negative gut bacterium that has been studied intensively by geneticists because of its small genome size, normal lack of pathogenicity, and ease of growth in the laboratory.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14206"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <owl:annotatedTarget>Any bacterial organism that can be assigned to the species Escherichia coli.</owl:annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14206"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>E. coli</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14206"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>E. coli</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14206"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>ESCHERICHIA COLI</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14206"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>ESCHERICHIA COLI</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>514B9K0L10</obo:NCIT_P385>
+        <obo:NCIT_P386>UNII</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14206"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Escherichia coli</owl:annotatedTarget>
+        <obo:NCIT_P383>DN</obo:NCIT_P383>
+        <obo:NCIT_P384>CTRP</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14206"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Escherichia coli</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14206"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Escherichia coli</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>caDSR</obo:NCIT_P384>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C14271">
+        <obo:IAO_0000115>A species of unicellular fungus used as a research subject and in baking and beer brewing.</obo:IAO_0000115>
+        <obo:NCIT_P325>Any fungal organism that can be assigned to the species Saccharomyces cerevisiae.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>Bakers Yeast</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Brewers Yeast</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>S. capensis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>S. cerevisiae</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>S. italicus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>S. oviformis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>S. uvarum var. melibiosus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>SACCHAROMYCES CEREVISIAE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Saccharomyces capensis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Saccharomyces cerevisiae</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Saccharomyces italicus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Saccharomyces oviformis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Saccharomyces uvarum var. melibiosus</oboInOwl:hasExactSynonym>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14271"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A species of unicellular fungus used as a research subject and in baking and beer brewing.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14271"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <owl:annotatedTarget>Any fungal organism that can be assigned to the species Saccharomyces cerevisiae.</owl:annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14271"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Bakers Yeast</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14271"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Brewers Yeast</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14271"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>S. capensis</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14271"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>S. cerevisiae</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14271"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>S. italicus</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14271"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>S. oviformis</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14271"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>S. uvarum var. melibiosus</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14271"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>SACCHAROMYCES CEREVISIAE</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14271"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>SACCHAROMYCES CEREVISIAE</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>978D8U419H</obo:NCIT_P385>
+        <obo:NCIT_P386>UNII</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14271"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Saccharomyces capensis</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14271"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Saccharomyces cerevisiae</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14271"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Saccharomyces italicus</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14271"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Saccharomyces oviformis</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14271"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Saccharomyces uvarum var. melibiosus</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C38389">
+        <oboInOwl:hasExactSynonym>Sex</oboInOwl:hasExactSynonym>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38389"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Sex</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000062">
+        <obo:IAO_0000115>Anatomical structure that performs a specific function or group of functions [WP].</obo:IAO_0000115>
+        <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_110815"/>
+        <obo:UBPROP_0000001>Organs are commonly observed as visibly distinct structures, but may also exist as loosely associated clusters of cells that work together to perform a specific function or functions.</obo:UBPROP_0000001>
+        <oboInOwl:hasDbXref>UMLS:C0178784</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym>element</oboInOwl:hasRelatedSynonym>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000062"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Anatomical structure that performs a specific function or group of functions [WP].</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:Organ_(anatomy)</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000062"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002161"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_110815"/>
+        <oboInOwl:source>Wikipedia</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000062"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <owl:annotatedTarget>Organs are commonly observed as visibly distinct structures, but may also exist as loosely associated clusters of cells that work together to perform a specific function or functions.</owl:annotatedTarget>
+        <oboInOwl:source>GO:0048513</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C0178784</owl:annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Organ</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>element</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000479">
+        <obo:IAO_0000115>Multicellular anatomical structure that consists of many cells of one or a few types, arranged in an extracellular matrix such that their long-range organisation is at least partly a repetition of their short-range organisation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>FBbt:00007003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0040300</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>portion of tissue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>simple tissue</oboInOwl:hasNarrowSynonym>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Multicellular anatomical structure that consists of many cells of one or a few types, arranged in an extracellular matrix such that their long-range organisation is at least partly a repetition of their short-range organisation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CARO:0000043</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>FBbt:00007003</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C0040300</owl:annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Tissue</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>portion of tissue</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CARO:0000043</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>simple tissue</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>AEO:0000043</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
+        <obo:IAO_0000115>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>FBbt:10000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C1515976</oboInOwl:hasDbXref>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:62955</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0001-9114-8737</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>FBbt:10000000</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C1515976</owl:annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Anatomic_Structure_System_or_Substance</oboInOwl:source>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002530">
+        <obo:IAO_0000115>An organ that functions as a secretory or excretory organ.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>FBbt:00100317</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C1285092</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>glandular organ</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Druese</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>glandula</oboInOwl:hasRelatedSynonym>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002530"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An organ that functions as a secretory or excretory organ.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>MGI:csmith</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MP:0002163</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002530"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>FBbt:00100317</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002530"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C1285092</owl:annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Gland</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002530"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>glandular organ</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002530"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Druese</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>BTO:0000522</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002530"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>glandula</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>BTO:0000522</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Gland</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003011"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0006925">
+        <obo:IAO_0000115>Any gland that is part of the digestive system.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>digestive gland</oboInOwl:hasRelatedSynonym>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006925"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any gland that is part of the digestive system.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>UBERON:cjm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006925"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>digestive gland</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>BTO:0000345</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0002314">
+        <obo:IAO_0000115>RCH-ACV cell line is a human B cell precursor leukemia cell line established from a bone marrow sample of a child with acute lymphoblastic leukemia.</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002314"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>RCH-ACV cell line is a human B cell precursor leukemia cell line established from a bone marrow sample of a child with acute lymphoblastic leukemia.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:3455845</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0022503">
+        <obo:IAO_0000115>Human uveal melanoma</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0022503"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Human uveal melanoma</owl:annotatedTarget>
+        <efo:definition_citation>PMID:7622289</efo:definition_citation>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0022614">
+        <obo:IAO_0000115>An immortalized human coronary artery smooth muscle cell derived cell line.</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0022614"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An immortalized human coronary artery smooth muscle cell derived cell line.</owl:annotatedTarget>
+        <efo:definition_citation>PMID:37017084</efo:definition_citation>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0030018">
+        <obo:IAO_0000115>BLaER1 cell line is a tamoxifen-inducible subclone of the RCH-ACV B-cell leukemia cell line genetically modified using a retrovirus vector to express C/EBPα fused with the estrogen receptor hormone binding domain (ER) and GFP.</obo:IAO_0000115>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030018"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>BLaER1 cell line is a tamoxifen-inducible subclone of the RCH-ACV B-cell leukemia cell line genetically modified using a retrovirus vector to express C/EBPα fused with the estrogen receptor hormone binding domain (ER) and GFP.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:23545498</oboInOwl:hasDbXref>
+    </owl:Axiom>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 
