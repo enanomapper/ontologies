@@ -1,4 +1,6 @@
 #!/bin/bash
+wget -nc https://github.com/ontodev/robot/raw/master/bin/robot
+wget -nc https://github.com/ontodev/robot/releases/download/v1.9.6/robot.jar
 # Patterns to look for in the .iris files
 opt="^[+,-]"                   # Add-remove pattern
 descendant="D"                # Descendant pattern
@@ -415,6 +417,7 @@ for ONTO in "${ontologies[@]}"; do
                 --output external-dev/${ONTO}-ext.owl \
             annotate \
                 --ontology-iri "http://purl.enanomapper.net/onto/external/${ONTO}-slim.owl" \
+                --version-iri "https://purl.enanomapper.org/onto/external-dev/${ONTO}-ext-prop.owl/"\
                 --annotation http://www.w3.org/2002/07/owl#versionInfo "This ontology subset was generated automatically with ROBOT (http://robot.obolibrary.org)" \
                 --annotation http://www.geneontology.org/formats/oboInOwl#date "$timestamp (yyy-mm-dd)"     
 
@@ -430,6 +433,8 @@ for ONTO in "${ontologies[@]}"; do
             extract \
                 --method subset --input  external-dev/tmp/source/${ONTO}.owl \
                 --term-file external-dev/props/${ONTO}-term-file.txt \
+            annotate --version-iri "https://purl.enanomapper.org/onto/external-dev/${ONTO}-ext-prop.owl/"\
+                    --ontology-iri "https://purl.enanomapper.org/onto/external-dev/${ONTO}-ext.owl/" \
                 --output external-dev/${ONTO}-ext-prop.owl \
 
     fi
