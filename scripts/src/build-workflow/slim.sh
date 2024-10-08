@@ -1,5 +1,6 @@
 #!/bin/bash
-
+mkdir external-dev/tmp/
+mkdir external-dev/tmp/source
 # Download ROBOT files if they don't exist
 wget -nc https://github.com/ontodev/robot/raw/master/bin/robot
 wget -nc https://github.com/ontodev/robot/releases/download/v1.9.6/robot.jar
@@ -26,12 +27,12 @@ remove_D="external-dev/term-files/remove/${ONTO}_remove_D.txt"
 
 # Check the existence of term files
 file_status="$(
-    [[ -f $add ]] && echo 1 || echo 0
-    [[ -f $add_D ]] && echo 1 || echo 0
-    [[ -f $remove ]] && echo 1 || echo 0
-    [[ -f $remove_D ]] && echo 1 || echo 0
+    [[ -f $add ]] && echo -n 1 || echo -n 0
+    [[ -f $add_D ]] && echo -n 1 || echo -n 0
+    [[ -f $remove ]] && echo -n 1 || echo -n 0
+    [[ -f $remove_D ]] && echo -n 1 || echo -n 0
 )"
-
+echo $file_status
 case $file_status in
     1111)
         echo "[${ONTO}] Settings: add, add_D, remove, and remove_D all existing"
@@ -46,7 +47,7 @@ case $file_status in
             filter --term-file "$add" \
             --select "annotations self" \
             --signature false --output "external-dev/tmp/${ONTO}_add.owl"
-
+    
         bash robot --prefixes "external-dev/prefixes.json" \
             merge --input "external-dev/tmp/${ONTO}_add_D.owl" \
             --input "external-dev/tmp/${ONTO}_add.owl" \
