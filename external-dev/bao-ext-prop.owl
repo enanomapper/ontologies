@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://purl.enanomapper.org/onto/external-dev/bao-ext.owl/"
+     xml:base="https://purl.enanomapper.org/onto/external-dev/bao-ext.owl/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="https://purl.enanomapper.org/onto/external-dev/bao-ext.owl/">
+        <owl:versionIRI rdf:resource="https://purl.enanomapper.org/onto/external-dev/bao-ext-prop.owl/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <obo:IAO_0000111>definition</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
+        <obo:IAO_0000111>textual definition</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">textual definition</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="zh">定义</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition&apos;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="zh">OBI的官方定义，解释类或属性的含义。应该是亚里士多德式的，形式化和规范化的。 可以通过口语定义进行扩充。</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="zh">官方的定义，解释类或属性的含义。应该是亚里士多德式的，形式化和规范化的。 可以通过口语定义进行扩充。</obo:IAO_0000115>
+        <obo:IAO_0000115>The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2012-04-05: 
+Barry Smith
+
+OBI的官方定义解释了一个类或属性的含义：&apos;应该是亚里士多德式的，形式化和规范化的。可以用口语定义&apos;是糟糕的。
+
+您能解决这样的问题吗？
+
+解释关于类或属性的表达含义的必要和充分条件的陈述。
+
+Alan Ruttenberg
+
+您提出的定义是一个合理的备选，除非它很常见，没有给出必要和充分的条件。大多数情况下它们是必要的，偶尔是必要的，充分的或者仅仅仅充分的。它们通常使用不是自己定义的术语，因此它们实际上不能通过这些标准进行评估。
+
+关于拟议定义的具体内容：
+
+我们没有“含义”，或“表达”或“属性”的定义。对于在预期意义上的“参考”，我认为我们使用术语“指示”。对于&apos;表达&apos;，我认为我们和你的意思是符号，或标识符。对于“含义”，它不同于类和属性。对于类，我们希望文档能够让读者确定一个实体是否是该类的实例。对于属性，让我们的目标读者决定，给定一对潜在的关系，判断关系成立的断言正确与否。 “目标读者”部分表明我们也指定了我们期望的能够理解定义的人，并且概括了人类和计算机读者以包含文本和逻辑定义。
+
+就我个人而言，我更愿意削弱对文档的定义，并指出什么是可取的。
+
+我们还有一个悬而未决的问题，就是如何针对不同的受众定位不同的定义。临床读者阅读chebi需要来自受过化学训练的受众的不同类型的定义文档/定义，同样需要一个适合本体工作者的定义。 </obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: &apos;Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions&apos;  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can&apos;t be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don&apos;t have definitions of &apos;meaning&apos; or &apos;expression&apos; or &apos;property&apos;. For &apos;reference&apos; in the intended sense I think we use the term &apos;denotation&apos;. For &apos;expression&apos;, I think we you mean symbol, or identifier. For &apos;meaning&apos; it differs for class and property. For class we want documentation that let&apos;s the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let&apos;s the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The &apos;intended reader&apos; part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  </obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <oboInOwl:hasExactSynonym>DEFINITION</oboInOwl:hasExactSynonym>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:label>textual definition</rdfs:label>
+        <rdfs:label xml:lang="en">textual definition</rdfs:label>
+        <rdfs:label>定义</rdfs:label>
+        <rdfs:label xml:lang="zh">定义</rdfs:label>
+        <rdfs:label>文本定义</rdfs:label>
+        <rdfs:label xml:lang="zh">文本定义</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <obo:IAO_0000111>label</obo:IAO_0000111>
+        <rdfs:label>label</rdfs:label>
+        <rdfs:label xml:lang="en">label</rdfs:label>
+        <rdfs:label>标签</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000182 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000182">
+        <rdfs:label>has response unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000183 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000183">
+        <rdfs:label>has concentration unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000208 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000208">
+        <rdfs:label>has endpoint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000209 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000209">
+        <rdfs:label>has measure group</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000335 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000335">
+        <rdfs:label>has curve fit specification</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002668 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002668">
+        <rdfs:label>has time unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002921 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002921">
+        <rdfs:label xml:lang="en">has organism</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0090006 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0090006">
+        <rdfs:comment xml:lang="en">See also BFO_0001009</rdfs:comment>
+        <rdfs:label xml:lang="en">derives from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000108 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000108">
+        <rdfs:label>has response value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002666 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002666">
+        <rdfs:label>has concentration value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002669 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002669">
+        <rdfs:label>has time value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002833 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002833">
+        <obo:IAO_0000115>It is the interval of time between the addition of a perturbagen, substrate or cell modification and the measurement of change, as observed by a detection method in the bioassay.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has incubation time value</rdfs:label>
+    </owl:DatatypeProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
+
