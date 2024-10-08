@@ -181,28 +181,6 @@ jobs:
       if: always()
       run: bash scripts/src/build-workflow/slim.sh msio
 
-  # apply props bao
-    - name: Apply props bao
-      if: always()
-      run: bash scripts/src/build-workflow/props.sh bao
-  
-  # apply props npo
-    - name: Apply props npo
-      if: always()
-      run: bash scripts/src/build-workflow/props.sh npo
-  
-  # apply props sio
-    - name: Apply props sio
-      if: always()
-      run: bash scripts/src/build-workflow/props.sh sio
-  
-    - name: Apply props cheminf
-      if: always()
-      run: bash scripts/src/build-workflow/props.sh cheminf
-
-    - name: Apply props ro
-      if: always()
-      run: bash scripts/src/build-workflow/props.sh ro
   # Commit and push
     - name: Commit OWL files
       run: |
