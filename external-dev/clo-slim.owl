@@ -39,9 +39,9 @@
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <pav:importedFrom>http://purl.obolibrary.org/obo/cl.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2024-07-01 01:46:43</oboInOwl:date>
-        <rdfs:comment>See PMID:15693950, PMID:12799354, PMID:20123131, PMID:21208450; Contact Alexander Diehl, addiehl@buffalo.edu, University at Buffalo.</rdfs:comment>
-        <owl:versionInfo>2024-05-15</owl:versionInfo>
+        <oboInOwl:date>2024-10-08 14:03:55</oboInOwl:date>
+        <rdfs:comment>See PMID:15693950, PMID:12799354, PMID:20123131, PMID:21208450; Contact Alexander Diehl, addiehl@buffalo.edu, university at buffalo.</rdfs:comment>
+        <owl:versionInfo>2024-09-26</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
@@ -426,6 +426,15 @@ WHERE {
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#gocheck_obsoletion_candidate -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#gocheck_obsoletion_candidate">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -1159,10 +1168,24 @@ WHERE {
     
 
 
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
     <!-- http://purl.org/dc/terms/license -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -1210,18 +1233,14 @@ WHERE {
     <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by">
-        <rdfs:label>created by</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date">
-        <rdfs:label>creation date</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
     
 
 
@@ -1323,9 +1342,7 @@ WHERE {
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
-        <rdfs:label>id</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
     
 
 
@@ -1599,7 +1616,7 @@ WHERE {
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
         <obo:IAO_0000115>A cell that is maintained or propagated in a controlled artificial environment for use in an investigation.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9114-8737"/>
-        <oboInOwl:creation_date>2012-01-12T09:58:38Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-01-12T09:58:38Z</oboInOwl:creation_date>
         <rdfs:comment>&apos;In vitro&apos;, translating literally to &apos;in glass&apos;, typically refers to a controlled, often sterile, laboratory setting where cells or other specimens are placed by some agent for the purpose of studying or manipulating them as part of some research investigation. &apos;In vitro&apos; is intended to contrast with &apos;native&apos;,which refers to cells or other biological entities that are found in a natural setting. It describes unicellular organisms removed from a natural environement and multicellular organism cells removed from an organism, or cells derived in culture from such displaced cells.</rdfs:comment>
         <rdfs:label>cell in vitro</rdfs:label>
     </owl:Class>
@@ -1616,12 +1633,11 @@ WHERE {
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001035">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000010"/>
         <obo:IAO_0000115>A connective tissue cell found in bone.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <oboInOwl:creation_date>2011-11-16T04:28:16Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-11-16T04:28:16Z</oboInOwl:creation_date>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#general_cell_types_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:label>bone cell</rdfs:label>
@@ -1643,7 +1659,7 @@ WHERE {
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001035"/>
         <obo:IAO_0000115>Skeletogenic cell that has the potential to transform into an osteoblast, and develops from neural crest or mesodermal cells.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9114-8737"/>
-        <oboInOwl:creation_date>2012-06-27T10:57:21Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-06-27T10:57:21Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>osteoprogenitor cell</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>preosteoblast</rdfs:label>
