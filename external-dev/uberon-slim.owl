@@ -152,7 +152,7 @@
         <doap:bug-database rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/issues/</doap:bug-database>
         <doap:mailing-list rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://lists.sourceforge.net/lists/listinfo/obo-anatomy</doap:mailing-list>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2024-10-01 02:05:05</oboInOwl:date>
+        <oboInOwl:date>2024-12-01 02:24:44</oboInOwl:date>
         <oboInOwl:default-namespace>uberon</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:treat-xrefs-as-equivalent>AEO</oboInOwl:treat-xrefs-as-equivalent>
@@ -320,21 +320,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000425 -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000425">
-        <obo:IAO_0000112 xml:lang="en">ObjectProperty: RO???
-Label: spatially disjoint from
-Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.org/obo/BFO_0000051 some ?X)  (http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)&quot;
-</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A macro expansion tag applied to an annotation property which can be expanded into a more detailed axiom.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">expand assertion to</rdfs:label>
-        <rdfs:label>expand assertion to</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000589 -->
 
 
@@ -455,10 +440,7 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002161">
         <obo:IAO_0000112>tooth SubClassOf &apos;never in taxon&apos; value &apos;Aves&apos;</obo:IAO_0000112>
-        <obo:IAO_0000115>S never_in_taxon T iff: S SubClassOf in_taxon only not T.</obo:IAO_0000115>
         <obo:IAO_0000115>x never in taxon T if and only if T is a class, and x does not instantiate the class expression &quot;in taxon some T&quot;. Note that this is a shortcut relation, and should be used as a hasValue restriction in OWL.</obo:IAO_0000115>
-        <obo:IAO_0000425>Class: &lt;http://www.w3.org/2002/07/owl#Nothing&gt; EquivalentTo: ?X and (RO_0002162 some ?Y)</obo:IAO_0000425>
-        <obo:IAO_0000425>Class: ?X DisjointWith: RO_0002162 some ?Y </obo:IAO_0000425>
         <obo:OMO_0002000>PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
 PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
 PREFIX in_taxon: &lt;http://purl.obolibrary.org/obo/RO_0002162&gt;
@@ -489,15 +471,8 @@ WHERE {
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>never_in_taxon</oboInOwl:shorthand>
         <rdfs:label>never in taxon</rdfs:label>
-        <rdfs:label>never_in_taxon</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/wiki/Taxon-constraints"/>
     </owl:AnnotationProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002161"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>S never_in_taxon T iff: S SubClassOf in_taxon only not T.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PMID:20973947</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -506,7 +481,6 @@ WHERE {
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002171">
         <obo:IAO_0000115>A is mutually_spatially_disjoint_with B if both A and B are classes, and there exists no p such that p is part_of some A and p is part_of some B.</obo:IAO_0000115>
-        <obo:IAO_0000425>Class: &lt;http://www.w3.org/2002/07/owl#Nothing&gt; EquivalentTo: (BFO_0000050 some ?X) and (BFO_0000050 some ?Y)</obo:IAO_0000425>
         <obo:OMO_0002000>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
 PREFIX part_of: &lt;http://purl.obolibrary.org/obo/BFO_0000050&gt;
 PREFIX mutually_spatially_disjoint_with: &lt;http://purl.obolibrary.org/obo/RO_0002171&gt;
@@ -533,7 +507,7 @@ WHERE {
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>mutually_spatially_disjoint_with</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">mutually spatially disjoint with</rdfs:label>
-        <rdfs:label>mutually_spatially_disjoint_with</rdfs:label>
+        <rdfs:label>mutually spatially disjoint with</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/RO_0002163"/>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/wiki/Part-disjointness-Design-Pattern</rdfs:seeAlso>
     </owl:AnnotationProperty>
@@ -544,7 +518,6 @@ WHERE {
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002173">
-        <obo:IAO_0000115>S ambiguous_for_taxon T if the class S does not have a clear referent in taxon T. An example would be the class &apos;manual digit 1&apos;, which encompasses a homology hypotheses that is accepted for some species (e.g. human and mouse), but does not have a clear referent in Aves - the referent is dependent on the hypothesis embraced, and also on the ontogenetic stage.</obo:IAO_0000115>
         <obo:IAO_0000115>S ambiguous_for_taxon T if the class S does not have a clear referent in taxon T. An example would be the class &apos;manual digit 1&apos;, which encompasses a homology hypotheses that is accepted for some species (e.g. human and mouse), but does not have a clear referent in Aves - the referent is dependent on the hypothesis embraced, and also on the ontogenetic stage.  [PHENOSCPAE:asilomar_mtg]</obo:IAO_0000115>
         <oboInOwl:hasDbXref>RO:0002173</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
@@ -553,15 +526,9 @@ WHERE {
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>ambiguous_for_taxon</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">ambiguous for taxon</rdfs:label>
-        <rdfs:label>ambiguous_for_taxon</rdfs:label>
+        <rdfs:label>ambiguous for taxon</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/wiki/Taxon-constraints"/>
     </owl:AnnotationProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002173"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>S ambiguous_for_taxon T if the class S does not have a clear referent in taxon T. An example would be the class &apos;manual digit 1&apos;, which encompasses a homology hypotheses that is accepted for some species (e.g. human and mouse), but does not have a clear referent in Aves - the referent is dependent on the hypothesis embraced, and also on the ontogenetic stage.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PHENOSCPAE:asilomar_mtg</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -577,17 +544,10 @@ WHERE {
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>dubious_for_taxon</oboInOwl:shorthand>
         <rdfs:comment>This relation lacks a strong logical interpretation, but can be used in place of never_in_taxon where it is desirable to state that the definition of the class is too strict for the taxon under consideration, but placing a never_in_taxon link would result in a chain of inconsistencies that will take ongoing coordinated effort to resolve. Example: metencephalon in teleost</rdfs:comment>
-        <rdfs:comment>this relation lacks a strong logical interpretation, but can be used in place of never_in_taxon where it is desirable to state that the definition of the class is too strict for the taxon under consideration, but placing a never_in_taxon link would result in a chain of inconsistencies that will take time to resolve. Example: metencephalon in teleost</rdfs:comment>
         <rdfs:label xml:lang="en">dubious for taxon</rdfs:label>
-        <rdfs:label>dubious_for_taxon</rdfs:label>
+        <rdfs:label>dubious for taxon</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/wiki/Taxon-constraints"/>
     </owl:AnnotationProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002174"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>S dubious_for_taxon T if it is probably the case that no instances of S can be found in any instance of T.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -596,7 +556,6 @@ WHERE {
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002175">
         <obo:IAO_0000115>S present_in_taxon T if some instance of T has some S. This does not means that all instances of T have an S - it may only be certain life stages or sexes that have S</obo:IAO_0000115>
-        <obo:IAO_0000115>S present_in_taxon T if some instance of T has some S. This does not means that all instances of T have an S - it may only be certain life stages or sexes that have S.</obo:IAO_0000115>
         <obo:OMO_0002000>PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
 PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
 PREFIX in_taxon: &lt;http://purl.obolibrary.org/obo/RO_0002162&gt;
@@ -622,7 +581,6 @@ WHERE {
   BIND(CONCAT(STR(?x), &quot; in taxon &quot;, STR(?taxon)) AS ?label)
 }</obo:OMO_0002000>
         <oboInOwl:hasDbXref>RO:0002175</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>applicable for taxon</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>present_in_taxon</oboInOwl:id>
         <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
@@ -630,15 +588,9 @@ WHERE {
         <oboInOwl:shorthand>present_in_taxon</oboInOwl:shorthand>
         <rdfs:comment>The SPARQL expansion for this relation introduces new named classes into the ontology. For this reason it is likely that the expansion should only be performed during a QC pipeline; the expanded output should usually not be included in a published version of the ontology.</rdfs:comment>
         <rdfs:label xml:lang="en">present in taxon</rdfs:label>
-        <rdfs:label>present_in_taxon</rdfs:label>
+        <rdfs:label>present in taxon</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/wiki/Taxon-constraints"/>
     </owl:AnnotationProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002175"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>S present_in_taxon T if some instance of T has some S. This does not means that all instances of T have an S - it may only be certain life stages or sexes that have S.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -657,7 +609,6 @@ WHERE {
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002475">
         <obo:IAO_0000112>&apos;pectoral appendage skeleton&apos; has no connections with &apos;pelvic appendage skeleton&apos;</obo:IAO_0000112>
         <obo:IAO_0000115>A is has_no_connections_with B if there are no parts of A or B that have a connection with the other.</obo:IAO_0000115>
-        <obo:IAO_0000425>Class: &lt;http://www.w3.org/2002/07/owl#Nothing&gt; EquivalentTo: (BFO_0000050 some ?X) and (RO_0002170 some (BFO_0000050 some ?Y))</obo:IAO_0000425>
         <oboInOwl:hasDbXref>RO:0002475</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>has_no_connections_with</oboInOwl:id>
@@ -665,14 +616,7 @@ WHERE {
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>has_no_connections_with</oboInOwl:shorthand>
         <rdfs:label>has no connections with</rdfs:label>
-        <rdfs:label>has_no_connections_with</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002475"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A is has_no_connections_with B if there are no parts of A or B that have a connection with the other.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -1514,6 +1458,15 @@ WHERE {
     
 
 
+    <!-- http://purl.obolibrary.org/obo/go#gocheck_obsoletion_candidate -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#gocheck_obsoletion_candidate">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/go#goslim_agr -->
 
 
@@ -2150,6 +2103,15 @@ WHERE {
     
 
 
+    <!-- http://purl.obolibrary.org/obo/uberon/core#human_subset -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#human_subset">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/uberon/core#inconsistent_with_fma -->
 
 
@@ -2185,6 +2147,15 @@ WHERE {
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#metazoa_core">
         <rdfs:comment>core classes typically found across metazoa. one purpose is to create a rough set of terms that could be used to start a new metazoan AO. Note this subset is not yet fully fleshed out</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#mouse_subset -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#mouse_subset">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -2672,7 +2643,12 @@ WHERE {
 
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <obo:IAO_0000112>disease characteristic (MONDO:0021125) has cross-reference (http://www.geneontology.org/formats/oboInOwl#hasDbXref) &quot;NCIT:C41009&quot;^^xsd:string</obo:IAO_0000112>
+        <obo:IAO_0000115>An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/123"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
         <rdfs:label>database_cross_reference</rdfs:label>
+        <rdfs:label>has cross-reference</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -3215,6 +3191,8 @@ WHERE {
         <oboInOwl:hasRelatedSynonym>element</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0000062</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#mouse_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
         <rdfs:label>organ</rdfs:label>
     </owl:Class>
@@ -3290,6 +3268,8 @@ WHERE {
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0000479</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#mouse_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
         <rdfs:label>tissue</rdfs:label>
@@ -3357,6 +3337,8 @@ WHERE {
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0001062</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#mouse_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
         <rdfs:label>anatomical entity</rdfs:label>
     </owl:Class>
@@ -3416,6 +3398,8 @@ WHERE {
         <oboInOwl:hasRelatedSynonym>glandula</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0002530</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#mouse_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
         <rdfs:label>gland</rdfs:label>
@@ -3474,6 +3458,8 @@ WHERE {
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>digestive gland</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0006925</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#mouse_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#organ_slim"/>
         <rdfs:label>digestive system gland</rdfs:label>
     </owl:Class>
@@ -4201,14 +4187,14 @@ WHERE {
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-2244-7917"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget>Ceri E Van Slyke</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>researcher, ORCID id # 0000-0002-2244-7917</owl:annotatedTarget>
         <terms:source rdf:resource="http://www.wikidata.org/entity/Q58034214"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://orcid.org/0000-0002-2244-7917"/>
-        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
-        <owl:annotatedTarget>researcher, ORCID id # 0000-0002-2244-7917</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>Ceri E Van Slyke</owl:annotatedTarget>
         <terms:source rdf:resource="http://www.wikidata.org/entity/Q58034214"/>
     </owl:Axiom>
     
