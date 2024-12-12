@@ -15,6 +15,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: Install yq
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y jq
+        sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq
+        sudo chmod +x /usr/bin/yq
     - name: Check out repository
       uses: actions/checkout@v4
       with:
@@ -22,33 +28,21 @@ jobs:
     # Get slimmer and robot
     - name: add slimmer and robot URLs to environment
       run: |
-        echo $(java --version)
+        # Parse YAML using yq
         config_file="config.yaml"
-        robot_jar=""
-        robot=""
-        slimmer=""
 
-        while IFS=":" read -r key value; do
-          key=$(echo "$key" | tr -d '[:space:]')
+        robot_jar=$(yq '.robot."robot-jar"' $config_file)
+        robot_wrapper=$(yq '.robot."robot-wrapper"' $config_file)
+        slimmer=$(yq '.slimmer' $config_file)
 
-          case "$key" in
-            robot-jar)
-              robot_jar=$(echo "$value" | tr -d '[:space:]')
-              ;;
-            robot-wrapper)
-              robot=$(echo "$value" | tr -d '[:space:]')
-              ;;
-            slimmer)
-              slimmer=$(echo "$value" | tr -d '[:space:]')
-              ;;
-          esac
-        done < "$config_file"
-        echo SLIMMER: $slimmer
-        echo ROBOT JAR: $robot_jar
-        echo ROBOT WRAPPER: $robot
-        echo 'slimmer='${slimmer}'' >> $GITHUB_ENV
-        echo 'robot='${robot}'' >> $GITHUB_ENV
-        echo 'robot_jar='${robot_jar}'' >> $GITHUB_ENV
+        # Export variables to the environment
+        echo "SLIMMER: $slimmer"
+        echo "ROBOT JAR: $robot_jar"
+        echo "ROBOT WRAPPER: $robot_wrapper"
+
+        echo "slimmer=$slimmer" >> $GITHUB_ENV
+        echo "robot=$robot_wrapper" >> $GITHUB_ENV
+        echo "robot_jar=$robot_jar" >> $GITHUB_ENV
     - name: get slimmer
       run: wget ${{ env.slimmer }}
     - name: get robot
@@ -183,27 +177,18 @@ jobs:
 
   # Commit and push
     - name: Commit OWL files
+      if: ! contains(github.ref_name, 'merge')
       run: |
-        if [[ "${{ github.ref_name }}" == *"merge"* ]]; then
-          exit 0
-        fi
-        git checkout "${{ github.ref_name }}"
-        git pull
-        git add -f external-dev/*.owl
         git config --local user.email "action@github.com"
         git config --local user.name "Slimmer bot"
-        # Check if there are changes to commit
-        if git diff-index --quiet HEAD --; then
-          echo "No changes to commit."
-        else
-            git commit -m "Actions - slim updated" ./external-dev/*.owl || true
-          fi
-        # Check if there are changes to push
-        if [[ $(git rev-parse --abbrev-ref HEAD) == "${{ github.ref_name }}" ]]; then
-          if [ -n "$(git cherry -v)" ]; then
-            git push || echo "Push failed."
-          else
-            echo "No changes to push."
-          fi
-        fi
 
+        git checkout "${{ github.ref_name }}" && git pull
+
+        # Add and commit changes if they exist
+        if ! git diff --quiet external-dev/*.owl; then
+          git add -f external-dev/*.owl
+          git commit -m "Actions - slim updated" || true
+          git push || echo "Push failed."
+        else
+          echo "No changes to commit or push."
+        fi
