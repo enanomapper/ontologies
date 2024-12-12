@@ -18,7 +18,7 @@ jobs:
 
       - name: generate IRI
         run: |
-          new_iri=$(bash scripts/src/generate_iri.sh)
+          new_iri=$(bash src//generate_iri.sh)
           echo "NEW_IRI=$new_iri" >> $GITHUB_ENV
           echo $new_iri
                           

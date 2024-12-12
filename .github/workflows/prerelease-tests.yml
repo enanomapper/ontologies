@@ -17,10 +17,10 @@ jobs:
         python-version: 3
 
     - name: Install dependencies
-      run: pip install -r scripts/src/tests/prerelease_tests/requirements.txt
+      run: pip install -r src//tests/prerelease_tests/requirements.txt
 
     - name: Run tests
-      run: python -m unittest discover scripts/src/tests/prerelease_tests/
+      run: python -m unittest discover src//tests/prerelease_tests/
     - name: Create issue about failure
       if: failure()
       uses: JasonEtco/create-an-issue@v2
