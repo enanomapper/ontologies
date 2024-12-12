@@ -154,7 +154,12 @@ jobs:
     - name: slim-pato
       if: always()
       run: bash src/build-workflow/slim.sh pato
-  
+ 
+  # Slim sio
+    - name: slim-ro
+      if: always()
+      run: bash src/build-workflow/slim.sh ro
+
   # Slim sio
     - name: slim-sio
       if: always()
