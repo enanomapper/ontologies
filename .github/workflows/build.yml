@@ -29,9 +29,16 @@ jobs:
     - name: Parse ontologies for matrix
       id: parse-slims
       run: |
-        # Extract the slims list from config.yaml using yq
+        config_file="config.yaml"
+        # Extract the slims list from $config_file using yq
         slims=$(yq '.slims[]' config.yaml | jq -R -s -c 'split("\n")[:-1]')
+        if [ -z "$slims" ]; then
+        echo "Error: No slims found in config.yaml"
+        exit 1
+        fi
+        echo "Parsed slims: $slims"
         echo "slims-matrix=$slims" >> $GITHUB_OUTPUT
+
     - name: Add slimmer and robot URLs to environment
       run: |
         config_file="config.yaml"
