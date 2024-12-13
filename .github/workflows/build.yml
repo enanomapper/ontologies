@@ -11,6 +11,7 @@ on:
      - './config/*'
   schedule:
     - cron: 1 0 1 1-12 *
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,176 +25,55 @@ jobs:
     - name: Check out repository
       uses: actions/checkout@v4
       with:
-       token: ${{ secrets.PAT }} 
-    # Get slimmer and robot
-    - name: add slimmer and robot URLs to environment
+       token: ${{ secrets.PAT }}
+    - name: Parse ontologies for matrix
+      id: parse-slims
       run: |
-        # Parse YAML using yq
+        # Extract the slims list from config.yaml using yq
+        slims=$(yq '.slims[]' config.yaml | jq -R -s -c 'split("\n")[:-1]')
+        echo "slims-matrix=$slims" >> $GITHUB_OUTPUT
+    - name: Add slimmer and robot URLs to environment
+      run: |
         config_file="config.yaml"
-
         robot_jar=$(yq '.robot."robot-jar"' $config_file)
         robot_wrapper=$(yq '.robot."robot-wrapper"' $config_file)
         slimmer=$(yq '.slimmer' $config_file)
-
-        # Export variables to the environment
-        echo "SLIMMER: $slimmer"
-        echo "ROBOT JAR: $robot_jar"
-        echo "ROBOT WRAPPER: $robot_wrapper"
-
         echo "slimmer=$slimmer" >> $GITHUB_ENV
         echo "robot=$robot_wrapper" >> $GITHUB_ENV
         echo "robot_jar=$robot_jar" >> $GITHUB_ENV
-    - name: get slimmer
-      run: wget ${{ env.slimmer }}
-    - name: get robot
+    - name: Get slimmer and robot
       run: |
+        wget ${{ env.slimmer }}
         wget ${{ env.robot }}
-        wget ${{ env.robot_jar}}
-  
-  # slim all ontologies
-  # Authorize running slim script
-    - name: authorize running slim scripts
+        wget ${{ env.robot_jar }}
+    - name: Authorize running slim scripts
       run: chmod 755 src/build-workflow/*.sh
-  
-  # Slim aopo
-    - name: slim-aopo
-      if: always()
-      run: bash src/build-workflow/slim.sh aopo
-  
-  # Slim bao
-    - name: slim-bao
-      if: always()
-      run: bash src/build-workflow/slim.sh bao
-  
-  # Slim bfo
-    - name: slim-bfo
-      if: always()
-      run: bash src/build-workflow/slim.sh bfo
-  
-  # Slim bto
-    - name: slim-bto
-      if: always()
-      run: bash src/build-workflow/slim.sh bto
-  
-  # Slim ccont
-    - name: slim-ccont
-      if: always()
-      run: bash src/build-workflow/slim.sh ccont
-  
-  # Slim cheminf
-    - name: slim-cheminf
-      if: always()
-      run: bash src/build-workflow/slim.sh cheminf
-    
-  # Slim chebi
-    - name: slim-chebi
-      if: always()
-      run: bash src/build-workflow/slim.sh chebi
-  
-  # Slim chmo
-    - name: slim-chmo
-      if: always()
-      run: bash src/build-workflow/slim.sh chmo
-  
-  # Slim clo
-    - name: slim-clo
-      if: always()
-      run: bash src/build-workflow/slim.sh clo
-  
-  # Slim efo
-    - name: slim-efo
-      if: always()
-      run: bash src/build-workflow/slim.sh efo
-  
-  # Slim envo
-    - name: slim-envo
-      if: always()
-      run: bash src/build-workflow/slim.sh envo
-  
-  # Slim fabio
-    - name: slim-fabio
-      if: always()
-      run: bash src/build-workflow/slim.sh fabio
-  
-  # Slim go
-    - name: slim-go
-      if: always()
-      run: bash src/build-workflow/slim.sh go
-  
-  # Slim iao
-    - name: slim-iao
-      if: always()
-      run: bash src/build-workflow/slim.sh iao
-  
-  # Slim ncit
-    - name: slim-ncit
-      if: always()
-      run: bash src/build-workflow/slim.sh ncit
-  
-  # Slim npo
-    - name: slim-npo
-      if: always()
-      run: bash src/build-workflow/slim.sh npo
-  
-  # Slim oae
-    - name: slim-oae
-      if: always()
-      run: bash src/build-workflow/slim.sh oae
-  
-  # Slim obcs
-    - name: slim-obcs
-      if: always()
-      run: bash src/build-workflow/slim.sh obcs
-  
-  # Slim obi
-    - name: slim-obi
-      if: always()
-      run: bash src/build-workflow/slim.sh obi
-  
-  # Slim pato
-    - name: slim-pato
-      if: always()
-      run: bash src/build-workflow/slim.sh pato
- 
-  # Slim sio
-    - name: slim-ro
-      if: always()
-      run: bash src/build-workflow/slim.sh ro
 
-  # Slim sio
-    - name: slim-sio
-      if: always()
-      run: bash src/build-workflow/slim.sh sio
-  
-  # Slim uberon
-    - name: slim-uberon
-      if: always()
-      run: bash src/build-workflow/slim.sh uberon
-  
-  # Slim uo
-    - name: slim-uo
-      if: always()
-      run: bash src/build-workflow/slim.sh uo
+  slim:
+    needs: build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ontology: ${{ fromJson(needs.build.outputs.slims-matrix) }}
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
+    - name: Run slim script for ${{ matrix.ontology }}
+      run: bash src/build-workflow/slim.sh ${{ matrix.ontology }}
 
-  # Slim msio
-    - name: slim-msio
-      if: always()
-      run: bash src/build-workflow/slim.sh msio
-
-  # Commit and push
+  commit:
+    needs: slim
+    runs-on: ubuntu-latest
+    steps:
     - name: Commit OWL files
       if: ${{ !startsWith(github.ref, 'refs/heads/merge') }}
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "Slimmer bot"
-
         git checkout "${{ github.ref_name }}" && git pull
-
-        # Add and commit changes if they exist
         if ! git diff --quiet external-dev/*.owl; then
           git add -f external-dev/*.owl
           git commit -m "Actions - slim updated" || true
           git push || echo "Push failed."
         else
           echo "No changes to commit or push."
-        fi
