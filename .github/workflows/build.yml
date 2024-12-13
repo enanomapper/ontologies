@@ -84,7 +84,7 @@ jobs:
         path: temp-artifacts
     - name: Move downloaded artifacts to external-dev
       run: |
-        for file in temp-artifacts/external-dev/*-ext.owl; do
+        for file in temp-artifacts/*-ext.owl; do
           if [ -f "$file" ]; then
             mv "$file" external-dev/
           fi
