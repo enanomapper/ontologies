@@ -68,7 +68,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: ${{ matrix.ontology }}-ext.owl
-        path: external-dev/
+        path: external-dev/${{ matrix.ontology }}-ext.owl
 
   commit:
     needs: slim
