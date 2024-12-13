@@ -84,12 +84,12 @@ jobs:
         path: temp-artifacts
     - name: Move downloaded artifacts to external-dev
       run: |
+        ls temp-artifacts
         for file in temp-artifacts/*-ext.owl; do
-          if [ -f "$file" ]; then
-            mv "$file" external-dev/$file
-            echo $file
-          fi
+          mv "$file" external-dev/$file
+          echo $file
         done
+        rm temp-artifacts/*
     - name: Commit changed OWL files
       run: |
         git config --local user.email "action@github.com"
