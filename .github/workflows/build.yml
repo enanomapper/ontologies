@@ -76,10 +76,15 @@ jobs:
     steps:
     - name: Check out repository
       uses: actions/checkout@v4
+    - name: Create temporary directory for artifacts
+      run: mkdir -p temp-artifacts
     - name: Download all slim artifacts
       uses: actions/download-artifact@v3
       with:
-        path: external-dev
+        path: temp-artifacts
+    - name: Move downloaded artifacts to external-dev
+      run: |
+        mv temp-artifacts/* external-dev/
     - name: Commit changed OWL files
       run: |
         git config --local user.email "action@github.com"
@@ -88,3 +93,4 @@ jobs:
         git add -f external-dev/*.owl
         git commit -m "Actions - slim updated" || echo "No changes to commit."
         git push || echo "Push failed."
+
