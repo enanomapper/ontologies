@@ -25,20 +25,7 @@ jobs:
     - name: Check out repository
       uses: actions/checkout@v4
       with:
-       token: ${{ secrets.PAT }}
-    - name: Parse ontologies for matrix
-      id: parse-slims
-      run: |
-        config_file="config.yaml"
-        # Extract the slims list from $config_file using yq
-        slims=$(yq '.slims[]' config.yaml | jq -R -s -c 'split("\n")[:-1]')
-        if [ -z "$slims" ]; then
-        echo "Error: No slims found in config.yaml"
-        exit 1
-        fi
-        echo "Parsed slims: $slims"
-        echo "slims-matrix=$slims" >> $GITHUB_OUTPUT
-
+       token: ${{ secrets.PAT }} 
     - name: Add slimmer and robot URLs to environment
       run: |
         config_file="config.yaml"
@@ -61,7 +48,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ontology: ${{ fromJson(needs.build.outputs.slims-matrix) }}
+        ontology: [aopo, bao, bfo, bto, ccont, cheminf, chebi, chmo, clo, efo, envo, fabio, go, iao, ncit, npo, oae, obcs, obi, pato, ro, sio, uberon, uo, msio]
     steps:
     - name: Check out repository
       uses: actions/checkout@v4
