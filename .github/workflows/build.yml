@@ -3,12 +3,12 @@ on:
   workflow_dispatch:
   pull_request:
     paths:
-     - 'config/*'
+      - 'config/*'
   push:
     paths:
-     - 'config.yaml'
-     - '.github/workflows/build.yml'
-     - './config/*'
+      - 'config.yaml'
+      - '.github/workflows/build.yml'
+      - './config/*'
   schedule:
     - cron: 1 0 1 1-12 *
 
@@ -25,7 +25,7 @@ jobs:
     - name: Check out repository
       uses: actions/checkout@v4
       with:
-       token: ${{ secrets.PAT }} 
+        token: ${{ secrets.PAT }}
     - name: Add slimmer and robot URLs to environment
       run: |
         config_file="config.yaml"
@@ -58,7 +58,7 @@ jobs:
       run: |
         mkdir -p slim-output
         mv external-dev/${{ matrix.ontology }}.owl slim-output/
-      - name: Upload slim artifact
+    - name: Upload slim artifact
       uses: actions/upload-artifact@v3
       with:
         name: slim-${{ matrix.ontology }}
