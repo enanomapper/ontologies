@@ -84,12 +84,18 @@ jobs:
         path: temp-artifacts
     - name: Move downloaded artifacts to external-dev
       run: |
-        ls temp-artifacts
-        for file in temp-artifacts/*-ext.owl; do
-          mv "$file" external-dev/
-          echo "Moved: $file"
-        done
-        rm temp-artifacts/*
+       ls temp-artifacts
+       for file in temp-artifacts/*-ext.owl; do
+        base_file=$(basename "$file")
+        if [ -f "external-dev/$base_file" ]; then
+         echo "Overwriting existing file: external-dev/$base_file"
+        else
+          echo "File does not exist in external-dev: external-dev/$base_file"
+        fi
+        mv -f "$file" "external-dev/$base_file"
+        echo "Moved: $file to external-dev/$base_file"
+       done
+       rm -rf temp-artifacts/*
     - name: Commit changed OWL files
       run: |
         git config --local user.email "action@github.com"
