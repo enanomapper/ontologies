@@ -13,7 +13,7 @@ on:
     - cron: 1 0 1 1-12 *
 
 jobs:
-  build:
+  setup:
     runs-on: ubuntu-latest
     steps:
     - name: Install yq
@@ -44,7 +44,7 @@ jobs:
       run: chmod 755 src/build-workflow/*.sh
 
   slim:
-    needs: build
+    needs: setup
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -79,13 +79,12 @@ jobs:
     - name: Download all slim artifacts
       uses: actions/download-artifact@v3
       with:
-        path: combined-slims
-    - name: Commit all OWL files
+        path: external-dev
+    - name: Commit changed OWL files
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "Slimmer bot"
         git checkout "${{ github.ref_name }}" && git pull
-        mv combined-slims/* external-dev/
         git add -f external-dev/*.owl
         git commit -m "Actions - slim updated" || echo "No changes to commit."
         git push || echo "Push failed."
