@@ -58,10 +58,10 @@ jobs:
       id: file_changed
       run: |
         file="external-dev/${{ matrix.ontology }}-ext.owl"
-        if [[ $(git diff --name-only HEAD^1 HEAD -- $file) ]]; then
-          echo "changed=true" >> $GITHUB_ENV
-        else
+        if git diff --quiet HEAD -- $file; then
           echo "changed=false" >> $GITHUB_ENV
+        else
+          echo "changed=true" >> $GITHUB_ENV
         fi
     - name: Upload slim artifact if changed
       if: env.changed == 'true'
