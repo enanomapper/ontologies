@@ -54,11 +54,21 @@ jobs:
       uses: actions/checkout@v4
     - name: Run slim script for ${{ matrix.ontology }}
       run: bash src/build-workflow/slim.sh ${{ matrix.ontology }}
-    - name: Upload slim artifact
+    - name: Check if file has changed
+      id: file_changed
+      run: |
+        file="external-dev/${{ matrix.ontology }}-ext.owl"
+        if [[ $(git diff --name-only HEAD^1 HEAD -- $file) ]]; then
+          echo "changed=true" >> $GITHUB_ENV
+        else
+          echo "changed=false" >> $GITHUB_ENV
+        fi
+    - name: Upload slim artifact if changed
+      if: env.changed == 'true'
       uses: actions/upload-artifact@v3
       with:
-        name: slim-${{ matrix.ontology }}
-        path: external-dev/
+        name: ${{ matrix.ontology }}-ext.owl
+        path: external-dev/${{ matrix.ontology }}-ext.owl
 
   commit:
     needs: slim
