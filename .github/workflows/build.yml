@@ -86,14 +86,14 @@ jobs:
       run: |
         for file in temp-artifacts/*-ext.owl; do
           if [ -f "$file" ]; then
-            mv "$file" external-dev/
+            mv "$file" external-dev/$file
+            echo $file
           fi
         done
     - name: Commit changed OWL files
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "Slimmer bot"
-        git checkout "${{ github.ref_name }}" && git pull
         git add -f external-dev/*.owl
         git commit -m "Actions - slim updated" || echo "No changes to commit."
         git push || echo "Push failed."
