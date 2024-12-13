@@ -54,15 +54,11 @@ jobs:
       uses: actions/checkout@v4
     - name: Run slim script for ${{ matrix.ontology }}
       run: bash src/build-workflow/slim.sh ${{ matrix.ontology }}
-    - name: Save slim output
-      run: |
-        mkdir -p slim-output
-        mv external-dev/${{ matrix.ontology }}.owl slim-output/
     - name: Upload slim artifact
       uses: actions/upload-artifact@v3
       with:
         name: slim-${{ matrix.ontology }}
-        path: slim-output/
+        path: external-dev/
 
   commit:
     needs: slim
