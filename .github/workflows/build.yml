@@ -86,8 +86,8 @@ jobs:
       run: |
         ls temp-artifacts
         for file in temp-artifacts/*-ext.owl; do
-          mv "$file" external-dev/$file
-          echo $file
+          mv "$file" external-dev/
+          echo "Moved: $file"
         done
         rm temp-artifacts/*
     - name: Commit changed OWL files
