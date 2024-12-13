@@ -84,7 +84,11 @@ jobs:
         path: temp-artifacts
     - name: Move downloaded artifacts to external-dev
       run: |
-        mv temp-artifacts/* external-dev/
+        for file in temp-artifacts/external-dev/*-ext.owl; do
+          if [ -f "$file" ]; then
+            mv "$file" external-dev/
+          fi
+        done
     - name: Commit changed OWL files
       run: |
         git config --local user.email "action@github.com"
@@ -93,4 +97,3 @@ jobs:
         git add -f external-dev/*.owl
         git commit -m "Actions - slim updated" || echo "No changes to commit."
         git push || echo "Push failed."
-
