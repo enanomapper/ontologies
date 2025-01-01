@@ -82,9 +82,9 @@
         <terms:title>Ontology for Biomedical Investigations</terms:title>
         <pav:importedFrom>http://purl.obolibrary.org/obo/obi.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2024-12-01 02:24:16</oboInOwl:date>
+        <oboInOwl:date>2025-01-01 02:06:28</oboInOwl:date>
         <rdfs:comment>Please cite the OBI consortium http://purl.obolibrary.org/obo/obi where traditional citation is called for. However it is adequate that individual terms be attributed simply by use of the identifying PURL for the term, in projects that refer to them.</rdfs:comment>
-        <owl:versionInfo>2024-10-25</owl:versionInfo>
+        <owl:versionInfo>2024-12-05</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
@@ -947,6 +947,20 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMO_0004000 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMO_0004000">
+        <obo:IAO_0000112>A serial number such as &quot;12324X&quot;; a stop sign; a written proper name such as &quot;OBI</obo:IAO_0000112>
+        <obo:IAO_0000115>An information content entity that is a mark(s) or character(s) used as a conventional representation of another entity.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/144"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-6523-4866"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-25</terms:created>
+        <rdfs:label>has symbol</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
 
 
@@ -1250,6 +1264,20 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
         <rdfs:label xml:lang="en">has broad synonym</rdfs:label>
         <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/18</rdfs:seeAlso>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <obo:IAO_0000112>disease characteristic (MONDO:0021125) has cross-reference (http://www.geneontology.org/formats/oboInOwl#hasDbXref) &quot;NCIT:C41009&quot;^^xsd:string</obo:IAO_0000112>
+        <obo:IAO_0000115>An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/123"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</terms:created>
+        <rdfs:label>has cross-reference</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -1823,6 +1851,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000418">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100020"/>
         <obo:IAO_0000111>measuring glucose concentration in blood serum assay</obo:IAO_0000111>
         <obo:IAO_0000112>Measuring glucose concentration in blood from a mouse. See Figure 2 of the 2016 OBI paper, PMID: 27128319.</obo:IAO_0000112>
@@ -2310,7 +2339,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000721">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>glucose tolerance test</obo:IAO_0000111>
         <obo:IAO_0000112>PMID: 19527607</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -2507,7 +2536,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000820">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>activated partial thromboplastin time assay</obo:IAO_0000111>
         <obo:IAO_0000112>The activated partial thromboplastin time (aPTT) was determined using Dade Actin FSL activated PTT reagent (PMID:19696660)</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -2645,6 +2674,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000872">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000443"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>serum neutralization of viral infectivity assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An analyte assay that measures virus-neutralizing abilities of different sera. Different dilutions of serum are mixed with virus and used to infect cells. At the lower dilutions, antibodies will block infection, but at higher dilutions, there will be too few antibodies to have an effect.The neutralization titer is expressed as the reciprocal of the highest dilution at which virus infection is blocked.</obo:IAO_0000115>
@@ -12177,7 +12207,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002039">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003686"/>
         <obo:IAO_0000111>assay for transposase-accessible chromatin using sequencing</obo:IAO_0000111>
         <obo:IAO_0000112>Kasinathan et al., (February 2014). &quot;High-resolution mapping of transcription factor binding sites on natitve chromatin.&quot; Nat Methods 11(2):203-9. doi: 10.1038/nmeth.2766.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -19571,7 +19601,7 @@ https://www.doi.org/</obo:IAO_0000119>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003238">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>umbilical cord blood assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An assay that has an umbilical cord blood specimen as evaluant.</obo:IAO_0000115>
@@ -22415,6 +22445,7 @@ https://www.doi.org/</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003589">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002145"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>serum anti-Epstein-Barr virus antibody level assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115 xml:lang="en">An antigen specific antibodies assay that is meant to detect antibodies that bind to Epstein-Barr virus (EBV) antigens in a serum sample.</obo:IAO_0000115>
@@ -22431,6 +22462,7 @@ https://www.doi.org/</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003590">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002154"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>serum anti-cytomegalovirus antibody level assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115 xml:lang="en">A CMV antibody assay that has serum as an input.</obo:IAO_0000115>
@@ -22665,6 +22697,45 @@ https://www.doi.org/</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1785</obo:IAO_0000233>
         <obo:IAO_0000234>Jennifer Jou</obo:IAO_0000234>
         <rdfs:label>single-nucleus methylcytosine and transcriptome sequencing assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003686 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003686">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000111>chromatin accessibility assay</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">An assay that determines which regions of a DNA molecule are in the form of euchromatin and thus able to make direct physical contact with (i.e. are accessible to) other molecules such as RNA polymerase, transcription factors, etc.</obo:IAO_0000115>
+        <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117>Michelle Giglio</obo:IAO_0000117>
+        <obo:IAO_0000117>Sebastian Duesing</obo:IAO_0000117>
+        <obo:IAO_0000119>Michelle Giglio</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1813</obo:IAO_0000233>
+        <obo:IAO_0000234>Jennifer Jou</obo:IAO_0000234>
+        <rdfs:label>chromatin accessibility assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003687 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003687">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003686"/>
+        <obo:IAO_0000111>m6A-MTase sequencing assay</obo:IAO_0000111>
+        <obo:IAO_0000112>https://pubmed.ncbi.nlm.nih.gov/32587015/</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A DNA methylation profiling assay in which chromatin stencils are created by treating nuclei with m6A methyltransferase (MTase) and then sequenced using single-molecule circular consensus sequencing to identify regions of accessible DNA at nucleotide resolution.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Jou</obo:IAO_0000117>
+        <obo:IAO_0000117>Sebastian Duesing</obo:IAO_0000117>
+        <obo:IAO_0000118>Fiber-seq</obo:IAO_0000118>
+        <obo:IAO_0000119>Jennifer Jou</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1813</obo:IAO_0000233>
+        <obo:IAO_0000234>Jennifer Jou</obo:IAO_0000234>
+        <rdfs:label>m6A-MTase sequencing assay</rdfs:label>
     </owl:Class>
     
 
@@ -24376,6 +24447,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100001"/>
         <obo:IAO_0000111>panel5 venous blood carbon dioxide assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24392,6 +24464,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100002"/>
         <obo:IAO_0000111>panel5 venous blood sodium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24408,6 +24481,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100003"/>
         <obo:IAO_0000111>panel5 venous blood creatinine assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24424,6 +24498,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100004"/>
         <obo:IAO_0000111>panel5 venous blood potassium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24441,6 +24516,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100056">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>automated differential venous blood basophil count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of basophils in venous blood as part of a automated differential order</obo:IAO_0000115>
@@ -24457,6 +24533,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100057">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003022"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>automated differential venous blood neutrophil count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of neutrophils in venous blood as part of a automated differential order</obo:IAO_0000115>
@@ -24473,6 +24550,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100058">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>automated differential venous blood eosinophil count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of eosinophils in venous blood as part of a automated differential order</obo:IAO_0000115>
@@ -24489,6 +24567,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100059">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003024"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>automated differential venous blood lymphocyte count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of lymphocytes in venous blood as part of a automated differential order</obo:IAO_0000115>
@@ -24505,6 +24584,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100060">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003025"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>automated differential venous blood monocyte count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of monocytes in venous blood as part of a automated differential order</obo:IAO_0000115>
@@ -24520,6 +24600,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100010"/>
         <obo:IAO_0000111>venous blood chloride assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24537,6 +24618,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC with automated differential venous blood RBC count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of RBCs in venous blood as part of a CBC with automated differential order</obo:IAO_0000115>
@@ -24553,6 +24635,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100063">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC with automated differential venous blood platelet count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of platelets in venous blood as part of a CBC with automated differential order</obo:IAO_0000115>
@@ -24569,6 +24652,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100064">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC with automated differential venous blood WBC count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of WBCs in venous blood as part of a CBC with automated differential order</obo:IAO_0000115>
@@ -24585,6 +24669,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100065">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC with automated differential venous blood hematocrit assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the proportion of red blood cells in venous blood as part of a CBC with automated differential order</obo:IAO_0000115>
@@ -24600,6 +24685,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100014"/>
         <obo:IAO_0000111>CBC with automated differential venous blood hemoglobin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24616,6 +24702,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100015"/>
         <obo:IAO_0000111>venous blood phosphate assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24632,6 +24719,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100016"/>
         <obo:IAO_0000111>liver injury venous blood alanine aminotransferase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24648,6 +24736,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100017"/>
         <obo:IAO_0000111>liver injury venous blood human alkaline phosphatase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24664,6 +24753,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100018"/>
         <obo:IAO_0000111>liver injury venous blood bilirubin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24680,6 +24770,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100019"/>
         <obo:IAO_0000111>liver injury venous blood human aspartate aminotransferase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24696,6 +24787,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100020"/>
         <obo:IAO_0000111>venous blood glucose assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24712,6 +24804,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100021"/>
         <obo:IAO_0000111>venous blood magnesium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24729,6 +24822,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100074">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC venous blood RBC count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of RBCs in venous blood as part of a CBC order</obo:IAO_0000115>
@@ -24745,6 +24839,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100075">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC venous blood WBC count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of WBCs in venous blood as part of a CBC order</obo:IAO_0000115>
@@ -24761,6 +24856,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100076">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC venous blood hematocrit assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the proportion of red blood cells in venous blood as part of a CBC order</obo:IAO_0000115>
@@ -24777,6 +24873,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100077">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC venous blood platelet count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of platelets in venous blood as part of a CBC order</obo:IAO_0000115>
@@ -24792,6 +24889,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100014"/>
         <obo:IAO_0000111>CBC venous blood hemoglobin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24809,6 +24907,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100079">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>corrected venous blood leukocyte count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of leukocytes in venous blood as part of a corrected order</obo:IAO_0000115>
@@ -24824,6 +24923,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100018"/>
         <obo:IAO_0000111>liver evaluation venous blood bilirubin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24841,6 +24941,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100081">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>liver evaluation venous blood globulin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An analyte assay that measures the abundance of globulin in venous blood as part of a liver evaluation order</obo:IAO_0000115>
@@ -24856,6 +24957,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100022"/>
         <obo:IAO_0000111>liver evaluation venous blood albumin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24872,6 +24974,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100019"/>
         <obo:IAO_0000111>liver evaluation venous blood human aspartate aminotransferase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24888,6 +24991,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100016"/>
         <obo:IAO_0000111>liver evaluation venous blood alanine aminotransferase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24904,6 +25008,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100017"/>
         <obo:IAO_0000111>liver evaluation venous blood human alkaline phosphatase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24920,6 +25025,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100023"/>
         <obo:IAO_0000111>liver evaluation venous blood protein assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24936,6 +25042,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100010"/>
         <obo:IAO_0000111>basic metabolic panel venous blood chloride assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24952,6 +25059,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100004"/>
         <obo:IAO_0000111>basic metabolic panel venous blood potassium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24968,6 +25076,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100002"/>
         <obo:IAO_0000111>basic metabolic panel venous blood sodium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -24984,6 +25093,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100003"/>
         <obo:IAO_0000111>basic metabolic panel venous blood creatinine assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25000,6 +25110,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100020"/>
         <obo:IAO_0000111>basic metabolic panel venous blood glucose assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25016,6 +25127,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100024"/>
         <obo:IAO_0000111>basic metabolic panel venous blood calcium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25032,6 +25144,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100001"/>
         <obo:IAO_0000111>basic metabolic panel venous blood carbon dioxide assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25048,6 +25161,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100025"/>
         <obo:IAO_0000111>venous blood creatine kinase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25064,6 +25178,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100095">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100024"/>
         <obo:IAO_0000111>venous blood calcium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25081,6 +25196,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100096">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003009"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>venous blood ferritin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An assay that measures ferritin in venous blood</obo:IAO_0000115>
@@ -25096,6 +25212,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100024"/>
         <obo:IAO_0000111>total venous blood calcium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25113,6 +25230,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100098">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>venous blood iron assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An analyte assay that measures the abundance of iron in venous blood</obo:IAO_0000115>
@@ -25129,6 +25247,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100099">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003022"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC with manual differential venous blood band neutrophil count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of band neutrophils in venous blood as part of a CBC with manual differential order</obo:IAO_0000115>
@@ -25145,6 +25264,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100100">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC with manual differential venous blood WBC count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of WBCs in venous blood as part of a CBC with manual differential order</obo:IAO_0000115>
@@ -25161,6 +25281,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100101">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC with manual differential venous blood eosinophil count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of eosinophils in venous blood as part of a CBC with manual differential order</obo:IAO_0000115>
@@ -25177,6 +25298,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100102">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003024"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC with manual differential venous blood lymphocyte count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of lymphocytes in venous blood as part of a CBC with manual differential order</obo:IAO_0000115>
@@ -25193,6 +25315,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100103">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC with manual differential venous blood nucleated RBC count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of nucleated RBCs in venous blood as part of a CBC with manual differential order</obo:IAO_0000115>
@@ -25209,6 +25332,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100104">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003025"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC with manual differential venous blood monocyte count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of monocytes in venous blood as part of a CBC with manual differential order</obo:IAO_0000115>
@@ -25225,6 +25349,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100105">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003022"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC with manual differential venous blood segmented neutrophil count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of segmented neutrophils in venous blood as part of a CBC with manual differential order</obo:IAO_0000115>
@@ -25241,6 +25366,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100106">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC with manual differential venous blood basophil count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of basophils in venous blood as part of a CBC with manual differential order</obo:IAO_0000115>
@@ -25256,6 +25382,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100022"/>
         <obo:IAO_0000111>venous blood albumin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25272,6 +25399,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100025"/>
         <obo:IAO_0000111>cardiac enzymes venous blood creatine kinase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25288,6 +25416,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100023"/>
         <obo:IAO_0000111>venous blood haptoglobin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25304,6 +25433,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100028"/>
         <obo:IAO_0000111>venous blood lactate dehydrogenase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25320,6 +25450,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100023"/>
         <obo:IAO_0000111>venous blood prealbunin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25336,6 +25467,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100029"/>
         <obo:IAO_0000111>lipid panel venous blood triglyceride assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25352,6 +25484,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100030"/>
         <obo:IAO_0000111>lipid panel venous blood high density lipoprotein assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25368,6 +25501,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100031"/>
         <obo:IAO_0000111>lipid panel venous blood cholesterol assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25384,6 +25518,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100032"/>
         <obo:IAO_0000111>lipid panel venous blood low density lipoprotein assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25400,7 +25535,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100116">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>venous blood hemoglobin A1c assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An assay that measures hemoglobin A1c in venous blood</obo:IAO_0000115>
@@ -25417,6 +25552,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100117">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003014"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>venous blood uric acid assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An analyte assay that measures the abundance of uric acid in venous blood</obo:IAO_0000115>
@@ -25432,6 +25568,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100023"/>
         <obo:IAO_0000111>total venous blood protein assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25448,6 +25585,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100033"/>
         <obo:IAO_0000111>venous blood thyroid stimulating hormone assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25464,6 +25602,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100034"/>
         <obo:IAO_0000111>venous blood prostate specific antigen assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25496,6 +25635,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100035"/>
         <obo:IAO_0000111>T4 uptake venous blood T4 assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25512,6 +25652,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100020"/>
         <obo:IAO_0000111>arterial blood glucose assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25529,6 +25670,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100124">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC with manual differential venous blood cell count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of cells in venous blood as part of a CBC with manual differential order</obo:IAO_0000115>
@@ -25544,6 +25686,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100036"/>
         <obo:IAO_0000111>hemoglobin oxygen saturation arterial blood oxygen assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25560,6 +25703,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100126">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100014"/>
         <obo:IAO_0000111>hemoglobin oxygen saturation arterial blood hemoglobin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25576,6 +25720,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100002"/>
         <obo:IAO_0000111>inpatient profile venous blood sodium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25592,6 +25737,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100003"/>
         <obo:IAO_0000111>inpatient profile venous blood creatinine assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25608,6 +25754,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100004"/>
         <obo:IAO_0000111>inpatient profile venous blood potassium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25624,6 +25771,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100001"/>
         <obo:IAO_0000111>inpatient profile venous blood carbon dioxide assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25640,6 +25788,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100131">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100037"/>
         <obo:IAO_0000111>venous blood folic acid assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25657,6 +25806,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100132">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003026"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>count venous blood reticulocyte count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of reticulocytes in venous blood as part of a count order</obo:IAO_0000115>
@@ -25672,6 +25822,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100004"/>
         <obo:IAO_0000111>venous blood potassium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25688,6 +25839,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100134">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100001"/>
         <obo:IAO_0000111>venous blood carbon dioxide assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25705,6 +25857,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100135">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003013"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>venous blood transferrin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An analyte assay that measures the abundance of transferrin in venous blood</obo:IAO_0000115>
@@ -25720,6 +25873,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100136">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100002"/>
         <obo:IAO_0000111>venous blood sodium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25804,6 +25958,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100036"/>
         <obo:IAO_0000111>cooximitery arterial blood oxygen assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25820,6 +25975,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100142">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100014"/>
         <obo:IAO_0000111>cooximitery arterial blood hemoglobin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25836,6 +25992,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100143">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100040"/>
         <obo:IAO_0000111>cooximitery arterial blood methemoglobin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25886,6 +26043,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100146">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100041"/>
         <obo:IAO_0000111>Biosite cardiac panel arterial blood creatine kinase MB assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25903,6 +26061,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100147">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>venous blood fibrinogen assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An assay that measures fibrinogen in venous blood</obo:IAO_0000115>
@@ -25918,6 +26077,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100148">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100001"/>
         <obo:IAO_0000111>comprehensive metabolic panel venous blood carbon dioxide assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25934,6 +26094,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100024"/>
         <obo:IAO_0000111>comprehensive metabolic panel venous blood calcium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25950,6 +26111,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100004"/>
         <obo:IAO_0000111>comprehensive metabolic panel venous blood potassium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25966,6 +26128,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100151">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100002"/>
         <obo:IAO_0000111>comprehensive metabolic panel venous blood sodium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25982,6 +26145,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100152">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100020"/>
         <obo:IAO_0000111>comprehensive metabolic panel venous blood glucose assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -25998,6 +26162,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100153">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100022"/>
         <obo:IAO_0000111>comprehensive metabolic panel venous blood albumin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26014,6 +26179,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100154">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100017"/>
         <obo:IAO_0000111>comprehensive metabolic panel venous blood human alkaline phosphatase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26030,6 +26196,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100155">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100018"/>
         <obo:IAO_0000111>comprehensive metabolic panel venous blood bilirubin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26046,6 +26213,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100156">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100010"/>
         <obo:IAO_0000111>comprehensive metabolic panel venous blood chloride assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26062,6 +26230,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100157">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100019"/>
         <obo:IAO_0000111>comprehensive metabolic panel venous blood human aspartate aminotransferase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26078,6 +26247,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100158">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100023"/>
         <obo:IAO_0000111>comprehensive metabolic panel venous blood protein assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26094,6 +26264,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100159">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100003"/>
         <obo:IAO_0000111>comprehensive metabolic panel venous blood creatinine assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26110,6 +26281,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100160">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100016"/>
         <obo:IAO_0000111>comprehensive metabolic panel venous blood alanine aminotransferase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26126,6 +26298,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100161">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100028"/>
         <obo:IAO_0000111>venous blood LDH assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26142,6 +26315,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100162">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100041"/>
         <obo:IAO_0000111>venous blood creatine kinase MB assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26158,6 +26332,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100163">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100042"/>
         <obo:IAO_0000111>venous blood lactic acid assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26175,6 +26350,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100164">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>venous blood hematocrit assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the proportion of red blood cells in venous blood</obo:IAO_0000115>
@@ -26190,6 +26366,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100003"/>
         <obo:IAO_0000111>venous blood creatinine assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26206,6 +26383,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100166">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100036"/>
         <obo:IAO_0000111>blood gas venous blood oxygen assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26222,6 +26400,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100167">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100024"/>
         <obo:IAO_0000111>ionized venous blood ionized calcium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26238,6 +26417,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100168">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100001"/>
         <obo:IAO_0000111>blood gas venous blood carbon dioxide assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26254,6 +26434,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100169">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100043"/>
         <obo:IAO_0000111>blood gas venous blood bicarbonate assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26270,6 +26451,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100170">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100003"/>
         <obo:IAO_0000111>arterial blood creatinine assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26287,6 +26469,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100171">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000443"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>venous blood tacrolimus assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An analyte assay that measures the abundance of tacrolimus in venous blood</obo:IAO_0000115>
@@ -26302,6 +26485,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100172">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100044"/>
         <obo:IAO_0000111>random venous blood vancomycin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26319,6 +26503,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100173">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000443"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>venous blood mycophenolic acid assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An analyte assay that measures the abundance of mycophenolic acid in venous blood</obo:IAO_0000115>
@@ -26334,6 +26519,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100174">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100001"/>
         <obo:IAO_0000111>non-vented blood gas arterial blood carbon dioxide assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26350,6 +26536,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100175">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100036"/>
         <obo:IAO_0000111>non-vented blood gas arterial blood oxygen assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26366,6 +26553,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100176">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100043"/>
         <obo:IAO_0000111>non-vented blood gas arterial blood bicarbonate assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26382,7 +26570,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100177">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>quantitative venous blood IgG assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An assay that measures IgG in venous blood as part of a quantitative order</obo:IAO_0000115>
@@ -26398,7 +26586,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100178">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>quantitative venous blood IgM assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An assay that measures IgM in venous blood as part of a quantitative order</obo:IAO_0000115>
@@ -26414,7 +26602,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100179">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>quantitative venous blood IgA assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An assay that measures IgA in venous blood as part of a quantitative order</obo:IAO_0000115>
@@ -26430,6 +26618,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100180">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100002"/>
         <obo:IAO_0000111>arterial blood sodium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26446,6 +26635,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100181">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100004"/>
         <obo:IAO_0000111>arterial blood potassium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26462,6 +26652,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100182">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100024"/>
         <obo:IAO_0000111>ionized arterial blood calcium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26478,6 +26669,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100183">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100043"/>
         <obo:IAO_0000111>vented blood gas arterial blood bicarbonate assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26494,6 +26686,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100184">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100036"/>
         <obo:IAO_0000111>vented blood gas arterial blood oxygen assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26510,6 +26703,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100185">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100001"/>
         <obo:IAO_0000111>vented blood gas arterial blood carbon dioxide assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26527,6 +26721,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100186">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>arterial blood hematocrit assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the proportion of red blood cells in arterial blood</obo:IAO_0000115>
@@ -26542,6 +26737,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100187">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100010"/>
         <obo:IAO_0000111>arterial blood chloride assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26558,6 +26754,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100188">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100014"/>
         <obo:IAO_0000111>arterial blood hemoglobin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26575,6 +26772,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100189">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>GEM premier blood gas venous blood hematocrit assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the proportion of red blood cells in venous blood as part of a GEM premier blood gas order</obo:IAO_0000115>
@@ -26590,6 +26788,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100190">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100024"/>
         <obo:IAO_0000111>GEM premier blood gas venous blood ionized calcium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26606,6 +26805,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100191">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100004"/>
         <obo:IAO_0000111>GEM premier blood gas venous blood potassium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26622,6 +26822,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100192">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100036"/>
         <obo:IAO_0000111>GEM premier blood gas venous blood oxygen assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26638,6 +26839,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100193">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100014"/>
         <obo:IAO_0000111>GEM premier blood gas venous blood hemoglobin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26654,6 +26856,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100194">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100043"/>
         <obo:IAO_0000111>GEM premier blood gas venous blood bicarbonate assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26670,6 +26873,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100195">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100020"/>
         <obo:IAO_0000111>GEM premier blood gas venous blood glucose assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26686,6 +26890,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100196">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100002"/>
         <obo:IAO_0000111>GEM premier blood gas venous blood sodium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26702,6 +26907,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100197">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100042"/>
         <obo:IAO_0000111>GEM premier blood gas venous blood lactic acid assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26718,6 +26924,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100198">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100001"/>
         <obo:IAO_0000111>GEM premier blood gas venous blood carbon dioxide assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26734,6 +26941,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100199">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100045"/>
         <obo:IAO_0000111>trough venous blood tobramycin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26750,6 +26958,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100200">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100045"/>
         <obo:IAO_0000111>random venous blood tobramycin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26767,6 +26976,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100201">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC with manual differential venous blood metamyelocyte count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of metamyelocytes in venous blood as part of a CBC with manual differential order</obo:IAO_0000115>
@@ -26782,6 +26992,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100202">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100042"/>
         <obo:IAO_0000111>arterial blood lactic acid assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26799,6 +27010,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100203">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000443"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>venous blood 25-hydroxyvitamin D2 assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An analyte assay that measures the abundance of 25-hydroxyvitamin D2 in venous blood</obo:IAO_0000115>
@@ -26815,6 +27027,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100204">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000443"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>venous blood digoxin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An analyte assay that measures the abundance of digoxin in venous blood</obo:IAO_0000115>
@@ -26847,6 +27060,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100206">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100045"/>
         <obo:IAO_0000111>venous blood tobramycin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26863,6 +27077,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100207">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003165"/>
         <obo:IAO_0000111>CBC with manual differential venous blood myelocyte count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26879,6 +27094,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100208">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100023"/>
         <obo:IAO_0000111>SPEP protein electrophoresis venous blood beta-globin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26895,6 +27111,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100209">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100022"/>
         <obo:IAO_0000111>SPEP protein electrophoresis venous blood albumin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26911,6 +27128,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100210">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100023"/>
         <obo:IAO_0000111>SPEP protein electrophoresis venous blood protein assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26927,6 +27145,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100211">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100044"/>
         <obo:IAO_0000111>trough venous blood vancomycin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26943,6 +27162,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100212">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100023"/>
         <obo:IAO_0000111>hepatic panel venous blood protein assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26959,6 +27179,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100213">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100018"/>
         <obo:IAO_0000111>hepatic panel venous blood bilirubin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26975,6 +27196,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100214">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100016"/>
         <obo:IAO_0000111>hepatic panel venous blood alanine aminotransferase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -26991,6 +27213,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100215">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100019"/>
         <obo:IAO_0000111>hepatic panel venous blood human aspartate aminotransferase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27007,6 +27230,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100216">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100022"/>
         <obo:IAO_0000111>hepatic panel venous blood albumin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27023,6 +27247,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100217">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100017"/>
         <obo:IAO_0000111>hepatic panel venous blood human alkaline phosphatase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27039,7 +27264,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100218">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>estimated venous blood glomerular filtration assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An assay that measures glomerular filtration in venous blood as part of a estimated order</obo:IAO_0000115>
@@ -27055,6 +27280,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100219">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100003"/>
         <obo:IAO_0000111>DT60 venous blood creatinine assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27071,6 +27297,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100220">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100020"/>
         <obo:IAO_0000111>fasting venous blood glucose assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27088,6 +27315,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100221">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000443"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>random venous blood amikacin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An analyte assay that measures the abundance of amikacin in venous blood as part of a random order</obo:IAO_0000115>
@@ -27104,6 +27332,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100222">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000443"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>venous blood ammonia assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An analyte assay that measures the abundance of ammonia in venous blood</obo:IAO_0000115>
@@ -27119,6 +27348,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100223">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100023"/>
         <obo:IAO_0000111>venous blood GGT assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27135,6 +27365,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100224">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100015"/>
         <obo:IAO_0000111>chem11 venous blood phosphate assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27151,6 +27382,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100225">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100004"/>
         <obo:IAO_0000111>chem11 venous blood potassium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27167,6 +27399,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100226">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100024"/>
         <obo:IAO_0000111>chem11 venous blood calcium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27183,6 +27416,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100227">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100020"/>
         <obo:IAO_0000111>chem11 venous blood glucose assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27199,6 +27433,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100228">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100001"/>
         <obo:IAO_0000111>chem11 venous blood carbon dioxide assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27215,6 +27450,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100229">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100022"/>
         <obo:IAO_0000111>chem11 venous blood albumin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27231,6 +27467,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100230">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100002"/>
         <obo:IAO_0000111>chem11 venous blood sodium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27247,6 +27484,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100231">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100021"/>
         <obo:IAO_0000111>chem11 venous blood magnesium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27263,6 +27501,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100232">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100003"/>
         <obo:IAO_0000111>chem11 venous blood creatinine assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27279,6 +27518,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100233">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100010"/>
         <obo:IAO_0000111>chem11 venous blood chloride assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27295,7 +27535,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100234">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>total venous blood IgE assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An assay that measures IgE in venous blood as part of a total order</obo:IAO_0000115>
@@ -27311,6 +27551,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100235">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100019"/>
         <obo:IAO_0000111>chem16 venous blood human aspartate aminotransferase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27327,6 +27568,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100236">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100003"/>
         <obo:IAO_0000111>chem16 venous blood creatinine assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27343,6 +27585,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100237">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100021"/>
         <obo:IAO_0000111>chem16 venous blood magnesium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27359,6 +27602,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100238">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100001"/>
         <obo:IAO_0000111>chem16 venous blood carbon dioxide assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27375,6 +27619,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100239">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100020"/>
         <obo:IAO_0000111>chem16 venous blood glucose assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27391,6 +27636,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100240">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100024"/>
         <obo:IAO_0000111>chem16 venous blood calcium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27407,6 +27653,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100241">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100029"/>
         <obo:IAO_0000111>chem16 venous blood triglyceride assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27423,6 +27670,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100242">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100002"/>
         <obo:IAO_0000111>chem16 venous blood sodium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27439,6 +27687,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100243">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100015"/>
         <obo:IAO_0000111>chem16 venous blood phosphate assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27455,6 +27704,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100244">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100017"/>
         <obo:IAO_0000111>chem16 venous blood human alkaline phosphatase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27471,6 +27721,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100245">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100022"/>
         <obo:IAO_0000111>chem16 venous blood albumin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27487,6 +27738,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100246">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100018"/>
         <obo:IAO_0000111>chem16 venous blood bilirubin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27503,6 +27755,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100247">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100010"/>
         <obo:IAO_0000111>chem16 venous blood chloride assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27519,6 +27772,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100248">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100016"/>
         <obo:IAO_0000111>chem16 venous blood alanine aminotransferase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27535,6 +27789,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100249">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100004"/>
         <obo:IAO_0000111>chem16 venous blood potassium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27551,6 +27806,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100250">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100020"/>
         <obo:IAO_0000111>POC chem8 arterial blood glucose assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27567,6 +27823,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100251">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100024"/>
         <obo:IAO_0000111>POC chem8 arterial blood ionized calcium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27583,6 +27840,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100252">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100004"/>
         <obo:IAO_0000111>POC chem8 arterial blood potassium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27599,6 +27857,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100253">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100002"/>
         <obo:IAO_0000111>POC chem8 arterial blood sodium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27615,6 +27874,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100254">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100003"/>
         <obo:IAO_0000111>POC chem8 arterial blood creatinine assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27632,6 +27892,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100255">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>POC chem8 arterial blood hematocrit assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the proportion of red blood cells in arterial blood as part of a POC chem8 order</obo:IAO_0000115>
@@ -27647,6 +27908,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100256">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100010"/>
         <obo:IAO_0000111>POC chem8 arterial blood chloride assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27663,6 +27925,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100257">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100045"/>
         <obo:IAO_0000111>peak venous blood tobramycin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27696,6 +27959,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100259">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100034"/>
         <obo:IAO_0000111>intact venous blood PTH assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27712,6 +27976,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100260">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100034"/>
         <obo:IAO_0000111>total venous blood PSA assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27728,6 +27993,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100261">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100046"/>
         <obo:IAO_0000111>total venous blood T3 assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27761,6 +28027,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100263">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100031"/>
         <obo:IAO_0000111>total venous blood cholesterol assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27777,6 +28044,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100264">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100029"/>
         <obo:IAO_0000111>venous blood triglyceride assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27862,6 +28130,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100269">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000443"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>venous blood dehydroepiandrosterone assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An analyte assay that measures the abundance of dehydroepiandrosterone in venous blood</obo:IAO_0000115>
@@ -27878,6 +28147,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100270">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000443"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>venous blood cortisol assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An analyte assay that measures the abundance of cortisol in venous blood</obo:IAO_0000115>
@@ -27893,6 +28163,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100271">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100002"/>
         <obo:IAO_0000111>ABL90 panel arterial blood sodium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27909,6 +28180,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100272">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100036"/>
         <obo:IAO_0000111>ABL90 panel arterial blood oxygen assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27925,6 +28197,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100273">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100020"/>
         <obo:IAO_0000111>ABL90 panel arterial blood glucose assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27941,6 +28214,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100274">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100042"/>
         <obo:IAO_0000111>ABL90 panel arterial blood lactic acid assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27957,6 +28231,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100275">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100014"/>
         <obo:IAO_0000111>ABL90 panel arterial blood hemoglobin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27973,6 +28248,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100276">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100010"/>
         <obo:IAO_0000111>ABL90 panel arterial blood chloride assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -27989,6 +28265,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100277">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100001"/>
         <obo:IAO_0000111>ABL90 panel arterial blood carbon dioxide assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28006,6 +28283,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100278">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>ABL90 panel arterial blood hematocrit assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the proportion of red blood cells in arterial blood as part of a ABL90 panel order</obo:IAO_0000115>
@@ -28021,6 +28299,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100279">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100024"/>
         <obo:IAO_0000111>ABL90 panel arterial blood calcium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28037,7 +28316,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100280">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>ABL90 panel arterial blood temperature assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An assay that measures temperature in arterial blood as part of a ABL90 panel order</obo:IAO_0000115>
@@ -28053,6 +28332,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100281">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100043"/>
         <obo:IAO_0000111>ABL90 panel arterial blood bicarbonate assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28069,6 +28349,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100282">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100004"/>
         <obo:IAO_0000111>ABL90 panel arterial blood potassium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28086,6 +28367,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100283">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC with manual differential venous blood promyelocyte count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of promyelocytes in venous blood as part of a CBC with manual differential order</obo:IAO_0000115>
@@ -28101,6 +28383,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100284">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100020"/>
         <obo:IAO_0000111>ABL90 panel venous blood glucose assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28117,6 +28400,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100285">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100014"/>
         <obo:IAO_0000111>ABL90 panel venous blood hemoglobin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28133,6 +28417,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100286">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100024"/>
         <obo:IAO_0000111>ABL90 panel venous blood ionized calcium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28149,6 +28434,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100287">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100001"/>
         <obo:IAO_0000111>ABL90 panel venous blood carbon dioxide assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28166,6 +28452,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100288">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>ABL90 panel venous blood hematocrit assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the proportion of red blood cells in venous blood as part of a ABL90 panel order</obo:IAO_0000115>
@@ -28181,6 +28468,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100289">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100002"/>
         <obo:IAO_0000111>ABL90 panel venous blood sodium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28197,6 +28485,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100290">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100036"/>
         <obo:IAO_0000111>ABL90 panel venous blood oxygen assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28213,6 +28502,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100291">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100043"/>
         <obo:IAO_0000111>ABL90 panel venous blood bicarbonate assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28229,6 +28519,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100292">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100042"/>
         <obo:IAO_0000111>ABL90 panel venous blood lactic acid assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28245,6 +28536,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100293">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100010"/>
         <obo:IAO_0000111>ABL90 panel venous blood chloride assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28261,6 +28553,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100294">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100035"/>
         <obo:IAO_0000111>venous blood T4 assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28277,6 +28570,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100295">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100035"/>
         <obo:IAO_0000111>free venous blood T4 assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28293,6 +28587,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100296">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100004"/>
         <obo:IAO_0000111>ABL90 panel venous blood potassium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28326,6 +28621,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100298">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100022"/>
         <obo:IAO_0000111>bone profile venous blood albumin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28342,6 +28638,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100299">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100024"/>
         <obo:IAO_0000111>bone profile venous blood calcium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28358,6 +28655,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100300">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100017"/>
         <obo:IAO_0000111>bone profile venous blood human alkaline phosphatase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28374,6 +28672,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100301">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100023"/>
         <obo:IAO_0000111>bone profile venous blood protein assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28390,6 +28689,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100302">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100015"/>
         <obo:IAO_0000111>bone profile venous blood phosphate assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28406,6 +28706,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100303">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100001"/>
         <obo:IAO_0000111>ABG/electrolytes arterial blood carbon dioxide assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28422,6 +28723,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100304">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100036"/>
         <obo:IAO_0000111>ABG/electrolytes arterial blood oxygen assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28438,6 +28740,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100305">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100024"/>
         <obo:IAO_0000111>ABG/electrolytes arterial blood ionized calcium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28455,6 +28758,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100306">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC with automated differential venous blood nucleated RBC count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of nucleated RBCs in venous blood as part of a CBC with automated differential order</obo:IAO_0000115>
@@ -28470,6 +28774,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100307">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100040"/>
         <obo:IAO_0000111>ABL90 panel venous blood methemoglobin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28486,6 +28791,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100308">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100040"/>
         <obo:IAO_0000111>ABL90 panel arterial blood methemoglobin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28503,6 +28809,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100309">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000443"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>venous blood valproic acid assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An analyte assay that measures the abundance of valproic acid in venous blood</obo:IAO_0000115>
@@ -28518,6 +28825,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100047"/>
         <obo:IAO_0000111>high sensitivity cardiac/neonatal venous blood c-reactive protein assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28534,6 +28842,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100311">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100003"/>
         <obo:IAO_0000111>POC arterial blood creatinine assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28550,6 +28859,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100312">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100043"/>
         <obo:IAO_0000111>GEM4000 ANLCOOX arterial blood bicarbonate assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28566,6 +28876,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100313">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100036"/>
         <obo:IAO_0000111>GEM4000 ANLCOOX arterial blood oxygen assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28583,6 +28894,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100314">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>GEM4000 ANLCOOX arterial blood hematocrit assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the proportion of red blood cells in arterial blood as part of a GEM4000 ANLCOOX order</obo:IAO_0000115>
@@ -28598,7 +28910,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100315">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>GEM4000 ANLCOOX arterial blood temperature assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An assay that measures temperature in arterial blood as part of a GEM4000 ANLCOOX order</obo:IAO_0000115>
@@ -28614,6 +28926,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100316">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100014"/>
         <obo:IAO_0000111>GEM4000 ANLCOOX arterial blood hemoglobin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28630,6 +28943,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100317">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100004"/>
         <obo:IAO_0000111>GEM4000 ANLCOOX arterial blood potassium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28646,6 +28960,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100318">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100020"/>
         <obo:IAO_0000111>GEM4000 ANLCOOX arterial blood glucose assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28662,6 +28977,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100319">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100024"/>
         <obo:IAO_0000111>GEM4000 ANLCOOX arterial blood ionized calcium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28678,6 +28994,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100320">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100001"/>
         <obo:IAO_0000111>GEM4000 ANLCOOX arterial blood carbon dioxide assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28694,6 +29011,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100321">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100002"/>
         <obo:IAO_0000111>GEM4000 ANLCOOX arterial blood sodium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28710,6 +29028,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100322">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100024"/>
         <obo:IAO_0000111>ionized venous blood calcium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28726,6 +29045,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100323">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100014"/>
         <obo:IAO_0000111>venous blood hemoglobin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28743,6 +29063,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100324">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC with manual differential venous blood megakaryocyte count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of megakaryocytes in venous blood as part of a CBC with manual differential order</obo:IAO_0000115>
@@ -28758,6 +29079,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100325">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100047"/>
         <obo:IAO_0000111>non-cardiac venous blood c-reactive protein assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28774,6 +29096,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100326">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100034"/>
         <obo:IAO_0000111>intraoperative venous blood PTH assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28790,6 +29113,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100327">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100023"/>
         <obo:IAO_0000111>venous blood parathyroid hormone assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28966,6 +29290,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100338">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100018"/>
         <obo:IAO_0000111>liver function venous blood bilirubin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28982,6 +29307,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100339">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100016"/>
         <obo:IAO_0000111>liver function venous blood alanine aminotransferase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -28998,6 +29324,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100340">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100019"/>
         <obo:IAO_0000111>liver function venous blood human aspartate aminotransferase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29014,6 +29341,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100341">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100022"/>
         <obo:IAO_0000111>liver function venous blood albumin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29030,6 +29358,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100342">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100023"/>
         <obo:IAO_0000111>liver function venous blood protein assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29046,6 +29375,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100343">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100017"/>
         <obo:IAO_0000111>liver function venous blood human alkaline phosphatase assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29062,6 +29392,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100344">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100037"/>
         <obo:IAO_0000111>vitamin B12 and Folate venous blood folic acid assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29095,6 +29426,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100346">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003026"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>venous blood reticulocyte count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of reticulocytes in venous blood</obo:IAO_0000115>
@@ -29126,6 +29458,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100348">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100033"/>
         <obo:IAO_0000111>TSH reflex Free T4 venous blood thyroid stimulating hormone assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29142,6 +29475,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100349">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100018"/>
         <obo:IAO_0000111>direct venous blood bilirubin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29158,6 +29492,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100350">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100046"/>
         <obo:IAO_0000111>free venous blood T3 assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29207,6 +29542,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100353">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>hemoglobin and hematocrit venous blood hematocrit assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the proportion of red blood cells in venous blood as part of a hemoglobin and hematocrit order</obo:IAO_0000115>
@@ -29222,6 +29558,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100354">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100014"/>
         <obo:IAO_0000111>hemoglobin and hematocrit venous blood hemoglobin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29238,6 +29575,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100355">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100024"/>
         <obo:IAO_0000111>venous blood ionized calcium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29254,7 +29592,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100356">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>venous blood temperature assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An assay that measures temperature in venous blood</obo:IAO_0000115>
@@ -29270,6 +29608,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100357">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100043"/>
         <obo:IAO_0000111>venous blood bicarbonate assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29286,6 +29625,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100358">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100036"/>
         <obo:IAO_0000111>venous blood oxygen assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29302,6 +29642,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100359">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100039"/>
         <obo:IAO_0000111>venous blood osmolality assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29319,6 +29660,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100360">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>liver fibrosis (chronic viral hepatitis) venous blood platelet count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of platelets in venous blood as part of a liver fibrosis (chronic viral hepatitis) order</obo:IAO_0000115>
@@ -29334,6 +29676,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100361">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100046"/>
         <obo:IAO_0000111>venous blood T3 assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29351,6 +29694,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100362">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003022"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC with manual differential venous blood neutrophil count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of neutrophils in venous blood as part of a CBC with manual differential order</obo:IAO_0000115>
@@ -29383,6 +29727,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100364">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100051"/>
         <obo:IAO_0000111>venous blood beta hydroxybutryic acid assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29400,6 +29745,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100365">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>venous blood megakaryocyte count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of megakaryocytes in venous blood</obo:IAO_0000115>
@@ -29416,6 +29762,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100366">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>venous blood nucleated RBC count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of nucleated RBCs in venous blood</obo:IAO_0000115>
@@ -29432,6 +29779,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100367">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>venous blood WBC count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of WBCs in venous blood</obo:IAO_0000115>
@@ -29448,6 +29796,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100368">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003026"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>automated count venous blood reticulocyte count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of reticulocytes in venous blood as part of a automated count order</obo:IAO_0000115>
@@ -29464,6 +29813,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100369">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000443"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>total venous blood homocysteine assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An analyte assay that measures the abundance of homocysteine in venous blood as part of a total order</obo:IAO_0000115>
@@ -29479,6 +29829,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100370">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100023"/>
         <obo:IAO_0000111>venous blood Ceruloplasmin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29495,6 +29846,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100371">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100043"/>
         <obo:IAO_0000111>GEM4 arterial blood bicarbonate assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29511,6 +29863,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100372">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100042"/>
         <obo:IAO_0000111>GEM4 arterial blood lactic acid assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29527,6 +29880,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100373">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100014"/>
         <obo:IAO_0000111>GEM4 arterial blood hemoglobin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29543,6 +29897,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100374">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100002"/>
         <obo:IAO_0000111>GEM4 arterial blood sodium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29559,6 +29914,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100375">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100004"/>
         <obo:IAO_0000111>GEM4 arterial blood potassium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29575,7 +29931,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100376">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>GEM4 arterial blood temperature assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An assay that measures temperature in arterial blood as part of a GEM4 order</obo:IAO_0000115>
@@ -29591,6 +29947,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100377">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100020"/>
         <obo:IAO_0000111>GEM4 arterial blood glucose assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29607,6 +29964,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100378">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100036"/>
         <obo:IAO_0000111>GEM4 arterial blood oxygen assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29624,6 +29982,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100379">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>GEM4 arterial blood hematocrit assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the proportion of red blood cells in arterial blood as part of a GEM4 order</obo:IAO_0000115>
@@ -29639,6 +29998,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100380">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100024"/>
         <obo:IAO_0000111>GEM4 arterial blood ionized calcium assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29655,6 +30015,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100381">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100001"/>
         <obo:IAO_0000111>GEM4 arterial blood carbon dioxide assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29672,6 +30033,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100382">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>liver fibrosis (NAFLD) venous blood platelet count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of platelets in venous blood as part of a liver fibrosis (NAFLD) order</obo:IAO_0000115>
@@ -29687,6 +30049,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100383">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100051"/>
         <obo:IAO_0000111>venous blood beta hydroxybutric acid assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29704,6 +30067,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100384">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003024"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <obo:IAO_0000111>CBC with manual differential venous blood plasma cell count assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A cytometry assay that measures the count of plasma cells in venous blood as part of a CBC with manual differential order</obo:IAO_0000115>
@@ -29719,6 +30083,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100385">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100023"/>
         <obo:IAO_0000111>venous blood erythropoietin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29735,6 +30100,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100386">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100036"/>
         <obo:IAO_0000111>blood gas arterial blood oxygen assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29751,6 +30117,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100387">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100043"/>
         <obo:IAO_0000111>blood gas arterial blood bicarbonate assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29767,6 +30134,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100388">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100001"/>
         <obo:IAO_0000111>blood gas arterial blood carbon dioxide assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29783,6 +30151,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100389">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100034"/>
         <obo:IAO_0000111>free/total venous blood PSA assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29918,6 +30287,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100397">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100023"/>
         <obo:IAO_0000111>venous blood beta-2-microglobulin assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29934,6 +30304,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100398">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100032"/>
         <obo:IAO_0000111>lipid panel reflex direct venous blood low density lipoprotein assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29950,6 +30321,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100399">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100029"/>
         <obo:IAO_0000111>lipid panel reflex direct venous blood triglyceride assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29966,6 +30338,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100400">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100031"/>
         <obo:IAO_0000111>lipid panel reflex direct venous blood cholesterol assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -29982,6 +30355,7 @@ https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2100401">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2100030"/>
         <obo:IAO_0000111>lipid panel reflex direct venous blood high density lipoprotein assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
