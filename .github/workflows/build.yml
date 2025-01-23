@@ -65,7 +65,7 @@ jobs:
         fi
     - name: Upload slim artifact if changed
       if: env.changed == 'true'
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: ${{ matrix.ontology }}-ext.owl
         path: external-dev/${{ matrix.ontology }}-ext.owl
@@ -79,7 +79,7 @@ jobs:
     - name: Create temporary directory for artifacts
       run: mkdir -p temp-artifacts
     - name: Download all slim artifacts
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         path: temp-artifacts
     - name: Move downloaded artifacts to external-dev
