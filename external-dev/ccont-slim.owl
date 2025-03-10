@@ -1,25 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.enanomapper.net/onto/external/ccont-slim.owl#"
-     xml:base="http://purl.enanomapper.net/onto/external/ccont-slim.owl"
+<rdf:RDF xmlns="http://livercancer.imbi.uni-heidelberg.de/ccont#"
+     xml:base="http://livercancer.imbi.uni-heidelberg.de/ccont"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:pav="http://purl.org/pav/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:ccont="http://livercancer.imbi.uni-heidelberg.de/ccont#"
-     xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/ccont-slim.owl">
-        <pav:importedFrom>https://raw.githubusercontent.com/enanomapper/ontologies/master/internal/ccont-ext.owl</pav:importedFrom>
-        <efo:creator>Matthias Ganzinger, matthias.ganzinger@med.uni-heidelberg.de</efo:creator>
-        <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2025-03-01 01:59:15</oboInOwl:date>
-        <rdfs:label>cell culture ontology (CCONT)</rdfs:label>
-        <owl:versionInfo>1.1</owl:versionInfo>
-        <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
-    </owl:Ontology>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont"/>
     
 
 
@@ -31,58 +19,29 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
-    
-
-
-    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000186 -->
-
-
-    <owl:AnnotationProperty rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000186">
-        <rdfs:label xml:lang="en">Snomedid</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/pav/importedFrom -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/pav/importedFrom"/>
     
 
 
     <!-- http://www.ebi.ac.uk/efo/alternative_term -->
 
-
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/alternative_term"/>
     
 
 
-    <!-- http://www.ebi.ac.uk/efo/creator -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-
-    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/creator"/>
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#auto-generated-by -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0000316 -->
 
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#auto-generated-by"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#date -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#date"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000316"/>
     
 
 
@@ -94,15 +53,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047 -->
 
-
     <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000155"/>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
         <rdfs:label xml:lang="en">mixture</rdfs:label>
     </owl:Class>
     
@@ -110,9 +68,14 @@
 
     <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000048 -->
 
-
     <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000048">
         <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <efo:alternative_term>FBS</efo:alternative_term>
         <rdfs:label xml:lang="en">fetal bovine serum</rdfs:label>
     </owl:Class>
@@ -121,9 +84,14 @@
 
     <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000049 -->
 
-
     <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000049">
         <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">bovine calf serum</rdfs:label>
     </owl:Class>
     
@@ -131,9 +99,14 @@
 
     <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000050 -->
 
-
     <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000050">
         <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>bovine serum</rdfs:label>
     </owl:Class>
     
@@ -141,9 +114,14 @@
 
     <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000051 -->
 
-
     <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000051">
         <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">newborn calf serum</rdfs:label>
     </owl:Class>
     
@@ -151,9 +129,14 @@
 
     <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000052 -->
 
-
     <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000052">
         <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">chicken Serum</rdfs:label>
     </owl:Class>
     
@@ -161,9 +144,14 @@
 
     <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000053 -->
 
-
     <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000053">
         <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">goat serum</rdfs:label>
     </owl:Class>
     
@@ -171,9 +159,14 @@
 
     <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000054 -->
 
-
     <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000054">
         <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">porcine Serum</rdfs:label>
     </owl:Class>
     
@@ -181,9 +174,14 @@
 
     <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000055 -->
 
-
     <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000055">
         <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">rabbit serum</rdfs:label>
     </owl:Class>
     
@@ -191,9 +189,14 @@
 
     <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000056 -->
 
-
     <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000056">
         <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">sheep serum</rdfs:label>
     </owl:Class>
     
@@ -201,9 +204,14 @@
 
     <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000057 -->
 
-
     <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000057">
         <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">human serum</rdfs:label>
     </owl:Class>
     
@@ -211,22 +219,37 @@
 
     <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000058 -->
 
-
     <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000058">
         <rdfs:subClassOf rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">horse serum</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059 -->
+
+    <owl:Class rdf:about="http://livercancer.imbi.uni-heidelberg.de/ccont#CCONT_0000059"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000155 -->
 
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000155"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#MaterialEntity -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.5.0) https://github.com/owlcs/owlapi/ -->
-
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 
