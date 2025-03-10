@@ -1,20 +1,15 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.enanomapper.net/onto/internal/endpoints.owl#"
-     xml:base="http://purl.enanomapper.net/onto/internal/endpoints.owl"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/enanomapper/ontologies/refactor-internal/endpoints.owl#"
+     xml:base="https://raw.githubusercontent.com/enanomapper/ontologies/refactor-internal/endpoints.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://enanomapper.github.io/ontologies/internal/endpoints.owl">
-        <dc:contributor>Nina Jeliazkova</dc:contributor>
-        <dc:contributor>Janna Hastings</dc:contributor>
-        <rdfs:comment>This file is part of the eNanoMapper ontology project (http://www.enanomapper.net/)</rdfs:comment>
-        <dc:contributor>Egon Willighagen</dc:contributor>
-		<dc:contributor>Laurent Winckers</dc:contributor>
-        <rdfs:comment>These toxicological endpoints correspond to those listed in the OECD Harmonized Templates and associated guidelines for determining the toxicological effects of substances. </rdfs:comment>
+     xmlns:onto="http://purl.enanomapper.net/onto/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/enanomapper/ontologies/refactor-internal/endpoints.owl">
+        <owl:versionIRI rdf:resource="http://enanomapper.github.io/ontologies/releases/11.0/internal/endpoints.owl"/>
     </owl:Ontology>
     
 
@@ -27,6 +22,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/submit_to -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.enanomapper.net/onto/submit_to"/>
     
 
 
@@ -48,6 +49,35 @@
     
 
 
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000208 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000208"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000335 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000335"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -61,9 +91,398 @@
 
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1338 -->
 
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1338">
-        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000018"/>
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1338"/>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_0295914 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_0295914">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000063"/>
+        <rdfs:label xml:lang="en">Mitochondrial membrane potential endpoint</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_0801504 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_0801504">
+        <rdfs:subClassOf rdf:nodeID="genid1"/>
+    </owl:Class>
+    <owl:Restriction rdf:nodeID="genid1">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_0801504"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid1"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_1530072 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_1530072">
+        <rdfs:subClassOf rdf:nodeID="genid3"/>
+    </owl:Class>
+    <owl:Restriction rdf:nodeID="genid3">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_1530072"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid3"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_1648790 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_1648790">
+        <rdfs:subClassOf rdf:nodeID="genid5"/>
+        <rdfs:subClassOf rdf:nodeID="genid7"/>
+    </owl:Class>
+    <owl:Restriction rdf:nodeID="genid5">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://purl.enanomapper.net/onto/ENM_3332709"/>
+    </owl:Restriction>
+    <owl:Restriction rdf:nodeID="genid7">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_1648790"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid5"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_1648790"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid7"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_1855822 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_1855822">
+        <rdfs:subClassOf rdf:nodeID="genid9"/>
+    </owl:Class>
+    <owl:Restriction rdf:nodeID="genid9">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0080041"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_1855822"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid9"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_2012430 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_2012430">
+        <rdfs:subClassOf rdf:nodeID="genid11"/>
+    </owl:Class>
+    <owl:Restriction rdf:nodeID="genid11">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://purl.enanomapper.net/onto/ENM_5933788"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_2012430"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid11"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_3221617 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_3221617">
+        <rdfs:subClassOf rdf:nodeID="genid13"/>
+    </owl:Class>
+    <owl:Restriction rdf:nodeID="genid13">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3221617"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid13"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_3323766 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_3323766">
+        <rdfs:subClassOf rdf:nodeID="genid15"/>
+    </owl:Class>
+    <owl:Restriction rdf:nodeID="genid15">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3323766"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid15"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_3323767 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_3323767">
+        <rdfs:subClassOf rdf:nodeID="genid17"/>
+    </owl:Class>
+    <owl:Restriction rdf:nodeID="genid17">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/CHEMINF_000247"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3323767"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid17"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_3323768 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_3323768">
+        <rdfs:subClassOf rdf:nodeID="genid19"/>
+    </owl:Class>
+    <owl:Restriction rdf:nodeID="genid19">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_3323768"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid19"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_3332709 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_3332709">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000037"/>
+        <rdfs:label xml:lang="en">Peroxynitrite-induced luminol chemiluminiscence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_4869361 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_4869361">
+        <rdfs:subClassOf rdf:nodeID="genid21"/>
+    </owl:Class>
+    <owl:Restriction rdf:nodeID="genid21">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_4869361"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid21"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_5562662 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_5562662">
+        <rdfs:subClassOf rdf:nodeID="genid23"/>
+    </owl:Class>
+    <owl:Restriction rdf:nodeID="genid23">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5562662"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid23"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_5723277 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_5723277">
+        <rdfs:subClassOf rdf:nodeID="genid25"/>
+    </owl:Class>
+    <owl:Restriction rdf:nodeID="genid25">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5723277"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid25"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_5933788 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_5933788">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000247"/>
+        <rdfs:label xml:lang="en">BET surface area endpoint</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5933788"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5933788"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://semanticscience.org/resource/CHEMINF_000247"/>
+        <onto:submit_to rdf:resource="http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_5933788"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">BET surface area endpoint</owl:annotatedTarget>
+        <onto:submit_to rdf:resource="http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_6804785 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_6804785">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002752"/>
+        <rdfs:label xml:lang="en">ng/μg protein</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_6804785"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_6804785"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.bioassayontology.org/bao#BAO_0002752"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_6804785"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">ng/μg protein</owl:annotatedTarget>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_7011632 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_7011632">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000037"/>
+        <rdfs:label xml:lang="en">Cellular GSH content</rdfs:label>
+        <rdfs:label xml:lang="en">Cellular glutathione content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_8100001 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_8100001">
+        <rdfs:subClassOf rdf:nodeID="genid33"/>
+    </owl:Class>
+    <owl:Class rdf:nodeID="genid33">
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0000190"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000335"/>
+                <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000435"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_8100001"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid33"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_8553741 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_8553741">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000045"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002752"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080042"/>
+        <rdfs:label xml:lang="en">nanoparticle uptake efficiency endpoint</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_8553741"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_8553741"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_0000045"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_8553741"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.bioassayontology.org/bao#BAO_0002752"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_8553741"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.bioassayontology.org/bao#BAO_0080042"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_8553741"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">nanoparticle uptake efficiency endpoint</owl:annotatedTarget>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_9802609 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_9802609">
+        <rdfs:subClassOf rdf:nodeID="genid43"/>
+    </owl:Class>
+    <owl:Restriction rdf:nodeID="genid43">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.net/onto/ENM_9802609"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid43"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
     
 
 
@@ -446,13 +865,7 @@
         <rdfs:label xml:lang="en">Oxidative stress</rdfs:label>
     </owl:Class>
     
-    <!-- http://purl.enanomapper.net/onto/ENM_7011632 -->
 
-    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_7011632">
-        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000037"/>
-        <rdfs:label xml:lang="en">Cellular glutathione content</rdfs:label>
-        <rdfs:label xml:lang="en">Cellular GSH content</rdfs:label>
-    </owl:Class>
 
     <!-- http://purl.enanomapper.org/onto/ENM_0000038 -->
 
@@ -692,17 +1105,7 @@
         <rdfs:label xml:lang="en">cytotoxicity endpoint</rdfs:label>
     </owl:Class>
     
-    <!-- http://purl.enanomapper.net/onto/ENM_0295914 -->
-    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_0295914">
-	<rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000063"/>
-	<rdfs:label xml:lang="en">Mitochondrial membrane potential endpoint</rdfs:label>
-    </owl:Class>
 
-    <!-- http://purl.enanomapper.net/onto/ENM_3332709 -->
-    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_3332709">
-	<rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000037"/>
-	<rdfs:label xml:lang="en">Peroxynitrite-induced luminol chemiluminiscence</rdfs:label>
-    </owl:Class>
 
     <!-- http://purl.enanomapper.org/onto/ENM_0000066 -->
 
@@ -846,16 +1249,7 @@
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
         <rdfs:label xml:lang="en">density</rdfs:label>
     </owl:Class>
-
-
-
-    <!-- http://purl.enanomapper.org/onto/ENM_0000093 -->
-
-    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000093">
-        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000084"/>
-        <rdfs:label xml:lang="en">effective density</rdfs:label>
-    </owl:Class>
-
+    
 
 
     <!-- http://purl.enanomapper.org/onto/ENM_0000085 -->
@@ -932,6 +1326,33 @@
     
 
 
+    <!-- http://purl.enanomapper.org/onto/ENM_0000093 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000093">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000084"/>
+        <rdfs:label xml:lang="en">effective density</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000279 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000279">
+        <rdfs:subClassOf rdf:nodeID="genid48"/>
+    </owl:Class>
+    <owl:Restriction rdf:nodeID="genid48">
+        <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+        <owl:someValuesFrom rdf:resource="http://purl.enanomapper.net/onto/ENM_8553741"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_8000279"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid48"/>
+        <onto:submit_to rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.enanomapper.org/onto/ENM_8100000 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8100000">
@@ -939,6 +1360,86 @@
         <obo:IAO_0000118>lowest observed effects concentration</obo:IAO_0000118>
         <rdfs:label xml:lang="en">LOEC</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000072 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000072">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
+        <rdfs:isDefinedBy>The ability of a chemical substance to dissolve in a solid, liquid, or gaseous solvent to form a homogeneous solution. The solubility of a given substance is dependent on the solvent used, as well as on temperature and pressure.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">solubility endpoint</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000072"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000072"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000072"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+        <owl:annotatedTarget>The ability of a chemical substance to dissolve in a solid, liquid, or gaseous solvent to form a homogeneous solution. The solubility of a given substance is dependent on the solvent used, as well as on temperature and pressure.</owl:annotatedTarget>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000072"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">solubility endpoint</owl:annotatedTarget>
+        <onto:submit_to rdf:resource="http://www.bioassayontology.org/bao#"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000082 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000082">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000072"/>
+        <rdfs:isDefinedBy xml:lang="en">The ability of a chemical substance to dissolve in some organic molecules.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Solubility in organic solvents</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000082"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000082"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_9000072"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000082"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+        <owl:annotatedTarget xml:lang="en">The ability of a chemical substance to dissolve in some organic molecules.</owl:annotatedTarget>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.enanomapper.org/onto/ENM_9000082"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">Solubility in organic solvents</owl:annotatedTarget>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_000247 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000247"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000143 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000143"/>
     
 
 
@@ -954,6 +1455,18 @@
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0000190 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000190"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000435 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000435"/>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0002128 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002128">
@@ -965,9 +1478,61 @@
     <!-- http://www.bioassayontology.org/bao#BAO_0002162 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002162"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002752 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002752"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002775 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002775">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_9000072"/>
+        <rdfs:isDefinedBy xml:lang="en">The ability of a chemical substance to dissolve in water.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">aqueous solubility</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.bioassayontology.org/bao#BAO_0002775"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.bioassayontology.org/bao#BAO_0002775"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.enanomapper.org/onto/ENM_9000072"/>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.bioassayontology.org/bao#BAO_0002775"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+        <owl:annotatedTarget xml:lang="en">The ability of a chemical substance to dissolve in water.</owl:annotatedTarget>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.bioassayontology.org/bao#BAO_0002775"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">aqueous solubility</owl:annotatedTarget>
+        <onto:submit_to rdf:resource="http://purl.bioontology.org/ontology/npo"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0080041 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080041"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0080042 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080042"/>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 
