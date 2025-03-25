@@ -43,9 +43,9 @@ replace_namespaces() {
 
 # Remove 
 echo Removing files
-rm external-dev/term-files/add/*
-rm external-dev/term-files/remove/*
-rm external-dev/templates/*subclass_assertion.csv
+rm external-dev/term-files/add/* # Managed in slimmer config files
+rm external-dev/term-files/remove/* # Managed in slimmer config files
+#rm external-dev/templates/*subclass_assertion.csv
 
 
 # List of ontologies
