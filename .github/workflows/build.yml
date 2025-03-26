@@ -3,12 +3,18 @@ on:
   workflow_dispatch:
   pull_request:
     paths:
-     - 'config/*'
+     - 'config.yaml'
+     - '.github/workflows/build.yml'
+     - './config/*'
+     - './internal*'
+     - './external*'
   push:
     paths:
      - 'config.yaml'
      - '.github/workflows/build.yml'
      - './config/*'
+     - './internal*'
+     - './external*'
   schedule:
     - cron: 1 0 1 1-12 *
 jobs:
