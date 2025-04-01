@@ -1,4 +1,4 @@
-name: Build slims
+name: Build slims (Matrix)
 on:
   workflow_dispatch:
   pull_request:
@@ -18,17 +18,21 @@ on:
   schedule:
     - cron: 1 0 1 1-12 *
 jobs:
-  build:
+  setup:
     runs-on: ubuntu-latest
+    outputs:
+      slimmer: ${{ steps.config.outputs.slimmer }}
+      robot: ${{ steps.config.outputs.robot }}
+      robot_jar: ${{ steps.config.outputs.robot_jar }}
     steps:
     - name: Check out repository
       uses: actions/checkout@v3
       with:
-       token: ${{ secrets.PAT }} 
+       token: ${{ secrets.PAT }}
     - name: Convert slimmer config to ROBOT term files
       run: bash scripts/build-workflow/slimmer2robot.sh
-    # Get slimmer and robot
-    - name: add slimmer and robot URLs to environment
+    - name: Extract config values
+      id: config
       run: |
         echo $(java --version)
         config_file="config.yaml"
@@ -54,142 +58,55 @@ jobs:
         echo SLIMMER: $slimmer
         echo ROBOT JAR: $robot_jar
         echo ROBOT WRAPPER: $robot
-        echo 'slimmer='${slimmer}'' >> $GITHUB_ENV
-        echo 'robot='${robot}'' >> $GITHUB_ENV
-        echo 'robot_jar='${robot_jar}'' >> $GITHUB_ENV
+        echo "slimmer=${slimmer}" >> $GITHUB_OUTPUT
+        echo "robot=${robot}" >> $GITHUB_OUTPUT
+        echo "robot_jar=${robot_jar}" >> $GITHUB_OUTPUT
+    - name: Authorize running build scripts
+      run: chmod 755 scripts/build-workflow/*.sh
+
+  build:
+    needs: setup
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        ontology: [aopo, bao, bfo, bto, ccont, cheminf, chebi, chmo, clo, efo, envo, fabio, go, iao, ncit, npo, oae, obcs, obi, pato, sio, uberon, uo, msio]
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+      with:
+       token: ${{ secrets.PAT }}
     - name: get slimmer
-      run: wget ${{ env.slimmer }}
+      run: wget ${{ needs.setup.outputs.slimmer }}
     - name: get robot
       run: |
-        wget ${{ env.robot }}
-        wget ${{ env.robot_jar}}
-  
-  # build all ontologies
-  # Authorize running build script
-    - name: authorize running build scripts
-      run: chmod 755 scripts/build-workflow/*.sh
-  
-  # build aopo
-    - name: build-aopo
-      if: always()
-      run: bash scripts/build-workflow/build.sh aopo
-  
-  # build bao
-    - name: build-bao
-      if: always()
-      run: bash scripts/build-workflow/build.sh bao
-  
-  # build bfo
-    - name: build-bfo
-      if: always()
-      run: bash scripts/build-workflow/build.sh bfo
-  
-  # build bto
-    - name: build-bto
-      if: always()
-      run: bash scripts/build-workflow/build.sh bto
-  
-  # build ccont
-    - name: build-ccont
-      if: always()
-      run: bash scripts/build-workflow/build.sh ccont
-  
-  # build cheminf
-    - name: build-cheminf
-      if: always()
-      run: bash scripts/build-workflow/build.sh cheminf
-    
-  # build chebi
-    - name: build-chebi
-      if: always()
-      run: bash scripts/build-workflow/build.sh chebi
-  
-  # build chmo
-    - name: build-chmo
-      if: always()
-      run: bash scripts/build-workflow/build.sh chmo
-  
-  # build clo
-    - name: build-clo
-      if: always()
-      run: bash scripts/build-workflow/build.sh clo
-  
-  # build efo
-    - name: build-efo
-      if: always()
-      run: bash scripts/build-workflow/build.sh efo
-  
-  # build envo
-    - name: build-envo
-      if: always()
-      run: bash scripts/build-workflow/build.sh envo
-  
-  # build fabio
-    - name: build-fabio
-      if: always()
-      run: bash scripts/build-workflow/build.sh fabio
-  
-  # build go
-    - name: build-go
-      if: always()
-      run: bash scripts/build-workflow/build.sh go
-  
-  # build iao
-    - name: build-iao
-      if: always()
-      run: bash scripts/build-workflow/build.sh iao
-  
-  # build ncit
-    - name: build-ncit
-      if: always()
-      run: bash scripts/build-workflow/build.sh ncit
-  
-  # build npo
-    - name: build-npo
-      if: always()
-      run: bash scripts/build-workflow/build.sh npo
-  
-  # build oae
-    - name: build-oae
-      if: always()
-      run: bash scripts/build-workflow/build.sh oae
-  
-  # build obcs
-    - name: build-obcs
-      if: always()
-      run: bash scripts/build-workflow/build.sh obcs
-  
-  # build obi
-    - name: build-obi
-      if: always()
-      run: bash scripts/build-workflow/build.sh obi
-  
-  # build pato
-    - name: build-pato
-      if: always()
-      run: bash scripts/build-workflow/build.sh pato
-  
-  # build sio
-    - name: build-sio
-      if: always()
-      run: bash scripts/build-workflow/build.sh sio
-  
-  # build uberon
-    - name: build-uberon
-      if: always()
-      run: bash scripts/build-workflow/build.sh uberon
-  
-  # build uo
-    - name: build-uo
-      if: always()
-      run: bash scripts/build-workflow/build.sh uo
+        wget ${{ needs.setup.outputs.robot }}
+        wget ${{ needs.setup.outputs.robot_jar }}
+    - name: build-${{ matrix.ontology }}
+      run: bash scripts/build-workflow/build.sh ${{ matrix.ontology }}
+    - name: Upload built ontology
+      uses: actions/upload-artifact@v3
+      with:
+        name: ${{ matrix.ontology }}-owl
+        path: external-dev/${{ matrix.ontology }}.owl
+        retention-days: 1
 
-  # build msio
-    - name: build-msio
-      if: always()
-      run: bash scripts/build-workflow/build.sh msio
-
-  # Commit and push
+  commit:
+    needs: [setup, build]
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.PAT }}
+    - name: Download all built ontologies
+      uses: actions/download-artifact@v3
+      with:
+        path: artifacts
+    - name: Move artifacts to external-dev
+      run: |
+        mkdir -p external-dev
+        find artifacts -name "*.owl" -exec cp {} external-dev/ \;
     - name: Commit OWL files
       run: |
         if [[ "${{ github.ref_name }}" == *"merge"* ]]; then
@@ -204,8 +121,8 @@ jobs:
         if git diff-index --quiet HEAD --; then
           echo "No changes to commit."
         else
-            git commit -m "Actions - build updated" ./external-dev/*.owl || true
-          fi
+          git commit -m "Actions - build updated" ./external-dev/*.owl || true
+        fi
         # Check if there are changes to push
         if [[ $(git rev-parse --abbrev-ref HEAD) == "${{ github.ref_name }}" ]]; then
           if [ -n "$(git cherry -v)" ]; then
@@ -214,4 +131,3 @@ jobs:
             echo "No changes to push."
           fi
         fi
-
