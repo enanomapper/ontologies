@@ -25,10 +25,10 @@ jobs:
       run: |
         pip install --upgrade pip
         pip install wheel setuptools pip --upgrade
-        pip install -r scripts/src/tests/on_push_tests/requirements.txt
+        pip install -r tests/on_push_tests/requirements.txt
 
     - name: Run tests
-      run: python -m unittest discover scripts/src/tests/on_push_tests/
+      run: python -m unittest discover tests/on_push_tests/
     - name: Create issue about failure
       if: failure()
       uses: JasonEtco/create-an-issue@v2

@@ -25,6 +25,8 @@ jobs:
       uses: actions/checkout@v3
       with:
        token: ${{ secrets.PAT }} 
+    - name: Convert slimmer config to ROBOT term files
+      run: bash scripts/build-workflow/slimmer2robot.sh
     # Get slimmer and robot
     - name: add slimmer and robot URLs to environment
       run: |
@@ -62,153 +64,153 @@ jobs:
         wget ${{ env.robot }}
         wget ${{ env.robot_jar}}
   
-  # slim all ontologies
-  # Authorize running slim script
-    - name: authorize running slim scripts
-      run: chmod 755 scripts/src/build-workflow/*.sh
+  # build all ontologies
+  # Authorize running build script
+    - name: authorize running build scripts
+      run: chmod 755 scripts/build-workflow/*.sh
   
-  # Slim aopo
-    - name: slim-aopo
+  # build aopo
+    - name: build-aopo
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh aopo
+      run: bash scripts/build-workflow/build.sh aopo
   
-  # Slim bao
-    - name: slim-bao
+  # build bao
+    - name: build-bao
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh bao
+      run: bash scripts/build-workflow/build.sh bao
   
-  # Slim bfo
-    - name: slim-bfo
+  # build bfo
+    - name: build-bfo
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh bfo
+      run: bash scripts/build-workflow/build.sh bfo
   
-  # Slim bto
-    - name: slim-bto
+  # build bto
+    - name: build-bto
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh bto
+      run: bash scripts/build-workflow/build.sh bto
   
-  # Slim ccont
-    - name: slim-ccont
+  # build ccont
+    - name: build-ccont
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh ccont
+      run: bash scripts/build-workflow/build.sh ccont
   
-  # Slim cheminf
-    - name: slim-cheminf
+  # build cheminf
+    - name: build-cheminf
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh cheminf
+      run: bash scripts/build-workflow/build.sh cheminf
     
-  # Slim chebi
-    - name: slim-chebi
+  # build chebi
+    - name: build-chebi
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh chebi
+      run: bash scripts/build-workflow/build.sh chebi
   
-  # Slim chmo
-    - name: slim-chmo
+  # build chmo
+    - name: build-chmo
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh chmo
+      run: bash scripts/build-workflow/build.sh chmo
   
-  # Slim clo
-    - name: slim-clo
+  # build clo
+    - name: build-clo
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh clo
+      run: bash scripts/build-workflow/build.sh clo
   
-  # Slim efo
-    - name: slim-efo
+  # build efo
+    - name: build-efo
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh efo
+      run: bash scripts/build-workflow/build.sh efo
   
-  # Slim envo
-    - name: slim-envo
+  # build envo
+    - name: build-envo
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh envo
+      run: bash scripts/build-workflow/build.sh envo
   
-  # Slim fabio
-    - name: slim-fabio
+  # build fabio
+    - name: build-fabio
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh fabio
+      run: bash scripts/build-workflow/build.sh fabio
   
-  # Slim go
-    - name: slim-go
+  # build go
+    - name: build-go
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh go
+      run: bash scripts/build-workflow/build.sh go
   
-  # Slim iao
-    - name: slim-iao
+  # build iao
+    - name: build-iao
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh iao
+      run: bash scripts/build-workflow/build.sh iao
   
-  # Slim ncit
-    - name: slim-ncit
+  # build ncit
+    - name: build-ncit
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh ncit
+      run: bash scripts/build-workflow/build.sh ncit
   
-  # Slim npo
-    - name: slim-npo
+  # build npo
+    - name: build-npo
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh npo
+      run: bash scripts/build-workflow/build.sh npo
   
-  # Slim oae
-    - name: slim-oae
+  # build oae
+    - name: build-oae
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh oae
+      run: bash scripts/build-workflow/build.sh oae
   
-  # Slim obcs
-    - name: slim-obcs
+  # build obcs
+    - name: build-obcs
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh obcs
+      run: bash scripts/build-workflow/build.sh obcs
   
-  # Slim obi
-    - name: slim-obi
+  # build obi
+    - name: build-obi
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh obi
+      run: bash scripts/build-workflow/build.sh obi
   
-  # Slim pato
-    - name: slim-pato
+  # build pato
+    - name: build-pato
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh pato
+      run: bash scripts/build-workflow/build.sh pato
   
-  # Slim sio
-    - name: slim-sio
+  # build sio
+    - name: build-sio
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh sio
+      run: bash scripts/build-workflow/build.sh sio
   
-  # Slim uberon
-    - name: slim-uberon
+  # build uberon
+    - name: build-uberon
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh uberon
+      run: bash scripts/build-workflow/build.sh uberon
   
-  # Slim uo
-    - name: slim-uo
+  # build uo
+    - name: build-uo
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh uo
+      run: bash scripts/build-workflow/build.sh uo
 
-  # Slim msio
-    - name: slim-msio
+  # build msio
+    - name: build-msio
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh msio
+      run: bash scripts/build-workflow/build.sh msio
 
   # apply props bao
     - name: Apply props bao
       if: always()
-      run: bash scripts/src/build-workflow/props.sh bao
+      run: bash scripts/build-workflow/props.sh bao
   
   # apply props npo
     - name: Apply props npo
       if: always()
-      run: bash scripts/src/build-workflow/props.sh npo
+      run: bash scripts/build-workflow/props.sh npo
   
   # apply props sio
     - name: Apply props sio
       if: always()
-      run: bash scripts/src/build-workflow/props.sh sio
+      run: bash scripts/build-workflow/props.sh sio
   
     - name: Apply props cheminf
       if: always()
-      run: bash scripts/src/build-workflow/props.sh cheminf
+      run: bash scripts/build-workflow/props.sh cheminf
 
     - name: Apply props ro
       if: always()
-      run: bash scripts/src/build-workflow/props.sh ro
+      run: bash scripts/build-workflow/props.sh ro
   # Commit and push
     - name: Commit OWL files
       run: |
@@ -224,7 +226,7 @@ jobs:
         if git diff-index --quiet HEAD --; then
           echo "No changes to commit."
         else
-            git commit -m "Actions - slim updated" ./external-dev/*.owl || true
+            git commit -m "Actions - build updated" ./external-dev/*.owl || true
           fi
         # Check if there are changes to push
         if [[ $(git rev-parse --abbrev-ref HEAD) == "${{ github.ref_name }}" ]]; then

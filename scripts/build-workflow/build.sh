@@ -1,4 +1,18 @@
 #!/bin/bash
+
+# Check if an ontology parameter was provided
+if [ $# -eq 1 ]; then
+    # Process only the specified ontology
+    ontologies=("$1")
+    echo "Processing single ontology: $1"
+else
+    # List of all ontologies (original behavior)
+    ontologies=("fabio" "aopo" "obi" "bfo" "ccont" "pato" "cheminf" "sio" "chmo" "npo" 
+                "uo" "bao" "ncit" "uberon" "chebi" "oae" "envo" "go" "efo" "obcs" "bto" 
+                "cito" "clo" "iao" "ro" "msio")
+    echo "Processing all ontologies"
+fi
+
 wget -nc https://github.com/ontodev/robot/raw/master/bin/robot
 wget -nc https://github.com/ontodev/robot/releases/download/v1.9.6/robot.jar
 # Patterns to look for in the .iris files
@@ -42,16 +56,10 @@ replace_namespaces() {
 }
 
 # Remove 
-echo Removing files
-rm external-dev/term-files/add/* # Managed in slimmer config files
-rm external-dev/term-files/remove/* # Managed in slimmer config files
+#echo Removing files
+#rm external-dev/term-files/add/* # Managed in slimmer config files
+#rm external-dev/term-files/remove/* # Managed in slimmer config files
 #rm external-dev/templates/*subclass_assertion.csv
-
-
-# List of ontologies
-ontologies=("fabio" "aopo" "obi" "bfo" "ccont" "pato" "cheminf" "sio" "chmo" "npo" 
-            "uo" "bao" "ncit" "uberon" "chebi" "oae" "envo" "go" "efo" "obcs" "bto" 
-            "cito" "clo" "iao" "ro" "msio")
 
 # Process each ontology
 for ONTO in "${ontologies[@]}"; do
@@ -65,11 +73,11 @@ for ONTO in "${ontologies[@]}"; do
     tmp_subclass_assertion="external-dev/templates/${ONTO}_subclass_assertion.csv.tmp"
 
     # Ensure the temporary files are empty at the start
-    > "$tmp_add_with_descendants"
-    > "$tmp_add_without_descendants"
-    > "$tmp_remove_with_descendants"
-    > "$tmp_remove_without_descendants"
-    > "$tmp_subclass_assertion"
+     > "$tmp_add_with_descendants"
+     > "$tmp_add_without_descendants"
+     > "$tmp_remove_with_descendants"
+     > "$tmp_remove_without_descendants"
+     > "$tmp_subclass_assertion"
 
     # Initialize the SC flag
     SC=False
