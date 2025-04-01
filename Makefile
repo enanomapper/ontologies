@@ -148,7 +148,7 @@ process-ontologies: download-robot setup process-config-files
 process-single-ontology:
 	@echo "Downloading $(ONTO) ontology..."
 	@$(WGET) -O $(TMP_DIR)/$(ONTO).owl $$(grep "owl=" $(CONFIG_DIR)/$(ONTO).props | cut -d'=' -f2)
-	
+	@head $(TMP_DIR)/$(ONTO).owl
 	@# Special case for NPO
 	@if [[ "$(ONTO)" == "npo" ]]; then \
 		echo "Reasoning NPO (ELK)"; \
