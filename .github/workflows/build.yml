@@ -29,21 +29,30 @@ jobs:
     - name: add slimmer and robot URLs to environment
       run: |
         echo $(java --version)
-        python -c "
-        import yaml
-        with open('config.yaml', 'r') as file:
-            config = yaml.safe_load(file)
-            slimmer = config.get('slimmer', '')
-            robot_jar = config.get('robot-jar', '')
-            robot = config.get('robot-wrapper', '')
-            print(f'SLIMMER: {slimmer}')
-            print(f'ROBOT JAR: {robot_jar}')
-            print(f'ROBOT WRAPPER: {robot}')
-            with open('${GITHUB_ENV}', 'a') as env_file:
-            env_file.write(f'slimmer={slimmer}\n')
-            env_file.write(f'robot={robot}\n')
-            env_file.write(f'robot_jar={robot_jar}\n')
-        "
+        config_file="config.yaml"
+        robot_jar=""
+        robot=""
+        slimmer=""
+        while IFS=":" read -r key value; do
+          key=$(echo "$key" | tr -d '[:space:]')
+          case "$key" in
+            robot-jar)
+              robot_jar=$(echo "$value" | tr -d '[:space:]')
+              ;;
+            robot-wrapper)
+              robot=$(echo "$value" | tr -d '[:space:]')
+              ;;
+            slimmer)
+              slimmer=$(echo "$value" | tr -d '[:space:]')
+              ;;
+          esac
+        done < "$config_file"
+        echo SLIMMER: $slimmer
+        echo ROBOT JAR: $robot_jar
+        echo ROBOT WRAPPER: $robot
+        echo 'slimmer='${slimmer}'' >> $GITHUB_ENV
+        echo 'robot='${robot}'' >> $GITHUB_ENV
+        echo 'robot_jar='${robot_jar}'' >> $GITHUB_ENV
     - name: get slimmer
       run: wget ${{ env.slimmer }}
     - name: get robot
