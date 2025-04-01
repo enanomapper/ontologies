@@ -408,8 +408,48 @@
     <!-- http://purl.obolibrary.org/obo/GO_0002433 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0002433">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0002768"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006909"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0002252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0002768"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006909"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An immune response-regulating cell surface receptor signaling pathway that contributes to the endocytic engulfment of external particulate material by phagocytes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>immune response-regulating cell surface receptor signalling pathway involved in phagocytosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>phagocytosis triggered by activation of immune response cell surface activating receptor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0002433</oboInOwl:id>
+        <rdfs:label>immune response-regulating cell surface receptor signaling pathway involved in phagocytosis</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0002433"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An immune response-regulating cell surface receptor signaling pathway that contributes to the endocytic engulfment of external particulate material by phagocytes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:add</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:bf</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO_REF:0000022</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0781735149</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0002433"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>immune response-regulating cell surface receptor signalling pathway involved in phagocytosis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -2193,13 +2233,104 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0016175">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003824"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050664"/>
+        <obo:IAO_0000115>Catalysis of the reaction: NAD(P)H + O2 = NAD(P)H + O2-.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/24728</obo:IAO_0000233>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-1222376</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-1236967</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-1497810</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-5218841</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-5668629</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-5668718</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-5668731</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-6789092</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-6807557</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-9673797</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>molecular_function</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>cytochrome B-245</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0016175</oboInOwl:id>
+        <rdfs:label>superoxide-generating NAD(P)H oxidase activity</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016175"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Catalysis of the reaction: NAD(P)H + O2 = NAD(P)H + O2-.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:10806195</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016175"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-1222376</owl:annotatedTarget>
+        <rdfs:label>NOX2 generates superoxide from oxygen</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016175"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-1236967</owl:annotatedTarget>
+        <rdfs:label>Alkalization of the phagosomal lumen by NOX2</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016175"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-1497810</owl:annotatedTarget>
+        <rdfs:label>Uncoupled eNOS favours the formation of superoxide</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016175"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-5218841</owl:annotatedTarget>
+        <rdfs:label>NADPH oxidase 2 generates superoxide from oxygen</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016175"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-5668629</owl:annotatedTarget>
+        <rdfs:label>Production of phagocyte oxygen radicals by NOX2 complex bound to RAC2:GTP</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016175"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-5668718</owl:annotatedTarget>
+        <rdfs:label>NOX1 complex:RAC1:GTP generates superoxide from oxygen</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016175"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-5668731</owl:annotatedTarget>
+        <rdfs:label>NOX3 complex:RAC1:GTP generates superoxide from oxygen</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016175"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-6789092</owl:annotatedTarget>
+        <rdfs:label>NOX2 generates superoxide anion from oxygen</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016175"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-6807557</owl:annotatedTarget>
+        <rdfs:label>NOX4, NOX5 reduce O2 to O2.-</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016175"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-9673797</owl:annotatedTarget>
+        <rdfs:label>NOX1 complex:pp-DVL:RAC1:GTP generates superoxide from oxygen</rdfs:label>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0016176 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0016176"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0016176">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0106292"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -4915,6 +5046,84 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0038096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0038096">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0038094"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006909"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0002431"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0002433"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0002768"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0038094"/>
+        <obo:IAO_0000115>An Fc-gamma receptor signaling pathway that contributes to the endocytic engulfment of external particulate material by phagocytes.</obo:IAO_0000115>
+        <oboInOwl:created_by>bf</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-02-16T05:26:25Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-2029480</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-9664422</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Fc gamma receptor-dependent phagocytosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Fc-gamma receptor signalling pathway involved in phagocytosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Fcgamma receptor-mediated phagocytosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>IgG-mediated phagocytosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0038096</oboInOwl:id>
+        <rdfs:label>Fc-gamma receptor signaling pathway involved in phagocytosis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0038096"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An Fc-gamma receptor signaling pathway that contributes to the endocytic engulfment of external particulate material by phagocytes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:phg</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:12488490</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:15466916</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0038096"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-2029480</owl:annotatedTarget>
+        <rdfs:label>Fcgamma receptor (FCGR) dependent phagocytosis</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0038096"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-9664422</owl:annotatedTarget>
+        <rdfs:label>FCGR3A-mediated phagocytosis</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0038096"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Fc gamma receptor-dependent phagocytosis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:18832707</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0038096"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Fc-gamma receptor signalling pathway involved in phagocytosis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:bf</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0038096"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Fcgamma receptor-mediated phagocytosis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:15466916</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0038096"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>IgG-mediated phagocytosis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:1248849</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0039531 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0039531">
@@ -5361,7 +5570,31 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043281">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <obo:IAO_0000115>OBSOLETE. Any process that modulates the activity of a cysteine-type endopeptidase involved in apoptosis.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/28468</obo:IAO_0000233>
+        <oboInOwl:hasAlternativeId>GO:0043026</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasBroadSynonym>regulation of caspase activity</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-205025</oboInOwl:hasDbXref>
+        <oboInOwl:hasNarrowSynonym>regulation of caspase activation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0043281</oboInOwl:id>
+        <rdfs:comment>The reason for obsoletion is that this term represents a GO-CAM model.</rdfs:comment>
+        <rdfs:label>obsolete regulation of cysteine-type endopeptidase activity involved in apoptotic process</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0043281"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>OBSOLETE. Any process that modulates the activity of a cysteine-type endopeptidase involved in apoptosis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:jl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:mtg_apoptosis</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0043281"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-205025</owl:annotatedTarget>
+        <rdfs:label>NADE modulates death signalling</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -9152,6 +9385,48 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0106291 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0106291">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0016175"/>
+        <obo:IAO_0000115>Catalysis of the reaction: NADH + 2 O2 = H+ + NAD+ + 2 superoxide.</obo:IAO_0000115>
+        <oboInOwl:created_by>hjd</oboInOwl:created_by>
+        <oboInOwl:creation_date>2020-08-19T15:56:43Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>RHEA:63184</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>molecular_function</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0106291</oboInOwl:id>
+        <rdfs:label>superoxide-generating NADH oxidase activity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0106291"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Catalysis of the reaction: NADH + 2 O2 = H+ + NAD+ + 2 superoxide.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>RHEA:63184</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0106292 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0106292">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0016175"/>
+        <obo:IAO_0000115>Catalysis of the reaction: NADPH + 2 O2 = H+ + NADP+ + 2 superoxide.</obo:IAO_0000115>
+        <oboInOwl:created_by>hjd</oboInOwl:created_by>
+        <oboInOwl:creation_date>2020-08-19T15:58:36Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>RHEA:63180</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>molecular_function</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0106292</oboInOwl:id>
+        <rdfs:label>superoxide-generating NADPH oxidase activity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0106292"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Catalysis of the reaction: NADPH + 2 O2 = H+ + NADP+ + 2 superoxide.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>RHEA:63180</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0110020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0110020">
@@ -9898,19 +10173,40 @@
 
     <!-- http://purl.obolibrary.org/obo/GO_0140971 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0140971"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0140971">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0141085"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0140972 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0140972"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0140972">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0141086"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0140973 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0140973"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0140973">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0141087"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -9923,8 +10219,123 @@
     <!-- http://purl.obolibrary.org/obo/GO_0141085 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0141085">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0065007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0141084"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0039531"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0141084"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of an inflammasome-mediated signaling pathway.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/25772</obo:IAO_0000233>
+        <oboInOwl:created_by>pg</oboInOwl:created_by>
+        <oboInOwl:creation_date>2023-07-18T12:37:42Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>regulation of inflammasome-mediated signal transduction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0141085</oboInOwl:id>
+        <rdfs:label>regulation of inflammasome-mediated signaling pathway</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0141085"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the frequency, rate or extent of an inflammasome-mediated signaling pathway.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:33467177</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0141086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0141086">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0065007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0141084"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0039531"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0039532"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0141085"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0141084"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that stops, prevents or reduces the frequency, rate or extent of an inflammasome-mediated signaling pathway.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/25772</obo:IAO_0000233>
+        <oboInOwl:created_by>pg</oboInOwl:created_by>
+        <oboInOwl:creation_date>2023-07-18T12:40:09Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>negative regulation of inflammasome-mediated signal transduction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0141086</oboInOwl:id>
+        <rdfs:label>negative regulation of inflammasome-mediated signaling pathway</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0141086"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that stops, prevents or reduces the frequency, rate or extent of an inflammasome-mediated signaling pathway.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:33467177</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0141087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0141087">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0065007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0141084"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0062207"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0062208"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0141085"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1902533"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0141084"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that activates or increases the frequency, rate or extent of an inflammasome-mediated signaling pathway.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/25772</obo:IAO_0000233>
+        <oboInOwl:created_by>pg</oboInOwl:created_by>
+        <oboInOwl:creation_date>2023-07-18T12:40:21Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>positive regulation of inflammasome-mediated signal transduction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0141087</oboInOwl:id>
+        <rdfs:label>positive regulation of inflammasome-mediated signaling pathway</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0141087"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that activates or increases the frequency, rate or extent of an inflammasome-mediated signaling pathway.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:33467177</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -9977,7 +10388,14 @@
 
     <!-- http://purl.obolibrary.org/obo/GO_0160076 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0160076"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0160076">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0141086"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -10115,19 +10533,40 @@
 
     <!-- http://purl.obolibrary.org/obo/GO_1900225 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1900225"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1900225">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0141085"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_1900226 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1900226"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1900226">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0141086"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_1900227 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1900227"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1900227">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0141087"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -10685,6 +11124,33 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that activates or increases the frequency, rate or extent of proteasomal protein catabolic process.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:BHF</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:rl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:21669198</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>activation of proteasome-mediated protein catabolic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>activation of proteasome-mediated protein catabolism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>positive regulation of proteasome-mediated protein catabolic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>positive regulation of proteasome-mediated protein catabolism</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
@@ -10747,33 +11213,6 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>activation of proteasomal protein catabolic process</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Any process that activates or increases the frequency, rate or extent of proteasomal protein catabolic process.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:BHF</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:rl</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:21669198</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>activation of proteasome-mediated protein catabolic process</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>activation of proteasome-mediated protein catabolism</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>positive regulation of proteasome-mediated protein catabolic process</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -15389,19 +15828,73 @@
 
     <!-- http://purl.obolibrary.org/obo/GO_1905449 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1905449"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1905449">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0065007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0038096"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0038096"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_1905450 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1905450"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1905450">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0065007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0038096"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0038096"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_1905451 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1905451"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1905451">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0065007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0038096"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0038096"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -17281,6 +17774,9 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0031326">
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/GO_0009889"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0043026">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/GO_0043281"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0044249">
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/GO_0009058"/>
