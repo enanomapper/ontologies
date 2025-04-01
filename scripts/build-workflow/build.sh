@@ -473,7 +473,6 @@ for ONTO in "${ontologies[@]}"; do
     # Add props, if exist
     if [[ -f "config/${ONTO}-term-file.txt" ]]; then 
         echo Extracting object and data properties
-        cp config/${ONTO}-term-file.txt config/${ONTO}-term-file.txt
         bash robot --prefixes "external-dev/prefixes.json" \
             extract \
                 --method subset --input  external-dev/tmp/source/${ONTO}.owl \
