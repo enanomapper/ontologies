@@ -26,7 +26,7 @@ jobs:
       robot_jar: ${{ steps.config.outputs.robot_jar }}
     steps:
     - name: Check out repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
        token: ${{ secrets.PAT }}
     - name: Convert slimmer config to ROBOT term files
@@ -73,7 +73,7 @@ jobs:
         ontology: [aopo, bao, bfo, bto, ccont, cheminf, chebi, chmo, clo, efo, envo, fabio, go, iao, ncit, npo, oae, obcs, obi, pato, sio, uberon, uo, msio]
     steps:
     - name: Check out repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
        token: ${{ secrets.PAT }}
     - name: get slimmer
@@ -85,7 +85,7 @@ jobs:
     - name: build-${{ matrix.ontology }}
       run: bash scripts/build-workflow/build.sh ${{ matrix.ontology }}
     - name: Upload built ontology
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: ${{ matrix.ontology }}-owl
         path: external-dev/${{ matrix.ontology }}.owl
@@ -96,11 +96,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check out repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         token: ${{ secrets.PAT }}
     - name: Download all built ontologies
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         path: artifacts
     - name: Move artifacts to external-dev
