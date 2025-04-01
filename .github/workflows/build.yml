@@ -52,10 +52,7 @@ jobs:
         wget ${{ env.robot_jar}}
   
   # slim all ontologies
-  # Authorize running slim script
-    - name: authorize running slim scripts
-      run: chmod 755 scripts/src/build-workflow/*.sh
-  
+
   # Slim aopo
     - name: slim-aopo
       if: always()
