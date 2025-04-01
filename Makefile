@@ -20,7 +20,7 @@ ROBOT_OPTS = --prefixes "external-dev/prefixes.json"
 TERM_FILES_DIR = external-dev/term-files
 TEMPLATES_DIR = external-dev/templates
 TMP_DIR = external-dev/tmp
-SOURCE_DIR = $(TMP_DIR)/source
+TMP_DIR = $(TMP_DIR)/source
 CONFIG_DIR = config
 
 # Output directory
@@ -38,7 +38,7 @@ setup:
 	@mkdir -p $(TERM_FILES_DIR)/remove
 	@mkdir -p $(TEMPLATES_DIR)
 	@mkdir -p $(TMP_DIR)
-	@mkdir -p $(SOURCE_DIR)
+	@mkdir -p $(TMP_DIR)
 
 # Download ROBOT tool
 .PHONY: download-robot
@@ -147,16 +147,16 @@ process-ontologies: download-robot setup process-config-files
 .PHONY: process-single-ontology
 process-single-ontology:
 	@echo "Downloading $(ONTO) ontology..."
-	@$(WGET) -O $(SOURCE_DIR)/$(ONTO).owl $$(grep "owl=" $(CONFIG_DIR)/$(ONTO).props | cut -d'=' -f2)
+	@$(WGET) -O $(TMP_DIR)/$(ONTO).owl $$(grep "owl=" $(CONFIG_DIR)/$(ONTO).props | cut -d'=' -f2)
 	
 	@# Special case for NPO
 	@if [[ "$(ONTO)" == "npo" ]]; then \
 		echo "Reasoning NPO (ELK)"; \
 		$(ROBOT) $(ROBOT_OPTS) reason --reasoner ELK --annotate-inferred-axioms true \
-			--input $(SOURCE_DIR)/$(ONTO).owl --output $(SOURCE_DIR)/$(ONTO).owl; \
+			--input $(TMP_DIR)/$(ONTO).owl --output $(TMP_DIR)/$(ONTO).owl; \
 	fi
 	
-	@# Determine which files exist
+	@# Determine which files exist (case patterns determine processing steps)
 	@add_D=$(TERM_FILES_DIR)/add/$(ONTO)_add_D.txt; \
 	add=$(TERM_FILES_DIR)/add/$(ONTO)_add.txt; \
 	remove=$(TERM_FILES_DIR)/remove/$(ONTO)_remove.txt; \
@@ -173,10 +173,10 @@ process-single-ontology:
 	case $$file_status in \
 		1111) \
 			echo "[$(ONTO)] Settings: add, add_D, remove, and remove_D all existing"; \
-			$(ROBOT) $(ROBOT_OPTS) merge --input $(SOURCE_DIR)/$(ONTO).owl filter --trim false --axioms all \
+			$(ROBOT) $(ROBOT_OPTS) merge --input $(TMP_DIR)/$(ONTO).owl filter --trim false --axioms all \
 				--term-file $$add_D --select "annotations self descendants parents" --signature false \
 				--output $(TMP_DIR)/$(ONTO)_add_D.owl; \
-			$(ROBOT) $(ROBOT_OPTS) merge --input $(SOURCE_DIR)/$(ONTO).owl filter --trim false --axioms all \
+			$(ROBOT) $(ROBOT_OPTS) merge --input $(TMP_DIR)/$(ONTO).owl filter --trim false --axioms all \
 				--term-file $$add --select "annotations self" --signature false \
 				--output $(TMP_DIR)/$(ONTO)_add.owl; \
 			$(ROBOT) $(ROBOT_OPTS) merge --input $(TMP_DIR)/$(ONTO)_add_D.owl --input $(TMP_DIR)/$(ONTO)_add.owl \
@@ -185,10 +185,10 @@ process-single-ontology:
 			;; \
 		1110) \
 			echo "[$(ONTO)] Settings: add, add_D, and remove existing but no remove_D"; \
-			$(ROBOT) $(ROBOT_OPTS) merge --input $(SOURCE_DIR)/$(ONTO).owl filter --trim false --axioms all \
+			$(ROBOT) $(ROBOT_OPTS) merge --input $(TMP_DIR)/$(ONTO).owl filter --trim false --axioms all \
 				--term-file $$add_D --select "annotations self descendants parents" --signature false \
 				--output $(TMP_DIR)/$(ONTO)_add_D.owl; \
-			$(ROBOT) $(ROBOT_OPTS) merge --input $(SOURCE_DIR)/$(ONTO).owl filter --trim false --axioms all \
+			$(ROBOT) $(ROBOT_OPTS) merge --input $(TMP_DIR)/$(ONTO).owl filter --trim false --axioms all \
 				--term-file $$add --select "annotations self" --signature false \
 				--output $(TMP_DIR)/$(ONTO)_add.owl; \
 			$(ROBOT) $(ROBOT_OPTS) merge --input $(TMP_DIR)/$(ONTO)_add_D.owl --input $(TMP_DIR)/$(ONTO)_add.owl \
@@ -197,10 +197,10 @@ process-single-ontology:
 			;; \
 		1101) \
 			echo "[$(ONTO)] Settings: add, add_D, and remove_D existing but no remove"; \
-			$(ROBOT) $(ROBOT_OPTS) merge --input $(SOURCE_DIR)/$(ONTO).owl filter --trim false --axioms all \
+			$(ROBOT) $(ROBOT_OPTS) merge --input $(TMP_DIR)/$(ONTO).owl filter --trim false --axioms all \
 				--term-file $$add_D --select "annotations self descendants parents" --signature false \
 				--output $(TMP_DIR)/$(ONTO)_add_D.owl; \
-			$(ROBOT) $(ROBOT_OPTS) merge --input $(SOURCE_DIR)/$(ONTO).owl filter --trim false --axioms all \
+			$(ROBOT) $(ROBOT_OPTS) merge --input $(TMP_DIR)/$(ONTO).owl filter --trim false --axioms all \
 				--term-file $$add --select "annotations self" --signature false \
 				--output $(TMP_DIR)/$(ONTO)_add.owl; \
 			$(ROBOT) $(ROBOT_OPTS) merge --input $(TMP_DIR)/$(ONTO)_add_D.owl --input $(TMP_DIR)/$(ONTO)_add.owl \
@@ -209,16 +209,16 @@ process-single-ontology:
 			;; \
 		1100) \
 			echo "[$(ONTO)] Settings: add and add_D existing but no remove or remove_D"; \
-			$(ROBOT) $(ROBOT_OPTS) filter --trim false --axioms all --input $(SOURCE_DIR)/$(ONTO).owl \
+			$(ROBOT) $(ROBOT_OPTS) filter --trim false --axioms all --input $(TMP_DIR)/$(ONTO).owl \
 				--term-file $$add_D --select "annotations self descendants parents" --signature false \
 				--output $(TMP_DIR)/$(ONTO)_add_D.owl; \
-			$(ROBOT) $(ROBOT_OPTS) filter --trim false --axioms all --input $(SOURCE_DIR)/$(ONTO).owl \
+			$(ROBOT) $(ROBOT_OPTS) filter --trim false --axioms all --input $(TMP_DIR)/$(ONTO).owl \
 				--term-file $$add --select "annotations self" --signature false \
 				merge --input $(TMP_DIR)/$(ONTO)_add_D.owl --output $(TMP_DIR)/$(ONTO)_no_spcs.owl; \
 			;; \
 		1011) \
 			echo "[$(ONTO)] Settings: add, remove, and remove_D existing but no add_D"; \
-			$(ROBOT) $(ROBOT_OPTS) merge --input $(SOURCE_DIR)/$(ONTO).owl filter --trim false --axioms all \
+			$(ROBOT) $(ROBOT_OPTS) merge --input $(TMP_DIR)/$(ONTO).owl filter --trim false --axioms all \
 				--term-file $$add --select "annotations self" --signature false \
 				--output $(TMP_DIR)/$(ONTO)_add.owl; \
 			$(ROBOT) $(ROBOT_OPTS) merge --input $(TMP_DIR)/$(ONTO)_add.owl \
@@ -228,7 +228,7 @@ process-single-ontology:
 			;; \
 		1010) \
 			echo "[$(ONTO)] Settings: add and remove existing but no add_D or remove_D"; \
-			$(ROBOT) $(ROBOT_OPTS) merge --input $(SOURCE_DIR)/$(ONTO).owl filter --trim false --axioms all \
+			$(ROBOT) $(ROBOT_OPTS) merge --input $(TMP_DIR)/$(ONTO).owl filter --trim false --axioms all \
 				--term-file $$add --select "annotations self" --signature false \
 				--output $(TMP_DIR)/$(ONTO)_add.owl; \
 			$(ROBOT) $(ROBOT_OPTS) remove --input $(TMP_DIR)/$(ONTO)_add.owl \
@@ -237,7 +237,7 @@ process-single-ontology:
 			;; \
 		1001) \
 			echo "[$(ONTO)] Settings: add and remove_D existing but no add_D or remove"; \
-			$(ROBOT) $(ROBOT_OPTS) merge --input $(SOURCE_DIR)/$(ONTO).owl filter --trim false --axioms all \
+			$(ROBOT) $(ROBOT_OPTS) merge --input $(TMP_DIR)/$(ONTO).owl filter --trim false --axioms all \
 				--term-file $$add --select "annotations self" --signature false \
 				--output $(TMP_DIR)/$(ONTO)_add.owl; \
 			$(ROBOT) $(ROBOT_OPTS) remove --input $(TMP_DIR)/$(ONTO)_add.owl \
@@ -246,13 +246,13 @@ process-single-ontology:
 			;; \
 		1000) \
 			echo "[$(ONTO)] Settings: only add existing"; \
-			$(ROBOT) $(ROBOT_OPTS) merge --input $(SOURCE_DIR)/$(ONTO).owl filter --trim false --axioms all \
+			$(ROBOT) $(ROBOT_OPTS) merge --input $(TMP_DIR)/$(ONTO).owl filter --trim false --axioms all \
 				--term-file $$add --select "annotations self" --signature false \
 				--output $(TMP_DIR)/$(ONTO)_no_spcs.owl; \
 			;; \
 		0111) \
 			echo "[$(ONTO)] Settings: add_D, remove, and remove_D existing but no add"; \
-			$(ROBOT) $(ROBOT_OPTS) merge --input $(SOURCE_DIR)/$(ONTO).owl filter --trim false --axioms all \
+			$(ROBOT) $(ROBOT_OPTS) merge --input $(TMP_DIR)/$(ONTO).owl filter --trim false --axioms all \
 				--term-file $$add_D --select "annotations self descendants parents" --signature false \
 				remove --term-file $$remove_D --select "self descendants" \
 				remove --term-file $$remove --select "self" \
@@ -260,14 +260,14 @@ process-single-ontology:
 			;; \
 		0110) \
 			echo "[$(ONTO)] Settings: add_D and remove existing but no add or remove_D"; \
-			$(ROBOT) $(ROBOT_OPTS) merge --input $(SOURCE_DIR)/$(ONTO).owl filter --trim false --axioms all \
+			$(ROBOT) $(ROBOT_OPTS) merge --input $(TMP_DIR)/$(ONTO).owl filter --trim false --axioms all \
 				--term-file $$add_D --select "annotations self descendants parents" --signature false \
 				remove --term-file $$remove --select "self" \
 				--output $(TMP_DIR)/$(ONTO)_no_spcs.owl; \
 			;; \
 		0101) \
 			echo "[$(ONTO)] Settings: add_D and remove_D existing but no add or remove"; \
-			$(ROBOT) $(ROBOT_OPTS) merge --input $(SOURCE_DIR)/$(ONTO).owl filter --trim false --axioms all \
+			$(ROBOT) $(ROBOT_OPTS) merge --input $(TMP_DIR)/$(ONTO).owl filter --trim false --axioms all \
 				--term-file $$add_D --select "annotations self descendants parents" --signature false \
 				--output $(TMP_DIR)/$(ONTO)_add_D.owl \
 				remove --term-file $$remove_D --select "self descendants" \
@@ -275,7 +275,7 @@ process-single-ontology:
 			;; \
 		0100) \
 			echo "[$(ONTO)] Settings: only add_D existing"; \
-			$(ROBOT) $(ROBOT_OPTS) merge --input $(SOURCE_DIR)/$(ONTO).owl filter --trim false --axioms all \
+			$(ROBOT) $(ROBOT_OPTS) merge --input $(TMP_DIR)/$(ONTO).owl filter --trim false --axioms all \
 				--term-file $$add_D --select "annotations self descendants parents" --signature false \
 				--output $(TMP_DIR)/$(ONTO)_no_spcs.owl; \
 			;; \
@@ -298,7 +298,7 @@ process-single-ontology:
 	fi; \
 	if [[ -f "$(CONFIG_DIR)/$(ONTO)-term-file.txt" ]]; then \
 		echo "Extracting object and data properties"; \
-		$(ROBOT) $(ROBOT_OPTS) extract --method subset --input $(SOURCE_DIR)/$(ONTO).owl \
+		$(ROBOT) $(ROBOT_OPTS) extract --method subset --input $(TMP_DIR)/$(ONTO).owl \
 			--term-file $(CONFIG_DIR)/$(ONTO)-term-file.txt \
 			annotate --version-iri "https://purl.enanomapper.org/onto/external-dev/$(ONTO)-slim-prop.owl/" \
 			--ontology-iri "https://purl.enanomapper.org/onto/external-dev/$(ONTO)-slim.owl/" \
