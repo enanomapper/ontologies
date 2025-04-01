@@ -20,7 +20,7 @@ ROBOT_OPTS = --prefixes "external-dev/prefixes.json"
 TERM_FILES_DIR = external-dev/term-files
 TEMPLATES_DIR = external-dev/templates
 TMP_DIR = external-dev/tmp
-TMP_DIR = $(TMP_DIR)/source
+#TMP_DIR = $(TMP_DIR)/source
 CONFIG_DIR = config
 
 # Output directory
