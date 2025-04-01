@@ -29,32 +29,21 @@ jobs:
     - name: add slimmer and robot URLs to environment
       run: |
         echo $(java --version)
-        config_file="config.yaml"
-        robot_jar=""
-        robot=""
-        slimmer=""
-
-        while IFS=":" read -r key value; do
-          key=$(echo "$key" | tr -d '[:space:]')
-
-          case "$key" in
-            robot-jar)
-              robot_jar=$(echo "$value" | tr -d '[:space:]')
-              ;;
-            robot-wrapper)
-              robot=$(echo "$value" | tr -d '[:space:]')
-              ;;
-            slimmer)
-              slimmer=$(echo "$value" | tr -d '[:space:]')
-              ;;
-          esac
-        done < "$config_file"
-        echo SLIMMER: $slimmer
-        echo ROBOT JAR: $robot_jar
-        echo ROBOT WRAPPER: $robot
-        echo 'slimmer='${slimmer}'' >> $GITHUB_ENV
-        echo 'robot='${robot}'' >> $GITHUB_ENV
-        echo 'robot_jar='${robot_jar}'' >> $GITHUB_ENV
+        python -c "
+        import yaml
+        with open('config.yaml', 'r') as file:
+            config = yaml.safe_load(file)
+            slimmer = config.get('slimmer', '')
+            robot_jar = config.get('robot-jar', '')
+            robot = config.get('robot-wrapper', '')
+            print(f'SLIMMER: {slimmer}')
+            print(f'ROBOT JAR: {robot_jar}')
+            print(f'ROBOT WRAPPER: {robot}')
+            with open('${GITHUB_ENV}', 'a') as env_file:
+            env_file.write(f'slimmer={slimmer}\n')
+            env_file.write(f'robot={robot}\n')
+            env_file.write(f'robot_jar={robot_jar}\n')
+        "
     - name: get slimmer
       run: wget ${{ env.slimmer }}
     - name: get robot
@@ -70,145 +59,123 @@ jobs:
   # Slim aopo
     - name: slim-aopo
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh aopo
+      run: make process-single-ontology ONTO=aopo
   
   # Slim bao
     - name: slim-bao
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh bao
+      run: make process-single-ontology ONTO=bao
   
   # Slim bfo
     - name: slim-bfo
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh bfo
+      run: make process-single-ontology ONTO=bfo
   
   # Slim bto
     - name: slim-bto
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh bto
+      run: make process-single-ontology ONTO=bto
   
   # Slim ccont
     - name: slim-ccont
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh ccont
+      run: make process-single-ontology ONTO=ccont
   
   # Slim cheminf
     - name: slim-cheminf
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh cheminf
+      run: make process-single-ontology ONTO=cheminf
     
   # Slim chebi
     - name: slim-chebi
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh chebi
+      run: make process-single-ontology ONTO=chebi
   
   # Slim chmo
     - name: slim-chmo
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh chmo
+      run: make process-single-ontology ONTO=chmo
   
   # Slim clo
     - name: slim-clo
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh clo
+      run: make process-single-ontology ONTO=clo
   
   # Slim efo
     - name: slim-efo
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh efo
+      run: make process-single-ontology ONTO=efo
   
   # Slim envo
     - name: slim-envo
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh envo
+      run: make process-single-ontology ONTO=envo
   
   # Slim fabio
     - name: slim-fabio
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh fabio
+      run: make process-single-ontology ONTO=fabio
   
   # Slim go
     - name: slim-go
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh go
+      run: make process-single-ontology ONTO=go
   
   # Slim iao
     - name: slim-iao
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh iao
+      run: make process-single-ontology ONTO=iao
   
   # Slim ncit
     - name: slim-ncit
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh ncit
+      run: make process-single-ontology ONTO=ncit
   
   # Slim npo
     - name: slim-npo
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh npo
+      run: make process-single-ontology ONTO=npo
   
   # Slim oae
     - name: slim-oae
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh oae
+      run: make process-single-ontology ONTO=oae
   
   # Slim obcs
     - name: slim-obcs
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh obcs
+      run: make process-single-ontology ONTO=obcs
   
   # Slim obi
     - name: slim-obi
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh obi
+      run: make process-single-ontology ONTO=obi
   
   # Slim pato
     - name: slim-pato
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh pato
+      run: make process-single-ontology ONTO=pato
   
   # Slim sio
     - name: slim-sio
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh sio
+      run: make process-single-ontology ONTO=sio
   
   # Slim uberon
     - name: slim-uberon
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh uberon
+      run: make process-single-ontology ONTO=uberon
   
   # Slim uo
     - name: slim-uo
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh uo
+      run: make process-single-ontology ONTO=uo
 
   # Slim msio
     - name: slim-msio
       if: always()
-      run: bash scripts/src/build-workflow/slim.sh msio
+      run: make process-single-ontology ONTO=msio
 
-  # apply props bao
-    - name: Apply props bao
-      if: always()
-      run: bash scripts/src/build-workflow/props.sh bao
-  
-  # apply props npo
-    - name: Apply props npo
-      if: always()
-      run: bash scripts/src/build-workflow/props.sh npo
-  
-  # apply props sio
-    - name: Apply props sio
-      if: always()
-      run: bash scripts/src/build-workflow/props.sh sio
-  
-    - name: Apply props cheminf
-      if: always()
-      run: bash scripts/src/build-workflow/props.sh cheminf
-
-    - name: Apply props ro
-      if: always()
-      run: bash scripts/src/build-workflow/props.sh ro
   # Commit and push
     - name: Commit OWL files
       run: |
