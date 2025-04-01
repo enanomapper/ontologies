@@ -83,7 +83,9 @@ jobs:
         wget ${{ needs.setup.outputs.robot }}
         wget ${{ needs.setup.outputs.robot_jar }}
     - name: build-${{ matrix.ontology }}
-      run: bash scripts/build-workflow/build.sh ${{ matrix.ontology }}
+      run: |
+        rm external-dev/${{ matrix.ontology }}-slim.owl
+        bash scripts/build-workflow/build.sh ${{ matrix.ontology }}
     - name: Upload built ontology
       uses: actions/upload-artifact@v4
       with:
