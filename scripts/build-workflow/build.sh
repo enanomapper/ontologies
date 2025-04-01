@@ -73,6 +73,10 @@ for ONTO in "${ontologies[@]}"; do
     tmp_subclass_assertion="external-dev/templates/${ONTO}_subclass_assertion.csv.tmp"
 
     # Ensure the temporary files are empty at the start
+    mkdir -p "external-dev/term-files/add"
+    mkdir -p "external-dev/term-files/remove"
+    mkdir -p "external-dev/templates"
+
      > "$tmp_add_with_descendants"
      > "$tmp_add_without_descendants"
      > "$tmp_remove_with_descendants"
