@@ -24,9 +24,9 @@ class RobotTest(unittest.TestCase):
         print('Running robot merge...')
         subprocess.run(["sh", "robot", "merge", "-i", "enanomapper-dev.owl", "-o", "enanomapper-dev-full.owl"])
         print('Query: test root elements')
-        subprocess.run(["sh", "robot", "query", "--input", "enanomapper-dev-full.owl", "--query", "scripts/src/tests/assets/test_root.sparql", "result-root"])
+        subprocess.run(["sh", "robot", "query", "--input", "enanomapper-dev-full.owl", "--query", "scripts/src/tests/assets/test_root.sparql", "--output", "result-root"])
         print('Query: test direct subclasses of entities')
-        subprocess.run(["sh", "robot", "query", "--input", "enanomapper-dev-full.owl", "--query", "scripts/src/tests/assets/test_entities.sparql", "result-entities"])
+        subprocess.run(["sh", "robot", "query", "--input", "enanomapper-dev-full.owl", "--query", "scripts/src/tests/assets/test_entities.sparql", "--output",  "result-entities"])
         
         # Check the contents of the results files, fail or not fail
         if os.stat('result-root').st_size==0:
