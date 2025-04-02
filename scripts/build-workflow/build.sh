@@ -227,7 +227,7 @@ for ONTO in "${ontologies[@]}"; do
                     --select "annotations self descendants parents" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add_D.owl \
-                remove --select "complement"
+                remove --select "complement rdfs:subClassOf *"
             bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
@@ -240,7 +240,7 @@ for ONTO in "${ontologies[@]}"; do
                     --select "annotations self" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add.owl \
-                remove --select "complement"
+                remove --select "complement rdfs:subClassOf *"
             bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/${ONTO}_add_D.owl \
@@ -266,7 +266,7 @@ for ONTO in "${ontologies[@]}"; do
                     --select "annotations self descendants parents" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add_D.owl \
-                remove --select "complement"
+                    remove --select "complement rdfs:subClassOf *"
             bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
@@ -279,12 +279,12 @@ for ONTO in "${ontologies[@]}"; do
                     --select "annotations self" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add.owl \
-                remove --select "complement"    
+                    remove --select "complement rdfs:subClassOf *"    
             bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/${ONTO}_add_D.owl \
                     --input external-dev/tmp/${ONTO}_add.owl \
-                remove \
+                    remove \
                     --term-file $remove_D \
                     --select "self descendants" \
                     --output external-dev/tmp/${ONTO}_no_spcs.owl
@@ -303,7 +303,7 @@ for ONTO in "${ontologies[@]}"; do
                     --select "annotations self descendants parents" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add_D.owl \
-                remove --select "complement"
+                remove --select "complement rdfs:subClassOf *"
             bash robot --prefixes "external-dev/prefixes.json" \
                 filter \
                     --trim true \
@@ -333,7 +333,7 @@ for ONTO in "${ontologies[@]}"; do
                     --select "annotations self" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add.owl \
-                remove --select "complement"    
+                remove --select "complement rdfs:subClassOf *"    
             bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/${ONTO}_add_D.owl \
@@ -361,7 +361,7 @@ for ONTO in "${ontologies[@]}"; do
                     --select "annotations self" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add.owl \
-                remove --select "complement"    
+                remove --select "complement rdfs:subClassOf *"    
             bash robot --prefixes "external-dev/prefixes.json" \
                 remove \
                     --input external-dev/tmp/${ONTO}_add.owl \
@@ -378,13 +378,12 @@ for ONTO in "${ontologies[@]}"; do
                 filter \
                     --trim true \
                     --preserve-structure false \
-                    --trim true \
                     --axioms all \
                     --term-file $add \
                     --select "annotations self" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add.owl \
-                remove --select "complement"    
+                remove --select "complement rdfs:subClassOf *"    
             bash robot --prefixes "external-dev/prefixes.json" \
                 remove \
                     --input external-dev/tmp/${ONTO}_add.owl   \
@@ -401,13 +400,12 @@ for ONTO in "${ontologies[@]}"; do
                 filter \
                     --trim true \
                     --preserve-structure false \
-                    --trim true \
                     --axioms all \
                     --term-file $add \
                     --select "annotations self" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_no_spcs.owl \
-                remove --select "complement"    
+                remove --select "complement rdfs:subClassOf *"    
             ;;
         0111)
             
@@ -418,12 +416,11 @@ for ONTO in "${ontologies[@]}"; do
                 filter \
                     --trim true \
                     --preserve-structure false \
-                    --trim true \
                     --axioms all \
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
                     --signature false  \
-                remove --select "complement" \
+                remove --select "complement rdfs:subClassOf *" \
                 remove \
                     --term-file $remove_D \
                     --select "self descendants" \
@@ -441,12 +438,11 @@ for ONTO in "${ontologies[@]}"; do
                 filter \
                     --trim true \
                     --preserve-structure false \
-                    --trim true \
                     --axioms all \
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
                     --signature false \
-                remove --select "complement" \
+                remove --select "complement rdfs:subClassOf *" \
                 remove \
                     --term-file $remove \
                     --select "self" \
@@ -461,13 +457,12 @@ for ONTO in "${ontologies[@]}"; do
                 filter \
                     --trim true \
                     --preserve-structure false \
-                    --trim true \
                     --axioms all \
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
                     --signature false \
-                    --output external-dev/tmp/${ONTO}_add_D.owl \ \
-                remove --select "complement" \
+                    --output external-dev/tmp/${ONTO}_add_D.owl \
+                remove --select "complement rdfs:subClassOf *" \
                 remove \
                     --term-file $remove_D \
                     --select "self descendants" \
@@ -482,13 +477,12 @@ for ONTO in "${ontologies[@]}"; do
                 filter \
                     --trim true \
                     --preserve-structure false \
-                    --trim true \
                     --axioms all \
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_no_spcs.owl \
-                remove --select "complement"
+                remove --select "complement rdfs:subClassOf *"
             ;;
     esac
     echo ...Done filtering source ontology ${ONTO}
