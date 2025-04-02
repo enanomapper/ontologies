@@ -125,7 +125,7 @@ jobs:
         if git diff-index --quiet HEAD --; then
           echo "No changes to commit."
         else
-          git commit -m "Actions - build updated" ./external-dev/*-slim.owl || true
+          git commit -m "Actions - build updated" ./external-dev/*.owl || true
         fi
         # Check if there are changes to push
         if [[ $(git rev-parse --abbrev-ref HEAD) == "${{ github.ref_name }}" ]]; then
