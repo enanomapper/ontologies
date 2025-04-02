@@ -155,7 +155,7 @@ mkdir external-dev/tmp
 mkdir external-dev/tmp/source
 
 for ONTO in "${ontologies[@]}"; do
-    echo \n>[${ONTO}]
+    echo "\n>[${ONTO}]"
     wget -nc -O external-dev/tmp/source/${ONTO}.owl $(grep "owl=" config/${ONTO}.props | cut -d'=' -f2)
     if [[ "$ONTO" == "npo" ]]; then
     echo "Reasoning NPO (ELK)"
