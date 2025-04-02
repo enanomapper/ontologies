@@ -517,6 +517,8 @@ done
 
 # Add predicates from templates
 
-bash robot merge --input enanomapper-dev.owl template --template external-dev/templates/predicates/chemical_compositions.tsv \
+bash robot \
+    merge --input enanomapper-dev.owl \
+    template --template external-dev/templates/predicates/chemical_compositions.tsv \
   --ontology-iri "https://purl.enanomapper.org/onto/chemical_compositions.owl" \
   --output external-dev/chemical_compositions.owl
