@@ -51,104 +51,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000011 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000011"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000028 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000028"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000068 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000068"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000215 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000215"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000216 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000216"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000217 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000217"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000218 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000218"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000244 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000244"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000272 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000272"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000273 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000273"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000369 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000369"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000628 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000628"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000737 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000737">
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000052"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000052"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001154 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_001154"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -181,57 +83,11 @@
     
 
 
-    <!-- http://semanticscience.org/resource/SIO_000000 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000000"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000004 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000004"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000005 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000005"/>
-    
-
-
     <!-- http://semanticscience.org/resource/SIO_000026 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000026">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000005"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000218"/>
-                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <terms:description xml:lang="en">An object quality is quality of an object.</terms:description>
         <rdfs:label xml:lang="en">object quality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000037 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000037">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000216"/>
-                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000052"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000051 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000051">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000026"/>
     </owl:Class>
     
 
@@ -239,123 +95,8 @@
     <!-- http://semanticscience.org/resource/SIO_000052 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000052">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000257"/>
-                    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000258"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000070"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000011"/>
-                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000215"/>
-                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <terms:description xml:lang="en">A quantity is an informational entity that gives the magnitude of a property.</terms:description>
         <rdfs:label xml:lang="en">quantity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000055 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000055">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000026"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000070 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000070"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000074 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000074">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000052"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000092 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000092">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010346"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000273"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000556"/>
-                                    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010074"/>
-                                    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010075"/>
-                                    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010334"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000273"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000556"/>
-                            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010074"/>
-                            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010075"/>
-                            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010334"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000146 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000146"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000257 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000257">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000052"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000258 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000258">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000052"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000357 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000357">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000026"/>
     </owl:Class>
     
 
@@ -375,35 +116,9 @@
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000476">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000475"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000218"/>
-                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_010001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <terms:description xml:lang="en">cellular quality is the quality of a cell</terms:description>
         <rdfs:label xml:lang="en">cellular quality</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000555 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000555"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000556 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000556">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010071"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000616 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000616"/>
     
 
 
@@ -429,12 +144,6 @@
     
 
 
-    <!-- http://semanticscience.org/resource/SIO_000776 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000776"/>
-    
-
-
     <!-- http://semanticscience.org/resource/SIO_000784 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000784">
@@ -453,48 +162,6 @@
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010058"/>
         <terms:description xml:lang="en">sick is the status of a living organism that is behaving at a sub-optimal level.</terms:description>
         <rdfs:label xml:lang="en">sick</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000983 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000983">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000628"/>
-                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000993 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000993">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000628"/>
-                        <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_010004"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000628"/>
-                        <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001011 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001011">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000026"/>
     </owl:Class>
     
 
@@ -529,49 +196,11 @@
     
 
 
-    <!-- http://semanticscience.org/resource/SIO_001033 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001033">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000026"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001092 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001092">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000026"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001108 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001108">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000052"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001112 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001112">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000052"/>
-    </owl:Class>
-    
-
-
     <!-- http://semanticscience.org/resource/SIO_001113 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001113">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1793"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000052"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000011"/>
-                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000616"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <terms:alternative>min</terms:alternative>
         <terms:description xml:lang="en">A minimal value is smallest value of an attribute for the entities in the defined set.</terms:description>
         <rdfs:label xml:lang="en">minimal value</rdfs:label>
@@ -584,42 +213,9 @@
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001114">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1793"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000052"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000011"/>
-                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000616"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <terms:alternative>max</terms:alternative>
         <terms:description xml:lang="en">A maximal value is largest value of an attribute for the entities in the defined set.</terms:description>
         <rdfs:label xml:lang="en">maximal value</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001145 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001145">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_001154"/>
-                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000052"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001224 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001224"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001243 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001243">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000052"/>
     </owl:Class>
     
 
@@ -705,14 +301,6 @@
     
 
 
-    <!-- http://semanticscience.org/resource/SIO_001338 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001338">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000026"/>
-    </owl:Class>
-    
-
-
     <!-- http://semanticscience.org/resource/SIO_001379 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001379">
@@ -744,82 +332,11 @@
     
 
 
-    <!-- http://semanticscience.org/resource/SIO_001409 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001409">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000026"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001427 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001427">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000273"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://semanticscience.org/resource/SIO_010074"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001436 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001436">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000628"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://semanticscience.org/resource/SIO_010299"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://semanticscience.org/resource/SIO_010000 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010000">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010377"/>
-                    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010378"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010046"/>
         <terms:description xml:lang="en">A biological organisn is a biological entity that consists of one or more cells and is capable of genomic replication (independently or not).</terms:description>
         <rdfs:label xml:lang="en">organism</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010001 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010001"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010004 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010004"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010007 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010007">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000369"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://semanticscience.org/resource/SIO_010074"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -830,32 +347,6 @@
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000475"/>
         <terms:description xml:lang="en">biological sex is the quality of a biological organism based on reproductive function or organs.</terms:description>
         <rdfs:label xml:lang="en">biological sex</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010043 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010043">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000273"/>
-                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_010074"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010046 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010046">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000068"/>
-                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_010000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -887,12 +378,6 @@
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000272"/>
-                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_010000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <terms:description xml:lang="en">A strain is a genetic variant or kind of microorganism.</terms:description>
         <rdfs:label xml:lang="en">strain</rdfs:label>
     </owl:Class>
@@ -912,14 +397,6 @@
     <!-- http://semanticscience.org/resource/SIO_010057 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010057">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010058"/>
-                    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010059"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000475"/>
         <terms:description xml:lang="en">life status is the quality of whether something is alive or dead.</terms:description>
         <rdfs:label xml:lang="en">life status</rdfs:label>
@@ -951,36 +428,9 @@
     <!-- http://semanticscience.org/resource/SIO_010071 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010071">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010441"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000028"/>
-                        <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_011001"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000028"/>
-                        <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_011007"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000068"/>
-                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_010072"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <terms:description xml:lang="en">An organic submolecule is connected region of a molecule.</terms:description>
         <rdfs:label xml:lang="en">organic submolecule</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010072 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010072"/>
     
 
 
@@ -988,21 +438,9 @@
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010074">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010471"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000244"/>
-                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_001224"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <terms:description xml:lang="en">An amino acid residue is a submolecule of an amino acid that is part of a larger molecule.</terms:description>
         <rdfs:label xml:lang="en">amino acid residue</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010075 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010075"/>
     
 
 
@@ -1020,107 +458,9 @@
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010299">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000475"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000218"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000004"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000217"/>
-                                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000555"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <terms:description xml:lang="en">disease is the outward manifestation of one or more disorders.</terms:description>
         <rdfs:label xml:lang="en">disease</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010334 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010334">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010071"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010335 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010335">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010071"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010346 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010346">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010072"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000273"/>
-                        <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000146"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000273"/>
-                        <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_010071"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000273"/>
-                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_010071"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010377 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010377">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010000"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010378 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010378">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010000"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010414 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010414">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010000"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010415 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010415">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010000"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010441 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010441"/>
     
 
 
@@ -1150,27 +490,9 @@ and having their side chains perpendicular to the planar axis.</terms:descriptio
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010471">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1597"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010071"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000068"/>
-                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_001427"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <terms:description xml:lang="en">An amino acid polymer submolecule is a submolecule of an amino acid polymer.</terms:description>
         <rdfs:label xml:lang="en">amino acid polymer submolecule</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_011001 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_011001"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_011007 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_011007"/>
     
 
 

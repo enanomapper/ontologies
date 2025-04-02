@@ -13,29 +13,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.org/vocab/frbr/core#part -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#part"/>
-    
-
-
-    <!-- http://purl.org/vocab/frbr/core#partOf -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#partOf"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -50,88 +27,13 @@
     
 
 
-    <!-- http://purl.org/spar/fabio/Expression -->
-
-    <owl:Class rdf:about="http://purl.org/spar/fabio/Expression"/>
-    
-
-
-    <!-- http://purl.org/spar/fabio/Journal -->
-
-    <owl:Class rdf:about="http://purl.org/spar/fabio/Journal">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/JournalVolume"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/spar/fabio/JournalIssue -->
-
-    <owl:Class rdf:about="http://purl.org/spar/fabio/JournalIssue">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/JournalVolume"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/spar/fabio/JournalVolume -->
 
     <owl:Class rdf:about="http://purl.org/spar/fabio/JournalVolume">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/PeriodicalVolume"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/Journal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A particular published volume of a journal, comprising one or more journal issues.</rdfs:comment>
         <rdfs:label xml:lang="en">journal volume</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/spar/fabio/Periodical -->
-
-    <owl:Class rdf:about="http://purl.org/spar/fabio/Periodical"/>
-    
-
-
-    <!-- http://purl.org/spar/fabio/PeriodicalIssue -->
-
-    <owl:Class rdf:about="http://purl.org/spar/fabio/PeriodicalIssue"/>
-    
-
-
-    <!-- http://purl.org/spar/fabio/PeriodicalItem -->
-
-    <owl:Class rdf:about="http://purl.org/spar/fabio/PeriodicalItem">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/spar/fabio/Expression"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.org/spar/fabio/PeriodicalIssue"/>
-                                    <rdf:Description rdf:about="http://purl.org/spar/fabio/PeriodicalVolume"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -139,13 +41,6 @@
     <!-- http://purl.org/spar/fabio/PeriodicalVolume -->
 
     <owl:Class rdf:about="http://purl.org/spar/fabio/PeriodicalVolume">
-        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/Periodical"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A particular published volume of a periodical.</rdfs:comment>
         <rdfs:label xml:lang="en">periodical volume</rdfs:label>
     </owl:Class>
