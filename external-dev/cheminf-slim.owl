@@ -34,27 +34,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
     
 
 
@@ -67,12 +49,6 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     
 
 
@@ -159,55 +135,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
-        <obo:IAO_0000111 xml:lang="en">data item</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">Data items include counts of things, analyte concentrations, and statistical summaries.</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">2009-03-16: data item deliberatly ambiguous: we merged data set and datum to be one entity, not knowing how to define singular versus plural. So data item is more general than datum.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">2009-03-16: removed datum as alternative term as datum specifically refers to singular form, and is thus not an exact synonym.</obo:IAO_0000116>
-        <obo:IAO_0000116>2014-03-31: See discussion at http://odontomachus.wordpress.com/2014/03/30/aboutness-objects-propositions/</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">JAR: datum     -- well, this will be very tricky to define, but maybe some 
-information-like stuff that might be put into a computer and that is 
-meant, by someone, to denote and/or to be interpreted by some 
-process... I would include lists, tables, sentences... I think I might 
-defer to Barry, or to Brian Cantwell Smith
-
-JAR: A data item is an approximately justified approximately true approximate belief</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">data</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">data item</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000098 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000098">
-        <obo:IAO_0000111 xml:lang="en">data format specification</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115 xml:lang="en">A data format specification is the information content borne by the document published defining the specification.
-Example: The ISO document specifying what encompasses an XML document; The instructions in a XSD file</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: term imported from OBI_0000187, which had original definition &quot;A data format specification is a plan which organizes
-information. Example: The ISO document specifying what encompasses an
-XML document; The instructions in a XSD file&quot;</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">OBI_0000187</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">data format specification</rdfs:label>
-    </owl:Class>
     
 
 
@@ -334,7 +264,6 @@ XML document; The instructions in a XSD file&quot;</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000098"/>
         <dc:description>A chemical entity information format specification is an information content entity which specifies a format in which information about a molecular entity should be encoded.</dc:description>
         <rdfs:label>chemical entity information format specification</rdfs:label>
     </owl:Class>
@@ -493,7 +422,6 @@ XML document; The instructions in a XSD file&quot;</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000086"/>
         <dc:description>A molecular entity quality is a quality which inheres in a molecular entity.</dc:description>
         <rdfs:label>molecular entity quality</rdfs:label>
     </owl:Class>
@@ -995,15 +923,6 @@ XML document; The instructions in a XSD file&quot;</obo:IAO_0000116>
     
 
 
-    <!-- http://semanticscience.org/resource/CHEMINF_000086 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000086">
-        <dc:description>A chemical quality is a quality that inheres in a molecular entity or aggregate molecular substance.</dc:description>
-        <rdfs:label>chemical quality</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://semanticscience.org/resource/CHEMINF_000087 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000087">
@@ -1137,7 +1056,6 @@ XML document; The instructions in a XSD file&quot;</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000101">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000086"/>
         <dc:description>A chemical substance quality is a quality that inheres in an aggregate molecular substance, such as a portion of solid or liquid matter.</dc:description>
         <rdfs:label>chemical substance quality</rdfs:label>
     </owl:Class>
@@ -1339,18 +1257,8 @@ The formal charge of any atom in a molecule can be calculated by the following e
 
     <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000123">
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_8000019"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <dc:description>A chemical descriptor is a data item (quantity or value) about a chemical entity that conforms to a specification for how it is calculated, measured or recorded.</dc:description>
         <rdfs:label>chemical descriptor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/CHEMINF_000124 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000124">
-        <dc:description>A 1-D extent quality inhering in a bearer by virtue of the bearer&apos;s  dimension of extension to the circumference of a circle or sphere.</dc:description>
-        <rdfs:label>radius</rdfs:label>
     </owl:Class>
     
 
@@ -1359,7 +1267,6 @@ The formal charge of any atom in a molecule can be calculated by the following e
 
     <owl:Class rdf:about="http://semanticscience.org/resource/CHEMINF_000125">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002390"/>
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CHEMINF_000124"/>
         <rdfs:comment>Atomic radius is the 1D extent of the electron cloud surrounding the atom.</rdfs:comment>
         <rdfs:label>atomic radius</rdfs:label>
     </owl:Class>

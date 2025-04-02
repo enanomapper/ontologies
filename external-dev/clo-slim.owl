@@ -277,33 +277,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CL_0000225 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000225">
-        <obo:IAO_0000115>A cell that lacks a nucleus.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>FMA:68647</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>non-nucleated cell</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#human_subset"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#mouse_subset"/>
-        <rdfs:label>anucleate cell</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000225"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A cell that lacks a nucleus.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FB:ma</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CL_0000233 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000233">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000010"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000081"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000225"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000458"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000763"/>
         <obo:IAO_0000115>A non-nucleated disk-shaped cell formed by extrusion from megakaryocytes, found in the blood of all mammals, and mainly involved in blood coagulation.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref>BTO:0000132</oboInOwl:hasDbXref>
@@ -334,61 +311,6 @@
         <oboInOwl:hasDbXref>PMID:17479180</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:20414831</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Platelet</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CL_0000458 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000458">
-        <obo:IAO_0000115>A cell type that secretes 5-Hydroxytryptamine (serotonin).</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>ZFA:0009213</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>5-HT secreting cell</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>5-Hydroxytryptamine secreting cell</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#human_subset"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#mouse_subset"/>
-        <rdfs:label>serotonin secreting cell</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000458"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A cell type that secretes 5-Hydroxytryptamine (serotonin).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:19630576</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000458"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>ZFA:0009213</owl:annotatedTarget>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CL_0000763 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000763">
-        <obo:IAO_0000115>A cell of the monocyte, granulocyte, mast cell, megakaryocyte, or erythroid lineage.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>BTO:0001441</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>CALOHA:TS-0647</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>MESH:D022423</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>ZFA:0009324</oboInOwl:hasDbXref>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#human_subset"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#mouse_subset"/>
-        <rdfs:label>myeloid cell</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000763"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A cell of the monocyte, granulocyte, mast cell, megakaryocyte, or erythroid lineage.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:add</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000763"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>ZFA:0009324</owl:annotatedTarget>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
     </owl:Axiom>
     
 

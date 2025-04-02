@@ -276,7 +276,6 @@
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1315">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1418"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/PATO#PATO_0000004"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>electrophoretic mobility</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_1315</code>
         <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-source>NPO</ncicp:def-source><ncicp:def-definition>Mobility of a charged particle in electrophoresis, measured as the rate of migration (usually in cm/s) per unit electric field strength (usually V/cm) of the charged particle.</ncicp:def-definition></ncicp:ComplexDefinition></definition>
@@ -290,7 +289,6 @@
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1338">
         <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000018"/>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>toxicity</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_1338</code>
         <dBXrefID>NCIT:C27990</dBXrefID>
@@ -363,7 +361,6 @@
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1364">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>surface property</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_1364</code>
         <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-source>NPO</ncicp:def-source><ncicp:def-definition>A property inhering in the surface of an object.</ncicp:def-definition></ncicp:ComplexDefinition></definition>
@@ -525,7 +522,6 @@
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1405 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1405">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1406"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <DesignNote>[DGT, June 10, 2010]: Description for a specific type of technique could contain the following types of information: 1) principle used in the technique (e.g. NMR for NMR spectroscopy), 2) description of the principle if the term that describes the principle is not represented in the ontology, 3) tool used in a technique (e.g., scanning electron microscope in scanning electron microscopy), 4) applications of the technique, and 5) information on how to use the technique for each type of application.</DesignNote>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>technique</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
@@ -533,20 +529,6 @@
         <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-source>NPO</ncicp:def-source><ncicp:def-definition>A systematic procedure or a practical method which is used for accomplishing a task.</ncicp:def-definition></ncicp:ComplexDefinition></definition>
         <preferred_Name>technique</preferred_Name>
         <rdfs:label>technique</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.bioontology.org/ontology/npo#NPO_1406 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1406">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
-        <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>procedure</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
-        <code>NPO_1406</code>
-        <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-definition>A temporal interval which is the time during which a process continues to occur.</ncicp:def-definition><ncicp:Definition_Review_Date>130524</ncicp:Definition_Review_Date><ncicp:def-source>NPO</ncicp:def-source><ncicp:Definition_Reviewer_Name>Dennis Thomas</ncicp:Definition_Reviewer_Name></ncicp:ComplexDefinition></definition>
-        <preferred_Name>procedure</preferred_Name>
-        <synonym>method</synonym>
-        <rdfs:label>procedure</rdfs:label>
     </owl:Class>
     
 
@@ -802,7 +784,6 @@
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1436 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1436">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_672"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>instrument</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_1436</code>
@@ -1372,20 +1353,6 @@ By understanding different chemical environments, the chemical shift can be used
         <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-source>NPO</ncicp:def-source><ncicp:def-definition>A chemical component which occurs as repeated units linked together in a polymer chain.</ncicp:def-definition></ncicp:ComplexDefinition></definition>
         <preferred_Name>repeat unit</preferred_Name>
         <rdfs:label>repeat unit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.bioontology.org/ontology/npo#NPO_1500 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1500">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1973"/>
-        <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>substance</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
-        <code>NPO_1500</code>
-        <dBXrefID>NCIT:C45306</dBXrefID>
-        <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-definition>A material entity which exists in some physical state that is identifiable as a whole at continuum length scales.</ncicp:def-definition><ncicp:Definition_Review_Date>100727</ncicp:Definition_Review_Date><ncicp:def-source>NPO</ncicp:def-source><ncicp:Definition_Reviewer_Name>Dennis Thomas</ncicp:Definition_Reviewer_Name></ncicp:ComplexDefinition></definition>
-        <preferred_Name>chemical substance by physical state</preferred_Name>
-        <rdfs:label>chemical substance by physical state</rdfs:label>
     </owl:Class>
     
 
@@ -2043,7 +2010,6 @@ By understanding different chemical environments, the chemical shift can be used
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1597 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1597">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_672"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>fiat material part</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_1597</code>
@@ -2097,7 +2063,6 @@ By understanding different chemical environments, the chemical shift can be used
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1610 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1610">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1500"/>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_888"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>phase</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_1610</code>
@@ -2177,7 +2142,6 @@ By understanding different chemical environments, the chemical shift can be used
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1616">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>functionalization of nanoparticle</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_1616</code>
         <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-source>NPO</ncicp:def-source><ncicp:def-definition>A process in which a nanoparticle is functionalized by linking it to a molecular entity that adds or modifies the properties or functions of the nanoparticle.</ncicp:def-definition></ncicp:ComplexDefinition></definition>
@@ -2231,7 +2195,6 @@ By understanding different chemical environments, the chemical shift can be used
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1680">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>parameter</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_1680</code>
         <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-definition>A generically dependent continuant [snap:GenericallyDependentContinuant] which is 1) a constant in the equation of a curve that can be varied to yield a family of similar curves; or 2) any factor that defines a system and determines (or limits) its performance; or 3) a quantity (such as mean or variance) that characterizes a statistical population and that can be estimated by calculations from sample data.</ncicp:def-definition><ncicp:Definition_Review_Date>100414</ncicp:Definition_Review_Date><ncicp:def-source>NPO</ncicp:def-source><ncicp:attr>WordNet</ncicp:attr><ncicp:Definition_Reviewer_Name>Dennis Thomas</ncicp:Definition_Reviewer_Name></ncicp:ComplexDefinition></definition>
@@ -2293,30 +2256,6 @@ By understanding different chemical environments, the chemical shift can be used
     
 
 
-    <!-- http://purl.bioontology.org/ontology/npo#NPO_1689 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1689">
-        <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>dependent general individual quality</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
-        <code>NPO_1689</code>
-        <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-definition>A general individual quality which inheres in a single bearer AND NOT specific to the type of single bearer AND the bearer needs other entities (bearers or non-bearers) to exist along with it or within it to have this quality; therefore, dependent.  This quality inheres in the bearer in relation to other entities.</ncicp:def-definition><ncicp:Definition_Review_Date>100623</ncicp:Definition_Review_Date><ncicp:def-source>NPO</ncicp:def-source><ncicp:Definition_Reviewer_Name>Dennis Thomas</ncicp:Definition_Reviewer_Name></ncicp:ComplexDefinition></definition>
-        <preferred_Name>dependent general individual quality</preferred_Name>
-        <rdfs:label>dependent general individual quality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.bioontology.org/ontology/npo#NPO_1690 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1690">
-        <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>independent general individual quality</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
-        <code>NPO_1690</code>
-        <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-definition>A general individual quality which inheres in a single bearer AND NOT specific to the type of single bearer AND the bearer do not need other entities (bearers or non-bearers) to exist along with it to have this quality; therefore independent.</ncicp:def-definition><ncicp:Definition_Review_Date>100427</ncicp:Definition_Review_Date><ncicp:def-source>NPO</ncicp:def-source><ncicp:Definition_Reviewer_Name>Dennis Thomas</ncicp:Definition_Reviewer_Name></ncicp:ComplexDefinition></definition>
-        <preferred_Name>independent general individual quality</preferred_Name>
-        <rdfs:label>independent general individual quality</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1692 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1692">
@@ -2333,7 +2272,6 @@ By understanding different chemical environments, the chemical shift can be used
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1694 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1694">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1692"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>particle size</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_1694</code>
@@ -2341,18 +2279,6 @@ By understanding different chemical environments, the chemical shift can be used
         <preferred_Name>particle size</preferred_Name>
         <synonym>size of particle</synonym>
         <rdfs:label>particle size</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.bioontology.org/ontology/npo#NPO_1695 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1695">
-        <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>independent specific collective quality</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
-        <code>NPO_1695</code>
-        <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-definition>A specific collective quality which inheres in a group of multiple bearers AND specific only to the type of bearers in the group, AND the group does not need other entities (non-bearers) to exist along with it as a whole to bear this quality.</ncicp:def-definition><ncicp:Definition_Review_Date>101029</ncicp:Definition_Review_Date><ncicp:def-source>NPO</ncicp:def-source><ncicp:Definition_Reviewer_Name>Dennis Thomas</ncicp:Definition_Reviewer_Name></ncicp:ComplexDefinition></definition>
-        <preferred_Name>independent specific collective quality</preferred_Name>
-        <rdfs:label>independent specific collective quality</rdfs:label>
     </owl:Class>
     
 
@@ -2396,22 +2322,9 @@ By understanding different chemical environments, the chemical shift can be used
     
 
 
-    <!-- http://purl.bioontology.org/ontology/npo#NPO_1708 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1708">
-        <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>cell viability assay</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
-        <code>NPO_1708</code>
-        <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-definition>A cytotoxicity assay which is performed to study the cytoxic effects of nanoparticle formulation or other substance on cell viability.</ncicp:def-definition><ncicp:Definition_Review_Date>100430</ncicp:Definition_Review_Date><ncicp:def-source>NPO</ncicp:def-source><ncicp:Definition_Reviewer_Name>Dennis Thomas</ncicp:Definition_Reviewer_Name></ncicp:ComplexDefinition></definition>
-        <preferred_Name>cell viability assay</preferred_Name>
-        <rdfs:label>cell viability assay</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1709 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1709">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1708"/>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003009"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>LDH release assay</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_1709</code>
@@ -2726,7 +2639,6 @@ By understanding different chemical environments, the chemical shift can be used
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1779">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>datum value</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_1779</code>
         <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-definition>A value which is given for a variable or parameter in a data record.</ncicp:def-definition><ncicp:Definition_Review_Date>100618</ncicp:Definition_Review_Date><ncicp:def-source>NPO</ncicp:def-source><ncicp:Definition_Reviewer_Name>Dennis Thomas</ncicp:Definition_Reviewer_Name></ncicp:ComplexDefinition></definition>
@@ -3191,7 +3103,6 @@ By understanding different chemical environments, the chemical shift can be used
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1853">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1505"/>
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_283"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_59999"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>medium</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_1853</code>
@@ -3593,7 +3504,6 @@ By understanding different chemical environments, the chemical shift can be used
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1895 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1895">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1972"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>particle</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_1895</code>
@@ -3687,7 +3597,6 @@ By understanding different chemical environments, the chemical shift can be used
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1914 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1914">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1689"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>hydrodynamic size</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_1914</code>
@@ -4069,7 +3978,6 @@ By understanding different chemical environments, the chemical shift can be used
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1944">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>synthesis part</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_1944</code>
         <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-definition>A process which is conducted or occurs during the synthesis of a material.</ncicp:def-definition><ncicp:Definition_Review_Date>110825</ncicp:Definition_Review_Date><ncicp:def-source>NPO</ncicp:def-source><ncicp:Definition_Reviewer_Name>thom510</ncicp:Definition_Reviewer_Name></ncicp:ComplexDefinition></definition>
@@ -4434,36 +4342,9 @@ By understanding different chemical environments, the chemical shift can be used
     
 
 
-    <!-- http://purl.bioontology.org/ontology/npo#NPO_1972 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1972">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_672"/>
-        <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>chemical entity</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
-        <code>NPO_1972</code>
-        <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-definition>A material entity which chemical interaction</ncicp:def-definition><ncicp:Definition_Review_Date>110830</ncicp:Definition_Review_Date><ncicp:def-source>NPO</ncicp:def-source><ncicp:Definition_Reviewer_Name>thom510</ncicp:Definition_Reviewer_Name></ncicp:ComplexDefinition></definition>
-        <preferred_Name>chemical entity</preferred_Name>
-        <rdfs:label>chemical entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.bioontology.org/ontology/npo#NPO_1973 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1973">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1972"/>
-        <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>chemical substance</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
-        <code>NPO_1973</code>
-        <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-definition>A chemical entity which can be identified based on its physical state, chemical composition or molecular structure.</ncicp:def-definition><ncicp:Definition_Review_Date>110830</ncicp:Definition_Review_Date><ncicp:def-source>NPO</ncicp:def-source><ncicp:Definition_Reviewer_Name>thom510</ncicp:Definition_Reviewer_Name></ncicp:ComplexDefinition></definition>
-        <preferred_Name>chemical substance</preferred_Name>
-        <rdfs:label>chemical substance</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.bioontology.org/ontology/npo#NPO_199 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_199">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1973"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_59999"/>
         <Editor_Note>[Previous definition]: A material entity which is synthesized, characterized, and which has at least one spatial size dimension distinguishable in the nanoscale (1-100 nm) range.</Editor_Note>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>nanomaterial</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
@@ -4797,7 +4678,6 @@ By understanding different chemical environments, the chemical shift can be used
     <!-- http://purl.bioontology.org/ontology/npo#NPO_274 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_274">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1690"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>shape</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_274</code>
@@ -4832,19 +4712,6 @@ By understanding different chemical environments, the chemical shift can be used
         <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-source>NPO</ncicp:def-source><ncicp:def-definition>The core part of a dendrimer, which is formed by the core initiator group [npo:NPO_803].</ncicp:def-definition></ncicp:ComplexDefinition></definition>
         <preferred_Name>dendrimer core</preferred_Name>
         <rdfs:label>dendrimer core</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.bioontology.org/ontology/npo#NPO_283 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_283">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1500"/>
-        <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>mixture</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
-        <code>NPO_283</code>
-        <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-definition>A chemical substance which is composed of two or more substances (with variable composition) that are not chemically combined with each other and are capable of being separated hy physical means.</ncicp:def-definition><ncicp:Definition_Review_Date>110830</ncicp:Definition_Review_Date><ncicp:def-source>NPO</ncicp:def-source><ncicp:Definition_Reviewer_Name>thom510</ncicp:Definition_Reviewer_Name></ncicp:ComplexDefinition></definition>
-        <preferred_Name>mixture</preferred_Name>
-        <rdfs:label>mixture</rdfs:label>
     </owl:Class>
     
 
@@ -5329,24 +5196,9 @@ By understanding different chemical environments, the chemical shift can be used
     
 
 
-    <!-- http://purl.bioontology.org/ontology/npo#NPO_489 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_489">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
-        <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>solubility</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
-        <code>NPO_489</code>
-        <dBXrefID>PATO:0001536</dBXrefID>
-        <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-source>NPO</ncicp:def-source><ncicp:def-definition>A realizable property which inheres in a solid, liquid, or gaseous chemical substance by virtue of a certain amount of the bearer to have the ability to dissolve or not in a certain volume of a liquid solvent to form a homogeneous solution.</ncicp:def-definition></ncicp:ComplexDefinition></definition>
-        <preferred_Name>solubility</preferred_Name>
-        <rdfs:label>solubility</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.bioontology.org/ontology/npo#NPO_500 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_500">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_489"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001536"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>solubility in water</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_500</code>
@@ -5441,7 +5293,6 @@ By understanding different chemical environments, the chemical shift can be used
     <!-- http://purl.bioontology.org/ontology/npo#NPO_532 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_532">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_283"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>suspension</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_532</code>
@@ -5766,20 +5617,6 @@ By understanding different chemical environments, the chemical shift can be used
     
 
 
-    <!-- http://purl.bioontology.org/ontology/npo#NPO_672 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_672">
-        <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>material entity</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
-        <code>NPO_672</code>
-        <dBXrefID>snap:MaterialEntity</dBXrefID>
-        <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-definition>An independent continuant [snap:IndependentContinuant] which is spatially extended and composed of matter.  The identity of material entities is independent of that of other entities and can be maintained through time.</ncicp:def-definition><ncicp:Definition_Review_Date>110830</ncicp:Definition_Review_Date><ncicp:def-source>NPO</ncicp:def-source><ncicp:Definition_Reviewer_Name>thom510</ncicp:Definition_Reviewer_Name></ncicp:ComplexDefinition></definition>
-        <preferred_Name>material entity</preferred_Name>
-        <rdfs:comment>Matter is any physical substance that has mass and occupies space.</rdfs:comment>
-        <rdfs:label>material entity</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.bioontology.org/ontology/npo#NPO_677 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_677">
@@ -5949,7 +5786,6 @@ By understanding different chemical environments, the chemical shift can be used
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_735">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_199"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_33839"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>dendrimer</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_735</code>
         <dBXrefID>MESH:D050091</dBXrefID>
@@ -6142,7 +5978,6 @@ By understanding different chemical environments, the chemical shift can be used
     <!-- http://purl.bioontology.org/ontology/npo#NPO_821 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_821">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1695"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>polydispersity</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_821</code>
@@ -6294,7 +6129,6 @@ By understanding different chemical environments, the chemical shift can be used
     <!-- http://purl.bioontology.org/ontology/npo#NPO_868 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_868">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1500"/>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_199"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>nanoparticle formulation</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_868</code>
@@ -6337,7 +6171,6 @@ By understanding different chemical environments, the chemical shift can be used
     <!-- http://purl.bioontology.org/ontology/npo#NPO_888 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_888">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1690"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>physical state</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
         <code>NPO_888</code>
@@ -6604,23 +6437,6 @@ By understanding different chemical environments, the chemical shift can be used
     <!-- http://purl.obolibrary.org/obo/UO_0000186 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000186"/>
-    
-
-
-    <!-- http://purl.org/obo/owl/CHEBI#CHEBI_33839 -->
-
-    <owl:Class rdf:about="http://purl.org/obo/owl/CHEBI#CHEBI_33839">
-        <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>polymer</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
-        <code>NPO_364</code>
-        <dBXrefID>CHEBI:33839</dBXrefID>
-        <dBXrefID>MESH:D011108</dBXrefID>
-        <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-source>NPO</ncicp:def-source><ncicp:def-definition>A polymer is a molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass.</ncicp:def-definition></ncicp:ComplexDefinition></definition>
-        <preferred_Name>polymer</preferred_Name>
-        <synonym>macromolecule</synonym>
-        <synonym>polymer molecule</synonym>
-        <rdfs:comment>[definition source]: CHEBI</rdfs:comment>
-        <rdfs:label>polymer</rdfs:label>
-    </owl:Class>
     
 
 
@@ -6894,20 +6710,6 @@ By understanding different chemical environments, the chemical shift can be used
     
 
 
-    <!-- http://purl.org/obo/owl/PATO#PATO_0000004 -->
-
-    <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0000004">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
-        <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>mobility</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
-        <code>NPO_1314</code>
-        <dBXrefID>PATO:0000004</dBXrefID>
-        <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-source>NPO</ncicp:def-source><ncicp:def-definition>A realizable entity inhering in an object by virtue of its ability to move or be moved freely.</ncicp:def-definition></ncicp:ComplexDefinition></definition>
-        <preferred_Name>mobility</preferred_Name>
-        <rdfs:label>mobility</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/obo/owl/PATO#PATO_0001242 -->
 
     <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0001242">
@@ -6961,65 +6763,6 @@ By understanding different chemical environments, the chemical shift can be used
     <!-- http://www.bioassayontology.org/bao#BAO_0003009 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003009"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant">
-        <owl:disjointWith rdf:resource="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
-        <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>generically dependent continuant</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
-        <code>NPO_1600</code>
-        <dBXrefID>snap:GenericallyDependentContinuant</dBXrefID>
-        <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-definition>A continuant [snap:Continuant] that is dependent on one or other independent continuant [snap:IndependentContinuant] bearers. For every instance of A requires some instance of (an independent continuant [snap:IndependentContinuant] type) B but which instance of B serves can change from time to time.  Examples: a certain PDF file that exists in different and in several hard drives</ncicp:def-definition><ncicp:Definition_Review_Date>100428</ncicp:Definition_Review_Date><ncicp:def-source>NPO</ncicp:def-source><ncicp:attr>BFO (v. 1.1)</ncicp:attr><ncicp:Definition_Reviewer_Name>Dennis Thomas</ncicp:Definition_Reviewer_Name></ncicp:ComplexDefinition></definition>
-        <preferred_Name>generically dependent continuant</preferred_Name>
-        <rdfs:comment>Examples: a certain PDF file that exists in different and in several hard drives</rdfs:comment>
-        <rdfs:label>generically_dependent_continuant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#RealizableEntity -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
-        <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>realizable entity</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
-        <code>NPO_237</code>
-        <dBXrefID>snap:RealizableEntity</dBXrefID>
-        <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-source>NPO</ncicp:def-source><ncicp:def-definition>A specifically dependent continuant [snap:SpecificallyDependentContinuant] that inheres in continuant [snap:Continuant] entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances.</ncicp:def-definition></ncicp:ComplexDefinition></definition>
-        <preferred_Name>realizable entity</preferred_Name>
-        <rdfs:comment>Source: (1) BFO.owl v. 1.1; (2) Robert Arp and Barry Smith &quot;Function, Role and Disposition in Basic Formal Ontology&quot; NATURE PROCEEDINGS, 2008.</rdfs:comment>
-        <rdfs:comment>realizable entities are defined by the fact that they can be realized (manifested, actualized, executed) in occurrents of corresponding sorts.</rdfs:comment>
-        <rdfs:label>realizable_entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant">
-        <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>specifically dependent continuant</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
-        <code>NPO_1601</code>
-        <dBXrefID>snap:SpecificallyDependentContinuant</dBXrefID>
-        <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-definition>A continuant [snap:Continuant] that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.</ncicp:def-definition><ncicp:Definition_Review_Date>100428</ncicp:Definition_Review_Date><ncicp:def-source>NPO</ncicp:def-source><ncicp:attr>BFO</ncicp:attr><ncicp:Definition_Reviewer_Name>Dennis Thomas</ncicp:Definition_Reviewer_Name></ncicp:ComplexDefinition></definition>
-        <preferred_Name>specifically dependent continuant</preferred_Name>
-        <rdfs:comment>Synonyms: property, trope, mode; Examples: the mass of a cloud, the smell of mozzarella, the liquidity of blood, the color of a tomato, the disposition of fish to decay, the role of being a doctor, the function of the heart in the body: to pump blood, to receive de-oxygenated and oxygenated blood, etc.</rdfs:comment>
-        <rdfs:label>specifically_dependent_continuant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/span#Process -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#Process">
-        <FULL_SYN rdf:parseType="Literal"><ncicp:ComplexTerm xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:term-name>process</ncicp:term-name><ncicp:term-group>PT</ncicp:term-group><ncicp:term-source>NCI</ncicp:term-source></ncicp:ComplexTerm></FULL_SYN>
-        <code>NPO_336</code>
-        <dBXrefID>span:Process</dBXrefID>
-        <definition rdf:parseType="Literal"><ncicp:ComplexDefinition xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"><ncicp:def-definition>A processual entity [span:ProcessualEntity] that is a maximally connected spatiotemporal whole and has bona fide beginnings and endings corresponding to real discontinuities.</ncicp:def-definition><ncicp:Definition_Review_Date>100405</ncicp:Definition_Review_Date><ncicp:def-source>NPO</ncicp:def-source><ncicp:attr>BFO</ncicp:attr><ncicp:Definition_Reviewer_Name>Dennis Thomas</ncicp:Definition_Reviewer_Name></ncicp:ComplexDefinition></definition>
-        <preferred_Name>process</preferred_Name>
-        <rdfs:comment>[definition source]: BFO</rdfs:comment>
-        <rdfs:label>process</rdfs:label>
-    </owl:Class>
 </rdf:RDF>
 
 

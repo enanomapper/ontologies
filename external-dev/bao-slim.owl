@@ -681,7 +681,6 @@ Percent cytotoxicity = 100-percent viability</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000008">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000026"/>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003112"/>
         <obo:IAO_0000115>Categorization of bioassays based on the property or process that the assay is interrogating, e.g. ADMET, functional, etc.</obo:IAO_0000115>
         <rdfs:label>bioassay type</rdfs:label>
     </owl:Class>
@@ -713,7 +712,6 @@ Percent cytotoxicity = 100-percent viability</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003112"/>
         <obo:IAO_0000115>A set of instructions, methodology, operations, required reagents, instruments to carry out experiments for the purpose of testing the effect of a perturbing agent in a biological model system, measuring one or multiple effect(s) of the agent facilitated by an assay design method translate the perturbation into a detectable signal to arrive at one or multiple endpoint(s) that quantify or qualify the extent of the perturbation.  Bioassay is described by multiple bioassay components: assay format, biology (biological participants in various role and processes), design method, physical detection method / technology, screened entity, and endpoint. Bioassay includes one or multiple measure groups to describe panel, profiling, multiparametric (or multiplexed) assays (assays that measure more than one effect of the perturbagen on the system that is screened).</obo:IAO_0000115>
         <rdfs:label>bioassay</rdfs:label>
     </owl:Class>
@@ -744,7 +742,6 @@ Percent cytotoxicity = 100-percent viability</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003112"/>
         <obo:IAO_0000115>Description of an experiment carried out for the purpose of screening a perturbing agent in a biological system, measuring the effect of the agents using specified technology, and arriving at endpoints that satisfy particular criteria.</obo:IAO_0000115>
         <rdfs:label>bioassay specification</rdfs:label>
     </owl:Class>
@@ -949,7 +946,6 @@ Measure group links to those classes that can vary among different measurements 
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000179">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003115"/>
         <obo:IAO_0000115>The endpoint is a quantitive or qualitative interpretable standardized representation of a perturbation (a change from a defined reference state of a &quot;closed&quot; model system) that is measured by the bioassay.  An endpoint consists of a series of data points, one for each perturbing agent (screened entity) tested the assay.</obo:IAO_0000115>
         <rdfs:label>endpoint</rdfs:label>
         <rdfs:label>result</rdfs:label>
@@ -2051,7 +2047,6 @@ In nucleic acid thermodynamics, it is the temperature at which 50% of the DNA st
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000610">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000520"/>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003115"/>
         <obo:IAO_0000115>It is the term that describes an endpoint or result of a bioassay, which is deposited at PubChem.</obo:IAO_0000115>
         <rdfs:label>PubChem endpoint name</rdfs:label>
     </owl:Class>
@@ -2244,7 +2239,6 @@ In nucleic acid thermodynamics, it is the temperature at which 50% of the DNA st
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000697">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1436"/>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003118"/>
         <obo:IAO_0000115>The names of equipment used for measurement/readout from an assay, e.g. FLIPR, ViewLux plate reader, PHERAstar, etc.</obo:IAO_0000115>
         <rdfs:label>detection instrument</rdfs:label>
     </owl:Class>
@@ -5204,36 +5198,11 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
     
 
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0003112 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003112">
-        <rdfs:label>assay bioassay component</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.bioassayontology.org/bao#BAO_0003113 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003113">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:label>assay format component</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0003115 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003115">
-        <rdfs:label>assay endpoint component</rdfs:label>
-        <rdfs:label>assay result component</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0003118 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003118">
-        <rdfs:label>instrument</rdfs:label>
     </owl:Class>
     
 

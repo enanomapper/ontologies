@@ -106,27 +106,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHMO_0000067 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000067">
-        <obo:IAO_0000115>Any technique where a microscope is used to view a small object (or specimen) by producing a magnified image.</obo:IAO_0000115>
-        <oboInOwl:hasAlternativeId>FIX:0000005</oboInOwl:hasAlternativeId>
-        <oboInOwl:id>CHMO:0000067</oboInOwl:id>
-        <rdfs:label>microscopy</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000067"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Any technique where a microscope is used to view a small object (or specimen) by producing a magnified image.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHMO_0000097 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000097">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000067"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000115>Microscopy where ions are used to produce an image.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>FIX:0000962</oboInOwl:hasAlternativeId>
@@ -272,29 +254,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHMO_0000331 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000331">
-        <obo:IAO_0000115>Spectroscopy where the absorption or emission of electrons is detected.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>ES</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>electron spectrometry</oboInOwl:hasExactSynonym>
-        <oboInOwl:id>CHMO:0000331</oboInOwl:id>
-        <rdfs:label>electron spectroscopy</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000331"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Spectroscopy where the absorption or emission of electrons is detected.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FIX:0000064</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>OrangeBook:17.2</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHMO_0000339 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000339">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000331"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000115>Spectroscopy where a high energy photon ionises a core electron and an electron from a higher energy level descends to take its place, releasing sufficient energy to eject a second so-called &apos;Auger&apos; electron and the energy of the Auger electron is detected as a function of incident photon energy.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>AEES</oboInOwl:hasExactSynonym>
@@ -308,15 +270,15 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000339"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>AES</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chmo#non-mining_synonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000339"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Spectroscopy where a high energy photon ionises a core electron and an electron from a higher energy level descends to take its place, releasing sufficient energy to eject a second so-called &apos;Auger&apos; electron and the energy of the Auger electron is detected as a function of incident photon energy.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ISBN:0-471-96523-5</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000339"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>AES</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chmo#non-mining_synonym"/>
     </owl:Axiom>
     
 
@@ -656,36 +618,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHMO_0000387 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000387">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000331"/>
-        <obo:IAO_0000115>Spectroscopy where the sample is illuminated with photons causing ionisation and the emission of photoelectrons, the energies of which are measured. The energy of the incident photons is usually greater than the ionisation energy of the sample and the photoelectrons are emitted with the excess in the form of kinetic energy.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>PES</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>photo emission spectrometry</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>photo emission spectroscopy</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>photoelectron emission spectroscopy</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>photoelectron spectrometry</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>photoemission spectrometry</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>photoemission spectroscopy</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym>PS</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>CHMO:0000387</oboInOwl:id>
-        <rdfs:label>photoelectron spectroscopy</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000387"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Spectroscopy where the sample is illuminated with photons causing ionisation and the emission of photoelectrons, the energies of which are measured. The energy of the incident photons is usually greater than the ionisation energy of the sample and the photoelectrons are emitted with the excess in the form of kinetic energy.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FIX:0000040</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://doi.org/10.1351/goldbook.P04609</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHMO_0000404 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000404">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000387"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000115>Spectroscopy where the sample is illuminated with X-rays causing ionisation and the emission of photoelectrons, the energies of which are measured.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>FIX:0000041</oboInOwl:hasAlternativeId>
@@ -822,28 +757,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHMO_0000534 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000534">
-        <obo:IAO_0000115>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas, such as Ar, containing free electrons).</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>plasma source mass spectroscopy</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym>PS-MS</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>CHMO:0000534</oboInOwl:id>
-        <rdfs:label>plasma mass spectrometry</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000534"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Mass spectrometry where the sample is ionised in a plasma (a partially ionised gas, such as Ar, containing free electrons).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHMO_0000538 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000538">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000534"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000115>Plasma mass spectrometry where the plasma has been generated by electromagnetic induction.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>FIX:0000863</oboInOwl:hasAlternativeId>
@@ -1299,28 +1215,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHMO_0000644 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000644">
-        <obo:IAO_0000115>Spectroscopy where the diffuse reflection of infrared radiation by a sample is measured.</obo:IAO_0000115>
-        <oboInOwl:hasAlternativeId>FIX:0000656</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasExactSynonym>diffuse reflectance IR spectroscopy</oboInOwl:hasExactSynonym>
-        <oboInOwl:id>CHMO:0000644</oboInOwl:id>
-        <rdfs:label>diffuse reflectance infrared spectroscopy</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000644"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Spectroscopy where the diffuse reflection of infrared radiation by a sample is measured.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHMO_0000645 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000645">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000644"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000115>Spectroscopy where the diffuse reflection of a single pulse of infrared radiation by a sample is measured, and the spectrum obtained is subject to a Fourier transform.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>DRIFT</oboInOwl:hasExactSynonym>
@@ -1350,27 +1247,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHMO_0000681 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000681">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <obo:IAO_0000115>Any measurement technique in which a physical property of the sample is measured as a function of temperature.</obo:IAO_0000115>
-        <oboInOwl:id>CHMO:0000681</oboInOwl:id>
-        <rdfs:label>thermal analysis</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000681"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Any measurement technique in which a physical property of the sample is measured as a function of temperature.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>Orange:5.2.1</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHMO_0000690 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000690">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000681"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000115>The measurement of the mass of a sample as a function of temperature.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>TG</oboInOwl:hasExactSynonym>
@@ -1569,7 +1448,6 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001075 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001075">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002739"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000115>A process where a sample is analyzed for its elemental and sometimes isotopic composition (the elements present and sometimes their weight percentage).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>EA</oboInOwl:hasExactSynonym>
@@ -2024,24 +1902,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHMO_0002739 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002739">
-        <obo:IAO_0000115>A measurement method which obtains the concentration or quantity of a specified substance in an analyte.</obo:IAO_0000115>
-        <oboInOwl:created_by>batchelorc</oboInOwl:created_by>
-        <oboInOwl:creation_date>2012-04-13T11:50:09Z</oboInOwl:creation_date>
-        <oboInOwl:id>CHMO:0002739</oboInOwl:id>
-        <rdfs:label>quantitative determination method</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002739"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A measurement method which obtains the concentration or quantity of a specified substance in an analyte.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHMO_0002813 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002813">
@@ -2080,20 +1940,7 @@
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070">
-        <obo:IAO_0000115>A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.</obo:IAO_0000115>
-        <oboInOwl:hasAlternativeId>CHMO:0000000</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId>CHMO:0001133</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasExactSynonym>measurement method</oboInOwl:hasExactSynonym>
-        <oboInOwl:id>OBI:0000070</oboInOwl:id>
-        <rdfs:label>assay</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>obi:pppb</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
     
 
 
