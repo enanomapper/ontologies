@@ -415,7 +415,7 @@ for ONTO in "${ontologies[@]}"; do
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
                     --signature false  \
-                filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001" \ \
+                filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001"\
                 remove \
                     --term-file $remove_D \
                     --select "self descendants" \
@@ -457,7 +457,7 @@ for ONTO in "${ontologies[@]}"; do
                     --select "annotations self descendants parents" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add_D.owl \
-                filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001" \ \
+                filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001"\
                 remove \
                     --term-file $remove_D \
                     --select "self descendants" \
