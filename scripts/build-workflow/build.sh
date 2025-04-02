@@ -303,7 +303,6 @@ for ONTO in "${ontologies[@]}"; do
                     --term-file $add \
                     --select "annotations self" \
                     --signature false \
-
                 merge \
                     --input external-dev/tmp/${ONTO}_add_D.owl \
                     --output external-dev/tmp/${ONTO}_no_spcs.owl
