@@ -497,7 +497,8 @@ for ONTO in "${ontologies[@]}"; do
                 --version-iri "https://purl.enanomapper.org/onto/external-dev/${ONTO}-slim-prop.owl/"\
                 --annotation http://www.w3.org/2002/07/owl#versionInfo "This ontology subset was generated automatically with ROBOT (http://robot.obolibrary.org)" \
                 --annotation http://www.geneontology.org/formats/oboInOwl#date "$timestamp (yyy-mm-dd)" \
-            filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001 annotations self" --trim true --signature true
+            filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001 annotations self" --trim true --signature true \
+            reduce --reasoner ELK
     fi
     
     # Add props, if exist
@@ -509,7 +510,7 @@ for ONTO in "${ontologies[@]}"; do
                 --term-file config/${ONTO}-term-file.txt \
             annotate --version-iri "https://purl.enanomapper.org/onto/external-dev/${ONTO}-slim-prop.owl/"\
                     --ontology-iri "https://purl.enanomapper.org/onto/external-dev/${ONTO}-slim.owl/" \
-                    --output external-dev/${ONTO}-slim-prop.owl
+                    --output external-dev/${ONTO}-slim-prop.owl \
 
     fi
 
