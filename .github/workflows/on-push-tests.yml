@@ -1,6 +1,7 @@
 name: On push file integrity tests
 
 on:
+  push:
   pull_request:
   workflow_run:
     workflows: ["pages-build-deployment"] #Wait until the latest modules are deployed to the site
