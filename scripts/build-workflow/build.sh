@@ -181,7 +181,8 @@ for ONTO in "${ontologies[@]}"; do
                     --trim true \
                     --preserve-structure false \
                     --trim true \
-                    --preserve-structure false \axioms all \
+                    --preserve-structure false \
+                    --axioms all \
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
                     --signature false \
