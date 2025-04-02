@@ -179,7 +179,9 @@ for ONTO in "${ontologies[@]}"; do
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
                     --trim true \
-                    --axioms all \
+                    --preserve-structure false \
+                    --trim true \
+                    --preserve-structure false \axioms all \
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
                     --signature false \
@@ -188,6 +190,8 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
+                    --trim true \
+                    --preserve-structure false \
                     --trim true \
                     --axioms all \
                     --term-file $add \
@@ -215,6 +219,8 @@ for ONTO in "${ontologies[@]}"; do
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
                     --trim true \
+                    --preserve-structure false \
+                    --trim true \
                     --axioms all \
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
@@ -225,6 +231,8 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
+                    --trim true \
+                    --preserve-structure false \
                     --trim true \
                     --axioms all \
                     --term-file $add \
@@ -250,6 +258,8 @@ for ONTO in "${ontologies[@]}"; do
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
                     --trim true \
+                    --preserve-structure false \
+                    --trim true \
                     --axioms all \
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
@@ -260,6 +270,8 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
+                    --trim true \
+                    --preserve-structure false \
                     --trim true \
                     --axioms all \
                     --term-file $add \
@@ -282,6 +294,8 @@ for ONTO in "${ontologies[@]}"; do
             bash robot --prefixes "external-dev/prefixes.json" \
                 filter \
                     --trim true \
+                    --preserve-structure false \
+                    --trim true \
                     --axioms all \
                     --input external-dev/tmp/source/${ONTO}.owl \
                     --term-file $add_D \
@@ -291,6 +305,8 @@ for ONTO in "${ontologies[@]}"; do
                 remove --select "complement"
             bash robot --prefixes "external-dev/prefixes.json" \
                 filter \
+                    --trim true \
+                    --preserve-structure false \
                     --trim true \
                     --axioms all \
                     --input external-dev/tmp/source/${ONTO}.owl \
@@ -308,6 +324,8 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
+                    --trim true \
+                    --preserve-structure false \
                     --trim true \
                     --axioms all \
                     --term-file $add \
@@ -335,6 +353,8 @@ for ONTO in "${ontologies[@]}"; do
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
                     --trim true \
+                    --preserve-structure false \
+                    --trim true \
                     --axioms all \
                     --term-file $add \
                     --select "annotations self" \
@@ -355,6 +375,8 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
+                    --trim true \
+                    --preserve-structure false \
                     --trim true \
                     --axioms all \
                     --term-file $add \
@@ -377,6 +399,8 @@ for ONTO in "${ontologies[@]}"; do
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
                     --trim true \
+                    --preserve-structure false \
+                    --trim true \
                     --axioms all \
                     --term-file $add \
                     --select "annotations self" \
@@ -391,6 +415,8 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
+                    --trim true \
+                    --preserve-structure false \
                     --trim true \
                     --axioms all \
                     --term-file $add_D \
@@ -413,6 +439,8 @@ for ONTO in "${ontologies[@]}"; do
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
                     --trim true \
+                    --preserve-structure false \
+                    --trim true \
                     --axioms all \
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
@@ -430,6 +458,8 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
+                    --trim true \
+                    --preserve-structure false \
                     --trim true \
                     --axioms all \
                     --term-file $add_D \
@@ -449,6 +479,8 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
+                    --trim true \
+                    --preserve-structure false \
                     --trim true \
                     --axioms all \
                     --term-file $add_D \
