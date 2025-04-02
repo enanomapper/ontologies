@@ -403,7 +403,6 @@ for ONTO in "${ontologies[@]}"; do
                     --term-file $add_D \
                     --select "annotations self descendants" \
                     --signature false  \
-
                 remove \
                     --term-file $remove_D \
                     --select "self descendants" \
