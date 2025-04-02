@@ -8,6 +8,7 @@ on:
      - './config/*'
      - './internal*'
      - './external*'
+     - './scripts/build-workflow/*'
   push:
     paths:
      - 'config.yaml'
@@ -15,6 +16,7 @@ on:
      - './config/*'
      - './internal*'
      - './external*'
+     - './scripts/build-workflow/*'
   schedule:
     - cron: 1 0 1 1-12 *
 jobs:
