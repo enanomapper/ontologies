@@ -755,7 +755,6 @@ Percent cytotoxicity = 100-percent viability</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000029">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000026"/>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003112"/>
         <obo:IAO_0000115>The assay stage describes the purpose of the assay in an assay campaign.  Assay stage also relates to the order of assays in a screening campaign.  For example the primary assay, which is performed first, identifies hits. The primary hits are then confirmed in a confirmatory assay.  Subsequent secondary assays are run to eliminate compounds that are not of interest or to confirm hits using an alternate design / technology, or to further characterize compounds.
 Whether an assay is run in single concentration or concentration response is defined in the class &apos;assay measurement throughput quality&apos;.  For example primary assays are typically run in single concentration with single measurements. However, the NCGC runs qHTS primary assays as concentration-response assays.</obo:IAO_0000115>
         <rdfs:label>assay screening campaign stage</rdfs:label>
@@ -983,14 +982,6 @@ Measure group links to those classes that can vary among different measurements 
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000184">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002169"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0000534"/>
-                    <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0000564"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>High content screening (HCS) is an automated screening method using live cells to understand various aspects of their biology. HCS employs imaging (bright-field or fluorescence) and analyses in a high throughput format. HCS can be applied to monitor complex cellular aspects, namely, signaling, morphology, phenotype, proliferation, motility, intracellular trafficking, toxicology, RNAi knockdown, and receptor activation.</obo:IAO_0000115>
         <obo:IAO_0000118>HCS</obo:IAO_0000118>
         <obo:IAO_0000118>High content screening</obo:IAO_0000118>
@@ -1776,7 +1767,6 @@ Percent viability = 100-percent cytotoxicity</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000520">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000026"/>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003112"/>
         <obo:IAO_0000115>This includes the different pieces of information about a PubChem bioassay that is available at the PubChem website, namely, the assay title, assay protocol, assay description, assay provider, endpoint name, etc.</obo:IAO_0000115>
         <rdfs:label>assay description</rdfs:label>
     </owl:Class>
@@ -2072,7 +2062,6 @@ In nucleic acid thermodynamics, it is the temperature at which 50% of the DNA st
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000612">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000026"/>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003112"/>
         <obo:IAO_0000115>It is the repository (database) in which the assay was deposited, e.g., PubChem, ChEMBL, etc.</obo:IAO_0000115>
         <rdfs:label>assay repository</rdfs:label>
     </owl:Class>
@@ -2132,7 +2121,6 @@ In nucleic acid thermodynamics, it is the temperature at which 50% of the DNA st
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000625">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003115"/>
         <obo:IAO_0000115>A mathematical model / equation to which the data is fitted (using the curve fit method / algorithm).</obo:IAO_0000115>
         <rdfs:label>curve fit model</rdfs:label>
     </owl:Class>
