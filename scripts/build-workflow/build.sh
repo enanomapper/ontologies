@@ -219,7 +219,8 @@ for ONTO in "${ontologies[@]}"; do
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
                     --signature false \
-                    --output external-dev/tmp/${ONTO}_add_D.owl
+                    --output external-dev/tmp/${ONTO}_add_D.owl \
+                remove --select "complement"
             bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
@@ -229,7 +230,8 @@ for ONTO in "${ontologies[@]}"; do
                     --term-file $add \
                     --select "annotations self" \
                     --signature false \
-                    --output external-dev/tmp/${ONTO}_add.owl    
+                    --output external-dev/tmp/${ONTO}_add.owl \
+                remove --select "complement"
             bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/${ONTO}_add_D.owl \
@@ -252,7 +254,8 @@ for ONTO in "${ontologies[@]}"; do
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
                     --signature false \
-                    --output external-dev/tmp/${ONTO}_add_D.owl
+                    --output external-dev/tmp/${ONTO}_add_D.owl \
+                remove --select "complement"
             bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
@@ -262,7 +265,8 @@ for ONTO in "${ontologies[@]}"; do
                     --term-file $add \
                     --select "annotations self" \
                     --signature false \
-                    --output external-dev/tmp/${ONTO}_add.owl    
+                    --output external-dev/tmp/${ONTO}_add.owl \
+                remove --select "complement"    
             bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/${ONTO}_add_D.owl \
@@ -283,7 +287,8 @@ for ONTO in "${ontologies[@]}"; do
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
                     --signature false \
-                    --output external-dev/tmp/${ONTO}_add_D.owl
+                    --output external-dev/tmp/${ONTO}_add_D.owl \
+                remove --select "complement"
             bash robot --prefixes "external-dev/prefixes.json" \
                 filter \
                     --trim true \
@@ -308,7 +313,8 @@ for ONTO in "${ontologies[@]}"; do
                     --term-file $add \
                     --select "annotations self" \
                     --signature false \
-                    --output external-dev/tmp/${ONTO}_add.owl    
+                    --output external-dev/tmp/${ONTO}_add.owl \
+                remove --select "complement"    
             bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/${ONTO}_add_D.owl \
@@ -333,7 +339,8 @@ for ONTO in "${ontologies[@]}"; do
                     --term-file $add \
                     --select "annotations self" \
                     --signature false \
-                    --output external-dev/tmp/${ONTO}_add.owl    
+                    --output external-dev/tmp/${ONTO}_add.owl \
+                remove --select "complement"    
             bash robot --prefixes "external-dev/prefixes.json" \
                 remove \
                     --input external-dev/tmp/${ONTO}_add.owl \
@@ -353,7 +360,8 @@ for ONTO in "${ontologies[@]}"; do
                     --term-file $add \
                     --select "annotations self" \
                     --signature false \
-                    --output external-dev/tmp/${ONTO}_add.owl    
+                    --output external-dev/tmp/${ONTO}_add.owl \
+                remove --select "complement"    
             bash robot --prefixes "external-dev/prefixes.json" \
                 remove \
                     --input external-dev/tmp/${ONTO}_add.owl   \
@@ -373,7 +381,8 @@ for ONTO in "${ontologies[@]}"; do
                     --term-file $add \
                     --select "annotations self" \
                     --signature false \
-                    --output external-dev/tmp/${ONTO}_no_spcs.owl    
+                    --output external-dev/tmp/${ONTO}_no_spcs.owl \
+                remove --select "complement"    
             ;;
         0111)
             
@@ -386,7 +395,8 @@ for ONTO in "${ontologies[@]}"; do
                     --axioms all \
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
-                    --signature false \
+                    --signature false  \
+                remove --select "complement" \
                 remove \
                     --term-file $remove_D \
                     --select "self descendants" \
@@ -407,6 +417,7 @@ for ONTO in "${ontologies[@]}"; do
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
                     --signature false \
+                remove --select "complement" \
                 remove \
                     --term-file $remove \
                     --select "self" \
@@ -424,7 +435,8 @@ for ONTO in "${ontologies[@]}"; do
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
                     --signature false \
-                    --output external-dev/tmp/${ONTO}_add_D.owl \
+                    --output external-dev/tmp/${ONTO}_add_D.owl \ \
+                remove --select "complement" \
                 remove \
                     --term-file $remove_D \
                     --select "self descendants" \
@@ -442,7 +454,8 @@ for ONTO in "${ontologies[@]}"; do
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
                     --signature false \
-                    --output external-dev/tmp/${ONTO}_no_spcs.owl
+                    --output external-dev/tmp/${ONTO}_no_spcs.owl \
+                remove --select "complement"
             ;;
     esac
     echo ...Done filtering source ontology ${ONTO}
