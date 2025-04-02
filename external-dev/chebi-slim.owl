@@ -708,6 +708,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_139547">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_729"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50816"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
         <obo:IAO_0000115>An iron oxide nanoparticle consisting of a magnetic iron oxide core (usually magnetite, Fe3O4, or maghemite, gamma-Fe2O3). They may be coated with a biocompatible polymer or precipitated within the pores of a porous biocompatible polymer, which can be attached to cytotoxic drugs or antibodies. These can be targeted to the required area using external magnets; after the external magnetic field is removed, the particles no longer show magnetic interaction.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -722,6 +723,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_139548">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50817"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50819"/>
         <obo:IAO_0000115>An iron oxide mineral with formula Fe2O3 formed by weathering of spinels containing iron(II) such as magnetite or titanomagnetite, or through dehydration and transformation of some iron oxyhydroxide minerals. A brown or yellow pigment found in various sediments and soils.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>CHEBI:139548</oboInOwl:id>
@@ -1104,6 +1106,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_192761">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50817"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50819"/>
         <obo:IAO_0000115>An iron oxide of nanoparticulate size and poor crystallinity. It is a mineral commonly found in soil and freshwater environments and forms a core structural component in the Fe-buffering ferritin protein. It is also used in the sequestration of heavy element contaminants, and is a precursor of haematite and goethite.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>CHEBI:192761</oboInOwl:id>
@@ -2215,6 +2218,19 @@
         <oboInOwl:id>CHEBI:33295</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
         <rdfs:label>diagnostic agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33342 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33342">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C637"/>
+        <obo:IAO_0000115>A titanium group element atom that has formula Zr.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:33342</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>zirconium atom</rdfs:label>
     </owl:Class>
     
 
@@ -4254,6 +4270,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_46726">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50817"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50821"/>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>CHEBI:46726</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
@@ -5392,10 +5409,23 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50816 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50816">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:50816</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#1_STAR"/>
+        <rdfs:label>iron oxide</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_50817 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50817">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50816"/>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>CHEBI:50817</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
@@ -5408,10 +5438,50 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50818">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50817"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50819"/>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>CHEBI:50818</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
         <rdfs:label>hematite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50819 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50819">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50816"/>
+        <obo:IAO_0000115>An iron oxide that has formula Fe2O3.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:50819</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>ferric oxide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50820 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50820">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50816"/>
+        <obo:IAO_0000115>An iron oxide that has formula FeO.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:50820</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>ferrous oxide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50821 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50821">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50816"/>
+        <obo:IAO_0000115>An iron oxide that has formula Fe3O4.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:50821</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>ferrosoferric oxide</rdfs:label>
     </owl:Class>
     
 
@@ -5435,6 +5505,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50824">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_729"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50816"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50818"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
         <obo:IAO_0000115>An iron oxide nanoparticle composed of hematite (Fe2O3).</obo:IAO_0000115>
@@ -6281,6 +6352,19 @@
         <oboInOwl:id>CHEBI:52991</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
         <rdfs:label>tin dioxide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_53248 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_53248">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60027"/>
+        <obo:IAO_0000115>A vinyl polymer composed of repeating -CH2-CR- units where R is a 2-oxopyrrolidin-1-yl group.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:53248</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>poly(vinylpyrrolidone)</rdfs:label>
     </owl:Class>
     
 
