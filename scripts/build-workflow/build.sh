@@ -183,7 +183,7 @@ for ONTO in "${ontologies[@]}"; do
                     --preserve-structure false \
                     --axioms all \
                     --term-file $add_D \
-                    --select "annotations self descendants parents" \
+                    --select "annotations self descendants " \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add_D.owl \
                 filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001" 
@@ -206,10 +206,10 @@ for ONTO in "${ontologies[@]}"; do
                     --include-annotations true \
                 remove \
                     --term-file $remove_D \
-                    --select "self descendants" \
+                    --select "self descendants annotations" \
                 remove \
                     --term-file $remove \
-                    --select "self" \
+                    --select "self annotations" \
                     --output external-dev/tmp/${ONTO}_no_spcs.owl
             ;;
         1110)
@@ -223,7 +223,7 @@ for ONTO in "${ontologies[@]}"; do
                     --preserve-structure false \
                     --axioms all \
                     --term-file $add_D \
-                    --select "annotations self descendants parents" \
+                    --select "annotations self descendants " \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add_D.owl \
                 filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001" 
@@ -247,7 +247,7 @@ for ONTO in "${ontologies[@]}"; do
                     --include-annotations true \
                 remove \
                     --term-file $remove \
-                    --select "self" \
+                    --select "annotations self" \
                     --output external-dev/tmp/${ONTO}_no_spcs.owl
             ;;
         1101)
@@ -261,7 +261,7 @@ for ONTO in "${ontologies[@]}"; do
                     --preserve-structure false \
                     --axioms all \
                     --term-file $add_D \
-                    --select "annotations self descendants parents" \
+                    --select "annotations self descendants " \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add_D.owl \
                 filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001" 
@@ -276,14 +276,14 @@ for ONTO in "${ontologies[@]}"; do
                     --select "annotations self" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add.owl \
-                filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001" \    
+                filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001" 
             bash robot --prefixes "external-dev/prefixes.json" \
                 merge \
                     --input external-dev/tmp/${ONTO}_add_D.owl \
                     --input external-dev/tmp/${ONTO}_add.owl \
                     remove \
                     --term-file $remove_D \
-                    --select "self descendants" \
+                    --select "self descendants annotations" \
                     --output external-dev/tmp/${ONTO}_no_spcs.owl
             ;;
         1100)
@@ -296,7 +296,7 @@ for ONTO in "${ontologies[@]}"; do
                     --axioms all \
                     --input external-dev/tmp/source/${ONTO}.owl \
                     --term-file $add_D \
-                    --select "annotations self descendants parents" \
+                    --select "annotations self descendants " \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add_D.owl \
                 filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001"
@@ -336,10 +336,10 @@ for ONTO in "${ontologies[@]}"; do
                     --input external-dev/tmp/${ONTO}_add.owl \
                 remove \
                     --term-file $remove_D \
-                    --select "self descendants" \
+                    --select "self descendants annotations" \
                 remove \
                     --term-file $remove \
-                    --select "self" \
+                    --select "self annotations" \
                     --output external-dev/tmp/${ONTO}_no_spcs.owl
             ;;
         1010)
@@ -356,12 +356,12 @@ for ONTO in "${ontologies[@]}"; do
                     --select "annotations self" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add.owl \
-                filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001" \    
+                filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001"
             bash robot --prefixes "external-dev/prefixes.json" \
                 remove \
                     --input external-dev/tmp/${ONTO}_add.owl \
                     --term-file $remove \
-                    --select "self" \
+                    --select "self annotations" \
                     --output external-dev/tmp/${ONTO}_no_spcs.owl
             ;;
         1001)
@@ -383,7 +383,7 @@ for ONTO in "${ontologies[@]}"; do
                 remove \
                     --input external-dev/tmp/${ONTO}_add.owl   \
                     --term-file $remove_D \
-                    --select "self descendants" \
+                    --select "self descendants annotations" \
                     --output external-dev/tmp/${ONTO}_no_spcs.owl
             ;;
         1000)
@@ -400,7 +400,7 @@ for ONTO in "${ontologies[@]}"; do
                     --select "annotations self" \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_no_spcs.owl \
-                filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001" \    
+                filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001"
             ;;
         0111)
             
@@ -413,15 +413,15 @@ for ONTO in "${ontologies[@]}"; do
                     --preserve-structure false \
                     --axioms all \
                     --term-file $add_D \
-                    --select "annotations self descendants parents" \
+                    --select "annotations self descendants" \
                     --signature false  \
                 filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001"\
                 remove \
                     --term-file $remove_D \
-                    --select "self descendants" \
+                    --select "self descendants annotations" \
                 remove \
                     --term-file $remove \
-                    --select "self" \
+                    --select "self annotations" \
                     --output external-dev/tmp/${ONTO}_no_spcs.owl
             ;;
         0110)
@@ -435,12 +435,12 @@ for ONTO in "${ontologies[@]}"; do
                     --preserve-structure false \
                     --axioms all \
                     --term-file $add_D \
-                    --select "annotations self descendants parents" \
+                    --select "annotations self descendants " \
                     --signature false \
                 filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001" \
                 remove \
                     --term-file $remove \
-                    --select "self" \
+                    --select "self annotations" \
                     --output external-dev/tmp/${ONTO}_no_spcs.owl
             ;;
         0101)
@@ -454,13 +454,13 @@ for ONTO in "${ontologies[@]}"; do
                     --preserve-structure false \
                     --axioms all \
                     --term-file $add_D \
-                    --select "annotations self descendants parents" \
+                    --select "annotations self descendants " \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_add_D.owl \
                 filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001"\
                 remove \
                     --term-file $remove_D \
-                    --select "self descendants" \
+                    --select "self descendants annotations" \
                     --output external-dev/tmp/${ONTO}_no_spcs.owl
             ;;
         0100)
@@ -474,7 +474,7 @@ for ONTO in "${ontologies[@]}"; do
                     --preserve-structure false \
                     --axioms all \
                     --term-file $add_D \
-                    --select "annotations self descendants parents" \
+                    --select "annotations self descendants " \
                     --signature false \
                     --output external-dev/tmp/${ONTO}_no_spcs.owl \
                 filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001" \
@@ -499,7 +499,8 @@ for ONTO in "${ontologies[@]}"; do
                 --ontology-iri "http://purl.enanomapper.net/onto/external/${ONTO}-slim.owl" \
                 --version-iri "https://purl.enanomapper.org/onto/external-dev/${ONTO}-slim-prop.owl/"\
                 --annotation http://www.w3.org/2002/07/owl#versionInfo "This ontology subset was generated automatically with ROBOT (http://robot.obolibrary.org)" \
-                --annotation http://www.geneontology.org/formats/oboInOwl#date "$timestamp (yyy-mm-dd)"     
+                --annotation http://www.geneontology.org/formats/oboInOwl#date "$timestamp (yyy-mm-dd)"  \
+            filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001" 
 
     else
         cp external-dev/tmp/${ONTO}_no_spcs.owl external-dev/${ONTO}-slim.owl
@@ -515,6 +516,7 @@ for ONTO in "${ontologies[@]}"; do
             annotate --version-iri "https://purl.enanomapper.org/onto/external-dev/${ONTO}-slim-prop.owl/"\
                     --ontology-iri "https://purl.enanomapper.org/onto/external-dev/${ONTO}-slim.owl/" \
                 --output external-dev/${ONTO}-slim-prop.owl \
+            filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001"
 
     fi
 
@@ -526,4 +528,5 @@ done
 
 bash robot merge --input enanomapper-dev.owl template --template external-dev/templates/predicates/chemical_compositions.tsv \
   --ontology-iri "https://purl.enanomapper.org/onto/chemical_compositions.owl" \
-  --output external-dev/chemical_compositions.owl
+  --output external-dev/chemical_compositions.owl \
+    filter --prefixes "external-dev/prefixes.json" --select "rdfs:subClassOf=obo:BFO_0000001"
