@@ -178,7 +178,7 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
-                    --trim false \
+                    --trim true \
                     --axioms all \
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
@@ -188,7 +188,7 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
-                    --trim false \
+                    --trim true \
                     --axioms all \
                     --term-file $add \
                     --select "annotations self" \
@@ -214,7 +214,7 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
-                    --trim false \
+                    --trim true \
                     --axioms all \
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
@@ -224,7 +224,7 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
-                    --trim false \
+                    --trim true \
                     --axioms all \
                     --term-file $add \
                     --select "annotations self" \
@@ -247,7 +247,7 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
-                    --trim false \
+                    --trim true \
                     --axioms all \
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
@@ -257,7 +257,7 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
-                    --trim false \
+                    --trim true \
                     --axioms all \
                     --term-file $add \
                     --select "annotations self" \
@@ -277,7 +277,7 @@ for ONTO in "${ontologies[@]}"; do
             
             bash robot --prefixes "external-dev/prefixes.json" \
                 filter \
-                    --trim false \
+                    --trim true \
                     --axioms all \
                     --input external-dev/tmp/source/${ONTO}.owl \
                     --term-file $add_D \
@@ -286,7 +286,7 @@ for ONTO in "${ontologies[@]}"; do
                     --output external-dev/tmp/${ONTO}_add_D.owl
             bash robot --prefixes "external-dev/prefixes.json" \
                 filter \
-                    --trim false \
+                    --trim true \
                     --axioms all \
                     --input external-dev/tmp/source/${ONTO}.owl \
                     --term-file $add \
@@ -303,7 +303,7 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
-                    --trim false \
+                    --trim true \
                     --axioms all \
                     --term-file $add \
                     --select "annotations self" \
@@ -328,7 +328,7 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
-                    --trim false \
+                    --trim true \
                     --axioms all \
                     --term-file $add \
                     --select "annotations self" \
@@ -348,7 +348,7 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
-                    --trim false \
+                    --trim true \
                     --axioms all \
                     --term-file $add \
                     --select "annotations self" \
@@ -368,7 +368,7 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
-                    --trim false \
+                    --trim true \
                     --axioms all \
                     --term-file $add \
                     --select "annotations self" \
@@ -382,7 +382,7 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
-                    --trim false \
+                    --trim true \
                     --axioms all \
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
@@ -402,7 +402,7 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
-                    --trim false \
+                    --trim true \
                     --axioms all \
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
@@ -419,7 +419,7 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
-                    --trim false \
+                    --trim true \
                     --axioms all \
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
@@ -437,7 +437,7 @@ for ONTO in "${ontologies[@]}"; do
                 merge \
                     --input external-dev/tmp/source/${ONTO}.owl \
                 filter \
-                    --trim false \
+                    --trim true \
                     --axioms all \
                     --term-file $add_D \
                     --select "annotations self descendants parents" \
