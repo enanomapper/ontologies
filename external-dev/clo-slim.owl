@@ -39,9 +39,9 @@
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <pav:importedFrom>http://purl.obolibrary.org/obo/cl.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2025-04-01 02:11:33</oboInOwl:date>
+        <oboInOwl:date>2025-05-01 02:14:15</oboInOwl:date>
         <rdfs:comment>See PMID:15693950, PMID:12799354, PMID:20123131, PMID:21208450; Contact Alexander Diehl, addiehl@buffalo.edu, university at buffalo.</rdfs:comment>
-        <owl:versionInfo>2025-02-13</owl:versionInfo>
+        <owl:versionInfo>2025-04-10</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
@@ -124,14 +124,8 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233">
         <obo:IAO_0000115 xml:lang="en">An IRI or similar locator for a request or discussion of an ontology term.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>IAO:0000233</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>term_tracker_item</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>term_tracker_item</oboInOwl:shorthand>
         <rdfs:comment xml:lang="en">The &apos;tracker item&apos; can associate a tracker with a specific ontology term.</rdfs:comment>
         <rdfs:label xml:lang="en">term tracker item</rdfs:label>
-        <rdfs:label>term tracker item</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -720,6 +714,15 @@ WHERE {
 
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#disposition_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pato#hpo_slim -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#hpo_slim">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -1378,13 +1381,6 @@ WHERE {
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#is_metadata_tag -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
-    
-
-
     <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
 
 
@@ -1633,6 +1629,7 @@ WHERE {
         <obo:IAO_0000115>A cell that is maintained or propagated in a controlled artificial environment for use in an investigation.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9114-8737"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-01-12T09:58:38Z</oboInOwl:creation_date>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#human_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#mouse_subset"/>
         <rdfs:comment>&apos;In vitro&apos;, translating literally to &apos;in glass&apos;, typically refers to a controlled, often sterile, laboratory setting where cells or other specimens are placed by some agent for the purpose of studying or manipulating them as part of some research investigation. &apos;In vitro&apos; is intended to contrast with &apos;native&apos;,which refers to cells or other biological entities that are found in a natural setting. It describes unicellular organisms removed from a natural environement and multicellular organism cells removed from an organism, or cells derived in culture from such displaced cells.</rdfs:comment>
@@ -2004,13 +2001,7 @@ Lung macrophages also play a critical role in immune regulation. They help to in
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000700">
         <obo:IAO_0000115 xml:lang="en">Ontology annotation property. Relates an ontology to a term that is a designated root term of the ontology. Display tools like OLS can use terms annotated with this property as the starting point for rendering the ontology class hierarchy. There can be more than one root.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>IAO:0000700</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>has_ontology_root_term</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>has_ontology_root_term</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">has ontology root term</rdfs:label>
-        <rdfs:label>has ontology root term</rdfs:label>
         <rdfs:label>preferred_root</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/license">
