@@ -177,9 +177,9 @@ download_ontology_source() {
         
         # Special case for NPO ontology
         if [[ "$onto" == "npo" ]]; then
-            echo "Reasoning NPO (ELK)"
+            echo "Reasoning NPO (hermit)"
             bash "$ROBOT_BIN" --prefixes "$PREFIXES_FILE" \
-                reason --reasoner ELK --annotate-inferred-axioms true \
+                reason --reasoner hermit --annotate-inferred-axioms true \
                 --input "$source_file" --output "$source_file"
         fi
     fi
@@ -309,7 +309,7 @@ finalize_ontology() {
         --annotation http://www.w3.org/2002/07/owl#versionInfo "This ontology subset was generated automatically with ROBOT (http://robot.obolibrary.org)" \
         --annotation http://www.geneontology.org/formats/oboInOwl#date "$timestamp (yyyy-mm-dd)" \
         filter --prefixes "$PREFIXES_FILE" --select "rdfs:subClassOf=obo:BFO_0000001 annotations self" --trim true --signature true \
-        reduce --reasoner ELK --output "$output_file"
+        reduce --reasoner hermit --output "$output_file"
     
     # Extract object and data properties if term file exists
     if [[ -f "${CONFIG_DIR}/${onto}-term-file.txt" ]]; then
