@@ -10,6 +10,7 @@
      xmlns:pato="http://purl.obolibrary.org/obo/pato#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:terms1="http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.enanomapper.net/onto/external/pato-slim.owl"/>
     
@@ -131,6 +132,12 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor"/>
     
 
 
@@ -35316,6 +35323,52 @@ height&apos;).</rdfs:comment>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0095009</oboInOwl:id>
         <rdfs:label>anecic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0103001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0103001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
+        <obo:IAO_0000115>A quantitative quality that represents the sum of all &apos;mass&apos; qualities of the component parts that constitute a whole entity. The total mass quality inheres in the whole entity and reflects the aggregate measure of mass across all its components, such that changes in the mass of individual components may not necessarily correspond to equivalent changes in the total mass of the whole.
+
+Example of usage: &quot;total body mass&quot; represents the sum of the masses of all tissues and organs in the body, while &quot;liver mass&quot; represents only the mass of the liver. An increase in liver mass does not necessarily mean an increase in total body mass, as the mass of other organs or tissues may decrease simultaneously.</obo:IAO_0000115>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-10T16:14:12Z</dc:date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0103001</oboInOwl:id>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-8314-2140"/>
+        <rdfs:label>total mass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0103002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0103002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001563"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0103001"/>
+        <obo:IAO_0000115>A total mass which is higher than normal or average.</obo:IAO_0000115>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-10T16:25:35Z</dc:date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0103002</oboInOwl:id>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-8314-2140"/>
+        <rdfs:label>increased total mass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0103003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0103003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001562"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0103001"/>
+        <obo:IAO_0000115>A total mass which is lower than normal or average.</obo:IAO_0000115>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-10T16:29:00Z</dc:date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0103003</oboInOwl:id>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-8314-2140"/>
+        <rdfs:label>decreased total mass</rdfs:label>
     </owl:Class>
     
 
