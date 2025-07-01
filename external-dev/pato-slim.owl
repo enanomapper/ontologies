@@ -16,9 +16,10 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:chebi="http://purl.obolibrary.org/obo/chebi#1"
      xmlns:ncicp="http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:chebi1="http://purl.obolibrary.org/obo/chebi#3"
-     xmlns:chebi2="http://purl.obolibrary.org/obo/chebi#2"
+     xmlns:terms="http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/"
+     xmlns:chebi2="http://purl.obolibrary.org/obo/chebi#3"
+     xmlns:chebi3="http://purl.obolibrary.org/obo/chebi#2"
+     xmlns:terms1="http://purl.org/dc/terms/"
      xmlns:ubprop="http://purl.obolibrary.org/obo/ubprop#"
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
@@ -26,13 +27,13 @@
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
         <dc:description>An ontology of phenotypic qualities (properties, attributes or characteristics).</dc:description>
         <dc:title>PATO - the Phenotype And Trait Ontology</dc:title>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
+        <terms1:license rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
         <pav:importedFrom>http://purl.obolibrary.org/obo/pato.owl</pav:importedFrom>
         <oboInOwl:auto-generated-by>Slimmer</oboInOwl:auto-generated-by>
-        <oboInOwl:date>2025-05-01 02:17:41</oboInOwl:date>
+        <oboInOwl:date>2025-07-01 02:34:31</oboInOwl:date>
         <oboInOwl:default-namespace>quality</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
-        <owl:versionInfo>2025-02-01</owl:versionInfo>
+        <owl:versionInfo>2025-05-14</owl:versionInfo>
         <owl:versionInfo>This SLIM file was generated automatically by the eNanoMapper Slimmer software library. For more information see http://github.com/enanomapper/slimmer.</owl:versionInfo>
     </owl:Ontology>
     
@@ -943,6 +944,13 @@
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
         <rdfs:label>shorthand</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/contributor"/>
     
 
 
@@ -3065,7 +3073,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001323"/>
         <obo:IAO_0000115>An area which is relatively high.</obo:IAO_0000115>
         <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0002058"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
         <oboInOwl:creation_date>2009-03-30T04:11:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0002057</oboInOwl:id>
@@ -3089,7 +3097,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001323"/>
         <obo:IAO_0000115>An area which is relatively low.</obo:IAO_0000115>
         <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0002057"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
         <oboInOwl:creation_date>2009-03-30T04:12:11Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0002058</oboInOwl:id>
@@ -3111,7 +3119,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002093">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000595"/>
         <obo:IAO_0000115>A volume quality inhering in a degenerating cell by virtue of the bearer&apos;s exhibiting an increase in volume associated with cytoplasmic abnormalities.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
         <oboInOwl:creation_date>2009-10-05T12:01:13Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0002093</oboInOwl:id>
@@ -3134,7 +3142,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002141">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001019"/>
         <obo:IAO_0000115>A density quality which lacks pattern.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
         <oboInOwl:creation_date>2009-10-28T01:57:53Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0002141</oboInOwl:id>
@@ -3156,7 +3164,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002149">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001788"/>
         <obo:IAO_0000115>A quality inhering in a bearer by virtue of the bearer exhibiting increased density resulting in exhibiting increased degree of radiopacity (in X-rays).</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
         <oboInOwl:creation_date>2009-11-03T02:59:08Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0002149</oboInOwl:id>
@@ -3178,7 +3186,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002390">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
         <obo:IAO_0000115>A length quality which is equal to the length of any straight line segment that passes from the center of a circle to any endpoint on the circular boundary. The radius is half of the diameter.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
         <oboInOwl:creation_date>2012-11-15T05:17:15Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0002390</oboInOwl:id>
@@ -3201,7 +3209,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002632">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000068"/>
         <obo:IAO_0000115>A quality in which the effect or outcome is not primary or the focus of the observation.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9114-8737"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-9114-8737"/>
         <oboInOwl:creation_date>2014-05-26T13:17:45Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0002632</oboInOwl:id>
@@ -3223,7 +3231,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0005015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
         <obo:IAO_0000115>A size quality inhering in an entity or set of entities in which size increases or decreases along the extent of the entity or set.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0003-3162-7490"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0003-3162-7490"/>
         <oboInOwl:creation_date>2014-09-25T15:17:51Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>gradient of size</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
@@ -3246,7 +3254,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0005022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001334"/>
         <obo:IAO_0000115>A diameter that remains constant throughout the extent of an entity.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0003-3162-7490"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0003-3162-7490"/>
         <oboInOwl:creation_date>2014-10-17T14:15:59Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0005022</oboInOwl:id>
@@ -3270,7 +3278,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000599"/>
         <obo:IAO_0000115>A width and length quality which is relatively small, where both width and length are decreased.</obo:IAO_0000115>
         <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0040031"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-5208-3432"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-5208-3432"/>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0040030</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
@@ -3287,7 +3295,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000600"/>
         <obo:IAO_0000115>A width and length quality that is relatively large, where both width and length are increased.</obo:IAO_0000115>
         <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0040030"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-5208-3432"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-5208-3432"/>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0040031</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
@@ -3338,7 +3346,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001164"/>
         <obo:IAO_0000115>A density which is relatively normal or average.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045031</oboInOwl:id>
@@ -3354,7 +3362,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045050">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
         <obo:IAO_0000115>A size quality which is relatively normal or average</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045050</oboInOwl:id>
@@ -3371,7 +3379,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001323"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
         <obo:IAO_0000115>An area which is relatively normal or average</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045051</oboInOwl:id>
@@ -3388,7 +3396,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001595"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
         <obo:IAO_0000115>A depth quality which is relatively normal or average</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045052</oboInOwl:id>
@@ -3405,7 +3413,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000119"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
         <obo:IAO_0000115>A height which is relatively normal or average</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045053</oboInOwl:id>
@@ -3422,7 +3430,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
         <obo:IAO_0000115>A length quality which is relatively normal or average</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045054</oboInOwl:id>
@@ -3439,7 +3447,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001334"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
         <obo:IAO_0000115>A diameter which is relatively normal or average</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045055</oboInOwl:id>
@@ -3456,7 +3464,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002041"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045055"/>
         <obo:IAO_0000115>An anterior-posterior diameter which is relatively normal or average</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045056</oboInOwl:id>
@@ -3473,7 +3481,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001711"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045054"/>
         <obo:IAO_0000115>A perimeter which is relatively normal or average</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045057</oboInOwl:id>
@@ -3490,7 +3498,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001648"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045057"/>
         <obo:IAO_0000115>A circumference which is relatively normal or average</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045058</oboInOwl:id>
@@ -3507,7 +3515,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000915"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
         <obo:IAO_0000115>A thickness which is relatively normal or average</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045059</oboInOwl:id>
@@ -3524,7 +3532,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000918"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
         <obo:IAO_0000115>A volume which is relatively normal or average</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045060</oboInOwl:id>
@@ -3542,7 +3550,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000921"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0045050"/>
         <obo:IAO_0000115>A width which is relatively normal or average</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045061</oboInOwl:id>
@@ -3558,7 +3566,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0045062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001537"/>
         <obo:IAO_0000115>A solubility which is relatively normal or average</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-9227-0670"/>
         <oboInOwl:creation_date>2017-12-22T14:16:43Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0045062</oboInOwl:id>
@@ -3632,7 +3640,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0050000"/>
         <obo:IAO_0000115>A rate of occurrence that is relatively high.</obo:IAO_0000115>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-08-19T09:23:19Z</dc:date>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0003-4148-4606"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0003-4148-4606"/>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0055003</oboInOwl:id>
         <rdfs:label>increased rate of occurrence</rdfs:label>
@@ -3654,7 +3662,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0050000"/>
         <obo:IAO_0000115>A rate of occurrence that is relatively low.</obo:IAO_0000115>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-08-19T09:24:35Z</dc:date>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0003-4148-4606"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0003-4148-4606"/>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0055004</oboInOwl:id>
         <rdfs:label>decreased rate of occurrence</rdfs:label>
@@ -3676,7 +3684,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0050001"/>
         <obo:IAO_0000115>A rate of output of a continuous process that is relatively high.</obo:IAO_0000115>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-08-19T09:24:56Z</dc:date>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0003-4148-4606"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0003-4148-4606"/>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0055005</oboInOwl:id>
         <rdfs:label>increased rate of continuous process</rdfs:label>
@@ -3698,7 +3706,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0050001"/>
         <obo:IAO_0000115>A rate of output of a continuous process that is relatively low.</obo:IAO_0000115>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-08-19T09:25:07Z</dc:date>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0003-4148-4606"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0003-4148-4606"/>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0055006</oboInOwl:id>
         <rdfs:label>decreased rate of continuous process</rdfs:label>
@@ -3718,9 +3726,9 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0070064">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001710"/>
         <obo:IAO_0000115>A 3-D extent quality inhering in a bearer by virtue of the spatial region that is defined by the maximal span of the bearer&apos;s dendritic arbor.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-7258-9596"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-5260-9315"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0001-7258-9596"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <terms1:contributor rdf:resource="https://orcid.org/0000-0002-5260-9315"/>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0070064</oboInOwl:id>
         <rdfs:label>dendritic field size</rdfs:label>
@@ -3752,15 +3760,6 @@
      -->
 
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000700">
-        <oboInOwl:hasDbXref>IAO:0000700</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>has_ontology_root_term</oboInOwl:id>
-        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>has_ontology_root_term</oboInOwl:shorthand>
-        <rdfs:label>has ontology root term</rdfs:label>
-    </rdf:Description>
     <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion">
         <rdfs:label>has_obo_format_version</rdfs:label>
     </rdf:Description>
