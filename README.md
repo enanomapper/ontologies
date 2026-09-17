@@ -93,9 +93,10 @@ The development version is opened in the same way, but with a different URL:
 Building and validating the ontology
 ====================================
 
-During (and after) the eNanoMapper project the ontology was autobuilt using scripts on the [BiGCaT
+During (and after) the eNanoMapper project the ontology was autobuilt using scripts on the (now offline) [BiGCaT
 Jenkins server](https://jenm.bigcat.maastrichtuniversity.nl/). After the cyberattack on Maastricht University 
-in 2019, this repository uses GitHub Actions to replicate the Jenkins build process, and adds a [full ontology file](enanomapper-full.owl) and customizable workflows for ontology build and QC.
+in 2019, this repository uses GitHub Actions to replicate the Jenkins build process, and adds a
+[full ontology file](enanomapper-full.owl) and customizable workflows for ontology build and QC.
 
 The main OWL file (enanomapper.owl) refers to slimmed versions of external ontologies, complemented with internal 
 files adding additional terms. The extensions are OWL files themselves and you can load them in Protégé
